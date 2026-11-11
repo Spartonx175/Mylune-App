@@ -10,5 +10,40 @@
     "feed": "Trusted videos and articles will appear here.",
     "profile": "Your settings will appear here."
   },
-  "urgent": "Emergency / When to call"
+  "auth": {
+    "subtitle": "Sign in to keep your pregnancy diary private and in sync.",
+    "google": "Continue with Google",
+    "notConfigured": "Sign-in is not set up yet.",
+    "error": "Sign-in did not work. Please try again.",
+    "signOut": "Sign out"
+  },
+  "onboarding": {
+    "title": "Let us set up your journey",
+    "subtitle": "A few details so Mylune can follow your pregnancy. You can change them later.",
+    "language": "Language",
+    "ddr": "First day of your last period (DDR)",
+    "ddrHelp": "The date your last period started.",
+    "due": "Due date from your dating scan (optional)",
+    "dueHelp": "Only fill this in after your dating scan. It replaces the date above.",
+    "maternityName": "Maternity (optional)",
+    "maternityPhone": "Maternity phone (optional)",
+    "submit": "Continue",
+    "saving": "Saving…",
+    "errors": {
+      "ddr_required": "Please enter a valid date.",
+      "ddr_future": "This date cannot be in the future.",
+      "ddr_old": "This date is too far in the past. Please check it.",
+      "due_invalid": "Please check this date.",
+      "generic": "Something went wrong. Please try again."
+    }
+  },
+  "profile": {
+    "account": "Account",
+    "language": "Language",
+    "ddr": "Last period (DDR)",
+    "due": "Due date from scan",
+    "maternity": "Maternity",
+    "phone": "Maternity phone",
+    "none": "Not set"
+  }
 }

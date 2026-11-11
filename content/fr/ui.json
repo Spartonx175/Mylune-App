@@ -10,5 +10,40 @@
     "feed": "Des vidéos et articles de confiance apparaîtront ici.",
     "profile": "Vos réglages apparaîtront ici."
   },
-  "urgent": "Urgence / Quand appeler"
+  "auth": {
+    "subtitle": "Connectez-vous pour garder votre journal de grossesse privé et synchronisé.",
+    "google": "Continuer avec Google",
+    "notConfigured": "La connexion n'est pas encore configurée.",
+    "error": "La connexion n'a pas fonctionné. Veuillez réessayer.",
+    "signOut": "Se déconnecter"
+  },
+  "onboarding": {
+    "title": "Préparons votre parcours",
+    "subtitle": "Quelques informations pour que Mylune suive votre grossesse. Vous pourrez les modifier plus tard.",
+    "language": "Langue",
+    "ddr": "Premier jour de vos dernières règles (DDR)",
+    "ddrHelp": "La date à laquelle vos dernières règles ont commencé.",
+    "due": "Date prévue d'après l'échographie de datation (facultatif)",
+    "dueHelp": "À remplir seulement après l'échographie de datation. Elle remplace la date ci-dessus.",
+    "maternityName": "Maternité (facultatif)",
+    "maternityPhone": "Téléphone de la maternité (facultatif)",
+    "submit": "Continuer",
+    "saving": "Enregistrement…",
+    "errors": {
+      "ddr_required": "Veuillez saisir une date valide.",
+      "ddr_future": "Cette date ne peut pas être dans le futur.",
+      "ddr_old": "Cette date est trop ancienne. Veuillez la vérifier.",
+      "due_invalid": "Veuillez vérifier cette date.",
+      "generic": "Une erreur est survenue. Veuillez réessayer."
+    }
+  },
+  "profile": {
+    "account": "Compte",
+    "language": "Langue",
+    "ddr": "Dernières règles (DDR)",
+    "due": "Date prévue d'après l'écho",
+    "maternity": "Maternité",
+    "phone": "Téléphone de la maternité",
+    "none": "Non renseigné"
+  }
 }

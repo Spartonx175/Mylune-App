@@ -4,8 +4,6 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { SerwistProvider } from "@serwist/turbopack/react";
 import { routing } from "@/i18n/routing";
-import Header from "@/components/Header";
-import TabBar from "@/components/TabBar";
 import "../globals.css";
 
 export function generateStaticParams() {
@@ -45,9 +43,7 @@ export default async function LocaleLayout({
       <body className="min-h-dvh">
         <NextIntlClientProvider>
           <SerwistProvider swUrl="/serwist/sw.js">
-            <Header />
-            <main className="mx-auto w-full max-w-xl px-4 pb-28 pt-2">{children}</main>
-            <TabBar />
+            {children}
           </SerwistProvider>
         </NextIntlClientProvider>
       </body>
