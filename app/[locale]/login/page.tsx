@@ -2,6 +2,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { redirect } from "@/i18n/navigation";
 import GoogleButton from "@/components/GoogleButton";
 import LocaleToggle from "@/components/LocaleToggle";
+import CatTrio from "@/components/CatTrio";
 import { getSession } from "@/lib/session";
 
 export default async function LoginPage({
@@ -25,6 +26,9 @@ export default async function LoginPage({
         <LocaleToggle />
       </div>
       <div className="my-auto py-10">
+        <div className="mb-8">
+          <CatTrio />
+        </div>
         <h1 className="mb-2 text-4xl font-bold text-primary-text">Mylune</h1>
         <p className="mb-8 text-xl">{t("subtitle")}</p>
         {error && (

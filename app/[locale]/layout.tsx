@@ -4,6 +4,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { SerwistProvider } from "@serwist/turbopack/react";
 import { routing } from "@/i18n/routing";
+import { getCompanionCat } from "@/lib/cat-cookie";
 import "../globals.css";
 
 export function generateStaticParams() {
@@ -37,9 +38,10 @@ export default async function LocaleLayout({
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
+  const cat = await getCompanionCat();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} data-cat={cat}>
       <body className="min-h-dvh">
         <NextIntlClientProvider>
           <SerwistProvider swUrl="/serwist/sw.js">

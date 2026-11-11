@@ -33,3 +33,31 @@ body {
   outline: 3px solid var(--color-primary-text);
   outline-offset: 2px;
 }
+
+/* Companion cat tint (lib/cats.ts TINTS). Decorative colours only; text colours are unchanged and stay AA-safe. */
+html[data-cat="tabby"] {
+  --color-soft: #f5ebdf;
+  --color-accent: #c8a27c;
+}
+html[data-cat="birman"] {
+  --color-soft: #f2e4e0;
+  --color-accent: #d9a58f;
+}
+
+/* Cat mascot animations. Gentle, and switched off for people who ask for less motion. */
+.cat-tail { transform-box: fill-box; transform-origin: 8% 92%; animation: cat-sway 3.2s ease-in-out infinite; }
+.cat-eye { transform-box: fill-box; transform-origin: center; animation: cat-blink 5.5s infinite; }
+.cat-bob { animation: cat-bob 0.5s ease-in-out infinite; }
+.cat-leg-a { animation: cat-leg 0.5s ease-in-out infinite; }
+.cat-leg-b { animation: cat-leg 0.5s ease-in-out infinite reverse; }
+.cat-peek { animation: cat-peek 4s ease-in-out infinite; }
+
+@keyframes cat-sway { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(7deg); } }
+@keyframes cat-blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
+@keyframes cat-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-2px); } }
+@keyframes cat-leg { 0%, 100% { transform: rotate(-24deg); } 50% { transform: rotate(24deg); } }
+@keyframes cat-peek { 0%, 100% { transform: translateY(14%); } 40%, 70% { transform: translateY(0); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .cat-tail, .cat-eye, .cat-bob, .cat-leg-a, .cat-leg-b, .cat-peek { animation: none; }
+}

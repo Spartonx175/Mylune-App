@@ -1,6 +1,8 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { signOut } from "@/app/actions";
 import { getSession } from "@/lib/session";
+import CatPicker from "@/components/CatPicker";
+import { getCompanionCat } from "@/lib/cat-cookie";
 
 // A plain calendar date (YYYY-MM-DD) shown as-is, without timezone shifting.
 const showDate = (iso: string | null, locale: string) =>
@@ -14,6 +16,7 @@ export default async function ProfilePage({ params }: { params: Promise<{ locale
   if (!session.configured || !session.user || !session.profile) return null;
 
   const { user, profile } = session;
+  const cat = await getCompanionCat();
   const none = t("profile.none");
   const rows: [string, string][] = [
     [t("profile.language"), profile.locale === "fr" ? "Français" : "English"],
@@ -41,6 +44,8 @@ export default async function ProfilePage({ params }: { params: Promise<{ locale
           </div>
         ))}
       </dl>
+
+      <CatPicker current={cat} />
 
       <form action={signOut.bind(null, locale)}>
         <button

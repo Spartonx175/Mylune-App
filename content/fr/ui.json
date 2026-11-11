@@ -1,7 +1,23 @@
 {
-  "app": { "name": "Mylune", "tagline": "Votre grossesse, jour après jour" },
-  "nav": { "today": "Aujourd'hui", "baby": "Bébé", "guide": "Guide", "feed": "Fil", "profile": "Profil", "main": "Navigation principale" },
-  "lang": { "label": "Langue", "fr": "FR", "en": "EN", "frFull": "Français", "enFull": "English" },
+  "app": {
+    "name": "Mylune",
+    "tagline": "Votre grossesse, jour après jour"
+  },
+  "nav": {
+    "today": "Aujourd'hui",
+    "baby": "Bébé",
+    "guide": "Guide",
+    "feed": "Fil",
+    "profile": "Profil",
+    "main": "Navigation principale"
+  },
+  "lang": {
+    "label": "Langue",
+    "fr": "FR",
+    "en": "EN",
+    "frFull": "Français",
+    "enFull": "English"
+  },
   "placeholder": {
     "soon": "Bientôt disponible",
     "today": "Votre résumé du jour apparaîtra ici.",
@@ -45,5 +61,19 @@
     "maternity": "Maternité",
     "phone": "Téléphone de la maternité",
     "none": "Non renseigné"
+  },
+  "cats": {
+    "names": {
+      "ginger": "Roux",
+      "tabby": "Tigré",
+      "birman": "Birman"
+    },
+    "photoAlt": "Photo de {name}",
+    "welcome": "Nos chats vous disent bonjour",
+    "waitingTitle": "Ils ont hâte de vous rencontrer",
+    "waitingText": "Vos chats ont hâte de rencontrer bébé.",
+    "loading": "Un instant…",
+    "pickTitle": "Votre chat compagnon",
+    "pickHelp": "Choisissez le chat qui vous accompagne dans l'application. Cela change le petit dessin et la couleur douce."
   }
 }

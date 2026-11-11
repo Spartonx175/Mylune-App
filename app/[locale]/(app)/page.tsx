@@ -2,6 +2,7 @@ import { setRequestLocale } from "next-intl/server";
 import Placeholder from "@/components/Placeholder";
 import { redirect } from "@/i18n/navigation";
 import { getSession } from "@/lib/session";
+import { getCompanionCat } from "@/lib/cat-cookie";
 
 export default async function TodayPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -13,5 +14,6 @@ export default async function TodayPage({ params }: { params: Promise<{ locale: 
     redirect({ href: "/", locale: session.profile.locale });
   }
 
-  return <Placeholder screen="today" />;
+  const cat = await getCompanionCat();
+  return <Placeholder screen="today" cat={cat} />;
 }

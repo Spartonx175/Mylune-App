@@ -1,7 +1,23 @@
 {
-  "app": { "name": "Mylune", "tagline": "Your pregnancy, day by day" },
-  "nav": { "today": "Today", "baby": "Baby", "guide": "Guide", "feed": "Feed", "profile": "Profile", "main": "Main navigation" },
-  "lang": { "label": "Language", "fr": "FR", "en": "EN", "frFull": "Français", "enFull": "English" },
+  "app": {
+    "name": "Mylune",
+    "tagline": "Your pregnancy, day by day"
+  },
+  "nav": {
+    "today": "Today",
+    "baby": "Baby",
+    "guide": "Guide",
+    "feed": "Feed",
+    "profile": "Profile",
+    "main": "Main navigation"
+  },
+  "lang": {
+    "label": "Language",
+    "fr": "FR",
+    "en": "EN",
+    "frFull": "Français",
+    "enFull": "English"
+  },
   "placeholder": {
     "soon": "Coming soon",
     "today": "Your daily summary will appear here.",
@@ -45,5 +61,19 @@
     "maternity": "Maternity",
     "phone": "Maternity phone",
     "none": "Not set"
+  },
+  "cats": {
+    "names": {
+      "ginger": "Ginger",
+      "tabby": "Tabby",
+      "birman": "Birman"
+    },
+    "photoAlt": "Photo of {name}",
+    "welcome": "Our cats say hello",
+    "waitingTitle": "Waiting to meet you",
+    "waitingText": "Your cats can't wait to meet the baby.",
+    "loading": "Just a moment…",
+    "pickTitle": "Your companion cat",
+    "pickHelp": "Choose the cat that keeps you company in the app. It changes the little drawing and the soft colour."
   }
 }
