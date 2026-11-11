@@ -1,0 +1,192 @@
+# Calendrier français du suivi de grossesse par SA (semaines d'aménorrhée). FR mirror of content/en/calendar/fr-followup.yaml (session C2).
+# Sources: ameli.fr pages read 2026-11-11. Months are converted to approximate SA windows by Mylune
+# (4e mois = 14-17 SA, 5e mois = 18-22, 6e mois = 23-26, 7e mois = 27-30, 8e mois = 31-35, 9e mois = 36-41).
+# unverified: true = no allowlisted source states this; shown as "à confirmer".
+
+- id: declaration
+  sa_from: 6
+  sa_to: 14
+  title: Déclarer votre grossesse
+  description: >-
+    Votre médecin ou votre sage-femme déclare la grossesse avant la fin du 3e mois. En ligne, elle est envoyée à la CPAM
+    et à la CAF. Sur papier, le feuillet rose va à la CPAM et les deux feuillets bleus à la CAF. Ensuite, la CPAM vous
+    envoie un calendrier personnel des examens.
+  sources: [ameli-grossesse-demarches, ameli-programme-suivi]
+
+- id: consultation-1
+  sa_from: 6
+  sa_to: 14
+  title: "Consultation 1 sur 7 : premier examen prénatal"
+  description: >-
+    La première des 7 consultations a lieu avant la fin du 3e mois, avec un médecin ou une sage-femme. Elle comprend la
+    pesée, la tension artérielle et un échange sur l'acide folique (vitamine B9), conseillé jusqu'à 12 semaines.
+  sources: [ameli-programme-suivi, ameli-grossesse-demarches]
+
+- id: blood-tests-first
+  sa_from: 6
+  sa_to: 14
+  title: Premières prises de sang et analyse d'urine
+  description: >-
+    Autour de la première consultation, des prises de sang vous sont proposées : groupe sanguin et Rhésus, anticorps
+    irréguliers, et immunité à la rubéole, à la toxoplasmose, à la syphilis, à l'hépatite B, au VIH et au CMV, ainsi
+    qu'un contrôle de l'anémie. Une bandelette urinaire recherche le sucre et les protéines. Votre médecin ou votre
+    sage-femme les prescrit.
+  sources: [ameli-programme-suivi, ameli-toxo-serologie]
+
+- id: echo-1
+  sa_from: 11
+  sa_to: 13
+  title: "Échographie 1 sur 3 (11 SA à 13 SA + 6 jours)"
+  description: >-
+    La première échographie date la grossesse, indique s'il y a un ou plusieurs bébés, vérifie que le bébé est vivant,
+    fixe la date prévue d'accouchement, recherche les malformations majeures et mesure la clarté nucale (pli de la
+    nuque). Elle est prise en charge à 70 %.
+  sources: [ameli-programme-suivi, ameli-grossesse-demarches]
+
+- id: trisomy-21-screening
+  sa_from: 11
+  sa_to: 13
+  title: Dépistage de la trisomie 21
+  description: >-
+    Le dépistage combine la mesure de la clarté nucale à la première échographie, une prise de sang et votre âge. Si le
+    résultat est élevé, on vous propose une prise de sang sur l'ADN du bébé ou un caryotype. Si ce dépistage n'a pas été
+    proposé au premier trimestre, il peut l'être au 4e mois.
+  sources: [ameli-programme-suivi, ameli-suivi-mensuel]
+
+- id: prevention-check
+  sa_from: 6
+  sa_to: 24
+  title: Bilan de prévention avec une sage-femme
+  description: >-
+    Un bilan prénatal de prévention avec une sage-femme peut être fait dès la déclaration de grossesse, idéalement avant
+    la 24e semaine.
+  sources: [ameli-programme-suivi]
+
+- id: maternity-choice
+  sa_from: 6
+  sa_to: 14
+  title: Choisir votre maternité
+  description: >-
+    Les maternités ont trois niveaux. Le niveau 1 accueille les naissances sans complication. Le niveau 2 dispose aussi
+    de soins néonatals. Le niveau 3 dispose de soins intensifs néonatals et de réanimation adulte. Demandez à votre
+    médecin ou à votre sage-femme quel niveau vous convient.
+  sources: [ameli-preparation-parentalite]
+
+- id: maternity-registration
+  sa_from: 6
+  sa_to: 14
+  title: S'inscrire à la maternité (Paris)
+  description: >-
+    À Paris, les places en maternité peuvent se remplir tôt, n'attendez donc pas. Contactez les maternités qui vous
+    plaisent dès que possible, idéalement au premier trimestre, et demandez leurs règles d'inscription. Le délai habituel
+    n'est pas encore confirmé par une source.
+  sources: []
+  unverified: true
+
+- id: consultation-2
+  sa_from: 14
+  sa_to: 17
+  title: "Consultation 2 sur 7 (4e mois)"
+  description: >-
+    À partir du 4e mois, vous voyez votre médecin ou votre sage-femme chaque mois. Chaque visite contrôle le poids, la
+    tension artérielle, la hauteur de l'utérus, le cœur du bébé et une bandelette urinaire. Un bilan dentaire gratuit est
+    aussi disponible à partir du 4e mois.
+  sources: [ameli-suivi-mensuel, ameli-grossesse-demarches]
+
+- id: prenatal-interview
+  sa_from: 14
+  sa_to: 17
+  title: Entretien prénatal précoce (4e mois)
+  description: >-
+    Cet entretien avec une sage-femme ou un médecin est conseillé à partir du 4e mois, mais vous pouvez le commencer au
+    premier trimestre. Il n'est jamais trop tard pour le faire. Il est pris en charge à 100 %. C'est aussi le moment où
+    sont programmées les 7 séances de préparation à la naissance et à la parentalité.
+  sources: [ameli-preparation-parentalite, ameli-suivi-mensuel]
+
+- id: toxo-monthly
+  sa_from: 14
+  sa_to: 41
+  title: Prise de sang mensuelle pour la toxoplasmose (si non immunisée)
+  description: >-
+    Si votre test de toxoplasmose est négatif, vous faites un contrôle sanguin chaque mois jusqu'à l'accouchement. Il suit
+    les visites mensuelles.
+  sources: [ameli-suivi-mensuel, ameli-toxo-serologie]
+
+- id: pertussis-vaccine
+  sa_from: 20
+  sa_to: 36
+  title: Vaccin contre la coqueluche
+  description: >-
+    Le vaccin contre la coqueluche se fait entre la 20e et la 36e semaine. Demandez à votre médecin ou à votre sage-femme.
+  sources: [ameli-suivi-mensuel, ameli-programme-suivi]
+
+- id: echo-2
+  sa_from: 20
+  sa_to: 24
+  title: "Échographie 2 sur 3 (20 à 24 SA)"
+  description: >-
+    La deuxième échographie est l'échographie morphologique détaillée. Les deux premières échographies, avant la fin du
+    5e mois, sont prises en charge à 70 %.
+  sources: [ameli-suivi-mensuel, ameli-grossesse-demarches]
+
+- id: rubella-check
+  sa_from: 20
+  sa_to: 20
+  title: Contrôle sanguin de la rubéole (si non immunisée)
+  description: Si votre test de rubéole est négatif, un nouveau contrôle sanguin est prévu à la 20e semaine.
+  sources: [ameli-suivi-mensuel]
+
+- id: consultation-3
+  sa_from: 18
+  sa_to: 22
+  title: "Consultation 3 sur 7 (5e mois)"
+  description: >-
+    Vos visites continuent chaque mois. Une numération sanguine (anémie, globules blancs, plaquettes) est prévue au 5e
+    ou au 6e mois.
+  sources: [ameli-suivi-mensuel, ameli-grossesse-demarches]
+
+- id: consultation-4
+  sa_from: 23
+  sa_to: 26
+  title: "Consultation 4 sur 7 (6e mois)"
+  description: >-
+    Si vous êtes Rhésus négatif, un contrôle des anticorps irréguliers est prévu aux 6e et 8e mois. À partir du 6e mois,
+    votre suivi est pris en charge à 100 %.
+  sources: [ameli-suivi-mensuel, ameli-grossesse-demarches]
+
+- id: consultation-5
+  sa_from: 27
+  sa_to: 30
+  title: "Consultation 5 sur 7 (7e mois)"
+  description: Votre cinquième visite a lieu au 7e mois.
+  sources: [ameli-suivi-mensuel]
+
+- id: rsv-vaccine
+  sa_from: 32
+  sa_to: 36
+  title: Vaccin contre le VRS (Abrysvo)
+  description: Le vaccin contre le VRS n'est fait qu'entre la 32e et la 36e semaine d'aménorrhée. Demandez à votre médecin ou à votre sage-femme.
+  sources: [ameli-suivi-mensuel, ameli-programme-suivi]
+
+- id: echo-3
+  sa_from: 30
+  sa_to: 35
+  title: "Échographie 3 sur 3 (30 à 35 SA)"
+  description: La troisième échographie est prise en charge à 100 %.
+  sources: [ameli-suivi-mensuel, ameli-grossesse-demarches]
+
+- id: consultation-6
+  sa_from: 31
+  sa_to: 35
+  title: "Consultation 6 sur 7 (8e mois) et visite chez l'anesthésiste"
+  description: >-
+    Au 8e mois, vous avez votre sixième visite et une consultation obligatoire avec un anesthésiste, même si vous ne
+    prévoyez pas de péridurale.
+  sources: [ameli-suivi-mensuel]
+
+- id: consultation-7
+  sa_from: 36
+  sa_to: 41
+  title: "Consultation 7 sur 7 (9e mois)"
+  description: En cas de grossesse sans complication, la visite du 9e mois est la dernière avant l'accouchement.
+  sources: [ameli-suivi-mensuel, ameli-grossesse-demarches]

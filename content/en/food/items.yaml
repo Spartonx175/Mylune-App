@@ -1,4 +1,5 @@
-# Food list (SPEC section 7). EN authored first. why_fr = "[FR TODO] " + EN text until session C2 (Haiku) translates it.
+# Food list (SPEC section 7). EN authored first; FR mirror in content/fr/food/items.yaml (same ids, status, conditions, sources).
+# why_fr is the French text (session C2, Haiku), why_en the English text; both files carry the same pair.
 # Sources read 2026-11-11 (see content/sources.yaml). No doses, no diagnosis.
 # Where French and UK/US pages differ (e.g. pâté, soft cheese), the stricter French rule is used.
 
@@ -7,135 +8,135 @@
   status: avoid
   conditions: [toxo_non_immune]
   why_en: "Raw or pink meat can carry the toxoplasmosis parasite. Cook meat right through, with no pink juice when you cut it. Freezing meat for at least 3 days at -18°C or colder also helps."
-  why_fr: "[FR TODO] Raw or pink meat can carry the toxoplasmosis parasite. Cook meat right through, with no pink juice when you cut it. Freezing meat for at least 3 days at -18°C or colder also helps."
+  why_fr: "La viande crue ou rosée peut transmettre le parasite de la toxoplasmose. Faites cuire la viande à cœur, sans jus rosé à la découpe. Congeler la viande pendant au moins 3 jours à -18 °C ou moins aide aussi."
   sources: [ameli-toxo-prevention, nhs-toxoplasmosis, cdc-toxo-prevention]
 
 - id: well-cooked-meat
   status: eat
   conditions: [toxo_non_immune]
   why_en: "Meat that is cooked right through is fine. Cutting it open should show no pink juice. A microwave does not kill the parasite better than other ways of cooking."
-  why_fr: "[FR TODO] Meat that is cooked right through is fine. Cutting it open should show no pink juice. A microwave does not kill the parasite better than other ways of cooking."
+  why_fr: "La viande bien cuite à cœur est sans danger. À la découpe, elle ne doit pas laisser couler de jus rosé. Le micro-ondes ne tue pas mieux le parasite que les autres modes de cuisson."
   sources: [ameli-toxo-prevention]
 
 - id: smoked-marinated-meat
   status: avoid
   conditions: [toxo_non_immune]
   why_en: "Smoked, marinated, salted or grilled meat (including game) is not safe unless it is cooked right through."
-  why_fr: "[FR TODO] Smoked, marinated, salted or grilled meat (including game) is not safe unless it is cooked right through."
+  why_fr: "La viande fumée, marinée, salée ou grillée (y compris le gibier) n'est pas sans risque, sauf si elle est cuite à cœur."
   sources: [ameli-toxo-prevention, mangerbouger-aliments-eviter]
 
 - id: dry-cured-meats
   status: avoid
   why_en: "Dry sausage (saucisson sec), dry ham (jambon sec), salami and similar cured meats are eaten raw. They can carry germs that cause toxoplasmosis and salmonella. Eat them only if cooked until steaming hot, for example on a hot pizza."
-  why_fr: "[FR TODO] Dry sausage (saucisson sec), dry ham (jambon sec), salami and similar cured meats are eaten raw. They can carry germs that cause toxoplasmosis and salmonella. Eat them only if cooked until steaming hot, for example on a hot pizza."
+  why_fr: "Le saucisson sec, le jambon sec, le salami et les charcuteries crues similaires se mangent crus. Ils peuvent transmettre des germes responsables de la toxoplasmose et de la salmonelle. Ne les mangez que s'ils ont été chauffés jusqu'à être bien chauds, par exemple sur une pizza chaude."
   sources: [mangerbouger-aliments-eviter, nhs-toxoplasmosis, nhs-foods-to-avoid]
 
 - id: spreadable-charcuterie
   status: avoid
   why_en: "Rillettes, pâté, foie gras and jellied meat products can carry listeria, a germ that grows even in the fridge. Cooked ham is fine only if you heat it well before eating. Sausages and boudin noir that you cook yourself are better."
-  why_fr: "[FR TODO] Rillettes, pâté, foie gras and jellied meat products can carry listeria, a germ that grows even in the fridge. Cooked ham is fine only if you heat it well before eating. Sausages and boudin noir that you cook yourself are better."
+  why_fr: "Les rillettes, le pâté, le foie gras et les produits de charcuterie en gelée peuvent transmettre la listeria, une bactérie qui se multiplie même au réfrigérateur. Le jambon cuit n'est acceptable que s'il est bien réchauffé avant de le manger. Les saucisses et le boudin noir que vous faites cuire vous-même sont préférables."
   sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention]
 
 - id: liver
   status: avoid
   why_en: "Liver and liver products (including liver pâté) contain a lot of vitamin A, which can harm the baby's development. Skip them for the whole pregnancy."
-  why_fr: "[FR TODO] Liver and liver products (including liver pâté) contain a lot of vitamin A, which can harm the baby's development. Skip them for the whole pregnancy."
+  why_fr: "Le foie et les produits à base de foie (y compris le pâté de foie) contiennent beaucoup de vitamine A, qui peut nuire au développement du bébé. Évitez-les pendant toute la grossesse."
   sources: [nhs-foods-to-avoid, nhs-vitamins]
 
 # ---------- Dairy ----------
 - id: raw-milk-and-cheese
   status: avoid
   why_en: "Raw milk and cheese made from raw (unpasteurised) milk can carry listeria. This includes raw goat's milk. Choose pasteurised milk, yoghurt and cheese."
-  why_fr: "[FR TODO] Raw milk and cheese made from raw (unpasteurised) milk can carry listeria. This includes raw goat's milk. Choose pasteurised milk, yoghurt and cheese."
+  why_fr: "Le lait cru et les fromages au lait cru (non pasteurisé) peuvent transmettre la listeria. Cela vaut aussi pour le lait de chèvre cru. Choisissez du lait, des yaourts et des fromages pasteurisés."
   sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid]
 
 - id: soft-rind-cheese
   status: avoid
   why_en: "Cheeses with a soft or washed rind (camembert, brie, munster, pont-l'évêque) and soft uncooked pressed cheeses (reblochon, morbier) can carry listeria. They are fine if cooked until steaming hot in a recipe. Remove the rind from other cheeses. Pre-grated bagged cheese is not advised: grate your own."
-  why_fr: "[FR TODO] Cheeses with a soft or washed rind (camembert, brie, munster, pont-l'évêque) and soft uncooked pressed cheeses (reblochon, morbier) can carry listeria. They are fine if cooked until steaming hot in a recipe. Remove the rind from other cheeses. Pre-grated bagged cheese is not advised: grate your own."
+  why_fr: "Les fromages à croûte fleurie ou lavée (camembert, brie, munster, pont-l'évêque) et les pâtes pressées non cuites (reblochon, morbier) peuvent transmettre la listeria. Ils sont acceptables s'ils sont cuits jusqu'à être bien chauds dans une recette. Enlevez la croûte des autres fromages. Le fromage râpé en sachet n'est pas conseillé : râpez-le vous-même."
   sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid]
 
 - id: hard-cooked-cheese
   status: eat
   why_en: "Hard cooked pressed cheeses (comté, beaufort, emmental, gruyère, parmesan) are fine, and so are pasteurised cheeses that are not on the avoid list."
-  why_fr: "[FR TODO] Hard cooked pressed cheeses (comté, beaufort, emmental, gruyère, parmesan) are fine, and so are pasteurised cheeses that are not on the avoid list."
+  why_fr: "Les pâtes pressées cuites (comté, beaufort, emmental, gruyère, parmesan) sont sans danger, comme les fromages pasteurisés qui ne figurent pas dans la liste à éviter."
   sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter]
 
 # ---------- Fish and shellfish ----------
 - id: raw-fish-sushi
   status: avoid
   why_en: "Raw fish (sushi, sashimi, tarama) can carry listeria, and freezing does not remove listeria. Sushi made with cooked fish is fine."
-  why_fr: "[FR TODO] Raw fish (sushi, sashimi, tarama) can carry listeria, and freezing does not remove listeria. Sushi made with cooked fish is fine."
+  why_fr: "Le poisson cru (sushis, sashimis, tarama) peut transmettre la listeria, et la congélation ne supprime pas la listeria. Les sushis faits avec du poisson cuit sont sans danger."
   sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid]
 
 - id: raw-shellfish
   status: avoid
   why_en: "Raw oysters, mussels, clams and other raw shellfish can carry listeria and the toxoplasmosis parasite. Eat shellfish only when well cooked."
-  why_fr: "[FR TODO] Raw oysters, mussels, clams and other raw shellfish can carry listeria and the toxoplasmosis parasite. Eat shellfish only when well cooked."
+  why_fr: "Les huîtres, moules, palourdes et autres coquillages crus peuvent transmettre la listeria et le parasite de la toxoplasmose. Ne mangez les coquillages que bien cuits."
   sources: [ameli-toxo-prevention, ameli-aliments-eviter, nhs-foods-to-avoid, cdc-toxo-prevention]
 
 - id: smoked-marinated-fish
   status: avoid
   why_en: "Smoked or marinated fish (smoked salmon, smoked trout, herring in marinade) is eaten without cooking and can carry listeria. Peeled prawns or crayfish sold already cooked are in the same group."
-  why_fr: "[FR TODO] Smoked or marinated fish (smoked salmon, smoked trout, herring in marinade) is eaten without cooking and can carry listeria. Peeled prawns or crayfish sold already cooked are in the same group."
+  why_fr: "Le poisson fumé ou mariné (saumon fumé, truite fumée, hareng mariné) se mange sans cuisson et peut transmettre la listeria. Les crevettes décortiquées ou les écrevisses vendues déjà cuites font partie de la même catégorie."
   sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention]
 
 - id: mercury-predator-fish
   status: avoid
   why_en: "Swordfish, marlin, shark, siki (saumonette) and lamprey build up pollutants such as mercury. Avoid them."
-  why_fr: "[FR TODO] Swordfish, marlin, shark, siki (saumonette) and lamprey build up pollutants such as mercury. Avoid them."
+  why_fr: "L'espadon, le marlin, le requin, la saumonette (siki) et la lamproie accumulent des polluants comme le mercure. Évitez-les."
   sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid]
 
 - id: tuna-and-large-fish
   status: limit
   why_en: "Tuna (fresh or tinned), eel, monkfish, sea bass, sea bream and skate carry more pollutants. Eat them only now and then."
-  why_fr: "[FR TODO] Tuna (fresh or tinned), eel, monkfish, sea bass, sea bream and skate carry more pollutants. Eat them only now and then."
+  why_fr: "Le thon (frais ou en conserve), l'anguille, la lotte, le bar, la dorade et la raie contiennent davantage de polluants. Ne les mangez que de temps en temps."
   sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid]
 
 - id: well-cooked-fish
   status: eat
   why_en: "Well-cooked fish is good for you. Aim for fish twice a week, with one oily fish (salmon, sardine, mackerel, herring, trout). Hake, cod, whiting, sole and anchovy are good choices too. Vary the types."
-  why_fr: "[FR TODO] Well-cooked fish is good for you. Aim for fish twice a week, with one oily fish (salmon, sardine, mackerel, herring, trout). Hake, cod, whiting, sole and anchovy are good choices too. Vary the types."
+  why_fr: "Le poisson bien cuit est bon pour la santé. Visez deux portions de poisson par semaine, dont une de poisson gras (saumon, sardine, maquereau, hareng, truite). Le colin, le cabillaud, le merlan, la sole et l'anchois sont aussi de bons choix. Variez les espèces."
   sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter]
 
 # ---------- Eggs ----------
 - id: raw-undercooked-eggs
   status: avoid
   why_en: "Raw or runny eggs (soft-boiled, fried with a runny yolk) and home-made mayonnaise, chocolate mousse or tiramisu made with raw eggs can carry salmonella. Cook eggs until the white and yolk are firm. Shop-made versions are considered safe."
-  why_fr: "[FR TODO] Raw or runny eggs (soft-boiled, fried with a runny yolk) and home-made mayonnaise, chocolate mousse or tiramisu made with raw eggs can carry salmonella. Cook eggs until the white and yolk are firm. Shop-made versions are considered safe."
+  why_fr: "Les œufs crus ou coulants (œuf mollet, œuf au plat avec le jaune coulant) ainsi que la mayonnaise, la mousse au chocolat ou le tiramisu faits maison avec des œufs crus peuvent transmettre la salmonelle. Faites cuire les œufs jusqu'à ce que le blanc et le jaune soient fermes. Les versions du commerce sont considérées comme sûres."
   sources: [mangerbouger-aliments-eviter, nhs-foods-to-avoid]
 
 # ---------- Drinks ----------
 - id: alcohol
   status: avoid
   why_en: "No alcohol at all: wine, beer, cider, spirits and cocktails. The more you drink the higher the risk, and alcohol can harm the baby's development. Dishes and desserts made with alcohol are best avoided too. If you drank before you knew you were pregnant, do not worry too much: just stop now and tell your midwife or doctor if you are anxious."
-  why_fr: "[FR TODO] No alcohol at all: wine, beer, cider, spirits and cocktails. The more you drink the higher the risk, and alcohol can harm the baby's development. Dishes and desserts made with alcohol are best avoided too. If you drank before you knew you were pregnant, do not worry too much: just stop now and tell your midwife or doctor if you are anxious."
+  why_fr: "Aucun alcool : ni vin, ni bière, ni cidre, ni spiritueux, ni cocktails. Plus on en boit, plus le risque est élevé, et l'alcool peut nuire au développement du bébé. Il vaut mieux éviter aussi les plats et desserts préparés avec de l'alcool. Si vous avez bu avant de savoir que vous étiez enceinte, ne vous inquiétez pas trop : arrêtez dès maintenant, et parlez-en à votre sage-femme ou à votre médecin si vous êtes inquiète."
   sources: [mangerbouger-aliments-eviter, nhs-alcohol, nhs-foods-to-avoid]
 
 - id: liquorice-tea
   status: avoid
   why_en: "Liquorice (réglisse) in any form is not advised in pregnancy: herbal teas, sweets, syrups and alcohol-free pastis. Check the label of herbal teas."
-  why_fr: "[FR TODO] Liquorice (réglisse) in any form is not advised in pregnancy: herbal teas, sweets, syrups and alcohol-free pastis. Check the label of herbal teas."
+  why_fr: "La réglisse (sous toutes ses formes) n'est pas conseillée pendant la grossesse : tisanes, bonbons, sirops et pastis sans alcool. Vérifiez l'étiquette des tisanes."
   sources: [ameli-aliments-eviter, nhs-foods-to-avoid]
 
 # ---------- Vegetables, fruit, sprouts ----------
 - id: raw-sprouts
   status: avoid
   why_en: "Raw sprouted seeds (such as soy sprouts) can carry listeria. Eat them only if cooked until steaming hot."
-  why_fr: "[FR TODO] Raw sprouted seeds (such as soy sprouts) can carry listeria. Eat them only if cooked until steaming hot."
+  why_fr: "Les graines germées crues (comme les germes de soja) peuvent transmettre la listeria. Ne les mangez que cuites jusqu'à être bien chaudes."
   sources: [ameli-aliments-eviter, cdc-listeria-prevention]
 
 - id: unwashed-produce
   status: avoid
   why_en: "Soil can carry the toxoplasmosis parasite. Rinse raw vegetables, fruit and herbs well in clean water to remove all soil, including strawberries. Vinegar water is not needed."
-  why_fr: "[FR TODO] Soil can carry the toxoplasmosis parasite. Rinse raw vegetables, fruit and herbs well in clean water to remove all soil, including strawberries. Vinegar water is not needed."
+  why_fr: "La terre peut transmettre le parasite de la toxoplasmose. Lavez bien à l'eau propre les légumes crus, les fruits et les herbes pour enlever toute la terre, y compris sur les fraises. Pas besoin d'eau vinaigrée."
   sources: [ameli-toxo-prevention, nhs-toxoplasmosis, cdc-toxo-prevention]
 
 - id: restaurant-raw-vegetables
   status: limit
   conditions: [toxo_non_immune]
   why_en: "If you do not know how raw vegetables, herbs or fruit were washed (restaurant, take-away), choose them cooked instead."
-  why_fr: "[FR TODO] If you do not know how raw vegetables, herbs or fruit were washed (restaurant, take-away), choose them cooked instead."
+  why_fr: "Si vous ne savez pas comment les légumes, herbes ou fruits crus ont été lavés (restaurant, vente à emporter), choisissez-les cuits."
   sources: [ameli-toxo-prevention, ameli-aliments-eviter, mangerbouger-aliments-eviter]
 
 # ---------- Toxoplasmosis hygiene ----------
@@ -143,26 +144,26 @@
   status: avoid
   conditions: [toxo_non_immune]
   why_en: "Cat droppings can carry the toxoplasmosis parasite. Ask someone else to clean the litter tray. If you have to do it, wear gloves and wash your hands well afterwards. A cat that stays strictly indoors and eats only tinned or dry food is a very low risk."
-  why_fr: "[FR TODO] Cat droppings can carry the toxoplasmosis parasite. Ask someone else to clean the litter tray. If you have to do it, wear gloves and wash your hands well afterwards. A cat that stays strictly indoors and eats only tinned or dry food is a very low risk."
+  why_fr: "Les crottes de chat peuvent transmettre le parasite de la toxoplasmose. Demandez à quelqu'un d'autre de nettoyer la litière. Si vous devez le faire, portez des gants et lavez-vous bien les mains ensuite. Un chat strictement d'intérieur, qui ne mange que des boîtes ou des croquettes, présente un risque très faible."
   sources: [ameli-toxo-prevention, nhs-toxoplasmosis, cdc-toxo-prevention]
 
 - id: gardening-bare-hands
   status: avoid
   conditions: [toxo_non_immune]
   why_en: "Wear gloves for gardening or touching soil or sand, and wash your hands afterwards, even if you wore gloves."
-  why_fr: "[FR TODO] Wear gloves for gardening or touching soil or sand, and wash your hands afterwards, even if you wore gloves."
+  why_fr: "Portez des gants pour jardiner ou pour toucher la terre ou le sable, et lavez-vous les mains ensuite, même si vous avez porté des gants."
   sources: [ameli-toxo-prevention, nhs-toxoplasmosis, cdc-toxo-prevention]
 
 - id: hand-and-kitchen-hygiene
   status: eat
   conditions: [toxo_non_immune]
   why_en: "Wash your hands with soap for at least 30 seconds, brushing under the nails, before cooking and eating, and after handling raw meat, soil or animals. Wash knives, boards and worktops after raw meat."
-  why_fr: "[FR TODO] Wash your hands with soap for at least 30 seconds, brushing under the nails, before cooking and eating, and after handling raw meat, soil or animals. Wash knives, boards and worktops after raw meat."
+  why_fr: "Lavez-vous les mains au savon pendant au moins 30 secondes, en brossant sous les ongles, avant de cuisiner et de manger, et après avoir manipulé de la viande crue, de la terre ou des animaux. Lavez les couteaux, les planches et les plans de travail après la viande crue."
   sources: [ameli-toxo-prevention, nhs-toxoplasmosis]
 
 - id: toxo-monthly-blood-test
   status: eat
   conditions: [toxo_non_immune]
   why_en: "If you are not immune, you have a blood test for toxoplasmosis every month until the birth, and one more within the month after. Keep the precautions between tests, and see your doctor or midwife if you feel unwell."
-  why_fr: "[FR TODO] If you are not immune, you have a blood test for toxoplasmosis every month until the birth, and one more within the month after. Keep the precautions between tests, and see your doctor or midwife if you feel unwell."
+  why_fr: "Si vous n'êtes pas immunisée, vous faites une prise de sang pour la toxoplasmose chaque mois jusqu'à l'accouchement, et une fois de plus dans le mois qui suit. Gardez les précautions entre les analyses, et consultez votre médecin ou votre sage-femme si vous vous sentez mal."
   sources: [ameli-toxo-serologie]

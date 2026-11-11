@@ -18,8 +18,9 @@ describe("C1 content (urgent + food, EN)", () => {
     expect(items.length).toBeGreaterThan(20);
     for (const i of items) {
       if (i.status !== "eat") expect(i.sources.length).toBeGreaterThanOrEqual(2);
-      expect(i.why_fr.startsWith("[FR TODO] ")).toBe(true);
-      expect(i.why_fr).toBe(`[FR TODO] ${i.why_en}`);
+      // Since session C2 the EN file carries the French why_fr (see tests/content-fr.test.ts).
+      expect(i.why_fr).not.toContain("[FR TODO]");
+      expect(i.why_fr.length).toBeGreaterThan(0);
     }
   });
 
