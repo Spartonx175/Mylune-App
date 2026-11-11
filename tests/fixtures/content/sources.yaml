@@ -1,0 +1,4 @@
+allowed_domains: [ameli.fr, nhs.uk]
+sources:
+  - { id: src-a, name: ameli, url: "https://www.ameli.fr/fixture-a", title: Fixture A, accessed: 2026-11-11 }
+  - { id: src-b, name: NHS, url: "https://www.nhs.uk/fixture-b", title: Fixture B, accessed: 2026-11-11 }

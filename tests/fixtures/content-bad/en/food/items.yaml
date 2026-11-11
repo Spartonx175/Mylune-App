@@ -1,0 +1,1 @@
+- { id: one-source, status: avoid, why_fr: a, why_en: a, sources: [src-a] }

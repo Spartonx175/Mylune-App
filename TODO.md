@@ -17,3 +17,8 @@
 - Profile screen is read-only in B2; editing DDR/maternity/toxo flags comes later (SPEC §3.5).
 - Toxo default is `non_immune` (strict rules, SPEC §5); CMV default `unknown`. Confirm.
 - Unverified: Google sign-in from inside the installed app (WebAPK) returning to the app. Test on the phone.
+
+## B3 notes (2026-11-11)
+- DATING DECISION NEEDED (Div): the clinic's due date may differ from the DDR-based date in SPEC section 2. lib/dating.ts supports both: a due date entered in onboarding overrides the DDR (equivalent DDR = due date - 280 days). Confirm with the clinic which due date she should enter.
+- No health conditions are stored in the repo or the DB (only toxo_status). Adding condition flags would be a feature beyond SPEC (ask first).
+- content/sources.yaml has the allowlist and no entries yet; entries are added with the C1 content (each read and dated).

@@ -1,0 +1,3 @@
+- { id: raw-ham, status: avoid, conditions: [toxo_non_immune], why_fr: a, why_en: a, sources: [src-a, src-b] }
+- { id: soft-cheese, status: avoid, why_fr: a, why_en: a, sources: [src-a, src-b] }
+- { id: cooked-fish, status: eat, why_fr: a, why_en: a, sources: [src-a] }

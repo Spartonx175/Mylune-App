@@ -1,0 +1,29 @@
+# Source allowlist (SPEC section 7). Every health statement in /content cites an id from `sources`.
+# Anything outside allowed_domains needs Div's approval first. Subdomains match (e.g. www.ameli.fr).
+# Entries are added by the content sessions (C1+), each read and dated when the content is written.
+allowed_domains:
+  # France (primary)
+  - ameli.fr
+  - santepubliquefrance.fr
+  - 1000jours.fr
+  - has-sante.fr
+  - cngof.fr
+  - mangerbouger.fr
+  - service-public.fr
+  - caf.fr
+  # International
+  - nhs.uk
+  - acog.org
+  - who.int
+  - cdc.gov
+  - nice.org.uk
+  # Peer-reviewed, for specific claims only (cite author/year/journal in the title)
+  - pubmed.ncbi.nlm.nih.gov
+
+sources: []
+# Entry shape:
+# - id: ameli-toxo
+#   name: ameli
+#   url: https://www.ameli.fr/...
+#   title: Page title as read
+#   accessed: 2026-11-11
