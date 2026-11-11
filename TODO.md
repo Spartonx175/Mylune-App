@@ -6,3 +6,6 @@
 - **Language detection:** the app always opens in French unless the FR/EN toggle cookie says otherwise (browser language is ignored on purpose, so Div's EN browser does not flip her default).
 - **Android install:** verify on a real phone after the Vercel deploy (Chrome > menu > "Add to Home screen" / "Install app"). Service worker registration could not be tested in the in-app preview browser.
 - Profile screen is a placeholder reached from the top-right icon; the language toggle lives in the header for now (SPEC §3.5 puts language in settings).
+
+## BLOCKED: deploy (B1)
+- `git ls-remote https://github.com/Spartonx175/Mylune-App.git` returns "Repository not found" and no GitHub credential is stored on this PC. The B1 commit exists locally only (branch `main`, remote `origin` already added). Needed from Div: create the repo (or sign in to GitHub via Git Credential Manager), then `git push -u origin main`; Vercel project mylune-app auto-deploys from `main`. No Vercel CLI is installed here either.
