@@ -8,3 +8,4 @@
 - 2026-11-11 Cats: three household cats as cropped photos (public/cats), drawn animated mascots in their coat colours, companion-cat picker on Profile (cookie, per phone) that changes mascot and soft tint; shown on login, onboarding, Baby tab, loading and empty states.
 - 2026-11-11 Cats: real names (Ohana ginger, Luna tabby, Loomis ragdoll).
 - 2026-11-11 C1 slice 2a: content/en/weeks/w06-w12 (NHS week pages + ameli follow-up pages), 24 new sources in sources.yaml, tests/content-weeks.test.ts. size_compare kumquat added for w10.
+- 2026-11-11 C1 slice 2b/2c: content/en/symptoms (6 files), content/en/calendar/fr-followup.yaml (22 steps), loadSymptom/listSymptoms/loadCalendar in lib/content/load.ts (dose check, 2-source rule for symptoms), fixtures + tests/content-symptoms-calendar.test.ts. Gaps in TODO.md.

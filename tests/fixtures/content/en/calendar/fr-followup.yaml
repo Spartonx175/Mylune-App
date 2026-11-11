@@ -1,0 +1,13 @@
+- id: declaration
+  sa_from: 0
+  sa_to: 14
+  title: Declare the pregnancy
+  description: Send the declaration before the end of the 3rd month.
+  sources: [src-a, src-b]
+- id: maternity-registration
+  sa_from: 6
+  sa_to: 14
+  title: Register at a maternity unit
+  description: Registration may fill early.
+  unverified: true
+  sources: []

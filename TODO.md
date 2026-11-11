@@ -31,3 +31,15 @@
 - **Maternity guide PDF** (ameli guide-maternite-2023.pdf) was unreadable by the fetch tool; not cited.
 - urgent.md is not yet read by a loader (no loadUrgent in lib/content); the test checks sections and sources. Add a loader when the Today/urgent screen is built.
 - why_fr is "[FR TODO] " + EN text; C2 (Haiku) translates.
+
+## C1 slice 2 notes (weeks 6-12, T1 symptoms, FR calendar, EN) - for Div
+- **Weeks 6-12 have ONE development/size source (NHS week pages).** No second allowlisted page was readable: acog.org returns 402, 1000jours.fr resets the connection, has-sante.fr and caf.fr block bots, ameli has no week-by-week page. Sizes (mm) and development bullets are therefore single-source (NHS) plus ameli for the follow-up/todo items. Add a second source for each week when one is reachable (1000jours.fr, CNGOF).
+- **Fruit ids:** NHS uses pea/grape/raspberry/strawberry/apricot/fig/plum. Mapped to the allowed ids by length: lentil (6 mm), blueberry (10), raspberry (16), olive (22), fig (41), plum (54). **Added `kumquat` for w10 (30 mm)**: no id in the list fits; the Today/Baby session must draw it.
+- **Breast tenderness** has no dedicated page on an allowlisted site (no NHS page, nothing on ameli). The file is built from the week pages + ameli early-signs + NHS "common health problems" and gives no remedies; comfort tips (bra, etc.) are missing for lack of a source.
+- **Fatigue** has only NHS tiredness + NHS week pages (the ameli fatigue page is general, not pregnancy). **Constipation** has NHS common-health-problems + NHS stomach pain only. A French source is wanted for both.
+- **Maternity registration timing (Paris):** no allowlisted source found. Entry `maternity-registration` is `unverified: true` with no sources. Question for Div: approve service-public.gouv.fr (service-public.fr redirects there) or a Paris/AP-HP page?
+- **No "8th-month interview" found.** ameli lists an early prenatal interview (4th month), a mandatory anaesthetist consultation in the 8th month (included), and a postnatal interview 4-8 weeks after birth (not in the calendar: it is after birth, not on the SA scale; page ameli-retour-maison is in sources.yaml for it).
+- **Months to SA are approximate** (ameli speaks in months; the file header documents the mapping). Please check with the sage-femme.
+- **Declaration deadline:** ameli says "before the end of the 3rd month" (about 14 SA); the sage-femme référente page says the *referent-midwife* form is due before the end of the 5th month. Not the same thing; both stated correctly in the file.
+- Prevention check-up (before 24 weeks) and the first-consultation test list each come from ONE ameli page (ameli-programme-suivi); ameli-toxo-serologie is the second source only for the toxoplasmosis test.
+- ameli-aliments-eviter, nhs-foods-to-avoid and nhs-alcohol (already in sources.yaml from slice 1) are reused for the food tips in the week files.

@@ -6,7 +6,7 @@
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import path from "node:path";
 import { parse } from "yaml";
-import { ContentError, type FoodItem, type Locale, type SourcesFile, type WeekFile } from "./types";
+import { ContentError, type CalendarEntry, type FoodItem, type Locale, type SourcesFile, type SymptomFile, type WeekFile } from "./types";
 
 const DEFAULT_ROOT = path.join(process.cwd(), "content");
 
@@ -118,4 +118,68 @@ export function loadFood(locale: Locale, root = DEFAULT_ROOT): FoodItem[] {
 /** Keep items whose conditions are all active for this user (no conditions = shown to everyone). */
 export function foodFor(items: FoodItem[], activeConditions: string[]): FoodItem[] {
   return items.filter((i) => !i.conditions?.length || i.conditions.every((c) => activeConditions.includes(c)));
+}
+
+/** CLAUDE.md: no medication doses. Rejects numbers followed by a dosage unit. */
+const DOSE = /\b\d+([.,]\d+)?\s?(mg|g|ml|mcg|µg|ug|iu|ui|micrograms?|milligrams?)\b/i;
+const noDose = (text: string, label: string): void => {
+  if (DOSE.test(text)) throw new ContentError(`${label}: contains what looks like a dose`);
+};
+
+export function loadSymptom(locale: Locale, id: string, root = DEFAULT_ROOT): SymptomFile {
+  const label = `${locale}/symptoms/${id}.md`;
+  const { data, body } = parseFrontmatter(read(path.join(root, locale, "symptoms", `${id}.md`)), label);
+  const known = new Set(loadSources(root).sources.map((s) => s.id));
+  if (data.id !== id) throw new ContentError(`${label}: id must be "${id}"`);
+  if (typeof data.title !== "string" || typeof data.reviewed !== "string") throw new ContentError(`${label}: title and reviewed are required`);
+  if (!isStringArray(data.see_a_professional_if) || data.see_a_professional_if.length === 0) {
+    throw new ContentError(`${label}: see_a_professional_if must be a non-empty list of strings`);
+  }
+  if (!body) throw new ContentError(`${label}: body is empty`);
+  noDose([body, ...data.see_a_professional_if].join(" "), label);
+  // Symptom content is held to the 2-source bar.
+  return {
+    id,
+    title: data.title,
+    sources: checkSources(data.sources, known, label, 2),
+    reviewed: data.reviewed,
+    see_a_professional_if: data.see_a_professional_if,
+    body,
+  };
+}
+
+/** Symptom ids that have a file for this locale, alphabetical. */
+export function listSymptoms(locale: Locale, root = DEFAULT_ROOT): string[] {
+  const dir = path.join(root, locale, "symptoms");
+  if (!existsSync(dir)) return [];
+  return readdirSync(dir)
+    .filter((f) => f.endsWith(".md"))
+    .map((f) => f.slice(0, -3))
+    .sort();
+}
+
+export function loadCalendar(locale: Locale, root = DEFAULT_ROOT): CalendarEntry[] {
+  const label = `${locale}/calendar/fr-followup.yaml`;
+  const list = parse(read(path.join(root, locale, "calendar", "fr-followup.yaml"))) as unknown;
+  if (!Array.isArray(list)) throw new ContentError(`${label}: must be a list`);
+  const known = new Set(loadSources(root).sources.map((s) => s.id));
+  const seen = new Set<string>();
+  const sorted = [...(list as CalendarEntry[])].sort((a, b) => a.sa_from - b.sa_from);
+  return sorted.map((e) => {
+    const l = `${label}#${e.id ?? "?"}`;
+    if (!e.id || seen.has(e.id)) throw new ContentError(`${l}: missing or duplicate id`);
+    seen.add(e.id);
+    if (!Number.isInteger(e.sa_from) || !Number.isInteger(e.sa_to) || e.sa_from < 0 || e.sa_to < e.sa_from) {
+      throw new ContentError(`${l}: sa_from and sa_to must be integers with sa_from <= sa_to`);
+    }
+    if (typeof e.title !== "string" || typeof e.description !== "string" || !e.title || !e.description) {
+      throw new ContentError(`${l}: title and description are required`);
+    }
+    if (e.unverified !== undefined && typeof e.unverified !== "boolean") throw new ContentError(`${l}: unverified must be a boolean`);
+    noDose(`${e.title} ${e.description}`, l);
+    // Unverified entries may cite nothing; verified ones need at least one known source.
+    if (e.unverified === true && (!e.sources || e.sources.length === 0)) return { ...e, sources: [] };
+    checkSources(e.sources, known, l);
+    return e;
+  });
 }

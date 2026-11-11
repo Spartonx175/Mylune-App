@@ -1,0 +1,190 @@
+# French pregnancy follow-up timeline by SA (weeks of amenorrhoea). EN, C1 slice 2.
+# Sources: ameli.fr pages read 2026-11-11. Months are converted to approximate SA windows by Mylune
+# (month 4 = 14-17 SA, month 5 = 18-22, month 6 = 23-26, month 7 = 27-30, month 8 = 31-35, month 9 = 36-41).
+# unverified: true = no allowlisted source states this; shown as "to confirm".
+
+- id: declaration
+  sa_from: 6
+  sa_to: 14
+  title: Declare your pregnancy
+  description: >-
+    Your doctor or midwife declares the pregnancy before the end of the 3rd month. Online, they send it to the CPAM
+    and the CAF. On paper, the pink copy goes to the CPAM and the two blue copies go to the CAF. After this, the CPAM
+    sends you a personal calendar of exams.
+  sources: [ameli-grossesse-demarches, ameli-programme-suivi]
+
+- id: consultation-1
+  sa_from: 6
+  sa_to: 14
+  title: "Consultation 1 of 7: first prenatal exam"
+  description: >-
+    The first of the 7 consultations takes place before the end of the 3rd month, with a doctor or a midwife. It
+    includes weight, blood pressure and a talk about folic acid (vitamin B9), which is advised up to 12 weeks.
+  sources: [ameli-programme-suivi, ameli-grossesse-demarches]
+
+- id: blood-tests-first
+  sa_from: 6
+  sa_to: 14
+  title: First blood and urine tests
+  description: >-
+    Around the first consultation you are offered blood tests: blood group and Rh, irregular antibodies, and immunity
+    to rubella, toxoplasmosis, syphilis, hepatitis B, HIV and CMV, plus a check for anaemia. A urine dipstick checks
+    for sugar and protein. Your doctor or midwife prescribes them.
+  sources: [ameli-programme-suivi, ameli-toxo-serologie]
+
+- id: echo-1
+  sa_from: 11
+  sa_to: 13
+  title: "Ultrasound 1 of 3 (11 SA to 13 SA + 6 days)"
+  description: >-
+    The first ultrasound dates the pregnancy, shows whether there is one baby or more, checks that the baby is alive,
+    sets the due date, looks for major malformations and measures the neck fold (nuchal translucency). It is
+    covered at 70%.
+  sources: [ameli-programme-suivi, ameli-grossesse-demarches]
+
+- id: trisomy-21-screening
+  sa_from: 11
+  sa_to: 13
+  title: Screening for trisomy 21
+  description: >-
+    The screening combines the neck-fold measurement at the first ultrasound, a blood test and your age. If the
+    result is high, you are offered a blood test on the baby's DNA or a karyotype. If it was not offered in the first
+    trimester, it can be offered in the 4th month.
+  sources: [ameli-programme-suivi, ameli-suivi-mensuel]
+
+- id: prevention-check
+  sa_from: 6
+  sa_to: 24
+  title: Prevention check-up with a midwife
+  description: >-
+    A prenatal prevention check-up (bilan prénatal de prévention) with a midwife can be done from the declaration,
+    ideally before the 24th week.
+  sources: [ameli-programme-suivi]
+
+- id: maternity-choice
+  sa_from: 6
+  sa_to: 14
+  title: Choose your maternity unit
+  description: >-
+    Maternity units have three levels. Level 1 is for births without complications. Level 2 also has neonatal care.
+    Level 3 has neonatal intensive care and adult resuscitation. Ask your doctor or midwife which level suits you.
+  sources: [ameli-preparation-parentalite]
+
+- id: maternity-registration
+  sa_from: 6
+  sa_to: 14
+  title: Register at your maternity unit (Paris)
+  description: >-
+    In Paris, places in maternity units can fill up early, so do not wait. Contact the units you like as soon as you
+    can, ideally in the first trimester, and ask about their registration rules. Typical timing is not confirmed by a
+    source yet.
+  sources: []
+  unverified: true
+
+- id: consultation-2
+  sa_from: 14
+  sa_to: 17
+  title: "Consultation 2 of 7 (4th month)"
+  description: >-
+    From the 4th month you see your doctor or midwife every month. Each visit checks weight, blood pressure, the
+    height of the womb, the baby's heart and a urine dipstick. A free dental check-up is also available from the 4th
+    month.
+  sources: [ameli-suivi-mensuel, ameli-grossesse-demarches]
+
+- id: prenatal-interview
+  sa_from: 14
+  sa_to: 17
+  title: Early prenatal interview (4th month)
+  description: >-
+    This interview with a midwife or doctor is advised from the 4th month, and you can start in the first trimester.
+    It is never too late to have it. It is covered at 100%. It is also when the 7 preparation sessions for birth and
+    parenthood are planned.
+  sources: [ameli-preparation-parentalite, ameli-suivi-mensuel]
+
+- id: toxo-monthly
+  sa_from: 14
+  sa_to: 41
+  title: Monthly toxoplasmosis blood test (if not immune)
+  description: >-
+    If your toxoplasmosis test is negative, you have a blood check every month until the birth. This follows the
+    monthly visits.
+  sources: [ameli-suivi-mensuel, ameli-toxo-serologie]
+
+- id: pertussis-vaccine
+  sa_from: 20
+  sa_to: 36
+  title: Whooping cough (pertussis) vaccine
+  description: >-
+    The whooping cough vaccine is given between 20 and 36 weeks. Ask your doctor or midwife.
+  sources: [ameli-suivi-mensuel, ameli-programme-suivi]
+
+- id: echo-2
+  sa_from: 20
+  sa_to: 24
+  title: "Ultrasound 2 of 3 (20 to 24 SA)"
+  description: >-
+    The second ultrasound is the detailed (morphological) scan. The first two ultrasounds, before the end of the
+    5th month, are covered at 70%.
+  sources: [ameli-suivi-mensuel, ameli-grossesse-demarches]
+
+- id: rubella-check
+  sa_from: 20
+  sa_to: 20
+  title: Rubella blood check (if not immune)
+  description: If your rubella test was negative, a new blood check is planned at the 20th week.
+  sources: [ameli-suivi-mensuel]
+
+- id: consultation-3
+  sa_from: 18
+  sa_to: 22
+  title: "Consultation 3 of 7 (5th month)"
+  description: >-
+    Your visits continue each month. A blood count (anaemia, white cells, platelets) is planned in the 5th or 6th
+    month.
+  sources: [ameli-suivi-mensuel, ameli-grossesse-demarches]
+
+- id: consultation-4
+  sa_from: 23
+  sa_to: 26
+  title: "Consultation 4 of 7 (6th month)"
+  description: >-
+    If you are Rh negative, an irregular-antibody check is planned in the 6th and 8th months. From the 6th month,
+    your care is covered at 100%.
+  sources: [ameli-suivi-mensuel, ameli-grossesse-demarches]
+
+- id: consultation-5
+  sa_from: 27
+  sa_to: 30
+  title: "Consultation 5 of 7 (7th month)"
+  description: Your fifth visit takes place in the 7th month.
+  sources: [ameli-suivi-mensuel]
+
+- id: rsv-vaccine
+  sa_from: 32
+  sa_to: 36
+  title: RSV vaccine (Abrysvo)
+  description: The RSV vaccine is given only between the 32nd and 36th week of amenorrhoea. Ask your doctor or midwife.
+  sources: [ameli-suivi-mensuel, ameli-programme-suivi]
+
+- id: echo-3
+  sa_from: 30
+  sa_to: 35
+  title: "Ultrasound 3 of 3 (30 to 35 SA)"
+  description: The third ultrasound is covered at 100%.
+  sources: [ameli-suivi-mensuel, ameli-grossesse-demarches]
+
+- id: consultation-6
+  sa_from: 31
+  sa_to: 35
+  title: "Consultation 6 of 7 (8th month) and anaesthetist visit"
+  description: >-
+    In the 8th month you have your sixth visit and a mandatory consultation with an anaesthetist, even if you do not
+    plan to have an epidural.
+  sources: [ameli-suivi-mensuel]
+
+- id: consultation-7
+  sa_from: 36
+  sa_to: 41
+  title: "Consultation 7 of 7 (9th month)"
+  description: In an uncomplicated pregnancy, the 9th-month visit is the last one before the birth.
+  sources: [ameli-suivi-mensuel, ameli-grossesse-demarches]

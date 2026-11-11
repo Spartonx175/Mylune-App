@@ -34,6 +34,31 @@ export type WeekFile = {
   body: string;
 };
 
+export type SymptomFile = {
+  id: string;
+  title: string;
+  sources: string[];
+  reviewed: string;
+  /** Plain-language situations in which she should call a professional. */
+  see_a_professional_if: string[];
+  /** Markdown body: comfort tips. */
+  body: string;
+};
+
+/** One step of the French follow-up timeline (content/{locale}/calendar/fr-followup.yaml). */
+export type CalendarEntry = {
+  id: string;
+  /** First SA (weeks of amenorrhoea) of the window. */
+  sa_from: number;
+  /** Last SA of the window (inclusive). */
+  sa_to: number;
+  title: string;
+  description: string;
+  sources: string[];
+  /** True when no allowlisted source states the timing; shown as "to confirm". */
+  unverified?: boolean;
+};
+
 export type FoodStatus = "eat" | "limit" | "avoid";
 
 export type FoodItem = {
