@@ -64,9 +64,9 @@
   },
   "cats": {
     "names": {
-      "ginger": "Ginger",
-      "tabby": "Tabby",
-      "birman": "Birman"
+      "ginger": "Ohana",
+      "tabby": "Luna",
+      "birman": "Loomis"
     },
     "photoAlt": "Photo of {name}",
     "welcome": "Our cats say hello",
