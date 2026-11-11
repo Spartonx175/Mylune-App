@@ -22,3 +22,12 @@
 - DATING DECISION NEEDED (Div): the clinic's due date may differ from the DDR-based date in SPEC section 2. lib/dating.ts supports both: a due date entered in onboarding overrides the DDR (equivalent DDR = due date - 280 days). Confirm with the clinic which due date she should enter.
 - No health conditions are stored in the repo or the DB (only toxo_status). Adding condition flags would be a feature beyond SPEC (ask first).
 - content/sources.yaml has the allowlist and no entries yet; entries are added with the C1 content (each read and dated).
+
+## C1 slice 1 notes (urgent + food, EN) - for Div
+- **Missing 2nd source, so NOT written (add when a source is read):** caffeine (only NHS foods page read; WHO guideline PDF returned 403), general herbal teas other than liquorice (NHS only), liver is cited to two NHS pages (no FR/other source found).
+- **114 (SMS emergency for deaf/hard of hearing) not included:** no allowlisted page that states it was readable (service-public.fr redirects to service-public.gouv.fr, which is NOT on the allowlist; approve adding service-public.gouv.fr?). 15 and 112 are stated on one page only (ameli crise suicidaire); 3114 on two ameli pages.
+- **Urgent topics left out for lack of 2 sources:** loss of fluid, regular painful contractions before term, fever. Reduced baby movements is cited to two NHS pages only; a French source (CNGOF/HAS/ameli) is still wanted. Retry 1000jours.fr (connection reset) and cngof.fr.
+- **French vs UK differences:** pâté, soft cheeses and dry-cured meats follow the stricter French rule. NHS lists pâté as "be careful". Please have the sage-femme glance at food + urgent.
+- **Maternity guide PDF** (ameli guide-maternite-2023.pdf) was unreadable by the fetch tool; not cited.
+- urgent.md is not yet read by a loader (no loadUrgent in lib/content); the test checks sections and sources. Add a loader when the Today/urgent screen is built.
+- why_fr is "[FR TODO] " + EN text; C2 (Haiku) translates.

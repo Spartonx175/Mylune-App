@@ -1,0 +1,168 @@
+# Food list (SPEC section 7). EN authored first. why_fr = "[FR TODO] " + EN text until session C2 (Haiku) translates it.
+# Sources read 2026-11-11 (see content/sources.yaml). No doses, no diagnosis.
+# Where French and UK/US pages differ (e.g. pâté, soft cheese), the stricter French rule is used.
+
+# ---------- Meat ----------
+- id: raw-undercooked-meat
+  status: avoid
+  conditions: [toxo_non_immune]
+  why_en: "Raw or pink meat can carry the toxoplasmosis parasite. Cook meat right through, with no pink juice when you cut it. Freezing meat for at least 3 days at -18°C or colder also helps."
+  why_fr: "[FR TODO] Raw or pink meat can carry the toxoplasmosis parasite. Cook meat right through, with no pink juice when you cut it. Freezing meat for at least 3 days at -18°C or colder also helps."
+  sources: [ameli-toxo-prevention, nhs-toxoplasmosis, cdc-toxo-prevention]
+
+- id: well-cooked-meat
+  status: eat
+  conditions: [toxo_non_immune]
+  why_en: "Meat that is cooked right through is fine. Cutting it open should show no pink juice. A microwave does not kill the parasite better than other ways of cooking."
+  why_fr: "[FR TODO] Meat that is cooked right through is fine. Cutting it open should show no pink juice. A microwave does not kill the parasite better than other ways of cooking."
+  sources: [ameli-toxo-prevention]
+
+- id: smoked-marinated-meat
+  status: avoid
+  conditions: [toxo_non_immune]
+  why_en: "Smoked, marinated, salted or grilled meat (including game) is not safe unless it is cooked right through."
+  why_fr: "[FR TODO] Smoked, marinated, salted or grilled meat (including game) is not safe unless it is cooked right through."
+  sources: [ameli-toxo-prevention, mangerbouger-aliments-eviter]
+
+- id: dry-cured-meats
+  status: avoid
+  why_en: "Dry sausage (saucisson sec), dry ham (jambon sec), salami and similar cured meats are eaten raw. They can carry germs that cause toxoplasmosis and salmonella. Eat them only if cooked until steaming hot, for example on a hot pizza."
+  why_fr: "[FR TODO] Dry sausage (saucisson sec), dry ham (jambon sec), salami and similar cured meats are eaten raw. They can carry germs that cause toxoplasmosis and salmonella. Eat them only if cooked until steaming hot, for example on a hot pizza."
+  sources: [mangerbouger-aliments-eviter, nhs-toxoplasmosis, nhs-foods-to-avoid]
+
+- id: spreadable-charcuterie
+  status: avoid
+  why_en: "Rillettes, pâté, foie gras and jellied meat products can carry listeria, a germ that grows even in the fridge. Cooked ham is fine only if you heat it well before eating. Sausages and boudin noir that you cook yourself are better."
+  why_fr: "[FR TODO] Rillettes, pâté, foie gras and jellied meat products can carry listeria, a germ that grows even in the fridge. Cooked ham is fine only if you heat it well before eating. Sausages and boudin noir that you cook yourself are better."
+  sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention]
+
+- id: liver
+  status: avoid
+  why_en: "Liver and liver products (including liver pâté) contain a lot of vitamin A, which can harm the baby's development. Skip them for the whole pregnancy."
+  why_fr: "[FR TODO] Liver and liver products (including liver pâté) contain a lot of vitamin A, which can harm the baby's development. Skip them for the whole pregnancy."
+  sources: [nhs-foods-to-avoid, nhs-vitamins]
+
+# ---------- Dairy ----------
+- id: raw-milk-and-cheese
+  status: avoid
+  why_en: "Raw milk and cheese made from raw (unpasteurised) milk can carry listeria. This includes raw goat's milk. Choose pasteurised milk, yoghurt and cheese."
+  why_fr: "[FR TODO] Raw milk and cheese made from raw (unpasteurised) milk can carry listeria. This includes raw goat's milk. Choose pasteurised milk, yoghurt and cheese."
+  sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid]
+
+- id: soft-rind-cheese
+  status: avoid
+  why_en: "Cheeses with a soft or washed rind (camembert, brie, munster, pont-l'évêque) and soft uncooked pressed cheeses (reblochon, morbier) can carry listeria. They are fine if cooked until steaming hot in a recipe. Remove the rind from other cheeses. Pre-grated bagged cheese is not advised: grate your own."
+  why_fr: "[FR TODO] Cheeses with a soft or washed rind (camembert, brie, munster, pont-l'évêque) and soft uncooked pressed cheeses (reblochon, morbier) can carry listeria. They are fine if cooked until steaming hot in a recipe. Remove the rind from other cheeses. Pre-grated bagged cheese is not advised: grate your own."
+  sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid]
+
+- id: hard-cooked-cheese
+  status: eat
+  why_en: "Hard cooked pressed cheeses (comté, beaufort, emmental, gruyère, parmesan) are fine, and so are pasteurised cheeses that are not on the avoid list."
+  why_fr: "[FR TODO] Hard cooked pressed cheeses (comté, beaufort, emmental, gruyère, parmesan) are fine, and so are pasteurised cheeses that are not on the avoid list."
+  sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter]
+
+# ---------- Fish and shellfish ----------
+- id: raw-fish-sushi
+  status: avoid
+  why_en: "Raw fish (sushi, sashimi, tarama) can carry listeria, and freezing does not remove listeria. Sushi made with cooked fish is fine."
+  why_fr: "[FR TODO] Raw fish (sushi, sashimi, tarama) can carry listeria, and freezing does not remove listeria. Sushi made with cooked fish is fine."
+  sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid]
+
+- id: raw-shellfish
+  status: avoid
+  why_en: "Raw oysters, mussels, clams and other raw shellfish can carry listeria and the toxoplasmosis parasite. Eat shellfish only when well cooked."
+  why_fr: "[FR TODO] Raw oysters, mussels, clams and other raw shellfish can carry listeria and the toxoplasmosis parasite. Eat shellfish only when well cooked."
+  sources: [ameli-toxo-prevention, ameli-aliments-eviter, nhs-foods-to-avoid, cdc-toxo-prevention]
+
+- id: smoked-marinated-fish
+  status: avoid
+  why_en: "Smoked or marinated fish (smoked salmon, smoked trout, herring in marinade) is eaten without cooking and can carry listeria. Peeled prawns or crayfish sold already cooked are in the same group."
+  why_fr: "[FR TODO] Smoked or marinated fish (smoked salmon, smoked trout, herring in marinade) is eaten without cooking and can carry listeria. Peeled prawns or crayfish sold already cooked are in the same group."
+  sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention]
+
+- id: mercury-predator-fish
+  status: avoid
+  why_en: "Swordfish, marlin, shark, siki (saumonette) and lamprey build up pollutants such as mercury. Avoid them."
+  why_fr: "[FR TODO] Swordfish, marlin, shark, siki (saumonette) and lamprey build up pollutants such as mercury. Avoid them."
+  sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid]
+
+- id: tuna-and-large-fish
+  status: limit
+  why_en: "Tuna (fresh or tinned), eel, monkfish, sea bass, sea bream and skate carry more pollutants. Eat them only now and then."
+  why_fr: "[FR TODO] Tuna (fresh or tinned), eel, monkfish, sea bass, sea bream and skate carry more pollutants. Eat them only now and then."
+  sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid]
+
+- id: well-cooked-fish
+  status: eat
+  why_en: "Well-cooked fish is good for you. Aim for fish twice a week, with one oily fish (salmon, sardine, mackerel, herring, trout). Hake, cod, whiting, sole and anchovy are good choices too. Vary the types."
+  why_fr: "[FR TODO] Well-cooked fish is good for you. Aim for fish twice a week, with one oily fish (salmon, sardine, mackerel, herring, trout). Hake, cod, whiting, sole and anchovy are good choices too. Vary the types."
+  sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter]
+
+# ---------- Eggs ----------
+- id: raw-undercooked-eggs
+  status: avoid
+  why_en: "Raw or runny eggs (soft-boiled, fried with a runny yolk) and home-made mayonnaise, chocolate mousse or tiramisu made with raw eggs can carry salmonella. Cook eggs until the white and yolk are firm. Shop-made versions are considered safe."
+  why_fr: "[FR TODO] Raw or runny eggs (soft-boiled, fried with a runny yolk) and home-made mayonnaise, chocolate mousse or tiramisu made with raw eggs can carry salmonella. Cook eggs until the white and yolk are firm. Shop-made versions are considered safe."
+  sources: [mangerbouger-aliments-eviter, nhs-foods-to-avoid]
+
+# ---------- Drinks ----------
+- id: alcohol
+  status: avoid
+  why_en: "No alcohol at all: wine, beer, cider, spirits and cocktails. The more you drink the higher the risk, and alcohol can harm the baby's development. Dishes and desserts made with alcohol are best avoided too. If you drank before you knew you were pregnant, do not worry too much: just stop now and tell your midwife or doctor if you are anxious."
+  why_fr: "[FR TODO] No alcohol at all: wine, beer, cider, spirits and cocktails. The more you drink the higher the risk, and alcohol can harm the baby's development. Dishes and desserts made with alcohol are best avoided too. If you drank before you knew you were pregnant, do not worry too much: just stop now and tell your midwife or doctor if you are anxious."
+  sources: [mangerbouger-aliments-eviter, nhs-alcohol, nhs-foods-to-avoid]
+
+- id: liquorice-tea
+  status: avoid
+  why_en: "Liquorice (réglisse) in any form is not advised in pregnancy: herbal teas, sweets, syrups and alcohol-free pastis. Check the label of herbal teas."
+  why_fr: "[FR TODO] Liquorice (réglisse) in any form is not advised in pregnancy: herbal teas, sweets, syrups and alcohol-free pastis. Check the label of herbal teas."
+  sources: [ameli-aliments-eviter, nhs-foods-to-avoid]
+
+# ---------- Vegetables, fruit, sprouts ----------
+- id: raw-sprouts
+  status: avoid
+  why_en: "Raw sprouted seeds (such as soy sprouts) can carry listeria. Eat them only if cooked until steaming hot."
+  why_fr: "[FR TODO] Raw sprouted seeds (such as soy sprouts) can carry listeria. Eat them only if cooked until steaming hot."
+  sources: [ameli-aliments-eviter, cdc-listeria-prevention]
+
+- id: unwashed-produce
+  status: avoid
+  why_en: "Soil can carry the toxoplasmosis parasite. Rinse raw vegetables, fruit and herbs well in clean water to remove all soil, including strawberries. Vinegar water is not needed."
+  why_fr: "[FR TODO] Soil can carry the toxoplasmosis parasite. Rinse raw vegetables, fruit and herbs well in clean water to remove all soil, including strawberries. Vinegar water is not needed."
+  sources: [ameli-toxo-prevention, nhs-toxoplasmosis, cdc-toxo-prevention]
+
+- id: restaurant-raw-vegetables
+  status: limit
+  conditions: [toxo_non_immune]
+  why_en: "If you do not know how raw vegetables, herbs or fruit were washed (restaurant, take-away), choose them cooked instead."
+  why_fr: "[FR TODO] If you do not know how raw vegetables, herbs or fruit were washed (restaurant, take-away), choose them cooked instead."
+  sources: [ameli-toxo-prevention, ameli-aliments-eviter, mangerbouger-aliments-eviter]
+
+# ---------- Toxoplasmosis hygiene ----------
+- id: cat-litter
+  status: avoid
+  conditions: [toxo_non_immune]
+  why_en: "Cat droppings can carry the toxoplasmosis parasite. Ask someone else to clean the litter tray. If you have to do it, wear gloves and wash your hands well afterwards. A cat that stays strictly indoors and eats only tinned or dry food is a very low risk."
+  why_fr: "[FR TODO] Cat droppings can carry the toxoplasmosis parasite. Ask someone else to clean the litter tray. If you have to do it, wear gloves and wash your hands well afterwards. A cat that stays strictly indoors and eats only tinned or dry food is a very low risk."
+  sources: [ameli-toxo-prevention, nhs-toxoplasmosis, cdc-toxo-prevention]
+
+- id: gardening-bare-hands
+  status: avoid
+  conditions: [toxo_non_immune]
+  why_en: "Wear gloves for gardening or touching soil or sand, and wash your hands afterwards, even if you wore gloves."
+  why_fr: "[FR TODO] Wear gloves for gardening or touching soil or sand, and wash your hands afterwards, even if you wore gloves."
+  sources: [ameli-toxo-prevention, nhs-toxoplasmosis, cdc-toxo-prevention]
+
+- id: hand-and-kitchen-hygiene
+  status: eat
+  conditions: [toxo_non_immune]
+  why_en: "Wash your hands with soap for at least 30 seconds, brushing under the nails, before cooking and eating, and after handling raw meat, soil or animals. Wash knives, boards and worktops after raw meat."
+  why_fr: "[FR TODO] Wash your hands with soap for at least 30 seconds, brushing under the nails, before cooking and eating, and after handling raw meat, soil or animals. Wash knives, boards and worktops after raw meat."
+  sources: [ameli-toxo-prevention, nhs-toxoplasmosis]
+
+- id: toxo-monthly-blood-test
+  status: eat
+  conditions: [toxo_non_immune]
+  why_en: "If you are not immune, you have a blood test for toxoplasmosis every month until the birth, and one more within the month after. Keep the precautions between tests, and see your doctor or midwife if you feel unwell."
+  why_fr: "[FR TODO] If you are not immune, you have a blood test for toxoplasmosis every month until the birth, and one more within the month after. Keep the precautions between tests, and see your doctor or midwife if you feel unwell."
+  sources: [ameli-toxo-serologie]

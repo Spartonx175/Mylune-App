@@ -20,7 +20,123 @@ allowed_domains:
   # Peer-reviewed, for specific claims only (cite author/year/journal in the title)
   - pubmed.ncbi.nlm.nih.gov
 
-sources: []
+sources:
+  # --- C1 slice 1 (urgent + food), all pages read 2026-11-11 ---
+  - id: ameli-aliments-eviter
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/devenir-parent/grossesse/grossesse-en-bonne-sante/grossesse-alimentation/les-aliments-eviter-et-les-precautions-d-hygiene-pendant-la-grossesse
+    title: Les aliments à éviter et les précautions d'hygiène pendant la grossesse
+    accessed: 2026-11-11
+  - id: ameli-toxo-prevention
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/themes/toxoplasmose/prevention
+    title: "Toxoplasmose : gestes de prévention à adopter lors de la grossesse ou en cas d'immunodépression"
+    accessed: 2026-11-11
+  - id: ameli-toxo-serologie
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/themes/toxoplasmose/bons-reflexes-cas-faut-consulter
+    title: "Toxoplasmose : êtes-vous immunisé(e) ?"
+    accessed: 2026-11-11
+  - id: mangerbouger-aliments-eviter
+    name: mangerbouger.fr
+    url: https://www.mangerbouger.fr/manger-mieux/a-tout-age-et-a-chaque-etape-de-la-vie/les-recommandations-et-conseils-avant-pendant-et-apres-la-grossesse/quels-aliments-eviter-et-quelles-precautions-prendre-quand-on-est-enceinte
+    title: "Quels aliments éviter et quelles précautions prendre quand on est enceinte ?"
+    accessed: 2026-11-11
+  - id: nhs-foods-to-avoid
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/keeping-well/foods-to-avoid/
+    title: Foods to avoid in pregnancy - NHS
+    accessed: 2026-11-11
+  - id: nhs-alcohol
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/keeping-well/drinking-alcohol-while-pregnant/
+    title: Drinking alcohol while pregnant - NHS
+    accessed: 2026-11-11
+  - id: nhs-vitamins
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/keeping-well/pregnancy-vitamins-and-supplements/
+    title: Pregnancy vitamins and supplements - NHS
+    accessed: 2026-11-11
+  - id: nhs-toxoplasmosis
+    name: NHS
+    url: https://www.nhs.uk/conditions/toxoplasmosis/
+    title: Toxoplasmosis - NHS
+    accessed: 2026-11-11
+  - id: cdc-listeria-prevention
+    name: CDC
+    url: https://www.cdc.gov/listeria/prevention/index.html
+    title: Preventing Listeria Infection | Listeria Infection | CDC
+    accessed: 2026-11-11
+  - id: cdc-toxo-prevention
+    name: CDC
+    url: https://www.cdc.gov/toxoplasmosis/prevention/index.html
+    title: Preventing Toxoplasmosis | Parasites - Toxoplasmosis (Toxoplasma infection) | CDC
+    accessed: 2026-11-11
+  - id: ameli-bleeding-t1
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/devenir-parent/grossesse/difficultes-et-maladies-pendant-la-grossesse/saignements-gynecologiques-grossesse/saignements-gynecologiques-du-premier-trimestre-de-la-grossesse
+    title: Saignements gynécologiques du premier trimestre de la grossesse
+    accessed: 2026-11-11
+  - id: ameli-bleeding-t2t3
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/devenir-parent/grossesse/difficultes-et-maladies-pendant-la-grossesse/saignements-gynecologiques-grossesse/saignements-lors-du-deuxieme-et-du-troisieme-trimestre-de-la-grossesse
+    title: Saignements gynécologiques lors du 2e et du 3e trimestre de la grossesse
+    accessed: 2026-11-11
+  - id: ameli-preeclampsia
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/devenir-parent/grossesse/difficultes-et-maladies-pendant-la-grossesse/preeclampsie/diagnostic-evolution
+    title: Circonstances de découverte, symptômes, diagnostic et évolution de la pré-éclampsie
+    accessed: 2026-11-11
+  - id: ameli-ectopic
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/devenir-parent/grossesse/difficultes-et-maladies-pendant-la-grossesse/grossesse-extra-uterine
+    title: Grossesse extra-utérine
+    accessed: 2026-11-11
+  - id: ameli-mental-health
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/devenir-parent/grossesse/difficultes-et-maladies-pendant-la-grossesse/grossesse-sante-psychique/troubles-psychiques-grossesse
+    title: "Grossesse : bouleversement émotionnel, anxiété et dépression"
+    accessed: 2026-11-11
+  - id: ameli-crise-suicidaire
+    name: ameli
+    url: https://www.ameli.fr/manche/assure/sante/urgence/pathologies/crise-suicidaire-tentative-suicide
+    title: "Crise suicidaire : agir avant la tentative de suicide"
+    accessed: 2026-11-11
+  - id: ameli-baby-blues
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/devenir-parent/accouchement-nouveau-ne-et-retour-la-maison/baby-blues-depression-post-partum-grossesse
+    title: "Après l'accouchement : baby blues et dépression du post partum"
+    accessed: 2026-11-11
+  - id: nhs-baby-movements
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/keeping-well/your-babys-movements/
+    title: Your baby's movements - NHS
+    accessed: 2026-11-11
+  - id: nhs-preeclampsia
+    name: NHS
+    url: https://www.nhs.uk/conditions/pre-eclampsia/
+    title: Pre-eclampsia - NHS
+    accessed: 2026-11-11
+  - id: nhs-vaginal-bleeding
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/common-symptoms/vaginal-bleeding/
+    title: Vaginal bleeding in pregnancy - NHS
+    accessed: 2026-11-11
+  - id: nhs-itching
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/complications/itching-and-intrahepatic-cholestasis/
+    title: Itching and intrahepatic cholestasis of pregnancy - NHS
+    accessed: 2026-11-11
+  - id: nhs-severe-vomiting
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/complications/severe-vomiting/
+    title: Severe vomiting in pregnancy (hyperemesis gravidarum) - NHS
+    accessed: 2026-11-11
+  - id: nhs-symptoms-get-help
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/common-symptoms/pregnancy-symptoms-you-need-to-get-help-for/
+    title: Pregnancy symptoms you need to get help for - NHS
+    accessed: 2026-11-11
 # Entry shape:
 # - id: ameli-toxo
 #   name: ameli

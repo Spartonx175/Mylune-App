@@ -6,10 +6,10 @@ import { ContentError } from "../lib/content/types";
 const root = path.join(__dirname, "fixtures", "content");
 
 describe("content loader", () => {
-  it("loads the real sources.yaml (allowlist, no entries yet)", () => {
+  it("loads the real sources.yaml (allowlist and entries)", () => {
     const s = loadSources(path.join(__dirname, "..", "content"));
     expect(s.allowed_domains).toContain("ameli.fr");
-    expect(s.sources).toEqual([]);
+    expect(s.sources.length).toBeGreaterThan(0);
   });
 
   it("loads a week file with typed fields and body", () => {
