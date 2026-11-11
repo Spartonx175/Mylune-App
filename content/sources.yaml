@@ -137,6 +137,117 @@ sources:
     url: https://www.nhs.uk/pregnancy/common-symptoms/pregnancy-symptoms-you-need-to-get-help-for/
     title: Pregnancy symptoms you need to get help for - NHS
     accessed: 2026-11-11
+  # --- C1 slice 2 (weeks 6-12, T1 symptoms, FR calendar), all pages read 2026-11-11 ---
+  - id: nhs-week-06
+    name: NHS
+    url: https://www.nhs.uk/best-start-in-life/pregnancy/week-by-week-guide-to-pregnancy/1st-trimester/week-6/
+    title: '6 weeks pregnant guide - Best Start in Life - NHS'
+    accessed: 2026-11-11
+  - id: nhs-week-07
+    name: NHS
+    url: https://www.nhs.uk/best-start-in-life/pregnancy/week-by-week-guide-to-pregnancy/1st-trimester/week-7/
+    title: '7 weeks pregnant guide - Best Start in Life - NHS'
+    accessed: 2026-11-11
+  - id: nhs-week-08
+    name: NHS
+    url: https://www.nhs.uk/best-start-in-life/pregnancy/week-by-week-guide-to-pregnancy/1st-trimester/week-8/
+    title: '8 weeks pregnant guide - Best Start in Life - NHS'
+    accessed: 2026-11-11
+  - id: nhs-week-09
+    name: NHS
+    url: https://www.nhs.uk/best-start-in-life/pregnancy/week-by-week-guide-to-pregnancy/1st-trimester/week-9/
+    title: '9 weeks pregnant guide - Best Start in Life - NHS'
+    accessed: 2026-11-11
+  - id: nhs-week-10
+    name: NHS
+    url: https://www.nhs.uk/best-start-in-life/pregnancy/week-by-week-guide-to-pregnancy/1st-trimester/week-10/
+    title: '10 weeks pregnant guide - Best Start in Life - NHS'
+    accessed: 2026-11-11
+  - id: nhs-week-11
+    name: NHS
+    url: https://www.nhs.uk/best-start-in-life/pregnancy/week-by-week-guide-to-pregnancy/1st-trimester/week-11/
+    title: '11 weeks pregnant guide - Best Start in Life - NHS'
+    accessed: 2026-11-11
+  - id: nhs-week-12
+    name: NHS
+    url: https://www.nhs.uk/best-start-in-life/pregnancy/week-by-week-guide-to-pregnancy/1st-trimester/week-12/
+    title: '12 weeks pregnant guide - Best Start in Life - NHS'
+    accessed: 2026-11-11
+  - id: nhs-vomiting-morning-sickness
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/common-symptoms/vomiting-and-morning-sickness/
+    title: 'Vomiting and morning sickness - NHS'
+    accessed: 2026-11-11
+  - id: nhs-tiredness
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/related-conditions/common-symptoms/tiredness/
+    title: 'Tiredness and sleep problems in pregnancy - NHS'
+    accessed: 2026-11-11
+  - id: nhs-stomach-pain
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/related-conditions/common-symptoms/stomach-pain/
+    title: 'Stomach pain in pregnancy - NHS'
+    accessed: 2026-11-11
+  - id: nhs-pelvic-pain
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/common-symptoms/pelvic-pain/
+    title: 'Pelvic pain in pregnancy - NHS'
+    accessed: 2026-11-11
+  - id: nhs-common-health-problems
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/common-symptoms/common-health-problems/
+    title: 'Common health problems in pregnancy - NHS'
+    accessed: 2026-11-11
+  - id: nhs-mental-health
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/mental-health-in-pregnancy-and-after-the-birth/mental-health/
+    title: 'Mental health in pregnancy - NHS'
+    accessed: 2026-11-11
+  - id: ameli-nausees
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/themes/nausees-et-vomissements-pendant-la-grossesse/nausees-vomissements-que-faire
+    title: 'Nausées et vomissements au cours de la grossesse : que faire ?'
+    accessed: 2026-11-11
+  - id: ameli-premiers-signes
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/devenir-parent/grossesse/grossesse-en-bonne-sante/grossesse/premiers-symptomes-grossesse
+    title: 'Grossesse : premiers signes et déroulement'
+    accessed: 2026-11-11
+  - id: ameli-programme-suivi
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/devenir-parent/grossesse/grossesse-en-bonne-sante/grossesse/grossesse-soins-dentaires-dentiste-consultation
+    title: 'Grossesse : le programme de suivi et la première consultation'
+    accessed: 2026-11-11
+  - id: ameli-suivi-mensuel
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/devenir-parent/grossesse/grossesse-en-bonne-sante/grossesse/consultation-suivi-mensuel
+    title: 'Suivi mensuel de la grossesse à partir du 4e mois'
+    accessed: 2026-11-11
+  - id: ameli-sage-femme-referente
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/devenir-parent/grossesse/grossesse-en-bonne-sante/grossesse/sage-femme-referente-suivi-grossesse
+    title: "Suivi de grossesse : l'accompagnement par une sage-femme référente"
+    accessed: 2026-11-11
+  - id: ameli-preparation-parentalite
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/devenir-parent/grossesse/grossesse-en-bonne-sante/grossesse/preparation-parentalite
+    title: 'Devenir parents'
+    accessed: 2026-11-11
+  - id: ameli-grossesse-demarches
+    name: ameli
+    url: https://www.ameli.fr/assure/droits-demarches/famille/maternite-paternite-adoption/grossesse
+    title: 'Grossesse : démarches et accompagnement'
+    accessed: 2026-11-11
+  - id: ameli-retour-maison
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/devenir-parent/accouchement-nouveau-ne-et-retour-la-maison/suivi-domicile
+    title: "Après l'accouchement : le retour à la maison"
+    accessed: 2026-11-11
+  - id: cdc-depression
+    name: CDC
+    url: https://www.cdc.gov/reproductive-health/depression/index.html
+    title: 'Symptoms of Depression Among Women | Reproductive Health | CDC'
+    accessed: 2026-11-11
 # Entry shape:
 # - id: ameli-toxo
 #   name: ameli
