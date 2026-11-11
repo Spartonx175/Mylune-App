@@ -9,3 +9,4 @@
 - 2026-11-11 Cats: real names (Ohana ginger, Luna tabby, Loomis ragdoll).
 - 2026-11-11 C1 slice 2a: content/en/weeks/w06-w12 (NHS week pages + ameli follow-up pages), 24 new sources in sources.yaml, tests/content-weeks.test.ts. size_compare kumquat added for w10.
 - 2026-11-11 C1 slice 2b/2c: content/en/symptoms (6 files), content/en/calendar/fr-followup.yaml (22 steps), loadSymptom/listSymptoms/loadCalendar in lib/content/load.ts (dose check, 2-source rule for symptoms), fixtures + tests/content-symptoms-calendar.test.ts. Gaps in TODO.md.
+- 2026-11-11 B4: Today (progress ring with SA + days, countdown, due dates, baby size + tip of the day, coming-up steps; max 3 cards) and Baby (week chips, in-house fruit illustrations, baby/you/to-do lists, sources, 41-week trimester timeline) from content; falls back to EN until C2 French lands; content files traced into the Vercel build.

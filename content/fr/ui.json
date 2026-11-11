@@ -75,5 +75,48 @@
     "loading": "Un instant…",
     "pickTitle": "Votre chat compagnon",
     "pickHelp": "Choisissez le chat qui vous accompagne dans l'application. Cela change le petit dessin et la couleur douce."
+  },
+  "today": {
+    "sa": "SA",
+    "dayShort": "j",
+    "weekOrdinal": "{n}e semaine",
+    "sg": "{n} semaines de grossesse (SG)",
+    "countdown": "Encore {n} jours",
+    "countdownDue": "Terme prévu aujourd'hui",
+    "dueDates": "Terme prévu le {d40} (40 SA). Terme français le {d41} (41 SA).",
+    "trimester": "Trimestre {n}",
+    "ringLabel": "{weeks} semaines et {days} jours d'aménorrhée, {pct} pour cent de la grossesse",
+    "babyTitle": "Votre bébé cette semaine",
+    "sizeLike": "Environ {mm} mm, comme une {fruit}.",
+    "tipTitle": "Conseil du jour",
+    "nextTitle": "À venir",
+    "now": "En ce moment",
+    "toConfirm": "À confirmer",
+    "setDates": "Ajoutez vos dates dans votre profil pour voir votre semaine.",
+    "fallbackNote": "Affiché en anglais pour le moment.",
+    "noContent": "Le contenu de cette semaine arrive bientôt."
+  },
+  "baby": {
+    "weekTitle": "Semaine {n} SA",
+    "pick": "Choisir une semaine",
+    "you": "Vous",
+    "baby": "Votre bébé",
+    "todo": "À faire",
+    "sources": "Sources",
+    "scanWindow": "Échographie de datation : du {from} au {to}",
+    "timelineTitle": "Toute votre grossesse",
+    "t1": "Trimestre 1",
+    "t2": "Trimestre 2",
+    "t3": "Trimestre 3",
+    "noWeeks": "Les semaines apparaîtront ici au fur et à mesure."
+  },
+  "fruit": {
+    "lentil": "lentille",
+    "blueberry": "myrtille",
+    "raspberry": "framboise",
+    "olive": "olive",
+    "kumquat": "kumquat",
+    "fig": "figue",
+    "plum": "prune"
   }
 }

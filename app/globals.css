@@ -61,3 +61,15 @@ html[data-cat="birman"] {
 @media (prefers-reduced-motion: reduce) {
   .cat-tail, .cat-eye, .cat-bob, .cat-leg-a, .cat-leg-b, .cat-peek { animation: none; }
 }
+
+/* Today / Baby graphics */
+.ring-fill { animation: ring-fill 1.4s ease-out both; }
+.fruit-float { animation: fruit-float 4s ease-in-out infinite; }
+.week-now { animation: week-pulse 2.2s ease-in-out infinite; }
+@keyframes ring-fill { from { stroke-dashoffset: var(--ring-len); } to { stroke-dashoffset: var(--ring-to); } }
+@keyframes fruit-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+@keyframes week-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.55; } }
+@media (prefers-reduced-motion: reduce) {
+  .ring-fill, .fruit-float, .week-now { animation: none; }
+  .ring-fill { stroke-dashoffset: var(--ring-to); }
+}

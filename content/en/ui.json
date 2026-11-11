@@ -75,5 +75,48 @@
     "loading": "Just a moment…",
     "pickTitle": "Your companion cat",
     "pickHelp": "Choose the cat that keeps you company in the app. It changes the little drawing and the soft colour."
+  },
+  "today": {
+    "sa": "SA",
+    "dayShort": "d",
+    "weekOrdinal": "Week {n}",
+    "sg": "{n} weeks of pregnancy (SG)",
+    "countdown": "{n} days to go",
+    "countdownDue": "Due today",
+    "dueDates": "Due {d40} (40 SA). French term {d41} (41 SA).",
+    "trimester": "Trimester {n}",
+    "ringLabel": "{weeks} weeks and {days} days of amenorrhea, {pct} percent of the pregnancy",
+    "babyTitle": "Your baby this week",
+    "sizeLike": "About {mm} mm, like a {fruit}.",
+    "tipTitle": "Tip of the day",
+    "nextTitle": "Coming up",
+    "now": "Now",
+    "toConfirm": "To confirm",
+    "setDates": "Add your dates in your profile to see your week.",
+    "fallbackNote": "Shown in English for now.",
+    "noContent": "Content for this week is coming soon."
+  },
+  "baby": {
+    "weekTitle": "Week {n} SA",
+    "pick": "Choose a week",
+    "you": "You",
+    "baby": "Your baby",
+    "todo": "To do",
+    "sources": "Sources",
+    "scanWindow": "Dating scan window: {from} to {to}",
+    "timelineTitle": "Your whole pregnancy",
+    "t1": "Trimester 1",
+    "t2": "Trimester 2",
+    "t3": "Trimester 3",
+    "noWeeks": "Weeks will appear here as they are written."
+  },
+  "fruit": {
+    "lentil": "lentil",
+    "blueberry": "blueberry",
+    "raspberry": "raspberry",
+    "olive": "olive",
+    "kumquat": "kumquat",
+    "fig": "fig",
+    "plum": "plum"
   }
 }
