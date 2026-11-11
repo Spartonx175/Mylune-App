@@ -1,0 +1,14 @@
+{
+  "app": { "name": "Mylune", "tagline": "Votre grossesse, jour après jour" },
+  "nav": { "today": "Aujourd'hui", "baby": "Bébé", "guide": "Guide", "feed": "Fil", "profile": "Profil", "main": "Navigation principale" },
+  "lang": { "label": "Langue", "fr": "FR", "en": "EN", "frFull": "Français", "enFull": "English" },
+  "placeholder": {
+    "soon": "Bientôt disponible",
+    "today": "Votre résumé du jour apparaîtra ici.",
+    "baby": "Le suivi de votre bébé semaine par semaine apparaîtra ici.",
+    "guide": "L'alimentation, les symptômes, le suivi médical et plus encore apparaîtront ici.",
+    "feed": "Des vidéos et articles de confiance apparaîtront ici.",
+    "profile": "Vos réglages apparaîtront ici."
+  },
+  "urgent": "Urgence / Quand appeler"
+}

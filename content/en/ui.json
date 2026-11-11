@@ -1,0 +1,14 @@
+{
+  "app": { "name": "Mylune", "tagline": "Your pregnancy, day by day" },
+  "nav": { "today": "Today", "baby": "Baby", "guide": "Guide", "feed": "Feed", "profile": "Profile", "main": "Main navigation" },
+  "lang": { "label": "Language", "fr": "FR", "en": "EN", "frFull": "Français", "enFull": "English" },
+  "placeholder": {
+    "soon": "Coming soon",
+    "today": "Your daily summary will appear here.",
+    "baby": "Your baby's week-by-week journey will appear here.",
+    "guide": "Food, symptoms, medical follow-up and more will appear here.",
+    "feed": "Trusted videos and articles will appear here.",
+    "profile": "Your settings will appear here."
+  },
+  "urgent": "Emergency / When to call"
+}

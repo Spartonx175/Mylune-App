@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* SPEC section 10 palette. The "-text" variants are darker shades that pass WCAG AA (4.5:1)
+   for body text on bg, surface and soft. The raw spec values stay for fills and decoration. */
+@theme {
+  --color-bg: #fff8f3;
+  --color-surface: #ffffff;
+  --color-soft: #fde3d3;
+  --color-accent: #f4a27e;
+  --color-primary: #d9693f;
+  --color-primary-text: #a04d2e;
+  --color-ink: #3b2f2b;
+  --color-muted: #8a7a72;
+  --color-muted-text: #73655f;
+  --color-urgent: #c0392b;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  font-size: 17px; /* SPEC section 10: base 17-18px */
+  background: var(--color-bg);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  line-height: 1.55;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primary-text);
+  outline-offset: 2px;
+}
