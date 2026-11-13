@@ -252,6 +252,32 @@ sources:
     url: https://www.cdc.gov/reproductive-health/depression/index.html
     title: 'Symptoms of Depression Among Women | Reproductive Health | CDC'
     accessed: 2026-11-11
+  # --- Checker part 1 (foods), all pages read 2026-11-13 ---
+  - id: cdc-food-pregnant-women
+    name: CDC
+    url: https://www.cdc.gov/food-safety/foods/pregnant-women.html
+    title: Safer Food Choices for Pregnant Women | Food Safety | CDC
+    accessed: 2026-11-13
+  - id: cdc-listeria-meat-fish
+    name: CDC
+    url: https://www.cdc.gov/listeria/causes/meat-fish.html
+    title: "How Listeria Spread: Pâte and Cold-Smoked Fish | Listeria Infection | CDC"
+    accessed: 2026-11-13
+  - id: cdc-listeria-deli
+    name: CDC
+    url: https://www.cdc.gov/listeria/causes/deli-ready-to-eat-foods.html
+    title: "How Listeria Spread: Deli Foods and Prepared Meats | Listeria Infection | CDC"
+    accessed: 2026-11-13
+  - id: cdc-listeria-dairy
+    name: CDC
+    url: https://www.cdc.gov/listeria/causes/dairy.html
+    title: "How Listeria Spread: Soft Cheeses and Raw Milk | Listeria Infection | CDC"
+    accessed: 2026-11-13
+  - id: nhs-healthy-diet
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/keeping-well/have-a-healthy-diet/
+    title: Have a healthy diet in pregnancy - NHS
+    accessed: 2026-11-13
 # Entry shape:
 # - id: ameli-toxo
 #   name: ameli

@@ -6,6 +6,7 @@
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import path from "node:path";
 import { parse } from "yaml";
+import { FOOD_CATEGORIES, FOOD_STATES, type CheckItem, type CheckKind } from "./check-types";
 import { ContentError, type CalendarEntry, type FoodItem, type Locale, type SourcesFile, type SymptomFile, type WeekFile } from "./types";
 
 const DEFAULT_ROOT = path.join(process.cwd(), "content");
@@ -181,5 +182,41 @@ export function loadCalendar(locale: Locale, root = DEFAULT_ROOT): CalendarEntry
     if (e.unverified === true && (!e.sources || e.sources.length === 0)) return { ...e, sources: [] };
     checkSources(e.sources, known, l);
     return e;
+  });
+}
+
+/** "Can I?" checker: content/{locale}/check/{kind}.yaml, a list of CheckItem (see check-types.ts). */
+export function loadChecks(locale: Locale, kind: CheckKind, root = DEFAULT_ROOT): CheckItem[] {
+  const label = `${locale}/check/${kind}.yaml`;
+  const list = parse(read(path.join(root, locale, "check", `${kind}.yaml`))) as unknown;
+  if (!Array.isArray(list)) throw new ContentError(`${label}: must be a list`);
+  const known = new Set(loadSources(root).sources.map((s) => s.id));
+  const seen = new Set<string>();
+  const verdicts: readonly string[] = ["ok", "careful", "avoid"];
+  const states: readonly string[] = FOOD_STATES;
+  const categories: readonly string[] = FOOD_CATEGORIES;
+  return (list as CheckItem[]).map((item) => {
+    const l = `${label}#${item?.id ?? "?"}`;
+    if (!item?.id || typeof item.id !== "string" || seen.has(item.id)) throw new ContentError(`${l}: missing or duplicate id`);
+    seen.add(item.id);
+    if (kind === "foods" && !categories.includes(item.category)) throw new ContentError(`${l}: unknown category "${item.category}"`);
+    if (!item.category) throw new ContentError(`${l}: category is required`);
+    if (!isStringArray(item.names) || item.names.length === 0 || item.names.some((n) => !n.trim())) throw new ContentError(`${l}: names must be a non-empty list of strings`);
+    if (typeof item.reviewed !== "string" || !item.reviewed) throw new ContentError(`${l}: reviewed is required`);
+    if (!Array.isArray(item.answers) || item.answers.length === 0) throw new ContentError(`${l}: needs at least one answer`);
+    if (item.tips && !item.tips.every((t) => t === "best" || t === "avoid")) throw new ContentError(`${l}: tips must be best or avoid`);
+    const seenStates = new Set<string>();
+    for (const ans of item.answers) {
+      const al = `${l}/${ans?.state ?? "?"}`;
+      if (!states.includes(ans.state)) throw new ContentError(`${al}: unknown state`);
+      if (seenStates.has(ans.state)) throw new ContentError(`${al}: duplicate state`);
+      seenStates.add(ans.state);
+      if (!verdicts.includes(ans.verdict)) throw new ContentError(`${al}: verdict must be ok, careful or avoid`);
+      if (typeof ans.why !== "string" || !ans.why.trim()) throw new ContentError(`${al}: why is required`);
+      noDose(ans.why, al);
+      // Same bar as food: avoid and careful need 2 sources, ok needs 1.
+      checkSources(ans.sources, known, al, ans.verdict === "ok" ? 1 : 2);
+    }
+    return item;
   });
 }

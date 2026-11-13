@@ -1,0 +1,2254 @@
+# "Can I eat this?" checker, part 1: meat, charcuterie, fish, seafood, eggs, dairy, cheese, ready meals, egg/fish-based sauces.
+# Authored in English first (CheckItem[], lib/content/check-types.ts). FR mirrors the same ids, states, verdicts and sources later.
+# Sources are ids in content/sources.yaml. avoid/careful need 2 sources, ok needs 1. No doses, no diagnosis.
+# French rules (ameli, mangerbouger) take priority over UK/US where they are stricter (pâté, soft cheese, cured meat).
+- id: beef-steak
+  category: meat
+  names:
+    - Beef steak
+    - Bœuf
+    - Steak
+    - Entrecôte
+    - Faux-filet
+    - Bavette
+    - Rumsteck
+    - Côte de bœuf
+    - Rosbif
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: Rare or pink beef (saignant, à point) can carry the toxoplasmosis parasite. If you are not immune to toxoplasmosis, cook it until it is no longer pink inside.
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+    - state: cooked
+      verdict: ok
+      why: "Beef cooked right through (bien cuit) is safe. Cut it open: there should be no pink juice."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-toxo-prevention
+  reviewed: 2026-11-13
+- id: steak-hache
+  category: meat
+  names:
+    - Minced beef
+    - Steak haché
+    - Viande hachée
+    - Boulette
+    - Bolognaise
+    - Beef mince
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: Pink minced meat is risky because germs from the surface are mixed all through it. Toxoplasmosis and other germs survive if the middle is still pink.
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: Minced meat cooked right through, grey-brown with no pink and no pink juice, is safe.
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: steak-tartare
+  category: meat
+  names:
+    - Steak tartare
+    - Tartare de bœuf
+    - Tartare
+    - Raw beef
+    - Bœuf cru
+    - Filet américain
+  tips: &a1
+    - avoid
+  local: true
+  answers:
+    - state: raw
+      verdict: avoid
+      why: Raw beef can carry the toxoplasmosis parasite and other germs. This is a firm no, even from a good restaurant.
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: carpaccio-beef
+  category: meat
+  names:
+    - Beef carpaccio
+    - Carpaccio de bœuf
+    - Carpaccio
+    - Bresaola fraîche
+    - Raw beef slices
+  tips: *a1
+  local: true
+  answers:
+    - state: raw
+      verdict: avoid
+      why: Carpaccio is raw meat, so it can carry the toxoplasmosis parasite. Choose a cooked dish instead.
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: lamb
+  category: meat
+  names:
+    - Lamb
+    - Agneau
+    - Gigot d'agneau
+    - Côtelettes d'agneau
+    - Mouton
+    - Souris d'agneau
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: Pink lamb (rosé, saignant) is a known source of the toxoplasmosis parasite. Cook it until there is no pink at all.
+      sources:
+        - ameli-toxo-prevention
+        - nhs-toxoplasmosis
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: Lamb cooked right through is safe.
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: pork
+  category: meat
+  names:
+    - Pork
+    - Porc
+    - Côte de porc
+    - Filet mignon
+    - Rôti de porc
+    - Travers
+    - Échine
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: Pink pork can carry the toxoplasmosis parasite and other germs. Cook it through until the juice runs clear.
+      sources:
+        - ameli-toxo-prevention
+        - nhs-toxoplasmosis
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: Pork cooked right through, with no pink, is safe.
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: chicken
+  category: meat
+  names:
+    - Chicken
+    - Poulet
+    - Dinde
+    - Turkey
+    - Pintade
+    - Poulet rôti
+    - Blanc de poulet cuit
+    - Volaille
+    - Escalope
+  tips: &a2
+    - best
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: Pink or underdone poultry can carry salmonella and the toxoplasmosis parasite. Cook it until no pink remains and the juices run clear.
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+    - state: cooked
+      verdict: ok
+      why: Chicken or turkey cooked right through is safe. Hot roast chicken from the shop is fine if eaten the same day or reheated until steaming.
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: duck
+  category: meat
+  names:
+    - Duck
+    - Canard
+    - Magret de canard
+    - Magret
+    - Confit de canard
+    - Cuisse de canard
+    - Duck breast
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: "Magret served rosé (pink) is not safe: duck can carry the toxoplasmosis parasite. Ask for it bien cuit, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-toxo-prevention
+    - state: cooked
+      verdict: ok
+      why: Duck cooked right through is safe, including a confit that has been heated until steaming.
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+    - state: cured
+      verdict: avoid
+      why: Smoked, dried or salted duck breast (magret séché, magret fumé) is eaten without cooking. It can carry toxoplasmosis and listeria.
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: rabbit
+  category: meat
+  names:
+    - Rabbit
+    - Lapin
+    - Lapin à la moutarde
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: Pink rabbit can carry the toxoplasmosis parasite. Cook it right through.
+      sources:
+        - ameli-toxo-prevention
+        - nhs-toxoplasmosis
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: Rabbit cooked right through is safe.
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: game
+  category: meat
+  names:
+    - Game
+    - Gibier
+    - Venison
+    - Chevreuil
+    - Cerf
+    - Sanglier
+    - Faisan
+    - Perdrix
+    - Lièvre
+    - Civet
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: Pink game can carry the toxoplasmosis parasite. Smoked, marinated or grilled game is only safe if cooked right through.
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+    - state: cooked
+      verdict: careful
+      why: Game cooked right through avoids the toxoplasmosis risk. The UK guidance also asks pregnant women to avoid game birds, because of lead from shot, so keep it occasional.
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+  reviewed: 2026-11-13
+- id: kebab
+  category: meat
+  names:
+    - Kebab
+    - Döner
+    - Doner kebab
+    - Gyros
+    - Shawarma
+    - Sandwich grec
+    - Brochette
+  local: true
+  answers:
+    - state: cooked
+      verdict: careful
+      why: Only if the meat is steaming hot all through and well done. Skip the raw salad and sauce if you are unsure how they were prepared, because of the toxoplasmosis risk from soil.
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: merguez
+  category: meat
+  names:
+    - Merguez
+    - Chipolata
+    - Saucisse épicée
+    - Spicy sausage
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: Pink inside means it can still carry the toxoplasmosis parasite. Cook it right through.
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: Merguez cooked right through, no pink in the middle, is safe. Home-cooked sausages are a good choice.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+  reviewed: 2026-11-13
+- id: sausage-cooked
+  category: meat
+  names:
+    - Sausage
+    - Saucisse
+    - Saucisse de Toulouse
+    - Saucisse de Strasbourg
+    - Chipolatas
+    - Saucisse fraîche
+  tips: *a2
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: Fresh sausage that is still pink inside can carry germs including the toxoplasmosis parasite.
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: Fresh sausage cooked right through is safe, and it is the charcuterie choice to prefer.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: boudin
+  category: meat
+  names:
+    - Boudin noir
+    - Boudin blanc
+    - Black pudding
+    - Boudin antillais
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: Boudin that you cook yourself until hot all the way through is a good choice.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: reheated
+      verdict: ok
+      why: Fine if reheated until steaming hot. Do not eat it cold.
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+  reviewed: 2026-11-13
+- id: liver
+  category: meat
+  names:
+    - Liver
+    - Foie de veau
+    - Foie de volaille
+    - Foies de volaille
+    - Foie de porc
+    - Chicken liver
+    - Calf's liver
+  local: true
+  answers:
+    - state: cooked
+      verdict: avoid
+      why: Liver has a lot of vitamin A, which can harm the baby's development. Skip it for the whole pregnancy, even well cooked.
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-vitamins
+  reviewed: 2026-11-13
+- id: burger
+  category: meat
+  names:
+    - Burger
+    - Hamburger
+    - Cheeseburger
+    - Burger restaurant
+    - Fast food burger
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: A pink burger is minced meat that is still raw in the middle. Ask for it bien cuit.
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: A burger cooked right through is fine. Leave off raw toppings if you do not know how they were washed.
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: foie-gras
+  category: charcuterie
+  names:
+    - Foie gras
+    - Foie gras de canard
+    - Foie gras d'oie
+    - Mi-cuit
+    - Terrine de foie gras
+    - Bloc de foie gras
+  tips: *a1
+  local: true
+  answers:
+    - state: cooked
+      verdict: avoid
+      why: Foie gras (fresh, mi-cuit or in a block) is a chilled cooked product that can carry listeria. It is also liver, rich in vitamin A.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: canned
+      verdict: careful
+      why: French advice is to skip it altogether. A tin or jar sterilised in its container is safer, but ask your midwife if you want it, and skip it if it is liver-based.
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: pate
+  category: charcuterie
+  names:
+    - Pâté
+    - Pâté de campagne
+    - Pâté de foie
+    - Terrine
+    - Pâté en croûte
+    - Mousse de foie
+    - Paté
+  tips: *a1
+  local: true
+  answers:
+    - state: cooked
+      verdict: avoid
+      why: Fresh pâté and terrine can carry listeria, which grows even in the fridge. French health advice is to avoid them.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+    - state: canned
+      verdict: careful
+      why: A sealed tin or jar that is stored at room temperature is safer than fresh pâté. Skip any made with liver, and eat it quickly once opened.
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: rillettes
+  category: charcuterie
+  names:
+    - Rillettes
+    - Rillettes de porc
+    - Rillettes du Mans
+    - Rillettes de canard
+    - Rillettes de thon
+    - Rillettes de saumon
+  tips: *a1
+  local: true
+  answers:
+    - state: cooked
+      verdict: avoid
+      why: Rillettes are chilled and eaten as they are, and can carry listeria. Avoid them, including fish rillettes.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+  reviewed: 2026-11-13
+- id: jambon-blanc
+  category: charcuterie
+  names:
+    - Cooked ham
+    - Jambon blanc
+    - Jambon cuit
+    - Jambon de Paris
+    - Jambon à l'os
+    - Blanc de dinde
+    - Mortadelle
+    - Jambon-beurre
+    - Ham
+  local: true
+  answers:
+    - state: cooked
+      verdict: careful
+      why: Cold sliced ham can carry listeria. Pre-packaged ham is the better choice; avoid ham sliced at the counter.
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+    - state: reheated
+      verdict: ok
+      why: Ham heated until steaming hot, in a croque-monsieur, gratin or on a hot pizza, is fine.
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: jambon-cru
+  category: charcuterie
+  names:
+    - Raw ham
+    - Jambon cru
+    - Jambon sec
+    - Jambon de Bayonne
+    - Jambon de Parme
+    - Prosciutto
+    - Serrano
+    - Jambon de pays
+    - Parma ham
+  tips: *a1
+  local: true
+  answers:
+    - state: cured
+      verdict: avoid
+      why: Dry-cured ham is eaten raw. It can carry the toxoplasmosis parasite, salmonella and listeria. If you are not immune to toxoplasmosis, avoid it cold.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
+    - state: reheated
+      verdict: careful
+      why: Only if heated until steaming hot all through, for example on a hot pizza or in a baked dish. Do not add it cold on top afterwards.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: saucisson-sec
+  category: charcuterie
+  names:
+    - Dry sausage
+    - Saucisson sec
+    - Saucisson
+    - Saucisson à l'ail
+    - Rosette
+    - Figatelli
+    - Salami
+    - Pepperoni
+    - Cervelas cru
+  tips: *a1
+  local: true
+  answers:
+    - state: cured
+      verdict: avoid
+      why: Dry sausage is eaten raw. It can carry the toxoplasmosis parasite, salmonella and listeria. Avoid it cold.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
+    - state: reheated
+      verdict: careful
+      why: Only if heated until steaming hot all through, as on a baked pizza. Avoid the aperitif slices.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: chorizo
+  category: charcuterie
+  names:
+    - Chorizo
+    - Chorizo sec
+    - Chorizo doux
+    - Saucisse espagnole
+    - Chorizo cuit
+  local: true
+  answers:
+    - state: cured
+      verdict: avoid
+      why: Sliced chorizo is a dry-cured sausage, eaten raw. It can carry the toxoplasmosis parasite and listeria.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - cdc-listeria-deli
+    - state: cooked
+      verdict: careful
+      why: Chorizo cooked until steaming hot in a dish (paella, stew, hot pizza) is fine. Fresh cooking chorizo must be cooked right through.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - ameli-toxo-prevention
+  reviewed: 2026-11-13
+- id: coppa-bresaola
+  category: charcuterie
+  names:
+    - Coppa
+    - Bresaola
+    - Viande des Grisons
+    - Lonzo
+    - Pancetta
+    - Lomo
+    - Jambon fumé cru
+    - Speck
+  local: true
+  answers:
+    - state: cured
+      verdict: avoid
+      why: Dry-cured or air-dried meats are eaten without cooking. They can carry the toxoplasmosis parasite and listeria.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
+    - state: reheated
+      verdict: careful
+      why: Only if heated until steaming hot all through. Avoid it cold, for example with raclette or on a platter.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: lardons
+  category: charcuterie
+  names:
+    - Bacon
+    - Lardons
+    - Lardons fumés
+    - Poitrine fumée
+    - Poitrine salée
+    - Bacon grillé
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: Lardons or bacon fried until crisp and cooked through are fine, for example in a quiche or salad (use hot).
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+    - state: cured
+      verdict: avoid
+      why: Smoked or salted pork eaten without cooking, such as raw lardons or cold sliced bacon, can carry toxoplasmosis and listeria.
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: hot-dog-knacki
+  category: charcuterie
+  names:
+    - Hot dog
+    - Knacki
+    - Saucisse de Francfort
+    - Saucisse de Strasbourg cuite
+    - Saucisse cocktail
+    - Cocktail sausage
+  local: true
+  answers:
+    - state: cooked
+      verdict: avoid
+      why: Hot dog sausages eaten cold, straight from the packet, can carry listeria.
+      sources:
+        - cdc-listeria-prevention
+        - cdc-food-pregnant-women
+        - ameli-aliments-eviter
+    - state: reheated
+      verdict: ok
+      why: Fine if heated until steaming hot all through.
+      sources:
+        - cdc-listeria-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: charcuterie-counter
+  category: charcuterie
+  names:
+    - Deli counter meats
+    - Charcuterie à la coupe
+    - Traiteur charcuterie
+    - Plateau de charcuterie
+    - Assiette de charcuterie
+    - Charcuterie
+  tips: *a1
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: Charcuterie sliced at the counter or served on a platter can carry listeria and, if dry-cured, toxoplasmosis. Avoid it; pre-packed and heated is better.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+  reviewed: 2026-11-13
+- id: jellied-meat
+  category: charcuterie
+  names:
+    - Fromage de tête
+    - Produits en gelée
+    - Jambon persillé
+    - Museau
+    - Langue de porc
+    - Andouille froide
+    - Pieds de porc
+    - Head cheese
+  local: true
+  answers:
+    - state: cooked
+      verdict: avoid
+      why: Jellied cold meats can carry listeria, which grows in the fridge. Avoid them.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+  reviewed: 2026-11-13
+- id: andouillette
+  category: charcuterie
+  names:
+    - Andouillette
+    - Andouille chaude
+    - Andouille de Vire
+    - Andouillette grillée
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: Andouillette cooked right through and served hot is safe. Do not eat it pink in the middle.
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: salmon
+  category: fish
+  names:
+    - Salmon
+    - Saumon
+    - Pavé de saumon
+    - Filet de saumon
+    - Saumon rôti
+    - Saumon cru
+    - Tartare de saumon
+    - Gravlax
+  tips: *a2
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: Salmon cooked right through is a good choice, with one oily fish a week recommended. Vary the types of fish you eat.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+    - state: raw
+      verdict: avoid
+      why: Raw or lightly cooked salmon (tartare, carpaccio, gravlax, mi-cuit) can carry listeria and parasites. Freezing does not remove listeria.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: smoked-salmon
+  category: fish
+  names:
+    - Smoked salmon
+    - Saumon fumé
+    - Truite fumée
+    - Saumon fumé en tranches
+    - Smoked trout
+    - Lox
+    - Haddock fumé
+    - Hareng saur
+  tips: *a1
+  local: true
+  answers:
+    - state: cured
+      verdict: avoid
+      why: Smoked fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: careful
+      why: Only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-meat-fish
+        - ameli-aliments-eviter
+  reviewed: 2026-11-13
+- id: sushi
+  category: fish
+  names:
+    - Sushi
+    - Sashimi
+    - Maki
+    - California roll
+    - Poke bowl
+    - Chirashi
+    - Tataki
+    - Ceviche
+    - Tartare de poisson
+    - Japanese food
+  tips: *a1
+  local: true
+  answers:
+    - state: raw
+      verdict: avoid
+      why: Sushi with raw fish and sashimi can carry listeria and parasites. Freezing does not remove listeria.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: Sushi made with cooked fish or cooked prawns, such as a cooked salmon roll or an avocado roll, is safe if the rest is fresh and made the same day.
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: tuna
+  category: fish
+  names:
+    - Fresh tuna
+    - Thon frais
+    - Thon
+    - Steak de thon
+    - Thon mi-cuit
+    - Tuna steak
+  local: true
+  answers:
+    - state: cooked
+      verdict: careful
+      why: Tuna builds up pollutants like mercury. Eat it now and then only, and always cook it right through.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: undercooked
+      verdict: avoid
+      why: Seared or mi-cuit tuna is still raw in the middle, which risks listeria and parasites. Cook it right through.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: raw
+      verdict: avoid
+      why: Raw tuna (tartare, tataki, sashimi) can carry listeria and parasites.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: canned-tuna
+  category: fish
+  names:
+    - Canned tuna
+    - Thon en conserve
+    - Thon en boîte
+    - Thon à l'huile
+    - Thon au naturel
+    - Salade de thon
+    - Tuna salad
+  local: true
+  answers:
+    - state: canned
+      verdict: careful
+      why: Tuna contains mercury even from a tin. Eat it only now and then, and vary the fish you choose.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: sardines
+  category: fish
+  names:
+    - Sardines
+    - Sardine fraîche
+    - Sardines en boîte
+    - Sardines à l'huile
+    - Sardines grillées
+  tips: *a2
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: Fresh sardines cooked right through are a good oily-fish choice.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+    - state: canned
+      verdict: ok
+      why: Tinned sardines are fine and an easy oily-fish choice. Eat them once the tin is opened and chilled.
+      sources:
+        - ameli-aliments-eviter
+        - cdc-food-pregnant-women
+    - state: raw
+      verdict: avoid
+      why: Raw or marinated sardines can carry listeria and parasites.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: cod-white-fish
+  category: fish
+  names:
+    - Cod
+    - Cabillaud
+    - Morue
+    - Colin
+    - Merlu
+    - Lieu noir
+    - Lieu jaune
+    - Merlan
+    - Sole
+    - Haddock
+    - Hake
+    - Whiting
+    - Pollock
+    - Poisson blanc
+    - Dos de cabillaud
+  tips: *a2
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: White fish cooked right through is a good, low-pollutant choice. Aim for two portions of fish a week.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+    - state: raw
+      verdict: avoid
+      why: Raw or marinated white fish can carry listeria and parasites.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: mackerel
+  category: fish
+  names:
+    - Mackerel
+    - Maquereau
+    - Maquereau fumé
+    - Maquereaux au vin blanc
+    - Filet de maquereau
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: Fresh mackerel cooked right through is a good oily fish.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+    - state: cured
+      verdict: avoid
+      why: Smoked or marinated mackerel (maquereau fumé, au vin blanc) is eaten without cooking and can carry listeria.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+    - state: canned
+      verdict: ok
+      why: Tinned mackerel is fine. Smoked fish in a sealed tin that is stored at room temperature is the safer version.
+      sources:
+        - ameli-aliments-eviter
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: trout-herring
+  category: fish
+  names:
+    - Trout
+    - Truite
+    - Hareng
+    - Herring
+    - Rollmops
+    - Hareng mariné
+    - Truite aux amandes
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: Trout and herring cooked right through are good oily-fish choices.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+    - state: cured
+      verdict: avoid
+      why: Rollmops, marinated herring and smoked trout are eaten without cooking and can carry listeria and parasites.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: swordfish
+  category: fish
+  names:
+    - Swordfish
+    - Espadon
+    - Marlin
+    - Requin
+    - Shark
+    - Siki
+    - Saumonette
+    - Lamproie
+  tips: *a1
+  local: true
+  answers:
+    - state: cooked
+      verdict: avoid
+      why: Swordfish, marlin, shark, siki (saumonette) and lamprey build up pollutants such as mercury, even when well cooked. Avoid them.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: sea-bass-bream
+  category: fish
+  names:
+    - Sea bass
+    - Bar
+    - Loup de mer
+    - Dorade
+    - Sea bream
+    - Lotte
+    - Monkfish
+    - Raie
+    - Anguille
+    - Eel
+    - Flétan
+    - Halibut
+  local: true
+  answers:
+    - state: cooked
+      verdict: careful
+      why: These large predator fish carry more pollutants. Eat them only now and then, and cooked right through.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: anchovies
+  category: fish
+  names:
+    - Anchovies
+    - Anchois
+    - Anchois à l'huile
+    - Anchois marinés
+    - Boquerones
+    - Pissaladière
+  local: true
+  answers:
+    - state: canned
+      verdict: ok
+      why: Anchovies in a tin or jar are fine in small amounts, and the dish should be cooked or the fish rinsed. Vinegar-marinated fresh anchovies are not safe.
+      sources:
+        - ameli-aliments-eviter
+        - cdc-food-pregnant-women
+    - state: cured
+      verdict: avoid
+      why: Fresh anchovies marinated in vinegar and eaten raw can carry parasites and listeria.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: fish-fingers
+  category: fish
+  names:
+    - Fish fingers
+    - Poisson pané
+    - Bâtonnets de poisson
+    - Nuggets de poisson
+    - Fish and chips
+    - Croquette de poisson
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: Fine if cooked until piping hot all through. They are processed food, so do not make them the only fish you eat.
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-aliments-eviter
+  reviewed: 2026-11-13
+- id: surimi
+  category: fish
+  names:
+    - Surimi
+    - Bâtonnets de surimi
+    - Crab sticks
+    - Salade de surimi
+    - Bâtonnet de crabe
+  tips: *a1
+  local: true
+  answers:
+    - state: cured
+      verdict: avoid
+      why: Surimi is a ready-to-eat chilled fish product that can carry listeria. French health advice is to avoid it.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+  reviewed: 2026-11-13
+- id: tarama
+  category: fish
+  names:
+    - Taramasalata
+    - Tarama
+    - Tarama rose
+    - Tarama blanc
+    - Fish roe dip
+  tips: *a1
+  local: true
+  answers:
+    - state: cured
+      verdict: avoid
+      why: Tarama is made from raw salted fish eggs and sold chilled, and it can carry listeria. Avoid it.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+  reviewed: 2026-11-13
+- id: fish-roe-caviar
+  category: fish
+  names:
+    - Caviar
+    - Œufs de poisson
+    - Œufs de saumon
+    - Œufs de lump
+    - Poutargue
+    - Fish roe
+    - Oeufs de lump
+  local: true
+  answers:
+    - state: cured
+      verdict: avoid
+      why: Salted or raw fish eggs (caviar, lumpfish roe, poutargue) are eaten uncooked and can carry listeria and parasites. Cooked fish roe is fine.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: Fish eggs that are cooked right through and not smoked are fine.
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+  reviewed: 2026-11-13
+- id: oysters
+  category: seafood
+  names:
+    - Oysters
+    - Huîtres
+    - Huître creuse
+    - Fines de claire
+    - Plateau de fruits de mer
+    - Oyster
+  tips: *a1
+  local: true
+  answers:
+    - state: raw
+      verdict: avoid
+      why: Raw oysters can carry listeria, the toxoplasmosis parasite and other germs. A firm no, even at Christmas.
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: Oysters cooked right through (gratinées, steamed, in a hot dish) are fine.
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: mussels
+  category: seafood
+  names:
+    - Mussels
+    - Moules
+    - Moules marinières
+    - Moules frites
+    - Moules de bouchot
+    - Moules à la crème
+  local: true
+  answers:
+    - state: raw
+      verdict: avoid
+      why: Raw mussels (and any raw shellfish) can carry listeria and the toxoplasmosis parasite.
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+    - state: cooked
+      verdict: ok
+      why: Mussels steamed until the shells open wide and piping hot are fine. Throw away any that stay closed.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: prawns
+  category: seafood
+  names:
+    - Prawns
+    - Crevettes
+    - Gambas
+    - Crevettes décortiquées
+    - Crevettes cuites
+    - Scampi
+    - Shrimp
+    - Bouquet
+    - Cocktail de crevettes
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: Raw prawns that you cook yourself until pink and hot all through are fine.
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+    - state: reheated
+      verdict: careful
+      why: Peeled cooked prawns from the shop are eaten cold and can carry listeria. Only eat them heated until steaming hot, never straight from the pack.
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
+    - state: raw
+      verdict: avoid
+      why: Raw prawns (carpaccio, tartare) can carry germs. Cook them through.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: crab-lobster
+  category: seafood
+  names:
+    - Crab
+    - Crabe
+    - Tourteau
+    - Araignée de mer
+    - Homard
+    - Langouste
+    - Langoustine
+    - Lobster
+    - Crayfish
+    - Écrevisse
+    - Chair de crabe
+  local: true
+  answers:
+    - state: cooked
+      verdict: careful
+      why: Crab, lobster and langoustines are fine if cooked right through and eaten hot or freshly cooked. Picked or peeled meat sold cold is a listeria risk, so heat it until steaming.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-aliments-eviter
+    - state: raw
+      verdict: avoid
+      why: Raw shellfish and crustaceans can carry listeria and parasites.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: scallops-squid
+  category: seafood
+  names:
+    - Scallops
+    - Coquilles Saint-Jacques
+    - Noix de Saint-Jacques
+    - Saint-Jacques
+    - Calamars
+    - Squid
+    - Seiche
+    - Poulpe
+    - Calamari
+    - Palourdes
+    - Clams
+    - Coques
+    - Bulots
+    - Bigorneaux
+    - Escargots
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: Scallops, squid, clams and whelks cooked right through and eaten hot are fine.
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+    - state: raw
+      verdict: avoid
+      why: Raw scallops or raw shellfish (carpaccio, tartare) can carry listeria and the toxoplasmosis parasite.
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: egg-boiled
+  category: egg
+  names:
+    - Hard-boiled egg
+    - Œuf dur
+    - Œufs durs
+    - Œuf cuit dur
+    - Egg
+    - Boiled egg
+  tips: *a2
+  local: true
+  answers:
+    - state: boiled
+      verdict: ok
+      why: A hard-boiled egg, where the white and the yolk are both firm, is safe.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: egg-soft-boiled
+  category: egg
+  names:
+    - Soft-boiled egg
+    - Œuf à la coque
+    - Œuf mollet
+    - Œuf poché
+    - Mouillettes
+    - Poached egg
+    - Œuf cocotte
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: A runny yolk can carry salmonella. Boil the egg until white and yolk are both firm.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+    - state: boiled
+      verdict: ok
+      why: Fine once the white and the yolk are firm.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+  reviewed: 2026-11-13
+- id: egg-fried-scrambled
+  category: egg
+  names:
+    - Fried egg
+    - Œuf au plat
+    - Œufs brouillés
+    - Scrambled eggs
+    - Omelette
+    - Œuf sur le plat
+    - Omelette baveuse
+    - Œuf Benedict
+    - Œufs au bacon
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: Fried eggs with a runny yolk, a baveuse omelette or soft scrambled eggs can carry salmonella. Cook until the white and yolk are firm.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
+    - state: cooked
+      verdict: ok
+      why: Eggs cooked until the white and the yolk are firm are safe.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+  reviewed: 2026-11-13
+- id: egg-mimosa
+  category: egg
+  names:
+    - Œuf mimosa
+    - Deviled eggs
+    - Œufs mimosa
+    - Œuf mayonnaise
+    - Œufs mayo
+  local: true
+  answers:
+    - state: cooked
+      verdict: careful
+      why: The hard-boiled eggs are fine. Make it with shop-bought mayonnaise; home-made or restaurant mayonnaise may use raw egg, so ask first.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: mayonnaise
+  category: egg
+  names:
+    - Mayonnaise
+    - Mayo
+    - Aïoli
+    - Sauce rouille
+    - Sauce tartare
+    - Rémoulade
+    - Sauce gribiche
+    - Sauce Caesar
+    - Mayonnaise maison
+    - Mayonnaise du commerce
+  tips: *a1
+  local: true
+  answers:
+    - state: raw
+      verdict: avoid
+      why: Home-made mayonnaise, aïoli and rouille use raw egg yolk and can carry salmonella.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
+    - state: pasteurised
+      verdict: ok
+      why: Shop-bought jar or tube mayonnaise is made with pasteurised egg and is considered safe.
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: sauce-hollandaise
+  category: egg
+  names:
+    - Hollandaise
+    - Béarnaise
+    - Sauce hollandaise
+    - Sabayon
+    - Sauce mousseline
+    - Zabaglione
+    - Sauce béarnaise
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: These sauces are warmed egg yolks, not cooked firm, and can carry salmonella. A restaurant version made fresh is not safe.
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
+        - nhs-healthy-diet
+    - state: pasteurised
+      verdict: careful
+      why: A sauce made with pasteurised egg and heated until thick may be fine. Ask the kitchen, and skip it if unsure.
+      sources:
+        - cdc-food-pregnant-women
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: mousse-chocolat-maison
+  category: egg
+  names:
+    - Chocolate mousse
+    - Mousse au chocolat
+    - Mousse au chocolat maison
+    - Mousse au chocolat du commerce
+    - Chocolate pot
+    - Pot de crème
+  local: true
+  answers:
+    - state: raw
+      verdict: avoid
+      why: Home-made mousse is made with raw egg and can carry salmonella. Also avoid versions containing alcohol.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+    - state: pasteurised
+      verdict: ok
+      why: Shop-bought mousse, or home-made with pasteurised egg, is considered safe. Check the label for alcohol.
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: tiramisu
+  category: egg
+  names:
+    - Tiramisu
+    - Tiramisu maison
+    - Mascarpone dessert
+    - Dessert italien
+    - Zuppa inglese
+  local: true
+  answers:
+    - state: raw
+      verdict: avoid
+      why: Home-made tiramisu uses raw egg, can carry salmonella, and often contains alcohol or strong coffee.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+    - state: pasteurised
+      verdict: careful
+      why: Shop-bought tiramisu is considered safe for the egg, but check that it has no alcohol and is eaten before its date.
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: custard-cream
+  category: egg
+  names:
+    - Custard
+    - Crème anglaise
+    - Crème pâtissière
+    - Crème brûlée
+    - Flan pâtissier
+    - Île flottante
+    - Crème caramel
+    - Pastry cream
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: Crème anglaise, crème pâtissière and baked custards are cooked until thick or set, which makes them safe. Keep them chilled and eat them on the day.
+      sources:
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
+    - state: raw
+      verdict: avoid
+      why: An uncooked cream made with raw egg, or a meringue topping left raw, can carry salmonella.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+  reviewed: 2026-11-13
+- id: egg-based-baking
+  category: egg
+  names:
+    - Cake
+    - Gâteau
+    - Brioche
+    - Crêpes
+    - Gaufres
+    - Pâte à crêpes
+    - Raw cake batter
+    - Pâte à gâteau crue
+    - Cookie dough
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: Baked goods with eggs are safe once cooked right through.
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
+    - state: raw
+      verdict: avoid
+      why: Raw cake batter or cookie dough with raw egg can carry salmonella. Do not lick the spoon.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: milk
+  category: dairy
+  names:
+    - Milk
+    - Lait
+    - Lait entier
+    - Lait demi-écrémé
+    - Lait UHT
+    - Lait pasteurisé
+    - Lait cru
+    - Raw milk
+    - Lait de ferme
+  tips: *a2
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: Pasteurised or UHT milk is safe. This is the milk in nearly every French supermarket.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+    - state: unpasteurised
+      verdict: avoid
+      why: Raw milk (lait cru), including from the farm or a vending machine, can carry listeria.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: yoghurt
+  category: dairy
+  names:
+    - Yoghurt
+    - Yaourt
+    - Yaourt nature
+    - Yaourt grec
+    - Skyr
+    - Fromage blanc fermier
+    - Kéfir
+    - Yogurt
+  tips: *a2
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: Yoghurt and skyr from the supermarket are made with pasteurised milk and are safe.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+    - state: unpasteurised
+      verdict: avoid
+      why: Raw-milk yoghurt, for example from a farm shop, can carry listeria.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+  reviewed: 2026-11-13
+- id: fromage-blanc
+  category: dairy
+  names:
+    - Fromage blanc
+    - Faisselle
+    - Fromage frais
+    - Petit-suisse
+    - Cottage cheese
+    - Brousse
+    - Brocciu
+    - Ricotta
+    - Mascarpone
+  tips: *a2
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: Fromage blanc, faisselle, cottage cheese, ricotta and mascarpone from the supermarket are made with pasteurised milk and are safe.
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+    - state: unpasteurised
+      verdict: avoid
+      why: Raw-milk fresh cheese (faisselle from the farm or market) can carry listeria.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+  reviewed: 2026-11-13
+- id: cream-butter
+  category: dairy
+  names:
+    - Cream
+    - Crème fraîche
+    - Crème épaisse
+    - Crème liquide
+    - Butter
+    - Beurre
+    - Beurre cru
+    - Crème crue
+    - Chantilly
+    - Beurre doux
+    - Beurre demi-sel
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: Pasteurised cream and butter, the usual shop versions, are safe.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+    - state: unpasteurised
+      verdict: avoid
+      why: Raw-milk cream or butter (crème crue, beurre cru, common in Normandy) can carry listeria.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+        - ameli-aliments-eviter
+  reviewed: 2026-11-13
+- id: ice-cream
+  category: dairy
+  names:
+    - Ice cream
+    - Glace
+    - Crème glacée
+    - Sorbet
+    - Glace artisanale
+    - Glace italienne
+    - Gelato
+    - Soft ice
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: Shop and branded ice cream is made with pasteurised milk and is safe. Soft-serve machines are best kept clean, so choose reputable places.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+    - state: unpasteurised
+      verdict: avoid
+      why: Ice cream made with raw milk or raw eggs can carry listeria or salmonella.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+        - cdc-listeria-dairy
+  reviewed: 2026-11-13
+- id: camembert-brie
+  category: cheese
+  names:
+    - Camembert
+    - Brie
+    - Brie de Meaux
+    - Coulommiers
+    - Chaource
+    - Neufchâtel
+    - Fromage à croûte fleurie
+    - Brillat-Savarin
+    - Saint-Marcellin
+    - Carré de l'Est
+  tips: *a1
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: avoid
+      why: Cheeses with a white bloomy rind are avoided in France, even when pasteurised, because listeria can grow on the rind and in the soft inside.
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: unpasteurised
+      verdict: avoid
+      why: Raw-milk camembert or brie (like most AOC ones) carries the highest listeria risk.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+        - cdc-food-pregnant-women
+    - state: cooked
+      verdict: ok
+      why: Baked camembert or brie in a recipe, heated until bubbling and steaming hot, is safe. Remove the rind first.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: washed-rind-cheese
+  category: cheese
+  names:
+    - Munster
+    - Pont-l'Évêque
+    - Livarot
+    - Époisses
+    - Maroilles
+    - Langres
+    - Fromage à croûte lavée
+    - Vacherin
+    - Mont d'Or
+    - Boulette d'Avesnes
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: avoid
+      why: Washed-rind cheeses can carry listeria. French advice is to avoid them.
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+    - state: unpasteurised
+      verdict: avoid
+      why: Raw-milk washed-rind cheese is the riskier version. Avoid it.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+    - state: cooked
+      verdict: ok
+      why: Heated until steaming hot all through in a recipe, with the rind removed, it is safe.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: roquefort-blue
+  category: cheese
+  names:
+    - Roquefort
+    - Bleu d'Auvergne
+    - Fourme d'Ambert
+    - Bleu des Causses
+    - Gorgonzola
+    - Stilton
+    - Bleu
+    - Fromage persillé
+    - Danish blue
+    - Sauce roquefort
+  tips: *a1
+  local: true
+  answers:
+    - state: unpasteurised
+      verdict: avoid
+      why: Roquefort is made from raw sheep's milk. Raw-milk and blue cheeses can carry listeria. Avoid it cold.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+    - state: pasteurised
+      verdict: careful
+      why: Soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce.
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+    - state: cooked
+      verdict: ok
+      why: Blue cheese cooked until steaming hot, for example in a sauce or on a hot dish, is safe.
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: goat-cheese-fresh
+  category: cheese
+  names:
+    - Fresh goat cheese
+    - Chèvre frais
+    - Chèvre en bûche
+    - Chèvre frais sans croûte
+    - Chavroux
+    - Petit chèvre
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: Fresh goat cheese without a rind, made with pasteurised milk (as most supermarket ones are), is safe.
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+    - state: unpasteurised
+      verdict: avoid
+      why: Raw goat's milk cheese can carry listeria and the toxoplasmosis parasite.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - cdc-listeria-dairy
+  reviewed: 2026-11-13
+- id: goat-cheese-rind
+  category: cheese
+  names:
+    - Crottin de Chavignol
+    - Sainte-Maure
+    - Valençay
+    - Selles-sur-Cher
+    - Chèvre affiné
+    - Chèvre chaud
+    - Salade de chèvre chaud
+    - Rocamadour
+    - Picodon
+    - Bûche de chèvre cendrée
+    - Goat cheese with rind
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: avoid
+      why: Goat cheeses with a white or ash rind are in the soft-rind group to avoid when eaten cold.
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: unpasteurised
+      verdict: avoid
+      why: Raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+    - state: cooked
+      verdict: ok
+      why: Chèvre chaud (grilled on toast until bubbling and hot all through) is fine. Remove the rind first, and ask whether the salad leaves were washed.
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: hard-cheese
+  category: cheese
+  names:
+    - Comté
+    - Emmental
+    - Gruyère
+    - Beaufort
+    - Cheddar
+    - Gouda
+    - Edam
+    - Mimolette
+    - Abondance
+    - Appenzeller
+    - Cantal vieux
+    - Fromage à pâte dure
+    - Hard cheese
+  tips: *a2
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: Hard cooked pressed cheeses are safe. Remove the rind and slice or grate it yourself.
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: unpasteurised
+      verdict: ok
+      why: Comté, beaufort and other hard cooked cheeses are heated and aged long enough that raw-milk versions are accepted in France.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: parmesan
+  category: cheese
+  names:
+    - Parmesan
+    - Parmigiano Reggiano
+    - Grana Padano
+    - Pecorino
+    - Parmesan râpé
+    - Copeaux de parmesan
+  tips: *a2
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: Parmesan is a hard, long-aged cheese and is safe. Pre-grated sachets are not advised, so grate it yourself.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+  reviewed: 2026-11-13
+- id: grated-cheese-bag
+  category: cheese
+  names:
+    - Grated cheese
+    - Fromage râpé
+    - Gruyère râpé
+    - Emmental râpé
+    - Fromage râpé en sachet
+    - Mélange pizza
+    - Râpé
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: Ready-grated cheese in a bag is not advised in France, because the moist, grated cheese can let germs grow. Grate your own, or cook it very hot.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: mozzarella-burrata
+  category: cheese
+  names:
+    - Mozzarella
+    - Burrata
+    - Mozzarella di bufala
+    - Stracciatella
+    - Bocconcini
+    - Caprese
+    - Tomates mozzarella
+    - Mozza
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: Mozzarella and burrata made with pasteurised milk (check the label) are safe. Eat them before the use-by date.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+        - cdc-listeria-prevention
+    - state: unpasteurised
+      verdict: avoid
+      why: Raw-milk mozzarella or burrata can carry listeria.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-13
+- id: feta
+  category: cheese
+  names:
+    - Feta
+    - Salade grecque
+    - Halloumi
+    - Paneer
+    - Tzatziki
+    - Brebis
+    - Fromage de brebis
+    - Feta au four
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: Feta and halloumi made with pasteurised milk are safe.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+        - cdc-listeria-prevention
+    - state: unpasteurised
+      verdict: avoid
+      why: Raw sheep's milk feta or brebis can carry listeria. Check the label.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-13
+- id: raclette-reblochon
+  category: cheese
+  names:
+    - Reblochon
+    - Fromage à raclette
+    - Raclette
+    - Morbier
+    - Saint-Nectaire
+    - Tomme
+    - Cantal
+    - Saint-Paulin
+    - Tartiflette
+    - Tomme de Savoie
+    - Fromage pâte pressée non cuite
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: avoid
+      why: Soft pressed uncooked cheeses (reblochon, morbier, tomme, saint-nectaire) are avoided cold in France.
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: unpasteurised
+      verdict: avoid
+      why: Raw-milk reblochon and similar cheeses carry a high listeria risk when not heated.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+    - state: cooked
+      verdict: ok
+      why: Melted until bubbling and piping hot (raclette, tartiflette, gratin), with the rind removed, it is safe.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: cream-cheese
+  category: cheese
+  names:
+    - Cream cheese
+    - Boursin
+    - Philadelphia
+    - Saint Môret
+    - Kiri
+    - Tartare ail et fines herbes
+    - Vache qui rit
+    - Fromage fondu
+    - Processed cheese
+    - Fromage à tartiner
+    - Madame Loïk
+  tips: *a2
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: Cream cheese and processed cheese spreads are made with pasteurised milk and are safe.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: fondue
+  category: cheese
+  names:
+    - Fondue
+    - Fondue savoyarde
+    - Fondue au fromage
+    - Fondue bourguignonne
+    - Fondue chinoise
+    - Cheese fondue
+  local: true
+  answers:
+    - state: cooked
+      verdict: careful
+      why: Cheese fondue is fine if the cheese stays steaming hot. The wine and kirsch used are a concern, so ask for it made without alcohol. Meat fondue must be cooked right through.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+  reviewed: 2026-11-13
+- id: croque-monsieur
+  category: ready_meal
+  names:
+    - Croque-monsieur
+    - Croque-madame
+    - Croque
+    - Toast jambon fromage
+    - Croque jambon fromage
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: Croque-monsieur is fine if it is hot and steaming through. For a croque-madame ask for the egg cooked firm.
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
+    - state: undercooked
+      verdict: avoid
+      why: A fried egg with a runny yolk on top is a salmonella risk. Ask for it cooked firm.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+  reviewed: 2026-11-13
+- id: quiche
+  category: ready_meal
+  names:
+    - Quiche
+    - Quiche lorraine
+    - Quiche aux poireaux
+    - Tarte salée
+    - Tarte aux légumes
+    - Flammekueche
+    - Tarte flambée
+    - Savoury tart
+  local: true
+  answers:
+    - state: reheated
+      verdict: ok
+      why: A quiche baked and eaten hot, or reheated until steaming all through, is safe.
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+    - state: cooked
+      verdict: careful
+      why: A shop-bought quiche eaten cold from the fridge can carry listeria. Heat it until steaming, and avoid one that has a creamy runny filling.
+      sources:
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+  reviewed: 2026-11-13
+- id: pizza
+  category: ready_meal
+  names:
+    - Pizza
+    - Pizza margherita
+    - Pizza 4 fromages
+    - Pizza jambon
+    - Pizza reine
+    - Pizza surgelée
+    - Calzone
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: A pizza that is cooked and hot is fine, including with ham, chorizo or soft cheese on it that has been baked through.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+    - state: raw
+      verdict: careful
+      why: Toppings added after baking, such as jambon cru, burrata, raw rocket or an egg, are not heated. Skip those, or ask for them left off.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+  reviewed: 2026-11-13
+- id: sandwich
+  category: ready_meal
+  names:
+    - Sandwich
+    - Jambon-beurre
+    - Sandwich SNCF
+    - Sandwich triangle
+    - Sandwich supermarché
+    - Baguette jambon beurre
+    - Wrap
+    - Panini
+    - Sandwich poulet crudités
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: Cold ready-made sandwiches carry listeria risk from the ham, mayonnaise, cheese or smoked salmon, and raw salad adds soil risk. Choose a hot panini, or cooked chicken, hard cheese and cooked egg.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: ready-meal-chilled
+  category: ready_meal
+  names:
+    - Ready meal
+    - Plat cuisiné
+    - Plat préparé
+    - Lasagnes
+    - Hachis parmentier
+    - Gratin dauphinois
+    - Plat du traiteur
+    - Soupe fraîche
+    - Plat surgelé
+    - Raviolis
+    - Frozen meal
+  local: true
+  answers:
+    - state: reheated
+      verdict: ok
+      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
+      sources:
+        - nhs-healthy-diet
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+    - state: cooked
+      verdict: careful
+      why: Eaten cold or only warm from the fridge, ready meals can carry listeria. Choose reheated, and avoid ones that include raw ham, smoked fish, or soft rind cheese.
+      sources:
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: deli-salads
+  category: ready_meal
+  names:
+    - Piémontaise
+    - Salade piémontaise
+    - Taboulé
+    - Carottes râpées
+    - Céleri rémoulade
+    - Salade de pommes de terre
+    - Salade de riz
+    - Coleslaw
+    - Salade composée traiteur
+    - Salade traiteur
+    - Potato salad
+    - Salad bar
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: Chilled deli salads and salads from the traiteur counter are a listeria risk, and raw vegetables add soil risk from toxoplasmosis. Choose a salad you make and wash yourself.
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
+  reviewed: 2026-11-13
+- id: takeaway-meal
+  category: ready_meal
+  names:
+    - Takeaway
+    - Plat à emporter
+    - Traiteur
+    - Restaurant
+    - Fast food
+    - Plat chinois
+    - Plat indien
+    - Nems
+    - Samossa
+    - Bo bun
+    - Couscous
+  local: true
+  answers:
+    - state: cooked
+      verdict: careful
+      why: Fine if the food is cooked right through and served piping hot. Skip raw vegetables, runny egg, rare meat, raw fish and unpasteurised cheese, and ask for meat well done.
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13

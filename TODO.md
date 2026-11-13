@@ -43,3 +43,14 @@
 - **Declaration deadline:** ameli says "before the end of the 3rd month" (about 14 SA); the sage-femme référente page says the *referent-midwife* form is due before the end of the 5th month. Not the same thing; both stated correctly in the file.
 - Prevention check-up (before 24 weeks) and the first-consultation test list each come from ONE ameli page (ameli-programme-suivi); ameli-toxo-serologie is the second source only for the toxoplasmosis test.
 - ameli-aliments-eviter, nhs-foods-to-avoid and nhs-alcohol (already in sources.yaml from slice 1) are reused for the food tips in the week files.
+
+## Checker part 1 (foods: meat, fish, egg, dairy, cheese) - for Div
+- **Not covered by any allowlisted page I could read (so left as general/careful or omitted):** meringue and île flottante, caesar dressing as its own item, plant-based cheese substitutes (mangerbouger says avoid; only 1 source, ameli only mentions soy), raw egg in ice cream/sorbet at artisans, horse meat, snails, soft-serve machines, halal/kosher specifics.
+- **Pâté / foie gras in sealed tins or jars:** French pages say avoid all pâté. Only CDC says shelf-stable sealed is safer. Marked `careful` (2 sources: CDC + mangerbouger) with "ask your midwife". Please confirm you are happy with that.
+- **Cured meats:** NHS toxo page (2023) says avoid salami/Parma ham; NHS food page (2026) says heat until steaming. Cold = avoid, heated through = careful, following mangerbouger/ameli.
+- **Blue cheese (roquefort), pasteurised soft blue:** no French page names them. Roquefort raw = avoid (raw-milk rule); pasteurised blue = careful, cooked only (NHS). Worth a midwife check.
+- **Fresh goat cheese:** pasteurised and without rind marked ok (NHS + mangerbouger's "other pasteurised cheeses allowed"); no French page names chèvre. Same for mozzarella, burrata, feta, skyr.
+- **Sandwiches, takeaway, deli salads, kebab:** no ameli/mangerbouger rule names them; verdicts are built from ameli (restaurant: meat well done, no raw vegetables), CDC (deli salads, sandwiches) and NHS. Check wording.
+- **Fish page sources:** Santé publique France listeria page returned 404 and 1000jours.fr connection reset; no HAS/CNGOF page read for food, so French support is ameli + mangerbouger only.
+- **Mercury/tuna frequency:** French pages say "limit" without numbers, so no numbers are in the app; NHS gives numbers but they were left out on purpose (stricter French wording followed).
+- Sources.yaml has 5 new entries (CDC food-pregnant-women, 3 CDC listeria pages, NHS healthy diet); the CDC meat-fish page title is copied as shown on the site, typo included ("Pâte").
