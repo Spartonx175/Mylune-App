@@ -17,6 +17,10 @@ allowed_domains:
   - who.int
   - cdc.gov
   - nice.org.uk
+  # Medicines in pregnancy (France), approved by Div 2026-11-13 for the medicines checker
+  - lecrat.fr
+  - ansm.sante.fr
+  - medicaments.gouv.fr
   # Peer-reviewed, for specific claims only (cite author/year/journal in the title)
   - pubmed.ncbi.nlm.nih.gov
 
