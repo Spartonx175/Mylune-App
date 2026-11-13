@@ -289,6 +289,352 @@ sources:
     url: https://www.ameli.fr/assure/sante/devenir-parent/grossesse/grossesse-en-bonne-sante/tabac-alcool-drogue-et-grossesse/zero-alcool-pendant-la-grossesse
     title: Zéro alcool de la conception à la fin de la grossesse
     accessed: 2026-11-13
+  # --- Checker part 3 (medicines, exercise), all pages read 2026-11-13 ---
+  - id: crat-paracetamol
+    name: CRAT
+    url: https://www.lecrat.fr/4165/
+    title: "Paracétamol – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-paracetamol-news
+    name: CRAT
+    url: https://www.lecrat.fr/21067/
+    title: "Paracétamol et grossesse : publication du CRAT dans la revue Human Reproduction"
+    accessed: 2026-11-13
+  - id: crat-omeprazole
+    name: CRAT
+    url: https://www.lecrat.fr/12876/
+    title: "Oméprazole – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-cetirizine
+    name: CRAT
+    url: https://www.lecrat.fr/3084/
+    title: "Cétirizine – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-antihistaminiques
+    name: CRAT
+    url: https://www.lecrat.fr/3647/
+    title: "Antihistaminiques H1 – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-loperamide
+    name: CRAT
+    url: https://www.lecrat.fr/6597/
+    title: "Lopéramide – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-antidiarrheiques
+    name: CRAT
+    url: https://www.lecrat.fr/6573/
+    title: "Antidiarrhéiques – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-laxatifs
+    name: CRAT
+    url: https://www.lecrat.fr/8711/
+    title: "Laxatifs – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-ibuprofene
+    name: CRAT
+    url: https://www.lecrat.fr/15292/
+    title: "Ibuprofène – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-ains
+    name: CRAT
+    url: https://www.lecrat.fr/4199/
+    title: "Anti-inflammatoires non stéroïdiens (AINS) – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-diclofenac
+    name: CRAT
+    url: https://www.lecrat.fr/15298/
+    title: "Diclofénac – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-codeine
+    name: CRAT
+    url: https://www.lecrat.fr/4478/
+    title: "Codéine – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-tramadol
+    name: CRAT
+    url: https://www.lecrat.fr/4541/
+    title: "Tramadol – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-antiemetiques
+    name: CRAT
+    url: https://www.lecrat.fr/3593/
+    title: "Antiémétiques – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-doxylamine
+    name: CRAT
+    url: https://www.lecrat.fr/3405/
+    title: "Doxylamine – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-metoclopramide
+    name: CRAT
+    url: https://www.lecrat.fr/3419/
+    title: "Métoclopramide – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-domperidone
+    name: CRAT
+    url: https://www.lecrat.fr/3446/
+    title: "Dompéridone – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-antiasthmatiques
+    name: CRAT
+    url: https://www.lecrat.fr/9900/
+    title: "Antiasthmatiques – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-salbutamol
+    name: CRAT
+    url: https://www.lecrat.fr/8048/
+    title: "Salbutamol – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-corticoides
+    name: CRAT
+    url: https://www.lecrat.fr/5009/
+    title: "Corticoïdes – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-hydrocortisone
+    name: CRAT
+    url: https://www.lecrat.fr/5077/
+    title: "Hydrocortisone – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-clotrimazole
+    name: CRAT
+    url: https://www.lecrat.fr/10189/
+    title: "Clotrimazole – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-melatonine
+    name: CRAT
+    url: https://www.lecrat.fr/11642/
+    title: "Mélatonine – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-huiles-essentielles
+    name: CRAT
+    url: https://www.lecrat.fr/12143/
+    title: "Huiles essentielles – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-reflux
+    name: CRAT
+    url: https://www.lecrat.fr/12854/
+    title: "Reflux gastro-œsophagien – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-rhinite
+    name: CRAT
+    url: https://www.lecrat.fr/4993/
+    title: "Rhinite – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-dextromethorphane
+    name: CRAT
+    url: https://www.lecrat.fr/4695/
+    title: "Dextrométhorphane – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-antitussifs
+    name: CRAT
+    url: https://www.lecrat.fr/11851/
+    title: "Antitussifs / Fluidifiants bronchiques – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-antimigraineux
+    name: CRAT
+    url: https://www.lecrat.fr/10980/
+    title: "Anti-migraineux – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-clobetasol
+    name: CRAT
+    url: https://www.lecrat.fr/5165/
+    title: "Clobétasol – Grossesse"
+    accessed: 2026-11-13
+  - id: crat-medicaments-dangereux
+    name: CRAT
+    url: https://www.lecrat.fr/3147/
+    title: "Les médicaments dangereux pendant la grossesse – Le CRAT"
+    accessed: 2026-11-13
+  - id: crat-grandes-lignes
+    name: CRAT
+    url: https://www.lecrat.fr/24/
+    title: "Médicaments et grossesse : les grandes lignes du raisonnement – Le CRAT"
+    accessed: 2026-11-13
+  - id: ansm-douleur
+    name: ANSM
+    url: https://ansm.sante.fr/dossiers-thematiques/medicaments-et-grossesse/traitement-de-la-douleur-durant-la-grossesse
+    title: "Traitement de la douleur durant la grossesse - ANSM"
+    accessed: 2026-11-13
+  - id: ansm-nausees
+    name: ANSM
+    url: https://ansm.sante.fr/dossiers-thematiques/medicaments-et-grossesse/traitement-des-nausees-durant-la-grossesse
+    title: "Traitement des nausées et vomissements durant la grossesse - ANSM"
+    accessed: 2026-11-13
+  - id: nhs-medicines
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/keeping-well/medicines/
+    title: "Medicines in pregnancy - NHS"
+    accessed: 2026-11-13
+  - id: nhs-paracetamol
+    name: NHS
+    url: https://www.nhs.uk/medicines/paracetamol-for-adults/
+    title: "Paracetamol for adults: painkiller for pain and high temperature - NHS"
+    accessed: 2026-11-13
+  - id: nhs-ibuprofen
+    name: NHS
+    url: https://www.nhs.uk/medicines/ibuprofen-for-adults/
+    title: "Ibuprofen for adults: painkiller that also treats inflammation - NHS"
+    accessed: 2026-11-13
+  - id: nhs-folic-acid
+    name: NHS
+    url: https://www.nhs.uk/medicines/folic-acid/
+    title: "Folic acid: used to keep your baby healthy in pregnancy and to treat folate deficiency anaemia - NHS"
+    accessed: 2026-11-13
+  - id: nhs-antihistamines
+    name: NHS
+    url: https://www.nhs.uk/medicines/antihistamines/
+    title: "Antihistamines - NHS"
+    accessed: 2026-11-13
+  - id: nhs-aspirin
+    name: NHS
+    url: https://www.nhs.uk/medicines/aspirin-for-pain-relief/
+    title: "Aspirin: medicine for pain relief or preventing blood clots - NHS"
+    accessed: 2026-11-13
+  - id: nhs-codeine
+    name: NHS
+    url: https://www.nhs.uk/medicines/codeine/
+    title: "Codeine: a medicine for pain - NHS"
+    accessed: 2026-11-13
+  - id: nhs-cetirizine
+    name: NHS
+    url: https://www.nhs.uk/medicines/cetirizine/pregnancy-breastfeeding-and-fertility-while-taking-cetirizine/
+    title: "Pregnancy, breastfeeding and fertility while taking cetirizine - NHS"
+    accessed: 2026-11-13
+  - id: nhs-loratadine
+    name: NHS
+    url: https://www.nhs.uk/medicines/loratadine/pregnancy-breastfeeding-and-fertility-while-taking-loratadine/
+    title: "Pregnancy, breastfeeding and fertility while taking loratadine - NHS"
+    accessed: 2026-11-13
+  - id: nhs-omeprazole
+    name: NHS
+    url: https://www.nhs.uk/medicines/omeprazole/
+    title: "Omeprazole: a medicine to treat heartburn and indigestion - NHS"
+    accessed: 2026-11-13
+  - id: nhs-antacids
+    name: NHS
+    url: https://www.nhs.uk/medicines/antacids/
+    title: "Antacids - NHS"
+    accessed: 2026-11-13
+  - id: nhs-lactulose
+    name: NHS
+    url: https://www.nhs.uk/medicines/lactulose/
+    title: "Lactulose: a laxative medicine to treat constipation - NHS"
+    accessed: 2026-11-13
+  - id: nhs-laxatives
+    name: NHS
+    url: https://www.nhs.uk/medicines/laxatives/
+    title: "Laxatives - NHS"
+    accessed: 2026-11-13
+  - id: nhs-loperamide
+    name: NHS
+    url: https://www.nhs.uk/medicines/loperamide/pregnancy-breastfeeding-and-fertility-while-taking-loperamide/
+    title: "Pregnancy, breastfeeding and fertility while taking loperamide - NHS"
+    accessed: 2026-11-13
+  - id: nhs-hydrocortisone-skin
+    name: NHS
+    url: https://www.nhs.uk/medicines/hydrocortisone-skin-cream/
+    title: "Hydrocortisone for skin: steroid for skin conditions - NHS"
+    accessed: 2026-11-13
+  - id: nhs-clotrimazole
+    name: NHS
+    url: https://www.nhs.uk/medicines/clotrimazole/
+    title: "Clotrimazole: antifungal for fungal infections - NHS"
+    accessed: 2026-11-13
+  - id: nhs-pseudoephedrine
+    name: NHS
+    url: https://www.nhs.uk/medicines/pseudoephedrine/
+    title: "Pseudoephedrine: medicine for a stuffy or blocked nose - NHS"
+    accessed: 2026-11-13
+  - id: nhs-decongestants
+    name: NHS
+    url: https://www.nhs.uk/medicines/decongestants/
+    title: "Decongestants - NHS"
+    accessed: 2026-11-13
+  - id: nhs-melatonin
+    name: NHS
+    url: https://www.nhs.uk/medicines/melatonin/
+    title: "Melatonin: a medicine used for sleep problems - NHS"
+    accessed: 2026-11-13
+  - id: nhs-antibiotics
+    name: NHS
+    url: https://www.nhs.uk/medicines/antibiotics/
+    title: "Antibiotics - NHS"
+    accessed: 2026-11-13
+  - id: nhs-salbutamol
+    name: NHS
+    url: https://www.nhs.uk/medicines/salbutamol-inhaler/pregnancy-breastfeeding-and-fertility-while-using-salbutamol-inhalers/
+    title: "Pregnancy, breastfeeding and fertility while using salbutamol inhalers - NHS"
+    accessed: 2026-11-13
+  - id: nhs-levothyroxine
+    name: NHS
+    url: https://www.nhs.uk/medicines/levothyroxine/
+    title: "Levothyroxine: a medicine for an underactive thyroid (hypothyroidism) - NHS"
+    accessed: 2026-11-13
+  - id: nhs-metoclopramide
+    name: NHS
+    url: https://www.nhs.uk/medicines/metoclopramide/
+    title: "Metoclopramide: an anti-sickness medicine - NHS"
+    accessed: 2026-11-13
+  - id: nhs-sumatriptan
+    name: NHS
+    url: https://www.nhs.uk/medicines/sumatriptan/
+    title: "Sumatriptan: medicine to treat migraines - NHS"
+    accessed: 2026-11-13
+  - id: nhs-domperidone
+    name: NHS
+    url: https://www.nhs.uk/medicines/domperidone/pregnancy-breastfeeding-and-fertility-while-taking-domperidone/
+    title: "Pregnancy, breastfeeding and fertility while taking domperidone - NHS"
+    accessed: 2026-11-13
+  - id: nhs-diclofenac
+    name: NHS
+    url: https://www.nhs.uk/medicines/diclofenac/pregnancy-breastfeeding-and-fertility-while-taking-or-using-diclofenac/
+    title: "Pregnancy, breastfeeding and fertility while taking or using diclofenac - NHS"
+    accessed: 2026-11-13
+  - id: nhs-tramadol
+    name: NHS
+    url: https://www.nhs.uk/medicines/tramadol/pregnancy-breastfeeding-and-fertility-while-taking-tramadol/
+    title: "Pregnancy, breastfeeding and fertility while taking tramadol - NHS"
+    accessed: 2026-11-13
+  - id: ameli-ap-choix
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/devenir-parent/grossesse/grossesse-en-bonne-sante/grossesse-activite-physique/grossesse-choix-activite-physique
+    title: "Comment choisir son activité physique ou son sport pendant sa grossesse ?"
+    accessed: 2026-11-13
+  - id: ameli-ap-benefices
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/devenir-parent/grossesse/grossesse-en-bonne-sante/grossesse-activite-physique/activite-physique-grossesse-benefices
+    title: "Pourquoi être active pendant sa grossesse ?"
+    accessed: 2026-11-13
+  - id: ameli-ap-precautions
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/devenir-parent/grossesse/grossesse-en-bonne-sante/grossesse-activite-physique/enceinte-active-precautions
+    title: "Enceinte et active : quelles précautions ?"
+    accessed: 2026-11-13
+  - id: ameli-environnement
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/devenir-parent/grossesse/grossesse-en-bonne-sante/grossesse-environnement/grossesse-environnement
+    title: "Grossesse et petite enfance : agir sur l'environnement"
+    accessed: 2026-11-13
+  - id: nhs-exercise
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/keeping-well/exercise/
+    title: "Exercise in pregnancy - NHS"
+    accessed: 2026-11-13
+  - id: nhs-travelling
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/keeping-well/travelling/
+    title: "Travelling in pregnancy - NHS"
+    accessed: 2026-11-13
+  - id: nhs-startforlife-exercise
+    name: NHS
+    url: https://www.nhs.uk/start-for-life/pregnancy/exercising-in-pregnancy/
+    title: "Exercising in pregnancy - Best Start in Life - NHS"
+    accessed: 2026-11-13
+  - id: cdc-ap-pregnant
+    name: CDC
+    url: https://www.cdc.gov/physical-activity-basics/guidelines/healthy-pregnant-or-postpartum-women.html
+    title: "Pregnant & Postpartum Activity: An Overview | Physical Activity Basics | CDC"
+    accessed: 2026-11-13
 # Entry shape:
 # - id: ameli-toxo
 #   name: ameli

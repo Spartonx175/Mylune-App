@@ -1,0 +1,526 @@
+# "Can I do this?" checker, part 3: exercise and everyday activities. Authored in English first (CheckItem[], lib/content/check-types.ts). FR mirrors ids, verdicts and sources later.
+# French rules (ameli) first, then NHS, CDC. avoid/careful need 2 sources, ok needs 1. Stage rules are stated in the why (state is always not_applicable).
+# No minute or repetition figures: sources read give them only for general weekly targets, which the app does not show.
+- id: walking
+  category: walking
+  names:
+    - "Walking"
+    - "Marche"
+    - "Brisk walking"
+    - "Marche rapide"
+    - "Balade"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Walking is one of the most suitable activities in pregnancy and an easy way to start. Stop and get advice if you feel unwell, dizzy, very breathless, have chest pain, bleeding or regular painful contractions."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - cdc-ap-pregnant
+  reviewed: 2026-11-13
+- id: swimming
+  category: water
+  names:
+    - "Swimming"
+    - "Natation"
+    - "Piscine"
+    - "Swim"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Swimming is recommended: the water supports your weight and eases pressure on muscles and joints, which can help in later pregnancy. Stop and get advice if you feel unwell, dizzy, very breathless, have chest pain, bleeding or regular painful contractions."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-13
+- id: aqua-aerobics
+  category: water
+  names:
+    - "Aqua-aerobics"
+    - "Aquagym"
+    - "Water aerobics"
+    - "Aqua natal"
+    - "Aquafitness"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Aquagym and pregnancy water classes are recommended activities. Stop and get advice if you feel unwell, dizzy, very breathless, have chest pain, bleeding or regular painful contractions."
+      sources:
+        - ameli-ap-choix
+        - cdc-ap-pregnant
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-13
+- id: yoga
+  category: mind-body
+  names:
+    - "Yoga"
+    - "Hatha yoga"
+    - "Stretching yoga"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Yoga carries no particular risk if you avoid positions that can lower your blood pressure, such as lying flat on your back later on, or staying still on your feet for a long time. Tell the teacher you are pregnant. Stop and get advice if you feel unwell, dizzy, very breathless, have chest pain, bleeding or regular painful contractions."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - cdc-ap-pregnant
+  reviewed: 2026-11-13
+- id: prenatal-yoga
+  category: mind-body
+  names:
+    - "Prenatal yoga"
+    - "Yoga prénatal"
+    - "Pregnancy yoga"
+    - "Yoga pour femmes enceintes"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Yoga classes made for pregnancy are gentle stretching and breathing, a good choice. The teacher adapts the positions to avoid those that lower blood pressure. Stop and get advice if you feel unwell, dizzy, very breathless, have chest pain, bleeding or regular painful contractions."
+      sources:
+        - nhs-startforlife-exercise
+        - nhs-exercise
+        - ameli-ap-choix
+  reviewed: 2026-11-13
+- id: pilates
+  category: mind-body
+  names:
+    - "Pilates"
+    - "Pilates prénatal"
+    - "Prenatal Pilates"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Pilates carries no risk if you avoid positions that can lower your blood pressure, and avoid holding your breath while straining. Let the instructor know you are pregnant, and from 24 weeks of amenorrhoea avoid lying flat on your back. Stop and get advice if you feel unwell, dizzy, very breathless, have chest pain, bleeding or regular painful contractions."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+  reviewed: 2026-11-13
+- id: stretching
+  category: mind-body
+  names:
+    - "Stretching"
+    - "Étirements"
+    - "Gentle stretching"
+    - "Warm-up and cool-down"
+    - "Echauffement"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Gentle stretching is recommended alongside endurance and light strength work, as a warm-up before and a calm-down after exercise. Stop and get advice if you feel unwell, dizzy, very breathless, have chest pain, bleeding or regular painful contractions."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+  reviewed: 2026-11-13
+- id: stationary-cycling
+  category: cycling
+  names:
+    - "Stationary bike"
+    - "Vélo d'appartement"
+    - "Exercise bike"
+    - "Home trainer"
+    - "Cycling indoors"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "A stationary bike is recommended: no risk of falling. Keep cool, drink water and slow down if you cannot talk easily. Stop and get advice if you feel unwell, dizzy, very breathless, have chest pain, bleeding or regular painful contractions."
+      sources:
+        - ameli-ap-choix
+        - cdc-ap-pregnant
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-13
+- id: outdoor-cycling
+  category: cycling
+  names:
+    - "Cycling"
+    - "Bike ride"
+    - "Vélo"
+    - "Cycling outdoors"
+    - "Mountain biking"
+    - "VTT"
+    - "Road cycling"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Bike riding is listed as a suitable activity, but ameli advises avoiding riding outdoors from around months 4 to 6 because your balance changes and a fall could hurt your belly. The NHS names mountain biking as a risky activity. A stationary bike is the safer choice."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-13
+- id: running
+  category: running
+  names:
+    - "Running"
+    - "Jogging"
+    - "Course à pied"
+    - "Footing"
+    - "Run"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "If you already run, you can usually keep going while it feels comfortable, and many switch to brisk walking as the bump grows. Starting running while pregnant is not recommended. Ask your midwife or doctor before you start or continue. Stop and get advice if you feel unwell, dizzy, very breathless, have chest pain, bleeding or regular painful contractions."
+      sources:
+        - nhs-exercise
+        - ameli-ap-choix
+        - cdc-ap-pregnant
+  reviewed: 2026-11-13
+- id: strength-training
+  category: strength
+  names:
+    - "Strength training"
+    - "Musculation"
+    - "Weights"
+    - "Light weights"
+    - "Gym machines"
+    - "Machines de musculation"
+    - "Resistance training"
+    - "Weight machines"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Light strength work with machines or light weights is fine if you already do it or after asking your midwife or doctor. Do not hold your breath while straining, and avoid lying flat on your back from 24 weeks of amenorrhoea. Stop and get advice if you feel unwell, dizzy, very breathless, have chest pain, bleeding or regular painful contractions."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - nhs-exercise
+  reviewed: 2026-11-13
+- id: hiit-crossfit
+  category: intense
+  names:
+    - "HIIT"
+    - "High intensity interval training"
+    - "CrossFit"
+    - "Cross training"
+    - "Intense workout"
+    - "Circuit training"
+    - "Bootcamp"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The sources read do not name HIIT or CrossFit. They say intense or high-level sport needs a medical check first, that strong activity is mainly for people who already did it, and to avoid falls, holding your breath and getting too hot. Ask your midwife or doctor before doing it."
+      sources:
+        - ameli-ap-benefices
+        - cdc-ap-pregnant
+        - ameli-ap-precautions
+  reviewed: 2026-11-13
+- id: hot-yoga
+  category: heat
+  names:
+    - "Hot yoga"
+    - "Bikram yoga"
+    - "Yoga chaud"
+    - "Heated studio"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Hot, humid rooms are best avoided in pregnancy: ameli says to avoid hot and humid places, and the NHS says keep cool and stop if you feel too hot or unwell. Hot yoga is not named by the sources, but the heat is the issue."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+  reviewed: 2026-11-13
+- id: spinning
+  category: cycling
+  names:
+    - "Spinning"
+    - "Indoor cycling class"
+    - "RPM class"
+    - "Cours de vélo"
+    - "Biking class"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "A stationary bike is fine, but fast, hot classes are different: slow down, keep cool, drink water and stop if you feel unwell or too hot. Ask your midwife or doctor if you did not do this before."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - ameli-ap-precautions
+  reviewed: 2026-11-13
+- id: hiking
+  category: walking
+  names:
+    - "Hiking"
+    - "Randonnée"
+    - "Trekking"
+    - "Mountain walking"
+    - "Altitude"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Easy walking is fine, but ameli advises avoiding hiking on uneven ground from around months 4 to 6 (balance, risk of falling), and both ameli and the NHS advise against exercising at altitude until you are used to it."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-13
+- id: skiing
+  category: fall-risk
+  names:
+    - "Skiing"
+    - "Ski"
+    - "Downhill skiing"
+    - "Snowboard"
+    - "Ski alpin"
+    - "Downhill sports"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Downhill skiing is not advised in pregnancy because of the risk of falls and hard knocks to the belly."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-13
+- id: horse-riding
+  category: fall-risk
+  names:
+    - "Horse riding"
+    - "Équitation"
+    - "Riding"
+    - "Cheval"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Horse riding is not advised in pregnancy because of the risk of falling and being thrown off balance."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-13
+- id: contact-sports
+  category: contact
+  names:
+    - "Contact sports"
+    - "Rugby"
+    - "Football"
+    - "Soccer"
+    - "Martial arts"
+    - "Arts martiaux"
+    - "Judo"
+    - "Boxing"
+    - "Hockey"
+    - "Handball"
+    - "Basketball"
+    - "Team sports"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Contact sports and martial arts are not advised: a blow or fall onto your belly could hurt you and the baby."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-13
+- id: racket-sports
+  category: contact
+  names:
+    - "Tennis"
+    - "Squash"
+    - "Badminton"
+    - "Racket sports"
+    - "Sports de raquette"
+    - "Padel"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The sources do not fully agree: ameli says racket sports can go on with care and good technique, the NHS advice for pregnancy lists tennis and squash among sports to avoid because of the risk of a knock to the belly. Ask your midwife or doctor."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-13
+- id: scuba-diving
+  category: water
+  names:
+    - "Scuba diving"
+    - "Plongée"
+    - "Diving"
+    - "Plongée sous-marine"
+    - "Snorkelling with tank"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Do not scuba dive in pregnancy. The baby has no protection against decompression sickness."
+      sources:
+        - nhs-exercise
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-13
+- id: sit-ups-crunches
+  category: strength
+  names:
+    - "Sit-ups"
+    - "Crunches"
+    - "Abdominal crunches"
+    - "Abdos"
+    - "Abdominaux"
+    - "Ab exercises"
+    - "Planks"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Abdominal sit-ups and crunches on your back are best avoided: lying on your back for more than a few minutes in later pregnancy can press on a large blood vessel, and strongly tightening while holding your breath is also advised against. Gentle pelvic floor and tummy exercises are fine. Ask your midwife or physio for safe versions."
+      sources:
+        - nhs-startforlife-exercise
+        - ameli-ap-precautions
+        - nhs-exercise
+  reviewed: 2026-11-13
+- id: lying-on-back
+  category: position
+  names:
+    - "Lying flat on your back"
+    - "Sleeping on back"
+    - "Dormir sur le dos"
+    - "Back position"
+    - "Flat on back exercises"
+    - "Supine"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Later in pregnancy avoid lying flat on your back for more than a few minutes, in exercise or rest: the bump can press on the main vein to the heart and make you feel dizzy or faint. Sources give different starting points: ameli says from 24 weeks of amenorrhoea, the NHS Start for Life page says particularly after 16 weeks. Lie on your side or prop yourself up."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-13
+- id: sauna-hammam
+  category: heat
+  names:
+    - "Sauna"
+    - "Hammam"
+    - "Steam room"
+    - "Bain de vapeur"
+    - "Spa heat"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The sources read do not name saunas or hammams, but they say to avoid hot, humid places and to keep cool and stop if you feel too hot. Ask your midwife or doctor before using one."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+  reviewed: 2026-11-13
+- id: hot-tub-hot-bath
+  category: heat
+  names:
+    - "Hot tub"
+    - "Jacuzzi"
+    - "Bain à remous"
+    - "Hot bath"
+    - "Bain chaud"
+    - "Spa bath"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The sources read do not name hot tubs, but they say to avoid hot, humid conditions and to keep cool. Ask your midwife or doctor before using one."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+  reviewed: 2026-11-13
+- id: heavy-lifting-renovation
+  category: home
+  names:
+    - "Heavy lifting"
+    - "Lifting"
+    - "Porter des charges lourdes"
+    - "Moving furniture"
+    - "DIY"
+    - "Bricolage"
+    - "Painting"
+    - "Peinture"
+    - "Renovation"
+    - "Travaux"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The sources read do not give a lifting limit: they say avoid holding your breath while straining. Ameli also says not to take part in renovation work at home during pregnancy. Ask your midwife or doctor about what is safe for you."
+      sources:
+        - ameli-environnement
+        - ameli-ap-precautions
+  reviewed: 2026-11-13
+- id: housework-carrying
+  category: home
+  names:
+    - "Housework"
+    - "Cleaning"
+    - "Ménage"
+    - "Carrying shopping"
+    - "Faire les courses"
+    - "Carrying children"
+    - "Vacuuming"
+    - "Everyday activity"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Everyday activity like housework and carrying shopping counts as healthy movement. Avoid standing still for a long time, and take breaks."
+      sources:
+        - nhs-exercise
+        - ameli-ap-precautions
+  reviewed: 2026-11-13
+- id: long-flights
+  category: travel
+  names:
+    - "Long flights"
+    - "Flying"
+    - "Avion"
+    - "Vol long-courrier"
+    - "Flights"
+    - "Plane"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Flying is not harmful to you or the baby. On trips over 4 hours there is a small risk of blood clots: drink water, move about every 30 minutes or so, and consider compression stockings. Airlines may restrict flying late in pregnancy and ask for a letter from your doctor or midwife after week 28. Talk to your midwife or doctor before you go."
+      sources:
+        - nhs-travelling
+  reviewed: 2026-11-13
+- id: driving
+  category: travel
+  names:
+    - "Driving"
+    - "Conduire"
+    - "Car journeys"
+    - "Seat belt"
+    - "Ceinture de sécurité"
+    - "Road trip"
+    - "Voiture"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "You can drive or travel by car. Wear the seat belt with the diagonal strap between your breasts and the lap strap under your bump, not across it. Avoid long journeys if you can, stop regularly to stretch, and do not make long trips alone."
+      sources:
+        - nhs-travelling
+  reviewed: 2026-11-13

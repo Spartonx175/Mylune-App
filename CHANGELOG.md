@@ -16,3 +16,4 @@
 - 2026-11-13 Partner gateway: listed partner emails (table partner_emails, data only) skip onboarding via claim_partner_access(); partner profile joins the mother household and sees her dates; complete_onboarding joins a household a partner opened first (0002_partner_access.sql, applied).
 - 2026-11-13 Checker part 2: 93 more foods in content/en/check/foods.yaml (produce, grains, pulses, nuts, sweets, fats, herbs) + new drinks.yaml (32 drinks), 2 ameli sources.
 - 2026-11-13 Checker FR: content/fr/check/foods.yaml (178) and drinks.yaml (32) mirror EN 1:1 (ids, states, verdicts, sources, tips, local), French names with English name last, tests/content-check-fr.test.ts.
+- 2026-11-13 Checker part 3: content/en/check/medicines.yaml (44 medicines, CRAT/ANSM/NHS) and exercise.yaml (28 activities), 69 new sources, tests/content-checks-part3.test.ts.

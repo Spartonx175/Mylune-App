@@ -1,0 +1,929 @@
+# "Can I take this?" checker, part 3: medicines. Authored in English first (CheckItem[], lib/content/check-types.ts). FR mirrors ids, verdicts and sources later.
+# Verdicts for medicines: ok = usually compatible when used as directed by a pharmacist or doctor; careful = ask a pharmacist or doctor first; avoid = avoid.
+# Only marked ok when CRAT/ANSM clearly say compatible. No doses, counts, frequencies or durations. Every why ends with a pointer to the pharmacist or doctor.
+# CRAT (lecrat.fr) and ANSM first, then NHS. Stage rules (e.g. anti-inflammatories from 24 weeks of amenorrhoea) are stated in the why.
+- id: paracetamol
+  category: pain-fever
+  names:
+    - "Paracetamol"
+    - "Doliprane"
+    - "Dafalgan"
+    - "Efferalgan"
+    - "Dolko"
+    - "Acetaminophen"
+    - "Paracétamol"
+  active_ingredient: "paracetamol"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Paracetamol is the usual first choice for pain or fever in pregnancy, at any stage. The French and British sources agree it is the preferred painkiller. Use only as much as you need, and only as the box or your doctor says. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-paracetamol
+        - ansm-douleur
+        - nhs-paracetamol
+        - crat-paracetamol-news
+  reviewed: 2026-11-13
+- id: ibuprofen
+  category: pain-fever
+  names:
+    - "Ibuprofen"
+    - "Advil"
+    - "Nurofen"
+    - "Antarène"
+    - "Spedifen"
+    - "Ibuprofène"
+  active_ingredient: "ibuprofen"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Anti-inflammatories like ibuprofen should not be taken on your own in pregnancy. From 24 weeks of amenorrhoea (the start of the 6th month) they are formally forbidden, even a single tablet, because they can harm the baby's kidneys and heart. Before that, only if a doctor says it is really needed. Paracetamol is preferred. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-ibuprofene
+        - ansm-douleur
+        - nhs-ibuprofen
+  reviewed: 2026-11-13
+- id: aspirin
+  category: pain-fever
+  names:
+    - "Aspirin"
+    - "Aspirine"
+    - "Aspégic"
+    - "Aspirine du Rhône"
+    - "Kardegic"
+    - "Aspirine UPSA"
+  active_ingredient: "acetylsalicylic acid (aspirin)"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Aspirin taken for pain or fever counts as an anti-inflammatory: avoid it. From 24 weeks of amenorrhoea it is formally forbidden, and before that only on a doctor's say-so. If a doctor has prescribed a low-strength aspirin for you, that is different: follow that doctor's advice and do not stop it on your own. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-ains
+        - ansm-douleur
+        - nhs-aspirin
+  reviewed: 2026-11-13
+- id: diclofenac
+  category: pain-fever
+  names:
+    - "Diclofenac"
+    - "Voltarène"
+    - "Voltaren"
+    - "Flector"
+    - "Diclofénac"
+  active_ingredient: "diclofenac"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Diclofenac is an anti-inflammatory. Avoid it in pregnancy unless a doctor says it is needed. From 24 weeks of amenorrhoea it is formally forbidden, whatever the form. It can affect the baby's circulation and the amniotic fluid. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-diclofenac
+        - ansm-douleur
+        - nhs-diclofenac
+  reviewed: 2026-11-13
+- id: other-nsaids
+  category: pain-fever
+  names:
+    - "Other anti-inflammatories"
+    - "AINS"
+    - "Ketoprofen"
+    - "Kétoprofène"
+    - "Ketum"
+    - "Bi-Profénid"
+    - "Naproxen"
+    - "Apranax"
+    - "Nimesulide"
+    - "Celecoxib"
+    - "Anti-inflammatoires"
+  active_ingredient: "anti-inflammatories (NSAIDs)"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "This whole family (ketoprofen, naproxen, nimesulide and similar) is avoided in pregnancy. From 24 weeks of amenorrhoea they are formally forbidden, and before that only on a doctor's say-so. Many pain and cold products contain one, so read the label. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-ains
+        - ansm-douleur
+        - crat-medicaments-dangereux
+  reviewed: 2026-11-13
+- id: codeine
+  category: pain-fever
+  names:
+    - "Codeine"
+    - "Codéine"
+    - "Codoliprane"
+    - "Dafalgan codéine"
+    - "Efferalgan codéiné"
+    - "Klipal"
+    - "Paracetamol with codeine"
+  active_ingredient: "codeine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Codeine can be used in pregnancy when paracetamol alone is not enough, but only with a doctor or pharmacist's advice and for as short a time as possible. Taken until delivery, it can give the newborn withdrawal signs, so the maternity team should know. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-codeine
+        - nhs-codeine
+        - ansm-douleur
+  reviewed: 2026-11-13
+- id: tramadol
+  category: pain-fever
+  names:
+    - "Tramadol"
+    - "Topalgic"
+    - "Contramal"
+    - "Ixprim"
+    - "Zaldiar"
+  active_ingredient: "tramadol"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Tramadol is a strong painkiller on prescription. In the first three months it is advised against because data are limited. Later it can be used if a doctor judges it necessary, but taken until delivery it can cause withdrawal in the newborn, so the maternity team should be told. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-tramadol
+        - ansm-douleur
+        - nhs-tramadol
+  reviewed: 2026-11-13
+- id: alginate-gaviscon
+  category: stomach-reflux
+  names:
+    - "Gaviscon"
+    - "Alginate"
+    - "Heartburn liquid"
+    - "Brûlures d'estomac"
+    - "Reflux"
+    - "Topaal"
+    - "Gaviscon Menthe"
+  active_ingredient: "alginate"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Alginate products such as Gaviscon are listed as usable at any stage of pregnancy for heartburn, after simple measures like smaller meals have not been enough. Check the label for extra ingredients. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-reflux
+        - nhs-antacids
+  reviewed: 2026-11-13
+- id: antacid-aluminium-magnesium
+  category: stomach-reflux
+  names:
+    - "Maalox"
+    - "Gelox"
+    - "Xolaam"
+    - "Antacid"
+    - "Aluminium magnesium antacid"
+    - "Anti-acide"
+    - "Mucogel"
+  active_ingredient: "aluminium / magnesium antacids"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Antacids made with aluminium and magnesium (like Maalox or Gelox) are listed as usable at any stage of pregnancy for heartburn. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-reflux
+        - nhs-antacids
+  reviewed: 2026-11-13
+- id: rennie-calcium-antacid
+  category: stomach-reflux
+  names:
+    - "Rennie"
+    - "Calcium carbonate antacid"
+    - "Tums"
+    - "Anti-acide à croquer"
+    - "Gaviscon Rennie"
+  active_ingredient: "calcium carbonate / magnesium carbonate"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Antacids are generally considered fine in pregnancy, but this type (calcium-based, such as Rennie) is not named on the French reference page, which lists alginates and aluminium/magnesium products. Check with a pharmacist before using it regularly. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-reflux
+        - nhs-antacids
+  reviewed: 2026-11-13
+- id: omeprazole
+  category: stomach-reflux
+  names:
+    - "Omeprazole"
+    - "Oméprazole"
+    - "Mopral"
+    - "Zoltum"
+    - "Inexium"
+    - "Esomeprazole"
+    - "Ésoméprazole"
+    - "Pantoprazole"
+    - "Eupantol"
+    - "Inipomp"
+    - "Lansoprazole"
+    - "Lanzor"
+    - "Ogast"
+    - "Stomach acid reducer"
+  active_ingredient: "omeprazole / esomeprazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Omeprazole and the other 'prazole' medicines for reflux are listed as usable at any stage of pregnancy when simple measures and antacids are not enough. They are on prescription or behind the pharmacy counter, so get a pharmacist or doctor to confirm which one. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-omeprazole
+        - crat-reflux
+        - nhs-omeprazole
+  reviewed: 2026-11-13
+- id: domperidone
+  category: nausea
+  names:
+    - "Domperidone"
+    - "Dompéridone"
+    - "Motilium"
+    - "Peridys"
+    - "Anti-sickness"
+  active_ingredient: "domperidone"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The French reference says domperidone can be used at any stage of pregnancy, but it is a second-line anti-sickness medicine: other options come first and a doctor should decide. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-domperidone
+        - ansm-nausees
+        - nhs-domperidone
+  reviewed: 2026-11-13
+- id: metoclopramide
+  category: nausea
+  names:
+    - "Metoclopramide"
+    - "Métoclopramide"
+    - "Primpéran"
+    - "Prokinyl"
+    - "Anti-sickness"
+    - "Nausea tablet"
+  active_ingredient: "metoclopramide"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Metoclopramide is one of the first-line anti-sickness medicines for pregnancy and can be used at any stage, but it is on prescription: a doctor should decide. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-metoclopramide
+        - crat-antiemetiques
+        - ansm-nausees
+        - nhs-metoclopramide
+  reviewed: 2026-11-13
+- id: doxylamine-b6-nausea
+  category: nausea
+  names:
+    - "Doxylamine and vitamin B6"
+    - "Cariban"
+    - "Xonvea"
+    - "Morning sickness medicine"
+    - "Nausées"
+    - "Vomissements"
+    - "Doxylamine-pyridoxine"
+  active_ingredient: "doxylamine + pyridoxine (vitamin B6)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Doxylamine with vitamin B6 is a first-line treatment for pregnancy sickness. The French health agency says avoid it in the last three months because the newborn can show side effects. It is prescribed by a doctor. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - ansm-nausees
+        - crat-antiemetiques
+        - crat-doxylamine
+  reviewed: 2026-11-13
+- id: donormyl-doxylamine-sleep
+  category: sleep
+  names:
+    - "Donormyl"
+    - "Doxylamine"
+    - "Lidène"
+    - "Sleeping tablet"
+    - "Somnifère"
+    - "Sleep aid"
+  active_ingredient: "doxylamine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Doxylamine (found in Donormyl, a sleep aid) can be used in pregnancy if a medicine is really needed, but the French health agency says avoid it in the last three months because the newborn can show side effects. Talk to a pharmacist or doctor before using it for sleep. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-doxylamine
+        - ansm-nausees
+  reviewed: 2026-11-13
+- id: ondansetron
+  category: nausea
+  names:
+    - "Ondansetron"
+    - "Zophren"
+    - "Strong anti-sickness"
+    - "Ondansétron"
+  active_ingredient: "ondansetron"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Ondansetron is kept for severe sickness when other treatments have failed. The French sources say not in the first three months. It is on prescription: a doctor decides. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - ansm-nausees
+        - crat-antiemetiques
+  reviewed: 2026-11-13
+- id: lactulose
+  category: constipation
+  names:
+    - "Lactulose"
+    - "Duphalac"
+    - "Importal"
+    - "Osmotic laxative"
+    - "Constipation"
+  active_ingredient: "lactulose"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Gentle osmotic laxatives like lactulose are preferred in pregnancy at any stage, after eating more fibre and drinking more have not been enough. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-laxatifs
+        - nhs-lactulose
+  reviewed: 2026-11-13
+- id: psyllium-bulking-laxatives
+  category: constipation
+  names:
+    - "Psyllium"
+    - "Ispaghul"
+    - "Spagulax"
+    - "Transilane"
+    - "Normacol"
+    - "Fibre supplement"
+    - "Bulk laxative"
+    - "Mucilage"
+    - "Sterculia"
+    - "Fibres"
+  active_ingredient: "psyllium / ispaghula"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Bulk-forming laxatives (psyllium, ispaghula) are among the types preferred in pregnancy at any stage. Drink plenty of water with them. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-laxatifs
+        - nhs-laxatives
+  reviewed: 2026-11-13
+- id: macrogol
+  category: constipation
+  names:
+    - "Macrogol"
+    - "Forlax"
+    - "Movicol"
+    - "Transipeg"
+    - "Laxarix"
+    - "PEG"
+    - "Polyethylene glycol"
+  active_ingredient: "macrogol"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Macrogol (Forlax, Transipeg) is an osmotic laxative, one of the types preferred in pregnancy at any stage. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-laxatifs
+        - nhs-laxatives
+  reviewed: 2026-11-13
+- id: stimulant-laxatives
+  category: constipation
+  names:
+    - "Stimulant laxatives"
+    - "Senna"
+    - "Séné"
+    - "Bisacodyl"
+    - "Dulcolax"
+    - "Contalax"
+    - "Laxatif"
+    - "Laxative tablets"
+    - "Tisane laxative"
+  active_ingredient: "senna / bisacodyl"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Stimulant laxatives are not the first choice: regular use is strongly discouraged in pregnancy. Senna is the one preferred if one is needed now and then. Gentler bulk or osmotic laxatives come first. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-laxatifs
+        - nhs-laxatives
+  reviewed: 2026-11-13
+- id: loperamide
+  category: diarrhoea
+  names:
+    - "Loperamide"
+    - "Lopéramide"
+    - "Imodium"
+    - "Arrêt diarrhée"
+    - "Diarrhoea tablet"
+    - "Antidiarrhéique"
+  active_ingredient: "loperamide"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The French reference says loperamide can be used at any stage for a short bout of diarrhoea, but the NHS says it is not usually recommended in pregnancy. Drink plenty of fluids and ask first, especially if the diarrhoea is long or you have a fever. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-loperamide
+        - crat-antidiarrheiques
+        - nhs-loperamide
+  reviewed: 2026-11-13
+- id: pseudoephedrine
+  category: cold-cough
+  names:
+    - "Pseudoephedrine"
+    - "Pseudoéphédrine"
+    - "Actifed"
+    - "Humex rhume"
+    - "Dolirhume"
+    - "Rhume"
+    - "Cold tablets with decongestant"
+    - "Nurofen Rhume"
+    - "Actifed Rhume"
+  active_ingredient: "pseudoephedrine"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Cold tablets with pseudoephedrine (decongestant) are not recommended in pregnancy: they can reduce blood flow to the baby. Check the box of any cold product for this ingredient. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - nhs-pseudoephedrine
+        - crat-rhinite
+        - nhs-decongestants
+  reviewed: 2026-11-13
+- id: decongestant-nasal-sprays
+  category: cold-cough
+  names:
+    - "Decongestant nasal spray"
+    - "Nose spray"
+    - "Spray nasal"
+    - "Vasoconstrictor spray"
+    - "Rhinofluimucil"
+    - "Otrivine"
+    - "Blocked nose spray"
+  active_ingredient: "nasal decongestants"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The NHS says not to use decongestants in pregnancy. The French reference allows only a brief, careful use of one type and puts saline nose rinses and sea-water sprays first. Try those first and ask a pharmacist before any decongestant spray. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - nhs-decongestants
+        - crat-rhinite
+  reviewed: 2026-11-13
+- id: saline-nasal
+  category: cold-cough
+  names:
+    - "Saline nose spray"
+    - "Sea water spray"
+    - "Sérum physiologique"
+    - "Physiomer"
+    - "Marimer"
+    - "Blocked nose rinse"
+    - "Lavage de nez"
+  active_ingredient: "saline / sea water"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Rinsing the nose with saline or sea-water spray is the first step the French reference suggests for a blocked or runny nose in pregnancy. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-rhinite
+        - nhs-decongestants
+  reviewed: 2026-11-13
+- id: dextromethorphan
+  category: cold-cough
+  names:
+    - "Dextromethorphan"
+    - "Dextrométhorphane"
+    - "Cough syrup"
+    - "Sirop contre la toux"
+    - "Dry cough"
+    - "Toux sèche"
+  active_ingredient: "dextromethorphan"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Dextromethorphan is one of the best-known cough medicines in pregnancy, and the French reference allows it at any stage, only for a few days and as the label says. Plain single-ingredient products only, and only after asking a pharmacist or doctor. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-dextromethorphane
+        - crat-antitussifs
+  reviewed: 2026-11-13
+- id: multi-ingredient-cold-cough
+  category: cold-cough
+  names:
+    - "Cold and flu sachets"
+    - "Fervex"
+    - "Toplexil"
+    - "Oxomemazine"
+    - "Herbal cough syrup"
+    - "Sirop"
+    - "Cough syrup with several ingredients"
+    - "Rhume grippe"
+  active_ingredient: "mixed ingredients"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Products that mix several ingredients (cold-and-flu sachets, cough syrups with an antihistamine or with plant extracts) are best avoided: the French reference prefers a single-ingredient product and says to avoid antihistamine-type and plant-based cough products. Never self-medicate: ask first. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-antitussifs
+        - nhs-medicines
+  reviewed: 2026-11-13
+- id: cetirizine
+  category: allergy
+  names:
+    - "Cetirizine"
+    - "Cétirizine"
+    - "Zyrtec"
+    - "Virlix"
+    - "Zyrtecset"
+    - "Allergy tablet"
+    - "Antihistamine"
+    - "Antihistaminique"
+  active_ingredient: "cetirizine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Cetirizine is listed as usable at any stage of pregnancy for allergies, and the NHS also says it can be taken. It is not a reason to stop or change it if you were already taking it, but tell your doctor. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-cetirizine
+        - crat-antihistaminiques
+        - nhs-cetirizine
+  reviewed: 2026-11-13
+- id: loratadine
+  category: allergy
+  names:
+    - "Loratadine"
+    - "Clarityne"
+    - "Clarityn"
+    - "Allergy tablet"
+    - "Antihistamine"
+    - "Antihistaminique"
+  active_ingredient: "loratadine"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Loratadine is listed as usable at any stage of pregnancy for allergies. The NHS calls it the usual choice if an antihistamine is needed. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-antihistaminiques
+        - nhs-loratadine
+        - nhs-antihistamines
+  reviewed: 2026-11-13
+- id: other-antihistamines
+  category: allergy
+  names:
+    - "Levocetirizine"
+    - "Xyzall"
+    - "Desloratadine"
+    - "Aerius"
+    - "Fexofenadine"
+    - "Telfast"
+    - "Antihistamines"
+  active_ingredient: "levocetirizine / desloratadine / fexofenadine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Levocetirizine, desloratadine and fexofenadine are listed as usable at any stage of pregnancy for allergy, though cetirizine and loratadine are better known. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-antihistaminiques
+        - crat-rhinite
+  reviewed: 2026-11-13
+- id: azelastine-nasal
+  category: allergy
+  names:
+    - "Azelastine"
+    - "Allergodil"
+    - "Allergy nose spray"
+    - "Azelastine spray"
+  active_ingredient: "azelastine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Azelastine nose spray is only listed as usable after 10 weeks of amenorrhoea, so not in the earliest weeks. Ask first. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-antihistaminiques
+        - crat-rhinite
+  reviewed: 2026-11-13
+- id: nasal-steroid-spray
+  category: allergy
+  names:
+    - "Nasal steroid spray"
+    - "Corticoid nasal spray"
+    - "Nasonex"
+    - "Rhinocort"
+    - "Flixonase"
+    - "Spray nasal corticoïde"
+    - "Hay fever spray"
+  active_ingredient: "nasal corticosteroids"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "For seasonal allergy, the French reference prefers a nasal or oral corticosteroid and says local forms can be used. These are on prescription or from the pharmacist: ask before using one. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-rhinite
+        - crat-corticoides
+  reviewed: 2026-11-13
+- id: sumatriptan-migraine
+  category: headache-migraine
+  names:
+    - "Sumatriptan"
+    - "Imigrane"
+    - "Imiject"
+    - "Migraine tablet"
+    - "Triptan"
+    - "Migraine"
+    - "Zolmitriptan"
+    - "Zomig"
+  active_ingredient: "sumatriptan (triptans)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Migraine often eases in pregnancy. For attacks, paracetamol comes first. A triptan is only used if a doctor has agreed, and sumatriptan is the best-known one. Ergot-type migraine medicines are avoided. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-antimigraineux
+        - ansm-douleur
+        - nhs-sumatriptan
+  reviewed: 2026-11-13
+- id: melatonin
+  category: sleep
+  names:
+    - "Melatonin"
+    - "Mélatonine"
+    - "Circadin"
+    - "Sleep supplement"
+    - "Sommeil"
+    - "Melatonin gummies"
+  active_ingredient: "melatonin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Melatonin is not usually used in pregnancy: the data are limited and the French reference prefers a better-known sleep medicine if one is needed. Try sleep habits first and ask a doctor. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-melatonine
+        - nhs-melatonin
+  reviewed: 2026-11-13
+- id: herbal-remedies-valerian
+  category: supplements
+  names:
+    - "Herbal remedies"
+    - "Valerian"
+    - "Valériane"
+    - "Herbal tea"
+    - "Plant supplement"
+    - "Phytothérapie"
+    - "Tisane"
+    - "Passiflore"
+    - "Plantes"
+    - "Sleep herbs"
+  active_ingredient: "plant extracts"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Natural does not mean safe in pregnancy: not all herbal remedies are safe and some products can contain harmful substances. The French reference also says to avoid plant-based cough products. Tell your doctor or pharmacist about anything herbal before taking it. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - nhs-medicines
+        - crat-antitussifs
+  reviewed: 2026-11-13
+- id: essential-oils
+  category: supplements
+  names:
+    - "Essential oils"
+    - "Huiles essentielles"
+    - "Aromatherapy"
+    - "Aromathérapie"
+    - "Diffuser"
+    - "Tea tree oil"
+    - "Peppermint oil"
+    - "Eucalyptus oil"
+  active_ingredient: "essential oils"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "There is almost no safety data in pregnancy, so the French reference says to rather abstain from taking them for treatment, and ameli discourages essential oils and fragrances. Avoid taking, rubbing or diffusing them. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-huiles-essentielles
+        - ameli-environnement
+  reviewed: 2026-11-13
+- id: hydrocortisone-skin
+  category: skin
+  names:
+    - "Hydrocortisone cream"
+    - "Hydrocortisone"
+    - "Cortisone cream"
+    - "Crème à la cortisone"
+    - "Itching cream"
+    - "Eczema cream"
+    - "Cortapaisyl"
+    - "Mildison"
+  active_ingredient: "hydrocortisone"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Mild hydrocortisone cream is generally usable in pregnancy: skin steroids can be used at any stage. The NHS says to check first, use only a small amount and only as needed. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-hydrocortisone
+        - crat-corticoides
+        - nhs-hydrocortisone-skin
+  reviewed: 2026-11-13
+- id: potent-steroid-cream
+  category: skin
+  names:
+    - "Strong steroid cream"
+    - "Clobetasol"
+    - "Clobétasol"
+    - "Dermoval"
+    - "Betamethasone cream"
+    - "Diprosone"
+    - "Dermocorticoïde"
+    - "Strong cortisone cream"
+  active_ingredient: "potent topical corticosteroids"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Strong steroid creams (clobetasol and similar) have little pregnancy data. A possible effect on baby's growth when used a lot is not confirmed. Use them only when a doctor has prescribed them, and do not stop one that was prescribed. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-clobetasol
+        - crat-corticoides
+  reviewed: 2026-11-13
+- id: clotrimazole-thrush
+  category: skin
+  names:
+    - "Clotrimazole"
+    - "Canesten"
+    - "Thrush cream"
+    - "Thrush pessary"
+    - "Mycose"
+    - "Candida"
+    - "Yeast infection"
+    - "Antifungal cream"
+    - "Antifongique"
+  active_ingredient: "clotrimazole"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Clotrimazole is the reference antifungal cream or pessary for thrush in pregnancy and can be used at any stage. Little reaches the body through the skin or vagina. Tell your doctor or pharmacist you are pregnant before buying it. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-clotrimazole
+        - nhs-clotrimazole
+  reviewed: 2026-11-13
+- id: antibiotics
+  category: prescription-class
+  names:
+    - "Antibiotics"
+    - "Antibiotiques"
+    - "Amoxicillin"
+    - "Augmentin"
+    - "Azithromycin"
+    - "Leftover antibiotics"
+  active_ingredient: "antibiotics (class)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Never take antibiotics on your own, or left over from before. Some are unsuitable in pregnancy, others are fine: the prescriber chooses a suitable one once they know you are pregnant. Take a prescribed course as told; do not stop it without advice. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - nhs-antibiotics
+        - crat-medicaments-dangereux
+  reviewed: 2026-11-13
+- id: asthma-inhalers
+  category: prescription-class
+  names:
+    - "Asthma inhalers"
+    - "Inhaler"
+    - "Ventoline"
+    - "Ventolin"
+    - "Salbutamol"
+    - "Bricanyl"
+    - "Pulmicort"
+    - "Seretide"
+    - "Symbicort"
+    - "Reliever inhaler"
+    - "Preventer inhaler"
+    - "Asthme"
+  active_ingredient: "inhaled asthma medicines (class)"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Do not stop your asthma treatment or change it without medical advice: poor asthma control is itself harmful in pregnancy. Inhaled asthma medicines are preferred and usable at any stage. Tell your doctor or midwife that you are pregnant and if your breathing gets worse. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-antiasthmatiques
+        - crat-salbutamol
+        - nhs-salbutamol
+  reviewed: 2026-11-13
+- id: thyroid-medicine
+  category: prescription-class
+  names:
+    - "Thyroid medicine"
+    - "Levothyroxine"
+    - "Lévothyroxine"
+    - "Levothyrox"
+    - "Euthyrox"
+    - "L-Thyroxine"
+    - "Thyroid hormone"
+  active_ingredient: "levothyroxine (class)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Do not stop or change a thyroid medicine without medical advice. The NHS says it can be taken in pregnancy and extra blood tests may be needed to check the amount, and the French reference warns that stopping a long-term treatment can upset the condition it treats. Tell your doctor you are pregnant. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - nhs-levothyroxine
+        - nhs-medicines
+        - crat-grandes-lignes
+  reviewed: 2026-11-13
+- id: folic-acid
+  category: vitamins
+  names:
+    - "Folic acid"
+    - "Acide folique"
+    - "Vitamin B9"
+    - "Vitamine B9"
+    - "Spéciafoldine"
+    - "Folate"
+    - "Prenatal vitamins"
+  active_ingredient: "folic acid (vitamin B9)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Folic acid is advised from before pregnancy or as soon as you know, for the early weeks, to help the baby's development. Some people need a stronger version on prescription, so ask a pharmacist or doctor to confirm which product is right. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - nhs-folic-acid
+        - nhs-vitamins
+  reviewed: 2026-11-13
+- id: vitamin-d
+  category: vitamins
+  names:
+    - "Vitamin D"
+    - "Vitamine D"
+    - "Uvedose"
+    - "Zyma D"
+    - "Sunshine vitamin"
+    - "Vitamine D3"
+    - "Cholecalciferol"
+  active_ingredient: "vitamin D"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Vitamin D is advised in pregnancy, especially in autumn and winter when there is little sun. The NHS warns not to go above the amount on the label. Ask a pharmacist or doctor which product and how much suits you. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - nhs-vitamins
+        - nhs-medicines
+  reviewed: 2026-11-13
+- id: vitamin-a-cod-liver-oil
+  category: vitamins
+  names:
+    - "Vitamin A"
+    - "Vitamine A"
+    - "Retinol"
+    - "Cod liver oil"
+    - "Huile de foie de morue"
+    - "Fish liver oil"
+    - "Liver supplement"
+  active_ingredient: "vitamin A (retinol)"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Do not take vitamin A (retinol) supplements or cod liver oil in pregnancy: too much can harm the baby's development. Check multivitamin labels for retinol. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - nhs-vitamins
+        - nhs-medicines
+  reviewed: 2026-11-13
