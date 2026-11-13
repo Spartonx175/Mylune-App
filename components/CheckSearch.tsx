@@ -1,13 +1,13 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { searchItems } from "@/lib/check-search";
+import { searchChecks } from "@/app/check-actions";
+import type { ClientSource } from "@/lib/check-sources";
 import { VERDICT_STYLE } from "@/lib/check-style";
 import type { CheckItem, CheckKind, Verdict } from "@/lib/content/check-types";
 
-export type ClientSource = { name: string; title: string; url: string };
-type Props = { kind: CheckKind; items: CheckItem[]; sources: Record<string, ClientSource> };
+type Props = { kind: CheckKind; tips: CheckItem[]; total: number; tipSources: Record<string, ClientSource> };
 
 const SEVERITY: Record<Verdict, number> = { ok: 0, careful: 1, avoid: 2 };
 const worst = (item: CheckItem): Verdict => item.answers.reduce<Verdict>((w, a) => (SEVERITY[a.verdict] > SEVERITY[w] ? a.verdict : w), "ok");
@@ -36,25 +36,48 @@ function VerdictBadge({ verdict, kind, big = false }: { verdict: Verdict; kind: 
   );
 }
 
-export default function CheckSearch({ kind, items, sources }: Props) {
+export default function CheckSearch({ kind, tips, total, tipSources }: Props) {
   const t = useTranslations("check");
   const locale = useLocale();
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [stateIdx, setStateIdx] = useState(0);
+  const [results, setResults] = useState<CheckItem[]>([]);
+  const [sources, setSources] = useState<Record<string, ClientSource>>(tipSources);
+  const [answered, setAnswered] = useState("");
 
-  const results = useMemo(() => searchItems(items, query), [items, query]);
-  const selected = items.find((i) => i.id === selectedId) ?? null;
+  // Ask the server for the best matches while typing (the full list never reaches the phone).
+  useEffect(() => {
+    const q = query.trim();
+    if (!q) return;
+    let cancelled = false;
+    const timer = setTimeout(async () => {
+      const r = await searchChecks(locale, kind, q);
+      if (cancelled) return;
+      setResults(r.items);
+      setSources((prev) => ({ ...prev, ...r.sources }));
+      setAnswered(q);
+    }, 200);
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
+  }, [query, locale, kind]);
+
+  const shown = query.trim() ? results : [];
+  const busy = query.trim() !== "" && answered !== query.trim();
+  const pool = [...shown, ...tips];
+  const selected = pool.find((i) => i.id === selectedId) ?? null;
   const answer = selected ? selected.answers[Math.min(stateIdx, selected.answers.length - 1)] : null;
-  const best = items.filter((i) => i.tips?.includes("best"));
-  const avoid = items.filter((i) => i.tips?.includes("avoid"));
+  const best = tips.filter((i) => i.tips?.includes("best"));
+  const avoid = tips.filter((i) => i.tips?.includes("avoid"));
 
   const pick = (id: string) => {
     setSelectedId(id);
     setStateIdx(0);
   };
 
-  if (items.length === 0) {
+  if (total === 0) {
     return <p className="rounded-3xl bg-surface p-6 text-lg shadow-sm">{t("empty")}</p>;
   }
 
@@ -95,14 +118,14 @@ export default function CheckSearch({ kind, items, sources }: Props) {
 
       {query && !selected && (
         <div aria-live="polite">
-          {results.length === 0 ? (
+          {busy && shown.length === 0 ? null : shown.length === 0 ? (
             <div className="rounded-3xl bg-soft p-6">
               <p className="text-lg font-semibold">{t("noResultsTitle")}</p>
               <p className="text-lg">{t("noResults")}</p>
             </div>
           ) : (
             <ul className="space-y-2">
-              {results.map((item) => (
+              {shown.map((item) => (
                 <li key={item.id}>
                   <button
                     type="button"
@@ -181,8 +204,8 @@ export default function CheckSearch({ kind, items, sources }: Props) {
       {!query && !selected && (
         <>
           <p className="text-base text-muted-text">{t("pickOne")}</p>
-          <TipList title={t("tipsBest")} items={best} kind={kind} verdict="ok" onPick={(id) => { setQuery(items.find((i) => i.id === id)?.names[0] ?? ""); pick(id); }} />
-          <TipList title={t("tipsAvoid")} items={avoid} kind={kind} verdict="avoid" onPick={(id) => { setQuery(items.find((i) => i.id === id)?.names[0] ?? ""); pick(id); }} />
+          <TipList title={t("tipsBest")} items={best} kind={kind} verdict="ok" onPick={(id) => { setQuery(tips.find((i) => i.id === id)?.names[0] ?? ""); pick(id); }} />
+          <TipList title={t("tipsAvoid")} items={avoid} kind={kind} verdict="avoid" onPick={(id) => { setQuery(tips.find((i) => i.id === id)?.names[0] ?? ""); pick(id); }} />
         </>
       )}
 

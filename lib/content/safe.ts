@@ -38,15 +38,27 @@ import { loadChecks } from "./load";
 import type { CheckItem, CheckKind } from "./check-types";
 
 /** Checker list for a kind. Missing French file falls back to English; missing everything gives an empty list. */
+const checkCache = new Map<string, WithFallback<CheckItem[]>>();
+
+/** Checker list for a kind (parsed once per server process: the lists are large). Missing French file falls back to English. */
 export function checksOrFallback(locale: Locale, kind: CheckKind): WithFallback<CheckItem[]> {
+  const key = `${locale}:${kind}`;
+  const hit = checkCache.get(key);
+  if (hit) return hit;
+  let out: WithFallback<CheckItem[]>;
   try {
-    return { data: loadChecks(locale, kind), fallback: false };
+    out = { data: loadChecks(locale, kind), fallback: false };
   } catch {
-    if (locale === "en") return { data: [], fallback: false };
-    try {
-      return { data: loadChecks("en", kind), fallback: true };
-    } catch {
-      return { data: [], fallback: false };
+    if (locale === "en") out = { data: [], fallback: false };
+    else {
+      try {
+        out = { data: loadChecks("en", kind), fallback: true };
+      } catch {
+        out = { data: [], fallback: false };
+      }
     }
   }
+  // Do not cache failures: content may be fixed without a restart in development.
+  if (out.data.length > 0 && process.env.NODE_ENV === "production") checkCache.set(key, out);
+  return out;
 }

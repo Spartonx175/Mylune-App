@@ -1,9 +1,9 @@
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import CheckSearch, { type ClientSource } from "@/components/CheckSearch";
+import CheckSearch from "@/components/CheckSearch";
+import { sourcesFor } from "@/lib/check-sources";
 import { checksOrFallback } from "@/lib/content/safe";
-import { loadSources } from "@/lib/content/load";
 import type { CheckKind } from "@/lib/content/check-types";
 import type { Locale } from "@/lib/content/types";
 
@@ -17,10 +17,8 @@ export default async function CheckPage({ params }: { params: Promise<{ locale: 
   const t = await getTranslations();
 
   const { data: items, fallback } = checksOrFallback(locale as Locale, k);
-  // Only ship the sources these items cite to the browser.
-  const cited = new Set(items.flatMap((i) => i.answers.flatMap((a) => a.sources)));
-  const sources: Record<string, ClientSource> = {};
-  for (const s of loadSources().sources) if (cited.has(s.id)) sources[s.id] = { name: s.name, title: s.title, url: s.url };
+  // The phone only receives the tip items; everything else is searched on the server.
+  const tips = items.filter((i) => i.tips?.length);
 
   return (
     <section className="space-y-4 py-4">
@@ -29,7 +27,7 @@ export default async function CheckPage({ params }: { params: Promise<{ locale: 
       </Link>
       <h1 className="text-3xl font-bold">{t(`guide.tiles.${k}`)}</h1>
       {fallback && <p className="text-base text-muted-text">{t("today.fallbackNote")}</p>}
-      <CheckSearch kind={k} items={items} sources={sources} />
+      <CheckSearch kind={k} tips={tips} total={items.length} tipSources={sourcesFor(tips)} />
     </section>
   );
 }
