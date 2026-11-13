@@ -118,5 +118,69 @@
     "kumquat": "kumquat",
     "fig": "figue",
     "plum": "prune"
+  },
+  "guide": {
+    "title": "Guide",
+    "intro": "Vérifiez avant de manger, de boire ou de prendre quelque chose.",
+    "soon": "Bientôt disponible",
+    "tiles": {
+      "foods": "Puis-je manger ça ?",
+      "drinks": "Puis-je boire ça ?",
+      "exercise": "Puis-je faire cet exercice ?",
+      "medicines": "Puis-je prendre ça ?"
+    },
+    "tilesHelp": {
+      "foods": "Les aliments et leur cuisson",
+      "drinks": "Café, thé, jus et plus encore",
+      "exercise": "Sport et mouvement au quotidien",
+      "medicines": "Médicaments courants et leurs composants"
+    }
+  },
+  "check": {
+    "searchLabel": "Tapez un nom",
+    "placeholder": {
+      "foods": "Par exemple : camembert, steak, sushi",
+      "drinks": "Par exemple : café, thé vert, kombucha",
+      "exercise": "Par exemple : marche, natation, course",
+      "medicines": "Par exemple : Doliprane, ibuprofène, Spasfon"
+    },
+    "clear": "Effacer",
+    "noResultsTitle": "Pas encore dans la liste",
+    "noResults": "Nous n'avons pas celui-ci. Demandez à votre sage-femme, votre médecin ou votre pharmacien.",
+    "chooseState": "Comment est-il préparé ?",
+    "verdict": {
+      "ok": "Oui",
+      "careful": "Attention",
+      "avoid": "Non"
+    },
+    "verdictMedicines": {
+      "ok": "Généralement compatible",
+      "careful": "Demandez d'abord",
+      "avoid": "À éviter"
+    },
+    "why": "Pourquoi",
+    "sources": "Sources",
+    "reviewed": "Vérifié le {date}",
+    "ingredient": "Substance active : {name}",
+    "disclaimer": "Information générale, pas un avis médical. En cas de doute, demandez à votre sage-femme ou à votre médecin.",
+    "disclaimerMedicines": "Demandez toujours conseil à votre pharmacien ou à votre médecin avant de prendre un médicament. Cette application ne donne jamais de dose.",
+    "tipsBest": "Bons choix",
+    "tipsAvoid": "À éviter de préférence",
+    "pickOne": "Touchez un résultat pour voir la réponse.",
+    "results": "{n} résultats",
+    "empty": "Cette liste est en cours de rédaction. Elle apparaîtra bientôt.",
+    "back": "Retour au guide",
+    "states": {
+      "raw": "Cru",
+      "undercooked": "Pas assez cuit ou coulant",
+      "cooked": "Bien cuit à cœur",
+      "boiled": "Bouilli",
+      "cured": "Séché, fumé ou salé",
+      "pasteurised": "Pasteurisé",
+      "unpasteurised": "Non pasteurisé (lait cru)",
+      "canned": "En conserve ou en bocal",
+      "reheated": "Réchauffé jusqu'à ce que ce soit bien chaud",
+      "not_applicable": "Standard"
+    }
   }
 }

@@ -33,3 +33,20 @@ export function calendarOrFallback(locale: Locale): WithFallback<CalendarEntry[]
     }
   }
 }
+
+import { loadChecks } from "./load";
+import type { CheckItem, CheckKind } from "./check-types";
+
+/** Checker list for a kind. Missing French file falls back to English; missing everything gives an empty list. */
+export function checksOrFallback(locale: Locale, kind: CheckKind): WithFallback<CheckItem[]> {
+  try {
+    return { data: loadChecks(locale, kind), fallback: false };
+  } catch {
+    if (locale === "en") return { data: [], fallback: false };
+    try {
+      return { data: loadChecks("en", kind), fallback: true };
+    } catch {
+      return { data: [], fallback: false };
+    }
+  }
+}

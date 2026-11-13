@@ -118,5 +118,69 @@
     "kumquat": "kumquat",
     "fig": "fig",
     "plum": "plum"
+  },
+  "guide": {
+    "title": "Guide",
+    "intro": "Look things up before you eat, drink or take something.",
+    "soon": "Coming soon",
+    "tiles": {
+      "foods": "Can I eat this?",
+      "drinks": "Can I drink this?",
+      "exercise": "Can I do this exercise?",
+      "medicines": "Can I take this?"
+    },
+    "tilesHelp": {
+      "foods": "Food and how it is cooked",
+      "drinks": "Coffee, tea, juices and more",
+      "exercise": "Sports and daily movement",
+      "medicines": "Common medicines and their ingredients"
+    }
+  },
+  "check": {
+    "searchLabel": "Type a name",
+    "placeholder": {
+      "foods": "For example: camembert, steak, sushi",
+      "drinks": "For example: coffee, green tea, kombucha",
+      "exercise": "For example: walking, swimming, running",
+      "medicines": "For example: Doliprane, ibuprofen, Spasfon"
+    },
+    "clear": "Clear",
+    "noResultsTitle": "Not in the list yet",
+    "noResults": "We do not have this one. Ask your midwife, doctor or pharmacist.",
+    "chooseState": "How is it prepared?",
+    "verdict": {
+      "ok": "Yes",
+      "careful": "Careful",
+      "avoid": "No"
+    },
+    "verdictMedicines": {
+      "ok": "Usually compatible",
+      "careful": "Ask first",
+      "avoid": "Avoid"
+    },
+    "why": "Why",
+    "sources": "Sources",
+    "reviewed": "Checked on {date}",
+    "ingredient": "Active ingredient: {name}",
+    "disclaimer": "General information, not medical advice. If you are unsure, ask your midwife or doctor.",
+    "disclaimerMedicines": "Always ask your pharmacist or doctor before taking any medicine. Never take a dose from this app.",
+    "tipsBest": "Good choices",
+    "tipsAvoid": "Better to avoid",
+    "pickOne": "Tap a result to see the answer.",
+    "results": "{n} results",
+    "empty": "This list is being written. It will appear here soon.",
+    "back": "Back to the guide",
+    "states": {
+      "raw": "Raw",
+      "undercooked": "Undercooked or runny",
+      "cooked": "Cooked through",
+      "boiled": "Boiled",
+      "cured": "Dry-cured or smoked",
+      "pasteurised": "Pasteurised",
+      "unpasteurised": "Unpasteurised (raw milk)",
+      "canned": "Canned or jarred",
+      "reheated": "Reheated until steaming hot",
+      "not_applicable": "Standard"
+    }
   }
 }
