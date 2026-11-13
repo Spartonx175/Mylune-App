@@ -5,6 +5,7 @@ import OnboardingForm from "@/components/OnboardingForm";
 import { CatMascot } from "@/components/CatMascot";
 import { getCompanionCat } from "@/lib/cat-cookie";
 import { getSession } from "@/lib/session";
+import { claimPartnerAccess } from "@/lib/partner";
 
 export const dynamic = "force-dynamic";
 
@@ -17,6 +18,8 @@ export default async function OnboardingPage({ params }: { params: Promise<{ loc
 
   if (!session.configured || !session.user) redirect({ href: "/login", locale });
   else if (session.profile) redirect({ href: "/", locale });
+  // Partner gateway: a listed partner email skips this form (no medical details asked).
+  else if (await claimPartnerAccess(locale)) redirect({ href: "/", locale });
 
   return (
     <main className="mx-auto w-full max-w-xl px-4 py-3 pb-12">

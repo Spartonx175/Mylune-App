@@ -54,3 +54,8 @@
 - **Fish page sources:** Santé publique France listeria page returned 404 and 1000jours.fr connection reset; no HAS/CNGOF page read for food, so French support is ameli + mangerbouger only.
 - **Mercury/tuna frequency:** French pages say "limit" without numbers, so no numbers are in the app; NHS gives numbers but they were left out on purpose (stricter French wording followed).
 - Sources.yaml has 5 new entries (CDC food-pregnant-women, 3 CDC listeria pages, NHS healthy diet); the CDC meat-fish page title is copied as shown on the site, typo included ("Pâte").
+
+## Partner gateway notes (2026-11-13)
+- Partner emails live only in the database table `partner_emails` (insert with the SQL editor); no email is committed. The partner gets no medical data in his profile and sees the mother's dates on Today/Baby.
+- `complete_onboarding` joins a household that a partner opened before the mother signed in. Safe while Google sign-in is limited to test users; replace with invite codes (P2) before opening sign-up.
+- Partner view is read-only for now: partner role cannot edit the mother's profile (RLS), logs/reminders are shared household data (P2 defines the partner UI).

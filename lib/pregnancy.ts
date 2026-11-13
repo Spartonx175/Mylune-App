@@ -4,7 +4,9 @@ import type { Session } from "./session";
 
 /** Dating for the signed-in user from the saved profile, or null when dates are missing or out of range. */
 export function datingFromSession(session: Session): Dating | null {
-  const p = session.configured ? session.profile : null;
+  if (!session.configured || !session.user) return null;
+  // A partner sees the mother's dates; the mother and anyone with their own dates use their own.
+  const p = session.profile?.ddr ? session.profile : session.mother;
   if (!p?.ddr) return null;
   const r = computeDating({ ddr: p.ddr, dueDateOverride: p.due_date_override, today: todayInParis() });
   return r.ok ? r.value : null;
