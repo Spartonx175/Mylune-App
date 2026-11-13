@@ -1,0 +1,627 @@
+# "Can I drink this?" checker. Authored in English first (CheckItem[], lib/content/check-types.ts). FR mirrors ids/verdicts/sources later.
+# French rules (ameli, mangerbouger) first, then NHS/CDC. avoid/careful need 2 sources, ok needs 1.
+# No doses: the loader rejects any mg figure, so caffeine is never quantified.
+- id: water
+  category: water
+  names:
+    - "Water"
+    - "Eau"
+    - "Eau en bouteille"
+    - "Eau minérale"
+    - "Eau de source"
+    - "Bottled water"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Water is the best drink. Drink plenty through the day. If you are not immune to toxoplasmosis, ameli prefers bottled water."
+      sources:
+        - ameli-alimentation-grossesse
+        - ameli-toxo-prevention
+  reviewed: 2026-11-13
+- id: mineral-water-calcium
+  category: water
+  names:
+    - "Calcium-rich mineral water"
+    - "Eau riche en calcium"
+    - "Hépar"
+    - "Contrex"
+    - "Courmayeur"
+    - "Eau minérale riche en calcium"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Ameli suggests mineral waters rich in calcium as an alternative source of calcium if you do not eat enough dairy."
+      sources:
+        - ameli-alimentation-grossesse
+        - ameli-toxo-prevention
+  reviewed: 2026-11-13
+- id: sparkling-water
+  category: water
+  names:
+    - "Sparkling water"
+    - "Eau gazeuse"
+    - "Eau pétillante"
+    - "Badoit"
+    - "Perrier"
+    - "San Pellegrino"
+    - "Vichy Célestins"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine. Plain sparkling water counts as water."
+      sources:
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: tap-water
+  category: water
+  names:
+    - "Tap water"
+    - "Eau du robinet"
+    - "Eau de Paris"
+    - "Carafe d'eau"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "If you are not immune to toxoplasmosis, ameli prefers bottled water. If your home was built before 1949 and may have lead pipes, ameli says not to drink the tap water."
+      sources:
+        - ameli-toxo-prevention
+        - ameli-aliments-eviter
+  reviewed: 2026-11-13
+- id: coffee
+  category: caffeine
+  names:
+    - "Coffee"
+    - "Café"
+    - "Café filtre"
+    - "Café au lait"
+    - "Cappuccino"
+    - "Latte"
+    - "Café soluble"
+    - "Instant coffee"
+    - "Capsule"
+    - "Nespresso"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Limit caffeine rather than stopping: both ameli and the NHS say to cut down. Coffee, tea, cola and energy drinks all count towards the same daily total."
+      sources:
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: espresso
+  category: caffeine
+  names:
+    - "Espresso"
+    - "Expresso"
+    - "Café noir"
+    - "Ristretto"
+    - "Allongé"
+    - "Noisette"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Limit caffeine rather than stopping. A small espresso still counts towards your daily caffeine, along with tea, cola and chocolate."
+      sources:
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: black-tea
+  category: caffeine
+  names:
+    - "Black tea"
+    - "Thé noir"
+    - "Thé"
+    - "Earl Grey"
+    - "English breakfast"
+    - "Thé glacé"
+    - "Iced tea"
+    - "Chai"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Tea contains caffeine, and the amount varies a lot. Count it with your coffee and cola, and cut down overall."
+      sources:
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: green-tea
+  category: caffeine
+  names:
+    - "Green tea"
+    - "Thé vert"
+    - "Matcha"
+    - "Thé à la menthe"
+    - "Sencha"
+    - "Gunpowder"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Green tea contains caffeine too. Count it with your coffee and tea, and cut down overall."
+      sources:
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: white-tea
+  category: caffeine
+  names:
+    - "White tea"
+    - "Thé blanc"
+    - "Thé oolong"
+    - "Oolong"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "White and oolong teas contain caffeine too. Count them with your coffee and tea, and cut down overall."
+      sources:
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: mint-tea
+  category: herbal_tea
+  names:
+    - "Mint tea"
+    - "Infusion de menthe"
+    - "Peppermint tea"
+    - "Menthe poivrée"
+    - "Tisane à la menthe"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Herbal teas like peppermint are fine in moderation: the NHS says not to have more than 4 cups a day, because there is little research on herbal teas in pregnancy."
+      sources:
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: chamomile-tea
+  category: herbal_tea
+  names:
+    - "Chamomile tea"
+    - "Camomille"
+    - "Infusion de camomille"
+    - "Tisane de camomille"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Chamomile is fine in moderation: the NHS says not to have more than 4 cups of herbal tea a day, because there is little research on herbal teas in pregnancy."
+      sources:
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: liquorice-tea
+  category: herbal_tea
+  names:
+    - "Liquorice tea"
+    - "Tisane à la réglisse"
+    - "Infusion de réglisse"
+    - "Racine de réglisse"
+    - "Tisane digestive réglisse"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Liquorice root herbal teas are listed as drinks to avoid in pregnancy. Ameli names liquorice tisanes too. Check the label on mixed blends."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: milk-drink
+  category: milk
+  names:
+    - "Milk"
+    - "Lait"
+    - "Lait demi-écrémé"
+    - "Lait entier"
+    - "Lait UHT"
+    - "Verre de lait"
+    - "Lait chaud"
+    - "Chocolat au lait chaud"
+  tips: [best]
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: "Pasteurised and UHT milk are safe. Dairy is also a good source of calcium."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-alimentation-grossesse
+        - nhs-healthy-diet
+  reviewed: 2026-11-13
+- id: raw-milk-drink
+  category: milk
+  names:
+    - "Raw milk"
+    - "Lait cru"
+    - "Lait de ferme"
+    - "Lait cru à la ferme"
+    - "Lait de chèvre cru"
+    - "Unpasteurised milk"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: unpasteurised
+      verdict: avoid
+      why: "Raw (unpasteurised) milk can carry listeria and other germs. French guidance says to avoid it throughout pregnancy. Choose pasteurised milk."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-listeria-dairy
+  reviewed: 2026-11-13
+- id: oat-milk
+  category: milk
+  names:
+    - "Oat milk"
+    - "Lait d'avoine"
+    - "Boisson avoine"
+    - "Boisson à l'avoine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine. The NHS recommends calcium-fortified dairy alternatives. Choose unsweetened and check the label for added calcium."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: almond-milk
+  category: milk
+  names:
+    - "Almond milk"
+    - "Lait d'amande"
+    - "Boisson amande"
+    - "Boisson à l'amande"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine. The NHS recommends calcium-fortified dairy alternatives. Choose unsweetened and check the label for added calcium."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: rice-milk
+  category: milk
+  names:
+    - "Rice milk"
+    - "Lait de riz"
+    - "Boisson riz"
+    - "Boisson au riz"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine. The NHS recommends calcium-fortified dairy alternatives. Choose unsweetened and check the label for added calcium."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: soy-milk
+  category: milk
+  names:
+    - "Soy milk"
+    - "Lait de soja"
+    - "Boisson soja"
+    - "Boisson au soja"
+    - "Soya drink"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "French guidance says not to eat soy foods and soy drinks as a precaution, though the NHS lists unsweetened soya drink as a dairy alternative. Ask your midwife."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: orange-juice
+  category: juice
+  names:
+    - "Orange juice"
+    - "Jus d'orange"
+    - "Jus d'orange pressé"
+    - "Orange pressée"
+    - "Fresh orange juice"
+    - "Jus pressé"
+    - "Jus frais"
+    - "Jus de fruits frais"
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: "Pasteurised juice (carton or bottle) is fine. It counts as one portion of fruit and vegetables a day, so keep it to one small glass."
+      sources:
+        - cdc-food-pregnant-women
+        - nhs-healthy-diet
+    - state: unpasteurised
+      verdict: careful
+      why: "The CDC lists unpasteurised juice as riskier. If you are not immune to toxoplasmosis, avoid raw fruit when you do not know how it was washed. Juice you press yourself from washed fruit is the safer choice."
+      sources:
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
+  reviewed: 2026-11-13
+- id: apple-juice
+  category: juice
+  names:
+    - "Apple juice"
+    - "Jus de pomme"
+    - "Jus de raisin"
+    - "Jus de fruits"
+    - "Nectar"
+    - "Jus multifruits"
+    - "Jus de tomate"
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: "Pasteurised juice is fine and counts as one portion of fruit and vegetables a day. It is sweet, so keep it to one small glass."
+      sources:
+        - cdc-food-pregnant-women
+        - nhs-healthy-diet
+  reviewed: 2026-11-13
+- id: smoothie
+  category: juice
+  names:
+    - "Smoothie"
+    - "Smoothie frais"
+    - "Jus détox"
+    - "Smoothie bowl"
+    - "Milkshake"
+    - "Frappé"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Smoothies made from fruit and vegetables you washed well at home are fine. Away from home, skip them: you cannot know how the produce was washed or whether raw milk was used."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: soda
+  category: soft_drink
+  names:
+    - "Soda"
+    - "Limonade"
+    - "Fanta"
+    - "Sprite"
+    - "7Up"
+    - "Orangina"
+    - "Ice tea"
+    - "Sirop"
+    - "Citronnade"
+    - "Lemonade"
+    - "Fizzy drink"
+    - "Boisson gazeuse"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine now and then. The NHS says fizzy drinks are for less often and in small amounts."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: cola
+  category: caffeine
+  names:
+    - "Cola"
+    - "Coca-Cola"
+    - "Coca"
+    - "Pepsi"
+    - "Coca Zéro"
+    - "Coke"
+    - "Cola light"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Cola contains caffeine, so count it with your coffee and tea. It is also sugary, so keep it for now and then."
+      sources:
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: energy-drink
+  category: caffeine
+  names:
+    - "Energy drink"
+    - "Boisson énergisante"
+    - "Red Bull"
+    - "Monster"
+    - "Burn"
+    - "Boisson énergétique"
+    - "Guarana"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Ameli says energy drinks should be avoided in pregnancy, mainly because of their caffeine. The NHS also lists them among the sources of caffeine to limit."
+      sources:
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: wine
+  category: alcohol
+  names:
+    - "Wine"
+    - "Vin"
+    - "Vin rouge"
+    - "Vin blanc"
+    - "Rosé"
+    - "Vin rosé"
+    - "Verre de vin"
+    - "Sangria"
+    - "Vin chaud"
+    - "Mulled wine"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Zero alcohol from conception to the end of pregnancy. No safe amount has ever been found, so French guidance and the NHS both say not to drink any."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
+  reviewed: 2026-11-13
+- id: beer
+  category: alcohol
+  names:
+    - "Beer"
+    - "Bière"
+    - "Pression"
+    - "Demi"
+    - "Panaché"
+    - "Shandy"
+    - "Bière blanche"
+    - "Bière artisanale"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Zero alcohol from conception to the end of pregnancy. No safe amount has ever been found, so French guidance and the NHS both say not to drink any."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
+  reviewed: 2026-11-13
+- id: cider
+  category: alcohol
+  names:
+    - "Cider"
+    - "Cidre"
+    - "Cidre brut"
+    - "Poiré"
+    - "Cidre doux"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Cider is an alcoholic drink, and French guidance lists cider among the drinks to avoid. Zero alcohol is the rule."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
+  reviewed: 2026-11-13
+- id: champagne
+  category: alcohol
+  names:
+    - "Champagne"
+    - "Crémant"
+    - "Prosecco"
+    - "Vin mousseux"
+    - "Cava"
+    - "Mousseux"
+    - "Kir royal"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Sparkling wine contains alcohol. Zero alcohol is the rule, even for a toast."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
+  reviewed: 2026-11-13
+- id: spirits
+  category: alcohol
+  names:
+    - "Spirits"
+    - "Whisky"
+    - "Vodka"
+    - "Rhum"
+    - "Gin"
+    - "Cognac"
+    - "Digestif"
+    - "Calvados"
+    - "Liqueur"
+    - "Armagnac"
+    - "Tequila"
+    - "Spritz"
+    - "Aperol"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Zero alcohol from conception to the end of pregnancy. No safe amount has ever been found."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
+  reviewed: 2026-11-13
+- id: cocktail
+  category: alcohol
+  names:
+    - "Cocktail"
+    - "Mojito"
+    - "Margarita"
+    - "Piña colada"
+    - "Moscow mule"
+    - "Cocktail avec alcool"
+    - "Punch"
+    - "Ti-punch"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Cocktails usually contain spirits, wine or liqueur. French guidance lists cocktails among the drinks to avoid."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
+  reviewed: 2026-11-13
+- id: pastis
+  category: alcohol
+  names:
+    - "Pastis"
+    - "Ricard"
+    - "Pernod"
+    - "Anisette"
+    - "Apéritif anisé"
+    - "Pastis sans alcool"
+    - "Casanis"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Pastis contains alcohol. The alcohol-free version is also a problem, because ameli says liquorice, which is in it, is not advised in pregnancy."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - ameli-zero-alcool
+  reviewed: 2026-11-13
+- id: hot-chocolate
+  category: caffeine
+  names:
+    - "Hot chocolate"
+    - "Chocolat chaud"
+    - "Cacao chaud"
+    - "Chocolat en poudre"
+    - "Banania"
+    - "Nesquik"
+    - "Ovomaltine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine. Cocoa and chocolate contain only a little caffeine, though they still count towards your total. Use pasteurised or UHT milk."
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-healthy-diet
+  reviewed: 2026-11-13

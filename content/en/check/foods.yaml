@@ -2252,3 +2252,1777 @@
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
   reviewed: 2026-11-13
+
+# --- Checker part 2: produce, grains, pulses, nuts, sweets, fats, herbs/spices, other (sources read 2026-11-13) ---
+- id: apple
+  category: fruit
+  names:
+    - "Apple"
+    - "Pomme"
+    - "Pommes"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw once you have washed it well under running water (peel it if you can). Soil on fruit can carry the toxoplasmosis parasite."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: banana
+  category: fruit
+  names:
+    - "Banana"
+    - "Banane"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw once you have washed it well under running water (peel it if you can). Soil on fruit can carry the toxoplasmosis parasite."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: berries
+  category: fruit
+  names:
+    - "Berries"
+    - "Strawberries"
+    - "Fraises"
+    - "Framboises"
+    - "Myrtilles"
+    - "Raspberries"
+    - "Blueberries"
+    - "Fruits rouges"
+    - "Mûres"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw once rinsed very well under clear water. French guidance names strawberries specifically as fruit to rinse."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: grapes
+  category: fruit
+  names:
+    - "Grapes"
+    - "Raisin"
+    - "Raisins"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw once you have washed it well under running water (peel it if you can). Soil on fruit can carry the toxoplasmosis parasite."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: citrus
+  category: fruit
+  names:
+    - "Orange"
+    - "Clementine"
+    - "Mandarine"
+    - "Lemon"
+    - "Citron"
+    - "Pamplemousse"
+    - "Grapefruit"
+    - "Citrus"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine. Wash the skin before peeling or zesting, and wash your hands afterwards."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: melon
+  category: fruit
+  names:
+    - "Melon"
+    - "Cantaloupe"
+    - "Melon charentais"
+  tips: [best]
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "A whole melon, washed then cut and eaten fresh, is fine. Do not eat cut melon that has sat out of the fridge. Ameli names melon as a source of folate (vitamin B9)."
+      sources:
+        - ameli-alimentation-grossesse
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: watermelon
+  category: fruit
+  names:
+    - "Watermelon"
+    - "Pastèque"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Wash the skin before cutting, and eat cut pieces fresh or keep them in the fridge. Cut melon left out at room temperature is a listeria risk."
+      sources:
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: mango
+  category: fruit
+  names:
+    - "Mango"
+    - "Mangue"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw once you have washed it well under running water (peel it if you can). Soil on fruit can carry the toxoplasmosis parasite."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: pineapple
+  category: fruit
+  names:
+    - "Pineapple"
+    - "Ananas"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw once you have washed it well under running water (peel it if you can). Soil on fruit can carry the toxoplasmosis parasite."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: pear
+  category: fruit
+  names:
+    - "Pear"
+    - "Poire"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw once you have washed it well under running water (peel it if you can). Soil on fruit can carry the toxoplasmosis parasite."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: stone-fruit
+  category: fruit
+  names:
+    - "Peach"
+    - "Nectarine"
+    - "Cherry"
+    - "Plum"
+    - "Apricot"
+    - "Pêche"
+    - "Cerise"
+    - "Prune"
+    - "Abricot"
+    - "Mirabelle"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw once you have washed it well under running water (peel it if you can). Soil on fruit can carry the toxoplasmosis parasite."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: kiwi
+  category: fruit
+  names:
+    - "Kiwi"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw once you have washed it well under running water (peel it if you can). Soil on fruit can carry the toxoplasmosis parasite."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: avocado
+  category: fruit
+  names:
+    - "Avocado"
+    - "Avocat"
+    - "Guacamole"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine. Wash the skin before cutting so soil does not get onto the flesh. Home-made guacamole is fine if the other ingredients are washed."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: dates
+  category: fruit
+  names:
+    - "Dates"
+    - "Dattes"
+    - "Medjool"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Dried fruit counts towards your fruit and vegetables and is fine. It is sweet, so keep it to small amounts."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: dried-fruit
+  category: fruit
+  names:
+    - "Dried fruit"
+    - "Fruits secs"
+    - "Raisins secs"
+    - "Abricots secs"
+    - "Pruneaux"
+    - "Figues sèches"
+    - "Cranberries séchées"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Dried fruit counts as a portion of fruit and is safe to eat. It is sweet, so keep it to small amounts."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: pre-cut-fruit
+  category: fruit
+  names:
+    - "Pre-cut fruit"
+    - "Fruit salad"
+    - "Salade de fruits"
+    - "Melon en barquette"
+    - "Fruits coupés"
+    - "Fruit pot"
+  local: true
+  answers:
+    - state: raw
+      verdict: careful
+      why: "Keep pre-cut fruit, especially melon, in the fridge and eat it before the use-by date. Do not buy cut fruit that was not kept cold. Fruit you cut yourself after washing is better."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: tomato
+  category: vegetable
+  names:
+    - "Tomato"
+    - "Tomate"
+    - "Tomates cerises"
+    - "Tomate grappe"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if you wash it very well at home. Away from home, if you do not know how it was washed, choose it cooked."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: cucumber
+  category: vegetable
+  names:
+    - "Cucumber"
+    - "Concombre"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if you wash it very well at home. Away from home, if you do not know how it was washed, choose it cooked."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: lettuce
+  category: vegetable
+  names:
+    - "Lettuce"
+    - "Salade verte"
+    - "Laitue"
+    - "Batavia"
+    - "Romaine"
+    - "Salad"
+    - "Mesclun"
+    - "Frisée"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if you wash every leaf under running water at home. Unwashed leafy greens are the riskier choice."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: rocket
+  category: vegetable
+  names:
+    - "Rocket"
+    - "Roquette"
+    - "Arugula"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if you wash the leaves well under running water at home. Away from home, choose cooked vegetables if you do not know how it was washed."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: mache
+  category: vegetable
+  names:
+    - "Mâche"
+    - "Lamb's lettuce"
+    - "Doucette"
+    - "Corn salad"
+  tips: [best]
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if you wash it very well, since it grows close to the soil. Ameli names mâche as a source of folate (vitamin B9)."
+      sources:
+        - ameli-toxo-prevention
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: spinach
+  category: vegetable
+  names:
+    - "Spinach"
+    - "Épinards"
+    - "Épinards frais"
+    - "Épinards en branches"
+  tips: [best]
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Wash raw leaves very well. Ameli names spinach as a source of folate (vitamin B9)."
+      sources:
+        - ameli-toxo-prevention
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked spinach is the safest way to eat it. Ameli names spinach as a source of folate (vitamin B9)."
+      sources:
+        - ameli-toxo-prevention
+        - ameli-alimentation-grossesse
+  reviewed: 2026-11-13
+- id: watercress
+  category: vegetable
+  names:
+    - "Watercress"
+    - "Cresson"
+    - "Cresson de fontaine"
+  tips: [best]
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Wash it very well, since it grows in wet ground. Ameli names watercress as a source of folate (vitamin B9)."
+      sources:
+        - ameli-toxo-prevention
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked watercress, for example in soup, is the safest way to eat it. Ameli names it as a source of folate (vitamin B9)."
+      sources:
+        - ameli-toxo-prevention
+        - ameli-alimentation-grossesse
+  reviewed: 2026-11-13
+- id: kale
+  category: vegetable
+  names:
+    - "Kale"
+    - "Chou kale"
+    - "Chou frisé"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if you wash it very well at home. Away from home, if you do not know how it was washed, choose it cooked."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: carrot
+  category: vegetable
+  names:
+    - "Carrot"
+    - "Carotte"
+    - "Carottes râpées maison"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if you wash it very well at home. Away from home, if you do not know how it was washed, choose it cooked."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: beetroot
+  category: vegetable
+  names:
+    - "Beetroot"
+    - "Betterave"
+    - "Betterave cuite"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if you wash it very well at home. Away from home, if you do not know how it was washed, choose it cooked."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked beetroot, including the ready-cooked packs, is fine. Keep packs chilled and eat them before the use-by date."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: courgette
+  category: vegetable
+  names:
+    - "Courgette"
+    - "Zucchini"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if you wash it very well at home. Away from home, if you do not know how it was washed, choose it cooked."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: aubergine
+  category: vegetable
+  names:
+    - "Aubergine"
+    - "Eggplant"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Aubergine is normally eaten cooked, which is the safest way."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: peppers
+  category: vegetable
+  names:
+    - "Peppers"
+    - "Poivron"
+    - "Poivrons"
+    - "Bell pepper"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if you wash it very well at home. Away from home, if you do not know how it was washed, choose it cooked."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: potato
+  category: vegetable
+  names:
+    - "Potato"
+    - "Pomme de terre"
+    - "Frites"
+    - "Purée"
+    - "Chips"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Potatoes are normally eaten cooked, which is the safest way."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked potatoes, chips and mash are fine. Wash the skin if you eat it."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: sweet-potato
+  category: vegetable
+  names:
+    - "Sweet potato"
+    - "Patate douce"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Normally eaten cooked, which is the safest way."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: onion
+  category: vegetable
+  names:
+    - "Onion"
+    - "Oignon"
+    - "Échalote"
+    - "Shallot"
+    - "Ciboulette"
+    - "Spring onion"
+    - "Oignon nouveau"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if you wash it very well at home. Away from home, if you do not know how it was washed, choose it cooked."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: garlic
+  category: vegetable
+  names:
+    - "Garlic"
+    - "Ail"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if you wash it very well at home. Away from home, if you do not know how it was washed, choose it cooked."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: cabbage
+  category: vegetable
+  names:
+    - "Cabbage"
+    - "Chou"
+    - "Chou blanc"
+    - "Chou rouge"
+    - "Chou-fleur"
+    - "Cauliflower"
+    - "Choucroute cuite"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if you wash it very well at home. Away from home, if you do not know how it was washed, choose it cooked."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: broccoli
+  category: vegetable
+  names:
+    - "Broccoli"
+    - "Brocoli"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if you wash it very well at home. Away from home, if you do not know how it was washed, choose it cooked."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: fennel
+  category: vegetable
+  names:
+    - "Fennel"
+    - "Fenouil"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if you wash it very well at home. Away from home, if you do not know how it was washed, choose it cooked."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: asparagus
+  category: vegetable
+  names:
+    - "Asparagus"
+    - "Asperge"
+    - "Asperges"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if washed very well, but asparagus is nearly always cooked, which is the safest way."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: leek
+  category: vegetable
+  names:
+    - "Leek"
+    - "Poireau"
+    - "Poireaux"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if you wash it very well at home. Away from home, if you do not know how it was washed, choose it cooked."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: green-beans
+  category: vegetable
+  names:
+    - "Green beans"
+    - "Haricots verts"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Wash them well. They are normally eaten cooked, which is the safest way."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: peas
+  category: vegetable
+  names:
+    - "Peas"
+    - "Petits pois"
+    - "Pois"
+    - "Mange-tout"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if you wash it very well at home. Away from home, if you do not know how it was washed, choose it cooked."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: sweetcorn
+  category: vegetable
+  names:
+    - "Sweetcorn"
+    - "Maïs"
+    - "Corn on the cob"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if you wash it very well at home. Away from home, if you do not know how it was washed, choose it cooked."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: radish
+  category: vegetable
+  names:
+    - "Radish"
+    - "Radis"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if you wash it very well at home. Away from home, if you do not know how it was washed, choose it cooked."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: celery
+  category: vegetable
+  names:
+    - "Celery"
+    - "Céleri"
+    - "Céleri branche"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine raw if you wash it very well at home. Away from home, if you do not know how it was washed, choose it cooked."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: pumpkin
+  category: vegetable
+  names:
+    - "Pumpkin"
+    - "Courge"
+    - "Potiron"
+    - "Butternut"
+    - "Citrouille"
+    - "Potimarron"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Normally eaten cooked, which is the safest way."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Cooked vegetables are the safest choice when you are not immune to toxoplasmosis."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: salad-restaurant
+  category: vegetable
+  names:
+    - "Salad in a restaurant"
+    - "Crudités au restaurant"
+    - "Salade au restaurant"
+    - "Side salad"
+    - "Salade verte restaurant"
+    - "Crudités"
+  local: true
+  answers:
+    - state: raw
+      verdict: careful
+      why: "When you eat out or at friends' homes, ameli advises skipping raw vegetables and choosing cooked ones, because you cannot know how they were washed."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: bagged-salad
+  category: vegetable
+  names:
+    - "Bagged salad"
+    - "Salade en sachet"
+    - "Salade prête à manger"
+    - "Salade lavée"
+    - "Mesclun en sachet"
+    - "Jeunes pousses"
+    - "Baby spinach bag"
+    - "Salade en barquette"
+  local: true
+  answers:
+    - state: raw
+      verdict: careful
+      why: "Keep it in the fridge and eat it before the use-by date. Rinse it again at home even if the bag says washed, or cook it."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: alfalfa-sprouts
+  category: vegetable
+  names:
+    - "Alfalfa sprouts"
+    - "Alfalfa"
+    - "Luzerne germée"
+    - "Graines germées"
+    - "Sprouted seeds"
+    - "Radish sprouts"
+    - "Pousses de radis"
+  tips: [avoid]
+  answers:
+    - state: raw
+      verdict: avoid
+      why: "Raw sprouted seeds are on the French list of foods to avoid in pregnancy, and the CDC says the same. Sprouts grow in warm, wet conditions where germs thrive."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-food-pregnant-women
+        - cdc-listeria-prevention
+    - state: cooked
+      verdict: ok
+      why: "Sprouts cooked until steaming hot all the way through are safer."
+      sources:
+        - cdc-food-pregnant-women
+        - cdc-listeria-prevention
+  reviewed: 2026-11-13
+- id: bean-sprouts
+  category: vegetable
+  names:
+    - "Bean sprouts"
+    - "Pousses de soja"
+    - "Soja germé"
+    - "Germes de soja"
+    - "Mung bean sprouts"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: raw
+      verdict: avoid
+      why: "Raw bean sprouts are on the French list of foods to avoid in pregnancy, and the CDC agrees. Do not eat them raw in salads or spring rolls."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-food-pregnant-women
+        - cdc-listeria-prevention
+    - state: cooked
+      verdict: careful
+      why: "Stir-fried until steaming hot all the way through is safer. French guidance also advises avoiding soy foods as a precaution, so ask your midwife."
+      sources:
+        - cdc-food-pregnant-women
+        - ameli-aliments-eviter
+  reviewed: 2026-11-13
+- id: mushrooms
+  category: vegetable
+  names:
+    - "Mushrooms"
+    - "Champignons"
+    - "Champignons de Paris"
+    - "Cèpes"
+    - "Girolles"
+    - "Shiitaké"
+    - "Portobello"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Mushrooms cooked right through are fine."
+      sources:
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
+    - state: raw
+      verdict: careful
+      why: "The CDC advises people at higher risk of listeria to avoid raw mushrooms and eat them thoroughly cooked. Wash well if you do eat them raw."
+      sources:
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: enoki-mushrooms
+  category: vegetable
+  names:
+    - "Enoki"
+    - "Champignons enoki"
+    - "Enokitake"
+  answers:
+    - state: raw
+      verdict: avoid
+      why: "Enoki mushrooms are linked to listeria and must be cooked thoroughly before eating."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+    - state: cooked
+      verdict: ok
+      why: "Cooked thoroughly, enoki are fine."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+  reviewed: 2026-11-13
+- id: gazpacho
+  category: vegetable
+  names:
+    - "Gazpacho"
+    - "Soupe froide"
+    - "Cold soup"
+    - "Salmorejo"
+  local: true
+  answers:
+    - state: raw
+      verdict: careful
+      why: "Cold soups are made from raw vegetables, so they are only fine if the vegetables are washed very well and the soup is kept cold. Avoid it away from home."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: vegetable-soup
+  category: vegetable
+  names:
+    - "Vegetable soup"
+    - "Soupe de légumes"
+    - "Velouté"
+    - "Potage"
+    - "Soupe"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Soup that was cooked through and served hot is fine. Reheat leftovers until steaming hot."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: rice
+  category: grain
+  names:
+    - "Rice"
+    - "Riz"
+    - "Riz basmati"
+    - "Riz complet"
+    - "Brown rice"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Fine. Starchy foods, ideally wholegrain, are part of a healthy pregnancy diet."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: pasta
+  category: grain
+  names:
+    - "Pasta"
+    - "Pâtes"
+    - "Spaghetti"
+    - "Tagliatelles"
+    - "Macaronis"
+    - "Pâtes complètes"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Fine. Starchy foods, ideally wholegrain, are part of a healthy pregnancy diet."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: bread
+  category: grain
+  names:
+    - "Bread"
+    - "Pain"
+    - "Baguette"
+    - "Pain de campagne"
+    - "Pain de mie"
+    - "Tartine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine. Starchy foods, ideally wholegrain, are part of a healthy pregnancy diet."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: wholegrain-bread
+  category: grain
+  names:
+    - "Wholegrain bread"
+    - "Pain complet"
+    - "Pain aux céréales"
+    - "Pain de seigle"
+    - "Pain intégral"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "A good choice: wholegrain and higher-fibre starchy foods are recommended."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: couscous-semolina
+  category: grain
+  names:
+    - "Couscous grain"
+    - "Semoule"
+    - "Semoule de couscous"
+    - "Couscous semoule"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Fine. Starchy foods, ideally wholegrain, are part of a healthy pregnancy diet."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: quinoa
+  category: grain
+  names:
+    - "Quinoa"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Fine. Starchy foods, ideally wholegrain, are part of a healthy pregnancy diet."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: oats
+  category: grain
+  names:
+    - "Oats"
+    - "Flocons d'avoine"
+    - "Porridge"
+    - "Avoine"
+    - "Muesli cuit"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Fine. Starchy foods, ideally wholegrain, are part of a healthy pregnancy diet."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: bulgur
+  category: grain
+  names:
+    - "Bulgur"
+    - "Boulgour"
+    - "Blé concassé"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Fine. Starchy foods, ideally wholegrain, are part of a healthy pregnancy diet."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: breakfast-cereal
+  category: grain
+  names:
+    - "Breakfast cereal"
+    - "Céréales"
+    - "Corn flakes"
+    - "Muesli"
+    - "Granola"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine. Wholegrain cereals are best, and watch the sugar."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: tabbouleh
+  category: grain
+  names:
+    - "Tabbouleh home-made"
+    - "Taboulé maison"
+    - "Taboulé libanais"
+  local: true
+  answers:
+    - state: raw
+      verdict: careful
+      why: "Home-made tabbouleh is mostly raw herbs and vegetables, so wash everything very well and eat it fresh. Away from home or from the deli counter, skip it."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: lentils
+  category: legume
+  names:
+    - "Lentils"
+    - "Lentilles"
+    - "Lentilles vertes"
+    - "Lentilles corail"
+    - "Dal"
+    - "Dhal"
+  tips: [best]
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Fine. Ameli names pulses (légumes secs) as a source of iron."
+      sources:
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: chickpeas
+  category: legume
+  names:
+    - "Chickpeas"
+    - "Pois chiches"
+  tips: [best]
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Fine. Ameli names chickpeas as a source of folate (vitamin B9)."
+      sources:
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+    - state: canned
+      verdict: ok
+      why: "Tinned chickpeas are fine. Rinse them first."
+      sources:
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: kidney-beans
+  category: legume
+  names:
+    - "Kidney beans"
+    - "Haricots rouges"
+    - "Haricots blancs"
+    - "Haricots secs"
+    - "Cannellini"
+    - "Flageolets"
+    - "Chili sin carne"
+  local: true
+  answers:
+    - state: canned
+      verdict: ok
+      why: "Tinned and jarred beans are ready to eat. Rinse them first."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Beans cooked until soft are fine and count as a protein source."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: tofu
+  category: legume
+  names:
+    - "Tofu"
+    - "Soy"
+    - "Soja"
+    - "Tofu fumé"
+    - "Tofu soyeux"
+  local: true
+  answers:
+    - state: cooked
+      verdict: careful
+      why: "French guidance advises avoiding foods containing soy as a precaution in pregnancy. Ask your midwife about occasional tofu."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: tempeh
+  category: legume
+  names:
+    - "Tempeh"
+    - "Seitan soja"
+  answers:
+    - state: cooked
+      verdict: careful
+      why: "Tempeh is made from soy. French guidance advises avoiding foods containing soy as a precaution, so ask your midwife."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: edamame
+  category: legume
+  names:
+    - "Edamame"
+    - "Fèves de soja"
+  answers:
+    - state: cooked
+      verdict: careful
+      why: "Edamame are soy beans. French guidance advises avoiding foods containing soy as a precaution, so ask your midwife."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: houmous
+  category: legume
+  names:
+    - "Hummus"
+    - "Houmous"
+    - "Purée de pois chiches"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Shop-bought houmous in a sealed pot is fine kept in the fridge and eaten before the use-by date. Skip houmous from a deli counter or buffet."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: falafel
+  category: legume
+  names:
+    - "Falafel"
+    - "Falafels"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Freshly fried falafel served hot is fine. The raw salad and sauces in a wrap are what to check."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+  reviewed: 2026-11-13
+- id: almonds
+  category: nut_seed
+  names:
+    - "Almonds"
+    - "Amandes"
+    - "Purée d'amande"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine. Ameli names almonds as a source of folate (vitamin B9)."
+      sources:
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: walnuts
+  category: nut_seed
+  names:
+    - "Walnuts"
+    - "Noix"
+    - "Cerneaux de noix"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine. Ameli names walnuts as a source of folate (vitamin B9)."
+      sources:
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: hazelnuts
+  category: nut_seed
+  names:
+    - "Hazelnuts"
+    - "Noisettes"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine unless you have an allergy or your midwife or doctor has told you otherwise."
+      sources:
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: cashews
+  category: nut_seed
+  names:
+    - "Cashews"
+    - "Noix de cajou"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine unless you have an allergy or your midwife or doctor has told you otherwise."
+      sources:
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: pistachios
+  category: nut_seed
+  names:
+    - "Pistachios"
+    - "Pistaches"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine unless you have an allergy or your midwife or doctor has told you otherwise."
+      sources:
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: peanuts
+  category: nut_seed
+  names:
+    - "Peanuts"
+    - "Cacahuètes"
+    - "Arachides"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Peanuts are safe to eat unless you have an allergy or have been told otherwise by a doctor or midwife."
+      sources:
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: peanut-butter
+  category: nut_seed
+  names:
+    - "Peanut butter"
+    - "Beurre de cacahuète"
+    - "Beurre d'arachide"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Safe unless you have an allergy or have been told otherwise by a doctor or midwife. It is high in fat, so keep to small amounts."
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-healthy-diet
+  reviewed: 2026-11-13
+- id: chestnuts
+  category: nut_seed
+  names:
+    - "Chestnuts"
+    - "Châtaignes"
+    - "Marrons"
+    - "Crème de marrons"
+    - "Marrons glacés"
+  tips: [best]
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Fine. Ameli names chestnuts as a source of folate (vitamin B9)."
+      sources:
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: dark-chocolate
+  category: sweet
+  names:
+    - "Dark chocolate"
+    - "Chocolat noir"
+    - "Chocolat"
+    - "Tablette de chocolat"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine in small amounts. It contains a little caffeine, which counts towards your daily caffeine."
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-healthy-diet
+  reviewed: 2026-11-13
+- id: milk-chocolate
+  category: sweet
+  names:
+    - "Milk chocolate"
+    - "Chocolat au lait"
+    - "Chocolat blanc"
+    - "Nutella"
+    - "Pâte à tartiner"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine in small amounts. Milk chocolate has less caffeine than dark chocolate."
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-healthy-diet
+  reviewed: 2026-11-13
+- id: viennoiserie
+  category: sweet
+  names:
+    - "Croissant"
+    - "Pain au chocolat"
+    - "Viennoiserie"
+    - "Pain aux raisins"
+    - "Brioche"
+    - "Chausson aux pommes"
+    - "Patisserie"
+    - "Pâtisserie"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine in small amounts. Sugary and fatty foods are for less often."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: crepes
+  category: sweet
+  names:
+    - "Crêpes"
+    - "Crêpe"
+    - "Pancakes"
+    - "Gaufre"
+    - "Waffle"
+    - "Galette"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Fine when cooked through. Check the filling: no raw egg, and no alcohol such as flambé."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: cake-biscuits
+  category: sweet
+  names:
+    - "Cake"
+    - "Gâteau"
+    - "Biscuits"
+    - "Cookies"
+    - "Madeleine"
+    - "Tarte"
+    - "Gâteau au yaourt"
+    - "Cake aux fruits"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Baked goods are fine. Avoid versions with uncooked egg, such as raw cookie dough, or with alcohol."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: sugar
+  category: sweet
+  names:
+    - "Sugar"
+    - "Sucre"
+    - "Sucre roux"
+    - "Sirop d'érable"
+    - "Maple syrup"
+    - "Sirop d'agave"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine in small amounts. Foods high in sugar are for less often."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: liquorice-sweets
+  category: sweet
+  names:
+    - "Liquorice sweets"
+    - "Réglisse"
+    - "Bâton de réglisse"
+    - "Carambar réglisse"
+    - "Zan"
+    - "Rouleau de réglisse"
+    - "Lakrids"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Ameli says liquorice in every form (sweets, syrup, herbal tea, supplements) is not advised in pregnancy. The NHS also advises avoiding liquorice root."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: olive-oil
+  category: fat_oil
+  names:
+    - "Olive oil"
+    - "Huile d'olive"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine. Use it in small amounts."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: vegetable-oil
+  category: fat_oil
+  names:
+    - "Rapeseed oil"
+    - "Huile de colza"
+    - "Huile de tournesol"
+    - "Sunflower oil"
+    - "Huile de noix"
+    - "Vegetable oil"
+    - "Huile"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine. Use it in small amounts."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: margarine
+  category: fat_oil
+  names:
+    - "Margarine"
+    - "Beurre végétal"
+    - "Pâte à tartiner végétale"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine. Spreads and fats are for small amounts."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: fresh-herbs
+  category: herb_spice
+  names:
+    - "Fresh herbs"
+    - "Herbes fraîches"
+    - "Persil"
+    - "Basilic"
+    - "Coriandre"
+    - "Menthe"
+    - "Ciboulette"
+    - "Aneth"
+    - "Parsley"
+    - "Basil"
+    - "Coriander"
+    - "Mint"
+    - "Herbes aromatiques"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Fine once washed very well under clear water. French guidance names aromatic herbs along with raw fruit and vegetables as something to rinse. Skip raw herbs as a garnish away from home."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+  reviewed: 2026-11-13
+- id: dried-herbs-spices
+  category: herb_spice
+  names:
+    - "Dried herbs"
+    - "Spices"
+    - "Herbes de Provence"
+    - "Épices"
+    - "Paprika"
+    - "Curry"
+    - "Cumin"
+    - "Cannelle"
+    - "Cinnamon"
+    - "Poivre"
+    - "Pepper"
+    - "Origan"
+    - "Thym"
+    - "Gingembre"
+    - "Curcuma"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Normal amounts used in cooking are fine."
+      sources:
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: liquorice-root
+  category: herb_spice
+  names:
+    - "Liquorice root"
+    - "Racine de réglisse"
+    - "Réglisse en poudre"
+    - "Pastis sans alcool"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Liquorice in any form, including alcohol-free pastis, syrups and supplements, is not advised in pregnancy. Ameli and the NHS both say to avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: soy-sauce
+  category: herb_spice
+  names:
+    - "Soy sauce"
+    - "Sauce soja"
+    - "Sauce soja salée"
+    - "Tamari"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Fine occasionally. French guidance says to avoid soy foods as a precaution, but soy sauce eaten now and then is allowed."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+  reviewed: 2026-11-13
+- id: food-cooked-with-alcohol
+  category: other
+  names:
+    - "Food cooked with alcohol"
+    - "Plat au vin"
+    - "Coq au vin"
+    - "Bœuf bourguignon"
+    - "Flambé"
+    - "Sauce au vin"
+    - "Baba au rhum"
+    - "Dessert à l'alcool"
+    - "Sauce au cognac"
+    - "Poulet à la bière"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: cooked
+      verdict: avoid
+      why: "Dishes and desserts made with alcohol are advised against, because some alcohol remains even after long cooking. Ameli says to have no alcohol at all."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
+  reviewed: 2026-11-13

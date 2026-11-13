@@ -14,3 +14,4 @@
 - 2026-11-13 Checker part 1: content/en/check/foods.yaml (85 foods: meat, charcuterie, fish, seafood, egg, dairy, cheese, ready meals, egg sauces), loadChecks() in lib/content/load.ts, tests/content-checks.test.ts, 5 new CDC/NHS sources.
 - 2026-11-13 Checker UI: Guide hub (4 tiles) + searchable "Can I?" pages (accent-insensitive search, brand names, cooking-state chips, Yes/Careful/No badge with icon, why, sources, tips lists); content for foods arrives from the checker content sessions.
 - 2026-11-13 Partner gateway: listed partner emails (table partner_emails, data only) skip onboarding via claim_partner_access(); partner profile joins the mother household and sees her dates; complete_onboarding joins a household a partner opened first (0002_partner_access.sql, applied).
+- 2026-11-13 Checker part 2: 93 more foods in content/en/check/foods.yaml (produce, grains, pulses, nuts, sweets, fats, herbs) + new drinks.yaml (32 drinks), 2 ameli sources.

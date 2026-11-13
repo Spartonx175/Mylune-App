@@ -278,6 +278,17 @@ sources:
     url: https://www.nhs.uk/pregnancy/keeping-well/have-a-healthy-diet/
     title: Have a healthy diet in pregnancy - NHS
     accessed: 2026-11-13
+  # --- Checker part 2 (produce, drinks), pages read 2026-11-13 ---
+  - id: ameli-alimentation-grossesse
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/devenir-parent/grossesse/grossesse-en-bonne-sante/grossesse-alimentation/alimentation-grossesse
+    title: Adapter son alimentation pendant la grossesse
+    accessed: 2026-11-13
+  - id: ameli-zero-alcool
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/devenir-parent/grossesse/grossesse-en-bonne-sante/tabac-alcool-drogue-et-grossesse/zero-alcool-pendant-la-grossesse
+    title: Zéro alcool de la conception à la fin de la grossesse
+    accessed: 2026-11-13
 # Entry shape:
 # - id: ameli-toxo
 #   name: ameli
