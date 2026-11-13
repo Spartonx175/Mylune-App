@@ -1,0 +1,4035 @@
+# « Puis-je manger ceci ? » (checker), partie 1 : viandes, charcuterie, poissons, fruits de mer, œufs, produits laitiers, fromages, plats préparés, sauces à base d'œufs ou de poisson.
+# Traduction française de content/en/check/foods.yaml (mêmes ids, états, verdicts et sources).
+# Sources : ids de content/sources.yaml. avoid/careful : 2 sources minimum, ok : 1. Aucune dose, aucun diagnostic.
+# Les règles françaises (ameli, mangerbouger) priment lorsqu'elles sont plus strictes (pâté, fromage au lait cru, charcuterie crue).
+- id: beef-steak
+  category: meat
+  names:
+    - Bœuf
+    - Steak
+    - Entrecôte
+    - Faux-filet
+    - Bavette
+    - Rumsteck
+    - Côte de bœuf
+    - Rosbif
+    - Beef steak
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: "La viande de bœuf saignante ou à point peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée contre la toxoplasmose, faites-la cuire jusqu'à ce qu'elle ne soit plus rose à l'intérieur."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+    - state: cooked
+      verdict: ok
+      why: "Le bœuf bien cuit est sans danger. Coupez-le pour vérifier : il ne doit pas y avoir de jus rosé."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-toxo-prevention
+  reviewed: 2026-11-13
+- id: steak-hache
+  category: meat
+  names:
+    - Steak haché
+    - Viande hachée
+    - Boulette
+    - Bolognaise
+    - Beef mince
+    - Minced beef
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: "La viande hachée rosée est à risque, car les microbes présents en surface sont répartis dans toute la préparation. La toxoplasmose et d'autres microbes survivent si le centre reste rose."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "La viande hachée bien cuite, gris-brun sans rose ni jus rosé, est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: steak-tartare
+  category: meat
+  names:
+    - Tartare de bœuf
+    - Tartare
+    - Bœuf cru
+    - Filet américain
+    - Raw beef
+    - Steak tartare
+  tips: [avoid]
+  local: true
+  answers:
+    - state: raw
+      verdict: avoid
+      why: "Le bœuf cru peut contenir le parasite de la toxoplasmose et d'autres microbes. C'est un non ferme, même dans un bon restaurant."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: carpaccio-beef
+  category: meat
+  names:
+    - Carpaccio de bœuf
+    - Carpaccio
+    - Bresaola fraîche
+    - Tranches de bœuf cru
+    - Raw beef slices
+    - Beef carpaccio
+  tips: [avoid]
+  local: true
+  answers:
+    - state: raw
+      verdict: avoid
+      why: "Le carpaccio est de la viande crue : il peut contenir le parasite de la toxoplasmose. Choisissez plutôt un plat cuit."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: lamb
+  category: meat
+  names:
+    - Agneau
+    - Gigot d'agneau
+    - Côtelettes d'agneau
+    - Mouton
+    - Souris d'agneau
+    - Lamb
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: "L'agneau rosé ou saignant est une source connue du parasite de la toxoplasmose. Faites-le cuire jusqu'à ce qu'il n'y ait plus aucune trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-toxoplasmosis
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "L'agneau bien cuit est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: pork
+  category: meat
+  names:
+    - Porc
+    - Côte de porc
+    - Filet mignon
+    - Rôti de porc
+    - Travers
+    - Échine
+    - Pork
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: "Le porc rosé peut transmettre le parasite de la toxoplasmose et d'autres microbes. Faites-le cuire à cœur, jusqu'à ce que le jus soit clair."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-toxoplasmosis
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Le porc bien cuit, sans rose, est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: chicken
+  category: meat
+  names:
+    - Poulet
+    - Dinde
+    - Pintade
+    - Poulet rôti
+    - Blanc de poulet cuit
+    - Volaille
+    - Escalope
+    - Turkey
+    - Chicken
+  tips: [best]
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: "La volaille rosée ou pas assez cuite peut transmettre la salmonelle et le parasite de la toxoplasmose. Faites-la cuire jusqu'à ce qu'il n'y ait plus de rose et que le jus soit clair."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+    - state: cooked
+      verdict: ok
+      why: "Le poulet ou la dinde bien cuits sont sans danger. Le poulet rôti acheté chaud est acceptable s'il est mangé le jour même ou réchauffé jusqu'à ce qu'il fume."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: duck
+  category: meat
+  names:
+    - Canard
+    - Magret de canard
+    - Magret
+    - Confit de canard
+    - Cuisse de canard
+    - Duck breast
+    - Duck
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: "Le magret servi rosé n'est pas sûr : le canard peut transmettre le parasite de la toxoplasmose. Demandez-le bien cuit, sans rose."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-toxo-prevention
+    - state: cooked
+      verdict: ok
+      why: "Le canard bien cuit est sans danger, y compris le confit réchauffé jusqu'à ce qu'il fume."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+    - state: cured
+      verdict: avoid
+      why: "Le magret séché ou fumé se mange sans cuisson. Il peut transmettre la toxoplasmose et la listéria."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: rabbit
+  category: meat
+  names:
+    - Lapin
+    - Lapin à la moutarde
+    - Rabbit
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: "Le lapin rosé peut transmettre le parasite de la toxoplasmose. Faites-le bien cuire."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-toxoplasmosis
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Le lapin bien cuit est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: game
+  category: meat
+  names:
+    - Gibier
+    - Chevreuil
+    - Cerf
+    - Sanglier
+    - Faisan
+    - Perdrix
+    - Lièvre
+    - Civet
+    - Venison
+    - Game
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: "Le gibier rosé peut transmettre le parasite de la toxoplasmose. Le gibier fumé, mariné ou grillé n'est sans danger que s'il est bien cuit à cœur."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+    - state: cooked
+      verdict: careful
+      why: "Le gibier bien cuit évite le risque de toxoplasmose. Le NHS britannique demande aussi aux femmes enceintes d'éviter le gibier à plumes, à cause du plomb des plombs de chasse : gardez-le donc pour de rares occasions."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+  reviewed: 2026-11-13
+- id: kebab
+  category: meat
+  names:
+    - Döner
+    - Doner kebab
+    - Gyros
+    - Shawarma
+    - Sandwich grec
+    - Brochette
+    - Doner kebab
+    - Kebab
+  local: true
+  answers:
+    - state: cooked
+      verdict: careful
+      why: "Seulement si la viande fume à cœur et qu'elle est bien cuite. Évitez la salade crue et les sauces si vous ne savez pas comment elles ont été préparées, à cause du risque de toxoplasmose lié à la terre."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: merguez
+  category: meat
+  names:
+    - Chipolata
+    - Saucisse épicée
+    - Spicy sausage
+    - Merguez
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: "Une merguez rosée à l'intérieur peut encore transmettre le parasite de la toxoplasmose. Faites-la cuire à cœur."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "La merguez bien cuite, sans rose au centre, est sans danger. Les saucisses faites maison sont un bon choix."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+  reviewed: 2026-11-13
+- id: sausage-cooked
+  category: meat
+  names:
+    - Saucisse
+    - Saucisse de Toulouse
+    - Saucisse de Strasbourg
+    - Chipolatas
+    - Saucisse fraîche
+    - Sausage
+  tips: [best]
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: "La saucisse fraîche encore rosée à l'intérieur peut transmettre des microbes, dont le parasite de la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "La saucisse fraîche bien cuite est sans danger. C'est le choix de charcuterie à privilégier."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: boudin
+  category: meat
+  names:
+    - Boudin blanc
+    - Boudin antillais
+    - Black pudding
+    - Boudin noir
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Un boudin que vous faites cuire vous-même jusqu'à ce qu'il soit bien chaud à cœur est un bon choix."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: reheated
+      verdict: ok
+      why: "Acceptable s'il est réchauffé jusqu'à ce qu'il fume. Ne le mangez pas froid."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+  reviewed: 2026-11-13
+- id: liver
+  category: meat
+  names:
+    - Foie de veau
+    - Foie de volaille
+    - Foies de volaille
+    - Foie de porc
+    - Foie
+    - Chicken liver
+    - Calf's liver
+    - Liver
+  local: true
+  answers:
+    - state: cooked
+      verdict: avoid
+      why: "Le foie contient beaucoup de vitamine A, qui peut nuire au développement du bébé. Évitez-le pendant toute la grossesse, même bien cuit."
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-vitamins
+  reviewed: 2026-11-13
+- id: burger
+  category: meat
+  names:
+    - Hamburger
+    - Cheeseburger
+    - Burger restaurant
+    - Burger de fast-food
+    - Fast food burger
+    - Burger
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: "Un burger rosé est de la viande hachée encore crue au centre. Demandez-le bien cuit."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Un burger bien cuit est acceptable. Évitez les garnitures crues si vous ne savez pas comment elles ont été lavées."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: foie-gras
+  category: charcuterie
+  names:
+    - Foie gras de canard
+    - Foie gras d'oie
+    - Mi-cuit
+    - Terrine de foie gras
+    - Bloc de foie gras
+    - Foie gras
+  tips: [avoid]
+  local: true
+  answers:
+    - state: cooked
+      verdict: avoid
+      why: "Le foie gras (frais, mi-cuit ou en bloc) est un produit cuit réfrigéré qui peut transmettre la listéria. C'est aussi du foie, riche en vitamine A."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: canned
+      verdict: careful
+      why: "Les recommandations françaises demandent de s'en abstenir complètement. Une conserve ou un bocal stérilisé dans son contenant est plus sûr, mais demandez à votre sage-femme si vous voulez en manger, et évitez-le s'il contient du foie."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: pate
+  category: charcuterie
+  names:
+    - Pâté de campagne
+    - Pâté de foie
+    - Terrine
+    - Pâté en croûte
+    - Mousse de foie
+    - Paté
+    - Pâté
+  tips: [avoid]
+  local: true
+  answers:
+    - state: cooked
+      verdict: avoid
+      why: "Le pâté et la terrine frais peuvent transmettre la listéria, qui se développe même au réfrigérateur. Les conseils de santé français demandent de les éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+    - state: canned
+      verdict: careful
+      why: "Une conserve ou un bocal fermé, conservé à température ambiante, est plus sûr qu'un pâté frais. Évitez ceux à base de foie, et consommez-le rapidement une fois ouvert."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: rillettes
+  category: charcuterie
+  names:
+    - Rillettes de porc
+    - Rillettes du Mans
+    - Rillettes de canard
+    - Rillettes de thon
+    - Rillettes de saumon
+    - Rillettes
+  tips: [avoid]
+  local: true
+  answers:
+    - state: cooked
+      verdict: avoid
+      why: "Les rillettes se mangent froides, telles quelles, et peuvent transmettre la listéria. Évitez-les, y compris les rillettes de poisson."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+  reviewed: 2026-11-13
+- id: jambon-blanc
+  category: charcuterie
+  names:
+    - Jambon blanc
+    - Jambon cuit
+    - Jambon de Paris
+    - Jambon à l'os
+    - Blanc de dinde
+    - Mortadelle
+    - Jambon-beurre
+    - Ham
+    - Cooked ham
+  local: true
+  answers:
+    - state: cooked
+      verdict: careful
+      why: "Le jambon cuit tranché froid peut transmettre la listéria. Le jambon préemballé est le meilleur choix ; évitez le jambon tranché à la coupe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+    - state: reheated
+      verdict: ok
+      why: "Le jambon réchauffé jusqu'à ce qu'il fume, dans un croque-monsieur, un gratin ou sur une pizza chaude, est acceptable."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: jambon-cru
+  category: charcuterie
+  names:
+    - Jambon cru
+    - Jambon sec
+    - Jambon de Bayonne
+    - Jambon de Parme
+    - Prosciutto
+    - Serrano
+    - Jambon de pays
+    - Parma ham
+    - Raw ham
+  tips: [avoid]
+  local: true
+  answers:
+    - state: cured
+      verdict: avoid
+      why: "Le jambon sec se mange cru. Il peut transmettre le parasite de la toxoplasmose, la salmonelle et la listéria. Si vous n'êtes pas immunisée contre la toxoplasmose, évitez-le froid."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
+    - state: reheated
+      verdict: careful
+      why: "Seulement s'il est chauffé jusqu'à ce qu'il fume à cœur, par exemple sur une pizza chaude ou dans un plat au four. Ne le rajoutez pas froid après cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: saucisson-sec
+  category: charcuterie
+  names:
+    - Saucisson sec
+    - Saucisson
+    - Saucisson à l'ail
+    - Rosette
+    - Figatelli
+    - Salami
+    - Pepperoni
+    - Cervelas cru
+    - Dry sausage
+  tips: [avoid]
+  local: true
+  answers:
+    - state: cured
+      verdict: avoid
+      why: "Le saucisson sec se mange cru. Il peut transmettre le parasite de la toxoplasmose, la salmonelle et la listéria. Évitez-le froid."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
+    - state: reheated
+      verdict: careful
+      why: "Seulement s'il est chauffé jusqu'à ce qu'il fume à cœur, par exemple sur une pizza sortie du four. Évitez les rondelles à l'apéritif."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: chorizo
+  category: charcuterie
+  names:
+    - Chorizo sec
+    - Chorizo doux
+    - Saucisse espagnole
+    - Chorizo cuit
+    - Chorizo
+  local: true
+  answers:
+    - state: cured
+      verdict: avoid
+      why: "Le chorizo tranché est un saucisson sec, mangé cru. Il peut transmettre le parasite de la toxoplasmose et la listéria."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - cdc-listeria-deli
+    - state: cooked
+      verdict: careful
+      why: "Le chorizo cuit jusqu'à ce qu'il fume dans un plat (paella, ragoût, pizza chaude) est acceptable. Le chorizo frais à cuire doit être bien cuit à cœur."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - ameli-toxo-prevention
+  reviewed: 2026-11-13
+- id: coppa-bresaola
+  category: charcuterie
+  names:
+    - Bresaola
+    - Viande des Grisons
+    - Lonzo
+    - Pancetta
+    - Lomo
+    - Jambon fumé cru
+    - Speck
+    - Coppa
+  local: true
+  answers:
+    - state: cured
+      verdict: avoid
+      why: "Les viandes séchées ou salées se mangent sans cuisson. Elles peuvent transmettre le parasite de la toxoplasmose et la listéria."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
+    - state: reheated
+      verdict: careful
+      why: "Seulement si elles sont chauffées jusqu'à ce qu'elles fument à cœur. Évitez-les froides, par exemple avec la raclette ou sur un plateau."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: lardons
+  category: charcuterie
+  names:
+    - Lardons
+    - Lardons fumés
+    - Poitrine fumée
+    - Poitrine salée
+    - Bacon grillé
+    - Bacon
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Les lardons ou le bacon poêlés jusqu'à être croustillants et bien cuits sont acceptables, par exemple dans une quiche ou une salade (servez-les chauds)."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+    - state: cured
+      verdict: avoid
+      why: "Le porc fumé ou salé mangé sans cuisson, comme les lardons crus ou le bacon froid tranché, peut transmettre la toxoplasmose et la listéria."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: hot-dog-knacki
+  category: charcuterie
+  names:
+    - Knacki
+    - Saucisse de Francfort
+    - Saucisse de Strasbourg cuite
+    - Saucisse cocktail
+    - Cocktail sausage
+    - Hot dog
+  local: true
+  answers:
+    - state: cooked
+      verdict: avoid
+      why: "Les saucisses de hot dog mangées froides, directement sorties du paquet, peuvent transmettre la listéria."
+      sources:
+        - cdc-listeria-prevention
+        - cdc-food-pregnant-women
+        - ameli-aliments-eviter
+    - state: reheated
+      verdict: ok
+      why: "Acceptable si elles sont réchauffées jusqu'à ce qu'elles fument à cœur."
+      sources:
+        - cdc-listeria-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: charcuterie-counter
+  category: charcuterie
+  names:
+    - Charcuterie à la coupe
+    - Traiteur charcuterie
+    - Plateau de charcuterie
+    - Assiette de charcuterie
+    - Charcuterie
+    - Deli counter meats
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "La charcuterie tranchée à la coupe ou servie sur un plateau peut transmettre la listéria et, si elle est séchée, la toxoplasmose. Évitez-la ; la charcuterie préemballée et réchauffée est préférable."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+  reviewed: 2026-11-13
+- id: jellied-meat
+  category: charcuterie
+  names:
+    - Produits en gelée
+    - Jambon persillé
+    - Museau
+    - Langue de porc
+    - Andouille froide
+    - Pieds de porc
+    - Head cheese
+    - Fromage de tête
+  local: true
+  answers:
+    - state: cooked
+      verdict: avoid
+      why: "Les viandes froides en gelée peuvent transmettre la listéria, qui se développe au réfrigérateur. Évitez-les."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+  reviewed: 2026-11-13
+- id: andouillette
+  category: charcuterie
+  names:
+    - Andouille chaude
+    - Andouille de Vire
+    - Andouillette grillée
+    - Andouillette
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "L'andouillette bien cuite et servie chaude est sans danger. Ne la mangez pas rosée au centre."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: salmon
+  category: fish
+  names:
+    - Saumon
+    - Pavé de saumon
+    - Filet de saumon
+    - Saumon rôti
+    - Saumon cru
+    - Tartare de saumon
+    - Gravlax
+    - Salmon
+  tips: [best]
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Le saumon bien cuit est un bon choix, et il est recommandé de manger un poisson gras par semaine. Variez les poissons que vous mangez."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+    - state: raw
+      verdict: avoid
+      why: "Le saumon cru ou peu cuit (tartare, carpaccio, gravlax, mi-cuit) peut transmettre la listéria et des parasites. La congélation ne supprime pas la listéria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: smoked-salmon
+  category: fish
+  names:
+    - Saumon fumé
+    - Truite fumée
+    - Saumon fumé en tranches
+    - Haddock fumé
+    - Hareng saur
+    - Smoked trout
+    - Lox
+    - Smoked salmon
+  tips: [avoid]
+  local: true
+  answers:
+    - state: cured
+      verdict: avoid
+      why: "Le poisson fumé se mange sans cuisson et peut transmettre la listéria, qui se développe au réfrigérateur. Les recommandations françaises demandent de l'éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: careful
+      why: "Seulement s'il est cuit jusqu'à ce qu'il fume à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé à froid n'est pas sûr."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-meat-fish
+        - ameli-aliments-eviter
+  reviewed: 2026-11-13
+- id: sushi
+  category: fish
+  names:
+    - Sashimi
+    - Maki
+    - California roll
+    - Poke bowl
+    - Chirashi
+    - Tataki
+    - Ceviche
+    - Tartare de poisson
+    - Japanese food
+    - Sushi
+  tips: [avoid]
+  local: true
+  answers:
+    - state: raw
+      verdict: avoid
+      why: "Les sushis au poisson cru et les sashimis peuvent transmettre la listéria et des parasites. La congélation ne supprime pas la listéria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les sushis à base de poisson ou de crevettes cuits, comme un maki au saumon cuit ou un maki à l'avocat, sont sans danger si le reste est frais et préparé le jour même."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: tuna
+  category: fish
+  names:
+    - Thon frais
+    - Thon
+    - Steak de thon
+    - Thon mi-cuit
+    - Tuna steak
+    - Fresh tuna
+  local: true
+  answers:
+    - state: cooked
+      verdict: careful
+      why: "Le thon accumule des polluants comme le mercure. Ne le mangez que de temps en temps, et toujours bien cuit à cœur."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: undercooked
+      verdict: avoid
+      why: "Le thon saisi ou mi-cuit reste cru au centre, ce qui présente un risque de listéria et de parasites. Faites-le cuire à cœur."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: raw
+      verdict: avoid
+      why: "Le thon cru (tartare, tataki, sashimi) peut transmettre la listéria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: canned-tuna
+  category: fish
+  names:
+    - Thon en conserve
+    - Thon en boîte
+    - Thon à l'huile
+    - Thon au naturel
+    - Salade de thon
+    - Tuna salad
+    - Canned tuna
+  local: true
+  answers:
+    - state: canned
+      verdict: careful
+      why: "Le thon contient du mercure, même en conserve. Ne le mangez que de temps en temps, et variez les poissons que vous choisissez."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: sardines
+  category: fish
+  names:
+    - Sardine fraîche
+    - Sardines en boîte
+    - Sardines à l'huile
+    - Sardines grillées
+    - Sardines
+  tips: [best]
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Les sardines fraîches bien cuites sont un bon choix de poisson gras."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+    - state: canned
+      verdict: ok
+      why: "Les sardines en boîte sont acceptables et constituent un choix facile de poisson gras. Consommez-les une fois la boîte ouverte et réfrigérée."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-food-pregnant-women
+    - state: raw
+      verdict: avoid
+      why: "Les sardines crues ou marinées peuvent transmettre la listéria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: cod-white-fish
+  category: fish
+  names:
+    - Cabillaud
+    - Morue
+    - Colin
+    - Merlu
+    - Lieu noir
+    - Lieu jaune
+    - Merlan
+    - Sole
+    - Poisson blanc
+    - Dos de cabillaud
+    - Haddock
+    - Hake
+    - Whiting
+    - Pollock
+    - Cod
+  tips: [best]
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Le poisson blanc bien cuit est un bon choix, peu chargé en polluants. Visez deux portions de poisson par semaine."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+    - state: raw
+      verdict: avoid
+      why: "Le poisson blanc cru ou mariné peut transmettre la listéria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: mackerel
+  category: fish
+  names:
+    - Maquereau
+    - Maquereau fumé
+    - Maquereaux au vin blanc
+    - Filet de maquereau
+    - Mackerel
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Le maquereau frais bien cuit est un bon poisson gras."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+    - state: cured
+      verdict: avoid
+      why: "Le maquereau fumé ou mariné (au vin blanc) se mange sans cuisson et peut transmettre la listéria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+    - state: canned
+      verdict: ok
+      why: "Le maquereau en boîte est acceptable. Le poisson fumé en boîte fermée, conservé à température ambiante, est la version la plus sûre."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: trout-herring
+  category: fish
+  names:
+    - Truite
+    - Hareng
+    - Hareng mariné
+    - Rollmops
+    - Truite aux amandes
+    - Herring
+    - Trout
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "La truite et le hareng bien cuits sont de bons choix de poissons gras."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+    - state: cured
+      verdict: avoid
+      why: "Les rollmops, le hareng mariné et la truite fumée se mangent sans cuisson et peuvent transmettre la listéria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: swordfish
+  category: fish
+  names:
+    - Espadon
+    - Marlin
+    - Requin
+    - Siki
+    - Saumonette
+    - Lamproie
+    - Shark
+    - Swordfish
+  tips: [avoid]
+  local: true
+  answers:
+    - state: cooked
+      verdict: avoid
+      why: "L'espadon, le marlin, le requin, la saumonette et la lamproie accumulent des polluants comme le mercure, même bien cuits. Évitez-les."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: sea-bass-bream
+  category: fish
+  names:
+    - Bar
+    - Loup de mer
+    - Dorade
+    - Lotte
+    - Raie
+    - Anguille
+    - Flétan
+    - Sea bream
+    - Monkfish
+    - Eel
+    - Halibut
+    - Sea bass
+  local: true
+  answers:
+    - state: cooked
+      verdict: careful
+      why: "Ces gros poissons carnivores contiennent davantage de polluants. Ne les mangez que de temps en temps, et bien cuits à cœur."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: anchovies
+  category: fish
+  names:
+    - Anchois
+    - Anchois à l'huile
+    - Anchois marinés
+    - Boquerones
+    - Pissaladière
+    - Anchovies
+  local: true
+  answers:
+    - state: canned
+      verdict: ok
+      why: "Les anchois en boîte ou en bocal sont acceptables en petites quantités. Le plat doit être cuit, ou les filets rincés. Les anchois frais marinés au vinaigre ne sont pas sûrs."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-food-pregnant-women
+    - state: cured
+      verdict: avoid
+      why: "Les anchois frais marinés au vinaigre et mangés crus peuvent transmettre des parasites et la listéria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: fish-fingers
+  category: fish
+  names:
+    - Poisson pané
+    - Bâtonnets de poisson
+    - Nuggets de poisson
+    - Croquette de poisson
+    - Fish and chips
+    - Fish fingers
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Acceptable s'ils sont cuits jusqu'à être bien chauds à cœur. Ce sont des produits transformés : ne les prenez pas comme seul poisson."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-aliments-eviter
+  reviewed: 2026-11-13
+- id: surimi
+  category: fish
+  names:
+    - Bâtonnets de surimi
+    - Salade de surimi
+    - Bâtonnet de crabe
+    - Crab sticks
+    - Surimi
+  tips: [avoid]
+  local: true
+  answers:
+    - state: cured
+      verdict: avoid
+      why: "Le surimi est un produit de la mer prêt à consommer, réfrigéré, qui peut transmettre la listéria. Les conseils de santé français demandent de l'éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+  reviewed: 2026-11-13
+- id: tarama
+  category: fish
+  names:
+    - Tarama
+    - Tarama rose
+    - Tarama blanc
+    - Fish roe dip
+    - Taramasalata
+  tips: [avoid]
+  local: true
+  answers:
+    - state: cured
+      verdict: avoid
+      why: "Le tarama est fait à partir d'œufs de poisson salés et crus, vendu réfrigéré, et il peut transmettre la listéria. Évitez-le."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+  reviewed: 2026-11-13
+- id: fish-roe-caviar
+  category: fish
+  names:
+    - Œufs de poisson
+    - Œufs de saumon
+    - Œufs de lump
+    - Poutargue
+    - Oeufs de lump
+    - Fish roe
+    - Caviar
+  local: true
+  answers:
+    - state: cured
+      verdict: avoid
+      why: "Les œufs de poisson salés ou crus (caviar, œufs de lump, poutargue) se mangent sans cuisson et peuvent transmettre la listéria et des parasites. Les œufs de poisson cuits sont acceptables."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les œufs de poisson cuits à cœur et non fumés sont acceptables."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+  reviewed: 2026-11-13
+- id: oysters
+  category: seafood
+  names:
+    - Huîtres
+    - Huître creuse
+    - Fines de claire
+    - Plateau de fruits de mer
+    - Oyster
+    - Oysters
+  tips: [avoid]
+  local: true
+  answers:
+    - state: raw
+      verdict: avoid
+      why: "Les huîtres crues peuvent transmettre la listéria, le parasite de la toxoplasmose et d'autres microbes. Non ferme, même à Noël."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les huîtres cuites à cœur (gratinées, à la vapeur, dans un plat chaud) sont acceptables."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: mussels
+  category: seafood
+  names:
+    - Moules
+    - Moules marinières
+    - Moules frites
+    - Moules de bouchot
+    - Moules à la crème
+    - Mussels
+  local: true
+  answers:
+    - state: raw
+      verdict: avoid
+      why: "Les moules crues (comme tout coquillage cru) peuvent transmettre la listéria et le parasite de la toxoplasmose."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+    - state: cooked
+      verdict: ok
+      why: "Les moules cuites à la vapeur jusqu'à ce que les coquilles s'ouvrent bien et qu'elles soient très chaudes sont acceptables. Jetez celles qui restent fermées."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: prawns
+  category: seafood
+  names:
+    - Crevettes
+    - Gambas
+    - Crevettes décortiquées
+    - Crevettes cuites
+    - Scampi
+    - Bouquet
+    - Cocktail de crevettes
+    - Shrimp
+    - Prawns
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Les crevettes crues que vous faites cuire vous-même jusqu'à ce qu'elles soient roses et bien chaudes à cœur sont acceptables."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+    - state: reheated
+      verdict: careful
+      why: "Les crevettes cuites décortiquées achetées en magasin se mangent froides et peuvent transmettre la listéria. Mangez-les seulement réchauffées jusqu'à ce qu'elles fument, jamais directement sorties du paquet."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
+    - state: raw
+      verdict: avoid
+      why: "Les crevettes crues (carpaccio, tartare) peuvent transmettre des microbes. Faites-les cuire à cœur."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: crab-lobster
+  category: seafood
+  names:
+    - Crabe
+    - Tourteau
+    - Araignée de mer
+    - Homard
+    - Langouste
+    - Langoustine
+    - Écrevisse
+    - Chair de crabe
+    - Lobster
+    - Crayfish
+    - Crab
+  local: true
+  answers:
+    - state: cooked
+      verdict: careful
+      why: "Le crabe, le homard et les langoustines sont acceptables s'ils sont bien cuits à cœur et mangés chauds ou fraîchement cuits. La chair de crabe ou décortiquée vendue froide présente un risque de listéria : réchauffez-la jusqu'à ce qu'elle fume."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-aliments-eviter
+    - state: raw
+      verdict: avoid
+      why: "Les coquillages et crustacés crus peuvent transmettre la listéria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: scallops-squid
+  category: seafood
+  names:
+    - Coquilles Saint-Jacques
+    - Noix de Saint-Jacques
+    - Saint-Jacques
+    - Calamars
+    - Seiche
+    - Poulpe
+    - Calamari
+    - Palourdes
+    - Coques
+    - Bulots
+    - Bigorneaux
+    - Escargots
+    - Squid
+    - Clams
+    - Scallops
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Les noix de Saint-Jacques, calamars, palourdes et bulots bien cuits et mangés chauds sont acceptables."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+    - state: raw
+      verdict: avoid
+      why: "Les noix de Saint-Jacques crues ou les coquillages crus (carpaccio, tartare) peuvent transmettre la listéria et le parasite de la toxoplasmose."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: egg-boiled
+  category: egg
+  names:
+    - Œuf dur
+    - Œufs durs
+    - Œuf cuit dur
+    - Egg
+    - Boiled egg
+    - Hard-boiled egg
+  tips: [best]
+  local: true
+  answers:
+    - state: boiled
+      verdict: ok
+      why: "Un œuf dur, dont le blanc et le jaune sont fermes, est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: egg-soft-boiled
+  category: egg
+  names:
+    - Œuf à la coque
+    - Œuf mollet
+    - Œuf poché
+    - Mouillettes
+    - Œuf cocotte
+    - Poached egg
+    - Soft-boiled egg
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: "Un jaune coulant peut transmettre la salmonelle. Faites cuire l'œuf jusqu'à ce que le blanc et le jaune soient fermes."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+    - state: boiled
+      verdict: ok
+      why: "Acceptable une fois que le blanc et le jaune sont fermes."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+  reviewed: 2026-11-13
+- id: egg-fried-scrambled
+  category: egg
+  names:
+    - Œuf au plat
+    - Œufs brouillés
+    - Omelette
+    - Œuf sur le plat
+    - Omelette baveuse
+    - Œuf Benedict
+    - Œufs au bacon
+    - Scrambled eggs
+    - Fried egg
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: "Les œufs au plat au jaune coulant, l'omelette baveuse ou les œufs brouillés mous peuvent transmettre la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
+    - state: cooked
+      verdict: ok
+      why: "Les œufs cuits jusqu'à ce que le blanc et le jaune soient fermes sont sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+  reviewed: 2026-11-13
+- id: egg-mimosa
+  category: egg
+  names:
+    - Œufs mimosa
+    - Œuf mayonnaise
+    - Œufs mayo
+    - Deviled eggs
+    - Œuf mimosa
+  local: true
+  answers:
+    - state: cooked
+      verdict: careful
+      why: "Les œufs durs sont acceptables. Préparez-les avec de la mayonnaise du commerce : la mayonnaise maison ou de restaurant peut contenir de l'œuf cru, donc demandez avant."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: mayonnaise
+  category: egg
+  names:
+    - Mayo
+    - Aïoli
+    - Sauce rouille
+    - Sauce tartare
+    - Rémoulade
+    - Sauce gribiche
+    - Sauce Caesar
+    - Mayonnaise maison
+    - Mayonnaise du commerce
+    - Mayonnaise
+  tips: [avoid]
+  local: true
+  answers:
+    - state: raw
+      verdict: avoid
+      why: "La mayonnaise maison, l'aïoli et la rouille contiennent du jaune d'œuf cru et peuvent transmettre la salmonelle."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
+    - state: pasteurised
+      verdict: ok
+      why: "La mayonnaise du commerce, en pot ou en tube, est faite avec de l'œuf pasteurisé et est considérée comme sûre."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: sauce-hollandaise
+  category: egg
+  names:
+    - Béarnaise
+    - Sauce hollandaise
+    - Sabayon
+    - Sauce mousseline
+    - Zabaglione
+    - Sauce béarnaise
+    - Hollandaise
+  local: true
+  answers:
+    - state: undercooked
+      verdict: avoid
+      why: "Ces sauces sont à base de jaunes d'œufs tièdes, pas cuits jusqu'à être fermes, et peuvent transmettre la salmonelle. Une version de restaurant préparée fraîchement n'est pas sûre."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
+        - nhs-healthy-diet
+    - state: pasteurised
+      verdict: careful
+      why: "Une sauce faite avec de l'œuf pasteurisé et chauffée jusqu'à épaissir peut convenir. Demandez en cuisine, et abstenez-vous en cas de doute."
+      sources:
+        - cdc-food-pregnant-women
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: mousse-chocolat-maison
+  category: egg
+  names:
+    - Mousse au chocolat
+    - Mousse au chocolat maison
+    - Mousse au chocolat du commerce
+    - Pot de crème
+    - Chocolate pot
+    - Chocolate mousse
+  local: true
+  answers:
+    - state: raw
+      verdict: avoid
+      why: "La mousse maison est faite avec de l'œuf cru et peut transmettre la salmonelle. Évitez aussi les versions contenant de l'alcool."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+    - state: pasteurised
+      verdict: ok
+      why: "La mousse du commerce, ou la mousse maison faite avec de l'œuf pasteurisé, est considérée comme sûre. Vérifiez sur l'étiquette qu'il n'y a pas d'alcool."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: tiramisu
+  category: egg
+  names:
+    - Tiramisu maison
+    - Dessert au mascarpone
+    - Dessert italien
+    - Zuppa inglese
+    - Mascarpone dessert
+    - Tiramisu
+  local: true
+  answers:
+    - state: raw
+      verdict: avoid
+      why: "Le tiramisu maison contient de l'œuf cru, peut transmettre la salmonelle et contient souvent de l'alcool ou du café fort."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+    - state: pasteurised
+      verdict: careful
+      why: "Le tiramisu du commerce est considéré comme sûr pour l'œuf, mais vérifiez qu'il ne contient pas d'alcool et consommez-le avant la date limite."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: custard-cream
+  category: egg
+  names:
+    - Crème anglaise
+    - Crème pâtissière
+    - Crème brûlée
+    - Flan pâtissier
+    - Île flottante
+    - Crème caramel
+    - Pastry cream
+    - Custard
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "La crème anglaise, la crème pâtissière et les flans cuits sont cuits jusqu'à épaissir ou à prendre, ce qui les rend sûrs. Gardez-les au frais et mangez-les le jour même."
+      sources:
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
+    - state: raw
+      verdict: avoid
+      why: "Une crème non cuite à base d'œuf cru, ou une meringue laissée crue, peut transmettre la salmonelle."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+  reviewed: 2026-11-13
+- id: egg-based-baking
+  category: egg
+  names:
+    - Gâteau
+    - Brioche
+    - Crêpes
+    - Gaufres
+    - Pâte à crêpes
+    - Pâte à gâteau crue
+    - Cookie dough
+    - Raw cake batter
+    - Cake
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Les pâtisseries aux œufs sont sans danger une fois bien cuites à cœur."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
+    - state: raw
+      verdict: avoid
+      why: "La pâte à gâteau crue ou la pâte à cookies avec de l'œuf cru peut transmettre la salmonelle. Ne léchez pas la cuillère."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: milk
+  category: dairy
+  names:
+    - Lait
+    - Lait entier
+    - Lait demi-écrémé
+    - Lait UHT
+    - Lait pasteurisé
+    - Lait de ferme
+    - Raw milk
+    - Lait cru
+    - Milk
+  tips: [best]
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: "Le lait pasteurisé ou UHT est sans danger. C'est le lait que l'on trouve dans presque tous les supermarchés français."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+    - state: unpasteurised
+      verdict: avoid
+      why: "Le lait cru (lait cru), y compris celui acheté à la ferme ou dans un distributeur, peut transmettre la listéria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: yoghurt
+  category: dairy
+  names:
+    - Yaourt
+    - Yaourt nature
+    - Yaourt grec
+    - Skyr
+    - Fromage blanc fermier
+    - Kéfir
+    - Yogurt
+    - Yoghurt
+  tips: [best]
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: "Les yaourts et le skyr du supermarché sont faits avec du lait pasteurisé et sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+    - state: unpasteurised
+      verdict: avoid
+      why: "Un yaourt au lait cru, par exemple acheté à la ferme, peut transmettre la listéria."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+  reviewed: 2026-11-13
+- id: fromage-blanc
+  category: dairy
+  names:
+    - Faisselle
+    - Fromage frais
+    - Petit-suisse
+    - Brousse
+    - Brocciu
+    - Ricotta
+    - Mascarpone
+    - Cottage cheese
+    - Fromage blanc
+  tips: [best]
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: "Le fromage blanc, la faisselle, le cottage cheese, la ricotta et le mascarpone du supermarché sont faits avec du lait pasteurisé et sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+    - state: unpasteurised
+      verdict: avoid
+      why: "Un fromage frais au lait cru (faisselle de la ferme ou du marché) peut transmettre la listéria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+  reviewed: 2026-11-13
+- id: cream-butter
+  category: dairy
+  names:
+    - Crème fraîche
+    - Crème épaisse
+    - Crème liquide
+    - Beurre
+    - Beurre cru
+    - Crème crue
+    - Chantilly
+    - Beurre doux
+    - Beurre demi-sel
+    - Butter
+    - Cream
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: "La crème et le beurre pasteurisés, les versions habituelles du commerce, sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+    - state: unpasteurised
+      verdict: avoid
+      why: "La crème ou le beurre au lait cru (crème crue, beurre cru, courants en Normandie) peuvent transmettre la listéria."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+        - ameli-aliments-eviter
+  reviewed: 2026-11-13
+- id: ice-cream
+  category: dairy
+  names:
+    - Glace
+    - Crème glacée
+    - Sorbet
+    - Glace artisanale
+    - Glace italienne
+    - Gelato
+    - Soft ice
+    - Ice cream
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: "La glace du commerce et les marques connues sont faites avec du lait pasteurisé et sont sans danger. Les machines à soft sont à entretenir avec soin : choisissez des endroits sérieux."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+    - state: unpasteurised
+      verdict: avoid
+      why: "Une glace faite avec du lait cru ou des œufs crus peut transmettre la listéria ou la salmonelle."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+        - cdc-listeria-dairy
+  reviewed: 2026-11-13
+- id: camembert-brie
+  category: cheese
+  names:
+    - Brie
+    - Brie de Meaux
+    - Coulommiers
+    - Chaource
+    - Neufchâtel
+    - Fromage à croûte fleurie
+    - Brillat-Savarin
+    - Saint-Marcellin
+    - Carré de l'Est
+    - Camembert
+  tips: [avoid]
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: avoid
+      why: "En France, les fromages à croûte blanche et fleurie sont évités, même pasteurisés, car la listéria peut se développer dans la croûte et à l'intérieur, qui est coulant."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: unpasteurised
+      verdict: avoid
+      why: "Le camembert ou le brie au lait cru (comme la plupart des AOC) présente le risque de listéria le plus élevé."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+        - cdc-food-pregnant-women
+    - state: cooked
+      verdict: ok
+      why: "Le camembert ou le brie cuit dans une recette, chauffé jusqu'à ce qu'il bouillonne et fume à cœur, est sans danger. Retirez d'abord la croûte."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: washed-rind-cheese
+  category: cheese
+  names:
+    - Pont-l'Évêque
+    - Livarot
+    - Époisses
+    - Maroilles
+    - Langres
+    - Fromage à croûte lavée
+    - Vacherin
+    - Mont d'Or
+    - Boulette d'Avesnes
+    - Munster
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: avoid
+      why: "Les fromages à croûte lavée peuvent transmettre la listéria. Les recommandations françaises demandent de les éviter."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+    - state: unpasteurised
+      verdict: avoid
+      why: "Le fromage à croûte lavée au lait cru est la version la plus risquée. Évitez-le."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+    - state: cooked
+      verdict: ok
+      why: "Chauffé jusqu'à ce qu'il fume à cœur dans une recette, croûte retirée, il est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: roquefort-blue
+  category: cheese
+  names:
+    - Bleu d'Auvergne
+    - Fourme d'Ambert
+    - Bleu des Causses
+    - Gorgonzola
+    - Stilton
+    - Bleu
+    - Fromage persillé
+    - Danish blue
+    - Sauce roquefort
+    - Roquefort
+  tips: [avoid]
+  local: true
+  answers:
+    - state: unpasteurised
+      verdict: avoid
+      why: "Le roquefort est fabriqué avec du lait de brebis cru. Les fromages au lait cru et les fromages bleus peuvent transmettre la listéria. Évitez-le froid."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+    - state: pasteurised
+      verdict: careful
+      why: "Un fromage bleu à pâte molle n'est sans danger que s'il est cuit jusqu'à fumer, par exemple fondu dans une sauce chaude."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+    - state: cooked
+      verdict: ok
+      why: "Un fromage bleu cuit jusqu'à fumer, par exemple dans une sauce ou sur un plat chaud, est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: goat-cheese-fresh
+  category: cheese
+  names:
+    - Chèvre frais
+    - Chèvre en bûche
+    - Chèvre frais sans croûte
+    - Chavroux
+    - Petit chèvre
+    - Fresh goat cheese
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: "Le fromage de chèvre frais sans croûte, fabriqué avec du lait pasteurisé (c'est le cas de la plupart de ceux du supermarché), est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+    - state: unpasteurised
+      verdict: avoid
+      why: "Le fromage au lait de chèvre cru peut transmettre la listéria et le parasite de la toxoplasmose."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - cdc-listeria-dairy
+  reviewed: 2026-11-13
+- id: goat-cheese-rind
+  category: cheese
+  names:
+    - Sainte-Maure
+    - Valençay
+    - Selles-sur-Cher
+    - Chèvre affiné
+    - Chèvre chaud
+    - Salade de chèvre chaud
+    - Rocamadour
+    - Picodon
+    - Bûche de chèvre cendrée
+    - Goat cheese with rind
+    - Crottin de Chavignol
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: avoid
+      why: "Les fromages de chèvre à croûte blanche ou cendrée font partie du groupe des pâtes molles à éviter lorsqu'ils sont mangés froids."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: unpasteurised
+      verdict: avoid
+      why: "Le fromage de chèvre au lait cru avec croûte présente le risque le plus élevé, de listéria et de toxoplasmose."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+    - state: cooked
+      verdict: ok
+      why: "Le chèvre chaud (grillé sur du pain jusqu'à bouillonner et être bien chaud à cœur) est acceptable. Retirez d'abord la croûte, et vérifiez que les feuilles de salade ont été lavées."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: hard-cheese
+  category: cheese
+  names:
+    - Emmental
+    - Gruyère
+    - Beaufort
+    - Cheddar
+    - Gouda
+    - Edam
+    - Mimolette
+    - Abondance
+    - Appenzeller
+    - Cantal vieux
+    - Fromage à pâte dure
+    - Hard cheese
+    - Comté
+  tips: [best]
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: "Les fromages à pâte pressée cuite et dure sont sans danger. Retirez la croûte, puis tranchez ou râpez le fromage vous-même."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: unpasteurised
+      verdict: ok
+      why: "Le comté, le beaufort et les autres fromages à pâte dure cuite sont chauffés et affinés assez longtemps pour que les versions au lait cru soient acceptées en France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: parmesan
+  category: cheese
+  names:
+    - Parmesan râpé
+    - Parmigiano Reggiano
+    - Grana Padano
+    - Pecorino
+    - Copeaux de parmesan
+    - Parmesan
+  tips: [best]
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: "Le parmesan est un fromage dur, affiné longtemps, et il est sans danger. Les sachets déjà râpés ne sont pas conseillés : râpez-le vous-même."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+  reviewed: 2026-11-13
+- id: grated-cheese-bag
+  category: cheese
+  names:
+    - Fromage râpé
+    - Gruyère râpé
+    - Emmental râpé
+    - Fromage râpé en sachet
+    - Mélange pizza
+    - Râpé
+    - Grated cheese
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Le fromage râpé en sachet n'est pas conseillé en France : humide et déjà râpé, il peut favoriser le développement de microbes. Râpez-le vous-même, ou faites-le cuire très chaud."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: mozzarella-burrata
+  category: cheese
+  names:
+    - Burrata
+    - Mozzarella di bufala
+    - Stracciatella
+    - Bocconcini
+    - Caprese
+    - Tomates mozzarella
+    - Mozza
+    - Mozzarella
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: "La mozzarella et la burrata faites avec du lait pasteurisé (vérifiez l'étiquette) sont sans danger. Consommez-les avant la date limite."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+        - cdc-listeria-prevention
+    - state: unpasteurised
+      verdict: avoid
+      why: "La mozzarella ou la burrata au lait cru peut transmettre la listéria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-13
+- id: feta
+  category: cheese
+  names:
+    - Salade grecque
+    - Halloumi
+    - Paneer
+    - Tzatziki
+    - Brebis
+    - Fromage de brebis
+    - Feta au four
+    - Feta
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: "La feta et le halloumi faits avec du lait pasteurisé sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+        - cdc-listeria-prevention
+    - state: unpasteurised
+      verdict: avoid
+      why: "La feta ou le fromage de brebis au lait cru peuvent transmettre la listéria. Vérifiez l'étiquette."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-13
+- id: raclette-reblochon
+  category: cheese
+  names:
+    - Fromage à raclette
+    - Raclette
+    - Morbier
+    - Saint-Nectaire
+    - Tomme
+    - Cantal
+    - Saint-Paulin
+    - Tartiflette
+    - Tomme de Savoie
+    - Fromage pâte pressée non cuite
+    - Reblochon
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: avoid
+      why: "Les fromages à pâte pressée non cuite et molle (reblochon, morbier, tomme, saint-nectaire) sont à éviter froids en France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: unpasteurised
+      verdict: avoid
+      why: "Le reblochon et les fromages similaires au lait cru présentent un risque élevé de listéria s'ils ne sont pas chauffés."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+    - state: cooked
+      verdict: ok
+      why: "Fondu jusqu'à bouillonner et être très chaud (raclette, tartiflette, gratin), croûte retirée, il est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: cream-cheese
+  category: cheese
+  names:
+    - Boursin
+    - Philadelphia
+    - Saint Môret
+    - Kiri
+    - Tartare ail et fines herbes
+    - Vache qui rit
+    - Fromage fondu
+    - Fromage à tartiner
+    - Madame Loïk
+    - Processed cheese
+    - Cream cheese
+  tips: [best]
+  local: true
+  answers:
+    - state: pasteurised
+      verdict: ok
+      why: "Le fromage frais à tartiner et les fromages fondus sont faits avec du lait pasteurisé et sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: fondue
+  category: cheese
+  names:
+    - Fondue savoyarde
+    - Fondue au fromage
+    - Fondue bourguignonne
+    - Fondue chinoise
+    - Cheese fondue
+    - Fondue
+  local: true
+  answers:
+    - state: cooked
+      verdict: careful
+      why: "La fondue au fromage est acceptable si le fromage reste bien chaud, jusqu'à fumer. Le vin et le kirsch utilisés posent problème : demandez-la sans alcool. La fondue de viande doit être bien cuite à cœur."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+  reviewed: 2026-11-13
+- id: croque-monsieur
+  category: ready_meal
+  names:
+    - Croque-madame
+    - Croque
+    - Toast jambon fromage
+    - Croque jambon fromage
+    - Croque-monsieur
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Le croque-monsieur est acceptable s'il est chaud et fumant jusqu'au centre. Pour un croque-madame, demandez l'œuf bien cuit."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
+    - state: undercooked
+      verdict: avoid
+      why: "Un œuf au plat au jaune coulant posé dessus présente un risque de salmonelle. Demandez-le bien cuit."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+  reviewed: 2026-11-13
+- id: quiche
+  category: ready_meal
+  names:
+    - Quiche lorraine
+    - Quiche aux poireaux
+    - Tarte salée
+    - Tarte aux légumes
+    - Flammekueche
+    - Tarte flambée
+    - Savoury tart
+    - Quiche
+  local: true
+  answers:
+    - state: reheated
+      verdict: ok
+      why: "Une quiche cuite et mangée chaude, ou réchauffée jusqu'à fumer à cœur, est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+    - state: cooked
+      verdict: careful
+      why: "Une quiche du commerce mangée froide, sortie du réfrigérateur, peut transmettre la listéria. Réchauffez-la jusqu'à ce qu'elle fume, et évitez celle à la garniture crémeuse et coulante."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+  reviewed: 2026-11-13
+- id: pizza
+  category: ready_meal
+  names:
+    - Pizza margherita
+    - Pizza 4 fromages
+    - Pizza jambon
+    - Pizza reine
+    - Pizza surgelée
+    - Calzone
+    - Pizza
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Une pizza cuite et bien chaude est acceptable, y compris avec du jambon, du chorizo ou du fromage à pâte molle cuit à cœur."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+    - state: raw
+      verdict: careful
+      why: "Les garnitures ajoutées après cuisson, comme le jambon cru, la burrata, la roquette crue ou un œuf, ne sont pas chauffées. Évitez-les, ou demandez qu'on les retire."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+  reviewed: 2026-11-13
+- id: sandwich
+  category: ready_meal
+  names:
+    - Jambon-beurre
+    - Sandwich SNCF
+    - Sandwich triangle
+    - Sandwich supermarché
+    - Baguette jambon beurre
+    - Wrap
+    - Panini
+    - Sandwich poulet crudités
+    - Sandwich
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sandwichs froids tout prêts présentent un risque de listéria à cause du jambon, de la mayonnaise, du fromage ou du saumon fumé, et la salade crue ajoute un risque lié à la terre. Choisissez un panini chaud, ou du poulet cuit, du fromage à pâte dure et de l'œuf cuit."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: ready-meal-chilled
+  category: ready_meal
+  names:
+    - Plat cuisiné
+    - Plat préparé
+    - Lasagnes
+    - Hachis parmentier
+    - Gratin dauphinois
+    - Plat du traiteur
+    - Soupe fraîche
+    - Plat surgelé
+    - Raviolis
+    - Frozen meal
+    - Ready meal
+  local: true
+  answers:
+    - state: reheated
+      verdict: ok
+      why: "Chauffez jusqu'à ce que le plat fume à cœur, et pas seulement qu'il soit tiède. Mangez-le avant la date limite et ne gardez pas les restes plus de 3 jours."
+      sources:
+        - nhs-healthy-diet
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+    - state: cooked
+      verdict: careful
+      why: "Mangés froids, ou seulement tièdes sortis du réfrigérateur, les plats préparés peuvent transmettre la listéria. Choisissez-les réchauffés, et évitez ceux qui contiennent du jambon cru, du poisson fumé ou un fromage à croûte fleurie."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: deli-salads
+  category: ready_meal
+  names:
+    - Salade piémontaise
+    - Taboulé
+    - Carottes râpées
+    - Céleri rémoulade
+    - Salade de pommes de terre
+    - Salade de riz
+    - Coleslaw
+    - Salade composée traiteur
+    - Salade traiteur
+    - Salad bar
+    - Potato salad
+    - Piémontaise
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Les salades de traiteur et des rayons réfrigérés présentent un risque de listéria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Choisissez une salade que vous préparez et lavez vous-même."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
+  reviewed: 2026-11-13
+- id: takeaway-meal
+  category: ready_meal
+  names:
+    - Plat à emporter
+    - Traiteur
+    - Restaurant
+    - Fast food
+    - Plat chinois
+    - Plat indien
+    - Nems
+    - Samossa
+    - Bo bun
+    - Couscous
+    - Takeaway
+  local: true
+  answers:
+    - state: cooked
+      verdict: careful
+      why: "Acceptable si le plat est bien cuit à cœur et servi très chaud. Évitez les légumes crus, l'œuf coulant, la viande saignante, le poisson cru et le fromage au lait cru, et demandez une viande bien cuite."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+
+# --- Partie 2 du checker : fruits, légumes, céréales, légumineuses, fruits secs, sucreries, matières grasses, herbes et épices, divers (sources lues le 2026-11-13) ---
+- id: apple
+  category: fruit
+  names:
+    - "Pomme"
+    - "Pommes"
+    - "Apple"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut la manger crue une fois bien lavée sous l'eau courante (épluchez-la si possible). La terre sur les fruits peut transporter le parasite de la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: banana
+  category: fruit
+  names:
+    - "Banane"
+    - "Banana"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut la manger crue une fois bien lavée sous l'eau courante (épluchez-la si possible). La terre sur les fruits peut transporter le parasite de la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: berries
+  category: fruit
+  names:
+    - "Fraises"
+    - "Framboises"
+    - "Myrtilles"
+    - "Fruits rouges"
+    - "Mûres"
+    - "Strawberries"
+    - "Raspberries"
+    - "Blueberries"
+    - "Berries"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut les manger crus une fois bien rincés à l'eau claire. Les recommandations françaises citent expressément les fraises comme fruits à bien rincer."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: grapes
+  category: fruit
+  names:
+    - "Raisin"
+    - "Raisins"
+    - "Grapes"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut le manger cru une fois bien lavé sous l'eau courante (épluchez-le si possible). La terre sur les fruits peut transporter le parasite de la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: citrus
+  category: fruit
+  names:
+    - "Clémentine"
+    - "Mandarine"
+    - "Citron"
+    - "Pamplemousse"
+    - "Agrume"
+    - "Citrus"
+    - "Lemon"
+    - "Grapefruit"
+    - "Orange"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Sans danger. Lavez la peau avant de l'éplucher ou de la râper, puis lavez-vous les mains."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: melon
+  category: fruit
+  names:
+    - "Melon charentais"
+    - "Cantaloup"
+    - "Cantaloupe"
+    - "Melon"
+  tips: [best]
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Un melon entier, lavé, puis coupé et mangé frais, est acceptable. Ne mangez pas de melon coupé resté hors du réfrigérateur. Ameli cite le melon comme source de folates (vitamine B9)."
+      sources:
+        - ameli-alimentation-grossesse
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: watermelon
+  category: fruit
+  names:
+    - "Pastèque"
+    - "Watermelon"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Lavez la peau avant de la couper, et mangez les morceaux frais ou gardez-les au réfrigérateur. La pastèque coupée laissée à température ambiante présente un risque de listéria."
+      sources:
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: mango
+  category: fruit
+  names:
+    - "Mangue"
+    - "Mango"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut la manger crue une fois bien lavée sous l'eau courante (épluchez-la si possible). La terre sur les fruits peut transporter le parasite de la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: pineapple
+  category: fruit
+  names:
+    - "Ananas"
+    - "Pineapple"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut le manger cru une fois bien lavé sous l'eau courante (épluchez-le si possible). La terre sur les fruits peut transporter le parasite de la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: pear
+  category: fruit
+  names:
+    - "Poire"
+    - "Pear"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut la manger crue une fois bien lavée sous l'eau courante (épluchez-la si possible). La terre sur les fruits peut transporter le parasite de la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: stone-fruit
+  category: fruit
+  names:
+    - "Pêche"
+    - "Nectarine"
+    - "Cerise"
+    - "Prune"
+    - "Abricot"
+    - "Mirabelle"
+    - "Cherry"
+    - "Plum"
+    - "Apricot"
+    - "Peach"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut les manger crus une fois bien lavés sous l'eau courante (épluchez-les si possible). La terre sur les fruits peut transporter le parasite de la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: kiwi
+  category: fruit
+  names:
+    - "Kiwi"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut le manger cru une fois bien lavé sous l'eau courante (épluchez-le si possible). La terre sur les fruits peut transporter le parasite de la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: avocado
+  category: fruit
+  names:
+    - "Avocat"
+    - "Guacamole"
+    - "Avocado"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Sans danger. Lavez la peau avant de couper, pour que la terre n'atteigne pas la chair. Le guacamole maison est acceptable si les autres ingrédients ont été lavés."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: dates
+  category: fruit
+  names:
+    - "Dattes"
+    - "Medjool"
+    - "Dates"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Les fruits secs comptent dans vos fruits et légumes et sont acceptables. Ils sont sucrés : gardez-les en petite quantité."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: dried-fruit
+  category: fruit
+  names:
+    - "Fruits secs"
+    - "Raisins secs"
+    - "Abricots secs"
+    - "Pruneaux"
+    - "Figues sèches"
+    - "Cranberries séchées"
+    - "Dried fruit"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Les fruits secs comptent comme une portion de fruits et sont sans danger. Ils sont sucrés : gardez-les en petite quantité."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: pre-cut-fruit
+  category: fruit
+  names:
+    - "Fruits coupés"
+    - "Salade de fruits"
+    - "Melon en barquette"
+    - "Fruit pot"
+    - "Fruit salad"
+    - "Pre-cut fruit"
+  local: true
+  answers:
+    - state: raw
+      verdict: careful
+      why: "Gardez les fruits coupés, surtout le melon, au réfrigérateur et mangez-les avant la date limite. N'achetez pas de fruits coupés qui n'ont pas été gardés au frais. Les fruits que vous coupez vous-même après les avoir lavés sont préférables."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: tomato
+  category: vegetable
+  names:
+    - "Tomate"
+    - "Tomates cerises"
+    - "Tomate grappe"
+    - "Tomato"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut la manger crue si vous la lavez très bien chez vous. En dehors de chez vous, si vous ne savez pas comment elle a été lavée, préférez-la cuite."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: cucumber
+  category: vegetable
+  names:
+    - "Concombre"
+    - "Cucumber"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut le manger cru si vous le lavez très bien chez vous. En dehors de chez vous, si vous ne savez pas comment il a été lavé, préférez-le cuit."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: lettuce
+  category: vegetable
+  names:
+    - "Salade verte"
+    - "Laitue"
+    - "Batavia"
+    - "Romaine"
+    - "Mesclun"
+    - "Frisée"
+    - "Salad"
+    - "Lettuce"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut la manger crue si vous lavez chaque feuille sous l'eau courante chez vous. Les salades à feuilles non lavées sont le choix le plus risqué."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: rocket
+  category: vegetable
+  names:
+    - "Roquette"
+    - "Arugula"
+    - "Rocket"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut la manger crue si vous lavez bien les feuilles sous l'eau courante chez vous. En dehors de chez vous, si vous ne savez pas comment elle a été lavée, préférez les légumes cuits."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: mache
+  category: vegetable
+  names:
+    - "Doucette"
+    - "Lamb's lettuce"
+    - "Corn salad"
+    - "Mâche"
+  tips: [best]
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut la manger crue si vous la lavez très bien, car elle pousse près du sol. Ameli cite la mâche comme source de folates (vitamine B9)."
+      sources:
+        - ameli-toxo-prevention
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: spinach
+  category: vegetable
+  names:
+    - "Épinards"
+    - "Épinards frais"
+    - "Épinards en branches"
+    - "Spinach"
+  tips: [best]
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Lavez très bien les feuilles crues. Ameli cite les épinards comme source de folates (vitamine B9)."
+      sources:
+        - ameli-toxo-prevention
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les épinards cuits sont la façon la plus sûre de les manger. Ameli cite les épinards comme source de folates (vitamine B9)."
+      sources:
+        - ameli-toxo-prevention
+        - ameli-alimentation-grossesse
+  reviewed: 2026-11-13
+- id: watercress
+  category: vegetable
+  names:
+    - "Cresson"
+    - "Cresson de fontaine"
+    - "Watercress"
+  tips: [best]
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Lavez-le très bien, car il pousse dans des endroits humides. Ameli cite le cresson comme source de folates (vitamine B9)."
+      sources:
+        - ameli-toxo-prevention
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Le cresson cuit, par exemple dans une soupe, est la façon la plus sûre de le manger. Ameli le cite comme source de folates (vitamine B9)."
+      sources:
+        - ameli-toxo-prevention
+        - ameli-alimentation-grossesse
+  reviewed: 2026-11-13
+- id: kale
+  category: vegetable
+  names:
+    - "Chou kale"
+    - "Chou frisé"
+    - "Kale"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut le manger cru si vous le lavez très bien chez vous. En dehors de chez vous, si vous ne savez pas comment il a été lavé, préférez-le cuit."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: carrot
+  category: vegetable
+  names:
+    - "Carotte"
+    - "Carottes râpées maison"
+    - "Carrot"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut la manger crue si vous la lavez très bien chez vous. En dehors de chez vous, si vous ne savez pas comment elle a été lavée, préférez-la cuite."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: beetroot
+  category: vegetable
+  names:
+    - "Betterave"
+    - "Betterave cuite"
+    - "Beetroot"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut la manger crue si vous la lavez très bien chez vous. En dehors de chez vous, si vous ne savez pas comment elle a été lavée, préférez-la cuite."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "La betterave cuite, y compris celle vendue déjà cuite sous vide, est sans danger. Gardez les barquettes au frais et consommez-les avant la date limite."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: courgette
+  category: vegetable
+  names:
+    - "Zucchini"
+    - "Courgette"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut la manger crue si vous la lavez très bien chez vous. En dehors de chez vous, si vous ne savez pas comment elle a été lavée, préférez-la cuite."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: aubergine
+  category: vegetable
+  names:
+    - "Eggplant"
+    - "Aubergine"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "L'aubergine se mange normalement cuite, ce qui est le plus sûr."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: peppers
+  category: vegetable
+  names:
+    - "Poivron"
+    - "Poivrons"
+    - "Bell pepper"
+    - "Peppers"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut le manger cru si vous le lavez très bien chez vous. En dehors de chez vous, si vous ne savez pas comment il a été lavé, préférez-le cuit."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: potato
+  category: vegetable
+  names:
+    - "Pomme de terre"
+    - "Frites"
+    - "Purée"
+    - "Chips"
+    - "Potato"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "La pomme de terre se mange normalement cuite, ce qui est le plus sûr."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les pommes de terre cuites, les frites et la purée sont acceptables. Lavez la peau si vous la mangez."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: sweet-potato
+  category: vegetable
+  names:
+    - "Patate douce"
+    - "Sweet potato"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Se mange normalement cuite, ce qui est le plus sûr."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: onion
+  category: vegetable
+  names:
+    - "Oignon"
+    - "Échalote"
+    - "Ciboulette"
+    - "Oignon nouveau"
+    - "Shallot"
+    - "Spring onion"
+    - "Onion"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut le manger cru si vous le lavez très bien chez vous. En dehors de chez vous, si vous ne savez pas comment il a été lavé, préférez-le cuit."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: garlic
+  category: vegetable
+  names:
+    - "Ail"
+    - "Garlic"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut le manger cru si vous le lavez très bien chez vous. En dehors de chez vous, si vous ne savez pas comment il a été lavé, préférez-le cuit."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: cabbage
+  category: vegetable
+  names:
+    - "Chou"
+    - "Chou blanc"
+    - "Chou rouge"
+    - "Chou-fleur"
+    - "Choucroute cuite"
+    - "Cauliflower"
+    - "Cabbage"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut le manger cru si vous le lavez très bien chez vous. En dehors de chez vous, si vous ne savez pas comment il a été lavé, préférez-le cuit."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: broccoli
+  category: vegetable
+  names:
+    - "Brocoli"
+    - "Broccoli"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut le manger cru si vous le lavez très bien chez vous. En dehors de chez vous, si vous ne savez pas comment il a été lavé, préférez-le cuit."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: fennel
+  category: vegetable
+  names:
+    - "Fenouil"
+    - "Fennel"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut le manger cru si vous le lavez très bien chez vous. En dehors de chez vous, si vous ne savez pas comment il a été lavé, préférez-le cuit."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: asparagus
+  category: vegetable
+  names:
+    - "Asperge"
+    - "Asperges"
+    - "Asparagus"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut la manger crue si elle est très bien lavée, mais l'asperge se cuit presque toujours, ce qui est le plus sûr."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: leek
+  category: vegetable
+  names:
+    - "Poireau"
+    - "Poireaux"
+    - "Leek"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut le manger cru si vous le lavez très bien chez vous. En dehors de chez vous, si vous ne savez pas comment il a été lavé, préférez-le cuit."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: green-beans
+  category: vegetable
+  names:
+    - "Haricots verts"
+    - "Green beans"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Lavez-les bien. Ils se mangent normalement cuits, ce qui est le plus sûr."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: peas
+  category: vegetable
+  names:
+    - "Petits pois"
+    - "Pois"
+    - "Mange-tout"
+    - "Peas"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut les manger crus si vous les lavez très bien chez vous. En dehors de chez vous, si vous ne savez pas comment ils ont été lavés, préférez-les cuits."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: sweetcorn
+  category: vegetable
+  names:
+    - "Maïs"
+    - "Maïs doux"
+    - "Épi de maïs"
+    - "Corn on the cob"
+    - "Sweetcorn"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut le manger cru si vous le lavez très bien chez vous. En dehors de chez vous, si vous ne savez pas comment il a été lavé, préférez-le cuit."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: radish
+  category: vegetable
+  names:
+    - "Radis"
+    - "Radish"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut le manger cru si vous le lavez très bien chez vous. En dehors de chez vous, si vous ne savez pas comment il a été lavé, préférez-le cuit."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: celery
+  category: vegetable
+  names:
+    - "Céleri"
+    - "Céleri branche"
+    - "Celery"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "On peut le manger cru si vous le lavez très bien chez vous. En dehors de chez vous, si vous ne savez pas comment il a été lavé, préférez-le cuit."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: pumpkin
+  category: vegetable
+  names:
+    - "Courge"
+    - "Potiron"
+    - "Butternut"
+    - "Citrouille"
+    - "Potimarron"
+    - "Pumpkin"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Se mange normalement cuite, ce qui est le plus sûr."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les légumes cuits sont le choix le plus sûr lorsque l'on n'est pas immunisée contre la toxoplasmose."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: salad-restaurant
+  category: vegetable
+  names:
+    - "Crudités au restaurant"
+    - "Salade au restaurant"
+    - "Salade verte restaurant"
+    - "Crudités"
+    - "Side salad"
+    - "Salad in a restaurant"
+  local: true
+  answers:
+    - state: raw
+      verdict: careful
+      why: "Au restaurant ou chez des amis, ameli conseille d'éviter les crudités et de choisir des légumes cuits, car vous ne savez pas comment ils ont été lavés."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: bagged-salad
+  category: vegetable
+  names:
+    - "Salade en sachet"
+    - "Salade prête à manger"
+    - "Salade lavée"
+    - "Mesclun en sachet"
+    - "Jeunes pousses"
+    - "Salade en barquette"
+    - "Baby spinach bag"
+    - "Bagged salad"
+  local: true
+  answers:
+    - state: raw
+      verdict: careful
+      why: "Gardez-la au réfrigérateur et consommez-la avant la date limite. Relavez-la chez vous même si le sachet indique qu'elle est lavée, ou faites-la cuire."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: alfalfa-sprouts
+  category: vegetable
+  names:
+    - "Luzerne germée"
+    - "Graines germées"
+    - "Pousses de radis"
+    - "Alfalfa"
+    - "Sprouted seeds"
+    - "Radish sprouts"
+    - "Alfalfa sprouts"
+  tips: [avoid]
+  answers:
+    - state: raw
+      verdict: avoid
+      why: "Les graines germées crues figurent sur la liste française des aliments à éviter pendant la grossesse, et le CDC dit la même chose. Les germes poussent dans des conditions chaudes et humides, où les microbes prolifèrent."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-food-pregnant-women
+        - cdc-listeria-prevention
+    - state: cooked
+      verdict: ok
+      why: "Les germes cuits jusqu'à être bien chauds à cœur sont plus sûrs."
+      sources:
+        - cdc-food-pregnant-women
+        - cdc-listeria-prevention
+  reviewed: 2026-11-13
+- id: bean-sprouts
+  category: vegetable
+  names:
+    - "Pousses de soja"
+    - "Soja germé"
+    - "Germes de soja"
+    - "Mung bean sprouts"
+    - "Bean sprouts"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: raw
+      verdict: avoid
+      why: "Les germes de soja crus figurent sur la liste française des aliments à éviter pendant la grossesse, et le CDC est du même avis. Ne les mangez pas crus dans les salades ou les nems."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-food-pregnant-women
+        - cdc-listeria-prevention
+    - state: cooked
+      verdict: careful
+      why: "Sautés au wok jusqu'à être bien chauds à cœur, ils sont plus sûrs. Les recommandations françaises conseillent aussi d'éviter par précaution les aliments à base de soja : demandez à votre sage-femme."
+      sources:
+        - cdc-food-pregnant-women
+        - ameli-aliments-eviter
+  reviewed: 2026-11-13
+- id: mushrooms
+  category: vegetable
+  names:
+    - "Champignons"
+    - "Champignons de Paris"
+    - "Cèpes"
+    - "Girolles"
+    - "Shiitaké"
+    - "Portobello"
+    - "Mushrooms"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Les champignons bien cuits à cœur sont acceptables."
+      sources:
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
+    - state: raw
+      verdict: careful
+      why: "Le CDC conseille aux personnes à risque élevé de listéria d'éviter les champignons crus et de les manger bien cuits. Si vous les mangez crus, lavez-les bien."
+      sources:
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: enoki-mushrooms
+  category: vegetable
+  names:
+    - "Champignons enoki"
+    - "Enokitake"
+    - "Enoki"
+  answers:
+    - state: raw
+      verdict: avoid
+      why: "Les champignons enoki sont associés à la listéria et doivent être bien cuits avant d'être mangés."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+    - state: cooked
+      verdict: ok
+      why: "Bien cuits à cœur, les enoki sont acceptables."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+  reviewed: 2026-11-13
+- id: gazpacho
+  category: vegetable
+  names:
+    - "Soupe froide"
+    - "Salmorejo"
+    - "Cold soup"
+    - "Gazpacho"
+  local: true
+  answers:
+    - state: raw
+      verdict: careful
+      why: "Les soupes froides sont faites avec des légumes crus. Elles ne conviennent que si les légumes ont été très bien lavés et si la soupe reste froide. Évitez-les en dehors de chez vous."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: vegetable-soup
+  category: vegetable
+  names:
+    - "Soupe de légumes"
+    - "Velouté"
+    - "Potage"
+    - "Soupe"
+    - "Vegetable soup"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Une soupe cuite à cœur et servie chaude est acceptable. Réchauffez les restes jusqu'à ce qu'ils fument."
+      sources:
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: rice
+  category: grain
+  names:
+    - "Riz"
+    - "Riz basmati"
+    - "Riz complet"
+    - "Brown rice"
+    - "Rice"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Acceptable. Les féculents, de préférence complets, font partie d'une alimentation saine pendant la grossesse."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: pasta
+  category: grain
+  names:
+    - "Pâtes"
+    - "Spaghetti"
+    - "Tagliatelles"
+    - "Macaronis"
+    - "Pâtes complètes"
+    - "Pasta"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Acceptable. Les féculents, de préférence complets, font partie d'une alimentation saine pendant la grossesse."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: bread
+  category: grain
+  names:
+    - "Pain"
+    - "Baguette"
+    - "Pain de campagne"
+    - "Pain de mie"
+    - "Tartine"
+    - "Bread"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Acceptable. Les féculents, de préférence complets, font partie d'une alimentation saine pendant la grossesse."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: wholegrain-bread
+  category: grain
+  names:
+    - "Pain complet"
+    - "Pain aux céréales"
+    - "Pain de seigle"
+    - "Pain intégral"
+    - "Wholegrain bread"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Un très bon choix : les féculents complets et riches en fibres sont recommandés."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: couscous-semolina
+  category: grain
+  names:
+    - "Semoule"
+    - "Semoule de couscous"
+    - "Couscous semoule"
+    - "Couscous grain"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Acceptable. Les féculents, de préférence complets, font partie d'une alimentation saine pendant la grossesse."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: quinoa
+  category: grain
+  names:
+    - "Quinoa"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Acceptable. Les féculents, de préférence complets, font partie d'une alimentation saine pendant la grossesse."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: oats
+  category: grain
+  names:
+    - "Flocons d'avoine"
+    - "Porridge"
+    - "Avoine"
+    - "Muesli cuit"
+    - "Oats"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Acceptable. Les féculents, de préférence complets, font partie d'une alimentation saine pendant la grossesse."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: bulgur
+  category: grain
+  names:
+    - "Boulgour"
+    - "Blé concassé"
+    - "Bulgur"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Acceptable. Les féculents, de préférence complets, font partie d'une alimentation saine pendant la grossesse."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: breakfast-cereal
+  category: grain
+  names:
+    - "Céréales"
+    - "Corn flakes"
+    - "Muesli"
+    - "Granola"
+    - "Breakfast cereal"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Acceptable. Les céréales complètes sont les meilleures, et surveillez le sucre."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: tabbouleh
+  category: grain
+  names:
+    - "Taboulé maison"
+    - "Taboulé libanais"
+    - "Tabbouleh home-made"
+  local: true
+  answers:
+    - state: raw
+      verdict: careful
+      why: "Le taboulé maison est surtout composé d'herbes et de légumes crus : lavez tout très bien et mangez-le frais. En dehors de chez vous ou au rayon traiteur, évitez-le."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: lentils
+  category: legume
+  names:
+    - "Lentilles"
+    - "Lentilles vertes"
+    - "Lentilles corail"
+    - "Dal"
+    - "Dhal"
+    - "Lentils"
+  tips: [best]
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Acceptable. Ameli cite les légumineuses (légumes secs) comme source de fer."
+      sources:
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: chickpeas
+  category: legume
+  names:
+    - "Pois chiches"
+    - "Chickpeas"
+  tips: [best]
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Acceptable. Ameli cite les pois chiches comme source de folates (vitamine B9)."
+      sources:
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+    - state: canned
+      verdict: ok
+      why: "Les pois chiches en conserve sont acceptables. Rincez-les avant de les utiliser."
+      sources:
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: kidney-beans
+  category: legume
+  names:
+    - "Haricots rouges"
+    - "Haricots blancs"
+    - "Haricots secs"
+    - "Cannellini"
+    - "Flageolets"
+    - "Chili sin carne"
+    - "Kidney beans"
+  local: true
+  answers:
+    - state: canned
+      verdict: ok
+      why: "Les haricots en conserve ou en bocal sont prêts à manger. Rincez-les avant de les utiliser."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+    - state: cooked
+      verdict: ok
+      why: "Les haricots bien cuits et tendres sont acceptables et comptent comme source de protéines."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: tofu
+  category: legume
+  names:
+    - "Tofu fumé"
+    - "Tofu soyeux"
+    - "Soy"
+    - "Soja"
+    - "Tofu"
+  local: true
+  answers:
+    - state: cooked
+      verdict: careful
+      why: "Les recommandations françaises conseillent d'éviter par précaution les aliments contenant du soja pendant la grossesse. Demandez à votre sage-femme pour le tofu occasionnel."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: tempeh
+  category: legume
+  names:
+    - "Seitan soja"
+    - "Tempeh"
+  answers:
+    - state: cooked
+      verdict: careful
+      why: "Le tempeh est fabriqué à partir de soja. Les recommandations françaises conseillent d'éviter par précaution les aliments contenant du soja : demandez à votre sage-femme."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: edamame
+  category: legume
+  names:
+    - "Fèves de soja"
+    - "Edamame"
+  answers:
+    - state: cooked
+      verdict: careful
+      why: "Les edamame sont des fèves de soja. Les recommandations françaises conseillent d'éviter par précaution les aliments contenant du soja : demandez à votre sage-femme."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: houmous
+  category: legume
+  names:
+    - "Houmous"
+    - "Purée de pois chiches"
+    - "Hummus"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le houmous du commerce en pot fermé se garde bien au réfrigérateur et se mange avant la date limite. Évitez le houmous du rayon traiteur ou du buffet."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-13
+- id: falafel
+  category: legume
+  names:
+    - "Falafels"
+    - "Falafel"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Les falafels frits à la minute et servis chauds sont acceptables. Ce qui est à surveiller, ce sont la salade crue et les sauces dans le wrap."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+  reviewed: 2026-11-13
+- id: almonds
+  category: nut_seed
+  names:
+    - "Amandes"
+    - "Purée d'amande"
+    - "Almonds"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Acceptable. Ameli cite les amandes comme source de folates (vitamine B9)."
+      sources:
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: walnuts
+  category: nut_seed
+  names:
+    - "Noix"
+    - "Cerneaux de noix"
+    - "Walnuts"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Acceptable. Ameli cite les noix comme source de folates (vitamine B9)."
+      sources:
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: hazelnuts
+  category: nut_seed
+  names:
+    - "Noisettes"
+    - "Hazelnuts"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Acceptable, sauf allergie ou avis contraire de votre médecin ou de votre sage-femme."
+      sources:
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: cashews
+  category: nut_seed
+  names:
+    - "Noix de cajou"
+    - "Cashews"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Acceptable, sauf allergie ou avis contraire de votre médecin ou de votre sage-femme."
+      sources:
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: pistachios
+  category: nut_seed
+  names:
+    - "Pistaches"
+    - "Pistachios"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Acceptable, sauf allergie ou avis contraire de votre médecin ou de votre sage-femme."
+      sources:
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: peanuts
+  category: nut_seed
+  names:
+    - "Cacahuètes"
+    - "Arachides"
+    - "Peanuts"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Les cacahuètes se mangent sans danger, sauf allergie ou avis contraire d'un médecin ou d'une sage-femme."
+      sources:
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: peanut-butter
+  category: nut_seed
+  names:
+    - "Beurre de cacahuète"
+    - "Beurre d'arachide"
+    - "Peanut butter"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Sans danger, sauf allergie ou avis contraire d'un médecin ou d'une sage-femme. Il est riche en matières grasses : gardez de petites quantités."
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-healthy-diet
+  reviewed: 2026-11-13
+- id: chestnuts
+  category: nut_seed
+  names:
+    - "Châtaignes"
+    - "Marrons"
+    - "Crème de marrons"
+    - "Marrons glacés"
+    - "Chestnuts"
+  tips: [best]
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Acceptable. Ameli cite les châtaignes comme source de folates (vitamine B9)."
+      sources:
+        - ameli-alimentation-grossesse
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: dark-chocolate
+  category: sweet
+  names:
+    - "Chocolat noir"
+    - "Chocolat"
+    - "Tablette de chocolat"
+    - "Dark chocolate"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Acceptable en petite quantité. Il contient un peu de caféine, qui compte dans votre total quotidien."
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-healthy-diet
+  reviewed: 2026-11-13
+- id: milk-chocolate
+  category: sweet
+  names:
+    - "Chocolat au lait"
+    - "Chocolat blanc"
+    - "Nutella"
+    - "Pâte à tartiner"
+    - "Milk chocolate"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Acceptable en petite quantité. Le chocolat au lait contient moins de caféine que le chocolat noir."
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-healthy-diet
+  reviewed: 2026-11-13
+- id: viennoiserie
+  category: sweet
+  names:
+    - "Pain au chocolat"
+    - "Viennoiserie"
+    - "Pain aux raisins"
+    - "Brioche"
+    - "Chausson aux pommes"
+    - "Pâtisserie"
+    - "Patisserie"
+    - "Croissant"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Acceptable en petite quantité. Les aliments sucrés et gras sont à consommer moins souvent."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: crepes
+  category: sweet
+  names:
+    - "Crêpe"
+    - "Gaufre"
+    - "Galette"
+    - "Pancakes"
+    - "Waffle"
+    - "Crêpes"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Acceptable si elles sont bien cuites. Vérifiez la garniture : pas d'œuf cru, et pas d'alcool comme dans les crêpes flambées."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: cake-biscuits
+  category: sweet
+  names:
+    - "Gâteau"
+    - "Biscuits"
+    - "Cookies"
+    - "Madeleine"
+    - "Tarte"
+    - "Gâteau au yaourt"
+    - "Cake aux fruits"
+    - "Cake"
+  local: true
+  answers:
+    - state: cooked
+      verdict: ok
+      why: "Les pâtisseries sont acceptables. Évitez les versions avec de l'œuf cru, comme la pâte à cookies crue, ou avec de l'alcool."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-13
+- id: sugar
+  category: sweet
+  names:
+    - "Sucre"
+    - "Sucre roux"
+    - "Sirop d'érable"
+    - "Sirop d'agave"
+    - "Maple syrup"
+    - "Sugar"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Acceptable en petite quantité. Les aliments riches en sucre sont à consommer moins souvent."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: liquorice-sweets
+  category: sweet
+  names:
+    - "Réglisse"
+    - "Bâton de réglisse"
+    - "Carambar réglisse"
+    - "Zan"
+    - "Rouleau de réglisse"
+    - "Lakrids"
+    - "Liquorice sweets"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Ameli indique que la réglisse sous toutes ses formes (bonbons, sirop, tisane, compléments) n'est pas conseillée pendant la grossesse. Le NHS demande aussi d'éviter la racine de réglisse."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: olive-oil
+  category: fat_oil
+  names:
+    - "Huile d'olive"
+    - "Olive oil"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Acceptable. Utilisez-la en petite quantité."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: vegetable-oil
+  category: fat_oil
+  names:
+    - "Huile de colza"
+    - "Huile de tournesol"
+    - "Huile de noix"
+    - "Huile"
+    - "Sunflower oil"
+    - "Vegetable oil"
+    - "Rapeseed oil"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Acceptable. Utilisez-la en petite quantité."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: margarine
+  category: fat_oil
+  names:
+    - "Beurre végétal"
+    - "Pâte à tartiner végétale"
+    - "Margarine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Acceptable. Les tartinables et les matières grasses sont à consommer en petite quantité."
+      sources:
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: fresh-herbs
+  category: herb_spice
+  names:
+    - "Herbes fraîches"
+    - "Persil"
+    - "Basilic"
+    - "Coriandre"
+    - "Menthe"
+    - "Ciboulette"
+    - "Aneth"
+    - "Herbes aromatiques"
+    - "Parsley"
+    - "Basil"
+    - "Coriander"
+    - "Mint"
+    - "Fresh herbs"
+  local: true
+  answers:
+    - state: raw
+      verdict: ok
+      why: "Acceptable une fois très bien lavées à l'eau claire. Les recommandations françaises demandent de rincer les herbes aromatiques, comme les fruits et légumes crus. En dehors de chez vous, évitez les herbes crues en décoration."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+  reviewed: 2026-11-13
+- id: dried-herbs-spices
+  category: herb_spice
+  names:
+    - "Herbes de Provence"
+    - "Épices"
+    - "Paprika"
+    - "Curry"
+    - "Cumin"
+    - "Cannelle"
+    - "Poivre"
+    - "Origan"
+    - "Thym"
+    - "Gingembre"
+    - "Curcuma"
+    - "Spices"
+    - "Cinnamon"
+    - "Pepper"
+    - "Dried herbs"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Les quantités courantes utilisées en cuisine sont acceptables."
+      sources:
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: liquorice-root
+  category: herb_spice
+  names:
+    - "Racine de réglisse"
+    - "Réglisse en poudre"
+    - "Pastis sans alcool"
+    - "Liquorice root"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "La réglisse sous toutes ses formes, y compris le pastis sans alcool, les sirops et les compléments, n'est pas conseillée pendant la grossesse. Ameli et le NHS demandent tous deux de l'éviter."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-13
+- id: soy-sauce
+  category: herb_spice
+  names:
+    - "Sauce soja"
+    - "Sauce soja salée"
+    - "Tamari"
+    - "Soy sauce"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Acceptable de temps en temps. Les recommandations françaises demandent d'éviter par précaution les aliments à base de soja, mais la sauce soja consommée occasionnellement est permise."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+  reviewed: 2026-11-13
+- id: food-cooked-with-alcohol
+  category: other
+  names:
+    - "Plat au vin"
+    - "Coq au vin"
+    - "Bœuf bourguignon"
+    - "Flambé"
+    - "Sauce au vin"
+    - "Baba au rhum"
+    - "Dessert à l'alcool"
+    - "Sauce au cognac"
+    - "Poulet à la bière"
+    - "Food cooked with alcohol"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: cooked
+      verdict: avoid
+      why: "Les plats et desserts préparés avec de l'alcool sont déconseillés, car une partie de l'alcool reste présente même après une longue cuisson. Ameli demande de ne consommer aucun alcool."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
+  reviewed: 2026-11-13
