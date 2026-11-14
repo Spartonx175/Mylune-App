@@ -2015,7 +2015,45 @@
     - Lait cru
     - Raw milk
     - Lait de ferme
-  tips: *a2
+    - Skimmed milk
+    - Lait écrémé
+    - Lait 1/2 écrémé
+    - UHT milk
+    - Lait stérilisé
+    - Lait longue conservation
+    - Lait en brique
+    - Fresh milk
+    - Lait frais
+    - Lait frais pasteurisé
+    - Lait pasteurisé frais
+    - Lait de ferme pasteurisé
+    - Microfiltered milk
+    - Lait microfiltré
+    - Lait Candia
+    - Lait Lactel
+    - Lait ESL
+    - Organic milk
+    - Lait bio
+    - Lait de vache bio
+    - Lait de pâturage
+    - Lait de foin
+    - Powdered milk
+    - Lait en poudre
+    - Lait infantile
+    - Lait entier en poudre
+    - Lait écrémé en poudre
+    - Flavoured milk
+    - Lait aromatisé
+    - Lait chocolaté
+    - Lait fraise
+    - Lait vanille
+    - Milk drink
+    - Boisson lactée
+    - Boisson au lait
+    - Lait gélifié
+    - Lait battu
+  tips:
+    - best
   local: true
   answers:
     - state: pasteurised
@@ -2044,7 +2082,34 @@
     - Fromage blanc fermier
     - Kéfir
     - Yogurt
-  tips: *a2
+    - Greek yoghurt
+    - Yaourt à la grecque
+    - Yaourt grec nature
+    - Yaourt grec 0%
+    - Plain yoghurt
+    - Yaourt brassé
+    - Yaourt ferme
+    - Yaourt entier
+    - Fruit yoghurt
+    - Yaourt aux fruits
+    - Yaourt aromatisé
+    - Yaourt à la vanille
+    - Yaourt à la fraise
+    - Probiotic yoghurt
+    - Yaourt probiotique
+    - Activia
+    - Actimel
+    - Danone
+    - Drinking yoghurt
+    - Yop
+    - Yoplait à boire
+    - Yaourt liquide
+    - Lassi
+    - Lassi à la mangue
+    - Lassi nature
+    - Yaourt à boire
+  tips:
+    - best
   local: true
   answers:
     - state: pasteurised
@@ -2072,7 +2137,29 @@
     - Brocciu
     - Ricotta
     - Mascarpone
-  tips: *a2
+    - Quark
+    - Séré
+    - Fromage blanc battu
+    - Fromage blanc lisse
+    - Fromage blanc 0%
+    - Fromage blanc maigre
+    - Fromage blanc 20%
+    - Fromage blanc nature
+    - Petit Suisse
+    - Petits suisses
+    - Gervais petit suisse
+    - Petit suisse aux fruits
+    - Labneh
+    - Labné
+    - Fromage de yaourt
+    - Labneh libanais
+    - Faisselle with cream
+    - Faisselle à la crème
+    - Faisselle au coulis
+    - Fromage blanc à la crème
+    - Fromage blanc au miel
+  tips:
+    - best
   local: true
   answers:
     - state: pasteurised
@@ -2103,6 +2190,29 @@
     - Chantilly
     - Beurre doux
     - Beurre demi-sel
+    - Whipped cream
+    - Crème chantilly
+    - Crème fouettée
+    - Chantilly maison
+    - Double cream
+    - Crème fraîche épaisse
+    - Crème d'Isigny
+    - Crème fraîche d'Isigny
+    - Light cream
+    - Crème fleurette
+    - Crème entière liquide
+    - Sour cream
+    - Crème aigre
+    - Smetana
+    - Crème acidulée
+    - Aerosol cream
+    - Crème en spray
+    - Crème en bombe
+    - Chantilly en bombe
+    - Butter salted
+    - Beurre salé
+    - Beurre de baratte
+    - Beurre de Bretagne
   local: true
   answers:
     - state: pasteurised
@@ -2135,6 +2245,40 @@
     - Crème glacée maison
     - Glace à la vanille maison
     - Glace aux œufs
+    - Vanilla ice cream
+    - Glace vanille
+    - Crème glacée vanille
+    - Glace à la vanille
+    - Glace vanille de Madagascar
+    - Chocolate ice cream
+    - Glace chocolat
+    - Crème glacée chocolat
+    - Glace au chocolat
+    - Glace chocolat noir
+    - Pistachio ice cream
+    - Glace pistache
+    - Glace à la pistache
+    - Glace pistache de Sicile
+    - Pistache
+    - Ice cream cone
+    - Cornet de glace
+    - Cornet vanille
+    - Glace à l'italienne
+    - Ice cream sundae
+    - Coupe glacée
+    - Café liégeois
+    - Dame blanche
+    - Profiterole glace
+    - Ice cream bar
+    - Esquimau
+    - Magnum
+    - Cornetto
+    - Bâtonnet glacé
+    - Ice cream tub
+    - Pot de glace
+    - Ben & Jerry's
+    - Häagen-Dazs
+    - Glace en pot
   local: true
   answers:
     - state: pasteurised
@@ -2272,6 +2416,10 @@
     - Chèvre frais sans croûte
     - Chavroux
     - Petit chèvre
+    - Fresh goat spread
+    - Chèvre frais à tartiner
+    - Fromage de chèvre frais
+    - Petit chèvre frais
   local: true
   answers:
     - state: pasteurised
@@ -12746,13 +12894,13 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
+      why: "Panna cotta: made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made."
       sources:
         - nhs-foods-to-avoid
         - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
+      why: "Panna cotta: made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised."
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -12771,13 +12919,13 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
+      why: "Cheesecake no bake: made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made."
       sources:
         - nhs-foods-to-avoid
         - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
+      why: "Cheesecake no bake: made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised."
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -12995,98 +13143,6 @@
         - nhs-healthy-diet
         - cdc-food-pregnant-women
   reviewed: 2026-11-13
-- id: skimmed-milk
-  category: dairy
-  names:
-    - Skimmed milk
-    - Lait écrémé
-    - Lait 1/2 écrémé
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: uht-milk
-  category: dairy
-  names:
-    - UHT milk
-    - Lait stérilisé
-    - Lait longue conservation
-    - Lait en brique
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fresh-milk
-  category: dairy
-  names:
-    - Fresh milk
-    - Lait frais
-    - Lait frais pasteurisé
-    - Lait pasteurisé frais
-    - Lait de ferme pasteurisé
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: microfiltered-milk
-  category: dairy
-  names:
-    - Microfiltered milk
-    - Lait microfiltré
-    - Lait Candia
-    - Lait Lactel
-    - Lait ESL
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: organic-milk
-  category: dairy
-  names:
-    - Organic milk
-    - Lait bio
-    - Lait de vache bio
-    - Lait de pâturage
-    - Lait de foin
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
 - id: goat-milk
   category: dairy
   names:
@@ -13099,13 +13155,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: Pasteurised or UHT goat's milk is safe.
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-toxoplasmosis
     - state: unpasteurised
       verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: Raw goat's milk can carry the toxoplasmosis parasite and listeria, and the NHS and CDC both say not to drink it unpasteurised. Pasteurised or UHT goat's milk is fine.
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-toxoplasmosis
+        - cdc-toxo-prevention
+  reviewed: 2026-11-14
 - id: sheep-milk
   category: dairy
   names:
@@ -13118,12 +13179,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Sheep milk: made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
+      why: "Sheep milk: made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: buttermilk
   category: dairy
@@ -13137,12 +13204,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Buttermilk: made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
+      why: "Buttermilk: made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: condensed-milk
   category: dairy
@@ -13156,32 +13229,11 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: powdered-milk
-  category: dairy
-  names:
-    - Powdered milk
-    - Lait en poudre
-    - Lait infantile
-    - Lait entier en poudre
-    - Lait écrémé en poudre
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: Condensed milk is heat-treated and sold in a sealed tin or tube, so it is safe. Keep an opened one in the fridge.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+  reviewed: 2026-11-14
 - id: hot-chocolate
   category: dairy
   names:
@@ -13194,12 +13246,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Hot chocolate: made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
+      why: "Hot chocolate: made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: milkshake
   category: dairy
@@ -13212,30 +13270,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Milkshake: made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: latte
-  category: dairy
-  names:
-    - Latte
-    - Café au lait
-    - Cappuccino
-    - Café crème
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
+      why: "Milkshake: made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: kefir
   category: dairy
@@ -13246,106 +13292,13 @@
     - Lait de kéfir
   local: true
   answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: lassi
-  category: dairy
-  names:
-    - Lassi
-    - Lassi à la mangue
-    - Lassi nature
-    - Yaourt à boire
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: drinking-yoghurt
-  category: dairy
-  names:
-    - Drinking yoghurt
-    - Yop
-    - Yoplait à boire
-    - Yaourt liquide
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: greek-yoghurt
-  category: dairy
-  names:
-    - Greek yoghurt
-    - Yaourt à la grecque
-    - Yaourt grec nature
-    - Yaourt grec 0%
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: plain-yoghurt
-  category: dairy
-  names:
-    - Plain yoghurt
-    - Yaourt brassé
-    - Yaourt ferme
-    - Yaourt entier
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fruit-yoghurt
-  category: dairy
-  names:
-    - Fruit yoghurt
-    - Yaourt aux fruits
-    - Yaourt aromatisé
-    - Yaourt à la vanille
-    - Yaourt à la fraise
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+    - state: not_applicable
+      verdict: careful
+      why: The sources do not name kefir. Shop-bought kefir made with pasteurised milk should follow the yoghurt rule, but farm or home-made kefir may use raw milk. Ask your midwife.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+  reviewed: 2026-11-14
 - id: sheep-yoghurt
   category: dairy
   names:
@@ -13358,12 +13311,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Sheep yoghurt: made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
+      why: "Sheep yoghurt: made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: farm-yoghurt
   category: dairy
@@ -13377,31 +13336,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Farm yoghurt: made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: probiotic-yoghurt
-  category: dairy
-  names:
-    - Probiotic yoghurt
-    - Yaourt probiotique
-    - Activia
-    - Actimel
-    - Danone
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
+      why: "Farm yoghurt: made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: dessert-cream
   category: dairy
@@ -13411,20 +13357,6 @@
     - Danette
     - Gervais
     - Mousse lactée
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: cream-pot
-  category: dairy
-  names:
     - Cream pot
     - Crème dessert vanille
     - Crème dessert chocolat
@@ -13434,138 +13366,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Dessert cream: made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: faisselle-with-cream
-  category: dairy
-  names:
-    - Faisselle with cream
-    - Faisselle à la crème
-    - Faisselle au coulis
-    - Fromage blanc à la crème
-    - Fromage blanc au miel
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: quark
-  category: dairy
-  names:
-    - Quark
-    - Séré
-    - Fromage blanc battu
-    - Fromage blanc lisse
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: whipped-cream
-  category: dairy
-  names:
-    - Whipped cream
-    - Crème chantilly
-    - Crème fouettée
-    - Chantilly maison
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: double-cream
-  category: dairy
-  names:
-    - Double cream
-    - Crème fraîche épaisse
-    - Crème d'Isigny
-    - Crème fraîche d'Isigny
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: light-cream
-  category: dairy
-  names:
-    - Light cream
-    - Crème fleurette
-    - Crème entière liquide
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: sour-cream
-  category: dairy
-  names:
-    - Sour cream
-    - Crème aigre
-    - Smetana
-    - Crème acidulée
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: butter-salted
-  category: dairy
-  names:
-    - Butter salted
-    - Beurre salé
-    - Beurre de baratte
-    - Beurre de Bretagne
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
+      why: "Dessert cream: made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: raw-butter
   category: dairy
@@ -13576,15 +13388,14 @@
     - Beurre d'Échiré
   local: true
   answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
     - state: unpasteurised
       verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: Raw-milk butter (beurre cru, common in Normandy) can carry listeria. Choose pasteurised butter.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+  reviewed: 2026-11-14
 - id: ghee
   category: dairy
   names:
@@ -13594,35 +13405,15 @@
     - Beurre noisette
   local: true
   answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: aerosol-cream
-  category: dairy
-  names:
-    - Aerosol cream
-    - Crème en spray
-    - Crème en bombe
-    - Chantilly en bombe
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+    - state: not_applicable
+      verdict: careful
+      why: The sources do not name ghee (clarified butter). Ask your midwife; if you use it, choose a shop-bought one made from pasteurised butter.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+  reviewed: 2026-11-14
 - id: semolina-pudding
-  category: dairy
+  category: sweet
   names:
     - Semolina pudding
     - Semoule au lait
@@ -13630,34 +13421,12 @@
     - Semoule au lait maison
   local: true
   answers:
-    - state: pasteurised
+    - state: cooked
       verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: flavoured-milk
-  category: dairy
-  names:
-    - Flavoured milk
-    - Lait aromatisé
-    - Lait chocolaté
-    - Lait fraise
-    - Lait vanille
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: Semolina pudding is milk cooked with semolina and sugar. It is fine when made with pasteurised milk and eaten chilled before its date.
+      sources:
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: farm-cream
   category: dairy
   names:
@@ -13669,163 +13438,21 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Farm cream: made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: milk-drink
-  category: dairy
-  names:
-    - Milk drink
-    - Boisson lactée
-    - Boisson au lait
-    - Lait gélifié
-    - Lait battu
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fromage-blanc-0
-  category: dairy
-  names:
-    - Fromage blanc 0%
-    - Fromage blanc maigre
-    - Fromage blanc 20%
-    - Fromage blanc nature
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fresh cheese made from pasteurised milk is safe. Eat it before the date on the pack.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw milk (farm or market), it can carry listeria. Choose a pasteurised one.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-  reviewed: 2026-11-13
-- id: petit-suisse
-  category: dairy
-  names:
-    - Petit Suisse
-    - Petits suisses
-    - Gervais petit suisse
-    - Petit suisse aux fruits
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fresh cheese made from pasteurised milk is safe. Eat it before the date on the pack.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw milk (farm or market), it can carry listeria. Choose a pasteurised one.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-  reviewed: 2026-11-13
-- id: labneh
-  category: dairy
-  names:
-    - Labneh
-    - Labné
-    - Fromage de yaourt
-    - Labneh libanais
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fresh cheese made from pasteurised milk is safe. Eat it before the date on the pack.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw milk (farm or market), it can carry listeria. Choose a pasteurised one.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-  reviewed: 2026-11-13
-- id: fresh-goat-spread
-  category: dairy
-  names:
-    - Fresh goat spread
-    - Chèvre frais à tartiner
-    - Fromage de chèvre frais
-    - Petit chèvre frais
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fresh cheese made from pasteurised milk is safe. Eat it before the date on the pack.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Made from raw milk (farm or market), it can carry listeria. Choose a pasteurised one.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-  reviewed: 2026-11-13
-- id: vanilla-ice-cream
-  category: dairy
-  names:
-    - Vanilla ice cream
-    - Glace vanille
-    - Crème glacée vanille
-    - Glace à la vanille
-    - Glace vanille de Madagascar
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Shop-bought ice cream is made with pasteurised milk and is safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: raw
-      verdict: avoid
-      why: Home-made or artisan ice cream made with raw milk or raw egg can carry listeria or salmonella. Ask how it is made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: chocolate-ice-cream
-  category: dairy
-  names:
-    - Chocolate ice cream
-    - Glace chocolat
-    - Crème glacée chocolat
-    - Glace au chocolat
-    - Glace chocolat noir
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Shop-bought ice cream is made with pasteurised milk and is safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: raw
-      verdict: avoid
-      why: Home-made or artisan ice cream made with raw milk or raw egg can carry listeria or salmonella. Ask how it is made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: pistachio-ice-cream
-  category: dairy
-  names:
-    - Pistachio ice cream
-    - Glace pistache
-    - Glace à la pistache
-    - Glace pistache de Sicile
-    - Pistache
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Shop-bought ice cream is made with pasteurised milk and is safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: raw
-      verdict: avoid
-      why: Home-made or artisan ice cream made with raw milk or raw egg can carry listeria or salmonella. Ask how it is made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
+      why: "Farm cream: made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fruit-sorbet
-  category: dairy
+  category: sweet
   names:
     - Fruit sorbet
     - Sorbet fraise
@@ -13833,90 +13460,12 @@
     - Sorbet framboise
   local: true
   answers:
-    - state: pasteurised
+    - state: cooked
       verdict: ok
-      why: Shop-bought ice cream is made with pasteurised milk and is safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: raw
-      verdict: avoid
-      why: Home-made or artisan ice cream made with raw milk or raw egg can carry listeria or salmonella. Ask how it is made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: ice-cream-cone
-  category: dairy
-  names:
-    - Ice cream cone
-    - Cornet de glace
-    - Cornet vanille
-    - Glace à l'italienne
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Shop-bought ice cream is made with pasteurised milk and is safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: raw
-      verdict: avoid
-      why: Home-made or artisan ice cream made with raw milk or raw egg can carry listeria or salmonella. Ask how it is made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: ice-cream-sundae
-  category: dairy
-  names:
-    - Ice cream sundae
-    - Coupe glacée
-    - Café liégeois
-    - Dame blanche
-    - Profiterole glace
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Shop-bought ice cream is made with pasteurised milk and is safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: raw
-      verdict: avoid
-      why: Home-made or artisan ice cream made with raw milk or raw egg can carry listeria or salmonella. Ask how it is made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: ice-cream-bar
-  category: dairy
-  names:
-    - Ice cream bar
-    - Esquimau
-    - Magnum
-    - Cornetto
-    - Bâtonnet glacé
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Shop-bought ice cream is made with pasteurised milk and is safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: raw
-      verdict: avoid
-      why: Home-made or artisan ice cream made with raw milk or raw egg can carry listeria or salmonella. Ask how it is made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: ice-cream-tub
-  category: dairy
-  names:
-    - Ice cream tub
-    - Pot de glace
-    - Ben & Jerry's
-    - Häagen-Dazs
-    - Glace en pot
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Shop-bought ice cream is made with pasteurised milk and is safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: raw
-      verdict: avoid
-      why: Home-made or artisan ice cream made with raw milk or raw egg can carry listeria or salmonella. Ask how it is made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
+      why: Sorbet is made from fruit, sugar and water, with no milk. Shop-bought sorbet is fine.
+      sources:
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: frozen-yoghurt
   category: dairy
   names:
@@ -13928,12 +13477,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Shop-bought ice cream is made with pasteurised milk and is safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Frozen yoghurt: shop-bought ice cream is made with pasteurised milk and is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: raw
       verdict: avoid
-      why: Home-made or artisan ice cream made with raw milk or raw egg can carry listeria or salmonella. Ask how it is made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
+      why: "Frozen yoghurt: home-made or artisan ice cream made with raw milk or raw egg can carry listeria or salmonella. Ask how it is made."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: cassata
   category: dairy
@@ -13945,12 +13499,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Shop-bought ice cream is made with pasteurised milk and is safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Cassata: shop-bought ice cream is made with pasteurised milk and is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: raw
       verdict: avoid
-      why: Home-made or artisan ice cream made with raw milk or raw egg can carry listeria or salmonella. Ask how it is made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
+      why: "Cassata: home-made or artisan ice cream made with raw milk or raw egg can carry listeria or salmonella. Ask how it is made."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: baked-alaska
   category: dairy
@@ -13962,12 +13521,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Shop-bought ice cream is made with pasteurised milk and is safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Baked Alaska: shop-bought ice cream is made with pasteurised milk and is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: raw
       verdict: avoid
-      why: Home-made or artisan ice cream made with raw milk or raw egg can carry listeria or salmonella. Ask how it is made.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
+      why: "Baked Alaska: home-made or artisan ice cream made with raw milk or raw egg can carry listeria or salmonella. Ask how it is made."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: soy-yoghurt
   category: dairy
@@ -13981,8 +13545,10 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: French guidance advises avoiding soy-based foods and drinks as a precaution during pregnancy. Ask your midwife.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Soy yoghurt: French guidance advises avoiding soy-based foods and drinks as a precaution during pregnancy. Ask your midwife."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: soy-milk
   category: dairy
@@ -13992,16 +13558,6 @@
     - Boisson soja
     - Soja drink
     - Lait de soja vanille
-  local: true
-  answers:
-    - state: not_applicable
-      verdict: careful
-      why: French guidance advises avoiding soy-based foods and drinks as a precaution during pregnancy. Ask your midwife.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: soy-cream
-  category: dairy
-  names:
     - Soy cream
     - Crème de soja
     - Crème soja
@@ -14010,8 +13566,10 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: French guidance advises avoiding soy-based foods and drinks as a precaution during pregnancy. Ask your midwife.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Soy milk: French guidance advises avoiding soy-based foods and drinks as a precaution during pregnancy. Ask your midwife."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: tofu-cheese
   category: dairy
@@ -14025,8 +13583,10 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: French guidance advises avoiding soy-based foods and drinks as a precaution during pregnancy. Ask your midwife.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Tofu cheese: French guidance advises avoiding soy-based foods and drinks as a precaution during pregnancy. Ask your midwife."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: brie-de-melun
   category: cheese

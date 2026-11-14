@@ -2019,19 +2019,57 @@
     - Lait de ferme
     - Raw milk
     - Lait cru
+    - Lait écrémé
+    - Lait 1/2 écrémé
+    - Skimmed milk
+    - Lait stérilisé
+    - Lait longue conservation
+    - Lait en brique
+    - UHT milk
+    - Lait frais
+    - Lait frais pasteurisé
+    - Lait pasteurisé frais
+    - Lait de ferme pasteurisé
+    - Fresh milk
+    - Lait microfiltré
+    - Lait Candia
+    - Lait Lactel
+    - Lait ESL
+    - Microfiltered milk
+    - Lait bio
+    - Lait de vache bio
+    - Lait de pâturage
+    - Lait de foin
+    - Organic milk
+    - Lait en poudre
+    - Lait infantile
+    - Lait entier en poudre
+    - Lait écrémé en poudre
+    - Powdered milk
+    - Lait aromatisé
+    - Lait chocolaté
+    - Lait fraise
+    - Lait vanille
+    - Flavoured milk
+    - Boisson lactée
+    - Boisson au lait
+    - Lait gélifié
+    - Lait battu
+    - Milk drink
     - Milk
-  tips: [best]
+  tips:
+    - best
   local: true
   answers:
     - state: pasteurised
       verdict: ok
-      why: "Le lait pasteurisé ou UHT est sans danger. C'est le lait que l'on trouve dans presque tous les supermarchés français."
+      why: Le lait pasteurisé ou UHT est sans danger. C'est le lait que l'on trouve dans presque tous les supermarchés français.
       sources:
         - nhs-foods-to-avoid
         - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: "Le lait cru (lait cru), y compris celui acheté à la ferme ou dans un distributeur, peut transmettre la listéria."
+      why: Le lait cru (lait cru), y compris celui acheté à la ferme ou dans un distributeur, peut transmettre la listéria.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -2048,19 +2086,46 @@
     - Fromage blanc fermier
     - Kéfir
     - Yogurt
+    - Yaourt à la grecque
+    - Yaourt grec nature
+    - Yaourt grec 0%
+    - Greek yoghurt
+    - Yaourt brassé
+    - Yaourt ferme
+    - Yaourt entier
+    - Plain yoghurt
+    - Yaourt aux fruits
+    - Yaourt aromatisé
+    - Yaourt à la vanille
+    - Yaourt à la fraise
+    - Fruit yoghurt
+    - Yaourt probiotique
+    - Activia
+    - Actimel
+    - Danone
+    - Probiotic yoghurt
+    - Yop
+    - Yoplait à boire
+    - Yaourt liquide
+    - Drinking yoghurt
+    - Lassi à la mangue
+    - Lassi nature
+    - Yaourt à boire
+    - Lassi
     - Yoghurt
-  tips: [best]
+  tips:
+    - best
   local: true
   answers:
     - state: pasteurised
       verdict: ok
-      why: "Les yaourts et le skyr du supermarché sont faits avec du lait pasteurisé et sont sans danger."
+      why: Les yaourts et le skyr du supermarché sont faits avec du lait pasteurisé et sont sans danger.
       sources:
         - nhs-foods-to-avoid
         - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: "Un yaourt au lait cru, par exemple acheté à la ferme, peut transmettre la listéria."
+      why: Un yaourt au lait cru, par exemple acheté à la ferme, peut transmettre la listéria.
       sources:
         - nhs-foods-to-avoid
         - cdc-listeria-prevention
@@ -2076,19 +2141,41 @@
     - Ricotta
     - Mascarpone
     - Cottage cheese
+    - Séré
+    - Fromage blanc battu
+    - Fromage blanc lisse
+    - Quark
+    - Fromage blanc maigre
+    - Fromage blanc 20%
+    - Fromage blanc nature
+    - Fromage blanc 0%
+    - Petits suisses
+    - Gervais petit suisse
+    - Petit suisse aux fruits
+    - Petit Suisse
+    - Labné
+    - Fromage de yaourt
+    - Labneh libanais
+    - Labneh
+    - Faisselle à la crème
+    - Faisselle au coulis
+    - Fromage blanc à la crème
+    - Fromage blanc au miel
+    - Faisselle with cream
     - Fromage blanc
-  tips: [best]
+  tips:
+    - best
   local: true
   answers:
     - state: pasteurised
       verdict: ok
-      why: "Le fromage blanc, la faisselle, le cottage cheese, la ricotta et le mascarpone du supermarché sont faits avec du lait pasteurisé et sont sans danger."
+      why: Le fromage blanc, la faisselle, le cottage cheese, la ricotta et le mascarpone du supermarché sont faits avec du lait pasteurisé et sont sans danger.
       sources:
         - nhs-foods-to-avoid
         - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: "Un fromage frais au lait cru (faisselle de la ferme ou du marché) peut transmettre la listéria."
+      why: Un fromage frais au lait cru (faisselle de la ferme ou du marché) peut transmettre la listéria.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -2107,18 +2194,41 @@
     - Beurre doux
     - Beurre demi-sel
     - Butter
+    - Crème chantilly
+    - Crème fouettée
+    - Chantilly maison
+    - Whipped cream
+    - Crème fraîche épaisse
+    - Crème d'Isigny
+    - Crème fraîche d'Isigny
+    - Double cream
+    - Crème fleurette
+    - Crème entière liquide
+    - Light cream
+    - Crème aigre
+    - Smetana
+    - Crème acidulée
+    - Sour cream
+    - Crème en spray
+    - Crème en bombe
+    - Chantilly en bombe
+    - Aerosol cream
+    - Beurre salé
+    - Beurre de baratte
+    - Beurre de Bretagne
+    - Butter salted
     - Cream
   local: true
   answers:
     - state: pasteurised
       verdict: ok
-      why: "La crème et le beurre pasteurisés, les versions habituelles du commerce, sont sans danger."
+      why: La crème et le beurre pasteurisés, les versions habituelles du commerce, sont sans danger.
       sources:
         - nhs-foods-to-avoid
         - cdc-food-pregnant-women
     - state: unpasteurised
       verdict: avoid
-      why: "La crème ou le beurre au lait cru (crème crue, beurre cru, courants en Normandie) peuvent transmettre la listéria."
+      why: La crème ou le beurre au lait cru (crème crue, beurre cru, courants en Normandie) peuvent transmettre la listéria.
       sources:
         - nhs-foods-to-avoid
         - cdc-food-pregnant-women
@@ -2139,6 +2249,40 @@
     - Glace à la vanille maison
     - Glace aux œufs
     - Home-made ice cream
+    - Glace vanille
+    - Crème glacée vanille
+    - Glace à la vanille
+    - Glace vanille de Madagascar
+    - Vanilla ice cream
+    - Glace chocolat
+    - Crème glacée chocolat
+    - Glace au chocolat
+    - Glace chocolat noir
+    - Chocolate ice cream
+    - Glace pistache
+    - Glace à la pistache
+    - Glace pistache de Sicile
+    - Pistache
+    - Pistachio ice cream
+    - Cornet de glace
+    - Cornet vanille
+    - Glace à l'italienne
+    - Ice cream cone
+    - Coupe glacée
+    - Café liégeois
+    - Dame blanche
+    - Profiterole glace
+    - Ice cream sundae
+    - Esquimau
+    - Magnum
+    - Cornetto
+    - Bâtonnet glacé
+    - Ice cream bar
+    - Pot de glace
+    - Ben & Jerry's
+    - Häagen-Dazs
+    - Glace en pot
+    - Ice cream tub
     - Ice cream
   local: true
   answers:
@@ -2276,18 +2420,22 @@
     - Chèvre frais sans croûte
     - Chavroux
     - Petit chèvre
+    - Chèvre frais à tartiner
+    - Fromage de chèvre frais
+    - Petit chèvre frais
+    - Fresh goat spread
     - Fresh goat cheese
   local: true
   answers:
     - state: pasteurised
       verdict: ok
-      why: "Le fromage de chèvre frais sans croûte, fabriqué avec du lait pasteurisé (c'est le cas de la plupart de ceux du supermarché), est sans danger."
+      why: Le fromage de chèvre frais sans croûte, fabriqué avec du lait pasteurisé (c'est le cas de la plupart de ceux du supermarché), est sans danger.
       sources:
         - nhs-foods-to-avoid
         - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: "Le fromage au lait de chèvre cru peut transmettre la listéria et le parasite de la toxoplasmose."
+      why: Le fromage au lait de chèvre cru peut transmettre la listéria et le parasite de la toxoplasmose.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -12755,13 +12903,13 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
+      why: "Panna cotta maison : fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché."
       sources:
         - nhs-foods-to-avoid
         - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
+      why: "Panna cotta maison : fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé."
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -12780,13 +12928,13 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
+      why: "Cheesecake sans cuisson : fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché."
       sources:
         - nhs-foods-to-avoid
         - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
+      why: "Cheesecake sans cuisson : fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé."
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -13004,98 +13152,6 @@
         - nhs-healthy-diet
         - cdc-food-pregnant-women
   reviewed: 2026-11-13
-- id: skimmed-milk
-  category: dairy
-  names:
-    - Lait écrémé
-    - Lait 1/2 écrémé
-    - Skimmed milk
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: uht-milk
-  category: dairy
-  names:
-    - Lait stérilisé
-    - Lait longue conservation
-    - Lait en brique
-    - UHT milk
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fresh-milk
-  category: dairy
-  names:
-    - Lait frais
-    - Lait frais pasteurisé
-    - Lait pasteurisé frais
-    - Lait de ferme pasteurisé
-    - Fresh milk
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: microfiltered-milk
-  category: dairy
-  names:
-    - Lait microfiltré
-    - Lait Candia
-    - Lait Lactel
-    - Lait ESL
-    - Microfiltered milk
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: organic-milk
-  category: dairy
-  names:
-    - Lait bio
-    - Lait de vache bio
-    - Lait de pâturage
-    - Lait de foin
-    - Organic milk
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
 - id: goat-milk
   category: dairy
   names:
@@ -13108,13 +13164,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: Le lait de chèvre pasteurisé ou UHT est sans danger.
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-toxoplasmosis
     - state: unpasteurised
       verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: Le lait de chèvre cru peut porter le parasite de la toxoplasmose et la listeria, et le NHS comme le CDC déconseillent de le boire non pasteurisé. Le lait de chèvre pasteurisé ou UHT convient.
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-toxoplasmosis
+        - cdc-toxo-prevention
+  reviewed: 2026-11-14
 - id: sheep-milk
   category: dairy
   names:
@@ -13127,12 +13188,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Lait de brebis : fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
+      why: "Lait de brebis : fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: buttermilk
   category: dairy
@@ -13146,12 +13213,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Lait ribot : fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
+      why: "Lait ribot : fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: condensed-milk
   category: dairy
@@ -13165,32 +13238,11 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: powdered-milk
-  category: dairy
-  names:
-    - Lait en poudre
-    - Lait infantile
-    - Lait entier en poudre
-    - Lait écrémé en poudre
-    - Powdered milk
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Le lait concentré est traité à la chaleur et vendu en boîte ou tube scellé : il est sans danger. Gardez-le au frigo une fois ouvert."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+  reviewed: 2026-11-14
 - id: hot-chocolate
   category: dairy
   names:
@@ -13203,12 +13255,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Chocolat chaud : fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
+      why: "Chocolat chaud : fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: milkshake
   category: dairy
@@ -13221,30 +13279,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Milk-shake : fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: latte
-  category: dairy
-  names:
-    - Café au lait
-    - Cappuccino
-    - Café crème
-    - Latte
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
+      why: "Milk-shake : fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: kefir
   category: dairy
@@ -13255,106 +13301,13 @@
     - Kefir
   local: true
   answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: lassi
-  category: dairy
-  names:
-    - Lassi à la mangue
-    - Lassi nature
-    - Yaourt à boire
-    - Lassi
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: drinking-yoghurt
-  category: dairy
-  names:
-    - Yop
-    - Yoplait à boire
-    - Yaourt liquide
-    - Drinking yoghurt
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: greek-yoghurt
-  category: dairy
-  names:
-    - Yaourt à la grecque
-    - Yaourt grec nature
-    - Yaourt grec 0%
-    - Greek yoghurt
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: plain-yoghurt
-  category: dairy
-  names:
-    - Yaourt brassé
-    - Yaourt ferme
-    - Yaourt entier
-    - Plain yoghurt
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fruit-yoghurt
-  category: dairy
-  names:
-    - Yaourt aux fruits
-    - Yaourt aromatisé
-    - Yaourt à la vanille
-    - Yaourt à la fraise
-    - Fruit yoghurt
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+    - state: not_applicable
+      verdict: careful
+      why: Les sources ne citent pas le kéfir. Un kéfir du commerce fait avec du lait pasteurisé suit la règle du yaourt, mais un kéfir fermier ou maison peut utiliser du lait cru. Demandez à votre sage-femme.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+  reviewed: 2026-11-14
 - id: sheep-yoghurt
   category: dairy
   names:
@@ -13367,12 +13320,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Yaourt de brebis : fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
+      why: "Yaourt de brebis : fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: farm-yoghurt
   category: dairy
@@ -13386,31 +13345,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Yaourt fermier : fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: probiotic-yoghurt
-  category: dairy
-  names:
-    - Yaourt probiotique
-    - Activia
-    - Actimel
-    - Danone
-    - Probiotic yoghurt
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
+      why: "Yaourt fermier : fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: dessert-cream
   category: dairy
@@ -13419,162 +13365,28 @@
     - Danette
     - Gervais
     - Mousse lactée
-    - Dessert cream
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: cream-pot
-  category: dairy
-  names:
     - Crème dessert vanille
     - Crème dessert chocolat
     - Petit pot de crème
     - Crème dessert caramel
     - Cream pot
+    - Dessert cream
   local: true
   answers:
     - state: pasteurised
       verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Crème dessert : fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: faisselle-with-cream
-  category: dairy
-  names:
-    - Faisselle à la crème
-    - Faisselle au coulis
-    - Fromage blanc à la crème
-    - Fromage blanc au miel
-    - Faisselle with cream
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: quark
-  category: dairy
-  names:
-    - Séré
-    - Fromage blanc battu
-    - Fromage blanc lisse
-    - Quark
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: whipped-cream
-  category: dairy
-  names:
-    - Crème chantilly
-    - Crème fouettée
-    - Chantilly maison
-    - Whipped cream
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: double-cream
-  category: dairy
-  names:
-    - Crème fraîche épaisse
-    - Crème d'Isigny
-    - Crème fraîche d'Isigny
-    - Double cream
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: light-cream
-  category: dairy
-  names:
-    - Crème fleurette
-    - Crème entière liquide
-    - Light cream
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: sour-cream
-  category: dairy
-  names:
-    - Crème aigre
-    - Smetana
-    - Crème acidulée
-    - Sour cream
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: butter-salted
-  category: dairy
-  names:
-    - Beurre salé
-    - Beurre de baratte
-    - Beurre de Bretagne
-    - Butter salted
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
+      why: "Crème dessert : fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: raw-butter
   category: dairy
@@ -13585,15 +13397,14 @@
     - Raw butter
   local: true
   answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
     - state: unpasteurised
       verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: Le beurre cru (courant en Normandie) peut porter la listeria. Choisissez du beurre pasteurisé.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+  reviewed: 2026-11-14
 - id: ghee
   category: dairy
   names:
@@ -13603,35 +13414,15 @@
     - Ghee
   local: true
   answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: aerosol-cream
-  category: dairy
-  names:
-    - Crème en spray
-    - Crème en bombe
-    - Chantilly en bombe
-    - Aerosol cream
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+    - state: not_applicable
+      verdict: careful
+      why: Les sources ne citent pas le ghee (beurre clarifié). Demandez à votre sage-femme ; si vous en utilisez, choisissez-en un du commerce, fait avec du beurre pasteurisé.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+  reviewed: 2026-11-14
 - id: semolina-pudding
-  category: dairy
+  category: sweet
   names:
     - Semoule au lait
     - Pudding au lait
@@ -13639,34 +13430,12 @@
     - Semolina pudding
   local: true
   answers:
-    - state: pasteurised
+    - state: cooked
       verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: flavoured-milk
-  category: dairy
-  names:
-    - Lait aromatisé
-    - Lait chocolaté
-    - Lait fraise
-    - Lait vanille
-    - Flavoured milk
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: Le gâteau de semoule est du lait cuit avec de la semoule et du sucre. Il convient s'il est fait avec du lait pasteurisé et mangé frais avant la date.
+      sources:
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: farm-cream
   category: dairy
   names:
@@ -13678,163 +13447,21 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Crème de ferme : fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: milk-drink
-  category: dairy
-  names:
-    - Boisson lactée
-    - Boisson au lait
-    - Lait gélifié
-    - Lait battu
-    - Milk drink
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fromage-blanc-0
-  category: dairy
-  names:
-    - Fromage blanc maigre
-    - Fromage blanc 20%
-    - Fromage blanc nature
-    - Fromage blanc 0%
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Un fromage frais au lait pasteurisé est sans danger. Mangez-le avant la date indiquée sur l'emballage.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (ferme ou marché), il peut contenir la listeria. Choisissez-en un pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-  reviewed: 2026-11-13
-- id: petit-suisse
-  category: dairy
-  names:
-    - Petits suisses
-    - Gervais petit suisse
-    - Petit suisse aux fruits
-    - Petit Suisse
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Un fromage frais au lait pasteurisé est sans danger. Mangez-le avant la date indiquée sur l'emballage.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (ferme ou marché), il peut contenir la listeria. Choisissez-en un pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-  reviewed: 2026-11-13
-- id: labneh
-  category: dairy
-  names:
-    - Labné
-    - Fromage de yaourt
-    - Labneh libanais
-    - Labneh
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Un fromage frais au lait pasteurisé est sans danger. Mangez-le avant la date indiquée sur l'emballage.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (ferme ou marché), il peut contenir la listeria. Choisissez-en un pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-  reviewed: 2026-11-13
-- id: fresh-goat-spread
-  category: dairy
-  names:
-    - Chèvre frais à tartiner
-    - Fromage de chèvre frais
-    - Petit chèvre frais
-    - Fresh goat spread
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Un fromage frais au lait pasteurisé est sans danger. Mangez-le avant la date indiquée sur l'emballage.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Fait avec du lait cru (ferme ou marché), il peut contenir la listeria. Choisissez-en un pasteurisé.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-  reviewed: 2026-11-13
-- id: vanilla-ice-cream
-  category: dairy
-  names:
-    - Glace vanille
-    - Crème glacée vanille
-    - Glace à la vanille
-    - Glace vanille de Madagascar
-    - Vanilla ice cream
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Les glaces du commerce sont faites avec du lait pasteurisé et sont sans danger.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: raw
-      verdict: avoid
-      why: Une glace maison ou artisanale faite avec du lait cru ou de l'œuf cru peut contenir la listeria ou la salmonelle. Demandez comment elle est faite.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: chocolate-ice-cream
-  category: dairy
-  names:
-    - Glace chocolat
-    - Crème glacée chocolat
-    - Glace au chocolat
-    - Glace chocolat noir
-    - Chocolate ice cream
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Les glaces du commerce sont faites avec du lait pasteurisé et sont sans danger.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: raw
-      verdict: avoid
-      why: Une glace maison ou artisanale faite avec du lait cru ou de l'œuf cru peut contenir la listeria ou la salmonelle. Demandez comment elle est faite.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: pistachio-ice-cream
-  category: dairy
-  names:
-    - Glace pistache
-    - Glace à la pistache
-    - Glace pistache de Sicile
-    - Pistache
-    - Pistachio ice cream
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Les glaces du commerce sont faites avec du lait pasteurisé et sont sans danger.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: raw
-      verdict: avoid
-      why: Une glace maison ou artisanale faite avec du lait cru ou de l'œuf cru peut contenir la listeria ou la salmonelle. Demandez comment elle est faite.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
+      why: "Crème de ferme : fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fruit-sorbet
-  category: dairy
+  category: sweet
   names:
     - Sorbet fraise
     - Sorbet citron
@@ -13842,90 +13469,12 @@
     - Fruit sorbet
   local: true
   answers:
-    - state: pasteurised
+    - state: cooked
       verdict: ok
-      why: Les glaces du commerce sont faites avec du lait pasteurisé et sont sans danger.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: raw
-      verdict: avoid
-      why: Une glace maison ou artisanale faite avec du lait cru ou de l'œuf cru peut contenir la listeria ou la salmonelle. Demandez comment elle est faite.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: ice-cream-cone
-  category: dairy
-  names:
-    - Cornet de glace
-    - Cornet vanille
-    - Glace à l'italienne
-    - Ice cream cone
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Les glaces du commerce sont faites avec du lait pasteurisé et sont sans danger.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: raw
-      verdict: avoid
-      why: Une glace maison ou artisanale faite avec du lait cru ou de l'œuf cru peut contenir la listeria ou la salmonelle. Demandez comment elle est faite.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: ice-cream-sundae
-  category: dairy
-  names:
-    - Coupe glacée
-    - Café liégeois
-    - Dame blanche
-    - Profiterole glace
-    - Ice cream sundae
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Les glaces du commerce sont faites avec du lait pasteurisé et sont sans danger.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: raw
-      verdict: avoid
-      why: Une glace maison ou artisanale faite avec du lait cru ou de l'œuf cru peut contenir la listeria ou la salmonelle. Demandez comment elle est faite.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: ice-cream-bar
-  category: dairy
-  names:
-    - Esquimau
-    - Magnum
-    - Cornetto
-    - Bâtonnet glacé
-    - Ice cream bar
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Les glaces du commerce sont faites avec du lait pasteurisé et sont sans danger.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: raw
-      verdict: avoid
-      why: Une glace maison ou artisanale faite avec du lait cru ou de l'œuf cru peut contenir la listeria ou la salmonelle. Demandez comment elle est faite.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: ice-cream-tub
-  category: dairy
-  names:
-    - Pot de glace
-    - Ben & Jerry's
-    - Häagen-Dazs
-    - Glace en pot
-    - Ice cream tub
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Les glaces du commerce sont faites avec du lait pasteurisé et sont sans danger.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
-    - state: raw
-      verdict: avoid
-      why: Une glace maison ou artisanale faite avec du lait cru ou de l'œuf cru peut contenir la listeria ou la salmonelle. Demandez comment elle est faite.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
+      why: Le sorbet est fait de fruits, de sucre et d'eau, sans lait. Un sorbet du commerce convient.
+      sources:
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: frozen-yoghurt
   category: dairy
   names:
@@ -13937,12 +13486,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Les glaces du commerce sont faites avec du lait pasteurisé et sont sans danger.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Glace au yaourt : les glaces du commerce sont faites avec du lait pasteurisé et sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: raw
       verdict: avoid
-      why: Une glace maison ou artisanale faite avec du lait cru ou de l'œuf cru peut contenir la listeria ou la salmonelle. Demandez comment elle est faite.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
+      why: "Glace au yaourt : une glace maison ou artisanale faite avec du lait cru ou de l'œuf cru peut contenir la listeria ou la salmonelle. Demandez comment elle est faite."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: cassata
   category: dairy
@@ -13954,12 +13508,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Les glaces du commerce sont faites avec du lait pasteurisé et sont sans danger.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Cassata sicilienne : les glaces du commerce sont faites avec du lait pasteurisé et sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: raw
       verdict: avoid
-      why: Une glace maison ou artisanale faite avec du lait cru ou de l'œuf cru peut contenir la listeria ou la salmonelle. Demandez comment elle est faite.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
+      why: "Cassata sicilienne : une glace maison ou artisanale faite avec du lait cru ou de l'œuf cru peut contenir la listeria ou la salmonelle. Demandez comment elle est faite."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: baked-alaska
   category: dairy
@@ -13971,12 +13530,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Les glaces du commerce sont faites avec du lait pasteurisé et sont sans danger.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention ]
+      why: "Omelette norvégienne glacée : les glaces du commerce sont faites avec du lait pasteurisé et sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
     - state: raw
       verdict: avoid
-      why: Une glace maison ou artisanale faite avec du lait cru ou de l'œuf cru peut contenir la listeria ou la salmonelle. Demandez comment elle est faite.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-prevention, cdc-listeria-dairy ]
+      why: "Omelette norvégienne glacée : une glace maison ou artisanale faite avec du lait cru ou de l'œuf cru peut contenir la listeria ou la salmonelle. Demandez comment elle est faite."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: soy-yoghurt
   category: dairy
@@ -13990,8 +13554,10 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Les autorités françaises conseillent d'éviter par précaution les aliments et boissons à base de soja pendant la grossesse. Demandez à votre sage-femme.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Yaourt au soja : les autorités françaises conseillent d'éviter par précaution les aliments et boissons à base de soja pendant la grossesse. Demandez à votre sage-femme."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: soy-milk
   category: dairy
@@ -14000,27 +13566,19 @@
     - Boisson soja
     - Soja drink
     - Lait de soja vanille
+    - Crème de soja
+    - Crème soja
+    - Cuisine soja
+    - Soy cream
     - Soy milk
   local: true
   answers:
     - state: not_applicable
       verdict: careful
-      why: Les autorités françaises conseillent d'éviter par précaution les aliments et boissons à base de soja pendant la grossesse. Demandez à votre sage-femme.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: soy-cream
-  category: dairy
-  names:
-    - Crème de soja
-    - Crème soja
-    - Cuisine soja
-    - Soy cream
-  local: true
-  answers:
-    - state: not_applicable
-      verdict: careful
-      why: Les autorités françaises conseillent d'éviter par précaution les aliments et boissons à base de soja pendant la grossesse. Demandez à votre sage-femme.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Lait de soja : les autorités françaises conseillent d'éviter par précaution les aliments et boissons à base de soja pendant la grossesse. Demandez à votre sage-femme."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: tofu-cheese
   category: dairy
@@ -14034,8 +13592,10 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Les autorités françaises conseillent d'éviter par précaution les aliments et boissons à base de soja pendant la grossesse. Demandez à votre sage-femme.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Fromage de soja : les autorités françaises conseillent d'éviter par précaution les aliments et boissons à base de soja pendant la grossesse. Demandez à votre sage-femme."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: brie-de-melun
   category: cheese
