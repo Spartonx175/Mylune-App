@@ -13,12 +13,28 @@
     - Rumsteck
     - Côte de bœuf
     - Rosbif
+    - Aloyau
+    - Contrefilet
+    - Beef sirloin
+    - T-bone
+    - Porterhouse
+    - T-bone steak
+    - Steak saignant
+    - Bifteck saignant
+    - Bavette saignante
+    - Entrecôte bleue
+    - Steak bleu
+    - Rare steak
+    - Bœuf saisi
+    - Bœuf mi-cuit
+    - Pavé de bœuf mi-cuit
+    - Seared beef
     - Beef steak
   local: true
   answers:
     - state: undercooked
       verdict: avoid
-      why: "La viande de bœuf saignante ou à point peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée contre la toxoplasmose, faites-la cuire jusqu'à ce qu'elle ne soit plus rose à l'intérieur."
+      why: La viande de bœuf saignante ou à point peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée contre la toxoplasmose, faites-la cuire jusqu'à ce qu'elle ne soit plus rose à l'intérieur.
       sources:
         - ameli-toxo-prevention
         - mangerbouger-aliments-eviter
@@ -64,13 +80,32 @@
     - Bœuf cru
     - Filet américain
     - Raw beef
+    - Tartare de veau
+    - Tartare de veau cru
+    - Veal tartare
+    - Tartare d'agneau
+    - Kibbeh nayeh
+    - Kebbé cru
+    - Lamb tartare
+    - Tartare de cheval
+    - Cheval cru
+    - Horse tartare
+    - Tartare à l'italienne
+    - Tartare à cheval
+    - Tartare provençale
+    - Steak tartare à l'italienne
+    - Assiette de viande crue
+    - Viande des Grisons crue
+    - Cheval carpaccio
+    - Raw meat platter
     - Steak tartare
-  tips: [avoid]
+  tips:
+    - avoid
   local: true
   answers:
     - state: raw
       verdict: avoid
-      why: "Le bœuf cru peut contenir le parasite de la toxoplasmose et d'autres microbes. C'est un non ferme, même dans un bon restaurant."
+      why: Le bœuf cru peut contenir le parasite de la toxoplasmose et d'autres microbes. C'est un non ferme, même dans un bon restaurant.
       sources:
         - ameli-aliments-eviter
         - ameli-toxo-prevention
@@ -85,8 +120,13 @@
     - Bresaola fraîche
     - Tranches de bœuf cru
     - Raw beef slices
+    - Pizza au bœuf cru
+    - Carpaccio sur pizza
+    - Carpaccio de veau
+    - Raw beef pizza
     - Beef carpaccio
-  tips: [avoid]
+  tips:
+    - avoid
   local: true
   answers:
     - state: raw
@@ -106,19 +146,27 @@
     - Côtelettes d'agneau
     - Mouton
     - Souris d'agneau
+    - Agneau rosé
+    - Gigot rosé
+    - Agneau saignant
+    - Pink lamb
+    - Gigot d'agneau rosé
+    - Carré d'agneau rosé
+    - Côtelettes rosées
+    - Rare lamb
     - Lamb
   local: true
   answers:
     - state: undercooked
       verdict: avoid
-      why: "L'agneau rosé ou saignant est une source connue du parasite de la toxoplasmose. Faites-le cuire jusqu'à ce qu'il n'y ait plus aucune trace de rose."
+      why: L'agneau rosé ou saignant est une source connue du parasite de la toxoplasmose. Faites-le cuire jusqu'à ce qu'il n'y ait plus aucune trace de rose.
       sources:
         - ameli-toxo-prevention
         - nhs-toxoplasmosis
         - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: "L'agneau bien cuit est sans danger."
+      why: L'agneau bien cuit est sans danger.
       sources:
         - ameli-toxo-prevention
         - nhs-foods-to-avoid
@@ -132,19 +180,23 @@
     - Rôti de porc
     - Travers
     - Échine
+    - Porc rosé
+    - Côte de porc rosée
+    - Filet mignon rosé
+    - Pink pork
     - Pork
   local: true
   answers:
     - state: undercooked
       verdict: avoid
-      why: "Le porc rosé peut transmettre le parasite de la toxoplasmose et d'autres microbes. Faites-le cuire à cœur, jusqu'à ce que le jus soit clair."
+      why: Le porc rosé peut transmettre le parasite de la toxoplasmose et d'autres microbes. Faites-le cuire à cœur, jusqu'à ce que le jus soit clair.
       sources:
         - ameli-toxo-prevention
         - nhs-toxoplasmosis
         - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: "Le porc bien cuit, sans rose, est sans danger."
+      why: Le porc bien cuit, sans rose, est sans danger.
       sources:
         - ameli-toxo-prevention
         - nhs-foods-to-avoid
@@ -160,20 +212,25 @@
     - Volaille
     - Escalope
     - Turkey
+    - Poulet fermier
+    - Poulet Label Rouge
+    - Poulet de Bresse
+    - Free-range Label Rouge chicken
     - Chicken
-  tips: [best]
+  tips:
+    - best
   local: true
   answers:
     - state: undercooked
       verdict: avoid
-      why: "La volaille rosée ou pas assez cuite peut transmettre la salmonelle et le parasite de la toxoplasmose. Faites-la cuire jusqu'à ce qu'il n'y ait plus de rose et que le jus soit clair."
+      why: La volaille rosée ou pas assez cuite peut transmettre la salmonelle et le parasite de la toxoplasmose. Faites-la cuire jusqu'à ce qu'il n'y ait plus de rose et que le jus soit clair.
       sources:
         - ameli-toxo-prevention
         - nhs-foods-to-avoid
         - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: "Le poulet ou la dinde bien cuits sont sans danger. Le poulet rôti acheté chaud est acceptable s'il est mangé le jour même ou réchauffé jusqu'à ce qu'il fume."
+      why: Le poulet ou la dinde bien cuits sont sans danger. Le poulet rôti acheté chaud est acceptable s'il est mangé le jour même ou réchauffé jusqu'à ce qu'il fume.
       sources:
         - ameli-toxo-prevention
         - nhs-foods-to-avoid
@@ -187,6 +244,10 @@
     - Confit de canard
     - Cuisse de canard
     - Duck breast
+    - Magret rosé
+    - Magret saignant
+    - Magret mi-cuit
+    - Rare duck breast
     - Duck
   local: true
   answers:
@@ -199,13 +260,13 @@
         - cdc-toxo-prevention
     - state: cooked
       verdict: ok
-      why: "Le canard bien cuit est sans danger, y compris le confit réchauffé jusqu'à ce qu'il fume."
+      why: Le canard bien cuit est sans danger, y compris le confit réchauffé jusqu'à ce qu'il fume.
       sources:
         - ameli-toxo-prevention
         - nhs-foods-to-avoid
     - state: cured
       verdict: avoid
-      why: "Le magret séché ou fumé se mange sans cuisson. Il peut transmettre la toxoplasmose et la listéria."
+      why: Le magret séché ou fumé se mange sans cuisson. Il peut transmettre la toxoplasmose et la listéria.
       sources:
         - ameli-toxo-prevention
         - mangerbouger-aliments-eviter
@@ -250,18 +311,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "Le gibier rosé peut transmettre le parasite de la toxoplasmose. Le gibier fumé, mariné ou grillé n'est sans danger que s'il est bien cuit à cœur."
+      why: "Gibier : le gibier rosé peut porter le parasite de la toxoplasmose. Le gibier fumé, mariné ou grillé n'est sûr que s'il est cuit à cœur."
       sources:
         - ameli-toxo-prevention
         - mangerbouger-aliments-eviter
-        - nhs-toxoplasmosis
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
-      why: "Le gibier bien cuit évite le risque de toxoplasmose. Le NHS britannique demande aussi aux femmes enceintes d'éviter le gibier à plumes, à cause du plomb des plombs de chasse : gardez-le donc pour de rares occasions."
+      why: "Gibier : cuit à cœur, il évite le risque de toxoplasmose. Le NHS conseille d'éviter pendant la grossesse le gibier comme l'oie, la perdrix, le faisan et le cerf, à cause du plomb de chasse. Demandez à votre sage-femme."
       sources:
         - nhs-foods-to-avoid
         - ameli-toxo-prevention
-  reviewed: 2026-11-13
+  reviewed: 2026-11-14
 - id: kebab
   category: meat
   names:
@@ -383,19 +444,23 @@
     - Burger restaurant
     - Burger de fast-food
     - Fast food burger
+    - Burger à point
+    - Burger saignant
+    - Hamburger à point
+    - Medium-rare burger
     - Burger
   local: true
   answers:
     - state: undercooked
       verdict: avoid
-      why: "Un burger rosé est de la viande hachée encore crue au centre. Demandez-le bien cuit."
+      why: Un burger rosé est de la viande hachée encore crue au centre. Demandez-le bien cuit.
       sources:
         - ameli-aliments-eviter
         - ameli-toxo-prevention
         - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: "Un burger bien cuit est acceptable. Évitez les garnitures crues si vous ne savez pas comment elles ont été lavées."
+      why: Un burger bien cuit est acceptable. Évitez les garnitures crues si vous ne savez pas comment elles ont été lavées.
       sources:
         - ameli-toxo-prevention
         - nhs-foods-to-avoid
@@ -4042,12 +4107,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Filet de bœuf : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Filet de bœuf : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: hanger-steak
   category: meat
@@ -4059,12 +4129,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Onglet : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Onglet : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: skirt-steak
   category: meat
@@ -4076,12 +4151,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Hampe : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Hampe : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-round-steak
   category: meat
@@ -4093,46 +4173,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Rond de gîte : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: beef-sirloin
-  category: meat
-  names:
-    - Aloyau
-    - Contrefilet
-    - Beef sirloin
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
-    - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: t-bone-steak
-  category: meat
-  names:
-    - T-bone
-    - Porterhouse
-    - T-bone steak
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
-    - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Rond de gîte : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-roast
   category: meat
@@ -4144,12 +4195,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Rôti de bœuf : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Rôti de bœuf : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-ribs
   category: meat
@@ -4162,12 +4218,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Côtes de bœuf : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Côtes de bœuf : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-brisket
   category: meat
@@ -4179,12 +4240,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Poitrine de bœuf : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Poitrine de bœuf : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: veal-roast
   category: meat
@@ -4196,12 +4262,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Rôti de veau : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Rôti de veau : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: veal-escalope
   category: meat
@@ -4212,12 +4283,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Escalope de veau : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Escalope de veau : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: veal-chop
   category: meat
@@ -4228,12 +4304,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Côte de veau : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Côte de veau : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: veal-shank
   category: meat
@@ -4244,12 +4325,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Jarret de veau : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Jarret de veau : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: veal-paupiette
   category: meat
@@ -4261,12 +4347,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Paupiette de veau : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Paupiette de veau : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: veal-fillet
   category: meat
@@ -4278,12 +4369,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Filet mignon de veau : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Filet mignon de veau : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: lamb-rack
   category: meat
@@ -4295,12 +4391,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Carré d'agneau : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Carré d'agneau : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: lamb-shoulder
   category: meat
@@ -4311,12 +4412,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Épaule d'agneau : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Épaule d'agneau : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: lamb-saddle
   category: meat
@@ -4327,12 +4433,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Selle d'agneau : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Selle d'agneau : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: lamb-skewers
   category: meat
@@ -4343,13 +4454,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Brochettes d'agneau : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Brochettes d'agneau : la viande grillée, au barbecue ou marinée peut sembler cuite dehors et rester rose à cœur. Ameli conseille de s'en méfier. Coupez-la : elle doit être cuite à cœur, sans rose. Demandez à votre sage-femme au moindre doute."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: lamb-chops
   category: meat
   names:
@@ -4360,12 +4476,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Côtes d'agneau : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Côtes d'agneau : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pork-tenderloin
   category: meat
@@ -4377,12 +4498,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Filet de porc : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Filet de porc : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pork-belly
   category: meat
@@ -4394,12 +4520,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Poitrine de porc : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Poitrine de porc : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pork-shoulder
   category: meat
@@ -4411,12 +4542,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Palette de porc : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Palette de porc : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pork-loin
   category: meat
@@ -4428,12 +4564,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Carré de porc : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Carré de porc : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pork-spare-ribs
   category: meat
@@ -4446,12 +4587,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Travers de porc : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Travers de porc : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pork-skewers
   category: meat
@@ -4462,13 +4608,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Brochettes de porc : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Brochettes de porc : la viande grillée, au barbecue ou marinée peut sembler cuite dehors et rester rose à cœur. Ameli conseille de s'en méfier. Coupez-la : elle doit être cuite à cœur, sans rose. Demandez à votre sage-femme au moindre doute."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: porchetta
   category: meat
   names:
@@ -4478,12 +4629,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Rôti de porc italien : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Rôti de porc italien : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pulled-pork
   category: meat
@@ -4494,12 +4650,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Effiloché de porc : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Effiloché de porc : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: char-siu-pork
   category: meat
@@ -4512,13 +4673,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Porc laqué : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Porc laqué : la viande grillée, au barbecue ou marinée peut sembler cuite dehors et rester rose à cœur. Ameli conseille de s'en méfier. Coupez-la : elle doit être cuite à cœur, sans rose. Demandez à votre sage-femme au moindre doute."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: roast-chicken-thighs
   category: meat
   names:
@@ -4529,12 +4695,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Cuisses de poulet : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Cuisses de poulet : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-wings
   category: meat
@@ -4546,12 +4717,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Ailes de poulet : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Ailes de poulet : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-drumsticks
   category: meat
@@ -4563,12 +4739,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Pilons de poulet : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Pilons de poulet : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-breast
   category: meat
@@ -4581,12 +4762,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Blanc de poulet : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Blanc de poulet : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-skewers
   category: meat
@@ -4598,13 +4784,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Brochettes de poulet : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Brochettes de poulet : la viande grillée, au barbecue ou marinée peut sembler cuite dehors et rester rose à cœur. Ameli conseille de s'en méfier. Coupez-la : elle doit être cuite à cœur, sans rose. Demandez à votre sage-femme au moindre doute."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: roast-turkey
   category: meat
   names:
@@ -4616,12 +4807,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Dinde rôtie : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Dinde rôtie : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: turkey-escalope
   category: meat
@@ -4633,12 +4829,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Escalope de dinde : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Escalope de dinde : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: guinea-fowl
   category: meat
@@ -4650,12 +4851,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Pintade rôtie : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Pintade rôtie : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: capon
   category: meat
@@ -4667,30 +4873,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Chapon : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: free-range-label-rouge-chicken
-  category: meat
-  names:
-    - Poulet fermier
-    - Poulet Label Rouge
-    - Poulet de Bresse
-    - Free-range Label Rouge chicken
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
-    - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Chapon : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: rotisserie-chicken
   category: meat
@@ -4703,12 +4896,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Poulet rôti du marché : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Poulet rôti du marché : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: duck-leg
   category: meat
@@ -4719,12 +4917,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Canard rôti : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Canard rôti : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: peking-duck
   category: meat
@@ -4736,12 +4939,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Canard laqué : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Canard laqué : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: goose
   category: meat
@@ -4754,13 +4962,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Oie rôtie : le gibier rosé peut porter le parasite de la toxoplasmose. Le gibier fumé, mariné ou grillé n'est sûr que s'il est cuit à cœur."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Oie rôtie : cuit à cœur, il évite le risque de toxoplasmose. Le NHS conseille d'éviter pendant la grossesse le gibier comme l'oie, la perdrix, le faisan et le cerf, à cause du plomb de chasse. Demandez à votre sage-femme."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: quail
   category: meat
   names:
@@ -4771,12 +4984,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Caille : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Caille : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pigeon
   category: meat
@@ -4788,12 +5006,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Pigeonneau : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Pigeonneau : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: venison-steak
   category: meat
@@ -4806,13 +5029,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Steak de cerf : le gibier rosé peut porter le parasite de la toxoplasmose. Le gibier fumé, mariné ou grillé n'est sûr que s'il est cuit à cœur."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Steak de cerf : cuit à cœur, il évite le risque de toxoplasmose. Le NHS conseille d'éviter pendant la grossesse le gibier comme l'oie, la perdrix, le faisan et le cerf, à cause du plomb de chasse. Demandez à votre sage-femme."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: wild-boar
   category: meat
   names:
@@ -4823,13 +5051,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Marcassin : le gibier rosé peut porter le parasite de la toxoplasmose. Le gibier fumé, mariné ou grillé n'est sûr que s'il est cuit à cœur."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Marcassin : cuit à cœur, il évite le risque de toxoplasmose. Le NHS conseille d'éviter pendant la grossesse le gibier comme l'oie, la perdrix, le faisan et le cerf, à cause du plomb de chasse. Demandez à votre sage-femme."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: wild-duck
   category: meat
   names:
@@ -4840,13 +5073,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Canard sauvage : le gibier rosé peut porter le parasite de la toxoplasmose. Le gibier fumé, mariné ou grillé n'est sûr que s'il est cuit à cœur."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Canard sauvage : cuit à cœur, il évite le risque de toxoplasmose. Le NHS conseille d'éviter pendant la grossesse le gibier comme l'oie, la perdrix, le faisan et le cerf, à cause du plomb de chasse. Demandez à votre sage-femme."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: frog-legs
   category: meat
   names:
@@ -4855,32 +5093,33 @@
     - Frog legs
   local: true
   answers:
-    - state: undercooked
-      verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
     - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Cuisses de grenouille : les sources ne citent pas cet aliment. S'il est au menu, qu'il soit cuit à cœur, sans trace rose, comme toute viande. Demandez d'abord à votre sage-femme."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: snails
   category: meat
   names:
     - Escargots de Bourgogne
     - Escargots au beurre persillé
+    - Escargots de Bourgogne cuits
+    - Escargots persillés
+    - Escargots à l'ail
+    - Douzaine d'escargots
+    - Snails cooked
     - Snails
   local: true
   answers:
-    - state: undercooked
-      verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
     - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Escargots de Bourgogne : les sources ne citent pas cet aliment. S'il est au menu, qu'il soit cuit à cœur, sans trace rose, comme toute viande. Demandez d'abord à votre sage-femme."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: kidneys
   category: meat
   names:
@@ -4892,12 +5131,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Rognons : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Rognons : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: sweetbreads
   category: meat
@@ -4909,12 +5153,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Ris de veau : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Ris de veau : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: tripe
   category: meat
@@ -4927,12 +5176,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Tripes : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Tripes : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: ox-tongue
   category: meat
@@ -4944,12 +5198,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Langue de bœuf : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Langue de bœuf : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: brain
   category: meat
@@ -4959,15 +5218,13 @@
     - Brain
   local: true
   answers:
-    - state: undercooked
-      verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
     - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Cervelle : les sources ne citent pas cet aliment. S'il est au menu, qu'il soit cuit à cœur, sans trace rose, comme toute viande. Demandez d'abord à votre sage-femme."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: veal-head
   category: meat
   names:
@@ -4978,12 +5235,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Tête de veau : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Tête de veau : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pig-s-trotters
   category: meat
@@ -4995,12 +5257,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Pieds paquets : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Pieds paquets : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-heart
   category: meat
@@ -5012,12 +5279,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Cœur de bœuf : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Cœur de bœuf : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: oxtail
   category: meat
@@ -5029,12 +5301,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Queue de bœuf : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Queue de bœuf : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: barbecue-grilled-meat
   category: meat
@@ -5048,13 +5325,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Grillades : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Grillades : la viande grillée, au barbecue ou marinée peut sembler cuite dehors et rester rose à cœur. Ameli conseille de s'en méfier. Coupez-la : elle doit être cuite à cœur, sans rose. Demandez à votre sage-femme au moindre doute."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: mixed-grill
   category: meat
   names:
@@ -5065,13 +5347,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Assiette de grillades : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Assiette de grillades : la viande grillée, au barbecue ou marinée peut sembler cuite dehors et rester rose à cœur. Ameli conseille de s'en méfier. Coupez-la : elle doit être cuite à cœur, sans rose. Demandez à votre sage-femme au moindre doute."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: steak-frites
   category: meat
   names:
@@ -5082,12 +5369,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Entrecôte frites : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Entrecôte frites : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-stir-fry
   category: meat
@@ -5100,12 +5392,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Bœuf sauté : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Bœuf sauté : cuite à cœur, sans rose ni jus rosé, la viande est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-bulgogi
   category: meat
@@ -5117,13 +5414,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Bulgogi : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Bulgogi : la viande grillée, au barbecue ou marinée peut sembler cuite dehors et rester rose à cœur. Ameli conseille de s'en méfier. Coupez-la : elle doit être cuite à cœur, sans rose. Demandez à votre sage-femme au moindre doute."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: souvlaki
   category: meat
   names:
@@ -5133,13 +5435,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Brochette grecque : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Brochette grecque : la viande grillée, au barbecue ou marinée peut sembler cuite dehors et rester rose à cœur. Ameli conseille de s'en méfier. Coupez-la : elle doit être cuite à cœur, sans rose. Demandez à votre sage-femme au moindre doute."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: tandoori-chicken
   category: meat
   names:
@@ -5151,13 +5458,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Poulet tandoori : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Poulet tandoori : la viande grillée, au barbecue ou marinée peut sembler cuite dehors et rester rose à cœur. Ameli conseille de s'en méfier. Coupez-la : elle doit être cuite à cœur, sans rose. Demandez à votre sage-femme au moindre doute."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: teriyaki-chicken
   category: meat
   names:
@@ -5168,13 +5480,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Poulet teriyaki : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Poulet teriyaki : la viande grillée, au barbecue ou marinée peut sembler cuite dehors et rester rose à cœur. Ameli conseille de s'en méfier. Coupez-la : elle doit être cuite à cœur, sans rose. Demandez à votre sage-femme au moindre doute."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: satay-skewers
   category: meat
   names:
@@ -5186,13 +5503,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Brochettes satay : servie saignante ou rosée, la viande peut contenir le parasite de la toxoplasmose. Si vous n'êtes pas immunisée, faites-la cuire à cœur, sans trace de rose."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cuite à cœur, sans rose ni jus rosé, la viande est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Brochettes satay : la viande grillée, au barbecue ou marinée peut sembler cuite dehors et rester rose à cœur. Ameli conseille de s'en méfier. Coupez-la : elle doit être cuite à cœur, sans rose. Demandez à votre sage-femme au moindre doute."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: fried-chicken
   category: meat
   names:
@@ -5205,12 +5527,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: La volaille pas assez cuite peut contenir la salmonelle et le parasite de la toxoplasmose. Faites-la cuire à cœur, jusqu'à ce que le jus soit clair.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Poulet frit : la volaille pas assez cuite peut contenir la salmonelle et le parasite de la toxoplasmose. Faites-la cuire à cœur, jusqu'à ce que le jus soit clair."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose, la volaille est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Poulet frit : cuite à cœur, sans rose, la volaille est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-nuggets
   category: meat
@@ -5223,12 +5550,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: La volaille pas assez cuite peut contenir la salmonelle et le parasite de la toxoplasmose. Faites-la cuire à cœur, jusqu'à ce que le jus soit clair.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Nuggets de poulet : la volaille pas assez cuite peut contenir la salmonelle et le parasite de la toxoplasmose. Faites-la cuire à cœur, jusqu'à ce que le jus soit clair."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose, la volaille est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Nuggets de poulet : cuite à cœur, sans rose, la volaille est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-tenders
   category: meat
@@ -5241,12 +5573,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: La volaille pas assez cuite peut contenir la salmonelle et le parasite de la toxoplasmose. Faites-la cuire à cœur, jusqu'à ce que le jus soit clair.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Tenders : la volaille pas assez cuite peut contenir la salmonelle et le parasite de la toxoplasmose. Faites-la cuire à cœur, jusqu'à ce que le jus soit clair."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose, la volaille est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Tenders : cuite à cœur, sans rose, la volaille est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-cordon-bleu
   category: meat
@@ -5258,12 +5595,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: La volaille pas assez cuite peut contenir la salmonelle et le parasite de la toxoplasmose. Faites-la cuire à cœur, jusqu'à ce que le jus soit clair.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cordon bleu : la volaille pas assez cuite peut contenir la salmonelle et le parasite de la toxoplasmose. Faites-la cuire à cœur, jusqu'à ce que le jus soit clair."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose, la volaille est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Cordon bleu : cuite à cœur, sans rose, la volaille est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: breaded-escalope
   category: meat
@@ -5277,12 +5619,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: La volaille pas assez cuite peut contenir la salmonelle et le parasite de la toxoplasmose. Faites-la cuire à cœur, jusqu'à ce que le jus soit clair.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Escalope panée : la volaille pas assez cuite peut contenir la salmonelle et le parasite de la toxoplasmose. Faites-la cuire à cœur, jusqu'à ce que le jus soit clair."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose, la volaille est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Escalope panée : cuite à cœur, sans rose, la volaille est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: meatballs
   category: meat
@@ -5295,12 +5642,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "La viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Boulettes de viande : la viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose, la viande hachée est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Boulettes de viande : cuite à cœur, sans rose, la viande hachée est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: kefta
   category: meat
@@ -5313,12 +5666,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "La viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Kofta : la viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose, la viande hachée est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Kofta : cuite à cœur, sans rose, la viande hachée est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: stuffed-tomatoes
   category: meat
@@ -5332,12 +5691,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "La viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Tomates farcies : la viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose, la viande hachée est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Tomates farcies : cuite à cœur, sans rose, la viande hachée est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: minced-meat-sauce
   category: meat
@@ -5350,12 +5715,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "La viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Sauce bolognaise : la viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose, la viande hachée est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Sauce bolognaise : cuite à cœur, sans rose, la viande hachée est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: chili-con-carne
   category: meat
@@ -5366,12 +5737,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "La viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Chili : la viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose, la viande hachée est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Chili : cuite à cœur, sans rose, la viande hachée est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: frozen-beef-patty
   category: meat
@@ -5384,12 +5761,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "La viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Steak haché surgelé : la viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose, la viande hachée est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Steak haché surgelé : cuite à cœur, sans rose, la viande hachée est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: sausage-meat
   category: meat
@@ -5403,12 +5786,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "La viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Chair à saucisse : la viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose, la viande hachée est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Chair à saucisse : cuite à cœur, sans rose, la viande hachée est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: meat-loaf
   category: meat
@@ -5420,12 +5809,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "La viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Pain de viande : la viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose, la viande hachée est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Pain de viande : cuite à cœur, sans rose, la viande hachée est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: taco-meat
   category: meat
@@ -5438,12 +5833,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "La viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Viande à tacos : la viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose, la viande hachée est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Viande à tacos : cuite à cœur, sans rose, la viande hachée est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: beef-samosa
   category: meat
@@ -5456,12 +5857,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "La viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Samossa à la viande : la viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose, la viande hachée est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Samossa à la viande : cuite à cœur, sans rose, la viande hachée est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: dumplings-meat
   category: meat
@@ -5475,12 +5882,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "La viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Raviolis chinois : la viande hachée encore rose est risquée : les germes de la surface sont mélangés partout, et le parasite de la toxoplasmose survit si le centre est encore rose."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuite à cœur, sans rose, la viande hachée est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Raviolis chinois : cuite à cœur, sans rose, la viande hachée est sans danger."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: pot-au-feu
   category: meat
@@ -5492,8 +5905,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Bouilli de bœuf : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-cheek
   category: meat
@@ -5505,8 +5920,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Joue de bœuf : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-chuck-stew
   category: meat
@@ -5519,8 +5936,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Paleron braisé : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-carrots-stew
   category: meat
@@ -5533,8 +5952,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Bœuf aux carottes : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: blanquette-of-veal
   category: meat
@@ -5545,10 +5966,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Blanquette de veau : mijoté jusqu'à être tendre, le plat est bien cuit. Mais cette recette classique se fait souvent au vin ou à la bière, et un peu d'alcool reste même après une longue cuisson. Demandez comment il est préparé, ou choisissez un autre plat."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: osso-buco
   category: meat
   names:
@@ -5557,10 +5981,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Osso bucco : mijoté jusqu'à être tendre, le plat est bien cuit. Mais cette recette classique se fait souvent au vin ou à la bière, et un peu d'alcool reste même après une longue cuisson. Demandez comment il est préparé, ou choisissez un autre plat."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: lamb-navarin
   category: meat
   names:
@@ -5570,10 +5997,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Navarin d'agneau : mijoté jusqu'à être tendre, le plat est bien cuit. Mais cette recette classique se fait souvent au vin ou à la bière, et un peu d'alcool reste même après une longue cuisson. Demandez comment il est préparé, ou choisissez un autre plat."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: lamb-tagine
   category: meat
   names:
@@ -5584,8 +6014,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Tajine d'agneau : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: seven-hour-lamb
   category: meat
@@ -5597,8 +6029,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Agneau de sept heures : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: lamb-shank
   category: meat
@@ -5610,8 +6044,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Souris d'agneau braisée : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-tagine
   category: meat
@@ -5623,8 +6059,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Tajine de poulet : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-basquaise
   category: meat
@@ -5635,10 +6073,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Poulet basquaise : mijoté jusqu'à être tendre, le plat est bien cuit. Mais cette recette classique se fait souvent au vin ou à la bière, et un peu d'alcool reste même après une longue cuisson. Demandez comment il est préparé, ou choisissez un autre plat."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: poule-au-pot
   category: meat
   names:
@@ -5648,8 +6089,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Poule au pot du Béarn : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-curry
   category: meat
@@ -5662,8 +6105,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Curry de poulet : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-yassa
   category: meat
@@ -5675,8 +6120,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Poulet yassa : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-marengo
   category: meat
@@ -5688,10 +6135,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Poulet Marengo : mijoté jusqu'à être tendre, le plat est bien cuit. Mais cette recette classique se fait souvent au vin ou à la bière, et un peu d'alcool reste même après une longue cuisson. Demandez comment il est préparé, ou choisissez un autre plat."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: pork-stew
   category: meat
   names:
@@ -5703,8 +6153,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Sauté de porc : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pork-with-lentils
   category: meat
@@ -5716,8 +6168,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Petit salé aux lentilles : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: cassoulet
   category: meat
@@ -5729,8 +6183,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Cassoulet de Toulouse : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: choucroute-garnie
   category: meat
@@ -5741,10 +6197,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Choucroute : mijoté jusqu'à être tendre, le plat est bien cuit. Mais cette recette classique se fait souvent au vin ou à la bière, et un peu d'alcool reste même après une longue cuisson. Demandez comment il est préparé, ou choisissez un autre plat."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: rabbit-stew
   category: meat
   names:
@@ -5755,10 +6214,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Lapin chasseur : mijoté jusqu'à être tendre, le plat est bien cuit. Mais cette recette classique se fait souvent au vin ou à la bière, et un peu d'alcool reste même après une longue cuisson. Demandez comment il est préparé, ou choisissez un autre plat."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: venison-stew
   category: meat
   names:
@@ -5768,25 +6230,20 @@
     - Venison stew
   local: true
   answers:
+    - state: undercooked
+      verdict: avoid
+      why: "Civet de cerf : le gibier rosé peut porter le parasite de la toxoplasmose. Le gibier fumé, mariné ou grillé n'est sûr que s'il est cuit à cœur."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
-      verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: hotpot
-  category: meat
-  names:
-    - Potée
-    - Potée auvergnate
-    - Potée lorraine
-    - Hotpot
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Civet de cerf : cuit à cœur, il évite le risque de toxoplasmose. Le NHS conseille d'éviter pendant la grossesse le gibier comme l'oie, la perdrix, le faisan et le cerf, à cause du plomb de chasse. Demandez à votre sage-femme."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: couscous-meat
   category: meat
   names:
@@ -5798,8 +6255,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Couscous viande : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-stew-with-beans
   category: meat
@@ -5811,8 +6270,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Feijoada : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: moussaka
   category: meat
@@ -5823,8 +6284,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Moussaka grecque : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: rendang
   category: meat
@@ -5835,8 +6298,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Bœuf rendang : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: veal-marengo
   category: meat
@@ -5847,10 +6312,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Sauté de veau Marengo : mijoté jusqu'à être tendre, le plat est bien cuit. Mais cette recette classique se fait souvent au vin ou à la bière, et un peu d'alcool reste même après une longue cuisson. Demandez comment il est préparé, ou choisissez un autre plat."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: lamb-curry
   category: meat
   names:
@@ -5862,8 +6330,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Curry d'agneau : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: poulet-moambe
   category: meat
@@ -5876,8 +6346,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Poulet DG : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: mutton-stew
   category: meat
@@ -5885,25 +6357,43 @@
     - Ragoût de mouton
     - Haricot de mouton
     - Navarin de mouton
+    - Potée
+    - Potée auvergnate
+    - Potée lorraine
+    - Hotpot
     - Mutton stew
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: "Ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Ragoût de mouton : ce plat est mijoté longtemps, jusqu'à ce que la viande soit tendre à cœur : il est sans danger. Mangez-le bien chaud, ou réchauffez-le jusqu'à ce qu'il soit fumant."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-bourguignon
   category: meat
   names:
     - Bourguignon
+    - Bœuf mode
+    - Bœuf en daube au vin
+    - Bœuf au vin
+    - Beef in wine
+    - Sauce au vin rouge
+    - Sauce bordelaise
+    - Entrecôte sauce bordelaise
+    - Sauce marchand de vin
+    - Wine sauce meat
     - Beef bourguignon
   local: true
   answers:
     - state: cooked
       verdict: avoid
-      why: La viande est cuite à cœur, mais la sauce contient du vin, de la bière ou un alcool fort, et il en reste même après une longue cuisson. Demandez une version sans alcool, ou choisissez un autre plat.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Bourguignon : la viande est cuite à cœur, mais la sauce contient du vin, de la bière ou un alcool fort, et il en reste même après une longue cuisson. Demandez une version sans alcool, ou choisissez un autre plat."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: daube
   category: meat
@@ -5916,8 +6406,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: La viande est cuite à cœur, mais la sauce contient du vin, de la bière ou un alcool fort, et il en reste même après une longue cuisson. Demandez une version sans alcool, ou choisissez un autre plat.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Daube provençale : la viande est cuite à cœur, mais la sauce contient du vin, de la bière ou un alcool fort, et il en reste même après une longue cuisson. Demandez une version sans alcool, ou choisissez un autre plat."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: beer-beef-stew
   category: meat
@@ -5929,22 +6422,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: La viande est cuite à cœur, mais la sauce contient du vin, de la bière ou un alcool fort, et il en reste même après une longue cuisson. Demandez une version sans alcool, ou choisissez un autre plat.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
-  reviewed: 2026-11-13
-- id: beef-in-wine
-  category: meat
-  names:
-    - Bœuf mode
-    - Bœuf en daube au vin
-    - Bœuf au vin
-    - Beef in wine
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: La viande est cuite à cœur, mais la sauce contient du vin, de la bière ou un alcool fort, et il en reste même après une longue cuisson. Demandez une version sans alcool, ou choisissez un autre plat.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Carbonnade flamande : la viande est cuite à cœur, mais la sauce contient du vin, de la bière ou un alcool fort, et il en reste même après une longue cuisson. Demandez une version sans alcool, ou choisissez un autre plat."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: flambeed-steak
   category: meat
@@ -5957,8 +6439,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: La viande est cuite à cœur, mais la sauce contient du vin, de la bière ou un alcool fort, et il en reste même après une longue cuisson. Demandez une version sans alcool, ou choisissez un autre plat.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Steak au poivre flambé : la viande est cuite à cœur, mais la sauce contient du vin, de la bière ou un alcool fort, et il en reste même après une longue cuisson. Demandez une version sans alcool, ou choisissez un autre plat."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: chicken-in-beer
   category: meat
@@ -5970,8 +6455,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: La viande est cuite à cœur, mais la sauce contient du vin, de la bière ou un alcool fort, et il en reste même après une longue cuisson. Demandez une version sans alcool, ou choisissez un autre plat.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Poulet au cidre : la viande est cuite à cœur, mais la sauce contient du vin, de la bière ou un alcool fort, et il en reste même après une longue cuisson. Demandez une version sans alcool, ou choisissez un autre plat."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: lamb-in-wine
   category: meat
@@ -5983,8 +6471,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: La viande est cuite à cœur, mais la sauce contient du vin, de la bière ou un alcool fort, et il en reste même après une longue cuisson. Demandez une version sans alcool, ou choisissez un autre plat.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Gigot au vin blanc : la viande est cuite à cœur, mais la sauce contient du vin, de la bière ou un alcool fort, et il en reste même après une longue cuisson. Demandez une version sans alcool, ou choisissez un autre plat."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: rabbit-with-wine
   category: meat
@@ -5997,23 +6488,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: La viande est cuite à cœur, mais la sauce contient du vin, de la bière ou un alcool fort, et il en reste même après une longue cuisson. Demandez une version sans alcool, ou choisissez un autre plat.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
-  reviewed: 2026-11-13
-- id: wine-sauce-meat
-  category: meat
-  names:
-    - Sauce au vin rouge
-    - Sauce bordelaise
-    - Entrecôte sauce bordelaise
-    - Sauce marchand de vin
-    - Wine sauce meat
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: La viande est cuite à cœur, mais la sauce contient du vin, de la bière ou un alcool fort, et il en reste même après une longue cuisson. Demandez une version sans alcool, ou choisissez un autre plat.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Lapin au vin blanc : la viande est cuite à cœur, mais la sauce contient du vin, de la bière ou un alcool fort, et il en reste même après une longue cuisson. Demandez une version sans alcool, ou choisissez un autre plat."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: hare-royale
   category: meat
@@ -6025,49 +6504,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: La viande est cuite à cœur, mais la sauce contient du vin, de la bière ou un alcool fort, et il en reste même après une longue cuisson. Demandez une version sans alcool, ou choisissez un autre plat.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
-  reviewed: 2026-11-13
-- id: veal-tartare
-  category: meat
-  names:
-    - Tartare de veau
-    - Tartare de veau cru
-    - Veal tartare
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: La viande crue peut contenir le parasite de la toxoplasmose et d'autres germes. C'est un non catégorique.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: lamb-tartare
-  category: meat
-  names:
-    - Tartare d'agneau
-    - Kibbeh nayeh
-    - Kebbé cru
-    - Lamb tartare
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: La viande crue peut contenir le parasite de la toxoplasmose et d'autres germes. C'est un non catégorique.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: raw-beef-pizza
-  category: meat
-  names:
-    - Pizza au bœuf cru
-    - Carpaccio sur pizza
-    - Carpaccio de veau
-    - Raw beef pizza
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: La viande crue peut contenir le parasite de la toxoplasmose et d'autres germes. C'est un non catégorique.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Lièvre à la royale : la viande est cuite à cœur, mais la sauce contient du vin, de la bière ou un alcool fort, et il en reste même après une longue cuisson. Demandez une version sans alcool, ou choisissez un autre plat."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: beef-tataki
   category: meat
@@ -6082,103 +6523,6 @@
       why: La viande crue peut contenir le parasite de la toxoplasmose et d'autres germes. C'est un non catégorique.
       sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
   reviewed: 2026-11-13
-- id: horse-tartare
-  category: meat
-  names:
-    - Tartare de cheval
-    - Cheval cru
-    - Horse tartare
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: La viande crue peut contenir le parasite de la toxoplasmose et d'autres germes. C'est un non catégorique.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: raw-meat-platter
-  category: meat
-  names:
-    - Assiette de viande crue
-    - Viande des Grisons crue
-    - Cheval carpaccio
-    - Raw meat platter
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: La viande crue peut contenir le parasite de la toxoplasmose et d'autres germes. C'est un non catégorique.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: steak-tartare-a-l-italienne
-  category: meat
-  names:
-    - Tartare à l'italienne
-    - Tartare à cheval
-    - Tartare provençale
-    - Steak tartare à l'italienne
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: La viande crue peut contenir le parasite de la toxoplasmose et d'autres germes. C'est un non catégorique.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: rare-duck-breast
-  category: meat
-  names:
-    - Magret rosé
-    - Magret saignant
-    - Magret mi-cuit
-    - Rare duck breast
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: "Juste saisie à l'extérieur et crue à l'intérieur : le parasite de la toxoplasmose peut survivre. Faites-la cuire à cœur."
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuite à cœur, elle est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: pink-lamb
-  category: meat
-  names:
-    - Agneau rosé
-    - Gigot rosé
-    - Agneau saignant
-    - Pink lamb
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: "Juste saisie à l'extérieur et crue à l'intérieur : le parasite de la toxoplasmose peut survivre. Faites-la cuire à cœur."
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuite à cœur, elle est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: rare-steak
-  category: meat
-  names:
-    - Steak saignant
-    - Bifteck saignant
-    - Bavette saignante
-    - Entrecôte bleue
-    - Steak bleu
-    - Rare steak
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: "Juste saisie à l'extérieur et crue à l'intérieur : le parasite de la toxoplasmose peut survivre. Faites-la cuire à cœur."
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuite à cœur, elle est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
 - id: pho-rare-beef
   category: meat
   names:
@@ -6186,78 +6530,6 @@
     - Pho tai
     - Soupe pho bœuf
     - Pho rare beef
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: "Juste saisie à l'extérieur et crue à l'intérieur : le parasite de la toxoplasmose peut survivre. Faites-la cuire à cœur."
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuite à cœur, elle est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: seared-beef
-  category: meat
-  names:
-    - Bœuf saisi
-    - Bœuf mi-cuit
-    - Pavé de bœuf mi-cuit
-    - Seared beef
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: "Juste saisie à l'extérieur et crue à l'intérieur : le parasite de la toxoplasmose peut survivre. Faites-la cuire à cœur."
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuite à cœur, elle est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: pink-pork
-  category: meat
-  names:
-    - Porc rosé
-    - Côte de porc rosée
-    - Filet mignon rosé
-    - Pink pork
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: "Juste saisie à l'extérieur et crue à l'intérieur : le parasite de la toxoplasmose peut survivre. Faites-la cuire à cœur."
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuite à cœur, elle est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: rare-lamb
-  category: meat
-  names:
-    - Gigot d'agneau rosé
-    - Carré d'agneau rosé
-    - Côtelettes rosées
-    - Rare lamb
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: "Juste saisie à l'extérieur et crue à l'intérieur : le parasite de la toxoplasmose peut survivre. Faites-la cuire à cœur."
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuite à cœur, elle est sans danger.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: medium-rare-burger
-  category: meat
-  names:
-    - Burger à point
-    - Burger saignant
-    - Hamburger à point
-    - Medium-rare burger
   local: true
   answers:
     - state: undercooked
@@ -6280,8 +6552,10 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Le foie contient beaucoup de vitamine A, qui peut nuire au développement du bébé. Évitez-le pendant toute la grossesse, même bien cuit.
-      sources: [ nhs-foods-to-avoid, nhs-vitamins ]
+      why: "Mousse de foie de volaille : le foie contient beaucoup de vitamine A, qui peut nuire au développement du bébé. Évitez-le pendant toute la grossesse, même bien cuit."
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-vitamins
   reviewed: 2026-11-13
 - id: liver-and-bacon
   category: meat
@@ -6294,8 +6568,10 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Le foie contient beaucoup de vitamine A, qui peut nuire au développement du bébé. Évitez-le pendant toute la grossesse, même bien cuit.
-      sources: [ nhs-foods-to-avoid, nhs-vitamins ]
+      why: "Foie aux oignons : le foie contient beaucoup de vitamine A, qui peut nuire au développement du bébé. Évitez-le pendant toute la grossesse, même bien cuit."
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-vitamins
   reviewed: 2026-11-13
 - id: venetian-liver
   category: meat
@@ -6308,8 +6584,10 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Le foie contient beaucoup de vitamine A, qui peut nuire au développement du bébé. Évitez-le pendant toute la grossesse, même bien cuit.
-      sources: [ nhs-foods-to-avoid, nhs-vitamins ]
+      why: "Foie à la vénitienne : le foie contient beaucoup de vitamine A, qui peut nuire au développement du bébé. Évitez-le pendant toute la grossesse, même bien cuit."
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-vitamins
   reviewed: 2026-11-13
 - id: chopped-liver
   category: meat
@@ -6322,8 +6600,10 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Le foie contient beaucoup de vitamine A, qui peut nuire au développement du bébé. Évitez-le pendant toute la grossesse, même bien cuit.
-      sources: [ nhs-foods-to-avoid, nhs-vitamins ]
+      why: "Foie haché : le foie contient beaucoup de vitamine A, qui peut nuire au développement du bébé. Évitez-le pendant toute la grossesse, même bien cuit."
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-vitamins
   reviewed: 2026-11-13
 - id: liver-sausage
   category: meat
@@ -6335,8 +6615,10 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Le foie contient beaucoup de vitamine A, qui peut nuire au développement du bébé. Évitez-le pendant toute la grossesse, même bien cuit.
-      sources: [ nhs-foods-to-avoid, nhs-vitamins ]
+      why: "Saucisse de foie : le foie contient beaucoup de vitamine A, qui peut nuire au développement du bébé. Évitez-le pendant toute la grossesse, même bien cuit."
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-vitamins
   reviewed: 2026-11-13
 - id: san-daniele-ham
   category: charcuterie
@@ -11176,21 +11458,6 @@
     - Poulpe grillé
     - Poulpe à la galicienne
     - Octopus cooked
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger s'ils sont cuits à cœur et servis chauds.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: snails-cooked
-  category: seafood
-  names:
-    - Escargots de Bourgogne cuits
-    - Escargots persillés
-    - Escargots à l'ail
-    - Douzaine d'escargots
-    - Snails cooked
   local: true
   answers:
     - state: cooked

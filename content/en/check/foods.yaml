@@ -14,6 +14,22 @@
     - Rumsteck
     - Côte de bœuf
     - Rosbif
+    - Beef sirloin
+    - Aloyau
+    - Contrefilet
+    - T-bone steak
+    - T-bone
+    - Porterhouse
+    - Rare steak
+    - Steak saignant
+    - Bifteck saignant
+    - Bavette saignante
+    - Entrecôte bleue
+    - Steak bleu
+    - Seared beef
+    - Bœuf saisi
+    - Bœuf mi-cuit
+    - Pavé de bœuf mi-cuit
   local: true
   answers:
     - state: undercooked
@@ -65,6 +81,24 @@
     - Raw beef
     - Bœuf cru
     - Filet américain
+    - Veal tartare
+    - Tartare de veau
+    - Tartare de veau cru
+    - Lamb tartare
+    - Tartare d'agneau
+    - Kibbeh nayeh
+    - Kebbé cru
+    - Horse tartare
+    - Tartare de cheval
+    - Cheval cru
+    - Steak tartare à l'italienne
+    - Tartare à l'italienne
+    - Tartare à cheval
+    - Tartare provençale
+    - Raw meat platter
+    - Assiette de viande crue
+    - Viande des Grisons crue
+    - Cheval carpaccio
   tips: &a1
     - avoid
   local: true
@@ -86,7 +120,12 @@
     - Carpaccio
     - Bresaola fraîche
     - Raw beef slices
-  tips: *a1
+    - Raw beef pizza
+    - Pizza au bœuf cru
+    - Carpaccio sur pizza
+    - Carpaccio de veau
+  tips:
+    - avoid
   local: true
   answers:
     - state: raw
@@ -107,6 +146,14 @@
     - Côtelettes d'agneau
     - Mouton
     - Souris d'agneau
+    - Pink lamb
+    - Agneau rosé
+    - Gigot rosé
+    - Agneau saignant
+    - Rare lamb
+    - Gigot d'agneau rosé
+    - Carré d'agneau rosé
+    - Côtelettes rosées
   local: true
   answers:
     - state: undercooked
@@ -133,6 +180,10 @@
     - Rôti de porc
     - Travers
     - Échine
+    - Pink pork
+    - Porc rosé
+    - Côte de porc rosée
+    - Filet mignon rosé
   local: true
   answers:
     - state: undercooked
@@ -161,6 +212,10 @@
     - Blanc de poulet cuit
     - Volaille
     - Escalope
+    - Free-range Label Rouge chicken
+    - Poulet fermier
+    - Poulet Label Rouge
+    - Poulet de Bresse
   tips: &a2
     - best
   local: true
@@ -189,6 +244,10 @@
     - Confit de canard
     - Cuisse de canard
     - Duck breast
+    - Rare duck breast
+    - Magret rosé
+    - Magret saignant
+    - Magret mi-cuit
   local: true
   answers:
     - state: undercooked
@@ -251,18 +310,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Pink game can carry the toxoplasmosis parasite. Smoked, marinated or grilled game is only safe if cooked right through.
+      why: "Game: pink game can carry the toxoplasmosis parasite. Smoked, marinated or grilled game is only safe if cooked right through."
       sources:
         - ameli-toxo-prevention
         - mangerbouger-aliments-eviter
-        - nhs-toxoplasmosis
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
-      why: Game cooked right through avoids the toxoplasmosis risk. The UK guidance also asks pregnant women to avoid game birds, because of lead from shot, so keep it occasional.
+      why: "Game: cooked right through, it avoids the toxoplasmosis risk. NHS advice is to avoid game such as goose, partridge, pheasant and venison in pregnancy, because of lead from shot. Ask your midwife."
       sources:
         - nhs-foods-to-avoid
         - ameli-toxo-prevention
-  reviewed: 2026-11-13
+  reviewed: 2026-11-14
 - id: kebab
   category: meat
   names:
@@ -382,6 +441,10 @@
     - Cheeseburger
     - Burger restaurant
     - Fast food burger
+    - Medium-rare burger
+    - Burger à point
+    - Burger saignant
+    - Hamburger à point
   local: true
   answers:
     - state: undercooked
@@ -4035,12 +4098,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Fillet steak: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Fillet steak: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: hanger-steak
   category: meat
@@ -4052,12 +4120,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Hanger steak: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Hanger steak: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: skirt-steak
   category: meat
@@ -4069,12 +4142,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Skirt steak: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Skirt steak: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-round-steak
   category: meat
@@ -4086,46 +4164,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Beef round steak: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: beef-sirloin
-  category: meat
-  names:
-    - Beef sirloin
-    - Aloyau
-    - Contrefilet
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: t-bone-steak
-  category: meat
-  names:
-    - T-bone steak
-    - T-bone
-    - Porterhouse
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Beef round steak: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-roast
   category: meat
@@ -4137,12 +4186,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Beef roast: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Beef roast: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-ribs
   category: meat
@@ -4155,12 +4209,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Beef ribs: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Beef ribs: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-brisket
   category: meat
@@ -4172,12 +4231,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Beef brisket: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Beef brisket: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: veal-roast
   category: meat
@@ -4189,12 +4253,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Veal roast: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Veal roast: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: veal-escalope
   category: meat
@@ -4205,12 +4274,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Veal escalope: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Veal escalope: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: veal-chop
   category: meat
@@ -4221,12 +4295,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Veal chop: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Veal chop: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: veal-shank
   category: meat
@@ -4237,12 +4316,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Veal shank: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Veal shank: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: veal-paupiette
   category: meat
@@ -4254,12 +4338,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Veal paupiette: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Veal paupiette: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: veal-fillet
   category: meat
@@ -4271,12 +4360,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Veal fillet: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Veal fillet: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: lamb-rack
   category: meat
@@ -4288,12 +4382,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Lamb rack: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Lamb rack: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: lamb-shoulder
   category: meat
@@ -4304,12 +4403,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Lamb shoulder: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Lamb shoulder: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: lamb-saddle
   category: meat
@@ -4320,12 +4424,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Lamb saddle: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Lamb saddle: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: lamb-skewers
   category: meat
@@ -4336,13 +4445,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Lamb skewers: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Lamb skewers: grilled, barbecued or marinated meat can look cooked outside and still be pink inside. French advice (ameli) is to be wary of it. Cut it open: it must be cooked right through, with no pink. Ask your midwife if unsure."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: lamb-chops
   category: meat
   names:
@@ -4353,12 +4467,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Lamb chops: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Lamb chops: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pork-tenderloin
   category: meat
@@ -4370,12 +4489,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Pork tenderloin: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Pork tenderloin: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pork-belly
   category: meat
@@ -4387,12 +4511,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Pork belly: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Pork belly: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pork-shoulder
   category: meat
@@ -4404,12 +4533,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Pork shoulder: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Pork shoulder: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pork-loin
   category: meat
@@ -4421,12 +4555,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Pork loin: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Pork loin: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pork-spare-ribs
   category: meat
@@ -4439,12 +4578,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Pork spare ribs: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Pork spare ribs: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pork-skewers
   category: meat
@@ -4455,13 +4599,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Pork skewers: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Pork skewers: grilled, barbecued or marinated meat can look cooked outside and still be pink inside. French advice (ameli) is to be wary of it. Cut it open: it must be cooked right through, with no pink. Ask your midwife if unsure."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: porchetta
   category: meat
   names:
@@ -4471,12 +4620,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Porchetta: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Porchetta: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pulled-pork
   category: meat
@@ -4487,12 +4641,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Pulled pork: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Pulled pork: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: char-siu-pork
   category: meat
@@ -4505,13 +4664,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Char siu pork: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Char siu pork: grilled, barbecued or marinated meat can look cooked outside and still be pink inside. French advice (ameli) is to be wary of it. Cut it open: it must be cooked right through, with no pink. Ask your midwife if unsure."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: roast-chicken-thighs
   category: meat
   names:
@@ -4522,12 +4686,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Roast chicken thighs: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Roast chicken thighs: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-wings
   category: meat
@@ -4539,12 +4708,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Chicken wings: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Chicken wings: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-drumsticks
   category: meat
@@ -4556,12 +4730,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Chicken drumsticks: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Chicken drumsticks: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-breast
   category: meat
@@ -4574,12 +4753,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Chicken breast: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Chicken breast: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-skewers
   category: meat
@@ -4591,13 +4775,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Chicken skewers: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Chicken skewers: grilled, barbecued or marinated meat can look cooked outside and still be pink inside. French advice (ameli) is to be wary of it. Cut it open: it must be cooked right through, with no pink. Ask your midwife if unsure."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: roast-turkey
   category: meat
   names:
@@ -4609,12 +4798,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Roast turkey: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Roast turkey: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: turkey-escalope
   category: meat
@@ -4626,12 +4820,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Turkey escalope: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Turkey escalope: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: guinea-fowl
   category: meat
@@ -4643,12 +4842,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Guinea fowl: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Guinea fowl: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: capon
   category: meat
@@ -4660,30 +4864,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Capon: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: free-range-label-rouge-chicken
-  category: meat
-  names:
-    - Free-range Label Rouge chicken
-    - Poulet fermier
-    - Poulet Label Rouge
-    - Poulet de Bresse
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Capon: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: rotisserie-chicken
   category: meat
@@ -4696,12 +4887,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Rotisserie chicken: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Rotisserie chicken: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: duck-leg
   category: meat
@@ -4712,12 +4908,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Duck leg: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Duck leg: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: peking-duck
   category: meat
@@ -4729,12 +4930,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Peking duck: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Peking duck: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: goose
   category: meat
@@ -4747,13 +4953,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Goose: pink game can carry the toxoplasmosis parasite. Smoked, marinated or grilled game is only safe if cooked right through."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Goose: cooked right through, it avoids the toxoplasmosis risk. NHS advice is to avoid game such as goose, partridge, pheasant and venison in pregnancy, because of lead from shot. Ask your midwife."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: quail
   category: meat
   names:
@@ -4764,12 +4975,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Quail: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Quail: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pigeon
   category: meat
@@ -4781,12 +4997,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Pigeon: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Pigeon: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: venison-steak
   category: meat
@@ -4799,13 +5020,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Venison steak: pink game can carry the toxoplasmosis parasite. Smoked, marinated or grilled game is only safe if cooked right through."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Venison steak: cooked right through, it avoids the toxoplasmosis risk. NHS advice is to avoid game such as goose, partridge, pheasant and venison in pregnancy, because of lead from shot. Ask your midwife."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: wild-boar
   category: meat
   names:
@@ -4816,13 +5042,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Wild boar: pink game can carry the toxoplasmosis parasite. Smoked, marinated or grilled game is only safe if cooked right through."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Wild boar: cooked right through, it avoids the toxoplasmosis risk. NHS advice is to avoid game such as goose, partridge, pheasant and venison in pregnancy, because of lead from shot. Ask your midwife."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: wild-duck
   category: meat
   names:
@@ -4833,13 +5064,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Wild duck: pink game can carry the toxoplasmosis parasite. Smoked, marinated or grilled game is only safe if cooked right through."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Wild duck: cooked right through, it avoids the toxoplasmosis risk. NHS advice is to avoid game such as goose, partridge, pheasant and venison in pregnancy, because of lead from shot. Ask your midwife."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: frog-legs
   category: meat
   names:
@@ -4848,32 +5084,33 @@
     - Grenouilles
   local: true
   answers:
-    - state: undercooked
-      verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
     - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Frog legs: the sources do not name this food. If you eat it, have it cooked right through with no pink, like any meat. Ask your midwife first."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: snails
   category: meat
   names:
     - Snails
     - Escargots de Bourgogne
     - Escargots au beurre persillé
+    - Snails cooked
+    - Escargots de Bourgogne cuits
+    - Escargots persillés
+    - Escargots à l'ail
+    - Douzaine d'escargots
   local: true
   answers:
-    - state: undercooked
-      verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
     - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Snails: the sources do not name this food. If you eat it, have it cooked right through with no pink, like any meat. Ask your midwife first."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: kidneys
   category: meat
   names:
@@ -4885,12 +5122,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Kidneys: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Kidneys: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: sweetbreads
   category: meat
@@ -4902,12 +5144,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Sweetbreads: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Sweetbreads: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: tripe
   category: meat
@@ -4920,12 +5167,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Tripe: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Tripe: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: ox-tongue
   category: meat
@@ -4937,12 +5189,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Ox tongue: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Ox tongue: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: brain
   category: meat
@@ -4952,15 +5209,13 @@
     - Cervelle d'agneau
   local: true
   answers:
-    - state: undercooked
-      verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
     - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Brain: the sources do not name this food. If you eat it, have it cooked right through with no pink, like any meat. Ask your midwife first."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: veal-head
   category: meat
   names:
@@ -4971,12 +5226,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Veal head: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Veal head: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pig-s-trotters
   category: meat
@@ -4988,12 +5248,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Pig's trotters: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Pig's trotters: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-heart
   category: meat
@@ -5005,12 +5270,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Beef heart: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Beef heart: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: oxtail
   category: meat
@@ -5022,12 +5292,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Oxtail: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Oxtail: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: barbecue-grilled-meat
   category: meat
@@ -5041,13 +5316,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Barbecue grilled meat: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Barbecue grilled meat: grilled, barbecued or marinated meat can look cooked outside and still be pink inside. French advice (ameli) is to be wary of it. Cut it open: it must be cooked right through, with no pink. Ask your midwife if unsure."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: mixed-grill
   category: meat
   names:
@@ -5058,13 +5338,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Mixed grill: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Mixed grill: grilled, barbecued or marinated meat can look cooked outside and still be pink inside. French advice (ameli) is to be wary of it. Cut it open: it must be cooked right through, with no pink. Ask your midwife if unsure."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: steak-frites
   category: meat
   names:
@@ -5075,12 +5360,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Steak frites: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Steak frites: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-stir-fry
   category: meat
@@ -5093,12 +5383,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Beef stir-fry: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Beef stir-fry: cooked right through, with no pink and no pink juice, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-bulgogi
   category: meat
@@ -5110,13 +5405,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Beef bulgogi: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Beef bulgogi: grilled, barbecued or marinated meat can look cooked outside and still be pink inside. French advice (ameli) is to be wary of it. Cut it open: it must be cooked right through, with no pink. Ask your midwife if unsure."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: souvlaki
   category: meat
   names:
@@ -5126,13 +5426,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Souvlaki: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Souvlaki: grilled, barbecued or marinated meat can look cooked outside and still be pink inside. French advice (ameli) is to be wary of it. Cut it open: it must be cooked right through, with no pink. Ask your midwife if unsure."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: tandoori-chicken
   category: meat
   names:
@@ -5144,13 +5449,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Tandoori chicken: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Tandoori chicken: grilled, barbecued or marinated meat can look cooked outside and still be pink inside. French advice (ameli) is to be wary of it. Cut it open: it must be cooked right through, with no pink. Ask your midwife if unsure."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: teriyaki-chicken
   category: meat
   names:
@@ -5161,13 +5471,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Teriyaki chicken: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Teriyaki chicken: grilled, barbecued or marinated meat can look cooked outside and still be pink inside. French advice (ameli) is to be wary of it. Cut it open: it must be cooked right through, with no pink. Ask your midwife if unsure."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: satay-skewers
   category: meat
   names:
@@ -5179,13 +5494,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Satay skewers: served rare, pink or bloody, it can carry the toxoplasmosis parasite. If you are not immune, have it cooked right through, with no pink."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
-      verdict: ok
-      why: Cooked right through, with no pink and no pink juice, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Satay skewers: grilled, barbecued or marinated meat can look cooked outside and still be pink inside. French advice (ameli) is to be wary of it. Cut it open: it must be cooked right through, with no pink. Ask your midwife if unsure."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: fried-chicken
   category: meat
   names:
@@ -5198,12 +5518,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Underdone poultry can carry salmonella and the toxoplasmosis parasite. Cook it right through, until the juices run clear.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Fried chicken: underdone poultry can carry salmonella and the toxoplasmosis parasite. Cook it right through, until the juices run clear."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Fried chicken: cooked right through, with no pink, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-nuggets
   category: meat
@@ -5216,12 +5541,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Underdone poultry can carry salmonella and the toxoplasmosis parasite. Cook it right through, until the juices run clear.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Chicken nuggets: underdone poultry can carry salmonella and the toxoplasmosis parasite. Cook it right through, until the juices run clear."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Chicken nuggets: cooked right through, with no pink, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-tenders
   category: meat
@@ -5234,12 +5564,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Underdone poultry can carry salmonella and the toxoplasmosis parasite. Cook it right through, until the juices run clear.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Chicken tenders: underdone poultry can carry salmonella and the toxoplasmosis parasite. Cook it right through, until the juices run clear."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Chicken tenders: cooked right through, with no pink, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-cordon-bleu
   category: meat
@@ -5251,12 +5586,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Underdone poultry can carry salmonella and the toxoplasmosis parasite. Cook it right through, until the juices run clear.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Chicken cordon bleu: underdone poultry can carry salmonella and the toxoplasmosis parasite. Cook it right through, until the juices run clear."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Chicken cordon bleu: cooked right through, with no pink, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: breaded-escalope
   category: meat
@@ -5270,12 +5610,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Underdone poultry can carry salmonella and the toxoplasmosis parasite. Cook it right through, until the juices run clear.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Breaded escalope: underdone poultry can carry salmonella and the toxoplasmosis parasite. Cook it right through, until the juices run clear."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Breaded escalope: cooked right through, with no pink, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: meatballs
   category: meat
@@ -5288,12 +5633,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "Pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Meatballs: pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Meatballs: cooked right through, with no pink, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: kefta
   category: meat
@@ -5306,12 +5657,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "Pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Kefta: pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Kefta: cooked right through, with no pink, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: stuffed-tomatoes
   category: meat
@@ -5325,12 +5682,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "Pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Stuffed tomatoes: pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Stuffed tomatoes: cooked right through, with no pink, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: minced-meat-sauce
   category: meat
@@ -5343,12 +5706,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "Pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Minced meat sauce: pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Minced meat sauce: cooked right through, with no pink, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: chili-con-carne
   category: meat
@@ -5359,12 +5728,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "Pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Chili con carne: pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Chili con carne: cooked right through, with no pink, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: frozen-beef-patty
   category: meat
@@ -5377,12 +5752,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "Pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Frozen beef patty: pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Frozen beef patty: cooked right through, with no pink, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: sausage-meat
   category: meat
@@ -5396,12 +5777,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "Pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Sausage meat: pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Sausage meat: cooked right through, with no pink, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: meat-loaf
   category: meat
@@ -5413,12 +5800,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "Pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Meat loaf: pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Meat loaf: cooked right through, with no pink, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: taco-meat
   category: meat
@@ -5431,12 +5824,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "Pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Taco meat: pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Taco meat: cooked right through, with no pink, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: beef-samosa
   category: meat
@@ -5449,12 +5848,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "Pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Beef samosa: pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Beef samosa: cooked right through, with no pink, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: dumplings-meat
   category: meat
@@ -5468,12 +5873,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: "Pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Dumplings meat: pink minced meat is risky: germs from the surface are mixed all through it, and the toxoplasmosis parasite survives if the middle is still pink."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through, with no pink, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Dumplings meat: cooked right through, with no pink, it is safe."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: pot-au-feu
   category: meat
@@ -5485,8 +5896,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Pot-au-feu: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-cheek
   category: meat
@@ -5498,8 +5911,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Beef cheek: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-chuck-stew
   category: meat
@@ -5512,8 +5927,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Beef chuck stew: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-carrots-stew
   category: meat
@@ -5526,8 +5943,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Beef carrots stew: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: blanquette-of-veal
   category: meat
@@ -5538,10 +5957,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Blanquette of veal: slow-cooked until tender, the meat itself is safe. But this classic dish is often made with wine or beer, and some alcohol stays in even after long cooking. Ask how it was made, or choose another dish."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: osso-buco
   category: meat
   names:
@@ -5550,10 +5972,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Osso buco: slow-cooked until tender, the meat itself is safe. But this classic dish is often made with wine or beer, and some alcohol stays in even after long cooking. Ask how it was made, or choose another dish."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: lamb-navarin
   category: meat
   names:
@@ -5563,10 +5988,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Lamb navarin: slow-cooked until tender, the meat itself is safe. But this classic dish is often made with wine or beer, and some alcohol stays in even after long cooking. Ask how it was made, or choose another dish."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: lamb-tagine
   category: meat
   names:
@@ -5577,8 +6005,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Lamb tagine: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: seven-hour-lamb
   category: meat
@@ -5590,8 +6020,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Seven-hour lamb: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: lamb-shank
   category: meat
@@ -5603,8 +6035,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Lamb shank: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-tagine
   category: meat
@@ -5616,8 +6050,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Chicken tagine: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-basquaise
   category: meat
@@ -5628,10 +6064,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Chicken basquaise: slow-cooked until tender, the meat itself is safe. But this classic dish is often made with wine or beer, and some alcohol stays in even after long cooking. Ask how it was made, or choose another dish."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: poule-au-pot
   category: meat
   names:
@@ -5641,8 +6080,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Poule au pot: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-curry
   category: meat
@@ -5655,8 +6096,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Chicken curry: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-yassa
   category: meat
@@ -5668,8 +6111,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Chicken yassa: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-marengo
   category: meat
@@ -5681,10 +6126,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Chicken marengo: slow-cooked until tender, the meat itself is safe. But this classic dish is often made with wine or beer, and some alcohol stays in even after long cooking. Ask how it was made, or choose another dish."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: pork-stew
   category: meat
   names:
@@ -5696,8 +6144,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Pork stew: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pork-with-lentils
   category: meat
@@ -5709,8 +6159,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Pork with lentils: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: cassoulet
   category: meat
@@ -5722,8 +6174,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Cassoulet: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: choucroute-garnie
   category: meat
@@ -5734,10 +6188,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Choucroute garnie: slow-cooked until tender, the meat itself is safe. But this classic dish is often made with wine or beer, and some alcohol stays in even after long cooking. Ask how it was made, or choose another dish."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: rabbit-stew
   category: meat
   names:
@@ -5748,10 +6205,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Rabbit stew: slow-cooked until tender, the meat itself is safe. But this classic dish is often made with wine or beer, and some alcohol stays in even after long cooking. Ask how it was made, or choose another dish."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: venison-stew
   category: meat
   names:
@@ -5761,25 +6221,20 @@
     - Ragoût de gibier
   local: true
   answers:
+    - state: undercooked
+      verdict: avoid
+      why: "Venison stew: pink game can carry the toxoplasmosis parasite. Smoked, marinated or grilled game is only safe if cooked right through."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
-      verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: hotpot
-  category: meat
-  names:
-    - Hotpot
-    - Potée
-    - Potée auvergnate
-    - Potée lorraine
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Venison stew: cooked right through, it avoids the toxoplasmosis risk. NHS advice is to avoid game such as goose, partridge, pheasant and venison in pregnancy, because of lead from shot. Ask your midwife."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: couscous-meat
   category: meat
   names:
@@ -5791,8 +6246,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Couscous meat: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-stew-with-beans
   category: meat
@@ -5804,8 +6261,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Beef stew with beans: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: moussaka
   category: meat
@@ -5816,8 +6275,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Moussaka: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: rendang
   category: meat
@@ -5828,8 +6289,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Rendang: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: veal-marengo
   category: meat
@@ -5840,10 +6303,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Veal marengo: slow-cooked until tender, the meat itself is safe. But this classic dish is often made with wine or beer, and some alcohol stays in even after long cooking. Ask how it was made, or choose another dish."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: lamb-curry
   category: meat
   names:
@@ -5855,8 +6321,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Lamb curry: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: poulet-moambe
   category: meat
@@ -5869,8 +6337,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Poulet moambé: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: mutton-stew
   category: meat
@@ -5879,24 +6349,42 @@
     - Ragoût de mouton
     - Haricot de mouton
     - Navarin de mouton
+    - Hotpot
+    - Potée
+    - Potée auvergnate
+    - Potée lorraine
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: This dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
+      why: "Mutton stew: this dish is cooked slowly until the meat is tender all the way through, which makes it safe. Eat it hot, or reheat it until steaming."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: beef-bourguignon
   category: meat
   names:
     - Beef bourguignon
     - Bourguignon
+    - Beef in wine
+    - Bœuf mode
+    - Bœuf en daube au vin
+    - Bœuf au vin
+    - Wine sauce meat
+    - Sauce au vin rouge
+    - Sauce bordelaise
+    - Entrecôte sauce bordelaise
+    - Sauce marchand de vin
   local: true
   answers:
     - state: cooked
       verdict: avoid
-      why: The meat is cooked through, but the sauce is made with wine, beer or spirits, and some alcohol stays even after long cooking. Ask for a version without alcohol, or choose another dish.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Beef bourguignon: the meat is cooked through, but the sauce is made with wine, beer or spirits, and some alcohol stays even after long cooking. Ask for a version without alcohol, or choose another dish."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: daube
   category: meat
@@ -5909,8 +6397,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: The meat is cooked through, but the sauce is made with wine, beer or spirits, and some alcohol stays even after long cooking. Ask for a version without alcohol, or choose another dish.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Daube: the meat is cooked through, but the sauce is made with wine, beer or spirits, and some alcohol stays even after long cooking. Ask for a version without alcohol, or choose another dish."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: beer-beef-stew
   category: meat
@@ -5922,22 +6413,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: The meat is cooked through, but the sauce is made with wine, beer or spirits, and some alcohol stays even after long cooking. Ask for a version without alcohol, or choose another dish.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
-  reviewed: 2026-11-13
-- id: beef-in-wine
-  category: meat
-  names:
-    - Beef in wine
-    - Bœuf mode
-    - Bœuf en daube au vin
-    - Bœuf au vin
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: The meat is cooked through, but the sauce is made with wine, beer or spirits, and some alcohol stays even after long cooking. Ask for a version without alcohol, or choose another dish.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Beer beef stew: the meat is cooked through, but the sauce is made with wine, beer or spirits, and some alcohol stays even after long cooking. Ask for a version without alcohol, or choose another dish."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: flambeed-steak
   category: meat
@@ -5950,8 +6430,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: The meat is cooked through, but the sauce is made with wine, beer or spirits, and some alcohol stays even after long cooking. Ask for a version without alcohol, or choose another dish.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Flambéed steak: the meat is cooked through, but the sauce is made with wine, beer or spirits, and some alcohol stays even after long cooking. Ask for a version without alcohol, or choose another dish."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: chicken-in-beer
   category: meat
@@ -5963,8 +6446,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: The meat is cooked through, but the sauce is made with wine, beer or spirits, and some alcohol stays even after long cooking. Ask for a version without alcohol, or choose another dish.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Chicken in beer: the meat is cooked through, but the sauce is made with wine, beer or spirits, and some alcohol stays even after long cooking. Ask for a version without alcohol, or choose another dish."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: lamb-in-wine
   category: meat
@@ -5976,8 +6462,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: The meat is cooked through, but the sauce is made with wine, beer or spirits, and some alcohol stays even after long cooking. Ask for a version without alcohol, or choose another dish.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Lamb in wine: the meat is cooked through, but the sauce is made with wine, beer or spirits, and some alcohol stays even after long cooking. Ask for a version without alcohol, or choose another dish."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: rabbit-with-wine
   category: meat
@@ -5990,23 +6479,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: The meat is cooked through, but the sauce is made with wine, beer or spirits, and some alcohol stays even after long cooking. Ask for a version without alcohol, or choose another dish.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
-  reviewed: 2026-11-13
-- id: wine-sauce-meat
-  category: meat
-  names:
-    - Wine sauce meat
-    - Sauce au vin rouge
-    - Sauce bordelaise
-    - Entrecôte sauce bordelaise
-    - Sauce marchand de vin
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: The meat is cooked through, but the sauce is made with wine, beer or spirits, and some alcohol stays even after long cooking. Ask for a version without alcohol, or choose another dish.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Rabbit with wine: the meat is cooked through, but the sauce is made with wine, beer or spirits, and some alcohol stays even after long cooking. Ask for a version without alcohol, or choose another dish."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: hare-royale
   category: meat
@@ -6018,49 +6495,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: The meat is cooked through, but the sauce is made with wine, beer or spirits, and some alcohol stays even after long cooking. Ask for a version without alcohol, or choose another dish.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
-  reviewed: 2026-11-13
-- id: veal-tartare
-  category: meat
-  names:
-    - Veal tartare
-    - Tartare de veau
-    - Tartare de veau cru
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Raw meat can carry the toxoplasmosis parasite and other germs. This is a firm no.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: lamb-tartare
-  category: meat
-  names:
-    - Lamb tartare
-    - Tartare d'agneau
-    - Kibbeh nayeh
-    - Kebbé cru
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Raw meat can carry the toxoplasmosis parasite and other germs. This is a firm no.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: raw-beef-pizza
-  category: meat
-  names:
-    - Raw beef pizza
-    - Pizza au bœuf cru
-    - Carpaccio sur pizza
-    - Carpaccio de veau
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Raw meat can carry the toxoplasmosis parasite and other germs. This is a firm no.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Hare royale: the meat is cooked through, but the sauce is made with wine, beer or spirits, and some alcohol stays even after long cooking. Ask for a version without alcohol, or choose another dish."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: beef-tataki
   category: meat
@@ -6075,103 +6514,6 @@
       why: Raw meat can carry the toxoplasmosis parasite and other germs. This is a firm no.
       sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
   reviewed: 2026-11-13
-- id: horse-tartare
-  category: meat
-  names:
-    - Horse tartare
-    - Tartare de cheval
-    - Cheval cru
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Raw meat can carry the toxoplasmosis parasite and other germs. This is a firm no.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: raw-meat-platter
-  category: meat
-  names:
-    - Raw meat platter
-    - Assiette de viande crue
-    - Viande des Grisons crue
-    - Cheval carpaccio
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Raw meat can carry the toxoplasmosis parasite and other germs. This is a firm no.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: steak-tartare-a-l-italienne
-  category: meat
-  names:
-    - Steak tartare à l'italienne
-    - Tartare à l'italienne
-    - Tartare à cheval
-    - Tartare provençale
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Raw meat can carry the toxoplasmosis parasite and other germs. This is a firm no.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: rare-duck-breast
-  category: meat
-  names:
-    - Rare duck breast
-    - Magret rosé
-    - Magret saignant
-    - Magret mi-cuit
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Only seared outside and still raw inside, so the toxoplasmosis parasite can survive. Have it cooked right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: pink-lamb
-  category: meat
-  names:
-    - Pink lamb
-    - Agneau rosé
-    - Gigot rosé
-    - Agneau saignant
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Only seared outside and still raw inside, so the toxoplasmosis parasite can survive. Have it cooked right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: rare-steak
-  category: meat
-  names:
-    - Rare steak
-    - Steak saignant
-    - Bifteck saignant
-    - Bavette saignante
-    - Entrecôte bleue
-    - Steak bleu
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Only seared outside and still raw inside, so the toxoplasmosis parasite can survive. Have it cooked right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
 - id: pho-rare-beef
   category: meat
   names:
@@ -6179,78 +6521,6 @@
     - Phở bœuf cru
     - Pho tai
     - Soupe pho bœuf
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Only seared outside and still raw inside, so the toxoplasmosis parasite can survive. Have it cooked right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: seared-beef
-  category: meat
-  names:
-    - Seared beef
-    - Bœuf saisi
-    - Bœuf mi-cuit
-    - Pavé de bœuf mi-cuit
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Only seared outside and still raw inside, so the toxoplasmosis parasite can survive. Have it cooked right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: pink-pork
-  category: meat
-  names:
-    - Pink pork
-    - Porc rosé
-    - Côte de porc rosée
-    - Filet mignon rosé
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Only seared outside and still raw inside, so the toxoplasmosis parasite can survive. Have it cooked right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: rare-lamb
-  category: meat
-  names:
-    - Rare lamb
-    - Gigot d'agneau rosé
-    - Carré d'agneau rosé
-    - Côtelettes rosées
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Only seared outside and still raw inside, so the toxoplasmosis parasite can survive. Have it cooked right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is safe.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: medium-rare-burger
-  category: meat
-  names:
-    - Medium-rare burger
-    - Burger à point
-    - Burger saignant
-    - Hamburger à point
   local: true
   answers:
     - state: undercooked
@@ -6273,8 +6543,10 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Liver is very rich in vitamin A, which can harm the baby's development. Skip it for the whole pregnancy, even well cooked.
-      sources: [ nhs-foods-to-avoid, nhs-vitamins ]
+      why: "Chicken liver mousse: liver is very rich in vitamin A, which can harm the baby's development. Skip it for the whole pregnancy, even well cooked."
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-vitamins
   reviewed: 2026-11-13
 - id: liver-and-bacon
   category: meat
@@ -6287,8 +6559,10 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Liver is very rich in vitamin A, which can harm the baby's development. Skip it for the whole pregnancy, even well cooked.
-      sources: [ nhs-foods-to-avoid, nhs-vitamins ]
+      why: "Liver and bacon: liver is very rich in vitamin A, which can harm the baby's development. Skip it for the whole pregnancy, even well cooked."
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-vitamins
   reviewed: 2026-11-13
 - id: venetian-liver
   category: meat
@@ -6301,8 +6575,10 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Liver is very rich in vitamin A, which can harm the baby's development. Skip it for the whole pregnancy, even well cooked.
-      sources: [ nhs-foods-to-avoid, nhs-vitamins ]
+      why: "Venetian liver: liver is very rich in vitamin A, which can harm the baby's development. Skip it for the whole pregnancy, even well cooked."
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-vitamins
   reviewed: 2026-11-13
 - id: chopped-liver
   category: meat
@@ -6315,8 +6591,10 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Liver is very rich in vitamin A, which can harm the baby's development. Skip it for the whole pregnancy, even well cooked.
-      sources: [ nhs-foods-to-avoid, nhs-vitamins ]
+      why: "Chopped liver: liver is very rich in vitamin A, which can harm the baby's development. Skip it for the whole pregnancy, even well cooked."
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-vitamins
   reviewed: 2026-11-13
 - id: liver-sausage
   category: meat
@@ -6328,8 +6606,10 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Liver is very rich in vitamin A, which can harm the baby's development. Skip it for the whole pregnancy, even well cooked.
-      sources: [ nhs-foods-to-avoid, nhs-vitamins ]
+      why: "Liver sausage: liver is very rich in vitamin A, which can harm the baby's development. Skip it for the whole pregnancy, even well cooked."
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-vitamins
   reviewed: 2026-11-13
 - id: san-daniele-ham
   category: charcuterie
@@ -11169,21 +11449,6 @@
     - Pieuvre
     - Poulpe grillé
     - Poulpe à la galicienne
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Fine when cooked right through and served hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: snails-cooked
-  category: seafood
-  names:
-    - Snails cooked
-    - Escargots de Bourgogne cuits
-    - Escargots persillés
-    - Escargots à l'ail
-    - Douzaine d'escargots
   local: true
   answers:
     - state: cooked

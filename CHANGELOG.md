@@ -19,3 +19,4 @@
 - 2026-11-13 Checker part 3: content/en/check/medicines.yaml (44 medicines, CRAT/ANSM/NHS) and exercise.yaml (28 activities), 69 new sources, tests/content-checks-part3.test.ts.
 - 2026-11-13 Checker bulk expansion: +827 rule-class foods (meat 161, charcuterie 123, fish 160, seafood 69, egg 88, dairy 62, cheese 144, ready meals 105 in total) in content/{en,fr}/check/foods.yaml, FR generated from class templates; hard-cheese no longer lists gouda/edam/cheddar/mimolette (now careful, aged-pressed class).
 - 2026-11-14 Checker search moved to the server: the phone only receives the tip items and the 8 best matches (lists are now thousands of items); parsed lists cached per server process.
+- 2026-11-14: Checker audit, meat: 19 duplicate or padding items merged into real items, game/offal/wine-stew/grilled-meat verdicts corrected to what the sources say, unique why per item (EN+FR), new duplicate-why test.
