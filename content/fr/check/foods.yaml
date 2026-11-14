@@ -469,6 +469,11 @@
     - Burger saignant
     - Hamburger à point
     - Medium-rare burger
+    - Cheeseburger fondu
+    - Burger au cheddar
+    - Burger au bleu
+    - Burger au chèvre
+    - Cheese burger
     - Burger
   local: true
   answers:
@@ -2312,20 +2317,31 @@
     - Brillat-Savarin
     - Saint-Marcellin
     - Carré de l'Est
+    - Camembert pasteurisé
+    - Camembert Président
+    - Camembert Lanquetot
+    - Camembert Réo
+    - Camembert pasteurised
+    - Saint-Nectaire fleuri
+    - Boursault
+    - Vignotte
+    - Fougerus
+    - Bloomy farm cheese
     - Camembert
-  tips: [avoid]
+  tips:
+    - avoid
   local: true
   answers:
     - state: pasteurised
       verdict: avoid
-      why: "En France, les fromages à croûte blanche et fleurie sont évités, même pasteurisés, car la listéria peut se développer dans la croûte et à l'intérieur, qui est coulant."
+      why: En France, les fromages à croûte blanche et fleurie sont évités, même pasteurisés, car la listéria peut se développer dans la croûte et à l'intérieur, qui est coulant.
       sources:
         - mangerbouger-aliments-eviter
         - ameli-aliments-eviter
         - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: "Le camembert ou le brie au lait cru (comme la plupart des AOC) présente le risque de listéria le plus élevé."
+      why: Le camembert ou le brie au lait cru (comme la plupart des AOC) présente le risque de listéria le plus élevé.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -2333,7 +2349,7 @@
         - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: "Le camembert ou le brie cuit dans une recette, chauffé jusqu'à ce qu'il bouillonne et fume à cœur, est sans danger. Retirez d'abord la croûte."
+      why: Le camembert ou le brie cuit dans une recette, chauffé jusqu'à ce qu'il bouillonne et fume à cœur, est sans danger. Retirez d'abord la croûte.
       sources:
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
@@ -2356,20 +2372,20 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: "Les fromages à croûte lavée peuvent transmettre la listéria. Les recommandations françaises demandent de les éviter."
+      why: "Pont-l'Évêque : les fromages à croûte lavée peuvent transmettre la listéria. Les recommandations françaises demandent de les éviter."
       sources:
         - mangerbouger-aliments-eviter
         - ameli-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: "Le fromage à croûte lavée au lait cru est la version la plus risquée. Évitez-le."
+      why: "Pont-l'Évêque : le fromage à croûte lavée au lait cru est la version la plus risquée. Évitez-le."
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
         - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: "Chauffé jusqu'à ce qu'il fume à cœur dans une recette, croûte retirée, il est sans danger."
+      why: "Pont-l'Évêque : chauffé jusqu'à ce qu'il fume à cœur dans une recette, croûte retirée, il est sans danger."
       sources:
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
@@ -2387,13 +2403,23 @@
     - Fromage persillé
     - Danish blue
     - Sauce roquefort
+    - Roquefort AOP
+    - Roquefort Papillon
+    - Roquefort Carles
+    - Roquefort Société
+    - Salade au bleu
+    - Salade bleu noix
+    - Salade au roquefort
+    - Salade au gorgonzola
+    - Salad bleu
     - Roquefort
-  tips: [avoid]
+  tips:
+    - avoid
   local: true
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: "Le roquefort est fabriqué avec du lait de brebis cru. Les fromages au lait cru et les fromages bleus peuvent transmettre la listéria. Évitez-le froid."
+      why: Le roquefort est fabriqué avec du lait de brebis cru. Les fromages au lait cru et les fromages bleus peuvent transmettre la listéria. Évitez-le froid.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -2401,13 +2427,13 @@
         - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: "Un fromage bleu à pâte molle n'est sans danger que s'il est cuit jusqu'à fumer, par exemple fondu dans une sauce chaude."
+      why: "Bleu d'Auvergne : un fromage bleu à pâte molle n'est sans danger que s'il est cuit jusqu'à fumer, par exemple fondu dans une sauce chaude."
       sources:
         - nhs-foods-to-avoid
         - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: "Un fromage bleu cuit jusqu'à fumer, par exemple dans une sauce ou sur un plat chaud, est sans danger."
+      why: Un fromage bleu cuit jusqu'à fumer, par exemple dans une sauce ou sur un plat chaud, est sans danger.
       sources:
         - nhs-foods-to-avoid
         - mangerbouger-aliments-eviter
@@ -2424,6 +2450,11 @@
     - Fromage de chèvre frais
     - Petit chèvre frais
     - Fresh goat spread
+    - Bûche de chèvre fraîche
+    - Chèvre frais en bûche
+    - Bûche de chèvre frais
+    - Bûche de chèvre nature
+    - Fresh goat log
     - Fresh goat cheese
   local: true
   answers:
@@ -2435,7 +2466,7 @@
         - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Le fromage au lait de chèvre cru peut transmettre la listéria et le parasite de la toxoplasmose.
+      why: "Chèvre frais : le fromage au lait de chèvre cru peut transmettre la listéria et le parasite de la toxoplasmose."
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -2455,26 +2486,50 @@
     - Picodon
     - Bûche de chèvre cendrée
     - Goat cheese with rind
+    - Bûche de chèvre
+    - Bûche de chèvre roulée
+    - Bûche de chèvre aux herbes
+    - Bûche de chèvre aux figues
+    - Goat log with rind
+    - Toast au chèvre
+    - Toasts de chèvre chaud
+    - Chèvre chaud sur toast
+    - Croûtons au chèvre
+    - Chèvre toast
+    - Salade au chèvre chaud
+    - Chèvre chaud miel
+    - Salade chèvre miel noix
+    - Salade de chèvre croûtons
+    - Chèvre chaud salad
+    - Chèvre sec
+    - Chèvre demi-sec
+    - Chèvre moelleux
+    - Chèvre aged
+    - Chèvre au miel
+    - Chèvre miel noix
+    - Fromage de chèvre au miel
+    - Chèvre et miel
+    - Chèvre honey
     - Crottin de Chavignol
   local: true
   answers:
     - state: pasteurised
       verdict: avoid
-      why: "Les fromages de chèvre à croûte blanche ou cendrée font partie du groupe des pâtes molles à éviter lorsqu'ils sont mangés froids."
+      why: Les fromages de chèvre à croûte blanche ou cendrée font partie du groupe des pâtes molles à éviter lorsqu'ils sont mangés froids.
       sources:
         - mangerbouger-aliments-eviter
         - ameli-aliments-eviter
         - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: "Le fromage de chèvre au lait cru avec croûte présente le risque le plus élevé, de listéria et de toxoplasmose."
+      why: "Sainte-Maure : le fromage de chèvre au lait cru avec croûte présente le risque le plus élevé, de listéria et de toxoplasmose."
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
         - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: "Le chèvre chaud (grillé sur du pain jusqu'à bouillonner et être bien chaud à cœur) est acceptable. Retirez d'abord la croûte, et vérifiez que les feuilles de salade ont été lavées."
+      why: Le chèvre chaud (grillé sur du pain jusqu'à bouillonner et être bien chaud à cœur) est acceptable. Retirez d'abord la croûte, et vérifiez que les feuilles de salade ont été lavées.
       sources:
         - nhs-foods-to-avoid
         - mangerbouger-aliments-eviter
@@ -2490,19 +2545,20 @@
     - Fromage à pâte dure
     - Hard cheese
     - Comté
-  tips: [best]
+  tips:
+    - best
   local: true
   answers:
     - state: pasteurised
       verdict: ok
-      why: "Les fromages à pâte pressée cuite et dure sont sans danger. Retirez la croûte, puis tranchez ou râpez le fromage vous-même."
+      why: "Emmental : les fromages à pâte pressée cuite et dure sont sans danger. Retirez la croûte, puis tranchez ou râpez le fromage vous-même."
       sources:
         - mangerbouger-aliments-eviter
         - ameli-aliments-eviter
         - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: ok
-      why: "Le comté, le beaufort et les autres fromages à pâte dure cuite sont chauffés et affinés assez longtemps pour que les versions au lait cru soient acceptées en France."
+      why: Le comté, le beaufort et les autres fromages à pâte dure cuite sont chauffés et affinés assez longtemps pour que les versions au lait cru soient acceptées en France.
       sources:
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
@@ -2515,8 +2571,13 @@
     - Grana Padano
     - Pecorino
     - Copeaux de parmesan
+    - Parmesan 24 mois
+    - Parmesan AOP
+    - Parmesan en copeaux
+    - Parmigiano
     - Parmesan
-  tips: [best]
+  tips:
+    - best
   local: true
   answers:
     - state: pasteurised
@@ -2556,19 +2617,40 @@
     - Caprese
     - Tomates mozzarella
     - Mozza
+    - Mozzarella fraîche
+    - Mozzarella fior di latte
+    - Mozzarella en boule
+    - Fresh mozzarella
+    - Mozzarella râpée
+    - Mozzarella pour pizza
+    - Mozzarella en tranches
+    - Mozzarella light
+    - Mozzarella for pizza
+    - Boccconcini
+    - Mozzarella perles
+    - Perles de mozzarella
+    - Mini mozzarella
+    - Burrata crémeuse
+    - Burrata di Puglia
+    - Burrata fraîche
+    - Burrata cream
+    - Salade caprese
+    - Tomates mozzarella basilic
+    - Salade tomates mozzarella
+    - Caprese salad
     - Mozzarella
   local: true
   answers:
     - state: pasteurised
       verdict: ok
-      why: "La mozzarella et la burrata faites avec du lait pasteurisé (vérifiez l'étiquette) sont sans danger. Consommez-les avant la date limite."
+      why: La mozzarella et la burrata faites avec du lait pasteurisé (vérifiez l'étiquette) sont sans danger. Consommez-les avant la date limite.
       sources:
         - nhs-foods-to-avoid
         - cdc-food-pregnant-women
         - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: "La mozzarella ou la burrata au lait cru peut transmettre la listéria."
+      why: La mozzarella ou la burrata au lait cru peut transmettre la listéria.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -2584,19 +2666,34 @@
     - Brebis
     - Fromage de brebis
     - Feta au four
+    - Feta de chèvre
+    - Chèvre frais en dés
+    - Chèvre frais émietté
+    - Cubes de chèvre frais
+    - Goat feta
+    - Feta grecque
+    - Feta AOP
+    - Feta de brebis
+    - Feta en dés
+    - Feta Greek
+    - Feta allégée
+    - Feta nature
+    - Feta en tranches
+    - Feta marinée
+    - Feta light
     - Feta
   local: true
   answers:
     - state: pasteurised
       verdict: ok
-      why: "La feta et le halloumi faits avec du lait pasteurisé sont sans danger."
+      why: La feta et le halloumi faits avec du lait pasteurisé sont sans danger.
       sources:
         - nhs-foods-to-avoid
         - cdc-food-pregnant-women
         - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: "La feta ou le fromage de brebis au lait cru peuvent transmettre la listéria. Vérifiez l'étiquette."
+      why: La feta ou le fromage de brebis au lait cru peuvent transmettre la listéria. Vérifiez l'étiquette.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -2615,26 +2712,30 @@
     - Tartiflette
     - Tomme de Savoie
     - Fromage pâte pressée non cuite
+    - Reblochon de Savoie
+    - Reblochon fermier AOP
+    - Reblochon au lait cru
+    - Reblochon fermier
     - Reblochon
   local: true
   answers:
     - state: pasteurised
       verdict: avoid
-      why: "Les fromages à pâte pressée non cuite et molle (reblochon, morbier, tomme, saint-nectaire) sont à éviter froids en France."
+      why: Les fromages à pâte pressée non cuite et molle (reblochon, morbier, tomme, saint-nectaire) sont à éviter froids en France.
       sources:
         - mangerbouger-aliments-eviter
         - ameli-aliments-eviter
         - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: "Le reblochon et les fromages similaires au lait cru présentent un risque élevé de listéria s'ils ne sont pas chauffés."
+      why: Le reblochon et les fromages similaires au lait cru présentent un risque élevé de listéria s'ils ne sont pas chauffés.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
         - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: "Fondu jusqu'à bouillonner et être très chaud (raclette, tartiflette, gratin), croûte retirée, il est sans danger."
+      why: Fondu jusqu'à bouillonner et être très chaud (raclette, tartiflette, gratin), croûte retirée, il est sans danger.
       sources:
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
@@ -2653,13 +2754,19 @@
     - Fromage à tartiner
     - Madame Loïk
     - Processed cheese
+    - Fromage à tartiner Saint Môret
+    - Fromage à tartiner Philadelphia
+    - Fromage à tartiner Tartare
+    - Fromage à tartiner Madame Loïk
+    - Spreadable cheese cream
     - Cream cheese
-  tips: [best]
+  tips:
+    - best
   local: true
   answers:
     - state: pasteurised
       verdict: ok
-      why: "Le fromage frais à tartiner et les fromages fondus sont faits avec du lait pasteurisé et sont sans danger."
+      why: Le fromage frais à tartiner et les fromages fondus sont faits avec du lait pasteurisé et sont sans danger.
       sources:
         - nhs-foods-to-avoid
         - cdc-food-pregnant-women
@@ -2672,6 +2779,16 @@
     - Fondue bourguignonne
     - Fondue chinoise
     - Cheese fondue
+    - Fondue au fromage en pot
+    - Fondue savoyarde prête
+    - Fondue au fromage industrielle
+    - Fromage pour fondue
+    - Cheese fondue pot
+    - Fondue au fromage savoyarde
+    - Fondue au fromage maison
+    - Fondue aux trois fromages
+    - Fondue moitié-moitié
+    - Cheese fondue cooked
     - Fondue
   local: true
   answers:
@@ -2743,19 +2860,24 @@
     - Pizza reine
     - Pizza surgelée
     - Calzone
+    - Pizza margherita fromage
+    - Pizza 4 fromages gratinée
+    - Pizza au chèvre
+    - Pizza mozzarella
+    - Cheese pizza
     - Pizza
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: "Une pizza cuite et bien chaude est acceptable, y compris avec du jambon, du chorizo ou du fromage à pâte molle cuit à cœur."
+      why: Une pizza cuite et bien chaude est acceptable, y compris avec du jambon, du chorizo ou du fromage à pâte molle cuit à cœur.
       sources:
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
         - cdc-listeria-deli
     - state: raw
       verdict: careful
-      why: "Les garnitures ajoutées après cuisson, comme le jambon cru, la burrata, la roquette crue ou un œuf, ne sont pas chauffées. Évitez-les, ou demandez qu'on les retire."
+      why: Les garnitures ajoutées après cuisson, comme le jambon cru, la burrata, la roquette crue ou un œuf, ne sont pas chauffées. Évitez-les, ou demandez qu'on les retire.
       sources:
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
@@ -12140,6 +12262,11 @@
     - Omelette aux champignons
     - Omelette aux lardons
     - Omelette complète
+    - Omelette au fromage fondu
+    - Omelette au chèvre
+    - Omelette au comté
+    - Omelette au gruyère
+    - Cheese omelette
     - Omelette ham cheese
   local: true
   answers:
@@ -13608,16 +13735,26 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages à croûte fleurie sont déconseillés en France même pasteurisés, car la listeria peut se développer sur la croûte et dans la pâte molle.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Melun : les fromages à croûte fleurie sont déconseillés en France même pasteurisés, car la listeria peut se développer sur la croûte et dans la pâte molle."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Un fromage à pâte molle au lait cru présente le plus haut risque de listeria. Évitez-le.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
+      why: "Melun : un fromage à pâte molle au lait cru présente le plus haut risque de listeria. Évitez-le."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Cuit ou fondu dans une recette jusqu'à être bouillonnant et fumant à cœur, il est sans danger. Enlevez la croûte avant.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Melun : cuit ou fondu dans une recette jusqu'à être bouillonnant et fumant à cœur, il est sans danger. Enlevez la croûte avant."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: camembert-de-normandie
   category: cheese
@@ -13631,39 +13768,26 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages à croûte fleurie sont déconseillés en France même pasteurisés, car la listeria peut se développer sur la croûte et dans la pâte molle.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Camembert de Normandie AOP : les fromages à croûte fleurie sont déconseillés en France même pasteurisés, car la listeria peut se développer sur la croûte et dans la pâte molle."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Un fromage à pâte molle au lait cru présente le plus haut risque de listeria. Évitez-le.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
+      why: "Camembert de Normandie AOP : un fromage à pâte molle au lait cru présente le plus haut risque de listeria. Évitez-le."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Cuit ou fondu dans une recette jusqu'à être bouillonnant et fumant à cœur, il est sans danger. Enlevez la croûte avant.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: camembert-pasteurised
-  category: cheese
-  names:
-    - Camembert pasteurisé
-    - Camembert Président
-    - Camembert Lanquetot
-    - Camembert Réo
-    - Camembert pasteurised
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: avoid
-      why: Les fromages à croûte fleurie sont déconseillés en France même pasteurisés, car la listeria peut se développer sur la croûte et dans la pâte molle.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Un fromage à pâte molle au lait cru présente le plus haut risque de listeria. Évitez-le.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
-    - state: cooked
-      verdict: ok
-      why: Cuit ou fondu dans une recette jusqu'à être bouillonnant et fumant à cœur, il est sans danger. Enlevez la croûte avant.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Camembert de Normandie AOP : cuit ou fondu dans une recette jusqu'à être bouillonnant et fumant à cœur, il est sans danger. Enlevez la croûte avant."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: saint-andre
   category: cheese
@@ -13676,16 +13800,26 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages à croûte fleurie sont déconseillés en France même pasteurisés, car la listeria peut se développer sur la croûte et dans la pâte molle.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Saint André : les fromages à croûte fleurie sont déconseillés en France même pasteurisés, car la listeria peut se développer sur la croûte et dans la pâte molle."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Un fromage à pâte molle au lait cru présente le plus haut risque de listeria. Évitez-le.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
+      why: "Saint André : un fromage à pâte molle au lait cru présente le plus haut risque de listeria. Évitez-le."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Cuit ou fondu dans une recette jusqu'à être bouillonnant et fumant à cœur, il est sans danger. Enlevez la croûte avant.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Saint André : cuit ou fondu dans une recette jusqu'à être bouillonnant et fumant à cœur, il est sans danger. Enlevez la croûte avant."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: caprice-des-dieux
   category: cheese
@@ -13698,16 +13832,26 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages à croûte fleurie sont déconseillés en France même pasteurisés, car la listeria peut se développer sur la croûte et dans la pâte molle.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Rouy : les fromages à croûte fleurie sont déconseillés en France même pasteurisés, car la listeria peut se développer sur la croûte et dans la pâte molle."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Un fromage à pâte molle au lait cru présente le plus haut risque de listeria. Évitez-le.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
+      why: "Rouy : un fromage à pâte molle au lait cru présente le plus haut risque de listeria. Évitez-le."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Cuit ou fondu dans une recette jusqu'à être bouillonnant et fumant à cœur, il est sans danger. Enlevez la croûte avant.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Rouy : cuit ou fondu dans une recette jusqu'à être bouillonnant et fumant à cœur, il est sans danger. Enlevez la croûte avant."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: saint-felicien
   category: cheese
@@ -13719,39 +13863,26 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages à croûte fleurie sont déconseillés en France même pasteurisés, car la listeria peut se développer sur la croûte et dans la pâte molle.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Saint Félicien : les fromages à croûte fleurie sont déconseillés en France même pasteurisés, car la listeria peut se développer sur la croûte et dans la pâte molle."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Un fromage à pâte molle au lait cru présente le plus haut risque de listeria. Évitez-le.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
+      why: "Saint Félicien : un fromage à pâte molle au lait cru présente le plus haut risque de listeria. Évitez-le."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Cuit ou fondu dans une recette jusqu'à être bouillonnant et fumant à cœur, il est sans danger. Enlevez la croûte avant.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: bloomy-farm-cheese
-  category: cheese
-  names:
-    - Saint-Nectaire fleuri
-    - Boursault
-    - Vignotte
-    - Fougerus
-    - Bloomy farm cheese
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: avoid
-      why: Les fromages à croûte fleurie sont déconseillés en France même pasteurisés, car la listeria peut se développer sur la croûte et dans la pâte molle.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Un fromage à pâte molle au lait cru présente le plus haut risque de listeria. Évitez-le.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
-    - state: cooked
-      verdict: ok
-      why: Cuit ou fondu dans une recette jusqu'à être bouillonnant et fumant à cœur, il est sans danger. Enlevez la croûte avant.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Saint Félicien : cuit ou fondu dans une recette jusqu'à être bouillonnant et fumant à cœur, il est sans danger. Enlevez la croûte avant."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: banon
   category: cheese
@@ -13759,21 +13890,35 @@
     - Banon AOP
     - Banon à la feuille
     - Banon de chèvre
+    - Banon à la feuille de châtaignier
+    - Banon fermier
+    - Banon AOP lait cru
+    - Banon goat
     - Banon
   local: true
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages à croûte fleurie sont déconseillés en France même pasteurisés, car la listeria peut se développer sur la croûte et dans la pâte molle.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Banon AOP : les fromages à croûte fleurie sont déconseillés en France même pasteurisés, car la listeria peut se développer sur la croûte et dans la pâte molle."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Un fromage à pâte molle au lait cru présente le plus haut risque de listeria. Évitez-le.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
+      why: "Banon AOP : un fromage à pâte molle au lait cru présente le plus haut risque de listeria. Évitez-le."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Cuit ou fondu dans une recette jusqu'à être bouillonnant et fumant à cœur, il est sans danger. Enlevez la croûte avant.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Banon AOP : cuit ou fondu dans une recette jusqu'à être bouillonnant et fumant à cœur, il est sans danger. Enlevez la croûte avant."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: chaumes
   category: cheese
@@ -13786,17 +13931,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages à croûte fleurie sont déconseillés en France même pasteurisés, car la listeria peut se développer sur la croûte et dans la pâte molle.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Chaumes ramolli : les fromages à croûte lavée peuvent transmettre la listéria. Les recommandations françaises demandent de les éviter."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Un fromage à pâte molle au lait cru présente le plus haut risque de listeria. Évitez-le.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
+      why: "Chaumes ramolli : le fromage à croûte lavée au lait cru est la version la plus risquée. Évitez-le."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Cuit ou fondu dans une recette jusqu'à être bouillonnant et fumant à cœur, il est sans danger. Enlevez la croûte avant.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Chaumes ramolli : chauffé jusqu'à ce qu'il fume à cœur dans une recette, croûte retirée, il est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-14
 - id: bleu-de-bresse
   category: cheese
   names:
@@ -13806,19 +13959,27 @@
     - Bleu de Bresse
   local: true
   answers:
-    - state: pasteurised
-      verdict: avoid
-      why: Les fromages à croûte fleurie sont déconseillés en France même pasteurisés, car la listeria peut se développer sur la croûte et dans la pâte molle.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
     - state: unpasteurised
       verdict: avoid
-      why: Un fromage à pâte molle au lait cru présente le plus haut risque de listeria. Évitez-le.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
+      why: "Bresse bleu : les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+    - state: pasteurised
+      verdict: careful
+      why: "Bresse bleu : un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cuit ou fondu dans une recette jusqu'à être bouillonnant et fumant à cœur, il est sans danger. Enlevez la croûte avant.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Bresse bleu : cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-14
 - id: tomme-de-brebis-fleurie
   category: cheese
   names:
@@ -13831,16 +13992,26 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages à croûte fleurie sont déconseillés en France même pasteurisés, car la listeria peut se développer sur la croûte et dans la pâte molle.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Tomme fleurie : les fromages à croûte fleurie sont déconseillés en France même pasteurisés, car la listeria peut se développer sur la croûte et dans la pâte molle."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Un fromage à pâte molle au lait cru présente le plus haut risque de listeria. Évitez-le.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
+      why: "Tomme fleurie : un fromage à pâte molle au lait cru présente le plus haut risque de listeria. Évitez-le."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Cuit ou fondu dans une recette jusqu'à être bouillonnant et fumant à cœur, il est sans danger. Enlevez la croûte avant.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Tomme fleurie : cuit ou fondu dans une recette jusqu'à être bouillonnant et fumant à cœur, il est sans danger. Enlevez la croûte avant."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: vieux-lille
   category: cheese
@@ -13853,16 +14024,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages à croûte lavée peuvent contenir la listeria. Les autorités françaises conseillent de les éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Vieux Boulogne : les fromages à croûte lavée peuvent contenir la listeria. Les autorités françaises conseillent de les éviter froids."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: La version au lait cru est la plus risquée. Évitez-la.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Vieux Boulogne : la version au lait cru est la plus risquée. Évitez-la."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Chauffé jusqu'à être fumant à cœur dans une recette, croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Vieux Boulogne : chauffé jusqu'à être fumant à cœur dans une recette, croûte enlevée, il est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: soumaintrain
   category: cheese
@@ -13875,16 +14055,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages à croûte lavée peuvent contenir la listeria. Les autorités françaises conseillent de les éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Ami du Chambertin : les fromages à croûte lavée peuvent contenir la listeria. Les autorités françaises conseillent de les éviter froids."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: La version au lait cru est la plus risquée. Évitez-la.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Ami du Chambertin : la version au lait cru est la plus risquée. Évitez-la."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Chauffé jusqu'à être fumant à cœur dans une recette, croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Ami du Chambertin : chauffé jusqu'à être fumant à cœur dans une recette, croûte enlevée, il est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: rollot
   category: cheese
@@ -13896,16 +14085,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages à croûte lavée peuvent contenir la listeria. Les autorités françaises conseillent de les éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Boulette de Cambrai : les fromages à croûte lavée peuvent contenir la listeria. Les autorités françaises conseillent de les éviter froids."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: La version au lait cru est la plus risquée. Évitez-la.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Boulette de Cambrai : la version au lait cru est la plus risquée. Évitez-la."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Chauffé jusqu'à être fumant à cœur dans une recette, croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Boulette de Cambrai : chauffé jusqu'à être fumant à cœur dans une recette, croûte enlevée, il est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: coeur-d-arras
   category: cheese
@@ -13918,16 +14116,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages à croûte lavée peuvent contenir la listeria. Les autorités françaises conseillent de les éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Coeur de Thiérache : les fromages à croûte lavée peuvent contenir la listeria. Les autorités françaises conseillent de les éviter froids."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: La version au lait cru est la plus risquée. Évitez-la.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Coeur de Thiérache : la version au lait cru est la plus risquée. Évitez-la."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Chauffé jusqu'à être fumant à cœur dans une recette, croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Coeur de Thiérache : chauffé jusqu'à être fumant à cœur dans une recette, croûte enlevée, il est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: chambertin
   category: cheese
@@ -13939,16 +14146,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages à croûte lavée peuvent contenir la listeria. Les autorités françaises conseillent de les éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Trou du Cru : les fromages à croûte lavée peuvent contenir la listeria. Les autorités françaises conseillent de les éviter froids."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: La version au lait cru est la plus risquée. Évitez-la.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Trou du Cru : la version au lait cru est la plus risquée. Évitez-la."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Chauffé jusqu'à être fumant à cœur dans une recette, croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Trou du Cru : chauffé jusqu'à être fumant à cœur dans une recette, croûte enlevée, il est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: tomme-de-brebis-lavee
   category: cheese
@@ -13962,38 +14178,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages à croûte lavée peuvent contenir la listeria. Les autorités françaises conseillent de les éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Brebis lavé : les fromages à croûte lavée peuvent contenir la listeria. Les autorités françaises conseillent de les éviter froids."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: La version au lait cru est la plus risquée. Évitez-la.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Brebis lavé : la version au lait cru est la plus risquée. Évitez-la."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Chauffé jusqu'à être fumant à cœur dans une recette, croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: reblochon-fermier
-  category: cheese
-  names:
-    - Reblochon de Savoie
-    - Reblochon fermier AOP
-    - Reblochon au lait cru
-    - Reblochon fermier
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: avoid
-      why: Les pâtes pressées non cuites à affinage court sont déconseillées froides en France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-    - state: cooked
-      verdict: ok
-      why: Fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Brebis lavé : chauffé jusqu'à être fumant à cœur dans une recette, croûte enlevée, il est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: salers
   category: cheese
@@ -14005,18 +14208,19 @@
   local: true
   answers:
     - state: pasteurised
-      verdict: avoid
-      why: Les pâtes pressées non cuites à affinage court sont déconseillées froides en France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      verdict: careful
+      why: "Salers AOP : les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-    - state: cooked
-      verdict: ok
-      why: Fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Salers AOP : les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: laguiole
   category: cheese
   names:
@@ -14027,18 +14231,19 @@
   local: true
   answers:
     - state: pasteurised
-      verdict: avoid
-      why: Les pâtes pressées non cuites à affinage court sont déconseillées froides en France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      verdict: careful
+      why: "Laguiole AOP : les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-    - state: cooked
-      verdict: ok
-      why: Fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Laguiole AOP : les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: tomme-des-pyrenees
   category: cheese
   names:
@@ -14049,39 +14254,46 @@
   local: true
   answers:
     - state: pasteurised
-      verdict: avoid
-      why: Les pâtes pressées non cuites à affinage court sont déconseillées froides en France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      verdict: careful
+      why: "Tomme noire : les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-    - state: cooked
-      verdict: ok
-      why: Fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Tomme noire : les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: raclette-cheese
   category: cheese
   names:
     - Raclette de Savoie
     - Raclette au lait cru
+    - Raclette allégée
+    - Raclette fumée
+    - Raclette au poivre
+    - Raclette aux herbes
+    - Raclette light
     - Raclette cheese
   local: true
   answers:
     - state: pasteurised
-      verdict: avoid
-      why: Les pâtes pressées non cuites à affinage court sont déconseillées froides en France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      verdict: careful
+      why: "Raclette de Savoie : les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-    - state: cooked
-      verdict: ok
-      why: Fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Raclette de Savoie : les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: ossau-iraty
   category: cheese
   names:
@@ -14092,18 +14304,19 @@
   local: true
   answers:
     - state: pasteurised
-      verdict: avoid
-      why: Les pâtes pressées non cuites à affinage court sont déconseillées froides en France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      verdict: careful
+      why: "Ossau Iraty : les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-    - state: cooked
-      verdict: ok
-      why: Fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Ossau Iraty : les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: etorki
   category: cheese
   names:
@@ -14114,18 +14327,19 @@
   local: true
   answers:
     - state: pasteurised
-      verdict: avoid
-      why: Les pâtes pressées non cuites à affinage court sont déconseillées froides en France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      verdict: careful
+      why: "Istara : les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-    - state: cooked
-      verdict: ok
-      why: Fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Istara : les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: abbaye-de-tamie
   category: cheese
   names:
@@ -14137,16 +14351,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les pâtes pressées non cuites à affinage court sont déconseillées froides en France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Tamié : les pâtes pressées non cuites à affinage court sont déconseillées froides en France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Tamié : les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Tamié : fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: bargkass
   category: cheese
@@ -14159,16 +14382,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les pâtes pressées non cuites à affinage court sont déconseillées froides en France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Tomme du Bargkass : les pâtes pressées non cuites à affinage court sont déconseillées froides en France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Tomme du Bargkass : les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Tomme du Bargkass : fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: fromage-de-montagne
   category: cheese
@@ -14181,16 +14413,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les pâtes pressées non cuites à affinage court sont déconseillées froides en France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Tomme d'alpage : les pâtes pressées non cuites à affinage court sont déconseillées froides en France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Tomme d'alpage : les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Tomme d'alpage : fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: tomme-fraiche-aligot
   category: cheese
@@ -14204,16 +14445,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les pâtes pressées non cuites à affinage court sont déconseillées froides en France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Tome fraîche de l'Aubrac : les pâtes pressées non cuites à affinage court sont déconseillées froides en France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Tome fraîche de l'Aubrac : les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Tome fraîche de l'Aubrac : fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: fromage-corse
   category: cheese
@@ -14226,18 +14476,19 @@
   local: true
   answers:
     - state: pasteurised
-      verdict: avoid
-      why: Les pâtes pressées non cuites à affinage court sont déconseillées froides en France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      verdict: careful
+      why: "Venaco : les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-    - state: cooked
-      verdict: ok
-      why: Fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Venaco : les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: fromage-de-chevre-presse
   category: cheese
   names:
@@ -14249,18 +14500,19 @@
   local: true
   answers:
     - state: pasteurised
-      verdict: avoid
-      why: Les pâtes pressées non cuites à affinage court sont déconseillées froides en France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      verdict: careful
+      why: "Chevrotin : les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-    - state: cooked
-      verdict: ok
-      why: Fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Chevrotin : les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: mimolette-jeune
   category: cheese
   names:
@@ -14272,16 +14524,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les pâtes pressées non cuites à affinage court sont déconseillées froides en France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Mimolette demi-vieille : les pâtes pressées non cuites à affinage court sont déconseillées froides en France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Mimolette demi-vieille : les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Mimolette demi-vieille : fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cheddar-young
   category: cheese
@@ -14295,16 +14556,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les pâtes pressées non cuites à affinage court sont déconseillées froides en France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Cheddar jeune : les pâtes pressées non cuites à affinage court sont déconseillées froides en France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Cheddar jeune : les versions au lait cru présentent un risque élevé de listeria si elles ne sont pas chauffées."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cheddar jeune : fondu jusqu'à être bouillonnant et brûlant (raclette, gratin, tartiflette), croûte enlevée, il est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: gouda
   category: cheese
@@ -14317,12 +14587,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: Les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Gouda jeune : les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Gouda jeune : les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: edam
   category: cheese
@@ -14335,12 +14610,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: Les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Édam : les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Édam : les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: cheddar
   category: cheese
@@ -14353,12 +14633,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: Les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Cheddar affiné : les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Cheddar affiné : les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: mini-babybel
   category: cheese
@@ -14371,12 +14656,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: Les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Babybel : les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Babybel : les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: mimolette
   category: cheese
@@ -14389,12 +14679,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: Les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Mimolette extra-vieille : les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Mimolette extra-vieille : les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: leerdammer
   category: cheese
@@ -14407,12 +14702,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: Les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Maasdam : les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Maasdam : les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: manchego
   category: cheese
@@ -14425,12 +14725,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: Les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Manchego pasteurisé : les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Manchego pasteurisé : les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: fontina
   category: cheese
@@ -14443,12 +14748,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: Les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Fontina Val d'Aoste : les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Fontina Val d'Aoste : les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: provolone
   category: cheese
@@ -14461,12 +14771,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: Les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Provolone piquant : les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Provolone piquant : les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: colby-monterey
   category: cheese
@@ -14480,12 +14795,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: Les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Monterey Jack : les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Monterey Jack : les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: havarti
   category: cheese
@@ -14498,12 +14818,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: Les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Havarti nature : les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Havarti nature : les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: tilsit
   category: cheese
@@ -14516,31 +14841,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: Les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Tilsiter : les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: raclette-light
-  category: cheese
-  names:
-    - Raclette allégée
-    - Raclette fumée
-    - Raclette au poivre
-    - Raclette aux herbes
-    - Raclette light
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: careful
-      why: Les autorités britanniques et américaines acceptent les versions pasteurisées, mais la France déconseille les pâtes pressées non cuites à affinage court. Choisissez-en un bien affiné, ou mangez-le fondu bien chaud.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Tilsiter : les versions au lait cru présentent un risque de listeria plus élevé. Évitez-les froides."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: comte-fruite
   category: cheese
@@ -14554,12 +14865,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Les pâtes pressées cuites sont sans danger. Enlevez la croûte et tranchez ou râpez-le vous-même.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Comté 12 mois : les pâtes pressées cuites sont sans danger. Enlevez la croûte et tranchez ou râpez-le vous-même."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: ok
-      why: Elles sont chauffées et affinées assez longtemps pour que les versions au lait cru soient acceptées en France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Comté 12 mois : elles sont chauffées et affinées assez longtemps pour que les versions au lait cru soient acceptées en France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: gruyere-suisse
   category: cheese
@@ -14567,36 +14883,31 @@
     - Gruyère AOP
     - Gruyère d'alpage
     - Gruyère de Comté
-    - Gruyère suisse
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Les pâtes pressées cuites sont sans danger. Enlevez la croûte et tranchez ou râpez-le vous-même.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: ok
-      why: Elles sont chauffées et affinées assez longtemps pour que les versions au lait cru soient acceptées en France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: gruyere-francais
-  category: cheese
-  names:
     - Gruyère de France
     - Gruyère IGP
     - Gruyère français râpé
     - Gruyère de Savoie
     - Gruyère français
+    - Fondu au gruyère
+    - Gruyère fondu
+    - Croûte au fromage
+    - Gruyère fondue
+    - Gruyère suisse
   local: true
   answers:
     - state: pasteurised
       verdict: ok
-      why: Les pâtes pressées cuites sont sans danger. Enlevez la croûte et tranchez ou râpez-le vous-même.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Gruyère AOP : les pâtes pressées cuites sont sans danger. Enlevez la croûte et tranchez ou râpez-le vous-même."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: ok
-      why: Elles sont chauffées et affinées assez longtemps pour que les versions au lait cru soient acceptées en France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Gruyère AOP : elles sont chauffées et affinées assez longtemps pour que les versions au lait cru soient acceptées en France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: emmental-francais
   category: cheese
@@ -14604,35 +14915,26 @@
     - Emmental Grand Cru
     - Emmental de Savoie
     - Emmental de Bretagne
+    - Emmentaler AOP
+    - Emmental allemand
+    - Emmental bavarois
+    - Emmental suisse
     - Emmental français
   local: true
   answers:
     - state: pasteurised
       verdict: ok
-      why: Les pâtes pressées cuites sont sans danger. Enlevez la croûte et tranchez ou râpez-le vous-même.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Emmental Grand Cru : les pâtes pressées cuites sont sans danger. Enlevez la croûte et tranchez ou râpez-le vous-même."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: ok
-      why: Elles sont chauffées et affinées assez longtemps pour que les versions au lait cru soient acceptées en France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: emmental-suisse
-  category: cheese
-  names:
-    - Emmentaler AOP
-    - Emmental allemand
-    - Emmental bavarois
-    - Emmental suisse
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Les pâtes pressées cuites sont sans danger. Enlevez la croûte et tranchez ou râpez-le vous-même.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: ok
-      why: Elles sont chauffées et affinées assez longtemps pour que les versions au lait cru soient acceptées en France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Emmental Grand Cru : elles sont chauffées et affinées assez longtemps pour que les versions au lait cru soient acceptées en France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: sbrinz
   category: cheese
@@ -14644,30 +14946,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Les pâtes pressées cuites sont sans danger. Enlevez la croûte et tranchez ou râpez-le vous-même.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Sbrinz AOP : les pâtes pressées cuites sont sans danger. Enlevez la croûte et tranchez ou râpez-le vous-même."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: ok
-      why: Elles sont chauffées et affinées assez longtemps pour que les versions au lait cru soient acceptées en France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: parmigiano
-  category: cheese
-  names:
-    - Parmesan 24 mois
-    - Parmesan AOP
-    - Parmesan en copeaux
-    - Parmigiano
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Les pâtes pressées cuites sont sans danger. Enlevez la croûte et tranchez ou râpez-le vous-même.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: ok
-      why: Elles sont chauffées et affinées assez longtemps pour que les versions au lait cru soient acceptées en France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Sbrinz AOP : elles sont chauffées et affinées assez longtemps pour que les versions au lait cru soient acceptées en France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: mimolette-very-old
   category: cheese
@@ -14681,13 +14970,19 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Les pâtes pressées cuites sont sans danger. Enlevez la croûte et tranchez ou râpez-le vous-même.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Cantal vieux : un fromage dur affiné fait avec du lait pasteurisé est sans danger. Retirez la croûte et coupez-le ou râpez-le vous-même."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
-      verdict: ok
-      why: Elles sont chauffées et affinées assez longtemps pour que les versions au lait cru soient acceptées en France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: avoid
+      why: "Cantal vieux : contrairement au comté ou au beaufort, ce n'est pas une pâte pressée cuite : la règle française contre les fromages au lait cru s'applique. Évitez la version au lait cru."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: gouda-very-old
   category: cheese
   names:
@@ -14700,13 +14995,19 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Les pâtes pressées cuites sont sans danger. Enlevez la croûte et tranchez ou râpez-le vous-même.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Gouda très vieux : un fromage dur affiné fait avec du lait pasteurisé est sans danger. Retirez la croûte et coupez-le ou râpez-le vous-même."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
-      verdict: ok
-      why: Elles sont chauffées et affinées assez longtemps pour que les versions au lait cru soient acceptées en France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: avoid
+      why: "Gouda très vieux : contrairement au comté ou au beaufort, ce n'est pas une pâte pressée cuite : la règle française contre les fromages au lait cru s'applique. Évitez la version au lait cru."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: cheddar-very-old
   category: cheese
   names:
@@ -14719,53 +15020,19 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Les pâtes pressées cuites sont sans danger. Enlevez la croûte et tranchez ou râpez-le vous-même.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: ok
-      why: Elles sont chauffées et affinées assez longtemps pour que les versions au lait cru soient acceptées en France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: gruyere-fondue
-  category: cheese
-  names:
-    - Fondu au gruyère
-    - Gruyère fondu
-    - Croûte au fromage
-    - Gruyère fondue
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Les pâtes pressées cuites sont sans danger. Enlevez la croûte et tranchez ou râpez-le vous-même.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: ok
-      why: Elles sont chauffées et affinées assez longtemps pour que les versions au lait cru soient acceptées en France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: roquefort-societe
-  category: cheese
-  names:
-    - Roquefort AOP
-    - Roquefort Papillon
-    - Roquefort Carles
-    - Roquefort Société
-  local: true
-  answers:
+      why: "Cheddar très vieux : un fromage dur affiné fait avec du lait pasteurisé est sans danger. Retirez la croûte et coupez-le ou râpez-le vous-même."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: careful
-      why: Un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: ok
-      why: Cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
+      why: "Cheddar très vieux : contrairement au comté ou au beaufort, ce n'est pas une pâte pressée cuite : la règle française contre les fromages au lait cru s'applique. Évitez la version au lait cru."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: bleu-de-gex
   category: cheese
   names:
@@ -14778,16 +15045,24 @@
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: Les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Bleu de Gex Haut-Jura : les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bleu de Gex Haut-Jura : un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bleu de Gex Haut-Jura : cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: bleu-du-vercors
   category: cheese
@@ -14801,16 +15076,24 @@
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: Les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Bleu du Vercors-Sassenage : les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bleu du Vercors-Sassenage : un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bleu du Vercors-Sassenage : cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: bleu-de-laqueuille
   category: cheese
@@ -14823,16 +15106,24 @@
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: Les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Bleu de Termignon : les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bleu de Termignon : un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bleu de Termignon : cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: saint-agur
   category: cheese
@@ -14845,16 +15136,24 @@
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: Les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Saint-Agur : les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Saint-Agur : un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Saint-Agur : cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: danablu
   category: cheese
@@ -14866,16 +15165,24 @@
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: Les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Bleu danois : les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bleu danois : un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bleu danois : cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: cambozola
   category: cheese
@@ -14888,16 +15195,24 @@
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: Les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cambozola Black Label : les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Cambozola Black Label : un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Cambozola Black Label : cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: dolcelatte
   category: cheese
@@ -14910,16 +15225,24 @@
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: Les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Bleu doux italien : les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bleu doux italien : un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bleu doux italien : cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: cabrales
   category: cheese
@@ -14932,16 +15255,24 @@
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: Les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cabrales espagnol : les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Cabrales espagnol : un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Cabrales espagnol : cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: bleu-de-brebis
   category: cheese
@@ -14954,16 +15285,24 @@
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: Les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Roquefort de brebis : les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Roquefort de brebis : un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Roquefort de brebis : cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: bleu-de-chevre
   category: cheese
@@ -14976,39 +15315,24 @@
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: Les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Chèvre bleu : les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Chèvre bleu : un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: salad-bleu
-  category: cheese
-  names:
-    - Salade au bleu
-    - Salade bleu noix
-    - Salade au roquefort
-    - Salade au gorgonzola
-    - Salad bleu
-  local: true
-  answers:
-    - state: unpasteurised
-      verdict: avoid
-      why: Les fromages à pâte persillée au lait cru peuvent contenir la listeria. Évitez-les froids.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: careful
-      why: Un fromage bleu à pâte molle n'est sûr que s'il est cuit jusqu'à être fumant, par exemple fondu dans une sauce chaude.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: ok
-      why: Cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Chèvre bleu : cuit jusqu'à être fumant, en sauce ou sur un plat chaud, il est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: sainte-maure-de-touraine
   category: cheese
@@ -15020,16 +15344,24 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Sainte Maure : les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Sainte Maure : un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Sainte Maure : grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: chabichou-du-poitou
   category: cheese
@@ -15042,16 +15374,24 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Chabichou : les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Chabichou : un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Chabichou : grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: pelardon
   category: cheese
@@ -15064,16 +15404,24 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Pélardon des Cévennes : les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Pélardon des Cévennes : un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Pélardon des Cévennes : grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: pouligny-saint-pierre
   category: cheese
@@ -15086,16 +15434,24 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Pouligny Saint-Pierre : les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Pouligny Saint-Pierre : un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Pouligny Saint-Pierre : grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: charolais-goat
   category: cheese
@@ -15109,16 +15465,24 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Charolais : les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Charolais : un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Charolais : grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: cendre-goat
   category: cheese
@@ -15131,16 +15495,24 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Chèvre cendré : les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Chèvre cendré : un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Chèvre cendré : grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: mothais
   category: cheese
@@ -15153,130 +15525,24 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Mothais sur feuille : les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Mothais sur feuille : un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: chevre-aged
-  category: cheese
-  names:
-    - Chèvre sec
-    - Chèvre demi-sec
-    - Chèvre moelleux
-    - Chèvre aged
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: avoid
-      why: Les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
-    - state: cooked
-      verdict: ok
-      why: Grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: goat-log-with-rind
-  category: cheese
-  names:
-    - Bûche de chèvre
-    - Bûche de chèvre roulée
-    - Bûche de chèvre aux herbes
-    - Bûche de chèvre aux figues
-    - Goat log with rind
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: avoid
-      why: Les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
-    - state: cooked
-      verdict: ok
-      why: Grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: chevre-toast
-  category: cheese
-  names:
-    - Toast au chèvre
-    - Toasts de chèvre chaud
-    - Chèvre chaud sur toast
-    - Croûtons au chèvre
-    - Chèvre toast
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: avoid
-      why: Les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
-    - state: cooked
-      verdict: ok
-      why: Grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: chevre-chaud-salad
-  category: cheese
-  names:
-    - Salade au chèvre chaud
-    - Chèvre chaud miel
-    - Salade chèvre miel noix
-    - Salade de chèvre croûtons
-    - Chèvre chaud salad
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: avoid
-      why: Les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
-    - state: cooked
-      verdict: ok
-      why: Grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: chevre-honey
-  category: cheese
-  names:
-    - Chèvre au miel
-    - Chèvre miel noix
-    - Fromage de chèvre au miel
-    - Chèvre et miel
-    - Chèvre honey
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: avoid
-      why: Les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
-    - state: cooked
-      verdict: ok
-      why: Grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Mothais sur feuille : grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: chevre-tart
   category: cheese
@@ -15290,16 +15556,24 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Tarte au chèvre : les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Tarte au chèvre : un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Tarte au chèvre : grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: goat-cheese-puff
   category: cheese
@@ -15313,76 +15587,24 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Feuilleté au chèvre : les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Feuilleté au chèvre : un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: banon-goat
-  category: cheese
-  names:
-    - Banon à la feuille de châtaignier
-    - Banon fermier
-    - Banon AOP lait cru
-    - Banon goat
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: avoid
-      why: Les fromages de chèvre à croûte blanche ou cendrée font partie des croûtes fleuries à éviter froids.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Un fromage de chèvre au lait cru avec croûte présente le plus haut risque, de listeria et de toxoplasmose.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
-    - state: cooked
-      verdict: ok
-      why: Grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: fresh-goat-log
-  category: cheese
-  names:
-    - Bûche de chèvre fraîche
-    - Chèvre frais en bûche
-    - Bûche de chèvre frais
-    - Bûche de chèvre nature
-    - Fresh goat log
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Un fromage de chèvre frais sans croûte, au lait pasteurisé (comme la plupart de ceux des supermarchés), est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Un fromage au lait de chèvre cru peut contenir la listeria et le parasite de la toxoplasmose.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: goat-feta
-  category: cheese
-  names:
-    - Feta de chèvre
-    - Chèvre frais en dés
-    - Chèvre frais émietté
-    - Cubes de chèvre frais
-    - Goat feta
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Un fromage de chèvre frais sans croûte, au lait pasteurisé (comme la plupart de ceux des supermarchés), est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Un fromage au lait de chèvre cru peut contenir la listeria et le parasite de la toxoplasmose.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis, cdc-listeria-dairy ]
+      why: "Feuilleté au chèvre : grillé ou cuit jusqu'à être bouillonnant et chaud à cœur, croûte enlevée, il est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: goat-cream-cheese
   category: cheese
@@ -15391,36 +15613,28 @@
     - Chèvre crémeux
     - Chèvre blanc
     - Chèvre onctueux
-    - Goat cream cheese
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Un fromage de chèvre frais sans croûte, au lait pasteurisé (comme la plupart de ceux des supermarchés), est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Un fromage au lait de chèvre cru peut contenir la listeria et le parasite de la toxoplasmose.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: goat-ricotta
-  category: cheese
-  names:
     - Ricotta de chèvre
     - Brousse de chèvre
     - Caillé de chèvre
     - Fromage de chèvre blanc
     - Goat ricotta
+    - Goat cream cheese
   local: true
   answers:
     - state: pasteurised
       verdict: ok
-      why: Un fromage de chèvre frais sans croûte, au lait pasteurisé (comme la plupart de ceux des supermarchés), est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Fromage de chèvre crémeux : un fromage de chèvre frais sans croûte, au lait pasteurisé (comme la plupart de ceux des supermarchés), est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Un fromage au lait de chèvre cru peut contenir la listeria et le parasite de la toxoplasmose.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis, cdc-listeria-dairy ]
+      why: "Fromage de chèvre crémeux : un fromage au lait de chèvre cru peut contenir la listeria et le parasite de la toxoplasmose."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: fresh-sheep-cheese
   category: cheese
@@ -15434,141 +15648,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Un fromage de chèvre frais sans croûte, au lait pasteurisé (comme la plupart de ceux des supermarchés), est sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Fromage frais de brebis : un fromage de chèvre frais sans croûte, au lait pasteurisé (comme la plupart de ceux des supermarchés), est sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Un fromage au lait de chèvre cru peut contenir la listeria et le parasite de la toxoplasmose.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: fresh-mozzarella
-  category: cheese
-  names:
-    - Mozzarella fraîche
-    - Mozzarella fior di latte
-    - Mozzarella en boule
-    - Fresh mozzarella
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé (vérifiez l'étiquette), il est sans danger. Mangez-le avant la date limite.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: La version au lait cru peut contenir la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: mozzarella-for-pizza
-  category: cheese
-  names:
-    - Mozzarella râpée
-    - Mozzarella pour pizza
-    - Mozzarella en tranches
-    - Mozzarella light
-    - Mozzarella for pizza
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé (vérifiez l'étiquette), il est sans danger. Mangez-le avant la date limite.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: La version au lait cru peut contenir la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: mini-mozzarella
-  category: cheese
-  names:
-    - Boccconcini
-    - Mozzarella perles
-    - Perles de mozzarella
-    - Mini mozzarella
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé (vérifiez l'étiquette), il est sans danger. Mangez-le avant la date limite.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: La version au lait cru peut contenir la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: burrata-cream
-  category: cheese
-  names:
-    - Burrata crémeuse
-    - Burrata di Puglia
-    - Burrata fraîche
-    - Burrata cream
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé (vérifiez l'étiquette), il est sans danger. Mangez-le avant la date limite.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: La version au lait cru peut contenir la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: feta-greek
-  category: cheese
-  names:
-    - Feta grecque
-    - Feta AOP
-    - Feta de brebis
-    - Feta en dés
-    - Feta Greek
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé (vérifiez l'étiquette), il est sans danger. Mangez-le avant la date limite.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: La version au lait cru peut contenir la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: feta-light
-  category: cheese
-  names:
-    - Feta allégée
-    - Feta nature
-    - Feta en tranches
-    - Feta marinée
-    - Feta light
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé (vérifiez l'étiquette), il est sans danger. Mangez-le avant la date limite.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: La version au lait cru peut contenir la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: caprese-salad
-  category: cheese
-  names:
-    - Salade caprese
-    - Tomates mozzarella basilic
-    - Salade tomates mozzarella
-    - Caprese salad
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé (vérifiez l'étiquette), il est sans danger. Mangez-le avant la date limite.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: La version au lait cru peut contenir la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Fromage frais de brebis : un fromage au lait de chèvre cru peut contenir la listeria et le parasite de la toxoplasmose."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: mozzarella-sticks
   category: cheese
@@ -15579,34 +15670,20 @@
     - Mozzarella sticks
   local: true
   answers:
-    - state: pasteurised
+    - state: cooked
       verdict: ok
-      why: Fait avec du lait pasteurisé (vérifiez l'étiquette), il est sans danger. Mangez-le avant la date limite.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: La version au lait cru peut contenir la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: cheese-stick
-  category: cheese
-  names:
-    - String cheese
-    - Fromage effiloché
-    - Fromage en bâtonnets
-    - Mozzarella en ficelle
-    - Cheese stick
-  local: true
-  answers:
-    - state: pasteurised
+      why: "Bâtonnets de mozzarella : sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+    - state: reheated
       verdict: ok
-      why: Fait avec du lait pasteurisé (vérifiez l'étiquette), il est sans danger. Mangez-le avant la date limite.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: La version au lait cru peut contenir la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
+      why: "Bâtonnets de mozzarella : réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+  reviewed: 2026-11-14
 - id: cheese-curds
   category: cheese
   names:
@@ -15617,14 +15694,20 @@
   local: true
   answers:
     - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé (vérifiez l'étiquette), il est sans danger. Mangez-le avant la date limite.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
+      verdict: careful
+      why: "Fromage en grains : le CDC déconseille les fromages frais et mous de type queso fresco sauf s'ils sont chauffés jusqu'à ce qu'ils fument, même pasteurisés, alors que le NHS accepte les fromages mous pasteurisés. Mangez-le cuit dans un plat, ou demandez à votre sage-femme."
+      sources:
+        - cdc-food-pregnant-women
+        - cdc-listeria-dairy
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: La version au lait cru peut contenir la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
+      why: "Fromage en grains : le fromage frais au lait cru présente un risque plus élevé de listeria. Évitez-le."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: queso-fresco
   category: cheese
   names:
@@ -15635,14 +15718,20 @@
   local: true
   answers:
     - state: pasteurised
-      verdict: ok
-      why: Fait avec du lait pasteurisé (vérifiez l'étiquette), il est sans danger. Mangez-le avant la date limite.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
+      verdict: careful
+      why: "Queso blanco : le CDC déconseille les fromages frais et mous de type queso fresco sauf s'ils sont chauffés jusqu'à ce qu'ils fument, même pasteurisés, alors que le NHS accepte les fromages mous pasteurisés. Mangez-le cuit dans un plat, ou demandez à votre sage-femme."
+      sources:
+        - cdc-food-pregnant-women
+        - cdc-listeria-dairy
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: La version au lait cru peut contenir la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
+      why: "Queso blanco : le fromage frais au lait cru présente un risque plus élevé de listeria. Évitez-le."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: paneer-cheese
   category: cheese
   names:
@@ -15655,12 +15744,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Fait avec du lait pasteurisé (vérifiez l'étiquette), il est sans danger. Mangez-le avant la date limite.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
+      why: "Fromage paneer : fait avec du lait pasteurisé (vérifiez l'étiquette), il est sans danger. Mangez-le avant la date limite."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+        - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: La version au lait cru peut contenir la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Fromage paneer : la version au lait cru peut contenir la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: ricotta-salata
   category: cheese
@@ -15673,12 +15768,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Fait avec du lait pasteurisé (vérifiez l'étiquette), il est sans danger. Mangez-le avant la date limite.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
+      why: "Ricotta fumée : fait avec du lait pasteurisé (vérifiez l'étiquette), il est sans danger. Mangez-le avant la date limite."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+        - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: La version au lait cru peut contenir la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Ricotta fumée : la version au lait cru peut contenir la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: laughing-cow
   category: cheese
@@ -15686,13 +15787,30 @@
     - La vache qui rit
     - La vache qui rit portions
     - Vache qui rit light
+    - Fromage en triangle
+    - Kiri carré
+    - Carré frais
+    - Carré frais ail et fines herbes
+    - Cheese triangle
+    - Portions de fromage fondu
+    - Fromage fondu en portions
+    - Mini Babybel fondu
+    - Fromage en portions
+    - Cheese portions
+    - String cheese
+    - Fromage effiloché
+    - Fromage en bâtonnets
+    - Mozzarella en ficelle
+    - Cheese stick
     - Laughing Cow
   local: true
   answers:
     - state: pasteurised
       verdict: ok
-      why: Les fromages à tartiner, fondus ou frais sont faits avec du lait pasteurisé et sont sans danger.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "La vache qui rit : les fromages à tartiner, fondus ou frais sont faits avec du lait pasteurisé et sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cheese-slices
   category: cheese
@@ -15706,8 +15824,10 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Les fromages à tartiner, fondus ou frais sont faits avec du lait pasteurisé et sont sans danger.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Tranches cheddar : les fromages à tartiner, fondus ou frais sont faits avec du lait pasteurisé et sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cheese-spread
   category: cheese
@@ -15719,8 +15839,10 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Les fromages à tartiner, fondus ou frais sont faits avec du lait pasteurisé et sont sans danger.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Fromage à tartiner nature : les fromages à tartiner, fondus ou frais sont faits avec du lait pasteurisé et sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cheese-spread-bleu
   category: cheese
@@ -15734,53 +15856,10 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Les fromages à tartiner, fondus ou frais sont faits avec du lait pasteurisé et sont sans danger.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cheese-triangle
-  category: cheese
-  names:
-    - Fromage en triangle
-    - Kiri carré
-    - Carré frais
-    - Carré frais ail et fines herbes
-    - Cheese triangle
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Les fromages à tartiner, fondus ou frais sont faits avec du lait pasteurisé et sont sans danger.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cheese-portions
-  category: cheese
-  names:
-    - Portions de fromage fondu
-    - Fromage fondu en portions
-    - Mini Babybel fondu
-    - Fromage en portions
-    - Cheese portions
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Les fromages à tartiner, fondus ou frais sont faits avec du lait pasteurisé et sont sans danger.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: spreadable-cheese-cream
-  category: cheese
-  names:
-    - Fromage à tartiner Saint Môret
-    - Fromage à tartiner Philadelphia
-    - Fromage à tartiner Tartare
-    - Fromage à tartiner Madame Loïk
-    - Spreadable cheese cream
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Les fromages à tartiner, fondus ou frais sont faits avec du lait pasteurisé et sont sans danger.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Fromage à tartiner au bleu : les fromages à tartiner, fondus ou frais sont faits avec du lait pasteurisé et sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cheese-sauce
   category: cheese
@@ -15794,23 +15873,10 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Les fromages à tartiner, fondus ou frais sont faits avec du lait pasteurisé et sont sans danger.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cheese-fondue-pot
-  category: cheese
-  names:
-    - Fondue au fromage en pot
-    - Fondue savoyarde prête
-    - Fondue au fromage industrielle
-    - Fromage pour fondue
-    - Cheese fondue pot
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Les fromages à tartiner, fondus ou frais sont faits avec du lait pasteurisé et sont sans danger.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Sauce au fromage : les fromages à tartiner, fondus ou frais sont faits avec du lait pasteurisé et sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cheese-raclette
   category: cheese
@@ -15824,12 +15890,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Raclette party : sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Raclette party : réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: mac-and-cheese
   category: cheese
@@ -15837,17 +15908,27 @@
     - Macaroni au fromage
     - Macaroni gratiné
     - Gratin de macaronis
+    - Pâtes au fromage
+    - Pâtes aux quatre fromages
+    - Gnocchis gratinés
+    - Gnocchi au gorgonzola
+    - Pasta cheese
     - Mac and cheese
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Macaroni au fromage : sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Macaroni au fromage : réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: cheese-gratin
   category: cheese
@@ -15860,12 +15941,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Gratin de pommes de terre : sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Gratin de pommes de terre : réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: cheese-souffle
   category: cheese
@@ -15879,12 +15965,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Soufflé au fromage maison : sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Soufflé au fromage maison : réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: cheese-pie
   category: cheese
@@ -15893,17 +15984,27 @@
     - Tarte au maroilles
     - Flamiche au maroilles
     - Tarte au munster
+    - Feuilleté au fromage
+    - Allumettes au fromage
+    - Palmiers au fromage
+    - Pailles au fromage
+    - Cheese puff pastry
     - Cheese pie
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Tarte au fromage : sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Tarte au fromage : réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: cheese-gougere
   category: cheese
@@ -15917,31 +16018,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Gougères au fromage : sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: cheese-puff-pastry
-  category: cheese
-  names:
-    - Feuilleté au fromage
-    - Allumettes au fromage
-    - Palmiers au fromage
-    - Pailles au fromage
-    - Cheese puff pastry
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Gougères au fromage : réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: cheese-croquette
   category: cheese
@@ -15955,31 +16042,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Croquettes au fromage : sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: cheese-fondue-cooked
-  category: cheese
-  names:
-    - Fondue au fromage savoyarde
-    - Fondue au fromage maison
-    - Fondue aux trois fromages
-    - Fondue moitié-moitié
-    - Cheese fondue cooked
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Croquettes au fromage : réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: baked-camembert
   category: cheese
@@ -15993,12 +16066,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Camembert rôti : sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Camembert rôti : réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: brie-en-croute
   category: cheese
@@ -16011,12 +16089,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Brie feuilleté : sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Brie feuilleté : réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: camembert-breaded
   category: cheese
@@ -16030,12 +16113,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Camembert pané : sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Camembert pané : réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: cheese-toastie
   category: cheese
@@ -16049,12 +16137,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Croque fromage : sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Croque fromage : réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: french-onion-soup
   category: cheese
@@ -16068,88 +16161,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Soupe à l'oignon gratinée : sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: pasta-cheese
-  category: cheese
-  names:
-    - Pâtes au fromage
-    - Pâtes aux quatre fromages
-    - Gnocchis gratinés
-    - Gnocchi au gorgonzola
-    - Pasta cheese
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: cheese-lasagne
-  category: cheese
-  names:
-    - Lasagnes au fromage
-    - Lasagnes aux épinards ricotta
-    - Lasagnes végétariennes
-    - Cannelloni ricotta épinards
-    - Cheese lasagne
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: cheese-omelette
-  category: cheese
-  names:
-    - Omelette au fromage fondu
-    - Omelette au chèvre
-    - Omelette au comté
-    - Omelette au gruyère
-    - Cheese omelette
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: cheese-burger
-  category: cheese
-  names:
-    - Cheeseburger fondu
-    - Burger au cheddar
-    - Burger au bleu
-    - Burger au chèvre
-    - Cheese burger
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Soupe à l'oignon gratinée : réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: cheese-nachos
   category: cheese
@@ -16163,31 +16185,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Nachos au fromage : sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: cheese-pizza
-  category: cheese
-  names:
-    - Pizza margherita fromage
-    - Pizza 4 fromages gratinée
-    - Pizza au chèvre
-    - Pizza mozzarella
-    - Cheese pizza
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Nachos au fromage : réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: cheese-quesadilla
   category: cheese
@@ -16201,12 +16209,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Quesadilla au fromage : sans danger si le fromage est cuit jusqu'à être bouillonnant et fumant à cœur. Mangez-le chaud."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Quesadilla au fromage : réchauffez jusqu'à ce que ce soit fumant à cœur ; ne le mangez pas tiède."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: lasagne
   category: ready_meal
@@ -16214,17 +16227,28 @@
     - Lasagnes à la bolognaise
     - Lasagnes surgelées
     - Lasagnes du traiteur
+    - Lasagnes au fromage
+    - Lasagnes aux épinards ricotta
+    - Lasagnes végétariennes
+    - Cannelloni ricotta épinards
+    - Cheese lasagne
     - Lasagne
   local: true
   answers:
     - state: reheated
       verdict: ok
       why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      sources:
+        - nhs-healthy-diet
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
       why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
+      sources:
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: moussaka-ready
   category: ready_meal

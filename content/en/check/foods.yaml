@@ -466,6 +466,11 @@
     - Burger à point
     - Burger saignant
     - Hamburger à point
+    - Cheese burger
+    - Cheeseburger fondu
+    - Burger au cheddar
+    - Burger au bleu
+    - Burger au chèvre
   local: true
   answers:
     - state: undercooked
@@ -2308,7 +2313,18 @@
     - Brillat-Savarin
     - Saint-Marcellin
     - Carré de l'Est
-  tips: *a1
+    - Camembert pasteurised
+    - Camembert pasteurisé
+    - Camembert Président
+    - Camembert Lanquetot
+    - Camembert Réo
+    - Bloomy farm cheese
+    - Saint-Nectaire fleuri
+    - Boursault
+    - Vignotte
+    - Fougerus
+  tips:
+    - avoid
   local: true
   answers:
     - state: pasteurised
@@ -2351,20 +2367,20 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Washed-rind cheeses can carry listeria. French advice is to avoid them.
+      why: "Munster: washed-rind cheeses can carry listeria. French advice is to avoid them."
       sources:
         - mangerbouger-aliments-eviter
         - ameli-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk washed-rind cheese is the riskier version. Avoid it.
+      why: "Munster: raw-milk washed-rind cheese is the riskier version. Avoid it."
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
         - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Heated until steaming hot all through in a recipe, with the rind removed, it is safe.
+      why: "Munster: heated until steaming hot all through in a recipe, with the rind removed, it is safe."
       sources:
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
@@ -2383,7 +2399,17 @@
     - Fromage persillé
     - Danish blue
     - Sauce roquefort
-  tips: *a1
+    - Roquefort Société
+    - Roquefort AOP
+    - Roquefort Papillon
+    - Roquefort Carles
+    - Salad bleu
+    - Salade au bleu
+    - Salade bleu noix
+    - Salade au roquefort
+    - Salade au gorgonzola
+  tips:
+    - avoid
   local: true
   answers:
     - state: unpasteurised
@@ -2396,7 +2422,7 @@
         - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce.
+      why: "Roquefort: soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce."
       sources:
         - nhs-foods-to-avoid
         - mangerbouger-aliments-eviter
@@ -2420,6 +2446,11 @@
     - Chèvre frais à tartiner
     - Fromage de chèvre frais
     - Petit chèvre frais
+    - Fresh goat log
+    - Bûche de chèvre fraîche
+    - Chèvre frais en bûche
+    - Bûche de chèvre frais
+    - Bûche de chèvre nature
   local: true
   answers:
     - state: pasteurised
@@ -2430,7 +2461,7 @@
         - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw goat's milk cheese can carry listeria and the toxoplasmosis parasite.
+      why: "Fresh goat cheese: raw goat's milk cheese can carry listeria and the toxoplasmosis parasite."
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -2451,6 +2482,30 @@
     - Picodon
     - Bûche de chèvre cendrée
     - Goat cheese with rind
+    - Goat log with rind
+    - Bûche de chèvre
+    - Bûche de chèvre roulée
+    - Bûche de chèvre aux herbes
+    - Bûche de chèvre aux figues
+    - Chèvre toast
+    - Toast au chèvre
+    - Toasts de chèvre chaud
+    - Chèvre chaud sur toast
+    - Croûtons au chèvre
+    - Chèvre chaud salad
+    - Salade au chèvre chaud
+    - Chèvre chaud miel
+    - Salade chèvre miel noix
+    - Salade de chèvre croûtons
+    - Chèvre aged
+    - Chèvre sec
+    - Chèvre demi-sec
+    - Chèvre moelleux
+    - Chèvre honey
+    - Chèvre au miel
+    - Chèvre miel noix
+    - Fromage de chèvre au miel
+    - Chèvre et miel
   local: true
   answers:
     - state: pasteurised
@@ -2462,7 +2517,7 @@
         - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis.
+      why: "Crottin de Chavignol: raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis."
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -2485,12 +2540,13 @@
     - Appenzeller
     - Fromage à pâte dure
     - Hard cheese
-  tips: *a2
+  tips:
+    - best
   local: true
   answers:
     - state: pasteurised
       verdict: ok
-      why: Hard cooked pressed cheeses are safe. Remove the rind and slice or grate it yourself.
+      why: "Comté: hard cooked pressed cheeses are safe. Remove the rind and slice or grate it yourself."
       sources:
         - mangerbouger-aliments-eviter
         - ameli-aliments-eviter
@@ -2511,7 +2567,12 @@
     - Pecorino
     - Parmesan râpé
     - Copeaux de parmesan
-  tips: *a2
+    - Parmigiano
+    - Parmesan 24 mois
+    - Parmesan AOP
+    - Parmesan en copeaux
+  tips:
+    - best
   local: true
   answers:
     - state: pasteurised
@@ -2552,6 +2613,27 @@
     - Caprese
     - Tomates mozzarella
     - Mozza
+    - Fresh mozzarella
+    - Mozzarella fraîche
+    - Mozzarella fior di latte
+    - Mozzarella en boule
+    - Mozzarella for pizza
+    - Mozzarella râpée
+    - Mozzarella pour pizza
+    - Mozzarella en tranches
+    - Mozzarella light
+    - Mini mozzarella
+    - Boccconcini
+    - Mozzarella perles
+    - Perles de mozzarella
+    - Burrata cream
+    - Burrata crémeuse
+    - Burrata di Puglia
+    - Burrata fraîche
+    - Caprese salad
+    - Salade caprese
+    - Tomates mozzarella basilic
+    - Salade tomates mozzarella
   local: true
   answers:
     - state: pasteurised
@@ -2580,6 +2662,21 @@
     - Brebis
     - Fromage de brebis
     - Feta au four
+    - Goat feta
+    - Feta de chèvre
+    - Chèvre frais en dés
+    - Chèvre frais émietté
+    - Cubes de chèvre frais
+    - Feta Greek
+    - Feta grecque
+    - Feta AOP
+    - Feta de brebis
+    - Feta en dés
+    - Feta light
+    - Feta allégée
+    - Feta nature
+    - Feta en tranches
+    - Feta marinée
   local: true
   answers:
     - state: pasteurised
@@ -2611,6 +2708,10 @@
     - Tartiflette
     - Tomme de Savoie
     - Fromage pâte pressée non cuite
+    - Reblochon fermier
+    - Reblochon de Savoie
+    - Reblochon fermier AOP
+    - Reblochon au lait cru
   local: true
   answers:
     - state: pasteurised
@@ -2649,7 +2750,13 @@
     - Processed cheese
     - Fromage à tartiner
     - Madame Loïk
-  tips: *a2
+    - Spreadable cheese cream
+    - Fromage à tartiner Saint Môret
+    - Fromage à tartiner Philadelphia
+    - Fromage à tartiner Tartare
+    - Fromage à tartiner Madame Loïk
+  tips:
+    - best
   local: true
   answers:
     - state: pasteurised
@@ -2668,6 +2775,16 @@
     - Fondue bourguignonne
     - Fondue chinoise
     - Cheese fondue
+    - Cheese fondue pot
+    - Fondue au fromage en pot
+    - Fondue savoyarde prête
+    - Fondue au fromage industrielle
+    - Fromage pour fondue
+    - Cheese fondue cooked
+    - Fondue au fromage savoyarde
+    - Fondue au fromage maison
+    - Fondue aux trois fromages
+    - Fondue moitié-moitié
   local: true
   answers:
     - state: cooked
@@ -2739,6 +2856,11 @@
     - Pizza reine
     - Pizza surgelée
     - Calzone
+    - Cheese pizza
+    - Pizza margherita fromage
+    - Pizza 4 fromages gratinée
+    - Pizza au chèvre
+    - Pizza mozzarella
   local: true
   answers:
     - state: cooked
@@ -12132,6 +12254,11 @@
     - Omelette aux champignons
     - Omelette aux lardons
     - Omelette complète
+    - Cheese omelette
+    - Omelette au fromage fondu
+    - Omelette au chèvre
+    - Omelette au comté
+    - Omelette au gruyère
   local: true
   answers:
     - state: undercooked
@@ -13599,16 +13726,26 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Cheeses with a bloomy white rind are avoided in France even when pasteurised, because listeria can grow on the rind and in the soft inside.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Brie de Melun: cheeses with a bloomy white rind are avoided in France even when pasteurised, because listeria can grow on the rind and in the soft inside."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk soft cheese carries the highest listeria risk. Avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
+      why: "Brie de Melun: raw-milk soft cheese carries the highest listeria risk. Avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Baked or melted in a recipe until bubbling and steaming hot all through, it is safe. Remove the rind first.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Brie de Melun: baked or melted in a recipe until bubbling and steaming hot all through, it is safe. Remove the rind first."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: camembert-de-normandie
   category: cheese
@@ -13622,39 +13759,26 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Cheeses with a bloomy white rind are avoided in France even when pasteurised, because listeria can grow on the rind and in the soft inside.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Camembert de Normandie: cheeses with a bloomy white rind are avoided in France even when pasteurised, because listeria can grow on the rind and in the soft inside."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk soft cheese carries the highest listeria risk. Avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
+      why: "Camembert de Normandie: raw-milk soft cheese carries the highest listeria risk. Avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Baked or melted in a recipe until bubbling and steaming hot all through, it is safe. Remove the rind first.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: camembert-pasteurised
-  category: cheese
-  names:
-    - Camembert pasteurised
-    - Camembert pasteurisé
-    - Camembert Président
-    - Camembert Lanquetot
-    - Camembert Réo
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: avoid
-      why: Cheeses with a bloomy white rind are avoided in France even when pasteurised, because listeria can grow on the rind and in the soft inside.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Raw-milk soft cheese carries the highest listeria risk. Avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
-    - state: cooked
-      verdict: ok
-      why: Baked or melted in a recipe until bubbling and steaming hot all through, it is safe. Remove the rind first.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Camembert de Normandie: baked or melted in a recipe until bubbling and steaming hot all through, it is safe. Remove the rind first."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: saint-andre
   category: cheese
@@ -13667,16 +13791,26 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Cheeses with a bloomy white rind are avoided in France even when pasteurised, because listeria can grow on the rind and in the soft inside.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Saint-André: cheeses with a bloomy white rind are avoided in France even when pasteurised, because listeria can grow on the rind and in the soft inside."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk soft cheese carries the highest listeria risk. Avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
+      why: "Saint-André: raw-milk soft cheese carries the highest listeria risk. Avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Baked or melted in a recipe until bubbling and steaming hot all through, it is safe. Remove the rind first.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Saint-André: baked or melted in a recipe until bubbling and steaming hot all through, it is safe. Remove the rind first."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: caprice-des-dieux
   category: cheese
@@ -13689,16 +13823,26 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Cheeses with a bloomy white rind are avoided in France even when pasteurised, because listeria can grow on the rind and in the soft inside.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Caprice des Dieux: cheeses with a bloomy white rind are avoided in France even when pasteurised, because listeria can grow on the rind and in the soft inside."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk soft cheese carries the highest listeria risk. Avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
+      why: "Caprice des Dieux: raw-milk soft cheese carries the highest listeria risk. Avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Baked or melted in a recipe until bubbling and steaming hot all through, it is safe. Remove the rind first.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Caprice des Dieux: baked or melted in a recipe until bubbling and steaming hot all through, it is safe. Remove the rind first."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: saint-felicien
   category: cheese
@@ -13710,39 +13854,26 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Cheeses with a bloomy white rind are avoided in France even when pasteurised, because listeria can grow on the rind and in the soft inside.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Saint-Félicien: cheeses with a bloomy white rind are avoided in France even when pasteurised, because listeria can grow on the rind and in the soft inside."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk soft cheese carries the highest listeria risk. Avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
+      why: "Saint-Félicien: raw-milk soft cheese carries the highest listeria risk. Avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Baked or melted in a recipe until bubbling and steaming hot all through, it is safe. Remove the rind first.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: bloomy-farm-cheese
-  category: cheese
-  names:
-    - Bloomy farm cheese
-    - Saint-Nectaire fleuri
-    - Boursault
-    - Vignotte
-    - Fougerus
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: avoid
-      why: Cheeses with a bloomy white rind are avoided in France even when pasteurised, because listeria can grow on the rind and in the soft inside.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Raw-milk soft cheese carries the highest listeria risk. Avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
-    - state: cooked
-      verdict: ok
-      why: Baked or melted in a recipe until bubbling and steaming hot all through, it is safe. Remove the rind first.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Saint-Félicien: baked or melted in a recipe until bubbling and steaming hot all through, it is safe. Remove the rind first."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: banon
   category: cheese
@@ -13751,20 +13882,34 @@
     - Banon AOP
     - Banon à la feuille
     - Banon de chèvre
+    - Banon goat
+    - Banon à la feuille de châtaignier
+    - Banon fermier
+    - Banon AOP lait cru
   local: true
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Cheeses with a bloomy white rind are avoided in France even when pasteurised, because listeria can grow on the rind and in the soft inside.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Banon: cheeses with a bloomy white rind are avoided in France even when pasteurised, because listeria can grow on the rind and in the soft inside."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk soft cheese carries the highest listeria risk. Avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
+      why: "Banon: raw-milk soft cheese carries the highest listeria risk. Avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Baked or melted in a recipe until bubbling and steaming hot all through, it is safe. Remove the rind first.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Banon: baked or melted in a recipe until bubbling and steaming hot all through, it is safe. Remove the rind first."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: chaumes
   category: cheese
@@ -13777,17 +13922,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Cheeses with a bloomy white rind are avoided in France even when pasteurised, because listeria can grow on the rind and in the soft inside.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Chaumes: washed-rind cheeses can carry listeria. French advice is to avoid them."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk soft cheese carries the highest listeria risk. Avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
+      why: "Chaumes: raw-milk washed-rind cheese is the riskier version. Avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Baked or melted in a recipe until bubbling and steaming hot all through, it is safe. Remove the rind first.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Chaumes: heated until steaming hot all through in a recipe, with the rind removed, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-14
 - id: bleu-de-bresse
   category: cheese
   names:
@@ -13797,19 +13950,27 @@
     - Bleu bressan
   local: true
   answers:
-    - state: pasteurised
-      verdict: avoid
-      why: Cheeses with a bloomy white rind are avoided in France even when pasteurised, because listeria can grow on the rind and in the soft inside.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk soft cheese carries the highest listeria risk. Avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
+      why: "Bleu de Bresse: raw-milk and soft blue cheeses can carry listeria. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+    - state: pasteurised
+      verdict: careful
+      why: "Bleu de Bresse: soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Baked or melted in a recipe until bubbling and steaming hot all through, it is safe. Remove the rind first.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Bleu de Bresse: cooked until steaming hot, in a sauce or on a hot dish, it is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-14
 - id: tomme-de-brebis-fleurie
   category: cheese
   names:
@@ -13822,16 +13983,26 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Cheeses with a bloomy white rind are avoided in France even when pasteurised, because listeria can grow on the rind and in the soft inside.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Tomme de brebis fleurie: cheeses with a bloomy white rind are avoided in France even when pasteurised, because listeria can grow on the rind and in the soft inside."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk soft cheese carries the highest listeria risk. Avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy, cdc-food-pregnant-women ]
+      why: "Tomme de brebis fleurie: raw-milk soft cheese carries the highest listeria risk. Avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+        - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: Baked or melted in a recipe until bubbling and steaming hot all through, it is safe. Remove the rind first.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Tomme de brebis fleurie: baked or melted in a recipe until bubbling and steaming hot all through, it is safe. Remove the rind first."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: vieux-lille
   category: cheese
@@ -13844,16 +14015,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Washed-rind cheeses can carry listeria. French advice is to avoid them cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Vieux-Lille: washed-rind cheeses can carry listeria. French advice is to avoid them cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: The raw-milk version is the riskier one. Avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Vieux-Lille: the raw-milk version is the riskier one. Avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Heated until steaming hot all through in a recipe, with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Vieux-Lille: heated until steaming hot all through in a recipe, with the rind removed, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: soumaintrain
   category: cheese
@@ -13866,16 +14046,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Washed-rind cheeses can carry listeria. French advice is to avoid them cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Soumaintrain: washed-rind cheeses can carry listeria. French advice is to avoid them cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: The raw-milk version is the riskier one. Avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Soumaintrain: the raw-milk version is the riskier one. Avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Heated until steaming hot all through in a recipe, with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Soumaintrain: heated until steaming hot all through in a recipe, with the rind removed, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: rollot
   category: cheese
@@ -13887,16 +14076,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Washed-rind cheeses can carry listeria. French advice is to avoid them cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Rollot: washed-rind cheeses can carry listeria. French advice is to avoid them cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: The raw-milk version is the riskier one. Avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Rollot: the raw-milk version is the riskier one. Avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Heated until steaming hot all through in a recipe, with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Rollot: heated until steaming hot all through in a recipe, with the rind removed, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: coeur-d-arras
   category: cheese
@@ -13909,16 +14107,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Washed-rind cheeses can carry listeria. French advice is to avoid them cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Cœur d'Arras: washed-rind cheeses can carry listeria. French advice is to avoid them cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: The raw-milk version is the riskier one. Avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Cœur d'Arras: the raw-milk version is the riskier one. Avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Heated until steaming hot all through in a recipe, with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cœur d'Arras: heated until steaming hot all through in a recipe, with the rind removed, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: chambertin
   category: cheese
@@ -13930,16 +14137,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Washed-rind cheeses can carry listeria. French advice is to avoid them cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Chambertin: washed-rind cheeses can carry listeria. French advice is to avoid them cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: The raw-milk version is the riskier one. Avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Chambertin: the raw-milk version is the riskier one. Avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Heated until steaming hot all through in a recipe, with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Chambertin: heated until steaming hot all through in a recipe, with the rind removed, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: tomme-de-brebis-lavee
   category: cheese
@@ -13953,38 +14169,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Washed-rind cheeses can carry listeria. French advice is to avoid them cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Tomme de Brebis lavée: washed-rind cheeses can carry listeria. French advice is to avoid them cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: The raw-milk version is the riskier one. Avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Tomme de Brebis lavée: the raw-milk version is the riskier one. Avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Heated until steaming hot all through in a recipe, with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: reblochon-fermier
-  category: cheese
-  names:
-    - Reblochon fermier
-    - Reblochon de Savoie
-    - Reblochon fermier AOP
-    - Reblochon au lait cru
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: avoid
-      why: Soft pressed uncooked cheeses that are aged only briefly are avoided cold in France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Raw-milk versions carry a high listeria risk when not heated.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-    - state: cooked
-      verdict: ok
-      why: Melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Tomme de Brebis lavée: heated until steaming hot all through in a recipe, with the rind removed, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: salers
   category: cheese
@@ -13996,18 +14199,19 @@
   local: true
   answers:
     - state: pasteurised
-      verdict: avoid
-      why: Soft pressed uncooked cheeses that are aged only briefly are avoided cold in France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      verdict: careful
+      why: "Salers: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a high listeria risk when not heated.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-    - state: cooked
-      verdict: ok
-      why: Melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Salers: raw-milk versions carry a higher listeria risk. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: laguiole
   category: cheese
   names:
@@ -14018,18 +14222,19 @@
   local: true
   answers:
     - state: pasteurised
-      verdict: avoid
-      why: Soft pressed uncooked cheeses that are aged only briefly are avoided cold in France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      verdict: careful
+      why: "Laguiole: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a high listeria risk when not heated.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-    - state: cooked
-      verdict: ok
-      why: Melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Laguiole: raw-milk versions carry a higher listeria risk. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: tomme-des-pyrenees
   category: cheese
   names:
@@ -14040,39 +14245,46 @@
   local: true
   answers:
     - state: pasteurised
-      verdict: avoid
-      why: Soft pressed uncooked cheeses that are aged only briefly are avoided cold in France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      verdict: careful
+      why: "Tomme des Pyrénées: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a high listeria risk when not heated.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-    - state: cooked
-      verdict: ok
-      why: Melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Tomme des Pyrénées: raw-milk versions carry a higher listeria risk. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: raclette-cheese
   category: cheese
   names:
     - Raclette cheese
     - Raclette de Savoie
     - Raclette au lait cru
+    - Raclette light
+    - Raclette allégée
+    - Raclette fumée
+    - Raclette au poivre
+    - Raclette aux herbes
   local: true
   answers:
     - state: pasteurised
-      verdict: avoid
-      why: Soft pressed uncooked cheeses that are aged only briefly are avoided cold in France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      verdict: careful
+      why: "Raclette cheese: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a high listeria risk when not heated.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-    - state: cooked
-      verdict: ok
-      why: Melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Raclette cheese: raw-milk versions carry a higher listeria risk. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: ossau-iraty
   category: cheese
   names:
@@ -14083,18 +14295,19 @@
   local: true
   answers:
     - state: pasteurised
-      verdict: avoid
-      why: Soft pressed uncooked cheeses that are aged only briefly are avoided cold in France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      verdict: careful
+      why: "Ossau-Iraty: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a high listeria risk when not heated.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-    - state: cooked
-      verdict: ok
-      why: Melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Ossau-Iraty: raw-milk versions carry a higher listeria risk. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: etorki
   category: cheese
   names:
@@ -14105,18 +14318,19 @@
   local: true
   answers:
     - state: pasteurised
-      verdict: avoid
-      why: Soft pressed uncooked cheeses that are aged only briefly are avoided cold in France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      verdict: careful
+      why: "Étorki: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a high listeria risk when not heated.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-    - state: cooked
-      verdict: ok
-      why: Melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Étorki: raw-milk versions carry a higher listeria risk. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: abbaye-de-tamie
   category: cheese
   names:
@@ -14128,16 +14342,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Soft pressed uncooked cheeses that are aged only briefly are avoided cold in France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Abbaye de Tamié: soft pressed uncooked cheeses that are aged only briefly are avoided cold in France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a high listeria risk when not heated.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Abbaye de Tamié: raw-milk versions carry a high listeria risk when not heated."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Abbaye de Tamié: melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: bargkass
   category: cheese
@@ -14150,16 +14373,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Soft pressed uncooked cheeses that are aged only briefly are avoided cold in France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Bargkass: soft pressed uncooked cheeses that are aged only briefly are avoided cold in France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a high listeria risk when not heated.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Bargkass: raw-milk versions carry a high listeria risk when not heated."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Bargkass: melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: fromage-de-montagne
   category: cheese
@@ -14172,16 +14404,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Soft pressed uncooked cheeses that are aged only briefly are avoided cold in France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Fromage de montagne: soft pressed uncooked cheeses that are aged only briefly are avoided cold in France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a high listeria risk when not heated.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Fromage de montagne: raw-milk versions carry a high listeria risk when not heated."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Fromage de montagne: melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: tomme-fraiche-aligot
   category: cheese
@@ -14195,16 +14436,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Soft pressed uncooked cheeses that are aged only briefly are avoided cold in France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Tomme fraîche aligot: soft pressed uncooked cheeses that are aged only briefly are avoided cold in France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a high listeria risk when not heated.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Tomme fraîche aligot: raw-milk versions carry a high listeria risk when not heated."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Tomme fraîche aligot: melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: fromage-corse
   category: cheese
@@ -14217,18 +14467,19 @@
   local: true
   answers:
     - state: pasteurised
-      verdict: avoid
-      why: Soft pressed uncooked cheeses that are aged only briefly are avoided cold in France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      verdict: careful
+      why: "Fromage corse: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a high listeria risk when not heated.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-    - state: cooked
-      verdict: ok
-      why: Melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Fromage corse: raw-milk versions carry a higher listeria risk. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: fromage-de-chevre-presse
   category: cheese
   names:
@@ -14240,18 +14491,19 @@
   local: true
   answers:
     - state: pasteurised
-      verdict: avoid
-      why: Soft pressed uncooked cheeses that are aged only briefly are avoided cold in France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      verdict: careful
+      why: "Fromage de chèvre pressé: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a high listeria risk when not heated.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-    - state: cooked
-      verdict: ok
-      why: Melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Fromage de chèvre pressé: raw-milk versions carry a higher listeria risk. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: mimolette-jeune
   category: cheese
   names:
@@ -14263,16 +14515,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Soft pressed uncooked cheeses that are aged only briefly are avoided cold in France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Mimolette jeune: soft pressed uncooked cheeses that are aged only briefly are avoided cold in France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a high listeria risk when not heated.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Mimolette jeune: raw-milk versions carry a high listeria risk when not heated."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Mimolette jeune: melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cheddar-young
   category: cheese
@@ -14286,16 +14547,25 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Soft pressed uncooked cheeses that are aged only briefly are avoided cold in France.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Cheddar young: soft pressed uncooked cheeses that are aged only briefly are avoided cold in France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a high listeria risk when not heated.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Cheddar young: raw-milk versions carry a high listeria risk when not heated."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
     - state: cooked
       verdict: ok
-      why: Melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cheddar young: melted until bubbling and piping hot (raclette, gratin, tartiflette), with the rind removed, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: gouda
   category: cheese
@@ -14308,12 +14578,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Gouda: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a higher listeria risk. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Gouda: raw-milk versions carry a higher listeria risk. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: edam
   category: cheese
@@ -14326,12 +14601,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Edam: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a higher listeria risk. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Edam: raw-milk versions carry a higher listeria risk. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: cheddar
   category: cheese
@@ -14344,12 +14624,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Cheddar: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a higher listeria risk. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Cheddar: raw-milk versions carry a higher listeria risk. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: mini-babybel
   category: cheese
@@ -14362,12 +14647,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Mini Babybel: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a higher listeria risk. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Mini Babybel: raw-milk versions carry a higher listeria risk. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: mimolette
   category: cheese
@@ -14380,12 +14670,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Mimolette: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a higher listeria risk. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Mimolette: raw-milk versions carry a higher listeria risk. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: leerdammer
   category: cheese
@@ -14398,12 +14693,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Leerdammer: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a higher listeria risk. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Leerdammer: raw-milk versions carry a higher listeria risk. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: manchego
   category: cheese
@@ -14416,12 +14716,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Manchego: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a higher listeria risk. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Manchego: raw-milk versions carry a higher listeria risk. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: fontina
   category: cheese
@@ -14434,12 +14739,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Fontina: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a higher listeria risk. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Fontina: raw-milk versions carry a higher listeria risk. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: provolone
   category: cheese
@@ -14452,12 +14762,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Provolone: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a higher listeria risk. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Provolone: raw-milk versions carry a higher listeria risk. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: colby-monterey
   category: cheese
@@ -14471,12 +14786,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Colby Monterey: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a higher listeria risk. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Colby Monterey: raw-milk versions carry a higher listeria risk. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: havarti
   category: cheese
@@ -14489,12 +14809,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Havarti: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a higher listeria risk. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Havarti: raw-milk versions carry a higher listeria risk. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: tilsit
   category: cheese
@@ -14507,31 +14832,17 @@
   answers:
     - state: pasteurised
       verdict: careful
-      why: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Tilsit: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk versions carry a higher listeria risk. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: raclette-light
-  category: cheese
-  names:
-    - Raclette light
-    - Raclette allégée
-    - Raclette fumée
-    - Raclette au poivre
-    - Raclette aux herbes
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: careful
-      why: UK and US guidance accepts pasteurised ones, but French advice avoids pressed uncooked cheeses aged only briefly. Choose a well-aged one, or have it melted hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Raw-milk versions carry a higher listeria risk. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Tilsit: raw-milk versions carry a higher listeria risk. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: comte-fruite
   category: cheese
@@ -14545,12 +14856,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Hard cooked pressed cheeses are safe. Remove the rind and slice or grate it yourself.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Comté fruité: hard cooked pressed cheeses are safe. Remove the rind and slice or grate it yourself."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: ok
-      why: These are heated and aged long enough that raw-milk versions are accepted in France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Comté fruité: these are heated and aged long enough that raw-milk versions are accepted in France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: gruyere-suisse
   category: cheese
@@ -14559,35 +14875,30 @@
     - Gruyère AOP
     - Gruyère d'alpage
     - Gruyère de Comté
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Hard cooked pressed cheeses are safe. Remove the rind and slice or grate it yourself.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: ok
-      why: These are heated and aged long enough that raw-milk versions are accepted in France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: gruyere-francais
-  category: cheese
-  names:
     - Gruyère français
     - Gruyère de France
     - Gruyère IGP
     - Gruyère français râpé
     - Gruyère de Savoie
+    - Gruyère fondue
+    - Fondu au gruyère
+    - Gruyère fondu
+    - Croûte au fromage
   local: true
   answers:
     - state: pasteurised
       verdict: ok
-      why: Hard cooked pressed cheeses are safe. Remove the rind and slice or grate it yourself.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Gruyère suisse: hard cooked pressed cheeses are safe. Remove the rind and slice or grate it yourself."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: ok
-      why: These are heated and aged long enough that raw-milk versions are accepted in France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Gruyère suisse: these are heated and aged long enough that raw-milk versions are accepted in France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: emmental-francais
   category: cheese
@@ -14596,20 +14907,6 @@
     - Emmental Grand Cru
     - Emmental de Savoie
     - Emmental de Bretagne
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Hard cooked pressed cheeses are safe. Remove the rind and slice or grate it yourself.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: ok
-      why: These are heated and aged long enough that raw-milk versions are accepted in France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: emmental-suisse
-  category: cheese
-  names:
     - Emmental suisse
     - Emmentaler AOP
     - Emmental allemand
@@ -14618,12 +14915,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Hard cooked pressed cheeses are safe. Remove the rind and slice or grate it yourself.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Emmental français: hard cooked pressed cheeses are safe. Remove the rind and slice or grate it yourself."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: ok
-      why: These are heated and aged long enough that raw-milk versions are accepted in France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Emmental français: these are heated and aged long enough that raw-milk versions are accepted in France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: sbrinz
   category: cheese
@@ -14635,30 +14937,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Hard cooked pressed cheeses are safe. Remove the rind and slice or grate it yourself.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Sbrinz: hard cooked pressed cheeses are safe. Remove the rind and slice or grate it yourself."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: ok
-      why: These are heated and aged long enough that raw-milk versions are accepted in France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: parmigiano
-  category: cheese
-  names:
-    - Parmigiano
-    - Parmesan 24 mois
-    - Parmesan AOP
-    - Parmesan en copeaux
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Hard cooked pressed cheeses are safe. Remove the rind and slice or grate it yourself.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: ok
-      why: These are heated and aged long enough that raw-milk versions are accepted in France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Sbrinz: these are heated and aged long enough that raw-milk versions are accepted in France."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: mimolette-very-old
   category: cheese
@@ -14672,13 +14961,19 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Hard cooked pressed cheeses are safe. Remove the rind and slice or grate it yourself.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Mimolette very old: aged hard cheese made with pasteurised milk is safe. Remove the rind and slice or grate it yourself."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
-      verdict: ok
-      why: These are heated and aged long enough that raw-milk versions are accepted in France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: avoid
+      why: "Mimolette very old: unlike Comté or Beaufort, this is not a cooked pressed cheese, so the French rule against raw-milk cheese applies. Avoid the raw-milk version."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: gouda-very-old
   category: cheese
   names:
@@ -14691,13 +14986,19 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Hard cooked pressed cheeses are safe. Remove the rind and slice or grate it yourself.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Gouda very old: aged hard cheese made with pasteurised milk is safe. Remove the rind and slice or grate it yourself."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
-      verdict: ok
-      why: These are heated and aged long enough that raw-milk versions are accepted in France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      verdict: avoid
+      why: "Gouda very old: unlike Comté or Beaufort, this is not a cooked pressed cheese, so the French rule against raw-milk cheese applies. Avoid the raw-milk version."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: cheddar-very-old
   category: cheese
   names:
@@ -14710,53 +15011,19 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Hard cooked pressed cheeses are safe. Remove the rind and slice or grate it yourself.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: ok
-      why: These are heated and aged long enough that raw-milk versions are accepted in France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: gruyere-fondue
-  category: cheese
-  names:
-    - Gruyère fondue
-    - Fondu au gruyère
-    - Gruyère fondu
-    - Croûte au fromage
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Hard cooked pressed cheeses are safe. Remove the rind and slice or grate it yourself.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: ok
-      why: These are heated and aged long enough that raw-milk versions are accepted in France.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: roquefort-societe
-  category: cheese
-  names:
-    - Roquefort Société
-    - Roquefort AOP
-    - Roquefort Papillon
-    - Roquefort Carles
-  local: true
-  answers:
+      why: "Cheddar very old: aged hard cheese made with pasteurised milk is safe. Remove the rind and slice or grate it yourself."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk and soft blue cheeses can carry listeria. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: careful
-      why: Soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: ok
-      why: Cooked until steaming hot, in a sauce or on a hot dish, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
+      why: "Cheddar very old: unlike Comté or Beaufort, this is not a cooked pressed cheese, so the French rule against raw-milk cheese applies. Avoid the raw-milk version."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: bleu-de-gex
   category: cheese
   names:
@@ -14769,16 +15036,24 @@
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk and soft blue cheeses can carry listeria. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Bleu de Gex: raw-milk and soft blue cheeses can carry listeria. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bleu de Gex: soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cooked until steaming hot, in a sauce or on a hot dish, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bleu de Gex: cooked until steaming hot, in a sauce or on a hot dish, it is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: bleu-du-vercors
   category: cheese
@@ -14792,16 +15067,24 @@
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk and soft blue cheeses can carry listeria. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Bleu du Vercors: raw-milk and soft blue cheeses can carry listeria. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bleu du Vercors: soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cooked until steaming hot, in a sauce or on a hot dish, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bleu du Vercors: cooked until steaming hot, in a sauce or on a hot dish, it is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: bleu-de-laqueuille
   category: cheese
@@ -14814,16 +15097,24 @@
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk and soft blue cheeses can carry listeria. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Bleu de Laqueuille: raw-milk and soft blue cheeses can carry listeria. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bleu de Laqueuille: soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cooked until steaming hot, in a sauce or on a hot dish, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bleu de Laqueuille: cooked until steaming hot, in a sauce or on a hot dish, it is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: saint-agur
   category: cheese
@@ -14836,16 +15127,24 @@
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk and soft blue cheeses can carry listeria. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Saint Agur: raw-milk and soft blue cheeses can carry listeria. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Saint Agur: soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cooked until steaming hot, in a sauce or on a hot dish, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Saint Agur: cooked until steaming hot, in a sauce or on a hot dish, it is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: danablu
   category: cheese
@@ -14857,16 +15156,24 @@
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk and soft blue cheeses can carry listeria. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Danablu: raw-milk and soft blue cheeses can carry listeria. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Danablu: soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cooked until steaming hot, in a sauce or on a hot dish, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Danablu: cooked until steaming hot, in a sauce or on a hot dish, it is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: cambozola
   category: cheese
@@ -14879,16 +15186,24 @@
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk and soft blue cheeses can carry listeria. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cambozola: raw-milk and soft blue cheeses can carry listeria. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Cambozola: soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cooked until steaming hot, in a sauce or on a hot dish, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Cambozola: cooked until steaming hot, in a sauce or on a hot dish, it is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: dolcelatte
   category: cheese
@@ -14901,16 +15216,24 @@
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk and soft blue cheeses can carry listeria. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Dolcelatte: raw-milk and soft blue cheeses can carry listeria. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Dolcelatte: soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cooked until steaming hot, in a sauce or on a hot dish, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Dolcelatte: cooked until steaming hot, in a sauce or on a hot dish, it is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: cabrales
   category: cheese
@@ -14923,16 +15246,24 @@
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk and soft blue cheeses can carry listeria. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cabrales: raw-milk and soft blue cheeses can carry listeria. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Cabrales: soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cooked until steaming hot, in a sauce or on a hot dish, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Cabrales: cooked until steaming hot, in a sauce or on a hot dish, it is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: bleu-de-brebis
   category: cheese
@@ -14945,16 +15276,24 @@
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk and soft blue cheeses can carry listeria. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Bleu de brebis: raw-milk and soft blue cheeses can carry listeria. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bleu de brebis: soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cooked until steaming hot, in a sauce or on a hot dish, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bleu de brebis: cooked until steaming hot, in a sauce or on a hot dish, it is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: bleu-de-chevre
   category: cheese
@@ -14967,39 +15306,24 @@
   answers:
     - state: unpasteurised
       verdict: avoid
-      why: Raw-milk and soft blue cheeses can carry listeria. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Bleu de chèvre: raw-milk and soft blue cheeses can carry listeria. Avoid them cold."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: careful
-      why: Soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bleu de chèvre: soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: Cooked until steaming hot, in a sauce or on a hot dish, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: salad-bleu
-  category: cheese
-  names:
-    - Salad bleu
-    - Salade au bleu
-    - Salade bleu noix
-    - Salade au roquefort
-    - Salade au gorgonzola
-  local: true
-  answers:
-    - state: unpasteurised
-      verdict: avoid
-      why: Raw-milk and soft blue cheeses can carry listeria. Avoid them cold.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: careful
-      why: Soft blue cheese is safe only if cooked until steaming hot, for example melted into a hot sauce.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: ok
-      why: Cooked until steaming hot, in a sauce or on a hot dish, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bleu de chèvre: cooked until steaming hot, in a sauce or on a hot dish, it is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: sainte-maure-de-touraine
   category: cheese
@@ -15011,16 +15335,24 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Sainte-Maure de Touraine: goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Sainte-Maure de Touraine: raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Grilled or baked until bubbling and hot all through, with the rind removed, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Sainte-Maure de Touraine: grilled or baked until bubbling and hot all through, with the rind removed, it is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: chabichou-du-poitou
   category: cheese
@@ -15033,16 +15365,24 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Chabichou du Poitou: goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Chabichou du Poitou: raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Grilled or baked until bubbling and hot all through, with the rind removed, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Chabichou du Poitou: grilled or baked until bubbling and hot all through, with the rind removed, it is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: pelardon
   category: cheese
@@ -15055,16 +15395,24 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Pélardon: goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Pélardon: raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Grilled or baked until bubbling and hot all through, with the rind removed, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Pélardon: grilled or baked until bubbling and hot all through, with the rind removed, it is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: pouligny-saint-pierre
   category: cheese
@@ -15077,16 +15425,24 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Pouligny-Saint-Pierre: goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Pouligny-Saint-Pierre: raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Grilled or baked until bubbling and hot all through, with the rind removed, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Pouligny-Saint-Pierre: grilled or baked until bubbling and hot all through, with the rind removed, it is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: charolais-goat
   category: cheese
@@ -15100,16 +15456,24 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Charolais goat: goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Charolais goat: raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Grilled or baked until bubbling and hot all through, with the rind removed, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Charolais goat: grilled or baked until bubbling and hot all through, with the rind removed, it is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: cendre-goat
   category: cheese
@@ -15122,16 +15486,24 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Cendré goat: goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Cendré goat: raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Grilled or baked until bubbling and hot all through, with the rind removed, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Cendré goat: grilled or baked until bubbling and hot all through, with the rind removed, it is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: mothais
   category: cheese
@@ -15144,130 +15516,24 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Mothais: goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Mothais: raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Grilled or baked until bubbling and hot all through, with the rind removed, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: chevre-aged
-  category: cheese
-  names:
-    - Chèvre aged
-    - Chèvre sec
-    - Chèvre demi-sec
-    - Chèvre moelleux
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: avoid
-      why: Goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
-    - state: cooked
-      verdict: ok
-      why: Grilled or baked until bubbling and hot all through, with the rind removed, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: goat-log-with-rind
-  category: cheese
-  names:
-    - Goat log with rind
-    - Bûche de chèvre
-    - Bûche de chèvre roulée
-    - Bûche de chèvre aux herbes
-    - Bûche de chèvre aux figues
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: avoid
-      why: Goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
-    - state: cooked
-      verdict: ok
-      why: Grilled or baked until bubbling and hot all through, with the rind removed, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: chevre-toast
-  category: cheese
-  names:
-    - Chèvre toast
-    - Toast au chèvre
-    - Toasts de chèvre chaud
-    - Chèvre chaud sur toast
-    - Croûtons au chèvre
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: avoid
-      why: Goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
-    - state: cooked
-      verdict: ok
-      why: Grilled or baked until bubbling and hot all through, with the rind removed, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: chevre-chaud-salad
-  category: cheese
-  names:
-    - Chèvre chaud salad
-    - Salade au chèvre chaud
-    - Chèvre chaud miel
-    - Salade chèvre miel noix
-    - Salade de chèvre croûtons
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: avoid
-      why: Goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
-    - state: cooked
-      verdict: ok
-      why: Grilled or baked until bubbling and hot all through, with the rind removed, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: chevre-honey
-  category: cheese
-  names:
-    - Chèvre honey
-    - Chèvre au miel
-    - Chèvre miel noix
-    - Fromage de chèvre au miel
-    - Chèvre et miel
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: avoid
-      why: Goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
-    - state: cooked
-      verdict: ok
-      why: Grilled or baked until bubbling and hot all through, with the rind removed, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Mothais: grilled or baked until bubbling and hot all through, with the rind removed, it is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: chevre-tart
   category: cheese
@@ -15281,16 +15547,24 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Chèvre tart: goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Chèvre tart: raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Grilled or baked until bubbling and hot all through, with the rind removed, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Chèvre tart: grilled or baked until bubbling and hot all through, with the rind removed, it is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: goat-cheese-puff
   category: cheese
@@ -15304,76 +15578,24 @@
   answers:
     - state: pasteurised
       verdict: avoid
-      why: Goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Goat cheese puff: goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: Raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
+      why: "Goat cheese puff: raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
     - state: cooked
       verdict: ok
-      why: Grilled or baked until bubbling and hot all through, with the rind removed, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: banon-goat
-  category: cheese
-  names:
-    - Banon goat
-    - Banon à la feuille de châtaignier
-    - Banon fermier
-    - Banon AOP lait cru
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: avoid
-      why: Goat cheeses with a white or ash rind belong to the soft-rind group to avoid when eaten cold.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, nhs-foods-to-avoid ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Raw goat's milk cheese with a rind carries the highest risk, from listeria and toxoplasmosis.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis ]
-    - state: cooked
-      verdict: ok
-      why: Grilled or baked until bubbling and hot all through, with the rind removed, it is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: fresh-goat-log
-  category: cheese
-  names:
-    - Fresh goat log
-    - Bûche de chèvre fraîche
-    - Chèvre frais en bûche
-    - Bûche de chèvre frais
-    - Bûche de chèvre nature
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fresh goat cheese without a rind, made from pasteurised milk (as most supermarket ones are), is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Raw goat's milk cheese can carry listeria and the toxoplasmosis parasite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: goat-feta
-  category: cheese
-  names:
-    - Goat feta
-    - Feta de chèvre
-    - Chèvre frais en dés
-    - Chèvre frais émietté
-    - Cubes de chèvre frais
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fresh goat cheese without a rind, made from pasteurised milk (as most supermarket ones are), is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Raw goat's milk cheese can carry listeria and the toxoplasmosis parasite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis, cdc-listeria-dairy ]
+      why: "Goat cheese puff: grilled or baked until bubbling and hot all through, with the rind removed, it is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: goat-cream-cheese
   category: cheese
@@ -15383,20 +15605,6 @@
     - Chèvre crémeux
     - Chèvre blanc
     - Chèvre onctueux
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Fresh goat cheese without a rind, made from pasteurised milk (as most supermarket ones are), is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: unpasteurised
-      verdict: avoid
-      why: Raw goat's milk cheese can carry listeria and the toxoplasmosis parasite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: goat-ricotta
-  category: cheese
-  names:
     - Goat ricotta
     - Ricotta de chèvre
     - Brousse de chèvre
@@ -15406,12 +15614,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Fresh goat cheese without a rind, made from pasteurised milk (as most supermarket ones are), is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Goat cream cheese: fresh goat cheese without a rind, made from pasteurised milk (as most supermarket ones are), is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw goat's milk cheese can carry listeria and the toxoplasmosis parasite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis, cdc-listeria-dairy ]
+      why: "Goat cream cheese: raw goat's milk cheese can carry listeria and the toxoplasmosis parasite."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: fresh-sheep-cheese
   category: cheese
@@ -15425,141 +15639,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Fresh goat cheese without a rind, made from pasteurised milk (as most supermarket ones are), is safe.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Fresh sheep cheese: fresh goat cheese without a rind, made from pasteurised milk (as most supermarket ones are), is safe."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: unpasteurised
       verdict: avoid
-      why: Raw goat's milk cheese can carry listeria and the toxoplasmosis parasite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-toxoplasmosis, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: fresh-mozzarella
-  category: cheese
-  names:
-    - Fresh mozzarella
-    - Mozzarella fraîche
-    - Mozzarella fior di latte
-    - Mozzarella en boule
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk (check the label), it is safe. Eat it before the use-by date.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: The raw-milk version can carry listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: mozzarella-for-pizza
-  category: cheese
-  names:
-    - Mozzarella for pizza
-    - Mozzarella râpée
-    - Mozzarella pour pizza
-    - Mozzarella en tranches
-    - Mozzarella light
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk (check the label), it is safe. Eat it before the use-by date.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: The raw-milk version can carry listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: mini-mozzarella
-  category: cheese
-  names:
-    - Mini mozzarella
-    - Boccconcini
-    - Mozzarella perles
-    - Perles de mozzarella
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk (check the label), it is safe. Eat it before the use-by date.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: The raw-milk version can carry listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: burrata-cream
-  category: cheese
-  names:
-    - Burrata cream
-    - Burrata crémeuse
-    - Burrata di Puglia
-    - Burrata fraîche
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk (check the label), it is safe. Eat it before the use-by date.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: The raw-milk version can carry listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: feta-greek
-  category: cheese
-  names:
-    - Feta Greek
-    - Feta grecque
-    - Feta AOP
-    - Feta de brebis
-    - Feta en dés
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk (check the label), it is safe. Eat it before the use-by date.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: The raw-milk version can carry listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: feta-light
-  category: cheese
-  names:
-    - Feta light
-    - Feta allégée
-    - Feta nature
-    - Feta en tranches
-    - Feta marinée
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk (check the label), it is safe. Eat it before the use-by date.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: The raw-milk version can carry listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: caprese-salad
-  category: cheese
-  names:
-    - Caprese salad
-    - Salade caprese
-    - Tomates mozzarella basilic
-    - Salade tomates mozzarella
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk (check the label), it is safe. Eat it before the use-by date.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: The raw-milk version can carry listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Fresh sheep cheese: raw goat's milk cheese can carry listeria and the toxoplasmosis parasite."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: mozzarella-sticks
   category: cheese
@@ -15570,34 +15661,20 @@
     - Mozzarella panée
   local: true
   answers:
-    - state: pasteurised
+    - state: cooked
       verdict: ok
-      why: Made from pasteurised milk (check the label), it is safe. Eat it before the use-by date.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: The raw-milk version can carry listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
-- id: cheese-stick
-  category: cheese
-  names:
-    - Cheese stick
-    - String cheese
-    - Fromage effiloché
-    - Fromage en bâtonnets
-    - Mozzarella en ficelle
-  local: true
-  answers:
-    - state: pasteurised
+      why: "Mozzarella sticks: safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+    - state: reheated
       verdict: ok
-      why: Made from pasteurised milk (check the label), it is safe. Eat it before the use-by date.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
-    - state: unpasteurised
-      verdict: avoid
-      why: The raw-milk version can carry listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
+      why: "Mozzarella sticks: reheat until steaming hot all through; do not eat it lukewarm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+  reviewed: 2026-11-14
 - id: cheese-curds
   category: cheese
   names:
@@ -15608,14 +15685,20 @@
   local: true
   answers:
     - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk (check the label), it is safe. Eat it before the use-by date.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
+      verdict: careful
+      why: "Cheese curds: the CDC advises against fresh, soft cheeses of the queso fresco type unless they are heated until steaming hot, even when pasteurised, while the NHS accepts pasteurised soft cheese. Eat it cooked in a dish, or ask your midwife."
+      sources:
+        - cdc-food-pregnant-women
+        - cdc-listeria-dairy
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: The raw-milk version can carry listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
+      why: "Cheese curds: raw-milk fresh cheese carries a higher listeria risk. Avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: queso-fresco
   category: cheese
   names:
@@ -15626,14 +15709,20 @@
   local: true
   answers:
     - state: pasteurised
-      verdict: ok
-      why: Made from pasteurised milk (check the label), it is safe. Eat it before the use-by date.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
+      verdict: careful
+      why: "Queso fresco: the CDC advises against fresh, soft cheeses of the queso fresco type unless they are heated until steaming hot, even when pasteurised, while the NHS accepts pasteurised soft cheese. Eat it cooked in a dish, or ask your midwife."
+      sources:
+        - cdc-food-pregnant-women
+        - cdc-listeria-dairy
+        - nhs-foods-to-avoid
     - state: unpasteurised
       verdict: avoid
-      why: The raw-milk version can carry listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
-  reviewed: 2026-11-13
+      why: "Queso fresco: raw-milk fresh cheese carries a higher listeria risk. Avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
+  reviewed: 2026-11-14
 - id: paneer-cheese
   category: cheese
   names:
@@ -15646,12 +15735,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Made from pasteurised milk (check the label), it is safe. Eat it before the use-by date.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
+      why: "Paneer cheese: made from pasteurised milk (check the label), it is safe. Eat it before the use-by date."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+        - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: The raw-milk version can carry listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Paneer cheese: the raw-milk version can carry listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: ricotta-salata
   category: cheese
@@ -15664,12 +15759,18 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Made from pasteurised milk (check the label), it is safe. Eat it before the use-by date.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women, cdc-listeria-prevention ]
+      why: "Ricotta salata: made from pasteurised milk (check the label), it is safe. Eat it before the use-by date."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+        - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: The raw-milk version can carry listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-dairy ]
+      why: "Ricotta salata: the raw-milk version can carry listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-dairy
   reviewed: 2026-11-13
 - id: laughing-cow
   category: cheese
@@ -15678,12 +15779,29 @@
     - La vache qui rit
     - La vache qui rit portions
     - Vache qui rit light
+    - Cheese triangle
+    - Fromage en triangle
+    - Kiri carré
+    - Carré frais
+    - Carré frais ail et fines herbes
+    - Cheese portions
+    - Portions de fromage fondu
+    - Fromage fondu en portions
+    - Mini Babybel fondu
+    - Fromage en portions
+    - Cheese stick
+    - String cheese
+    - Fromage effiloché
+    - Fromage en bâtonnets
+    - Mozzarella en ficelle
   local: true
   answers:
     - state: pasteurised
       verdict: ok
-      why: Cream cheese, cheese spreads and processed cheese are made with pasteurised milk and are safe.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Laughing Cow: cream cheese, cheese spreads and processed cheese are made with pasteurised milk and are safe."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cheese-slices
   category: cheese
@@ -15697,8 +15815,10 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Cream cheese, cheese spreads and processed cheese are made with pasteurised milk and are safe.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cheese slices: cream cheese, cheese spreads and processed cheese are made with pasteurised milk and are safe."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cheese-spread
   category: cheese
@@ -15710,8 +15830,10 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Cream cheese, cheese spreads and processed cheese are made with pasteurised milk and are safe.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cheese spread: cream cheese, cheese spreads and processed cheese are made with pasteurised milk and are safe."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cheese-spread-bleu
   category: cheese
@@ -15725,53 +15847,10 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Cream cheese, cheese spreads and processed cheese are made with pasteurised milk and are safe.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cheese-triangle
-  category: cheese
-  names:
-    - Cheese triangle
-    - Fromage en triangle
-    - Kiri carré
-    - Carré frais
-    - Carré frais ail et fines herbes
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Cream cheese, cheese spreads and processed cheese are made with pasteurised milk and are safe.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cheese-portions
-  category: cheese
-  names:
-    - Cheese portions
-    - Portions de fromage fondu
-    - Fromage fondu en portions
-    - Mini Babybel fondu
-    - Fromage en portions
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Cream cheese, cheese spreads and processed cheese are made with pasteurised milk and are safe.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: spreadable-cheese-cream
-  category: cheese
-  names:
-    - Spreadable cheese cream
-    - Fromage à tartiner Saint Môret
-    - Fromage à tartiner Philadelphia
-    - Fromage à tartiner Tartare
-    - Fromage à tartiner Madame Loïk
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Cream cheese, cheese spreads and processed cheese are made with pasteurised milk and are safe.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cheese spread bleu: cream cheese, cheese spreads and processed cheese are made with pasteurised milk and are safe."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cheese-sauce
   category: cheese
@@ -15785,23 +15864,10 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Cream cheese, cheese spreads and processed cheese are made with pasteurised milk and are safe.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cheese-fondue-pot
-  category: cheese
-  names:
-    - Cheese fondue pot
-    - Fondue au fromage en pot
-    - Fondue savoyarde prête
-    - Fondue au fromage industrielle
-    - Fromage pour fondue
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Cream cheese, cheese spreads and processed cheese are made with pasteurised milk and are safe.
-      sources: [ nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cheese sauce: cream cheese, cheese spreads and processed cheese are made with pasteurised milk and are safe."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cheese-raclette
   category: cheese
@@ -15815,12 +15881,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cheese raclette: safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Cheese raclette: reheat until steaming hot all through; do not eat it lukewarm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: mac-and-cheese
   category: cheese
@@ -15829,16 +15900,26 @@
     - Macaroni au fromage
     - Macaroni gratiné
     - Gratin de macaronis
+    - Pasta cheese
+    - Pâtes au fromage
+    - Pâtes aux quatre fromages
+    - Gnocchis gratinés
+    - Gnocchi au gorgonzola
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Mac and cheese: safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Mac and cheese: reheat until steaming hot all through; do not eat it lukewarm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: cheese-gratin
   category: cheese
@@ -15851,12 +15932,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cheese gratin: safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Cheese gratin: reheat until steaming hot all through; do not eat it lukewarm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: cheese-souffle
   category: cheese
@@ -15870,12 +15956,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cheese soufflé: safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Cheese soufflé: reheat until steaming hot all through; do not eat it lukewarm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: cheese-pie
   category: cheese
@@ -15885,16 +15976,26 @@
     - Tarte au maroilles
     - Flamiche au maroilles
     - Tarte au munster
+    - Cheese puff pastry
+    - Feuilleté au fromage
+    - Allumettes au fromage
+    - Palmiers au fromage
+    - Pailles au fromage
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cheese pie: safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Cheese pie: reheat until steaming hot all through; do not eat it lukewarm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: cheese-gougere
   category: cheese
@@ -15908,31 +16009,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cheese gougère: safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: cheese-puff-pastry
-  category: cheese
-  names:
-    - Cheese puff pastry
-    - Feuilleté au fromage
-    - Allumettes au fromage
-    - Palmiers au fromage
-    - Pailles au fromage
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-    - state: reheated
-      verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Cheese gougère: reheat until steaming hot all through; do not eat it lukewarm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: cheese-croquette
   category: cheese
@@ -15946,31 +16033,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cheese croquette: safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: cheese-fondue-cooked
-  category: cheese
-  names:
-    - Cheese fondue cooked
-    - Fondue au fromage savoyarde
-    - Fondue au fromage maison
-    - Fondue aux trois fromages
-    - Fondue moitié-moitié
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-    - state: reheated
-      verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Cheese croquette: reheat until steaming hot all through; do not eat it lukewarm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: baked-camembert
   category: cheese
@@ -15984,12 +16057,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Baked camembert: safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Baked camembert: reheat until steaming hot all through; do not eat it lukewarm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: brie-en-croute
   category: cheese
@@ -16002,12 +16080,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Brie en croûte: safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Brie en croûte: reheat until steaming hot all through; do not eat it lukewarm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: camembert-breaded
   category: cheese
@@ -16021,12 +16104,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Camembert breaded: safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Camembert breaded: reheat until steaming hot all through; do not eat it lukewarm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: cheese-toastie
   category: cheese
@@ -16040,12 +16128,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cheese toastie: safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Cheese toastie: reheat until steaming hot all through; do not eat it lukewarm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: french-onion-soup
   category: cheese
@@ -16059,88 +16152,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "French onion soup: safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: pasta-cheese
-  category: cheese
-  names:
-    - Pasta cheese
-    - Pâtes au fromage
-    - Pâtes aux quatre fromages
-    - Gnocchis gratinés
-    - Gnocchi au gorgonzola
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-    - state: reheated
-      verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: cheese-lasagne
-  category: cheese
-  names:
-    - Cheese lasagne
-    - Lasagnes au fromage
-    - Lasagnes aux épinards ricotta
-    - Lasagnes végétariennes
-    - Cannelloni ricotta épinards
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-    - state: reheated
-      verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: cheese-omelette
-  category: cheese
-  names:
-    - Cheese omelette
-    - Omelette au fromage fondu
-    - Omelette au chèvre
-    - Omelette au comté
-    - Omelette au gruyère
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-    - state: reheated
-      verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: cheese-burger
-  category: cheese
-  names:
-    - Cheese burger
-    - Cheeseburger fondu
-    - Burger au cheddar
-    - Burger au bleu
-    - Burger au chèvre
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-    - state: reheated
-      verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "French onion soup: reheat until steaming hot all through; do not eat it lukewarm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: cheese-nachos
   category: cheese
@@ -16154,31 +16176,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cheese nachos: safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: cheese-pizza
-  category: cheese
-  names:
-    - Cheese pizza
-    - Pizza margherita fromage
-    - Pizza 4 fromages gratinée
-    - Pizza au chèvre
-    - Pizza mozzarella
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-    - state: reheated
-      verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Cheese nachos: reheat until steaming hot all through; do not eat it lukewarm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: cheese-quesadilla
   category: cheese
@@ -16192,12 +16200,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cheese quesadilla: safe when the cheese is cooked until bubbling and steaming hot all through. Eat it hot."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
     - state: reheated
       verdict: ok
-      why: Reheat until steaming hot all through; do not eat it lukewarm.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Cheese quesadilla: reheat until steaming hot all through; do not eat it lukewarm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: lasagne
   category: ready_meal
@@ -16206,16 +16219,27 @@
     - Lasagnes à la bolognaise
     - Lasagnes surgelées
     - Lasagnes du traiteur
+    - Cheese lasagne
+    - Lasagnes au fromage
+    - Lasagnes aux épinards ricotta
+    - Lasagnes végétariennes
+    - Cannelloni ricotta épinards
   local: true
   answers:
     - state: reheated
       verdict: ok
       why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      sources:
+        - nhs-healthy-diet
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
       why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
+      sources:
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: moussaka-ready
   category: ready_meal
