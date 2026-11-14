@@ -248,6 +248,11 @@
     - Magret rosé
     - Magret saignant
     - Magret mi-cuit
+    - Dried duck breast
+    - Magret séché
+    - Magret fumé
+    - Magret de canard séché
+    - Magret salé
   local: true
   answers:
     - state: undercooked
@@ -349,6 +354,11 @@
     - Chipolata
     - Saucisse épicée
     - Spicy sausage
+    - Merguez lamb
+    - Merguez d'agneau
+    - Merguez de bœuf
+    - Merguez de volaille
+    - Merguez maison
   local: true
   answers:
     - state: undercooked
@@ -375,7 +385,18 @@
     - Saucisse de Strasbourg
     - Chipolatas
     - Saucisse fraîche
-  tips: *a2
+    - Cumberland sausage
+    - Cumberland
+    - Saucisse anglaise
+    - Saucisse bangers
+    - Bangers
+    - Fresh sausage links
+    - Saucisses de porc
+    - Saucisses grillées
+    - Saucisses à griller
+    - Saucisses fraîches
+  tips:
+    - best
   local: true
   answers:
     - state: undercooked
@@ -470,7 +491,24 @@
     - Mi-cuit
     - Terrine de foie gras
     - Bloc de foie gras
-  tips: *a1
+    - Duck foie gras
+    - Foie gras de canard entier
+    - Foie gras entier
+    - Foie gras mi-cuit
+    - Foie gras au torchon
+    - Foie gras de canard mi-cuit
+    - Goose foie gras
+    - Foie gras d'oie entier
+    - Foie gras d'oie mi-cuit
+    - Foie gras block
+    - Bloc de foie gras de canard
+    - Bloc de foie gras avec morceaux
+    - Foie gras parfait
+    - Parfait de foie
+    - Parfait de foie de volaille
+    - Parfait de canard
+  tips:
+    - avoid
   local: true
   answers:
     - state: cooked
@@ -548,6 +586,15 @@
     - Mortadelle
     - Jambon-beurre
     - Ham
+    - Paris ham
+    - Jambon supérieur
+    - Jambon torchon
+    - Jambon sans couenne
+    - Prepacked ham slices
+    - Jambon préemballé
+    - Jambon en barquette
+    - Jambon sous vide
+    - Jambon allégé
   local: true
   answers:
     - state: cooked
@@ -607,7 +654,29 @@
     - Salami
     - Pepperoni
     - Cervelas cru
-  tips: *a1
+    - Pepper saucisson
+    - Saucisson au poivre
+    - Saucisson aux noix
+    - Saucisson aux noisettes
+    - Saucisson aux figues
+    - Corsican sausage
+    - Figatelli sec
+    - Coppa corse
+    - Lonzu
+    - Lonzo corse
+    - Saucisse corse sèche
+    - Duck dry sausage
+    - Saucisson de canard
+    - Saucisson de canard sec
+    - Saucisse sèche
+    - Dry sausage stick
+    - Petit saucisson
+    - Mini saucisson
+    - Bâtonnets de saucisson
+    - Cracotte saucisson
+    - Pique-nique saucisson
+  tips:
+    - avoid
   local: true
   answers:
     - state: cured
@@ -687,6 +756,11 @@
     - Poitrine fumée
     - Poitrine salée
     - Bacon grillé
+    - Fried lardons
+    - Lardons poêlés
+    - Lardons grillés
+    - Lardons croustillants
+    - Lardons fumés cuits
   local: true
   answers:
     - state: cooked
@@ -712,6 +786,15 @@
     - Saucisse de Strasbourg cuite
     - Saucisse cocktail
     - Cocktail sausage
+    - Frankfurter cold
+    - Saucisse de Francfort froide
+    - Saucisse de Strasbourg froide
+    - Saucisses cocktail froides
+    - Saucisse en bocal
+    - Strasbourg sausage fresh
+    - Knack
+    - Knacks d'Alsace
+    - Saucisse d'Alsace
   local: true
   answers:
     - state: cooked
@@ -759,6 +842,20 @@
     - Andouille froide
     - Pieds de porc
     - Head cheese
+    - Jellied chicken
+    - Poulet en gelée
+    - Volaille en gelée
+    - Aspic
+    - Galantine
+    - Jellied tongue
+    - Langue en gelée
+    - Langue de bœuf en gelée
+    - Langue de porc en gelée
+    - Pork trotter jelly
+    - Pieds de porc en gelée
+    - Gelée de pieds de porc
+    - Tripes en gelée
+    - Andouille froide en gelée
   local: true
   answers:
     - state: cooked
@@ -776,6 +873,11 @@
     - Andouille chaude
     - Andouille de Vire
     - Andouillette grillée
+    - Andouillette 5A
+    - Andouillette AAAAA
+    - Andouillette de Troyes
+    - Andouillette de Lyon
+    - Andouillette au vin blanc
   local: true
   answers:
     - state: cooked
@@ -5222,6 +5324,11 @@
     - Veal head
     - Tête de veau
     - Tête de veau sauce gribiche
+    - Tête de veau hot
+    - Tête de veau chaude
+    - Tête de veau ravigote
+    - Tête de veau sauce ravigote
+    - Tête de veau bouillie
   local: true
   answers:
     - state: undercooked
@@ -6170,6 +6277,11 @@
     - Cassoulet
     - Cassoulet de Toulouse
     - Cassoulet de Castelnaudary
+    - Sausage cassoulet
+    - Saucisse pour cassoulet
+    - Saucisse de Toulouse cassoulet
+    - Saucisse à cuire
+    - Saucisse de ménage
   local: true
   answers:
     - state: cooked
@@ -6621,12 +6733,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "San Daniele ham: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "San Daniele ham: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: iberico-ham
   category: charcuterie
@@ -6641,12 +6759,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Iberico ham: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Iberico ham: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: serrano-ham
   category: charcuterie
@@ -6657,12 +6781,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Serrano ham: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Serrano ham: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: bayonne-ham
   category: charcuterie
@@ -6673,12 +6803,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Bayonne ham: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Bayonne ham: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: savoie-ham
   category: charcuterie
@@ -6690,12 +6826,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Savoie ham: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Savoie ham: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: auvergne-ham
   category: charcuterie
@@ -6707,12 +6849,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Auvergne ham: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Auvergne ham: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: ardennes-ham
   category: charcuterie
@@ -6725,12 +6873,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Ardennes ham: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Ardennes ham: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: corsican-ham
   category: charcuterie
@@ -6743,12 +6897,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Corsican ham: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Corsican ham: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: noir-de-bigorre-ham
   category: charcuterie
@@ -6760,12 +6920,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Noir de Bigorre ham: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Noir de Bigorre ham: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: kintoa-ham
   category: charcuterie
@@ -6777,12 +6943,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Kintoa ham: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Kintoa ham: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: smoked-raw-ham
   category: charcuterie
@@ -6794,12 +6966,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Smoked raw ham: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Smoked raw ham: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: black-forest-ham
   category: charcuterie
@@ -6812,12 +6990,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Black Forest ham: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Black Forest ham: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: air-dried-beef
   category: charcuterie
@@ -6833,12 +7017,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Air-dried beef: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Air-dried beef: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: cecina
   category: charcuterie
@@ -6850,12 +7040,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Cecina: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Cecina: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: guanciale
   category: charcuterie
@@ -6867,12 +7063,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Guanciale: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Guanciale: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: bacon-raw-cured
   category: charcuterie
@@ -6882,16 +7084,27 @@
     - Lardo
     - Lard de Colonnata
     - Lardo di Colonnata
+    - Bacon sliced
+    - Bacon tranché
+    - Bacon fumé
+    - Bacon en tranches
+    - Bacon froid
   local: true
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Bacon raw cured: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Bacon raw cured: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: dry-saucisson-from-lyon
   category: charcuterie
@@ -6903,12 +7116,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Dry saucisson from Lyon: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Dry saucisson from Lyon: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: mountain-sausage
   category: charcuterie
@@ -6921,12 +7140,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Mountain sausage: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Mountain sausage: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: arles-saucisson
   category: charcuterie
@@ -6938,31 +7163,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Arles saucisson: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: pepper-saucisson
-  category: charcuterie
-  names:
-    - Pepper saucisson
-    - Saucisson au poivre
-    - Saucisson aux noix
-    - Saucisson aux noisettes
-    - Saucisson aux figues
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
-    - state: reheated
-      verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Arles saucisson: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: donkey-saucisson
   category: charcuterie
@@ -6976,70 +7188,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Donkey saucisson: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: duck-dry-sausage
-  category: charcuterie
-  names:
-    - Duck dry sausage
-    - Saucisson de canard
-    - Saucisson de canard sec
-    - Saucisse sèche
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
-    - state: reheated
-      verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: dry-sausage-stick
-  category: charcuterie
-  names:
-    - Dry sausage stick
-    - Petit saucisson
-    - Mini saucisson
-    - Bâtonnets de saucisson
-    - Cracotte saucisson
-    - Pique-nique saucisson
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
-    - state: reheated
-      verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: corsican-sausage
-  category: charcuterie
-  names:
-    - Corsican sausage
-    - Figatelli sec
-    - Coppa corse
-    - Lonzu
-    - Lonzo corse
-    - Saucisse corse sèche
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
-    - state: reheated
-      verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Donkey saucisson: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: fuet
   category: charcuterie
@@ -7048,20 +7208,6 @@
     - Fuet espagnol
     - Fuet catalan
     - Longaniza
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
-    - state: reheated
-      verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: spanish-dry-sausage
-  category: charcuterie
-  names:
     - Spanish dry sausage
     - Sobrasada
     - Salchichón
@@ -7071,12 +7217,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Fuet: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Fuet: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: salami-milano
   category: charcuterie
@@ -7088,12 +7240,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Salami Milano: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Salami Milano: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: spicy-salami
   category: charcuterie
@@ -7106,12 +7264,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Spicy salami: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Spicy salami: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: finocchiona
   category: charcuterie
@@ -7123,12 +7287,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Finocchiona: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Finocchiona: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: saucisson-from-the-basque-country
   category: charcuterie
@@ -7142,50 +7312,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Saucisson from the Basque country: dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: dried-duck-breast
-  category: charcuterie
-  names:
-    - Dried duck breast
-    - Magret séché
-    - Magret fumé
-    - Magret de canard séché
-    - Magret salé
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
-    - state: reheated
-      verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: bacon-sliced
-  category: charcuterie
-  names:
-    - Bacon sliced
-    - Bacon tranché
-    - Bacon fumé
-    - Bacon en tranches
-    - Bacon froid
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Dry-cured and air-dried meat is eaten without cooking. It can carry the toxoplasmosis parasite, salmonella and listeria, so avoid it cold.
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
-    - state: reheated
-      verdict: careful
-      why: Only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Saucisson from the Basque country: only if heated until steaming hot all the way through, for example baked on a pizza or in a cooked dish. Do not add it cold afterwards."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: chicken-ham
   category: charcuterie
@@ -7198,12 +7336,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Chicken ham: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Chicken ham: heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: turkey-ham
   category: charcuterie
@@ -7216,30 +7360,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Turkey ham: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: paris-ham
-  category: charcuterie
-  names:
-    - Paris ham
-    - Jambon supérieur
-    - Jambon torchon
-    - Jambon sans couenne
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
-    - state: reheated
-      verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Turkey ham: heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: bone-in-ham
   category: charcuterie
@@ -7252,12 +7384,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Bone-in ham: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Bone-in ham: heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: smoked-cooked-ham
   category: charcuterie
@@ -7271,28 +7409,45 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Smoked cooked ham: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Smoked cooked ham: heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: mortadella
   category: charcuterie
   names:
     - Mortadella
     - Mortadelle pistachée
+    - Bologna
+    - Mortadelle américaine
+    - Saucisson de Bologne
+    - Salami cuit
+    - Bologne
   local: true
   answers:
     - state: cooked
       verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Mortadella: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Mortadella: heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cervelas
   category: charcuterie
@@ -7304,12 +7459,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Cervelas: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Cervelas: heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: garlic-sausage-cooked
   category: charcuterie
@@ -7322,12 +7483,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Garlic sausage cooked: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Garlic sausage cooked: heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: lyon-sausage-cooked
   category: charcuterie
@@ -7340,12 +7507,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Lyon sausage cooked: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Lyon sausage cooked: heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: roast-pork-cold
   category: charcuterie
@@ -7358,12 +7531,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Roast pork cold: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Roast pork cold: heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: roast-turkey-cold
   category: charcuterie
@@ -7376,12 +7555,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Roast turkey cold: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Roast turkey cold: heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: roast-beef-cold-cut
   category: charcuterie
@@ -7394,12 +7579,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Roast beef cold cut: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Roast beef cold cut: heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: pastrami
   category: charcuterie
@@ -7412,50 +7603,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Pastrami: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: frankfurter-cold
-  category: charcuterie
-  names:
-    - Frankfurter cold
-    - Saucisse de Francfort froide
-    - Saucisse de Strasbourg froide
-    - Saucisses cocktail froides
-    - Saucisse en bocal
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
-    - state: reheated
-      verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: bologna
-  category: charcuterie
-  names:
-    - Bologna
-    - Mortadelle américaine
-    - Saucisson de Bologne
-    - Salami cuit
-    - Bologne
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
-    - state: reheated
-      verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Pastrami: heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: tongue-cold-cut
   category: charcuterie
@@ -7469,12 +7628,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Tongue cold cut: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Tongue cold cut: heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: pork-rillons
   category: charcuterie
@@ -7489,31 +7654,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Pork rillons: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cold-sausage-morteau
-  category: charcuterie
-  names:
-    - Cold sausage Morteau
-    - Morteau froide
-    - Saucisse de Morteau froide
-    - Saucisse de Montbéliard froide
-    - Saucisse fumée froide
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
-    - state: reheated
-      verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Pork rillons: heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cheese-and-ham-slice
   category: charcuterie
@@ -7523,16 +7675,27 @@
     - Jambon fromage
     - Rouleau jambon-fromage
     - Roulade de jambon
+    - Ham and cheese roll
+    - Cornet de jambon
+    - Cornet de jambon farci
+    - Rouleau de jambon
+    - Jambon roulé
   local: true
   answers:
     - state: cooked
       verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Cheese-and-ham slice: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Cheese-and-ham slice: heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: ham-mousse
   category: charcuterie
@@ -7545,52 +7708,20 @@
   local: true
   answers:
     - state: cooked
+      verdict: avoid
+      why: "Ham mousse: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+    - state: canned
       verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
-    - state: reheated
-      verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: ham-and-cheese-roll
-  category: charcuterie
-  names:
-    - Ham and cheese roll
-    - Cornet de jambon
-    - Cornet de jambon farci
-    - Rouleau de jambon
-    - Jambon roulé
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
-    - state: reheated
-      verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: prepacked-ham-slices
-  category: charcuterie
-  names:
-    - Prepacked ham slices
-    - Jambon préemballé
-    - Jambon en barquette
-    - Jambon sous vide
-    - Jambon allégé
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: Chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
-    - state: reheated
-      verdict: ok
-      why: Heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Ham mousse: a sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: country-pate
   category: charcuterie
   names:
@@ -7598,16 +7729,36 @@
     - Pâté breton
     - Pâté de porc
     - Pâté de campagne breton
+    - Pork pâté
+    - Pâté de foie de porc
+    - Pâté de foie de volaille
+    - Pâté Hénaff
+    - Coarse pâté
+    - Pâté de campagne grossier
+    - Pâté de campagne à l'ancienne
+    - Pâté à l'ancienne
+    - Pâté au poivre vert
+    - Pâté with pistachios
+    - Pâté aux pistaches
+    - Pâté aux noisettes
+    - Pâté aux champignons
+    - Pâté aux cèpes
   local: true
   answers:
     - state: cooked
       verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Country pâté: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Country pâté: a sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: duck-pate
   category: charcuterie
@@ -7621,12 +7772,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Duck pâté: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Duck pâté: a sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: rabbit-pate
   category: charcuterie
@@ -7639,12 +7796,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Rabbit pâté: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Rabbit pâté: a sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: game-terrine
   category: charcuterie
@@ -7658,29 +7821,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Game terrine: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: pate-de-tete
-  category: charcuterie
-  names:
-    - Pâté de tête
-    - Tête roulée
-    - Terrine de tête
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Game terrine: a sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-terrine
   category: charcuterie
@@ -7694,12 +7846,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Chicken terrine: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Chicken terrine: a sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: vegetable-terrine
   category: charcuterie
@@ -7708,17 +7866,20 @@
     - Terrine de légumes
     - Terrine de poireaux
     - Terrine végétale
+    - Paté vegetable
+    - Pâté végétal
+    - Pâté végétarien
+    - Pâté de légumes
+    - Pâté d'olives
   local: true
   answers:
     - state: cooked
-      verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
       verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: It has no meat, but chilled terrines and pâtés are on the French avoid list because listeria can grow in the fridge, and NHS says to keep vegetable pâté chilled and eat it before its date. Ask your midwife if you want it.
+      sources:
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: mousse-of-duck
   category: charcuterie
   names:
@@ -7730,84 +7891,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Mousse of duck: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: duck-foie-gras
-  category: charcuterie
-  names:
-    - Duck foie gras
-    - Foie gras de canard entier
-    - Foie gras entier
-    - Foie gras mi-cuit
-    - Foie gras au torchon
-    - Foie gras de canard mi-cuit
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: goose-foie-gras
-  category: charcuterie
-  names:
-    - Goose foie gras
-    - Foie gras d'oie entier
-    - Foie gras d'oie mi-cuit
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: foie-gras-block
-  category: charcuterie
-  names:
-    - Foie gras block
-    - Bloc de foie gras de canard
-    - Bloc de foie gras avec morceaux
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: foie-gras-parfait
-  category: charcuterie
-  names:
-    - Foie gras parfait
-    - Parfait de foie
-    - Parfait de foie de volaille
-    - Parfait de canard
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Mousse of duck: a sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pork-rillettes
   category: charcuterie
@@ -7815,16 +7910,26 @@
     - Pork rillettes
     - Rillettes de Tours
     - Rillettes de Sarthe
+    - Potted meat
+    - Viande en pot
+    - Potted pork
+    - Potted beef
   local: true
   answers:
     - state: cooked
       verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Pork rillettes: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Pork rillettes: a sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: goose-rillettes
   category: charcuterie
@@ -7837,12 +7942,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Goose rillettes: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Goose rillettes: a sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: salmon-rillettes
   category: charcuterie
@@ -7855,12 +7966,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Salmon rillettes: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Salmon rillettes: a sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: tuna-rillettes
   category: charcuterie
@@ -7873,12 +7990,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Tuna rillettes: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Tuna rillettes: a sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: terrine-de-poisson
   category: charcuterie
@@ -7891,12 +8014,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Terrine de poisson: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Terrine de poisson: a sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: mousse-de-saumon
   category: charcuterie
@@ -7909,30 +8038,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Mousse de saumon: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: pork-pate
-  category: charcuterie
-  names:
-    - Pork pâté
-    - Pâté de foie de porc
-    - Pâté de foie de volaille
-    - Pâté Hénaff
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Mousse de saumon: a sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: wild-boar-pate
   category: charcuterie
@@ -7946,12 +8063,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Wild boar pâté: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Wild boar pâté: a sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pate-from-brittany
   category: charcuterie
@@ -7964,106 +8087,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Pâté from Brittany: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: potted-meat
-  category: charcuterie
-  names:
-    - Potted meat
-    - Viande en pot
-    - Potted pork
-    - Potted beef
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: coarse-pate
-  category: charcuterie
-  names:
-    - Coarse pâté
-    - Pâté de campagne grossier
-    - Pâté de campagne à l'ancienne
-    - Pâté à l'ancienne
-    - Pâté au poivre vert
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: pate-with-pistachios
-  category: charcuterie
-  names:
-    - Pâté with pistachios
-    - Pâté aux pistaches
-    - Pâté aux noisettes
-    - Pâté aux champignons
-    - Pâté aux cèpes
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: pate-vegetable
-  category: charcuterie
-  names:
-    - Paté vegetable
-    - Pâté végétal
-    - Pâté végétarien
-    - Pâté de légumes
-    - Pâté d'olives
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: jambon-persille-spread
-  category: charcuterie
-  names:
-    - Jambon persillé spread
-    - Pâté de jambon persillé
-    - Terrine de jambon
-    - Terrine de jambon persillé
-    - Pâté de jambon de Pâques
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Pâté from Brittany: a sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: brawn
   category: charcuterie
@@ -8072,12 +8107,22 @@
     - Tête pressée
     - Fromage de cochon
     - Tête de cochon
+    - Pâté de tête
+    - Tête roulée
+    - Terrine de tête
+    - Calf's head terrine
+    - Tête de veau en gelée
+    - Terrine de tête de veau
+    - Tête de veau froide
   local: true
   answers:
     - state: cooked
       verdict: avoid
-      why: Chilled jellied and pressed meats can carry listeria, which grows even in the fridge. Avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Brawn: chilled jellied and pressed meats can carry listeria, which grows even in the fridge. Avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: pig-snout-salad
   category: charcuterie
@@ -8091,8 +8136,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Chilled jellied and pressed meats can carry listeria, which grows even in the fridge. Avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Pig snout salad: chilled jellied and pressed meats can carry listeria, which grows even in the fridge. Avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: jellied-egg
   category: charcuterie
@@ -8105,66 +8153,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Chilled jellied and pressed meats can carry listeria, which grows even in the fridge. Avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: jellied-chicken
-  category: charcuterie
-  names:
-    - Jellied chicken
-    - Poulet en gelée
-    - Volaille en gelée
-    - Aspic
-    - Galantine
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Chilled jellied and pressed meats can carry listeria, which grows even in the fridge. Avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: jellied-tongue
-  category: charcuterie
-  names:
-    - Jellied tongue
-    - Langue en gelée
-    - Langue de bœuf en gelée
-    - Langue de porc en gelée
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Chilled jellied and pressed meats can carry listeria, which grows even in the fridge. Avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: pork-trotter-jelly
-  category: charcuterie
-  names:
-    - Pork trotter jelly
-    - Pieds de porc en gelée
-    - Gelée de pieds de porc
-    - Tripes en gelée
-    - Andouille froide en gelée
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Chilled jellied and pressed meats can carry listeria, which grows even in the fridge. Avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: calf-s-head-terrine
-  category: charcuterie
-  names:
-    - Calf's head terrine
-    - Tête de veau en gelée
-    - Terrine de tête de veau
-    - Tête de veau froide
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Chilled jellied and pressed meats can carry listeria, which grows even in the fridge. Avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Jellied egg: chilled jellied and pressed meats can carry listeria, which grows even in the fridge. Avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: ham-in-jelly
   category: charcuterie
@@ -8173,12 +8166,20 @@
     - Jambon en gelée
     - Jambon à la gelée
     - Rôti en gelée
+    - Jambon persillé spread
+    - Pâté de jambon persillé
+    - Terrine de jambon
+    - Terrine de jambon persillé
+    - Pâté de jambon de Pâques
   local: true
   answers:
     - state: cooked
       verdict: avoid
-      why: Chilled jellied and pressed meats can carry listeria, which grows even in the fridge. Avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Ham in jelly: chilled jellied and pressed meats can carry listeria, which grows even in the fridge. Avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: toulouse-sausage
   category: charcuterie
@@ -8190,12 +8191,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Toulouse sausage: pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Toulouse sausage: cooked right through and eaten hot, it is a good charcuterie choice."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: morteau-sausage
   category: charcuterie
@@ -8205,34 +8211,26 @@
     - Morteau
     - Saucisse de Montbéliard
     - Montbéliard
+    - Cold sausage Morteau
+    - Morteau froide
+    - Saucisse de Morteau froide
+    - Saucisse de Montbéliard froide
+    - Saucisse fumée froide
   local: true
   answers:
     - state: undercooked
       verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Morteau sausage: pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: strasbourg-sausage-fresh
-  category: charcuterie
-  names:
-    - Strasbourg sausage fresh
-    - Knack
-    - Knacks d'Alsace
-    - Saucisse d'Alsace
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Morteau sausage: cooked right through and eaten hot, it is a good charcuterie choice."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chipolata-sausage
   category: charcuterie
@@ -8244,12 +8242,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Chipolata sausage: pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Chipolata sausage: cooked right through and eaten hot, it is a good charcuterie choice."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: duck-sausage
   category: charcuterie
@@ -8263,12 +8266,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Duck sausage: pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Duck sausage: cooked right through and eaten hot, it is a good charcuterie choice."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: herb-sausage
   category: charcuterie
@@ -8282,12 +8290,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Herb sausage: pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Herb sausage: cooked right through and eaten hot, it is a good charcuterie choice."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fresh-chorizo
   category: charcuterie
@@ -8301,31 +8314,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Fresh chorizo: pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: cumberland-sausage
-  category: charcuterie
-  names:
-    - Cumberland sausage
-    - Cumberland
-    - Saucisse anglaise
-    - Saucisse bangers
-    - Bangers
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Fresh chorizo: cooked right through and eaten hot, it is a good charcuterie choice."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: white-pudding
   category: charcuterie
@@ -8338,12 +8337,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "White pudding: pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "White pudding: cooked right through and eaten hot, it is a good charcuterie choice."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pork-crepinette
   category: charcuterie
@@ -8357,12 +8361,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Pork crépinette: pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Pork crépinette: cooked right through and eaten hot, it is a good charcuterie choice."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: longanisse
   category: charcuterie
@@ -8375,12 +8384,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Longanisse: pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Longanisse: cooked right through and eaten hot, it is a good charcuterie choice."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: diot
   category: charcuterie
@@ -8393,87 +8407,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Diot: pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fresh-sausage-links
-  category: charcuterie
-  names:
-    - Fresh sausage links
-    - Saucisses de porc
-    - Saucisses grillées
-    - Saucisses à griller
-    - Saucisses fraîches
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: sausage-roll
-  category: charcuterie
-  names:
-    - Sausage roll
-    - Friand à la saucisse
-    - Feuilleté saucisse
-    - Saucisse en croûte
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: merguez-lamb
-  category: charcuterie
-  names:
-    - Merguez lamb
-    - Merguez d'agneau
-    - Merguez de bœuf
-    - Merguez de volaille
-    - Merguez maison
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: sausage-cassoulet
-  category: charcuterie
-  names:
-    - Sausage cassoulet
-    - Saucisse pour cassoulet
-    - Saucisse de Toulouse cassoulet
-    - Saucisse à cuire
-    - Saucisse de ménage
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Diot: cooked right through and eaten hot, it is a good charcuterie choice."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: salted-pork-belly
   category: charcuterie
@@ -8486,12 +8430,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Salted pork belly: pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Salted pork belly: cooked right through and eaten hot, it is a good charcuterie choice."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: streaky-bacon-to-cook
   category: charcuterie
@@ -8505,31 +8454,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Streaky bacon to cook: pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fried-lardons
-  category: charcuterie
-  names:
-    - Fried lardons
-    - Lardons poêlés
-    - Lardons grillés
-    - Lardons croustillants
-    - Lardons fumés cuits
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Streaky bacon to cook: cooked right through and eaten hot, it is a good charcuterie choice."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: andouille-cooked
   category: charcuterie
@@ -8539,53 +8474,21 @@
     - Andouille grillée
   local: true
   answers:
-    - state: undercooked
-      verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
     - state: cooked
+      verdict: careful
+      why: "Andouille cooked: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+    - state: reheated
       verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: andouillette-5a
-  category: charcuterie
-  names:
-    - Andouillette 5A
-    - Andouillette AAAAA
-    - Andouillette de Troyes
-    - Andouillette de Lyon
-    - Andouillette au vin blanc
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: tete-de-veau-hot
-  category: charcuterie
-  names:
-    - Tête de veau hot
-    - Tête de veau chaude
-    - Tête de veau ravigote
-    - Tête de veau sauce ravigote
-    - Tête de veau bouillie
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Pink or underdone in the middle, it can carry the toxoplasmosis parasite and other germs. Cook it right through.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through and eaten hot, it is a good charcuterie choice.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Andouille cooked: heated until steaming hot all the way through, in a gratin, a croque-monsieur or on a hot pizza, it is fine."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-14
 - id: haddock-fresh
   category: fish
   names:
@@ -17969,12 +17872,19 @@
     - Friand à la viande
     - Friand saucisse
     - Friand jambon fromage
+    - Sausage roll
+    - Friand à la saucisse
+    - Feuilleté saucisse
+    - Saucisse en croûte
   local: true
   answers:
     - state: cooked
       verdict: ok
       why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: pizza-slice
   category: ready_meal

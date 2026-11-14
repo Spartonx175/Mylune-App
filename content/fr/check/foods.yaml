@@ -248,6 +248,11 @@
     - Magret saignant
     - Magret mi-cuit
     - Rare duck breast
+    - Magret séché
+    - Magret fumé
+    - Magret de canard séché
+    - Magret salé
+    - Dried duck breast
     - Duck
   local: true
   answers:
@@ -350,19 +355,24 @@
     - Chipolata
     - Saucisse épicée
     - Spicy sausage
+    - Merguez d'agneau
+    - Merguez de bœuf
+    - Merguez de volaille
+    - Merguez maison
+    - Merguez lamb
     - Merguez
   local: true
   answers:
     - state: undercooked
       verdict: avoid
-      why: "Une merguez rosée à l'intérieur peut encore transmettre le parasite de la toxoplasmose. Faites-la cuire à cœur."
+      why: Une merguez rosée à l'intérieur peut encore transmettre le parasite de la toxoplasmose. Faites-la cuire à cœur.
       sources:
         - ameli-toxo-prevention
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: "La merguez bien cuite, sans rose au centre, est sans danger. Les saucisses faites maison sont un bon choix."
+      why: La merguez bien cuite, sans rose au centre, est sans danger. Les saucisses faites maison sont un bon choix.
       sources:
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
@@ -376,20 +386,31 @@
     - Saucisse de Strasbourg
     - Chipolatas
     - Saucisse fraîche
+    - Cumberland
+    - Saucisse anglaise
+    - Saucisse bangers
+    - Bangers
+    - Cumberland sausage
+    - Saucisses de porc
+    - Saucisses grillées
+    - Saucisses à griller
+    - Saucisses fraîches
+    - Fresh sausage links
     - Sausage
-  tips: [best]
+  tips:
+    - best
   local: true
   answers:
     - state: undercooked
       verdict: avoid
-      why: "La saucisse fraîche encore rosée à l'intérieur peut transmettre des microbes, dont le parasite de la toxoplasmose."
+      why: La saucisse fraîche encore rosée à l'intérieur peut transmettre des microbes, dont le parasite de la toxoplasmose.
       sources:
         - ameli-toxo-prevention
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: "La saucisse fraîche bien cuite est sans danger. C'est le choix de charcuterie à privilégier."
+      why: La saucisse fraîche bien cuite est sans danger. C'est le choix de charcuterie à privilégier.
       sources:
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
@@ -473,20 +494,37 @@
     - Mi-cuit
     - Terrine de foie gras
     - Bloc de foie gras
+    - Foie gras de canard entier
+    - Foie gras entier
+    - Foie gras mi-cuit
+    - Foie gras au torchon
+    - Foie gras de canard mi-cuit
+    - Duck foie gras
+    - Foie gras d'oie entier
+    - Foie gras d'oie mi-cuit
+    - Goose foie gras
+    - Bloc de foie gras de canard
+    - Bloc de foie gras avec morceaux
+    - Foie gras block
+    - Parfait de foie
+    - Parfait de foie de volaille
+    - Parfait de canard
+    - Foie gras parfait
     - Foie gras
-  tips: [avoid]
+  tips:
+    - avoid
   local: true
   answers:
     - state: cooked
       verdict: avoid
-      why: "Le foie gras (frais, mi-cuit ou en bloc) est un produit cuit réfrigéré qui peut transmettre la listéria. C'est aussi du foie, riche en vitamine A."
+      why: Le foie gras (frais, mi-cuit ou en bloc) est un produit cuit réfrigéré qui peut transmettre la listéria. C'est aussi du foie, riche en vitamine A.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
     - state: canned
       verdict: careful
-      why: "Les recommandations françaises demandent de s'en abstenir complètement. Une conserve ou un bocal stérilisé dans son contenant est plus sûr, mais demandez à votre sage-femme si vous voulez en manger, et évitez-le s'il contient du foie."
+      why: Les recommandations françaises demandent de s'en abstenir complètement. Une conserve ou un bocal stérilisé dans son contenant est plus sûr, mais demandez à votre sage-femme si vous voulez en manger, et évitez-le s'il contient du foie.
       sources:
         - mangerbouger-aliments-eviter
         - cdc-listeria-meat-fish
@@ -551,19 +589,28 @@
     - Mortadelle
     - Jambon-beurre
     - Ham
+    - Jambon supérieur
+    - Jambon torchon
+    - Jambon sans couenne
+    - Paris ham
+    - Jambon préemballé
+    - Jambon en barquette
+    - Jambon sous vide
+    - Jambon allégé
+    - Prepacked ham slices
     - Cooked ham
   local: true
   answers:
     - state: cooked
       verdict: careful
-      why: "Le jambon cuit tranché froid peut transmettre la listéria. Le jambon préemballé est le meilleur choix ; évitez le jambon tranché à la coupe."
+      why: Le jambon cuit tranché froid peut transmettre la listéria. Le jambon préemballé est le meilleur choix ; évitez le jambon tranché à la coupe.
       sources:
         - mangerbouger-aliments-eviter
         - ameli-aliments-eviter
         - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: "Le jambon réchauffé jusqu'à ce qu'il fume, dans un croque-monsieur, un gratin ou sur une pizza chaude, est acceptable."
+      why: Le jambon réchauffé jusqu'à ce qu'il fume, dans un croque-monsieur, un gratin ou sur une pizza chaude, est acceptable.
       sources:
         - mangerbouger-aliments-eviter
         - cdc-listeria-deli
@@ -610,20 +657,42 @@
     - Salami
     - Pepperoni
     - Cervelas cru
+    - Saucisson au poivre
+    - Saucisson aux noix
+    - Saucisson aux noisettes
+    - Saucisson aux figues
+    - Pepper saucisson
+    - Figatelli sec
+    - Coppa corse
+    - Lonzu
+    - Lonzo corse
+    - Saucisse corse sèche
+    - Corsican sausage
+    - Saucisson de canard
+    - Saucisson de canard sec
+    - Saucisse sèche
+    - Duck dry sausage
+    - Petit saucisson
+    - Mini saucisson
+    - Bâtonnets de saucisson
+    - Cracotte saucisson
+    - Pique-nique saucisson
+    - Dry sausage stick
     - Dry sausage
-  tips: [avoid]
+  tips:
+    - avoid
   local: true
   answers:
     - state: cured
       verdict: avoid
-      why: "Le saucisson sec se mange cru. Il peut transmettre le parasite de la toxoplasmose, la salmonelle et la listéria. Évitez-le froid."
+      why: Le saucisson sec se mange cru. Il peut transmettre le parasite de la toxoplasmose, la salmonelle et la listéria. Évitez-le froid.
       sources:
         - mangerbouger-aliments-eviter
         - nhs-toxoplasmosis
         - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: "Seulement s'il est chauffé jusqu'à ce qu'il fume à cœur, par exemple sur une pizza sortie du four. Évitez les rondelles à l'apéritif."
+      why: Seulement s'il est chauffé jusqu'à ce qu'il fume à cœur, par exemple sur une pizza sortie du four. Évitez les rondelles à l'apéritif.
       sources:
         - nhs-foods-to-avoid
         - cdc-listeria-deli
@@ -690,18 +759,23 @@
     - Poitrine fumée
     - Poitrine salée
     - Bacon grillé
+    - Lardons poêlés
+    - Lardons grillés
+    - Lardons croustillants
+    - Lardons fumés cuits
+    - Fried lardons
     - Bacon
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: "Les lardons ou le bacon poêlés jusqu'à être croustillants et bien cuits sont acceptables, par exemple dans une quiche ou une salade (servez-les chauds)."
+      why: Les lardons ou le bacon poêlés jusqu'à être croustillants et bien cuits sont acceptables, par exemple dans une quiche ou une salade (servez-les chauds).
       sources:
         - ameli-toxo-prevention
         - nhs-foods-to-avoid
     - state: cured
       verdict: avoid
-      why: "Le porc fumé ou salé mangé sans cuisson, comme les lardons crus ou le bacon froid tranché, peut transmettre la toxoplasmose et la listéria."
+      why: Le porc fumé ou salé mangé sans cuisson, comme les lardons crus ou le bacon froid tranché, peut transmettre la toxoplasmose et la listéria.
       sources:
         - ameli-toxo-prevention
         - mangerbouger-aliments-eviter
@@ -715,19 +789,28 @@
     - Saucisse de Strasbourg cuite
     - Saucisse cocktail
     - Cocktail sausage
+    - Saucisse de Francfort froide
+    - Saucisse de Strasbourg froide
+    - Saucisses cocktail froides
+    - Saucisse en bocal
+    - Frankfurter cold
+    - Knack
+    - Knacks d'Alsace
+    - Saucisse d'Alsace
+    - Strasbourg sausage fresh
     - Hot dog
   local: true
   answers:
     - state: cooked
       verdict: avoid
-      why: "Les saucisses de hot dog mangées froides, directement sorties du paquet, peuvent transmettre la listéria."
+      why: Les saucisses de hot dog mangées froides, directement sorties du paquet, peuvent transmettre la listéria.
       sources:
         - cdc-listeria-prevention
         - cdc-food-pregnant-women
         - ameli-aliments-eviter
     - state: reheated
       verdict: ok
-      why: "Acceptable si elles sont réchauffées jusqu'à ce qu'elles fument à cœur."
+      why: Acceptable si elles sont réchauffées jusqu'à ce qu'elles fument à cœur.
       sources:
         - cdc-listeria-prevention
         - cdc-food-pregnant-women
@@ -762,12 +845,26 @@
     - Andouille froide
     - Pieds de porc
     - Head cheese
+    - Poulet en gelée
+    - Volaille en gelée
+    - Aspic
+    - Galantine
+    - Jellied chicken
+    - Langue en gelée
+    - Langue de bœuf en gelée
+    - Langue de porc en gelée
+    - Jellied tongue
+    - Pieds de porc en gelée
+    - Gelée de pieds de porc
+    - Tripes en gelée
+    - Andouille froide en gelée
+    - Pork trotter jelly
     - Fromage de tête
   local: true
   answers:
     - state: cooked
       verdict: avoid
-      why: "Les viandes froides en gelée peuvent transmettre la listéria, qui se développe au réfrigérateur. Évitez-les."
+      why: Les viandes froides en gelée peuvent transmettre la listéria, qui se développe au réfrigérateur. Évitez-les.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -779,12 +876,17 @@
     - Andouille chaude
     - Andouille de Vire
     - Andouillette grillée
+    - Andouillette AAAAA
+    - Andouillette de Troyes
+    - Andouillette de Lyon
+    - Andouillette au vin blanc
+    - Andouillette 5A
     - Andouillette
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: "L'andouillette bien cuite et servie chaude est sans danger. Ne la mangez pas rosée au centre."
+      why: L'andouillette bien cuite et servie chaude est sans danger. Ne la mangez pas rosée au centre.
       sources:
         - ameli-toxo-prevention
         - mangerbouger-aliments-eviter
@@ -5230,6 +5332,11 @@
   names:
     - Tête de veau
     - Tête de veau sauce gribiche
+    - Tête de veau chaude
+    - Tête de veau ravigote
+    - Tête de veau sauce ravigote
+    - Tête de veau bouillie
+    - Tête de veau hot
     - Veal head
   local: true
   answers:
@@ -6178,6 +6285,11 @@
   names:
     - Cassoulet de Toulouse
     - Cassoulet de Castelnaudary
+    - Saucisse pour cassoulet
+    - Saucisse de Toulouse cassoulet
+    - Saucisse à cuire
+    - Saucisse de ménage
+    - Sausage cassoulet
     - Cassoulet
   local: true
   answers:
@@ -6630,12 +6742,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "San Daniele : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "San Daniele : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: iberico-ham
   category: charcuterie
@@ -6650,12 +6768,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Jambon ibérique : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Jambon ibérique : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: serrano-ham
   category: charcuterie
@@ -6666,12 +6790,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Jambon serrano : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Jambon serrano : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: bayonne-ham
   category: charcuterie
@@ -6682,12 +6812,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Bayonne : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Bayonne : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: savoie-ham
   category: charcuterie
@@ -6699,12 +6835,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Jambon de Savoie : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Jambon de Savoie : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: auvergne-ham
   category: charcuterie
@@ -6716,12 +6858,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Jambon d'Auvergne : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Jambon d'Auvergne : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: ardennes-ham
   category: charcuterie
@@ -6734,12 +6882,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Jambon des Ardennes : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Jambon des Ardennes : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: corsican-ham
   category: charcuterie
@@ -6752,12 +6906,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Prisuttu : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Prisuttu : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: noir-de-bigorre-ham
   category: charcuterie
@@ -6769,12 +6929,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Jambon noir de Bigorre : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Jambon noir de Bigorre : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: kintoa-ham
   category: charcuterie
@@ -6786,12 +6952,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Jambon de Kintoa : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Jambon de Kintoa : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: smoked-raw-ham
   category: charcuterie
@@ -6803,12 +6975,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Jambon cru fumé de Westphalie : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Jambon cru fumé de Westphalie : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: black-forest-ham
   category: charcuterie
@@ -6821,12 +6999,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Jambon de la Forêt-Noire : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Jambon de la Forêt-Noire : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: air-dried-beef
   category: charcuterie
@@ -6842,12 +7026,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Viande séchée : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Viande séchée : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: cecina
   category: charcuterie
@@ -6859,12 +7049,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Cecina de León : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Cecina de León : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: guanciale
   category: charcuterie
@@ -6876,12 +7072,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Joue de porc séchée : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Joue de porc séchée : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: bacon-raw-cured
   category: charcuterie
@@ -6890,17 +7092,28 @@
     - Lardo
     - Lard de Colonnata
     - Lardo di Colonnata
+    - Bacon tranché
+    - Bacon fumé
+    - Bacon en tranches
+    - Bacon froid
+    - Bacon sliced
     - Bacon raw cured
   local: true
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Lard sec : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Lard sec : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: dry-saucisson-from-lyon
   category: charcuterie
@@ -6912,12 +7125,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Saucisson de Lyon sec : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Saucisson de Lyon sec : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: mountain-sausage
   category: charcuterie
@@ -6930,12 +7149,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Saucisson de montagne : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Saucisson de montagne : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: arles-saucisson
   category: charcuterie
@@ -6947,31 +7172,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Saucisson d'Arles : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: pepper-saucisson
-  category: charcuterie
-  names:
-    - Saucisson au poivre
-    - Saucisson aux noix
-    - Saucisson aux noisettes
-    - Saucisson aux figues
-    - Pepper saucisson
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
-    - state: reheated
-      verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Saucisson d'Arles : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: donkey-saucisson
   category: charcuterie
@@ -6985,70 +7197,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Saucisson d'âne : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: duck-dry-sausage
-  category: charcuterie
-  names:
-    - Saucisson de canard
-    - Saucisson de canard sec
-    - Saucisse sèche
-    - Duck dry sausage
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
-    - state: reheated
-      verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: dry-sausage-stick
-  category: charcuterie
-  names:
-    - Petit saucisson
-    - Mini saucisson
-    - Bâtonnets de saucisson
-    - Cracotte saucisson
-    - Pique-nique saucisson
-    - Dry sausage stick
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
-    - state: reheated
-      verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: corsican-sausage
-  category: charcuterie
-  names:
-    - Figatelli sec
-    - Coppa corse
-    - Lonzu
-    - Lonzo corse
-    - Saucisse corse sèche
-    - Corsican sausage
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
-    - state: reheated
-      verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Saucisson d'âne : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: fuet
   category: charcuterie
@@ -7056,36 +7216,28 @@
     - Fuet espagnol
     - Fuet catalan
     - Longaniza
-    - Fuet
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
-    - state: reheated
-      verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: spanish-dry-sausage
-  category: charcuterie
-  names:
     - Sobrasada
     - Salchichón
     - Chorizo ibérico
     - Chorizo de bellota
     - Spanish dry sausage
+    - Fuet
   local: true
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Fuet espagnol : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Fuet espagnol : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: salami-milano
   category: charcuterie
@@ -7097,12 +7249,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Salami italien : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Salami italien : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: spicy-salami
   category: charcuterie
@@ -7115,12 +7273,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Salami piquant : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Salami piquant : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: finocchiona
   category: charcuterie
@@ -7132,12 +7296,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Salami au fenouil : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Salami au fenouil : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: saucisson-from-the-basque-country
   category: charcuterie
@@ -7151,50 +7321,18 @@
   answers:
     - state: cured
       verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
+      why: "Saucisson basque : cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
     - state: reheated
       verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: dried-duck-breast
-  category: charcuterie
-  names:
-    - Magret séché
-    - Magret fumé
-    - Magret de canard séché
-    - Magret salé
-    - Dried duck breast
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
-    - state: reheated
-      verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: bacon-sliced
-  category: charcuterie
-  names:
-    - Bacon tranché
-    - Bacon fumé
-    - Bacon en tranches
-    - Bacon froid
-    - Bacon sliced
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: "Cette charcuterie sèche ou crue se mange sans cuisson. Elle peut contenir le parasite de la toxoplasmose, la salmonelle et la listeria : évitez-la froide."
-      sources: [ mangerbouger-aliments-eviter, nhs-toxoplasmosis, ameli-toxo-prevention ]
-    - state: reheated
-      verdict: careful
-      why: Seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-deli, mangerbouger-aliments-eviter ]
+      why: "Saucisson basque : seulement si elle est chauffée jusqu'à être fumante à cœur, par exemple cuite sur une pizza ou dans un plat cuisiné. Ne l'ajoutez pas froide après la cuisson."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-deli
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: chicken-ham
   category: charcuterie
@@ -7207,12 +7345,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Jambon de poulet : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Jambon de poulet : chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: turkey-ham
   category: charcuterie
@@ -7225,30 +7369,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Jambon de dinde : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: paris-ham
-  category: charcuterie
-  names:
-    - Jambon supérieur
-    - Jambon torchon
-    - Jambon sans couenne
-    - Paris ham
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
-    - state: reheated
-      verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Jambon de dinde : chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: bone-in-ham
   category: charcuterie
@@ -7261,12 +7393,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Jambon braisé : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Jambon braisé : chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: smoked-cooked-ham
   category: charcuterie
@@ -7280,28 +7418,45 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Jambon fumé cuit : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Jambon fumé cuit : chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: mortadella
   category: charcuterie
   names:
     - Mortadelle pistachée
+    - Mortadelle américaine
+    - Saucisson de Bologne
+    - Salami cuit
+    - Bologne
+    - Bologna
     - Mortadella
   local: true
   answers:
     - state: cooked
       verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Mortadelle pistachée : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Mortadelle pistachée : chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cervelas
   category: charcuterie
@@ -7313,12 +7468,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Cervelas obernois : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Cervelas obernois : chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: garlic-sausage-cooked
   category: charcuterie
@@ -7331,12 +7492,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Saucisson à l'ail fumé : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Saucisson à l'ail fumé : chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: lyon-sausage-cooked
   category: charcuterie
@@ -7349,12 +7516,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Saucisson de Lyon pistaché : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Saucisson de Lyon pistaché : chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: roast-pork-cold
   category: charcuterie
@@ -7367,12 +7540,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Rôti de porc froid : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Rôti de porc froid : chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: roast-turkey-cold
   category: charcuterie
@@ -7385,12 +7564,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Rôti de dinde froid : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Rôti de dinde froid : chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: roast-beef-cold-cut
   category: charcuterie
@@ -7403,12 +7588,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Rosbif froid : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Rosbif froid : chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: pastrami
   category: charcuterie
@@ -7421,50 +7612,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Corned beef charcuterie : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: frankfurter-cold
-  category: charcuterie
-  names:
-    - Saucisse de Francfort froide
-    - Saucisse de Strasbourg froide
-    - Saucisses cocktail froides
-    - Saucisse en bocal
-    - Frankfurter cold
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
-    - state: reheated
-      verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: bologna
-  category: charcuterie
-  names:
-    - Mortadelle américaine
-    - Saucisson de Bologne
-    - Salami cuit
-    - Bologne
-    - Bologna
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
-    - state: reheated
-      verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Corned beef charcuterie : chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: tongue-cold-cut
   category: charcuterie
@@ -7478,12 +7637,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Langue froide : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Langue froide : chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: pork-rillons
   category: charcuterie
@@ -7498,31 +7663,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Rillons : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cold-sausage-morteau
-  category: charcuterie
-  names:
-    - Morteau froide
-    - Saucisse de Morteau froide
-    - Saucisse de Montbéliard froide
-    - Saucisse fumée froide
-    - Cold sausage Morteau
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
-    - state: reheated
-      verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Rillons : chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cheese-and-ham-slice
   category: charcuterie
@@ -7531,17 +7683,28 @@
     - Jambon fromage
     - Rouleau jambon-fromage
     - Roulade de jambon
+    - Cornet de jambon
+    - Cornet de jambon farci
+    - Rouleau de jambon
+    - Jambon roulé
+    - Ham and cheese roll
     - Cheese-and-ham slice
   local: true
   answers:
     - state: cooked
       verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
+      why: "Jambon-fromage en tranches : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
     - state: reheated
       verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Jambon-fromage en tranches : chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: ham-mousse
   category: charcuterie
@@ -7554,69 +7717,57 @@
   local: true
   answers:
     - state: cooked
+      verdict: avoid
+      why: "Mousse de jambon : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+    - state: canned
       verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
-    - state: reheated
-      verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: ham-and-cheese-roll
-  category: charcuterie
-  names:
-    - Cornet de jambon
-    - Cornet de jambon farci
-    - Rouleau de jambon
-    - Jambon roulé
-    - Ham and cheese roll
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
-    - state: reheated
-      verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: prepacked-ham-slices
-  category: charcuterie
-  names:
-    - Jambon préemballé
-    - Jambon en barquette
-    - Jambon sous vide
-    - Jambon allégé
-    - Prepacked ham slices
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: Les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe.
-      sources: [ mangerbouger-aliments-eviter, ameli-aliments-eviter, cdc-listeria-deli ]
-    - state: reheated
-      verdict: ok
-      why: Chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Mousse de jambon : une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: country-pate
   category: charcuterie
   names:
     - Pâté breton
     - Pâté de porc
     - Pâté de campagne breton
+    - Pâté de foie de porc
+    - Pâté de foie de volaille
+    - Pâté Hénaff
+    - Pork pâté
+    - Pâté de campagne grossier
+    - Pâté de campagne à l'ancienne
+    - Pâté à l'ancienne
+    - Pâté au poivre vert
+    - Coarse pâté
+    - Pâté aux pistaches
+    - Pâté aux noisettes
+    - Pâté aux champignons
+    - Pâté aux cèpes
+    - Pâté with pistachios
     - Country pâté
   local: true
   answers:
     - state: cooked
       verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Pâté breton : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Pâté breton : une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: duck-pate
   category: charcuterie
@@ -7630,12 +7781,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Pâté de canard : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Pâté de canard : une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: rabbit-pate
   category: charcuterie
@@ -7648,12 +7805,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Pâté de lapin : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Pâté de lapin : une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: game-terrine
   category: charcuterie
@@ -7667,29 +7830,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Terrine de gibier : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: pate-de-tete
-  category: charcuterie
-  names:
-    - Tête roulée
-    - Terrine de tête
-    - Pâté de tête
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Terrine de gibier : une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chicken-terrine
   category: charcuterie
@@ -7703,12 +7855,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Terrine de volaille : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Terrine de volaille : une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: vegetable-terrine
   category: charcuterie
@@ -7716,18 +7874,21 @@
     - Terrine de légumes
     - Terrine de poireaux
     - Terrine végétale
+    - Pâté végétal
+    - Pâté végétarien
+    - Pâté de légumes
+    - Pâté d'olives
+    - Paté vegetable
     - Vegetable terrine
   local: true
   answers:
     - state: cooked
-      verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
       verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: Il ne contient pas de viande, mais les terrines et pâtés vendus frais figurent sur la liste des aliments à éviter en France, car la listeria peut se développer au frigo. Le NHS conseille de garder le pâté végétal au frais et de le manger avant la date. Demandez à votre sage-femme si vous en voulez.
+      sources:
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: mousse-of-duck
   category: charcuterie
   names:
@@ -7739,101 +7900,45 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Mousse de canard : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: duck-foie-gras
-  category: charcuterie
-  names:
-    - Foie gras de canard entier
-    - Foie gras entier
-    - Foie gras mi-cuit
-    - Foie gras au torchon
-    - Foie gras de canard mi-cuit
-    - Duck foie gras
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: goose-foie-gras
-  category: charcuterie
-  names:
-    - Foie gras d'oie entier
-    - Foie gras d'oie mi-cuit
-    - Goose foie gras
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: foie-gras-block
-  category: charcuterie
-  names:
-    - Bloc de foie gras de canard
-    - Bloc de foie gras avec morceaux
-    - Foie gras block
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: foie-gras-parfait
-  category: charcuterie
-  names:
-    - Parfait de foie
-    - Parfait de foie de volaille
-    - Parfait de canard
-    - Foie gras parfait
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Mousse de canard : une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pork-rillettes
   category: charcuterie
   names:
     - Rillettes de Tours
     - Rillettes de Sarthe
+    - Viande en pot
+    - Potted pork
+    - Potted beef
+    - Potted meat
     - Pork rillettes
   local: true
   answers:
     - state: cooked
       verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Rillettes de Tours : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Rillettes de Tours : une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: goose-rillettes
   category: charcuterie
@@ -7846,12 +7951,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Rillettes d'oie : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Rillettes d'oie : une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: salmon-rillettes
   category: charcuterie
@@ -7864,12 +7975,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Rillettes de poisson : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Rillettes de poisson : une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: tuna-rillettes
   category: charcuterie
@@ -7882,12 +7999,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Rillettes de maquereau : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Rillettes de maquereau : une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: terrine-de-poisson
   category: charcuterie
@@ -7900,12 +8023,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Terrine de saumon : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Terrine de saumon : une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: mousse-de-saumon
   category: charcuterie
@@ -7918,30 +8047,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Mousse de poisson : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: pork-pate
-  category: charcuterie
-  names:
-    - Pâté de foie de porc
-    - Pâté de foie de volaille
-    - Pâté Hénaff
-    - Pork pâté
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Mousse de poisson : une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: wild-boar-pate
   category: charcuterie
@@ -7955,12 +8072,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Pâté de sanglier : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Pâté de sanglier : une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pate-from-brittany
   category: charcuterie
@@ -7973,106 +8096,18 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Pâté de campagne Hénaff : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: potted-meat
-  category: charcuterie
-  names:
-    - Viande en pot
-    - Potted pork
-    - Potted beef
-    - Potted meat
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: coarse-pate
-  category: charcuterie
-  names:
-    - Pâté de campagne grossier
-    - Pâté de campagne à l'ancienne
-    - Pâté à l'ancienne
-    - Pâté au poivre vert
-    - Coarse pâté
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: pate-with-pistachios
-  category: charcuterie
-  names:
-    - Pâté aux pistaches
-    - Pâté aux noisettes
-    - Pâté aux champignons
-    - Pâté aux cèpes
-    - Pâté with pistachios
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: pate-vegetable
-  category: charcuterie
-  names:
-    - Pâté végétal
-    - Pâté végétarien
-    - Pâté de légumes
-    - Pâté d'olives
-    - Paté vegetable
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: jambon-persille-spread
-  category: charcuterie
-  names:
-    - Pâté de jambon persillé
-    - Terrine de jambon
-    - Terrine de jambon persillé
-    - Pâté de jambon de Pâques
-    - Jambon persillé spread
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
-    - state: canned
-      verdict: careful
-      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
-      sources: [ cdc-listeria-meat-fish, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Pâté de campagne Hénaff : une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute."
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: brawn
   category: charcuterie
@@ -8080,13 +8115,23 @@
     - Tête pressée
     - Fromage de cochon
     - Tête de cochon
+    - Tête roulée
+    - Terrine de tête
+    - Pâté de tête
+    - Tête de veau en gelée
+    - Terrine de tête de veau
+    - Tête de veau froide
+    - Calf's head terrine
     - Brawn
   local: true
   answers:
     - state: cooked
       verdict: avoid
-      why: Les produits en gelée ou pressés vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Évitez-les.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Tête pressée : les produits en gelée ou pressés vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Évitez-les."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: pig-snout-salad
   category: charcuterie
@@ -8100,8 +8145,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les produits en gelée ou pressés vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Évitez-les.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Museau vinaigrette : les produits en gelée ou pressés vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Évitez-les."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: jellied-egg
   category: charcuterie
@@ -8114,66 +8162,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les produits en gelée ou pressés vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Évitez-les.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: jellied-chicken
-  category: charcuterie
-  names:
-    - Poulet en gelée
-    - Volaille en gelée
-    - Aspic
-    - Galantine
-    - Jellied chicken
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Les produits en gelée ou pressés vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Évitez-les.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: jellied-tongue
-  category: charcuterie
-  names:
-    - Langue en gelée
-    - Langue de bœuf en gelée
-    - Langue de porc en gelée
-    - Jellied tongue
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Les produits en gelée ou pressés vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Évitez-les.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: pork-trotter-jelly
-  category: charcuterie
-  names:
-    - Pieds de porc en gelée
-    - Gelée de pieds de porc
-    - Tripes en gelée
-    - Andouille froide en gelée
-    - Pork trotter jelly
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Les produits en gelée ou pressés vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Évitez-les.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-deli ]
-  reviewed: 2026-11-13
-- id: calf-s-head-terrine
-  category: charcuterie
-  names:
-    - Tête de veau en gelée
-    - Terrine de tête de veau
-    - Tête de veau froide
-    - Calf's head terrine
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Les produits en gelée ou pressés vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Évitez-les.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Œuf en gelée : les produits en gelée ou pressés vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Évitez-les."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: ham-in-jelly
   category: charcuterie
@@ -8181,13 +8174,21 @@
     - Jambon en gelée
     - Jambon à la gelée
     - Rôti en gelée
+    - Pâté de jambon persillé
+    - Terrine de jambon
+    - Terrine de jambon persillé
+    - Pâté de jambon de Pâques
+    - Jambon persillé spread
     - Ham in jelly
   local: true
   answers:
     - state: cooked
       verdict: avoid
-      why: Les produits en gelée ou pressés vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Évitez-les.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-deli ]
+      why: "Jambon en gelée : les produits en gelée ou pressés vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Évitez-les."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
   reviewed: 2026-11-13
 - id: toulouse-sausage
   category: charcuterie
@@ -8199,12 +8200,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Saucisse fraîche de Toulouse : encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Saucisse fraîche de Toulouse : cuit à cœur et mangé chaud, c'est un bon choix de charcuterie."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: morteau-sausage
   category: charcuterie
@@ -8213,35 +8219,27 @@
     - Morteau
     - Saucisse de Montbéliard
     - Montbéliard
+    - Morteau froide
+    - Saucisse de Morteau froide
+    - Saucisse de Montbéliard froide
+    - Saucisse fumée froide
+    - Cold sausage Morteau
     - Morteau sausage
   local: true
   answers:
     - state: undercooked
       verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Saucisse de Morteau : encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: strasbourg-sausage-fresh
-  category: charcuterie
-  names:
-    - Knack
-    - Knacks d'Alsace
-    - Saucisse d'Alsace
-    - Strasbourg sausage fresh
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Saucisse de Morteau : cuit à cœur et mangé chaud, c'est un bon choix de charcuterie."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chipolata-sausage
   category: charcuterie
@@ -8253,12 +8251,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Saucisse chipolata : encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Saucisse chipolata : cuit à cœur et mangé chaud, c'est un bon choix de charcuterie."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: duck-sausage
   category: charcuterie
@@ -8272,12 +8275,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Saucisse de canard : encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Saucisse de canard : cuit à cœur et mangé chaud, c'est un bon choix de charcuterie."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: herb-sausage
   category: charcuterie
@@ -8291,12 +8299,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Saucisse aux herbes : encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Saucisse aux herbes : cuit à cœur et mangé chaud, c'est un bon choix de charcuterie."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fresh-chorizo
   category: charcuterie
@@ -8310,31 +8323,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Chorizo frais : encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: cumberland-sausage
-  category: charcuterie
-  names:
-    - Cumberland
-    - Saucisse anglaise
-    - Saucisse bangers
-    - Bangers
-    - Cumberland sausage
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Chorizo frais : cuit à cœur et mangé chaud, c'est un bon choix de charcuterie."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: white-pudding
   category: charcuterie
@@ -8347,12 +8346,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Boudin blanc truffé : encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Boudin blanc truffé : cuit à cœur et mangé chaud, c'est un bon choix de charcuterie."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pork-crepinette
   category: charcuterie
@@ -8366,12 +8370,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Crépinette : encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Crépinette : cuit à cœur et mangé chaud, c'est un bon choix de charcuterie."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: longanisse
   category: charcuterie
@@ -8384,12 +8393,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Saucisse longanisse : encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Saucisse longanisse : cuit à cœur et mangé chaud, c'est un bon choix de charcuterie."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: diot
   category: charcuterie
@@ -8402,87 +8416,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Diots de Savoie : encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fresh-sausage-links
-  category: charcuterie
-  names:
-    - Saucisses de porc
-    - Saucisses grillées
-    - Saucisses à griller
-    - Saucisses fraîches
-    - Fresh sausage links
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: sausage-roll
-  category: charcuterie
-  names:
-    - Friand à la saucisse
-    - Feuilleté saucisse
-    - Saucisse en croûte
-    - Sausage roll
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: merguez-lamb
-  category: charcuterie
-  names:
-    - Merguez d'agneau
-    - Merguez de bœuf
-    - Merguez de volaille
-    - Merguez maison
-    - Merguez lamb
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: sausage-cassoulet
-  category: charcuterie
-  names:
-    - Saucisse pour cassoulet
-    - Saucisse de Toulouse cassoulet
-    - Saucisse à cuire
-    - Saucisse de ménage
-    - Sausage cassoulet
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Diots de Savoie : cuit à cœur et mangé chaud, c'est un bon choix de charcuterie."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: salted-pork-belly
   category: charcuterie
@@ -8495,12 +8439,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Lard salé : encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Lard salé : cuit à cœur et mangé chaud, c'est un bon choix de charcuterie."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: streaky-bacon-to-cook
   category: charcuterie
@@ -8514,31 +8463,17 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Poitrine fumée à cuire : encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fried-lardons
-  category: charcuterie
-  names:
-    - Lardons poêlés
-    - Lardons grillés
-    - Lardons croustillants
-    - Lardons fumés cuits
-    - Fried lardons
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Poitrine fumée à cuire : cuit à cœur et mangé chaud, c'est un bon choix de charcuterie."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: andouille-cooked
   category: charcuterie
@@ -8548,53 +8483,21 @@
     - Andouille cooked
   local: true
   answers:
-    - state: undercooked
-      verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
     - state: cooked
+      verdict: careful
+      why: "Andouille de Guémené : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+    - state: reheated
       verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: andouillette-5a
-  category: charcuterie
-  names:
-    - Andouillette AAAAA
-    - Andouillette de Troyes
-    - Andouillette de Lyon
-    - Andouillette au vin blanc
-    - Andouillette 5A
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: tete-de-veau-hot
-  category: charcuterie
-  names:
-    - Tête de veau chaude
-    - Tête de veau ravigote
-    - Tête de veau sauce ravigote
-    - Tête de veau bouillie
-    - Tête de veau hot
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Encore rose au milieu, il peut contenir le parasite de la toxoplasmose et d'autres germes. Faites-le cuire à cœur.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuit à cœur et mangé chaud, c'est un bon choix de charcuterie.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Andouille de Guémené : chauffée jusqu'à être fumante à cœur, dans un gratin, un croque-monsieur ou sur une pizza chaude, elle est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-14
 - id: haddock-fresh
   category: fish
   names:
@@ -17977,13 +17880,20 @@
     - Friand à la viande
     - Friand saucisse
     - Friand jambon fromage
+    - Friand à la saucisse
+    - Feuilleté saucisse
+    - Saucisse en croûte
+    - Sausage roll
     - Sausage roll bakery
   local: true
   answers:
     - state: cooked
       verdict: ok
       why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: pizza-slice
   category: ready_meal

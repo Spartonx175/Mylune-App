@@ -4,7 +4,7 @@ import { loadChecks } from "../lib/content/load";
 
 // Audit guard: items must not share an identical `why` (copy-pasted class wording can be wrong for the item).
 // Scope: the animal-food categories that were audited one by one. Categories are added here as each audit lands.
-const AUDITED = ["meat"];
+const AUDITED = ["meat", "charcuterie"];
 // Explicit allow-list of why texts that may be shared, as "locale|exact why". Keep empty unless a shared text is truly item-neutral.
 const ALLOWED_SHARED: string[] = [];
 
