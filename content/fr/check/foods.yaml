@@ -338,12 +338,17 @@
     - Sandwich grec
     - Brochette
     - Doner kebab
+    - Assiette kebab
+    - Kebab assiette
+    - Döner assiette
+    - Kebab frites
+    - Kebab plate
     - Kebab
   local: true
   answers:
     - state: cooked
       verdict: careful
-      why: "Seulement si la viande fume à cœur et qu'elle est bien cuite. Évitez la salade crue et les sauces si vous ne savez pas comment elles ont été préparées, à cause du risque de toxoplasmose lié à la terre."
+      why: Seulement si la viande fume à cœur et qu'elle est bien cuite. Évitez la salade crue et les sauces si vous ne savez pas comment elles ont été préparées, à cause du risque de toxoplasmose lié à la terre.
       sources:
         - ameli-toxo-prevention
         - mangerbouger-aliments-eviter
@@ -2807,19 +2812,22 @@
     - Croque
     - Toast jambon fromage
     - Croque jambon fromage
+    - Croque monsieur maison
+    - Croque-monsieur gratiné
+    - Croque madame
     - Croque-monsieur
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: "Le croque-monsieur est acceptable s'il est chaud et fumant jusqu'au centre. Pour un croque-madame, demandez l'œuf bien cuit."
+      why: Le croque-monsieur est acceptable s'il est chaud et fumant jusqu'au centre. Pour un croque-madame, demandez l'œuf bien cuit.
       sources:
         - mangerbouger-aliments-eviter
         - cdc-listeria-deli
         - nhs-foods-to-avoid
     - state: undercooked
       verdict: avoid
-      why: "Un œuf au plat au jaune coulant posé dessus présente un risque de salmonelle. Demandez-le bien cuit."
+      why: Un œuf au plat au jaune coulant posé dessus présente un risque de salmonelle. Demandez-le bien cuit.
       sources:
         - mangerbouger-aliments-eviter
         - nhs-healthy-diet
@@ -2834,18 +2842,23 @@
     - Flammekueche
     - Tarte flambée
     - Savoury tart
+    - Quiche surgelée
+    - Quiche du commerce
+    - Quiche lorraine du commerce
+    - Quiche du traiteur
+    - Frozen quiche
     - Quiche
   local: true
   answers:
     - state: reheated
       verdict: ok
-      why: "Une quiche cuite et mangée chaude, ou réchauffée jusqu'à fumer à cœur, est sans danger."
+      why: Une quiche cuite et mangée chaude, ou réchauffée jusqu'à fumer à cœur, est sans danger.
       sources:
         - nhs-foods-to-avoid
         - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
-      why: "Une quiche du commerce mangée froide, sortie du réfrigérateur, peut transmettre la listéria. Réchauffez-la jusqu'à ce qu'elle fume, et évitez celle à la garniture crémeuse et coulante."
+      why: Une quiche du commerce mangée froide, sortie du réfrigérateur, peut transmettre la listéria. Réchauffez-la jusqu'à ce qu'elle fume, et évitez celle à la garniture crémeuse et coulante.
       sources:
         - ameli-aliments-eviter
         - nhs-foods-to-avoid
@@ -2865,6 +2878,11 @@
     - Pizza au chèvre
     - Pizza mozzarella
     - Cheese pizza
+    - Part de pizza
+    - Pizza à la part
+    - Pizza au feu de bois
+    - Pizza napolitaine
+    - Pizza slice
     - Pizza
   local: true
   answers:
@@ -2894,12 +2912,25 @@
     - Wrap
     - Panini
     - Sandwich poulet crudités
+    - Sandwich triangle jambon
+    - Sandwich de mie
+    - Sandwich de mie jambon
+    - Triangle sandwich
+    - Baguette garnie
+    - Baguette jambon emmental
+    - Baguette poulet crudités
+    - Baguette fromage
+    - Cold baguette garni
+    - Bagel jambon fromage
+    - Bagel poulet curry froid
+    - Bagel thon
+    - Bagel cold
     - Sandwich
   local: true
   answers:
     - state: not_applicable
       verdict: careful
-      why: "Les sandwichs froids tout prêts présentent un risque de listéria à cause du jambon, de la mayonnaise, du fromage ou du saumon fumé, et la salade crue ajoute un risque lié à la terre. Choisissez un panini chaud, ou du poulet cuit, du fromage à pâte dure et de l'œuf cuit."
+      why: Les sandwichs froids tout prêts présentent un risque de listéria à cause du jambon, de la mayonnaise, du fromage ou du saumon fumé, et la salade crue ajoute un risque lié à la terre. Choisissez un panini chaud, ou du poulet cuit, du fromage à pâte dure et de l'œuf cuit.
       sources:
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
@@ -2919,19 +2950,84 @@
     - Plat surgelé
     - Raviolis
     - Frozen meal
+    - Moussaka du traiteur
+    - Moussaka surgelée
+    - Moussaka maison
+    - Aubergines farcies
+    - Moussaka ready
+    - Couscous du traiteur
+    - Couscous en boîte
+    - Couscous surgelé
+    - Couscous royal du traiteur
+    - Couscous ready
+    - Paella du traiteur
+    - Paella surgelée
+    - Paella en barquette
+    - Paëlla du commerce
+    - Paella ready
+    - Risotto du commerce
+    - Risotto en sachet
+    - Risotto surgelé
+    - Risotto du traiteur
+    - Risotto ready
+    - Chili du commerce
+    - Chili en barquette
+    - Chili con carne surgelé
+    - Chili du traiteur
+    - Chili ready
+    - Quenelles en sauce
+    - Quenelles nature
+    - Quenelles du commerce
+    - Quenelles surgelées
+    - Quenelle ready
+    - Blanquette de veau du commerce
+    - Blanquette de volaille
+    - Blanquette en boîte
+    - Blanquette surgelée
+    - Blanquette ready
+    - Poulet basquaise du commerce
+    - Poulet basquaise surgelé
+    - Poulet à la crème
+    - Poulet chasseur du commerce
+    - Poulet basquaise ready
+    - Pot-au-feu du commerce
+    - Pot-au-feu en bocal
+    - Pot-au-feu en barquette
+    - Potée en bocal
+    - Pot-au-feu ready
+    - Tartiflette du commerce
+    - Tartiflette en barquette
+    - Tartiflette surgelée
+    - Tartiflette du traiteur
+    - Tartiflette ready
+    - Gratin dauphinois du commerce
+    - Gratin de pâtes
+    - Gratin de légumes
+    - Gratin de pommes de terre surgelé
+    - Gratin dauphinois ready
+    - Plat micro-ondes
+    - Plat à réchauffer
+    - Plat micro-onde
+    - Barquette à réchauffer
+    - Microwave meal
+    - Gratin surgelé
+    - Gratin de poisson surgelé
+    - Gratin de brocolis
+    - Gratin du Picard
+    - Frozen gratin
     - Ready meal
   local: true
   answers:
     - state: reheated
       verdict: ok
-      why: "Chauffez jusqu'à ce que le plat fume à cœur, et pas seulement qu'il soit tiède. Mangez-le avant la date limite et ne gardez pas les restes plus de 3 jours."
+      why: "Plat cuisiné : chauffez jusqu'à ce que le plat fume à cœur, et pas seulement qu'il soit tiède. Mangez-le avant la date limite et ne gardez pas les restes plus de 3 jours."
       sources:
         - nhs-healthy-diet
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
-      why: "Mangés froids, ou seulement tièdes sortis du réfrigérateur, les plats préparés peuvent transmettre la listéria. Choisissez-les réchauffés, et évitez ceux qui contiennent du jambon cru, du poisson fumé ou un fromage à croûte fleurie."
+      why: Mangés froids, ou seulement tièdes sortis du réfrigérateur, les plats préparés peuvent transmettre la listéria. Choisissez-les réchauffés, et évitez ceux qui contiennent du jambon cru, du poisson fumé ou un fromage à croûte fleurie.
       sources:
         - ameli-aliments-eviter
         - cdc-listeria-deli
@@ -2951,12 +3047,16 @@
     - Salade traiteur
     - Salad bar
     - Potato salad
+    - Salade composée
+    - Salade mixte
+    - Salade du traiteur
+    - Mixed salad
     - Piémontaise
   local: true
   answers:
     - state: not_applicable
       verdict: avoid
-      why: "Les salades de traiteur et des rayons réfrigérés présentent un risque de listéria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Choisissez une salade que vous préparez et lavez vous-même."
+      why: Les salades de traiteur et des rayons réfrigérés présentent un risque de listéria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Choisissez une salade que vous préparez et lavez vous-même.
       sources:
         - cdc-listeria-deli
         - cdc-food-pregnant-women
@@ -7065,6 +7165,11 @@
     - Entrecôte sauce bordelaise
     - Sauce marchand de vin
     - Wine sauce meat
+    - Bourguignon du traiteur
+    - Daube du traiteur
+    - Coq au vin du traiteur
+    - Plat au vin du traiteur
+    - Boeuf bourguignon ready
     - Beef bourguignon
   local: true
   answers:
@@ -7098,6 +7203,9 @@
   names:
     - Carbonnade flamande
     - Carbonnade
+    - Plats à la bière
+    - Carbonnade du traiteur
+    - Beer dishes
     - Beer beef stew
   local: true
   answers:
@@ -12052,7 +12160,7 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
+      why: "Sandwich crevettes : les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur."
       sources:
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
@@ -16237,56 +16345,18 @@
   answers:
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
+      why: "Lasagnes à la bolognaise : réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours."
       sources:
         - nhs-healthy-diet
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
+      why: "Lasagnes à la bolognaise : mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle."
       sources:
         - ameli-aliments-eviter
         - cdc-listeria-deli
         - nhs-foods-to-avoid
-  reviewed: 2026-11-13
-- id: moussaka-ready
-  category: ready_meal
-  names:
-    - Moussaka du traiteur
-    - Moussaka surgelée
-    - Moussaka maison
-    - Aubergines farcies
-    - Moussaka ready
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: gratin-dauphinois-ready
-  category: ready_meal
-  names:
-    - Gratin dauphinois du commerce
-    - Gratin de pâtes
-    - Gratin de légumes
-    - Gratin de pommes de terre surgelé
-    - Gratin dauphinois ready
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
   reviewed: 2026-11-13
 - id: pasta-bolognese
   category: ready_meal
@@ -16300,12 +16370,18 @@
   answers:
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Pâtes à la bolognaise : réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours."
+      sources:
+        - nhs-healthy-diet
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
+      why: "Pâtes à la bolognaise : mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: ravioli
   category: ready_meal
@@ -16313,36 +16389,28 @@
     - Raviolis du commerce
     - Raviolis en boîte
     - Raviolis au bœuf
-    - Ravioli
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fresh-pasta-filled
-  category: ready_meal
-  names:
     - Raviolis frais
     - Tortellini
     - Cappelletti
     - Pâtes fraîches farcies
     - Fresh pasta filled
+    - Ravioli
   local: true
   answers:
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Raviolis du commerce : réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours."
+      sources:
+        - nhs-healthy-diet
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
+      why: "Raviolis du commerce : mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: gnocchi
   category: ready_meal
@@ -16356,12 +16424,18 @@
   answers:
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Gnocchis : réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours."
+      sources:
+        - nhs-healthy-diet
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
+      why: "Gnocchis : mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: cassoulet-tin
   category: ready_meal
@@ -16375,183 +16449,18 @@
   answers:
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Cassoulet en boîte : réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours."
+      sources:
+        - nhs-healthy-diet
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: couscous-ready
-  category: ready_meal
-  names:
-    - Couscous du traiteur
-    - Couscous en boîte
-    - Couscous surgelé
-    - Couscous royal du traiteur
-    - Couscous ready
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: paella-ready
-  category: ready_meal
-  names:
-    - Paella du traiteur
-    - Paella surgelée
-    - Paella en barquette
-    - Paëlla du commerce
-    - Paella ready
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: risotto-ready
-  category: ready_meal
-  names:
-    - Risotto du commerce
-    - Risotto en sachet
-    - Risotto surgelé
-    - Risotto du traiteur
-    - Risotto ready
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: chili-ready
-  category: ready_meal
-  names:
-    - Chili du commerce
-    - Chili en barquette
-    - Chili con carne surgelé
-    - Chili du traiteur
-    - Chili ready
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: tartiflette-ready
-  category: ready_meal
-  names:
-    - Tartiflette du commerce
-    - Tartiflette en barquette
-    - Tartiflette surgelée
-    - Tartiflette du traiteur
-    - Tartiflette ready
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: quenelle-ready
-  category: ready_meal
-  names:
-    - Quenelles en sauce
-    - Quenelles nature
-    - Quenelles du commerce
-    - Quenelles surgelées
-    - Quenelle ready
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: blanquette-ready
-  category: ready_meal
-  names:
-    - Blanquette de veau du commerce
-    - Blanquette de volaille
-    - Blanquette en boîte
-    - Blanquette surgelée
-    - Blanquette ready
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: poulet-basquaise-ready
-  category: ready_meal
-  names:
-    - Poulet basquaise du commerce
-    - Poulet basquaise surgelé
-    - Poulet à la crème
-    - Poulet chasseur du commerce
-    - Poulet basquaise ready
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: pot-au-feu-ready
-  category: ready_meal
-  names:
-    - Pot-au-feu du commerce
-    - Pot-au-feu en bocal
-    - Pot-au-feu en barquette
-    - Potée en bocal
-    - Pot-au-feu ready
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
+      why: "Cassoulet en boîte : mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: soup-fresh
   category: ready_meal
@@ -16559,36 +16468,28 @@
     - Soupe en brique
     - Velouté de légumes
     - Soupe du commerce
-    - Soup fresh
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fresh-soup-deli
-  category: ready_meal
-  names:
     - Soupe du traiteur
     - Soupe fraîche en bouteille
     - Velouté de potiron
     - Velouté de champignons
     - Fresh soup deli
+    - Soup fresh
   local: true
   answers:
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Soupe en brique : réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours."
+      sources:
+        - nhs-healthy-diet
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
+      why: "Soupe en brique : mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: soup-tin
   category: ready_meal
@@ -16602,31 +16503,18 @@
   answers:
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Soupe en boîte : réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours."
+      sources:
+        - nhs-healthy-diet
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: microwave-meal
-  category: ready_meal
-  names:
-    - Plat micro-ondes
-    - Plat à réchauffer
-    - Plat micro-onde
-    - Barquette à réchauffer
-    - Microwave meal
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
+      why: "Soupe en boîte : mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: frozen-pizza
   category: ready_meal
@@ -16634,74 +16522,28 @@
     - Pizza Buitoni
     - Pizza Picard
     - Pizza fraîche du commerce
-    - Frozen pizza
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: frozen-quiche
-  category: ready_meal
-  names:
-    - Quiche surgelée
-    - Quiche du commerce
-    - Quiche lorraine du commerce
-    - Quiche du traiteur
-    - Frozen quiche
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: frozen-gratin
-  category: ready_meal
-  names:
-    - Gratin surgelé
-    - Gratin de poisson surgelé
-    - Gratin de brocolis
-    - Gratin du Picard
-    - Frozen gratin
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: pizza-dough-filled
-  category: ready_meal
-  names:
     - Calzone du commerce
     - Pizza calzone
     - Chausson pizza
     - Pizza roulée
     - Pizza dough filled
+    - Frozen pizza
   local: true
   answers:
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Pizza Buitoni : réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours."
+      sources:
+        - nhs-healthy-diet
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
+      why: "Pizza Buitoni : mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: frozen-dumplings
   category: ready_meal
@@ -16715,12 +16557,18 @@
   answers:
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Gyozas surgelés : réchauffez jusqu'à ce que ce soit fumant à cœur, pas seulement tiède. Mangez avant la date limite et ne gardez pas les restes plus de 3 jours."
+      sources:
+        - nhs-healthy-diet
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
-      why: Mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
+      why: "Gyozas surgelés : mangé froid ou à peine tiède, un plat préparé peut contenir la listeria. Choisissez-le réchauffé, et évitez ceux avec du jambon cru, du poisson fumé ou un fromage à croûte molle."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: mcdonald-s-burger
   category: ready_meal
@@ -16729,27 +16577,20 @@
     - Big Mac
     - Cheeseburger McDo
     - McChicken
+    - Whopper
+    - Burger fast-food
+    - Burger du Quick
+    - Burger King
     - McDonald's burger
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: burger-king
-  category: ready_meal
-  names:
-    - Whopper
-    - Burger fast-food
-    - Burger du Quick
-    - Burger King
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Burger McDo : sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: kfc-bucket
   category: ready_meal
@@ -16763,8 +16604,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bucket de poulet frit : sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: french-tacos
   category: ready_meal
@@ -16778,23 +16622,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: kebab-plate
-  category: ready_meal
-  names:
-    - Assiette kebab
-    - Kebab assiette
-    - Döner assiette
-    - Kebab frites
-    - Kebab plate
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Tacos français : sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: fries-and-sausage
   category: ready_meal
@@ -16807,8 +16639,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Frites baraque : sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: pad-thai
   category: ready_meal
@@ -16820,10 +16655,12 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: Servi chaud, le plat convient, mais il est souvent accompagné de pousses de soja crues (graines germées), que les conseils français déconseillent. Demandez-le sans.
+      sources:
+        - ameli-aliments-eviter
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-14
 - id: ramen
   category: ready_meal
   names:
@@ -16834,10 +16671,12 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: Le bouillon et les nouilles sont chauds, mais le ramen est souvent garni d'un œuf mollet au jaune coulant. Demandez l'œuf bien cuit, ou sans œuf.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+  reviewed: 2026-11-14
 - id: pho
   category: ready_meal
   names:
@@ -16849,10 +16688,12 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: Le bouillon est chaud, mais le pho est souvent servi avec de fines tranches de bœuf cuites seulement par le bouillon, qui peuvent rester roses, et des germes de soja et herbes crus. Demandez le bœuf bien cuit et sans garniture crue.
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: banh-mi
   category: ready_meal
   names:
@@ -16862,11 +16703,14 @@
     - Banh mi
   local: true
   answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
+    - state: not_applicable
+      verdict: avoid
+      why: Un banh mi contient en général du pâté et de la charcuterie froide, qui peuvent porter la listeria, et des crudités. Demandez une garniture cuite, ou choisissez un autre sandwich.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+  reviewed: 2026-11-14
 - id: samosa
   category: ready_meal
   names:
@@ -16879,8 +16723,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Samossas : sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: spring-rolls
   category: ready_meal
@@ -16893,8 +16740,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Nems au poulet : sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: bruschetta
   category: ready_meal
@@ -16905,39 +16755,34 @@
     - Bruschetta
   local: true
   answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: tapas
-  category: ready_meal
-  names:
-    - Tortilla espagnole
-    - Croquetas
-    - Patatas bravas
-    - Tapas
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
+    - state: not_applicable
+      verdict: careful
+      why: La bruschetta est souvent garnie de tomate et d'herbes crues, parfois de jambon ou de fromage froids. Ne la mangez que si vous savez que la garniture a été lavée et convient, ou demandez une garniture cuite.
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-14
 - id: tortilla
   category: ready_meal
   names:
     - Tortilla de patatas
     - Tortilla espagnole cuite
     - Omelette espagnole
+    - Wrap froid
+    - Tortilla froide
+    - Wrap à emporter
+    - Wrap poulet fromage
+    - Cold tortilla
     - Tortilla
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: La tortilla espagnole est souvent laissée un peu coulante au centre. Choisissez-en une cuite à cœur, et mangez-la fraîche ou réchauffée.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+  reviewed: 2026-11-14
 - id: burrito
   category: ready_meal
   names:
@@ -16949,8 +16794,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Burrito poulet : sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: fajitas
   category: ready_meal
@@ -16963,8 +16811,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Fajitas poulet : sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: crepe-ham-cheese
   category: ready_meal
@@ -16973,41 +16824,21 @@
     - Galette complète
     - Galette jambon œuf fromage
     - Galette saucisse
-    - Crêpe ham cheese
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: savoury-crepe
-  category: ready_meal
-  names:
     - Crêpe salée
     - Crêpe au fromage
     - Crêpe champignons
     - Crêpe aux épinards
     - Savoury crêpe
+    - Crêpe ham cheese
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: croque-madame
-  category: ready_meal
-  names:
-    - Croque monsieur maison
-    - Croque-monsieur gratiné
-    - Croque madame
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Crêpe jambon fromage : sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: bagel-hot
   category: ready_meal
@@ -17021,22 +16852,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: pan-bagnat-hot
-  category: ready_meal
-  names:
-    - Panini poulet fromage
-    - Panini jambon fromage
-    - Panini 3 fromages
-    - Pan bagnat hot
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bagel poulet : sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: croissant-filled
   category: ready_meal
@@ -17050,8 +16870,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Croissant jambon fromage : sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: sausage-roll-bakery
   category: ready_meal
@@ -17069,26 +16892,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
+      why: "Friand au fromage : sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède."
       sources:
         - ameli-toxo-prevention
         - nhs-foods-to-avoid
         - mangerbouger-aliments-eviter
-  reviewed: 2026-11-13
-- id: pizza-slice
-  category: ready_meal
-  names:
-    - Part de pizza
-    - Pizza à la part
-    - Pizza au feu de bois
-    - Pizza napolitaine
-    - Pizza slice
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
   reviewed: 2026-11-13
 - id: pan-fried-noodles
   category: ready_meal
@@ -17102,8 +16910,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Nouilles sautées au bœuf : sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: indian-curry
   category: ready_meal
@@ -17117,8 +16928,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Curry indien : sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: thai-curry
   category: ready_meal
@@ -17132,8 +16946,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Curry thaï : sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: tajine-restaurant
   category: ready_meal
@@ -17147,8 +16964,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Tajine du restaurant : sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: lebanese-mezze-hot
   category: ready_meal
@@ -17162,8 +16982,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Mezzé chaud : sans danger s'il est préparé à l'instant, cuit à cœur et servi brûlant. Évitez-le s'il est resté tiède."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: ham-butter-baguette
   category: ready_meal
@@ -17175,8 +16998,12 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      why: "Sandwich jambon beurre : les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: club-sandwich
   category: ready_meal
@@ -17189,8 +17016,12 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      why: "Club poulet : les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: tuna-mayo-sandwich
   category: ready_meal
@@ -17204,12 +17035,16 @@
     - Pan bagnat
     - Thon crudités sandwich
     - Tuna sandwich
+    - Panini poulet fromage
+    - Panini jambon fromage
+    - Panini 3 fromages
+    - Pan bagnat hot
     - Tuna mayo sandwich
   local: true
   answers:
     - state: not_applicable
       verdict: careful
-      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
+      why: "Sandwich thon mayonnaise : les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur."
       sources:
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
@@ -17227,8 +17062,12 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      why: "Sandwich poulet mayonnaise : les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: american-sandwich
   category: ready_meal
@@ -17242,8 +17081,12 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      why: "Sandwich américain : les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: egg-sandwich
   category: ready_meal
@@ -17257,8 +17100,12 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      why: "Sandwich à l'œuf : les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: smoked-salmon-sandwich
   category: ready_meal
@@ -17271,24 +17118,13 @@
   local: true
   answers:
     - state: not_applicable
-      verdict: careful
-      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: triangle-sandwich
-  category: ready_meal
-  names:
-    - Sandwich triangle jambon
-    - Sandwich de mie
-    - Sandwich de mie jambon
-    - Triangle sandwich
-  local: true
-  answers:
-    - state: not_applicable
-      verdict: careful
-      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      verdict: avoid
+      why: "Le saumon fumé se mange sans cuisson et peut porter la listeria : les conseils français sont de l'éviter sauf s'il est cuit jusqu'à ce qu'il fume."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+  reviewed: 2026-11-14
 - id: sandwich-saucisson
   category: ready_meal
   names:
@@ -17299,25 +17135,13 @@
   local: true
   answers:
     - state: not_applicable
-      verdict: careful
-      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cold-baguette-garni
-  category: ready_meal
-  names:
-    - Baguette garnie
-    - Baguette jambon emmental
-    - Baguette poulet crudités
-    - Baguette fromage
-    - Cold baguette garni
-  local: true
-  answers:
-    - state: not_applicable
-      verdict: careful
-      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      verdict: avoid
+      why: "Le saucisson sec se mange cru : il peut porter le parasite de la toxoplasmose, la salmonelle et la listeria. Évitez-le froid."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: sandwich-brie
   category: ready_meal
   names:
@@ -17329,10 +17153,13 @@
   local: true
   answers:
     - state: not_applicable
-      verdict: careful
-      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      verdict: avoid
+      why: Le fromage à croûte blanche comme le brie est à éviter en France même pasteurisé, et le NHS dit qu'il doit être cuit. Évitez-le froid.
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: sandwich-chevre
   category: ready_meal
   names:
@@ -17345,8 +17172,12 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      why: "Sandwich chèvre miel : les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: sandwich-rillettes
   category: ready_meal
@@ -17358,24 +17189,13 @@
   local: true
   answers:
     - state: not_applicable
-      verdict: careful
-      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: bagel-cold
-  category: ready_meal
-  names:
-    - Bagel jambon fromage
-    - Bagel poulet curry froid
-    - Bagel thon
-    - Bagel cold
-  local: true
-  answers:
-    - state: not_applicable
-      verdict: careful
-      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      verdict: avoid
+      why: "Les rillettes se vendent fraîches et se mangent telles quelles : elles peuvent porter la listeria. Évitez-les."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+  reviewed: 2026-11-14
 - id: sandwich-roast-beef
   category: ready_meal
   names:
@@ -17388,8 +17208,12 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      why: "Sandwich rosbif : les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: sandwich-turkey
   category: ready_meal
@@ -17403,8 +17227,12 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      why: "Sandwich dinde : les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cold-quiche
   category: ready_meal
@@ -17418,8 +17246,12 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      why: "Quiche froide : les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cold-pizza
   category: ready_meal
@@ -17433,23 +17265,12 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cold-tortilla
-  category: ready_meal
-  names:
-    - Wrap froid
-    - Tortilla froide
-    - Wrap à emporter
-    - Wrap poulet fromage
-    - Cold tortilla
-  local: true
-  answers:
-    - state: not_applicable
-      verdict: careful
-      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      why: "Pizza froide : les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: potato-salad-ham
   category: ready_meal
@@ -17461,8 +17282,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      why: "Salade de pommes de terre au jambon : les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: grated-carrots
   category: ready_meal
@@ -17475,8 +17299,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      why: "Carottes râpées du traiteur : les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: celeriac-remoulade
   category: ready_meal
@@ -17493,7 +17320,7 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien.
+      why: "Céleri rémoulade du traiteur : les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien."
       sources:
         - cdc-listeria-deli
         - cdc-food-pregnant-women
@@ -17511,8 +17338,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      why: "Betteraves vinaigrette : les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: rice-salad
   category: ready_meal
@@ -17525,8 +17355,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      why: "Riz niçois : les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: pasta-salad
   category: ready_meal
@@ -17540,8 +17373,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      why: "Salade de pâtes : les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: nicoise
   category: ready_meal
@@ -17554,8 +17390,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      why: "Salade niçoise : les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: caesar-salad
   category: ready_meal
@@ -17568,8 +17407,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      why: "Salade César : les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: greek-salad
   category: ready_meal
@@ -17582,8 +17424,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      why: "Salade de tomates feta : les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: lentil-salad
   category: ready_meal
@@ -17597,22 +17442,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
-  reviewed: 2026-11-13
-- id: mixed-salad
-  category: ready_meal
-  names:
-    - Salade composée
-    - Salade mixte
-    - Salade du traiteur
-    - Mixed salad
-  local: true
-  answers:
-    - state: not_applicable
-      verdict: avoid
-      why: Les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      why: "Salade de lentilles : les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: chicken-salad
   category: ready_meal
@@ -17625,8 +17459,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      why: "Salade de poulet : les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: egg-salad-deli
   category: ready_meal
@@ -17645,7 +17482,7 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien.
+      why: "Salade d'œufs du traiteur : les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien."
       sources:
         - cdc-listeria-deli
         - cdc-food-pregnant-women
@@ -17657,13 +17494,20 @@
     - Assiette de crudités
     - Crudités vinaigrette
     - Plateau de crudités
+    - Bâtonnets de légumes
+    - Légumes à croquer
+    - Légumes crus
+    - Bâtonnets de carottes
+    - Raw vegetable sticks
     - Crudités platter
   local: true
   answers:
     - state: raw
       verdict: careful
-      why: Les légumes ou herbes crus peuvent contenir le parasite de la toxoplasmose venant de la terre s'ils sont mal lavés. Ne les mangez que lavés par vos soins ; au restaurant, choisissez-les cuits.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter ]
+      why: "Assiette de crudités : les légumes ou herbes crus peuvent contenir le parasite de la toxoplasmose venant de la terre s'ils sont mal lavés. Ne les mangez que lavés par vos soins ; au restaurant, choisissez-les cuits."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: raw-herbs
   category: ready_meal
@@ -17676,23 +17520,10 @@
   answers:
     - state: raw
       verdict: careful
-      why: Les légumes ou herbes crus peuvent contenir le parasite de la toxoplasmose venant de la terre s'ils sont mal lavés. Ne les mangez que lavés par vos soins ; au restaurant, choisissez-les cuits.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: raw-vegetable-sticks
-  category: ready_meal
-  names:
-    - Bâtonnets de légumes
-    - Légumes à croquer
-    - Légumes crus
-    - Bâtonnets de carottes
-    - Raw vegetable sticks
-  local: true
-  answers:
-    - state: raw
-      verdict: careful
-      why: Les légumes ou herbes crus peuvent contenir le parasite de la toxoplasmose venant de la terre s'ils sont mal lavés. Ne les mangez que lavés par vos soins ; au restaurant, choisissez-les cuits.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter ]
+      why: "Persil frais : les légumes ou herbes crus peuvent contenir le parasite de la toxoplasmose venant de la terre s'ils sont mal lavés. Ne les mangez que lavés par vos soins ; au restaurant, choisissez-les cuits."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: fresh-salad-bag
   category: ready_meal
@@ -17703,36 +17534,10 @@
   answers:
     - state: raw
       verdict: careful
-      why: Les légumes ou herbes crus peuvent contenir le parasite de la toxoplasmose venant de la terre s'ils sont mal lavés. Ne les mangez que lavés par vos soins ; au restaurant, choisissez-les cuits.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: boeuf-bourguignon-ready
-  category: ready_meal
-  names:
-    - Bourguignon du traiteur
-    - Daube du traiteur
-    - Coq au vin du traiteur
-    - Plat au vin du traiteur
-    - Boeuf bourguignon ready
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Les plats cuisinés ou flambés à l'alcool en contiennent encore, même après une longue cuisson. Choisissez une version sans alcool.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
-  reviewed: 2026-11-13
-- id: beer-dishes
-  category: ready_meal
-  names:
-    - Plats à la bière
-    - Carbonnade du traiteur
-    - Beer dishes
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Les plats cuisinés ou flambés à l'alcool en contiennent encore, même après une longue cuisson. Choisissez une version sans alcool.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Salade en sachet lavée : les légumes ou herbes crus peuvent contenir le parasite de la toxoplasmose venant de la terre s'ils sont mal lavés. Ne les mangez que lavés par vos soins ; au restaurant, choisissez-les cuits."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: wine-based-dessert
   category: ready_meal
@@ -17746,8 +17551,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les plats cuisinés ou flambés à l'alcool en contiennent encore, même après une longue cuisson. Choisissez une version sans alcool.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Poires au vin : les plats cuisinés ou flambés à l'alcool en contiennent encore, même après une longue cuisson. Choisissez une version sans alcool."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: rum-cake
   category: ready_meal
@@ -17765,7 +17573,7 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les plats cuisinés ou flambés à l'alcool en contiennent encore, même après une longue cuisson. Choisissez une version sans alcool.
+      why: "Gâteau au rhum : les plats cuisinés ou flambés à l'alcool en contiennent encore, même après une longue cuisson. Choisissez une version sans alcool."
       sources:
         - mangerbouger-aliments-eviter
         - ameli-zero-alcool
@@ -17783,8 +17591,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les plats cuisinés ou flambés à l'alcool en contiennent encore, même après une longue cuisson. Choisissez une version sans alcool.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Crêpes Suzette flambées : les plats cuisinés ou flambés à l'alcool en contiennent encore, même après une longue cuisson. Choisissez une version sans alcool."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: alcohol-sauces
   category: ready_meal
@@ -17797,6 +17608,9 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les plats cuisinés ou flambés à l'alcool en contiennent encore, même après une longue cuisson. Choisissez une version sans alcool.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Sauce au porto : les plats cuisinés ou flambés à l'alcool en contiennent encore, même après une longue cuisson. Choisissez une version sans alcool."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13

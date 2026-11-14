@@ -337,6 +337,11 @@
     - Shawarma
     - Sandwich grec
     - Brochette
+    - Kebab plate
+    - Assiette kebab
+    - Kebab assiette
+    - Döner assiette
+    - Kebab frites
   local: true
   answers:
     - state: cooked
@@ -2803,6 +2808,9 @@
     - Croque
     - Toast jambon fromage
     - Croque jambon fromage
+    - Croque madame
+    - Croque monsieur maison
+    - Croque-monsieur gratiné
   local: true
   answers:
     - state: cooked
@@ -2830,6 +2838,11 @@
     - Flammekueche
     - Tarte flambée
     - Savoury tart
+    - Frozen quiche
+    - Quiche surgelée
+    - Quiche du commerce
+    - Quiche lorraine du commerce
+    - Quiche du traiteur
   local: true
   answers:
     - state: reheated
@@ -2861,6 +2874,11 @@
     - Pizza 4 fromages gratinée
     - Pizza au chèvre
     - Pizza mozzarella
+    - Pizza slice
+    - Part de pizza
+    - Pizza à la part
+    - Pizza au feu de bois
+    - Pizza napolitaine
   local: true
   answers:
     - state: cooked
@@ -2890,6 +2908,19 @@
     - Wrap
     - Panini
     - Sandwich poulet crudités
+    - Triangle sandwich
+    - Sandwich triangle jambon
+    - Sandwich de mie
+    - Sandwich de mie jambon
+    - Cold baguette garni
+    - Baguette garnie
+    - Baguette jambon emmental
+    - Baguette poulet crudités
+    - Baguette fromage
+    - Bagel cold
+    - Bagel jambon fromage
+    - Bagel poulet curry froid
+    - Bagel thon
   local: true
   answers:
     - state: not_applicable
@@ -2915,11 +2946,76 @@
     - Plat surgelé
     - Raviolis
     - Frozen meal
+    - Moussaka ready
+    - Moussaka du traiteur
+    - Moussaka surgelée
+    - Moussaka maison
+    - Aubergines farcies
+    - Couscous ready
+    - Couscous du traiteur
+    - Couscous en boîte
+    - Couscous surgelé
+    - Couscous royal du traiteur
+    - Paella ready
+    - Paella du traiteur
+    - Paella surgelée
+    - Paella en barquette
+    - Paëlla du commerce
+    - Risotto ready
+    - Risotto du commerce
+    - Risotto en sachet
+    - Risotto surgelé
+    - Risotto du traiteur
+    - Chili ready
+    - Chili du commerce
+    - Chili en barquette
+    - Chili con carne surgelé
+    - Chili du traiteur
+    - Quenelle ready
+    - Quenelles en sauce
+    - Quenelles nature
+    - Quenelles du commerce
+    - Quenelles surgelées
+    - Blanquette ready
+    - Blanquette de veau du commerce
+    - Blanquette de volaille
+    - Blanquette en boîte
+    - Blanquette surgelée
+    - Poulet basquaise ready
+    - Poulet basquaise du commerce
+    - Poulet basquaise surgelé
+    - Poulet à la crème
+    - Poulet chasseur du commerce
+    - Pot-au-feu ready
+    - Pot-au-feu du commerce
+    - Pot-au-feu en bocal
+    - Pot-au-feu en barquette
+    - Potée en bocal
+    - Tartiflette ready
+    - Tartiflette du commerce
+    - Tartiflette en barquette
+    - Tartiflette surgelée
+    - Tartiflette du traiteur
+    - Gratin dauphinois ready
+    - Gratin dauphinois du commerce
+    - Gratin de pâtes
+    - Gratin de légumes
+    - Gratin de pommes de terre surgelé
+    - Microwave meal
+    - Plat micro-ondes
+    - Plat à réchauffer
+    - Plat micro-onde
+    - Barquette à réchauffer
+    - Frozen gratin
+    - Gratin surgelé
+    - Gratin de poisson surgelé
+    - Gratin de brocolis
+    - Gratin du Picard
   local: true
   answers:
     - state: reheated
       verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
+      why: "Ready meal: heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days."
       sources:
         - nhs-healthy-diet
         - ameli-aliments-eviter
@@ -2947,6 +3043,10 @@
     - Salade traiteur
     - Potato salad
     - Salad bar
+    - Mixed salad
+    - Salade composée
+    - Salade mixte
+    - Salade du traiteur
   local: true
   answers:
     - state: not_applicable
@@ -7057,6 +7157,11 @@
     - Sauce bordelaise
     - Entrecôte sauce bordelaise
     - Sauce marchand de vin
+    - Boeuf bourguignon ready
+    - Bourguignon du traiteur
+    - Daube du traiteur
+    - Coq au vin du traiteur
+    - Plat au vin du traiteur
   local: true
   answers:
     - state: cooked
@@ -7090,6 +7195,9 @@
     - Beer beef stew
     - Carbonnade flamande
     - Carbonnade
+    - Beer dishes
+    - Plats à la bière
+    - Carbonnade du traiteur
   local: true
   answers:
     - state: cooked
@@ -12043,7 +12151,7 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
+      why: "Prawn sandwich: cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg."
       sources:
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
@@ -16228,56 +16336,18 @@
   answers:
     - state: reheated
       verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
+      why: "Lasagne: heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days."
       sources:
         - nhs-healthy-diet
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
+      why: "Lasagne: eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese."
       sources:
         - ameli-aliments-eviter
         - cdc-listeria-deli
         - nhs-foods-to-avoid
-  reviewed: 2026-11-13
-- id: moussaka-ready
-  category: ready_meal
-  names:
-    - Moussaka ready
-    - Moussaka du traiteur
-    - Moussaka surgelée
-    - Moussaka maison
-    - Aubergines farcies
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: gratin-dauphinois-ready
-  category: ready_meal
-  names:
-    - Gratin dauphinois ready
-    - Gratin dauphinois du commerce
-    - Gratin de pâtes
-    - Gratin de légumes
-    - Gratin de pommes de terre surgelé
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
   reviewed: 2026-11-13
 - id: pasta-bolognese
   category: ready_meal
@@ -16291,12 +16361,18 @@
   answers:
     - state: reheated
       verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Pasta bolognese: heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days."
+      sources:
+        - nhs-healthy-diet
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
+      why: "Pasta bolognese: eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: ravioli
   category: ready_meal
@@ -16305,20 +16381,6 @@
     - Raviolis du commerce
     - Raviolis en boîte
     - Raviolis au bœuf
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fresh-pasta-filled
-  category: ready_meal
-  names:
     - Fresh pasta filled
     - Raviolis frais
     - Tortellini
@@ -16328,12 +16390,18 @@
   answers:
     - state: reheated
       verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Ravioli: heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days."
+      sources:
+        - nhs-healthy-diet
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
+      why: "Ravioli: eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: gnocchi
   category: ready_meal
@@ -16347,12 +16415,18 @@
   answers:
     - state: reheated
       verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Gnocchi: heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days."
+      sources:
+        - nhs-healthy-diet
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
+      why: "Gnocchi: eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: cassoulet-tin
   category: ready_meal
@@ -16366,183 +16440,18 @@
   answers:
     - state: reheated
       verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Cassoulet tin: heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days."
+      sources:
+        - nhs-healthy-diet
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: couscous-ready
-  category: ready_meal
-  names:
-    - Couscous ready
-    - Couscous du traiteur
-    - Couscous en boîte
-    - Couscous surgelé
-    - Couscous royal du traiteur
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: paella-ready
-  category: ready_meal
-  names:
-    - Paella ready
-    - Paella du traiteur
-    - Paella surgelée
-    - Paella en barquette
-    - Paëlla du commerce
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: risotto-ready
-  category: ready_meal
-  names:
-    - Risotto ready
-    - Risotto du commerce
-    - Risotto en sachet
-    - Risotto surgelé
-    - Risotto du traiteur
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: chili-ready
-  category: ready_meal
-  names:
-    - Chili ready
-    - Chili du commerce
-    - Chili en barquette
-    - Chili con carne surgelé
-    - Chili du traiteur
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: tartiflette-ready
-  category: ready_meal
-  names:
-    - Tartiflette ready
-    - Tartiflette du commerce
-    - Tartiflette en barquette
-    - Tartiflette surgelée
-    - Tartiflette du traiteur
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: quenelle-ready
-  category: ready_meal
-  names:
-    - Quenelle ready
-    - Quenelles en sauce
-    - Quenelles nature
-    - Quenelles du commerce
-    - Quenelles surgelées
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: blanquette-ready
-  category: ready_meal
-  names:
-    - Blanquette ready
-    - Blanquette de veau du commerce
-    - Blanquette de volaille
-    - Blanquette en boîte
-    - Blanquette surgelée
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: poulet-basquaise-ready
-  category: ready_meal
-  names:
-    - Poulet basquaise ready
-    - Poulet basquaise du commerce
-    - Poulet basquaise surgelé
-    - Poulet à la crème
-    - Poulet chasseur du commerce
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: pot-au-feu-ready
-  category: ready_meal
-  names:
-    - Pot-au-feu ready
-    - Pot-au-feu du commerce
-    - Pot-au-feu en bocal
-    - Pot-au-feu en barquette
-    - Potée en bocal
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
+      why: "Cassoulet tin: eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: soup-fresh
   category: ready_meal
@@ -16551,20 +16460,6 @@
     - Soupe en brique
     - Velouté de légumes
     - Soupe du commerce
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fresh-soup-deli
-  category: ready_meal
-  names:
     - Fresh soup deli
     - Soupe du traiteur
     - Soupe fraîche en bouteille
@@ -16574,12 +16469,18 @@
   answers:
     - state: reheated
       verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Soup fresh: heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days."
+      sources:
+        - nhs-healthy-diet
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
+      why: "Soup fresh: eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: soup-tin
   category: ready_meal
@@ -16593,31 +16494,18 @@
   answers:
     - state: reheated
       verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Soup tin: heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days."
+      sources:
+        - nhs-healthy-diet
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: microwave-meal
-  category: ready_meal
-  names:
-    - Microwave meal
-    - Plat micro-ondes
-    - Plat à réchauffer
-    - Plat micro-onde
-    - Barquette à réchauffer
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
+      why: "Soup tin: eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: frozen-pizza
   category: ready_meal
@@ -16626,58 +16514,6 @@
     - Pizza Buitoni
     - Pizza Picard
     - Pizza fraîche du commerce
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: frozen-quiche
-  category: ready_meal
-  names:
-    - Frozen quiche
-    - Quiche surgelée
-    - Quiche du commerce
-    - Quiche lorraine du commerce
-    - Quiche du traiteur
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: frozen-gratin
-  category: ready_meal
-  names:
-    - Frozen gratin
-    - Gratin surgelé
-    - Gratin de poisson surgelé
-    - Gratin de brocolis
-    - Gratin du Picard
-  local: true
-  answers:
-    - state: reheated
-      verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: cooked
-      verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: pizza-dough-filled
-  category: ready_meal
-  names:
     - Pizza dough filled
     - Calzone du commerce
     - Pizza calzone
@@ -16687,12 +16523,18 @@
   answers:
     - state: reheated
       verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Frozen pizza: heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days."
+      sources:
+        - nhs-healthy-diet
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
+      why: "Frozen pizza: eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: frozen-dumplings
   category: ready_meal
@@ -16702,16 +16544,23 @@
     - Raviolis chinois surgelés
     - Dim sum surgelés
     - Nems surgelés
+    - Gratin du Picard
   local: true
   answers:
     - state: reheated
       verdict: ok
-      why: Heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days.
-      sources: [ nhs-healthy-diet, ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Frozen dumplings: heat until steaming all the way through, not just warm. Eat before the use-by date and do not keep leftovers beyond 3 days."
+      sources:
+        - nhs-healthy-diet
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: cooked
       verdict: careful
-      why: Eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese.
-      sources: [ ameli-aliments-eviter, cdc-listeria-deli, nhs-foods-to-avoid ]
+      why: "Frozen dumplings: eaten cold or only warm from the fridge, a ready meal can carry listeria. Choose it reheated, and skip ones with raw ham, smoked fish or soft rind cheese."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-listeria-deli
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: mcdonald-s-burger
   category: ready_meal
@@ -16721,16 +16570,6 @@
     - Big Mac
     - Cheeseburger McDo
     - McChicken
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: burger-king
-  category: ready_meal
-  names:
     - Burger King
     - Whopper
     - Burger fast-food
@@ -16739,8 +16578,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "McDonald's burger: safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: kfc-bucket
   category: ready_meal
@@ -16754,8 +16596,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "KFC bucket: safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: french-tacos
   category: ready_meal
@@ -16769,23 +16614,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: kebab-plate
-  category: ready_meal
-  names:
-    - Kebab plate
-    - Assiette kebab
-    - Kebab assiette
-    - Döner assiette
-    - Kebab frites
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "French tacos: safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: fries-and-sausage
   category: ready_meal
@@ -16798,8 +16631,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Fries and sausage: safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: pad-thai
   category: ready_meal
@@ -16811,10 +16647,12 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: Cooked hot, the dish is fine, but it is often served with raw bean sprouts (sprouted seeds), which French advice says to avoid. Ask for it without.
+      sources:
+        - ameli-aliments-eviter
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-14
 - id: ramen
   category: ready_meal
   names:
@@ -16825,10 +16663,12 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: The broth and noodles are hot, but ramen is often topped with a soft-boiled egg with a runny yolk. Ask for the egg cooked firm, or leave it off.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+  reviewed: 2026-11-14
 - id: pho
   category: ready_meal
   names:
@@ -16840,10 +16680,12 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: The broth is hot, but pho often comes with thin slices of beef cooked only by the broth, which can stay pink, plus raw bean sprouts and herbs. Ask for the beef well cooked and the raw garnish left off.
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: banh-mi
   category: ready_meal
   names:
@@ -16853,11 +16695,14 @@
     - Banh mi poulet
   local: true
   answers:
-    - state: cooked
-      verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
+    - state: not_applicable
+      verdict: avoid
+      why: A banh mi usually holds pâté and cold cuts, which can carry listeria, plus raw vegetables. Ask for a cooked filling, or choose another sandwich.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+  reviewed: 2026-11-14
 - id: samosa
   category: ready_meal
   names:
@@ -16870,8 +16715,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Samosa: safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: spring-rolls
   category: ready_meal
@@ -16884,8 +16732,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Spring rolls: safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: bruschetta
   category: ready_meal
@@ -16896,25 +16747,13 @@
     - Tartine tomate
   local: true
   answers:
-    - state: cooked
-      verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: tapas
-  category: ready_meal
-  names:
-    - Tapas
-    - Tortilla espagnole
-    - Croquetas
-    - Patatas bravas
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
+    - state: not_applicable
+      verdict: careful
+      why: Bruschetta is usually topped with raw tomato and herbs, and sometimes cold ham or cheese. Eat it only if you know the toppings were washed and are safe, or ask for a cooked topping.
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-14
 - id: tortilla
   category: ready_meal
   names:
@@ -16922,13 +16761,20 @@
     - Tortilla de patatas
     - Tortilla espagnole cuite
     - Omelette espagnole
+    - Cold tortilla
+    - Wrap froid
+    - Tortilla froide
+    - Wrap à emporter
+    - Wrap poulet fromage
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: Spanish tortilla is often left a little runny in the middle. Choose one cooked firm all through, and eat it fresh or reheated.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+  reviewed: 2026-11-14
 - id: burrito
   category: ready_meal
   names:
@@ -16940,8 +16786,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Burrito: safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: fajitas
   category: ready_meal
@@ -16954,8 +16803,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Fajitas: safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: crepe-ham-cheese
   category: ready_meal
@@ -16965,16 +16817,6 @@
     - Galette complète
     - Galette jambon œuf fromage
     - Galette saucisse
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: savoury-crepe
-  category: ready_meal
-  names:
     - Savoury crêpe
     - Crêpe salée
     - Crêpe au fromage
@@ -16984,21 +16826,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: croque-madame
-  category: ready_meal
-  names:
-    - Croque madame
-    - Croque monsieur maison
-    - Croque-monsieur gratiné
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Crêpe ham cheese: safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: bagel-hot
   category: ready_meal
@@ -17012,22 +16844,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: pan-bagnat-hot
-  category: ready_meal
-  names:
-    - Pan bagnat hot
-    - Panini poulet fromage
-    - Panini jambon fromage
-    - Panini 3 fromages
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Bagel hot: safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: croissant-filled
   category: ready_meal
@@ -17041,8 +16862,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Croissant filled: safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: sausage-roll-bakery
   category: ready_meal
@@ -17060,26 +16884,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
+      why: "Sausage roll bakery: safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm."
       sources:
         - ameli-toxo-prevention
         - nhs-foods-to-avoid
         - mangerbouger-aliments-eviter
-  reviewed: 2026-11-13
-- id: pizza-slice
-  category: ready_meal
-  names:
-    - Pizza slice
-    - Part de pizza
-    - Pizza à la part
-    - Pizza au feu de bois
-    - Pizza napolitaine
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
   reviewed: 2026-11-13
 - id: pan-fried-noodles
   category: ready_meal
@@ -17093,8 +16902,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Pan-fried noodles: safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: indian-curry
   category: ready_meal
@@ -17108,8 +16920,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Indian curry: safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: thai-curry
   category: ready_meal
@@ -17123,8 +16938,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Thai curry: safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: tajine-restaurant
   category: ready_meal
@@ -17138,8 +16956,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Tajine restaurant: safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: lebanese-mezze-hot
   category: ready_meal
@@ -17153,8 +16974,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Lebanese mezze hot: safe when freshly cooked, cooked right through and served piping hot. Avoid it if it has been left lukewarm."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: ham-butter-baguette
   category: ready_meal
@@ -17166,8 +16990,12 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      why: "Ham butter baguette: cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: club-sandwich
   category: ready_meal
@@ -17180,8 +17008,12 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      why: "Club sandwich: cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: tuna-mayo-sandwich
   category: ready_meal
@@ -17196,11 +17028,15 @@
     - Sandwich thon mayo
     - Pan bagnat
     - Thon crudités sandwich
+    - Pan bagnat hot
+    - Panini poulet fromage
+    - Panini jambon fromage
+    - Panini 3 fromages
   local: true
   answers:
     - state: not_applicable
       verdict: careful
-      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
+      why: "Tuna mayo sandwich: cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg."
       sources:
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
@@ -17218,8 +17054,12 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      why: "Chicken crudités sandwich: cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: american-sandwich
   category: ready_meal
@@ -17233,8 +17073,12 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      why: "American sandwich: cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: egg-sandwich
   category: ready_meal
@@ -17248,8 +17092,12 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      why: "Egg sandwich: cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: smoked-salmon-sandwich
   category: ready_meal
@@ -17262,24 +17110,13 @@
   local: true
   answers:
     - state: not_applicable
-      verdict: careful
-      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: triangle-sandwich
-  category: ready_meal
-  names:
-    - Triangle sandwich
-    - Sandwich triangle jambon
-    - Sandwich de mie
-    - Sandwich de mie jambon
-  local: true
-  answers:
-    - state: not_applicable
-      verdict: careful
-      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      verdict: avoid
+      why: Cold-smoked salmon is eaten without cooking and can carry listeria, and French advice is to avoid it unless it is cooked until steaming hot.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+  reviewed: 2026-11-14
 - id: sandwich-saucisson
   category: ready_meal
   names:
@@ -17290,25 +17127,13 @@
   local: true
   answers:
     - state: not_applicable
-      verdict: careful
-      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cold-baguette-garni
-  category: ready_meal
-  names:
-    - Cold baguette garni
-    - Baguette garnie
-    - Baguette jambon emmental
-    - Baguette poulet crudités
-    - Baguette fromage
-  local: true
-  answers:
-    - state: not_applicable
-      verdict: careful
-      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      verdict: avoid
+      why: "Dry-cured sausage is eaten raw: it can carry the toxoplasmosis parasite, salmonella and listeria. Avoid it cold."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-toxoplasmosis
+        - ameli-toxo-prevention
+  reviewed: 2026-11-14
 - id: sandwich-brie
   category: ready_meal
   names:
@@ -17320,10 +17145,13 @@
   local: true
   answers:
     - state: not_applicable
-      verdict: careful
-      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      verdict: avoid
+      why: Soft white-rind cheese such as brie is avoided in France even when pasteurised, and the NHS says it should be cooked. Skip it cold.
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: sandwich-chevre
   category: ready_meal
   names:
@@ -17336,8 +17164,12 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      why: "Sandwich chèvre: cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: sandwich-rillettes
   category: ready_meal
@@ -17349,24 +17181,13 @@
   local: true
   answers:
     - state: not_applicable
-      verdict: careful
-      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: bagel-cold
-  category: ready_meal
-  names:
-    - Bagel cold
-    - Bagel jambon fromage
-    - Bagel poulet curry froid
-    - Bagel thon
-  local: true
-  answers:
-    - state: not_applicable
-      verdict: careful
-      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      verdict: avoid
+      why: Rillettes are chilled and eaten as they are, and can carry listeria. Avoid them.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+  reviewed: 2026-11-14
 - id: sandwich-roast-beef
   category: ready_meal
   names:
@@ -17379,8 +17200,12 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      why: "Sandwich roast beef: cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: sandwich-turkey
   category: ready_meal
@@ -17394,8 +17219,12 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      why: "Sandwich turkey: cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cold-quiche
   category: ready_meal
@@ -17409,8 +17238,12 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      why: "Cold quiche: cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cold-pizza
   category: ready_meal
@@ -17424,23 +17257,12 @@
   answers:
     - state: not_applicable
       verdict: careful
-      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cold-tortilla
-  category: ready_meal
-  names:
-    - Cold tortilla
-    - Wrap froid
-    - Tortilla froide
-    - Wrap à emporter
-    - Wrap poulet fromage
-  local: true
-  answers:
-    - state: not_applicable
-      verdict: careful
-      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      why: "Cold pizza: cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: potato-salad-ham
   category: ready_meal
@@ -17452,8 +17274,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      why: "Potato salad ham: chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: grated-carrots
   category: ready_meal
@@ -17466,8 +17291,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      why: "Grated carrots: chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: celeriac-remoulade
   category: ready_meal
@@ -17484,7 +17312,7 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well.
+      why: "Celeriac remoulade: chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well."
       sources:
         - cdc-listeria-deli
         - cdc-food-pregnant-women
@@ -17502,8 +17330,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      why: "Beetroot salad: chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: rice-salad
   category: ready_meal
@@ -17516,8 +17347,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      why: "Rice salad: chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: pasta-salad
   category: ready_meal
@@ -17531,8 +17365,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      why: "Pasta salad: chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: nicoise
   category: ready_meal
@@ -17545,8 +17382,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      why: "Niçoise: chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: caesar-salad
   category: ready_meal
@@ -17559,8 +17399,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      why: "Caesar salad: chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: greek-salad
   category: ready_meal
@@ -17573,8 +17416,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      why: "Greek salad: chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: lentil-salad
   category: ready_meal
@@ -17588,22 +17434,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
-  reviewed: 2026-11-13
-- id: mixed-salad
-  category: ready_meal
-  names:
-    - Mixed salad
-    - Salade composée
-    - Salade mixte
-    - Salade du traiteur
-  local: true
-  answers:
-    - state: not_applicable
-      verdict: avoid
-      why: Chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      why: "Lentil salad: chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: chicken-salad
   category: ready_meal
@@ -17616,8 +17451,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      why: "Chicken salad: chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well."
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: egg-salad-deli
   category: ready_meal
@@ -17636,7 +17474,7 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well.
+      why: "Egg salad deli: chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well."
       sources:
         - cdc-listeria-deli
         - cdc-food-pregnant-women
@@ -17649,12 +17487,19 @@
     - Assiette de crudités
     - Crudités vinaigrette
     - Plateau de crudités
+    - Raw vegetable sticks
+    - Bâtonnets de légumes
+    - Légumes à croquer
+    - Légumes crus
+    - Bâtonnets de carottes
   local: true
   answers:
     - state: raw
       verdict: careful
-      why: Raw vegetables or herbs can carry the toxoplasmosis parasite from soil if not washed well. Eat them only if you washed them yourself; when eating out, choose cooked.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter ]
+      why: "Crudités platter: raw vegetables or herbs can carry the toxoplasmosis parasite from soil if not washed well. Eat them only if you washed them yourself; when eating out, choose cooked."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: raw-herbs
   category: ready_meal
@@ -17667,23 +17512,10 @@
   answers:
     - state: raw
       verdict: careful
-      why: Raw vegetables or herbs can carry the toxoplasmosis parasite from soil if not washed well. Eat them only if you washed them yourself; when eating out, choose cooked.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: raw-vegetable-sticks
-  category: ready_meal
-  names:
-    - Raw vegetable sticks
-    - Bâtonnets de légumes
-    - Légumes à croquer
-    - Légumes crus
-    - Bâtonnets de carottes
-  local: true
-  answers:
-    - state: raw
-      verdict: careful
-      why: Raw vegetables or herbs can carry the toxoplasmosis parasite from soil if not washed well. Eat them only if you washed them yourself; when eating out, choose cooked.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter ]
+      why: "Raw herbs: raw vegetables or herbs can carry the toxoplasmosis parasite from soil if not washed well. Eat them only if you washed them yourself; when eating out, choose cooked."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: fresh-salad-bag
   category: ready_meal
@@ -17694,36 +17526,10 @@
   answers:
     - state: raw
       verdict: careful
-      why: Raw vegetables or herbs can carry the toxoplasmosis parasite from soil if not washed well. Eat them only if you washed them yourself; when eating out, choose cooked.
-      sources: [ ameli-toxo-prevention, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: boeuf-bourguignon-ready
-  category: ready_meal
-  names:
-    - Boeuf bourguignon ready
-    - Bourguignon du traiteur
-    - Daube du traiteur
-    - Coq au vin du traiteur
-    - Plat au vin du traiteur
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Dishes cooked or flambéed with alcohol still hold some alcohol, even after long cooking. Choose a version without.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
-  reviewed: 2026-11-13
-- id: beer-dishes
-  category: ready_meal
-  names:
-    - Beer dishes
-    - Plats à la bière
-    - Carbonnade du traiteur
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Dishes cooked or flambéed with alcohol still hold some alcohol, even after long cooking. Choose a version without.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Fresh salad bag: raw vegetables or herbs can carry the toxoplasmosis parasite from soil if not washed well. Eat them only if you washed them yourself; when eating out, choose cooked."
+      sources:
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: wine-based-dessert
   category: ready_meal
@@ -17737,8 +17543,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Dishes cooked or flambéed with alcohol still hold some alcohol, even after long cooking. Choose a version without.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Wine-based dessert: dishes cooked or flambéed with alcohol still hold some alcohol, even after long cooking. Choose a version without."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: rum-cake
   category: ready_meal
@@ -17756,7 +17565,7 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Dishes cooked or flambéed with alcohol still hold some alcohol, even after long cooking. Choose a version without.
+      why: "Rum cake: dishes cooked or flambéed with alcohol still hold some alcohol, even after long cooking. Choose a version without."
       sources:
         - mangerbouger-aliments-eviter
         - ameli-zero-alcool
@@ -17774,8 +17583,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Dishes cooked or flambéed with alcohol still hold some alcohol, even after long cooking. Choose a version without.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Flambé dessert: dishes cooked or flambéed with alcohol still hold some alcohol, even after long cooking. Choose a version without."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: alcohol-sauces
   category: ready_meal
@@ -17788,6 +17600,9 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Dishes cooked or flambéed with alcohol still hold some alcohol, even after long cooking. Choose a version without.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Alcohol sauces: dishes cooked or flambéed with alcohol still hold some alcohol, even after long cooking. Choose a version without."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
