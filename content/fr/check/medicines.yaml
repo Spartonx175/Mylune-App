@@ -5532,3 +5532,189 @@
         - crat-timolol
         - crat-antiglaucomateux
   reviewed: 2026-11-14
+- id: aspirin-low-dose
+  category: blood-thinners
+  names:
+    - "Aspirine à faible dose (sur prescription)"
+    - "Kardégic"
+    - "Aspirine Protect"
+    - "Low-dose aspirin (when prescribed)"
+  active_ingredient: "acetylsalicylic acid, low antiplatelet dose"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique que les faibles doses antiagrégantes peuvent être utilisées pendant toute la grossesse, à la dose efficace la plus basse, avec l'accord d'un professionnel de santé, et qu'il n'est pas justifié de l'arrêter avant la grossesse. Le NHS dit aussi que l'aspirine à faible dose prise contre les caillots peut en général être poursuivie une partie de la grossesse, parfois plus longtemps sur avis médical, et que les doses antalgiques ne sont pas recommandées, quel que soit le stade. Ne l'arrêtez pas et ne la commencez pas sans avis médical. Les deux sources ne donnent pas exactement la même durée : suivre l'avis du médecin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-aspirine
+        - nhs-aspirin
+  reviewed: 2026-11-14
+- id: varenicline
+  category: other
+  names:
+    - "Varénicline"
+    - "Champix"
+    - "Varenicline"
+  active_ingredient: "varenicline"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT n'a pas retrouvé de malformation liée à la varénicline dans les données du premier trimestre, avec peu de données ensuite, et préfère les substituts nicotiniques si une aide médicamenteuse est nécessaire. Le NHS va plus loin : il ne recommande pas la varénicline pendant la grossesse car sa sécurité est mal étudiée, et propose plutôt des substituts nicotiniques. Les deux sources diffèrent dans le ton : demandez conseil à votre médecin ou sage-femme et privilégiez les substituts nicotiniques. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-varenicline
+        - nhs-varenicline-pregnancy
+  reviewed: 2026-11-14
+- id: nicotine-replacement
+  category: other
+  names:
+    - "Substituts nicotiniques (patchs"
+    - "gommes"
+    - "pastilles)"
+    - "Nicotine replacement (patches"
+  active_ingredient: "nicotine"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT et le NHS indiquent tous deux que les substituts nicotiniques peuvent être utilisés pendant la grossesse si l'arrêt sans eux n'a pas réussi, car c'est bien moins nocif que fumer. Le NHS précise de le commencer après avis d'une sage-femme, d'un médecin, d'un pharmacien ou d'un tabacologue, et que les patchs peuvent convenir en cas de nausées de grossesse. Ils sont préférés à la varénicline. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-substituts-nicotiniques
+        - nhs-stop-smoking-pregnancy
+  reviewed: 2026-11-14
+- id: mebendazole
+  category: antiparasitics
+  names:
+    - "Mébendazole"
+    - "Vermox"
+    - "Mebendazole"
+  active_ingredient: "mebendazole"
+  local: false
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La fiche du CRAT sur les oxyures cite le mébendazole comme un choix préféré au premier trimestre et utilisable ensuite, mais précise qu'il n'est actuellement pas commercialisé en France. Le NHS indique qu'il peut être utilisé pendant la grossesse si le bénéfice dépasse le risque, et que des mesures d'hygiène peuvent être proposées d'abord, surtout en début de grossesse. Demandez l'avis d'un médecin ou d'un pharmacien. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-oxyures
+        - nhs-mebendazole
+  reviewed: 2026-11-14
+- id: nystatin
+  category: antifungals
+  names:
+    - "Nystatine"
+    - "Mycostatine"
+    - "Nystatin"
+  active_ingredient: "nystatin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT : très nombreuses grossesses exposées, aucun effet néfaste pour le bébé rapporté, utilisable à tout terme, avec une absorption très faible. La page du NHS sur le muguet buccal conseille de demander l'avis d'un médecin ou d'un pharmacien et indique qu'il peut être recommandé si le bénéfice dépasse le risque. Les deux sources s'accordent : utilisable, avec avis d'un professionnel. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-nystatine
+        - nhs-nystatin
+  reviewed: 2026-11-14
+- id: tranexamic-acid
+  category: other
+  names:
+    - "Acide tranexamique"
+    - "Exacyl"
+    - "Tranexamic acid"
+  active_ingredient: "tranexamic acid"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT : aucune malformation attribuée, mais les données du premier trimestre sont très limitées, donc il n'est envisagé alors que si l'arrêt serait plus nocif ; l'utilisation aux 2e et 3e trimestres est possible. Le NHS indique qu'il n'est en général pas utilisé pendant la grossesse car il pourrait affecter le développement du bébé, sauf si le médecin juge le bénéfice supérieur au risque. Le NHS est plus prudent que le CRAT : demandez l'avis de votre médecin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-tranexamique
+        - nhs-tranexamic-acid
+  reviewed: 2026-11-14
+- id: vitamin-k-antagonists
+  category: blood-thinners
+  names:
+    - "Warfarine"
+    - "Coumadine"
+    - "Acénocoumarol"
+    - "Sintrom"
+    - "Fluindione"
+    - "Préviscan"
+    - "Warfarin"
+  active_ingredient: "vitamin K antagonists"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT classe ces médicaments parmi les tératogènes avérés qui peuvent néanmoins être utilisés quand il n'existe pas d'alternative plus sûre, avec une surveillance ciblée. La page du NHS sur la warfarine (uniquement la warfarine, pas les autres membres de la classe) indique qu'elle est en général évitée pendant la grossesse car elle peut nuire au développement du bébé, même si les médecins la prescrivent parfois après avoir pesé les risques. N'arrêtez ni ne modifiez un anticoagulant sans avis médical ; consultez dès que la grossesse est envisagée ou découverte. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-medicaments-dangereux
+        - nhs-warfarin
+  reviewed: 2026-11-14
+- id: finasteride
+  category: skin
+  names:
+    - "Finastéride"
+    - "Propecia"
+    - "Chibro-Proscar"
+    - "Finasteride"
+  active_ingredient: "finasteride"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Pour la femme enceinte elle-même, le finastéride ne doit pas être pris, ni manipulé s'il est écrasé ou cassé. Pour un homme qui en prend, les sources diffèrent : le CRAT indique que l'exposition paternelle peut être poursuivie sans surveillance particulière car très peu passe dans le sperme, alors que le NHS dit qu'il passe dans le sperme et conseille le préservatif si la partenaire est ou peut être enceinte. Demandez conseil à un médecin ou un pharmacien. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-finasteride-paternelle
+        - nhs-finasteride
+  reviewed: 2026-11-14
+- id: sulfasalazine
+  category: other
+  names:
+    - "Sulfasalazine"
+    - "Salazopyrine"
+    - "Sulfasalazine"
+  active_ingredient: "sulfasalazine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT : de nombreuses données du premier trimestre ne montrent aucune malformation, et le traitement peut en général être poursuivi à tout terme si le prescripteur le juge nécessaire. Le NHS est d'accord : aucune inquiétude quant à un effet sur le bébé, et de l'acide folique est souvent prescrit car le médicament abaisse le taux de folates. Ne l'arrêtez pas et ne le modifiez pas sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-sulfasalazine
+        - nhs-sulfasalazine-pregnancy
+  reviewed: 2026-11-14
+- id: carbimazole-thiamazole
+  category: thyroid
+  names:
+    - "Carbimazole"
+    - "Thiamazole"
+    - "Néo-Mercazole"
+    - "Thyrozol"
+    - "Carbimazole"
+  active_ingredient: "carbimazole / thiamazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT le classe parmi les tératogènes avérés qui peuvent néanmoins être utilisés les deux premiers mois en l'absence d'alternative plus sûre, avec une surveillance ciblée. Le NHS indique que ce n'est en général pas le premier choix car il peut parfois affecter le développement précoce, que les médecins passent souvent à un autre antithyroïdien, et que si vous tombez enceinte sous traitement vous devez le poursuivre et contacter rapidement votre médecin, avec un suivi renforcé. N'arrêtez pas un traitement thyroïdien sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-medicaments-dangereux
+        - nhs-carbimazole-pregnancy
+  reviewed: 2026-11-14
+- id: calcipotriol
+  category: skin
+  names:
+    - "Calcipotriol"
+    - "Daivonex"
+    - "Calcipotriol"
+  active_ingredient: "calcipotriol"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "De nombreuses grossesses exposées au calcipotriol ont été suivies sans malformation spécifique, et le CRAT indique qu'il peut être utilisé à tout terme. Le NHS est plus prudent : il dit qu'il n'est en général pas utilisé pendant la grossesse car les effets sur le développement du bébé ne sont pas connus. Les sources divergent : faites réviser le traitement du psoriasis avec un médecin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-calcipotriol
+        - nhs-calcipotriol
+  reviewed: 2026-11-14

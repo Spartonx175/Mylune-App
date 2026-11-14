@@ -5221,3 +5221,177 @@
         - crat-timolol
         - crat-antiglaucomateux
   reviewed: 2026-11-14
+- id: aspirin-low-dose
+  category: blood-thinners
+  names:
+    - "Low-dose aspirin (when prescribed)"
+    - "Kardégic"
+    - "Aspirine Protect"
+  active_ingredient: "acetylsalicylic acid, low antiplatelet dose"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT says low antiplatelet doses can be used throughout pregnancy at the lowest effective dose once a health professional approves, and that stopping before pregnancy is not justified. The NHS also says low-dose aspirin taken for blood clots can usually be continued for part of pregnancy, sometimes longer on a doctor's advice, and that pain-relief doses are not recommended at any stage. Do not stop or start it without medical advice. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-aspirine
+        - nhs-aspirin
+  reviewed: 2026-11-14
+- id: varenicline
+  category: other
+  names:
+    - "Varenicline"
+  active_ingredient: "varenicline"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT found no malformation linked to varenicline in first-trimester data, with limited later data, and prefers nicotine replacement if drug help is needed. The NHS goes further and does not recommend varenicline in pregnancy because its safety is poorly studied, suggesting nicotine replacement instead. The two sources differ in tone: ask your doctor or midwife and favour nicotine replacement. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-varenicline
+        - nhs-varenicline-pregnancy
+  reviewed: 2026-11-14
+- id: nicotine-replacement
+  category: other
+  names:
+    - "Nicotine replacement (patches"
+    - "gum"
+    - "lozenges)"
+  active_ingredient: "nicotine"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Both CRAT and the NHS say nicotine replacement can be used in pregnancy when quitting without it has failed, as it is much safer than smoking. The NHS adds it should be started after speaking to a midwife, doctor, pharmacist or stop-smoking adviser, and that patches may suit if you have pregnancy sickness. It is preferred to varenicline. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-substituts-nicotiniques
+        - nhs-stop-smoking-pregnancy
+  reviewed: 2026-11-14
+- id: mebendazole
+  category: antiparasitics
+  names:
+    - "Mebendazole"
+    - "Vermox"
+  active_ingredient: "mebendazole"
+  local: false
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The CRAT pinworm page lists mebendazole as a preferred choice in the first trimester and usable later, but notes it is currently not sold in France. The NHS says it can be used in pregnancy when benefits outweigh risks, and that hygiene measures may be suggested first, especially early on. Check with a doctor or pharmacist. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-oxyures
+        - nhs-mebendazole
+  reviewed: 2026-11-14
+- id: nystatin
+  category: antifungals
+  names:
+    - "Nystatin"
+    - "Mycostatine"
+  active_ingredient: "nystatin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: very many pregnancies exposed, no harm to the baby linked to it, usable at any stage, with very little absorption. The NHS oral-thrush page says to speak to a doctor or pharmacist first and that it may be recommended when benefits outweigh risks. The two sources agree it is usable but with professional advice. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-nystatine
+        - nhs-nystatin
+  reviewed: 2026-11-14
+- id: tranexamic-acid
+  category: other
+  names:
+    - "Tranexamic acid"
+    - "Exacyl"
+  active_ingredient: "tranexamic acid"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: no malformation attributed, but first-trimester data are very limited, so it is only considered then if stopping would harm you more; use in the 2nd and 3rd trimesters is possible. The NHS says it is not usually used in pregnancy because it may affect the baby's development, unless a doctor judges benefit outweighs risk. The NHS is more cautious than CRAT: ask your doctor first. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-tranexamique
+        - nhs-tranexamic-acid
+  reviewed: 2026-11-14
+- id: vitamin-k-antagonists
+  category: blood-thinners
+  names:
+    - "Warfarin"
+    - "Coumadine"
+    - "Acenocoumarol"
+    - "Sintrom"
+    - "Fluindione"
+    - "Previscan"
+  active_ingredient: "vitamin K antagonists"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT classes these as proven teratogens that may still be used when no safer alternative exists, with targeted monitoring. The NHS warfarin page (warfarin only, not the other members) says it is generally avoided in pregnancy because it can harm the baby's development, though doctors occasionally prescribe it after weighing risks. Do not stop or change an anticoagulant without medical advice; see your doctor as soon as pregnancy is planned or discovered. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-medicaments-dangereux
+        - nhs-warfarin
+  reviewed: 2026-11-14
+- id: finasteride
+  category: skin
+  names:
+    - "Finasteride"
+    - "Propecia"
+    - "Proscar"
+  active_ingredient: "finasteride"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "For the pregnant woman herself, finasteride should not be taken or handled crushed or broken. For a man taking it, the sources differ: CRAT says paternal use can be continued with no special monitoring because very little reaches semen, while the NHS says it passes into semen and advises condoms if the partner is or could be pregnant. Ask a doctor or pharmacist. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-finasteride-paternelle
+        - nhs-finasteride
+  reviewed: 2026-11-14
+- id: sulfasalazine
+  category: other
+  names:
+    - "Sulfasalazine"
+    - "Salazopyrin"
+  active_ingredient: "sulfasalazine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: large amounts of first-trimester data show no malformation, and it can generally be continued at any stage if the prescriber judges it needed. The NHS agrees there is no concern it harms the baby, and says folic acid is often prescribed because the medicine lowers folate. Do not stop or change it without medical advice. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-sulfasalazine
+        - nhs-sulfasalazine-pregnancy
+  reviewed: 2026-11-14
+- id: carbimazole-thiamazole
+  category: thyroid
+  names:
+    - "Carbimazole"
+    - "Thiamazole"
+    - "Neo-Mercazole"
+    - "Thyrozol"
+  active_ingredient: "carbimazole / thiamazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT classes it as a proven teratogen that may still be used in the first two months when no safer alternative exists, with targeted monitoring. The NHS says it is not usually the first choice because it may occasionally affect early development, that doctors often switch to another thyroid medicine, and that if you become pregnant on it you should keep taking it and contact your doctor promptly, with extra follow-up. Do not stop thyroid treatment without medical advice. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-medicaments-dangereux
+        - nhs-carbimazole-pregnancy
+  reviewed: 2026-11-14
+- id: calcipotriol
+  category: skin
+  names:
+    - "Calcipotriol"
+    - "Daivonex"
+  active_ingredient: "calcipotriol"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Many pregnancies exposed to calcipotriol have been followed with no specific malformation found, and CRAT says it can be used at any stage. The NHS is more cautious: it says it is not usually used in pregnancy because effects on the baby's development are not known. The sources disagree, so review the psoriasis treatment with a doctor. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-calcipotriol
+        - nhs-calcipotriol
+  reviewed: 2026-11-14
