@@ -7611,3 +7611,30 @@ sources:
 #   url: https://www.ameli.fr/...
 #   title: Page title as read
 #   accessed: 2026-11-11
+
+  # --- Checker exercise + drinks expansion, pages read 2026-11-14 ---
+  - id: has-aps-grossesse
+    name: HAS
+    url: https://www.has-sante.fr/upload/docs/application/pdf/2019-07/app_329_ref_aps_grossesse_vf.pdf
+    title: "Prescription d'activité physique et sportive, grossesse et post-partum (HAS, juillet 2019)"
+    accessed: 2026-11-14
+  - id: has-femmes-enceintes-2005
+    name: HAS
+    url: https://has-sante.fr/upload/docs/application/pdf/femmes_enceintes_recos.pdf
+    title: "Comment mieux informer les femmes enceintes ? (HAS, avril 2005, ancien: aérobic jugé déconseillé, remplacé par les recommandations 2019)"
+    accessed: 2026-11-14
+  - id: ameli-jambes-lourdes
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/themes/jambes-lourdes/bons-reflexes-quotidiens
+    title: "Jambes lourdes et chevilles qui enflent : que faire au quotidien ?"
+    accessed: 2026-11-14
+  - id: nhs-back-pain
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/related-conditions/common-symptoms/back-pain/
+    title: Back pain in pregnancy - NHS
+    accessed: 2026-11-14
+  - id: ameli-ist
+    name: ameli
+    url: https://www.ameli.fr/assure/sante/themes/mst-ist/maladies-infections-sexuellement-transmissibles
+    title: Maladies et infections sexuellement transmissibles
+    accessed: 2026-11-14

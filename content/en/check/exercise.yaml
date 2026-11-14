@@ -524,3 +524,2099 @@
       sources:
         - nhs-travelling
   reviewed: 2026-11-13
+- id: nordic-walking
+  category: walking
+  names:
+    - "Nordic walking"
+    - "Marche nordique"
+    - "Walking with poles"
+    - "Bâtons de marche"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Nordic walking is walking with poles, and walking is the most recommended activity. Keep to flat, even paths because uneven ground is advised against from about months 4 to 6. Stop and get advice if you feel unwell, dizzy, very breathless, have chest pain, bleeding or regular painful contractions."
+      sources:
+        - ameli-ap-choix
+        - has-aps-grossesse
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: treadmill-walking
+  category: walking
+  names:
+    - "Treadmill walking"
+    - "Tapis de marche"
+    - "Walking machine"
+    - "Marche sur tapis"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "A low-impact activity of the kind the sources recommend (walking, swimming, low-impact aerobics). Keep a pace where you can still talk. Stop and get advice if you feel unwell, dizzy, very breathless, have chest pain, bleeding or regular painful contractions."
+      sources:
+        - ameli-ap-choix
+        - has-aps-grossesse
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: elliptical
+  category: cardio-machine
+  names:
+    - "Elliptical trainer"
+    - "Vélo elliptique"
+    - "Cross trainer"
+    - "Elliptique"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "A low-impact aerobic machine with no risk of falling on the road, so it fits the activities the sources recommend. Keep cool and drink water. Stop and get advice if you feel unwell, dizzy, very breathless, have chest pain, bleeding or regular painful contractions."
+      sources:
+        - ameli-ap-choix
+        - has-aps-grossesse
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: low-impact-aerobics
+  category: aerobics
+  names:
+    - "Low-impact aerobics"
+    - "Aérobic doux"
+    - "Pregnancy aerobics"
+    - "Gym douce"
+    - "Gymnastique prénatale"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Aerobics classes made for pregnant women feature low-impact exercises, and low-impact aerobic activity is recommended. Tell the instructor you are pregnant. Stop and get advice if you feel unwell, dizzy, very breathless, have chest pain, bleeding or regular painful contractions."
+      sources:
+        - ameli-ap-choix
+        - has-aps-grossesse
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: stairs-daily
+  category: walking
+  names:
+    - "Taking the stairs"
+    - "Escaliers"
+    - "Stairs instead of lift"
+    - "Monter les escaliers"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Ameli suggests taking the stairs rather than the lift to help your circulation and heavy legs. Use the handrail and take your time because your balance changes."
+      sources:
+        - ameli-jambes-lourdes
+        - ameli-ap-benefices
+  reviewed: 2026-11-14
+- id: stair-climber-machine
+  category: cardio-machine
+  names:
+    - "Stair climber machine"
+    - "Stairmaster"
+    - "Machine à escaliers"
+    - "Stepper"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The sources read do not name this activity. If you already do it, keep it moderate (you can still talk), avoid falls, heat and holding your breath, and ask your midwife or doctor first."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: rowing-machine
+  category: cardio-machine
+  names:
+    - "Rowing machine"
+    - "Rameur"
+    - "Indoor rowing"
+    - "Concept2"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The sources read do not name the rowing machine. Keep it moderate, do not hold your breath while pulling hard, and ask your midwife or doctor first."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: jump-rope
+  category: cardio
+  names:
+    - "Skipping rope"
+    - "Jump rope"
+    - "Corde à sauter"
+    - "Skipping"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Jumping is high impact and carries a risk of tripping. The sources have no safety data for intense exercise, so ask your midwife or doctor before doing it."
+      sources:
+        - ameli-ap-benefices
+        - has-aps-grossesse
+        - ameli-ap-precautions
+  reviewed: 2026-11-14
+- id: step-aerobics
+  category: aerobics
+  names:
+    - "Step aerobics"
+    - "Step"
+    - "Cours de step"
+    - "Step class"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Your balance changes as the bump grows, and the sources say to avoid activities that can make you lose balance or fall. Ask your midwife or doctor, and keep to a very gentle, stable version."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: bootcamp-circuit
+  category: cardio
+  names:
+    - "Bootcamp"
+    - "Circuit training"
+    - "Cross-training class"
+    - "Circuit training musculaire"
+    - "Cours collectif intense"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Intense or high-level exercise needs a medical check first: the sources have no safety data for very high intensity and say to avoid falls, overheating and holding your breath. Ask your midwife or doctor before doing it."
+      sources:
+        - ameli-ap-benefices
+        - has-aps-grossesse
+        - ameli-ap-precautions
+  reviewed: 2026-11-14
+- id: tabata
+  category: cardio
+  names:
+    - "Tabata"
+    - "Interval training"
+    - "Fractionné"
+    - "Entraînement par intervalles"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Intense or high-level exercise needs a medical check first: the sources have no safety data for very high intensity and say to avoid falls, overheating and holding your breath. Ask your midwife or doctor before doing it."
+      sources:
+        - ameli-ap-benefices
+        - has-aps-grossesse
+        - ameli-ap-precautions
+  reviewed: 2026-11-14
+- id: sprinting
+  category: running
+  names:
+    - "Sprinting"
+    - "Sprint"
+    - "Fast running"
+    - "Course rapide"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Intense or high-level exercise needs a medical check first: the sources have no safety data for very high intensity and say to avoid falls, overheating and holding your breath. Ask your midwife or doctor before doing it."
+      sources:
+        - ameli-ap-benefices
+        - has-aps-grossesse
+        - ameli-ap-precautions
+  reviewed: 2026-11-14
+- id: treadmill-running
+  category: running
+  names:
+    - "Treadmill running"
+    - "Course sur tapis"
+    - "Running machine"
+    - "Jogging sur tapis"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "If you already run, you can often keep going while it feels comfortable, but ask your midwife or doctor first and do not start running now. A treadmill lets you stay cool and slow down at once."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: trail-running
+  category: running
+  names:
+    - "Trail running"
+    - "Trail"
+    - "Course en sentier"
+    - "Running on uneven ground"
+    - "Cross-country running"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Running on uneven ground adds a risk of falling, and ameli advises avoiding rough terrain from about months 4 to 6. Ask your midwife or doctor about running at all."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: burpees-plyometrics
+  category: cardio
+  names:
+    - "Burpees"
+    - "Plyometrics"
+    - "Box jumps"
+    - "Pliométrie"
+    - "Sauts sur box"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Jumping and floor-to-standing moves are intense, high impact and risk a fall. Ask your midwife or doctor before doing them."
+      sources:
+        - ameli-ap-benefices
+        - has-aps-grossesse
+        - ameli-ap-precautions
+  reviewed: 2026-11-14
+- id: e-bike
+  category: cycling
+  names:
+    - "E-bike"
+    - "Electric bike"
+    - "Vélo électrique"
+    - "VAE"
+    - "Vélo à assistance électrique"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Cycling outdoors is advised against from about months 4 to 6 because of balance and the risk of falling onto your belly, and an e-bike is no different. A stationary bike is the safer choice."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: city-cycling
+  category: cycling
+  names:
+    - "City cycling"
+    - "Vélo en ville"
+    - "Bike commute"
+    - "Vélib"
+    - "Cycling to work"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Cycling outdoors is advised against from about months 4 to 6 because of balance and the risk of falling onto your belly. In traffic the risk is higher, so a stationary bike or walking is safer."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: road-cycling
+  category: cycling
+  names:
+    - "Road cycling"
+    - "Vélo de route"
+    - "Racing bike"
+    - "Cyclisme"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Cycling outdoors is advised against from about months 4 to 6 because of balance and the risk of falling onto your belly, and fast riding adds risk. A stationary bike is the safer choice."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: mountain-biking
+  category: cycling
+  names:
+    - "Mountain biking"
+    - "VTT"
+    - "Mountain bike"
+    - "BMX"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised: the NHS names mountain biking as a risky activity, and ameli advises against rough-terrain exercise and outdoor cycling from about months 4 to 6 because of falls."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: dance-general
+  category: dance
+  names:
+    - "Dancing"
+    - "Danse"
+    - "Dance class"
+    - "Cours de danse"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Dancing is not named by the sources, but low-impact aerobic activity is encouraged. Choose a gentle class, avoid jumps, fast spins and falls, keep cool and drink water, and ask your midwife or doctor."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: zumba
+  category: dance
+  names:
+    - "Zumba"
+    - "Dance fitness"
+    - "Cardio dance"
+    - "Danse fitness"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Zumba is not named by the sources. It mixes dance and jumps in a warm room, so choose a pregnancy-adapted class if there is one, keep cool and drink water, and ask your midwife or doctor."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: ballroom-latin-dance
+  category: dance
+  names:
+    - "Ballroom dance"
+    - "Salsa"
+    - "Danse de salon"
+    - "Latin dance"
+    - "Tango"
+    - "Rock"
+    - "Bachata"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Dancing is not named by the sources, but low-impact aerobic activity is encouraged. Choose a gentle class, avoid jumps, fast spins and falls, keep cool and drink water, and ask your midwife or doctor."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: ballet-barre-dance
+  category: dance
+  names:
+    - "Ballet"
+    - "Classical dance"
+    - "Danse classique"
+    - "Contemporary dance"
+    - "Danse contemporaine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Dancing is not named by the sources, but low-impact aerobic activity is encouraged. Choose a gentle class, avoid jumps, fast spins and falls, keep cool and drink water, and ask your midwife or doctor."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: hip-hop-dance
+  category: dance
+  names:
+    - "Hip-hop dance"
+    - "Street dance"
+    - "Danse hip-hop"
+    - "Breakdance"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Hip-hop and street dance often involve jumps, floor work and falls, so they are not named as suitable. Ask your midwife or doctor, and keep to gentle, low-impact moves if you continue."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: belly-dance
+  category: dance
+  names:
+    - "Belly dance"
+    - "Danse orientale"
+    - "Oriental dance"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Dancing is not named by the sources, but low-impact aerobic activity is encouraged. Choose a gentle class, avoid jumps, fast spins and falls, keep cool and drink water, and ask your midwife or doctor."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: pole-dance
+  category: dance
+  names:
+    - "Pole dance"
+    - "Pole fitness"
+    - "Danse sur barre"
+    - "Pole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Pole dance involves climbing, spins and a risk of falling, which the sources say to avoid. Ask your midwife or doctor, and do not do inversions or climbs."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: hatha-yoga
+  category: yoga
+  names:
+    - "Hatha yoga"
+    - "Yoga doux"
+    - "Gentle yoga"
+    - "Yoga hatha"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Gentle yoga carries no particular risk if you avoid positions that can lower your blood pressure, such as lying flat on your back later on. Tell the teacher you are pregnant."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: yin-restorative-yoga
+  category: yoga
+  names:
+    - "Yin yoga"
+    - "Restorative yoga"
+    - "Yoga yin"
+    - "Yoga restauratif"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Slow, supported yoga is gentle stretching and breathing. Use bolsters so you are propped on your side or sitting, not flat on your back, later in pregnancy."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: vinyasa-yoga
+  category: yoga
+  names:
+    - "Vinyasa yoga"
+    - "Flow yoga"
+    - "Yoga vinyasa"
+    - "Power yoga"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The sources say yoga is fine in positions that do not lower blood pressure, but they do not name this faster or more demanding style. Avoid balance risks, holding your breath, heat and lying flat on your back later on, tell the teacher, and ask your midwife or doctor."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: ashtanga-yoga
+  category: yoga
+  names:
+    - "Ashtanga yoga"
+    - "Yoga ashtanga"
+    - "Dynamic yoga"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The sources say yoga is fine in positions that do not lower blood pressure, but they do not name this faster or more demanding style. Avoid balance risks, holding your breath, heat and lying flat on your back later on, tell the teacher, and ask your midwife or doctor."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: aerial-yoga
+  category: yoga
+  names:
+    - "Aerial yoga"
+    - "Anti-gravity yoga"
+    - "Yoga aérien"
+    - "Yoga hamac"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Aerial yoga hangs you in a hammock, with inversions and a risk of falling, which the sources say to avoid. Ask your midwife or doctor."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: acro-yoga
+  category: yoga
+  names:
+    - "Acro yoga"
+    - "Acroyoga"
+    - "Partner acrobatics"
+    - "Acrosport"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised: lifts and balances carried out with a partner risk a fall and a knock to your belly."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: yoga-nidra
+  category: yoga
+  names:
+    - "Yoga nidra"
+    - "Guided relaxation"
+    - "Relaxation guidée"
+    - "Sophrologie"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Relaxation is usually done lying on your back. Later in pregnancy lie on your side or prop yourself up instead, because lying flat on your back for more than a few minutes can make you dizzy."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: tai-chi
+  category: mind-body
+  names:
+    - "Tai chi"
+    - "Taï-chi"
+    - "Qi gong"
+    - "Qigong"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Tai chi is slow and low-impact but the sources read do not name it. Watch your balance as the bump grows, avoid standing still for a long time, and ask your midwife or doctor."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: barre-class
+  category: mind-body
+  names:
+    - "Barre class"
+    - "Barre"
+    - "Cours de barre"
+    - "Barre au sol"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Barre mixes ballet, Pilates and light strength work, but the sources read do not name it. Avoid positions that lower blood pressure, lying on your back from 24 weeks of amenorrhoea and holding your breath, and ask your midwife or doctor."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: reformer-pilates
+  category: mind-body
+  names:
+    - "Reformer Pilates"
+    - "Pilates reformer"
+    - "Pilates machine"
+    - "Pilates sur machine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Pilates carries no risk if you avoid positions that lower blood pressure, but reformer work often has you lying on your back. From 24 weeks of amenorrhoea use side-lying or upright versions, tell the instructor and ask your midwife or doctor."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: foam-rolling
+  category: mobility
+  names:
+    - "Foam rolling"
+    - "Rouleau de massage"
+    - "Self-massage roller"
+    - "Auto-massage"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The sources read do not name foam rolling. Gentle stretching is fine, so keep the pressure light, avoid lying flat on your back later on, and ask your midwife or doctor."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: warm-up-cool-down
+  category: mobility
+  names:
+    - "Warm-up and cool-down"
+    - "Échauffement"
+    - "Warm up"
+    - "Cool down"
+    - "Récupération"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Warm up before exercise and cool down afterwards with gentle stretching, as ameli and the NHS advise."
+      sources:
+        - ameli-ap-precautions
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: bodyweight-squats
+  category: strength
+  names:
+    - "Squats"
+    - "Bodyweight squats"
+    - "Squat"
+    - "Flexions de jambes"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Moderate muscle strengthening is recommended, and squats with your own weight are a simple way to do it. Do not hold your breath, and hold a chair or wall if your balance feels off."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: resistance-bands
+  category: strength
+  names:
+    - "Resistance bands"
+    - "Elastiques de musculation"
+    - "Theraband"
+    - "Bandes élastiques"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Muscle strengthening of moderate intensity is recommended, and light resistance bands are a gentle way to do it. Do not hold your breath while pulling."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: lunges
+  category: strength
+  names:
+    - "Lunges"
+    - "Fentes"
+    - "Split squats"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Your balance changes as the bump grows, and the sources say to avoid activities that can make you lose balance or fall. Ask your midwife or doctor, and keep to a very gentle, stable version."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: deadlift
+  category: strength
+  names:
+    - "Deadlift"
+    - "Soulevé de terre"
+    - "Romanian deadlift"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Heavy loads are the issue: HAS says pregnant athletes should be told about the risks of heavy weights, and those who train should skip heavy weightlifting in the first three months. Do not hold your breath, and ask your midwife or doctor before lifting."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: bench-press
+  category: strength
+  names:
+    - "Bench press"
+    - "Développé couché"
+    - "Chest press"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Lying flat on your back should be avoided from 24 weeks of amenorrhoea, and heavy loads and breath-holding are advised against. Use an incline or seated version with light weights, and ask your midwife or doctor."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: overhead-press
+  category: strength
+  names:
+    - "Overhead press"
+    - "Shoulder press"
+    - "Développé militaire"
+    - "Développé épaules"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Light to moderate strength work is encouraged, but ask your midwife or doctor first if it is new to you. Do not hold your breath while straining, avoid heavy loads, and avoid lying flat on your back from 24 weeks of amenorrhoea."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: push-ups
+  category: strength
+  names:
+    - "Push-ups"
+    - "Press-ups"
+    - "Pompes"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Moderate strengthening is encouraged, but push-ups are not named by the sources. Wall or raised-hands versions are gentler, avoid holding your breath, and ask your midwife or doctor."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: planks
+  category: strength
+  names:
+    - "Plank"
+    - "Planks"
+    - "Gainage"
+    - "Core holds"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Long holds that tighten the belly can mean holding your breath, which is advised against, and planks are not named by the sources. Choose short, easy versions or gentle all-fours work, and ask your midwife or doctor."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: pull-ups
+  category: strength
+  names:
+    - "Pull-ups"
+    - "Chin-ups"
+    - "Tractions"
+    - "Hanging exercises"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Light to moderate strength work is encouraged, but ask your midwife or doctor first if it is new to you. Do not hold your breath while straining, avoid heavy loads, and avoid lying flat on your back from 24 weeks of amenorrhoea."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: kettlebell
+  category: strength
+  names:
+    - "Kettlebell"
+    - "Kettlebells"
+    - "Kettlebell swings"
+    - "Balancements kettlebell"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Kettlebell work often means heavy, swinging loads and breath-holding, which the sources advise against. Ask your midwife or doctor, and keep to light weights."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: suspension-trx
+  category: strength
+  names:
+    - "TRX"
+    - "Suspension training"
+    - "Entraînement en suspension"
+    - "Sangles TRX"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Suspension straps challenge your balance, and the sources advise avoiding activities that can make you lose balance or fall. Ask your midwife or doctor, and keep to very gentle, stable versions."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: leg-press-machine
+  category: strength
+  names:
+    - "Leg press"
+    - "Presse à cuisses"
+    - "Weight machines"
+    - "Machines de musculation"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Light strength work on machines is fine if you already do it or after asking your midwife or doctor. Do not hold your breath, avoid heavy loads, and do not lie flat on your back from 24 weeks of amenorrhoea."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: heavy-weightlifting
+  category: strength
+  names:
+    - "Powerlifting"
+    - "Olympic weightlifting"
+    - "Haltérophilie"
+    - "Heavy lifting at the gym"
+    - "Musculation lourde"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "HAS says to avoid heavy weight training in the first three months for those who train, and to be informed of the risks of heavy loads. Do not hold your breath, and ask your midwife or doctor before continuing."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: pelvic-floor-exercises
+  category: core
+  names:
+    - "Pelvic floor exercises"
+    - "Kegel exercises"
+    - "Périnée"
+    - "Exercices du périnée"
+    - "Kegels"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Pelvic floor exercises are really important in pregnancy and can be fitted into your daily routine. They help with bladder control and the muscles used in birth."
+      sources:
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+        - ameli-ap-benefices
+  reviewed: 2026-11-14
+- id: gentle-core-work
+  category: core
+  names:
+    - "Gentle tummy exercises"
+    - "Abdominal exercises"
+    - "Core work"
+    - "Abdos doux"
+    - "Travail du centre"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Gentle abdominal and pelvic floor exercises are encouraged in pregnancy. Avoid sit-ups and anything done flat on your back for more than a few minutes."
+      sources:
+        - nhs-startforlife-exercise
+        - nhs-back-pain
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: all-fours-pelvic-tilt
+  category: core
+  names:
+    - "Pelvic tilts"
+    - "Cat-cow"
+    - "All-fours exercise"
+    - "Bascule du bassin"
+    - "Dos rond dos creux"
+    - "Quatre pattes"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "The NHS suggests this gentle all-fours exercise to strengthen the stomach muscles and ease back pain in pregnancy. Move only as far as is comfortable and do not lock your elbows."
+      sources:
+        - nhs-back-pain
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: leg-raises
+  category: core
+  names:
+    - "Leg raises"
+    - "Relevés de jambes"
+    - "Lying core exercises"
+    - "Ciseaux"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Leg raises are done lying on your back, which should be avoided for more than a few minutes later in pregnancy, and they strain the belly. Ask your midwife or physio for safe versions."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: breathing-exercises
+  category: breathing
+  names:
+    - "Breathing exercises"
+    - "Respiration"
+    - "Deep breathing"
+    - "Relaxation breathing"
+    - "Sophrologie respiratoire"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Gentle breathing techniques are part of prenatal yoga and help you relax and ease body tension. Sit or lie on your side and breathe slowly and comfortably."
+      sources:
+        - nhs-startforlife-exercise
+        - ameli-ap-benefices
+  reviewed: 2026-11-14
+- id: breath-holding
+  category: breathing
+  names:
+    - "Breath-hold training"
+    - "Breath retention"
+    - "Wim Hof method"
+    - "Apnée"
+    - "Blocage de la respiration"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Both ameli and HAS advise avoiding holding your breath during exercise. Breath-hold training is not named, so ask your midwife or doctor before doing it."
+      sources:
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: fasted-exercise
+  category: general
+  names:
+    - "Exercise on an empty stomach"
+    - "Fasted exercise"
+    - "Sport à jeun"
+    - "Training before breakfast"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The NHS says not to exercise on an empty stomach because it could make you faint, and ameli says to eat enough to make up for the energy you use. Eat something first."
+      sources:
+        - nhs-exercise
+        - ameli-ap-precautions
+  reviewed: 2026-11-14
+- id: breaststroke
+  category: water
+  names:
+    - "Breaststroke"
+    - "Brasse"
+    - "Swimming breaststroke"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Swimming and water classes are recommended: the water supports your weight and eases pressure on muscles and joints. Stop and get advice if you feel unwell, dizzy, very breathless, have chest pain, bleeding or regular painful contractions."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: front-crawl
+  category: water
+  names:
+    - "Front crawl"
+    - "Crawl"
+    - "Freestyle swimming"
+    - "Nage libre"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Swimming and water classes are recommended: the water supports your weight and eases pressure on muscles and joints. Stop and get advice if you feel unwell, dizzy, very breathless, have chest pain, bleeding or regular painful contractions."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: backstroke
+  category: water
+  names:
+    - "Backstroke"
+    - "Dos crawlé"
+    - "Back swimming"
+    - "Nage sur le dos"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Swimming is recommended and the water supports you, but on your back you are lying flat. Later in pregnancy, avoid staying on your back for more than a few minutes, and mix with other strokes."
+      sources:
+        - nhs-exercise
+        - ameli-ap-precautions
+        - ameli-ap-choix
+  reviewed: 2026-11-14
+- id: butterfly-stroke
+  category: water
+  names:
+    - "Butterfly stroke"
+    - "Papillon"
+    - "Swimming butterfly"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Swimming is recommended, but butterfly is a very strenuous stroke and is not named by the sources. Ask your midwife or doctor, and breaststroke or crawl are gentler."
+      sources:
+        - ameli-ap-benefices
+        - has-aps-grossesse
+        - ameli-ap-precautions
+  reviewed: 2026-11-14
+- id: aqua-jogging-aquabike
+  category: water
+  names:
+    - "Aqua jogging"
+    - "Aquabike"
+    - "Aquajogging"
+    - "Aqua-bike"
+    - "Water walking"
+    - "Marche aquatique"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Swimming and water classes are recommended: the water supports your weight and eases pressure on muscles and joints. Stop and get advice if you feel unwell, dizzy, very breathless, have chest pain, bleeding or regular painful contractions."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: diving-board-slides
+  category: water
+  names:
+    - "Diving board"
+    - "Water slides"
+    - "Plongeon"
+    - "Toboggan aquatique"
+    - "Jumping into water"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised: jumping or diving into water and water slides risk falls and knocks to the belly."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: water-polo
+  category: water
+  names:
+    - "Water polo"
+    - "Water-polo"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised in pregnancy: sports with marked physical contact, blows or combat risk a knock to your belly."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: surfing-wakeboard
+  category: water
+  names:
+    - "Surfing"
+    - "Surf"
+    - "Wakeboarding"
+    - "Water skiing"
+    - "Ski nautique"
+    - "Bodyboard"
+    - "Kitesurf"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised: surfing, water skiing and similar sports risk falls and hard impacts with the water or the board."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: jet-ski-speedboat
+  category: water
+  names:
+    - "Jet ski"
+    - "Speedboat"
+    - "Scooter des mers"
+    - "Bouée tractée"
+    - "Banana boat"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised: jet skis and fast towed rides involve hard bumps and a risk of being thrown off, which the sources say to avoid."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: kayak-canoe
+  category: water
+  names:
+    - "Kayaking"
+    - "Canoeing"
+    - "Kayak"
+    - "Canoë"
+    - "Canoe"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Your balance changes as the bump grows, and the sources say to avoid activities that can make you lose balance or fall. Ask your midwife or doctor, and keep to a very gentle, stable version."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: stand-up-paddle
+  category: water
+  names:
+    - "Paddleboarding"
+    - "Stand-up paddle"
+    - "SUP"
+    - "Paddle"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Standing on a board puts balance at risk and the sources say to avoid activities that can make you fall. Ask your midwife or doctor; a calm lake and a seated or kneeling position are less risky."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: white-water-rafting
+  category: water
+  names:
+    - "Rafting"
+    - "White water"
+    - "Eaux vives"
+    - "Canyoning"
+    - "Hydrospeed"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised in pregnancy: the sources say to avoid activities with a high risk of falling, being thrown off balance or taking a knock to the belly."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: sailing
+  category: water
+  names:
+    - "Sailing"
+    - "Voile"
+    - "Dinghy"
+    - "Catamaran"
+    - "Boating"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Boats can move suddenly and the sources say to avoid activities that can make you lose balance or fall. Ferry companies and long boat trips may have rules for later pregnancy, so check before booking."
+      sources:
+        - nhs-travelling
+        - ameli-ap-precautions
+  reviewed: 2026-11-14
+- id: rowing-outdoors
+  category: water
+  names:
+    - "Rowing"
+    - "Sculling"
+    - "Aviron"
+    - "Rowing on water"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Your balance changes as the bump grows, and the sources say to avoid activities that can make you lose balance or fall. Ask your midwife or doctor, and keep to a very gentle, stable version."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: snorkelling
+  category: water
+  names:
+    - "Snorkelling"
+    - "Snorkeling"
+    - "Masque et tuba"
+    - "Palmes masque tuba"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Scuba diving is not safe in pregnancy, but snorkelling on the surface is not named by the sources. Keep it gentle, avoid cold or rough water and holding your breath, and ask your midwife or doctor."
+      sources:
+        - nhs-exercise
+        - ameli-ap-precautions
+  reviewed: 2026-11-14
+- id: freediving
+  category: water
+  names:
+    - "Freediving"
+    - "Apnea diving"
+    - "Plongée en apnée"
+    - "Apnée"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Scuba diving is not safe in pregnancy because of decompression risk, and breath-hold diving is not named by the sources. Ask your midwife or doctor, and avoid it unless they agree."
+      sources:
+        - nhs-exercise
+        - ameli-ap-choix
+  reviewed: 2026-11-14
+- id: snowboarding
+  category: snow
+  names:
+    - "Snowboarding"
+    - "Snowboard"
+    - "Surf des neiges"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised in pregnancy: the sources say to avoid activities with a high risk of falling, being thrown off balance or taking a knock to the belly."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: cross-country-skiing
+  category: snow
+  names:
+    - "Cross-country skiing"
+    - "Ski de fond"
+    - "Nordic skiing"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Cross-country skiing has fewer falls than downhill, but it is not named by the sources and you may also be at altitude. Avoid exercising at 2,500 metres or higher until you are used to the height, and ask your midwife or doctor."
+      sources:
+        - ameli-ap-precautions
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: snowshoeing
+  category: snow
+  names:
+    - "Snowshoeing"
+    - "Raquettes à neige"
+    - "Winter walking"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Walking on uneven snow is not named by the sources, and ameli advises against rough terrain from about months 4 to 6 and the NHS against exercise at altitude until you are used to it. Ask your midwife or doctor."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: ice-skating
+  category: wheels-ice
+  names:
+    - "Ice skating"
+    - "Patinage"
+    - "Patinoire"
+    - "Ice rink"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised in pregnancy: the sources say to avoid activities with a high risk of falling, being thrown off balance or taking a knock to the belly."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: ice-hockey
+  category: wheels-ice
+  names:
+    - "Ice hockey"
+    - "Hockey sur glace"
+    - "Hockey"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised: the NHS lists hockey among sports with a risk of falling or a knock to the belly, and ameli advises against team sports with marked contact."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: roller-skating
+  category: wheels-ice
+  names:
+    - "Roller skating"
+    - "Rollerblading"
+    - "Roller"
+    - "Rollers en ligne"
+    - "Patins à roulettes"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised in pregnancy: the sources say to avoid activities with a high risk of falling, being thrown off balance or taking a knock to the belly."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: skateboard-scooter
+  category: wheels-ice
+  names:
+    - "Skateboarding"
+    - "Kick scooter"
+    - "Trottinette"
+    - "Skate"
+    - "Longboard"
+    - "Electric scooter"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised in pregnancy: the sources say to avoid activities with a high risk of falling, being thrown off balance or taking a knock to the belly."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: indoor-climbing
+  category: climbing
+  names:
+    - "Indoor climbing"
+    - "Rock climbing"
+    - "Escalade"
+    - "Climbing wall"
+    - "Escalade en salle"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised: climbing risks falls, and a harness presses on the belly. This applies to both indoor walls and outdoor rock."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: bouldering
+  category: climbing
+  names:
+    - "Bouldering"
+    - "Bloc"
+    - "Escalade de bloc"
+    - "Climbing without rope"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised in pregnancy: the sources say to avoid activities with a high risk of falling, being thrown off balance or taking a knock to the belly."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: via-ferrata-high-ropes
+  category: climbing
+  names:
+    - "Via ferrata"
+    - "High ropes"
+    - "Accrobranche"
+    - "Parcours aventure"
+    - "Zip line"
+    - "Tyrolienne"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised in pregnancy: the sources say to avoid activities with a high risk of falling, being thrown off balance or taking a knock to the belly."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: skydiving-bungee
+  category: adventure
+  names:
+    - "Skydiving"
+    - "Paragliding"
+    - "Bungee jumping"
+    - "Parachute"
+    - "Parapente"
+    - "Saut à l'élastique"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised: these activities involve a high risk of falls, hard landings and sudden forces."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: gymnastics-acrobatics
+  category: gym-sport
+  names:
+    - "Gymnastics"
+    - "Gym acrobatique"
+    - "Gymnastique sportive"
+    - "Acrobatics"
+    - "Cheerleading"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised: the NHS Start for Life page names gymnastics among activities that could lead to a fall or being thrown off balance, and ameli advises avoiding high-fall-risk activities."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: trampoline
+  category: gym-sport
+  names:
+    - "Trampoline"
+    - "Trampoline park"
+    - "Jumping park"
+    - "Gymnastique au trampoline"
+    - "Rebounder"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised: jumping and landing risk falls and being thrown off balance, which the sources say to avoid. HAS also lists trampolining among ground-impact activities."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: parkour
+  category: adventure
+  names:
+    - "Parkour"
+    - "Free running"
+    - "Freerun"
+    - "Obstacle course"
+    - "Course d'obstacles"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised in pregnancy: the sources say to avoid activities with a high risk of falling, being thrown off balance or taking a knock to the belly."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: football
+  category: team-sport
+  names:
+    - "Football"
+    - "Soccer"
+    - "Foot"
+    - "Futsal"
+    - "Football à 5"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised: the NHS Start for Life page names football among sports where the bump could be hit, and ameli advises against team sports with marked contact."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: basketball
+  category: team-sport
+  names:
+    - "Basketball"
+    - "Basket"
+    - "Basket-ball"
+    - "Streetball"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised: team sports with marked physical contact, bumps and sudden jumps risk a knock to your belly, and ameli also lists basketball among sports with jolts that load the veins of the legs."
+      sources:
+        - ameli-ap-choix
+        - ameli-jambes-lourdes
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: volleyball
+  category: team-sport
+  names:
+    - "Volleyball"
+    - "Volley-ball"
+    - "Volley"
+    - "Beach volleyball"
+    - "Beach-volley"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Volleyball has less contact than other team sports but involves jumps and landings, and the sources say to avoid activities that can make you fall or lose balance. Ask your midwife or doctor; on sand, heat and sun are also a factor."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: handball
+  category: team-sport
+  names:
+    - "Handball"
+    - "Hand"
+    - "Ballon à la main"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised in pregnancy: sports with marked physical contact, blows or combat risk a knock to your belly."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: rugby
+  category: team-sport
+  names:
+    - "Rugby"
+    - "Touch rugby"
+    - "Rugby à toucher"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised: the NHS names rugby among sports to avoid because of the risk of falling or bumping your tummy."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: tennis
+  category: racket
+  names:
+    - "Tennis"
+    - "Lawn tennis"
+    - "Tennis de court"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The sources do not fully agree: ameli and HAS say racket sports can go on with care and good technique, while the NHS Start for Life page lists tennis and squash among sports to avoid because of the risk of a knock. Ask your midwife or doctor."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: squash
+  category: racket
+  names:
+    - "Squash"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The sources do not fully agree: ameli and HAS say racket sports can go on with care and good technique, while the NHS Start for Life page lists tennis and squash among sports to avoid because of the risk of a knock. Ask your midwife or doctor."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: padel
+  category: racket
+  names:
+    - "Padel"
+    - "Pádel"
+    - "Paddle tennis"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Racket sports can be practised sensibly, mainly if you have good technique and take great care over balance and falls. The sources do not name this one, so ask your midwife or doctor."
+      sources:
+        - ameli-ap-choix
+        - has-aps-grossesse
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: badminton
+  category: racket
+  names:
+    - "Badminton"
+    - "Volant"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Racket sports can be practised sensibly, mainly if you have good technique and take great care over balance and falls. The sources do not name this one, so ask your midwife or doctor."
+      sources:
+        - ameli-ap-choix
+        - has-aps-grossesse
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: table-tennis
+  category: racket
+  names:
+    - "Table tennis"
+    - "Ping-pong"
+    - "Tennis de table"
+    - "Ping pong"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Racket sports can be practised sensibly, mainly if you have good technique and take great care over balance and falls. The sources do not name this one, so ask your midwife or doctor."
+      sources:
+        - ameli-ap-choix
+        - has-aps-grossesse
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: golf
+  category: precision
+  names:
+    - "Golf"
+    - "Golf swing"
+    - "Practice golf"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Golf is not named by the sources. Walking the course is good exercise, but keep cool, drink water, avoid long sun exposure and avoid hard twisting swings, and ask your midwife or doctor."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: petanque-bowling
+  category: precision
+  names:
+    - "Pétanque"
+    - "Bowling"
+    - "Boules"
+    - "Ten-pin bowling"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Pétanque and bowling are low-intensity but not named by the sources. Avoid bending and lifting heavy balls awkwardly, take breaks from standing, and ask your midwife or doctor."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: boxing-sparring
+  category: combat
+  names:
+    - "Boxing"
+    - "Sparring"
+    - "Boxe"
+    - "Boxe anglaise"
+    - "Kickboxing"
+    - "Kick-boxing"
+    - "Muay thaï"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised: combat sports and sparring risk blows to the belly, and ameli lists combat sports and martial arts among activities to avoid."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: cardio-boxing
+  category: combat
+  names:
+    - "Cardio boxing"
+    - "Boxing fitness"
+    - "Boxe fitness"
+    - "Punching bag"
+    - "Sac de frappe"
+    - "Shadow boxing"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Bag work and shadow boxing have no blows to the belly, but they are intense and not named by the sources. Avoid partner drills, keep it moderate and cool, and ask your midwife or doctor."
+      sources:
+        - ameli-ap-benefices
+        - has-aps-grossesse
+        - ameli-ap-precautions
+  reviewed: 2026-11-14
+- id: judo-karate
+  category: combat
+  names:
+    - "Judo"
+    - "Karate"
+    - "Karaté"
+    - "Taekwondo"
+    - "Jiu-jitsu"
+    - "Aikido"
+    - "Arts martiaux"
+    - "Martial arts"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised: ameli and the NHS both say martial arts risk a blow or fall onto your belly. Ameli also names judo among sports that can block the circulation in the legs."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - ameli-jambes-lourdes
+  reviewed: 2026-11-14
+- id: mma-krav-maga
+  category: combat
+  names:
+    - "MMA"
+    - "Krav Maga"
+    - "Mixed martial arts"
+    - "Self-defence class"
+    - "Cours d'autodéfense"
+    - "Wrestling"
+    - "Lutte"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised in pregnancy: sports with marked physical contact, blows or combat risk a knock to your belly."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: fencing
+  category: combat
+  names:
+    - "Fencing"
+    - "Escrime"
+    - "Fleuret"
+    - "Épée"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Fencing has lunges and quick footwork, so a fall is a risk, and it is not named by the sources. Ask your midwife or doctor, and keep to slow practice if they agree."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: capoeira
+  category: combat
+  names:
+    - "Capoeira"
+    - "Acrobatic martial art"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Not advised in pregnancy: the sources say to avoid activities with a high risk of falling, being thrown off balance or taking a knock to the belly."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: infrared-sauna
+  category: heat
+  names:
+    - "Infrared sauna"
+    - "Sauna infrarouge"
+    - "Cabine infrarouge"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Hot, humid places are best avoided: ameli and HAS advise avoiding hot and humid environments, and HAS says a very high body temperature in the first three months can harm the baby. The sources do not name this activity. Ask your midwife or doctor before doing it."
+      sources:
+        - ameli-ap-precautions
+        - has-aps-grossesse
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: exercise-in-hot-weather
+  category: heat
+  names:
+    - "Exercise in hot weather"
+    - "Exercising in a heatwave"
+    - "Sport par forte chaleur"
+    - "Canicule"
+    - "Summer exercise"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Avoid strenuous exercise in hot weather because it is easier to overheat. Go out early morning or late afternoon, wear a hat and sunblock, drink plenty of water and stop if you feel unwell."
+      sources:
+        - ameli-ap-precautions
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: cold-plunge
+  category: heat
+  names:
+    - "Cold plunge"
+    - "Ice bath"
+    - "Bain glacé"
+    - "Cold water swimming"
+    - "Bain froid"
+    - "Contrast showers"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The sources read do not name cold plunges. They say to adapt exercise to the cold and to think carefully before activity in hostile conditions. Ask your midwife or doctor, and avoid sudden extreme cold."
+      sources:
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: high-altitude
+  category: altitude
+  names:
+    - "High altitude"
+    - "Altitude"
+    - "Mountain trip"
+    - "Haute montagne"
+    - "Séjour en altitude"
+    - "Trekking in altitude"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Avoid exercising at 2,500 metres or higher until you are acclimatised, because you and your baby are at risk of altitude sickness. Ameli says to avoid activities at altitude that reduce blood flow to the baby, and HAS says moderate exercise up to 1,800 to 2,500 metres after acclimatisation is not shown to cause problems."
+      sources:
+        - ameli-ap-precautions
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: massage-relaxing
+  category: massage
+  names:
+    - "Relaxing massage"
+    - "Prenatal massage"
+    - "Massage relaxant"
+    - "Massage de grossesse"
+    - "Back massage"
+    - "Leg massage"
+    - "Massage des jambes"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "The NHS suggests a massage for back pain in pregnancy, and ameli suggests gently massaging your legs from ankles to knees for heavy legs. Tell the therapist you are pregnant and lie on your side or propped up later on."
+      sources:
+        - nhs-back-pain
+        - ameli-jambes-lourdes
+  reviewed: 2026-11-14
+- id: massage-hot-stone-deep
+  category: massage
+  names:
+    - "Hot stone massage"
+    - "Deep tissue massage"
+    - "Massage aux pierres chaudes"
+    - "Massage profond"
+    - "Thai massage"
+    - "Massage thaïlandais"
+    - "Shiatsu"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The sources read do not name these massages. Heat is the concern: ameli and HAS advise avoiding hot, humid conditions. Choose gentle pressure with no strong heat, tell the therapist you are pregnant and ask your midwife or doctor."
+      sources:
+        - ameli-ap-precautions
+        - has-aps-grossesse
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: massage-aromatherapy
+  category: massage
+  names:
+    - "Aromatherapy massage"
+    - "Essential oil massage"
+    - "Massage aux huiles essentielles"
+    - "Aromathérapie"
+    - "Massage à l'huile"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT says essential oils have hardly been studied in pregnancy and advises abstaining from therapeutic use, and ameli notes some essential oils act like hormones. Choose a plain massage oil, or ask your midwife or doctor."
+      sources:
+        - crat-huiles-essentielles
+        - ameli-aliments-eviter
+  reviewed: 2026-11-14
+- id: sex
+  category: intimacy
+  names:
+    - "Sex"
+    - "Sexual intercourse"
+    - "Rapports sexuels"
+    - "Faire l'amour"
+    - "Intimacy"
+    - "Sexualité"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "HAS says sex has no particular drawback in pregnancy and should not be discouraged, unless your midwife or doctor advises otherwise. Ameli notes some infections can pass to the baby, so protect yourself if there is a risk of infection, and stop and get advice if you have bleeding or pain."
+      sources:
+        - has-femmes-enceintes-2005
+        - ameli-ist
+  reviewed: 2026-11-14
+- id: long-train-coach
+  category: travel
+  names:
+    - "Long train or coach journey"
+    - "Train"
+    - "Voyage en train"
+    - "Autocar"
+    - "Bus journey"
+    - "Long journeys"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Long-distance travel of over 4 hours carries a small risk of blood clots. Move about regularly, drink water, keep your legs stretched out rather than bent, and ask your midwife or doctor about compression stockings."
+      sources:
+        - nhs-travelling
+        - ameli-jambes-lourdes
+  reviewed: 2026-11-14
+- id: long-car-journey
+  category: travel
+  names:
+    - "Long car journey"
+    - "Road trip"
+    - "Long drive"
+    - "Long trajet en voiture"
+    - "Voyage en voiture"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The NHS says it is best to avoid long car journeys; if you cannot, stop regularly to stretch and move around. Wear your seat belt with the cross strap between your breasts and the lap strap under your bump, and do not travel alone on a long trip."
+      sources:
+        - nhs-travelling
+        - has-femmes-enceintes-2005
+  reviewed: 2026-11-14
+- id: gardening
+  category: home
+  names:
+    - "Gardening"
+    - "Jardinage"
+    - "Garden work"
+    - "Potager"
+    - "Weeding"
+    - "Plantations"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Gardening is fine if you wear gloves for anything touching soil and wash your hands afterwards, because soil can carry toxoplasmosis. Avoid heavy lifting and long periods stooping."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-toxoplasmosis
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-14
+- id: cat-litter
+  category: home
+  names:
+    - "Changing cat litter"
+    - "Cat litter tray"
+    - "Litière du chat"
+    - "Bac à litière"
+    - "Cleaning cat litter"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Cat litter can carry toxoplasmosis. Ameli says to ask someone else to clean it if you can, and if you must, wear gloves and wash your hands well. Stroking a cat is not a risk."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-toxoplasmosis
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-14
+- id: ladders-step-stools
+  category: home
+  names:
+    - "Ladders"
+    - "Step stool"
+    - "Escabeau"
+    - "Échelle"
+    - "Climbing on a chair"
+    - "Washing windows"
+    - "Changing light bulbs"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Your balance changes and a fall could hurt your belly, so avoid climbing ladders or standing on chairs and ask someone else to do it. Ameli also advises avoiding home renovation work during pregnancy."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: standing-long
+  category: work
+  names:
+    - "Standing for long periods"
+    - "Prolonged standing"
+    - "Station debout prolongée"
+    - "Standing job"
+    - "Queueing"
+    - "File d'attente"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Ameli and HAS say to avoid prolonged standing, which can cause low blood pressure and faintness. Take regular breaks to walk or sit, and move your feet to keep the blood flowing in your legs."
+      sources:
+        - ameli-ap-precautions
+        - has-aps-grossesse
+        - ameli-jambes-lourdes
+  reviewed: 2026-11-14
+- id: desk-screen-work
+  category: work
+  names:
+    - "Working at a screen"
+    - "Desk work"
+    - "Travail sur écran"
+    - "Office work"
+    - "Sitting"
+    - "Télétravail"
+    - "Computer work"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Sitting for long is fine as long as you break it up: ameli advises a short walk or stand every hour and a longer break every 90 minutes or so. Keep your legs stretched out rather than bent when you sit."
+      sources:
+        - ameli-ap-choix
+        - ameli-jambes-lourdes
+  reviewed: 2026-11-14

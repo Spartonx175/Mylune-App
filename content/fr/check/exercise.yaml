@@ -1,0 +1,2401 @@
+# « Puis-je faire ceci ? » (checker), activités et vie quotidienne. Traduction française de content/en/check/exercise.yaml (mêmes ids, états, verdicts, sources, conseils et drapeaux local).
+# Règles françaises (ameli, HAS) d'abord, puis NHS. avoid/careful : 2 sources minimum, ok : 1. Aucune durée ni nombre de répétitions sauf si une source allowlistée les donne.
+- id: walking
+  category: walking
+  names:
+    - "Marche"
+    - "Marche rapide"
+    - "Balade"
+    - "Promenade"
+    - "Walking"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "La marche est l'une des activités les plus adaptées à la grossesse et un moyen facile de s'y mettre. Arrêtez-vous et demandez conseil en cas de malaise, vertige, essoufflement important, douleur à la poitrine, saignement ou contractions régulières et douloureuses."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - cdc-ap-pregnant
+  reviewed: 2026-11-13
+- id: swimming
+  category: water
+  names:
+    - "Natation"
+    - "Piscine"
+    - "Nage"
+    - "Swimming"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "La natation est recommandée : l'eau soutient votre poids et soulage les muscles et les articulations, ce qui peut aider en fin de grossesse. Arrêtez-vous et demandez conseil en cas de malaise, vertige, essoufflement important, douleur à la poitrine, saignement ou contractions régulières et douloureuses."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-13
+- id: aqua-aerobics
+  category: water
+  names:
+    - "Aquagym"
+    - "Aqua natal"
+    - "Aquafitness"
+    - "Gym aquatique"
+    - "Aqua-aerobics"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "L'aquagym et les cours de préparation dans l'eau sont des activités recommandées. Arrêtez-vous et demandez conseil en cas de malaise, vertige, essoufflement important, douleur à la poitrine, saignement ou contractions régulières et douloureuses."
+      sources:
+        - ameli-ap-choix
+        - cdc-ap-pregnant
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-13
+- id: yoga
+  category: mind-body
+  names:
+    - "Yoga"
+    - "Yoga hatha"
+    - "Yoga"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le yoga ne présente pas de risque particulier si vous évitez les positions qui peuvent faire baisser la tension, comme être à plat sur le dos plus tard, ou rester immobile debout longtemps. Prévenez le professeur que vous êtes enceinte. Arrêtez-vous et demandez conseil en cas de malaise, vertige, essoufflement important, douleur à la poitrine, saignement ou contractions régulières et douloureuses."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - cdc-ap-pregnant
+  reviewed: 2026-11-13
+- id: prenatal-yoga
+  category: mind-body
+  names:
+    - "Yoga prénatal"
+    - "Yoga pour femmes enceintes"
+    - "Prenatal yoga"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Les cours de yoga conçus pour la grossesse sont faits d'étirements doux et de respiration : un bon choix. Le professeur adapte les positions pour éviter celles qui font baisser la tension. Arrêtez-vous et demandez conseil en cas de malaise, vertige, essoufflement important, douleur à la poitrine, saignement ou contractions régulières et douloureuses."
+      sources:
+        - nhs-startforlife-exercise
+        - nhs-exercise
+        - ameli-ap-choix
+  reviewed: 2026-11-13
+- id: pilates
+  category: mind-body
+  names:
+    - "Pilates"
+    - "Pilâtes"
+    - "Pilates"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le Pilates ne présente pas de risque si vous évitez les positions qui font baisser la tension et le blocage de la respiration à l'effort. Prévenez l'instructeur que vous êtes enceinte et, à partir de 24 semaines d'aménorrhée, évitez d'être à plat sur le dos. Arrêtez-vous et demandez conseil en cas de malaise, vertige, essoufflement important, douleur à la poitrine, saignement ou contractions régulières et douloureuses."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+  reviewed: 2026-11-13
+- id: stretching
+  category: mind-body
+  names:
+    - "Étirements"
+    - "Stretching"
+    - "Assouplissements"
+    - "Stretching"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Les étirements doux sont recommandés avec l'endurance et le renforcement léger, en échauffement avant l'effort et en retour au calme après. Arrêtez-vous et demandez conseil en cas de malaise, vertige, essoufflement important, douleur à la poitrine, saignement ou contractions régulières et douloureuses."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+  reviewed: 2026-11-13
+- id: stationary-cycling
+  category: cycling
+  names:
+    - "Vélo d'appartement"
+    - "Vélo stationnaire"
+    - "Home trainer"
+    - "Stationary bike"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le vélo d'appartement est recommandé : pas de risque de chute. Restez au frais, buvez de l'eau et ralentissez si vous ne pouvez plus parler facilement. Arrêtez-vous et demandez conseil en cas de malaise, vertige, essoufflement important, douleur à la poitrine, saignement ou contractions régulières et douloureuses."
+      sources:
+        - ameli-ap-choix
+        - cdc-ap-pregnant
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-13
+- id: outdoor-cycling
+  category: cycling
+  names:
+    - "Vélo en extérieur"
+    - "Vélo de route"
+    - "Balade à vélo"
+    - "Cycling"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le vélo est cité parmi les activités adaptées, mais ameli conseille d'éviter le vélo en extérieur à partir du 4e au 6e mois environ : l'équilibre change et une chute pourrait blesser le ventre. Le NHS cite le VTT parmi les activités à risque. Le vélo d'appartement est plus sûr."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-13
+- id: running
+  category: running
+  names:
+    - "Course à pied"
+    - "Jogging"
+    - "Footing"
+    - "Running"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Si vous courez déjà, vous pouvez généralement continuer tant que c'est confortable, et beaucoup passent à la marche rapide quand le ventre grossit. Commencer la course pendant la grossesse n'est pas recommandé. Demandez l'avis de votre sage-femme ou médecin avant de commencer ou de continuer. Arrêtez-vous et demandez conseil en cas de malaise, vertige, essoufflement important, douleur à la poitrine, saignement ou contractions régulières et douloureuses."
+      sources:
+        - nhs-exercise
+        - ameli-ap-choix
+        - cdc-ap-pregnant
+  reviewed: 2026-11-13
+- id: strength-training
+  category: strength
+  names:
+    - "Musculation"
+    - "Renforcement musculaire"
+    - "Salle de sport"
+    - "Strength training"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le renforcement léger avec machines ou petites charges convient si vous en faisiez déjà ou après avis de votre sage-femme ou médecin. Ne bloquez pas la respiration à l'effort et évitez d'être à plat sur le dos à partir de 24 semaines d'aménorrhée. Arrêtez-vous et demandez conseil en cas de malaise, vertige, essoufflement important, douleur à la poitrine, saignement ou contractions régulières et douloureuses."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - nhs-exercise
+  reviewed: 2026-11-13
+- id: hiit-crossfit
+  category: intense
+  names:
+    - "HIIT et CrossFit"
+    - "Entraînement fractionné intense"
+    - "Cross-training"
+    - "HIIT"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sources lues ne citent ni le HIIT ni le CrossFit. Elles disent que le sport intense ou de haut niveau demande d'abord un avis médical, que l'effort fort concerne surtout celles qui en faisaient déjà, et d'éviter les chutes, le blocage de la respiration et la surchauffe. Demandez l'avis de votre sage-femme ou médecin avant."
+      sources:
+        - ameli-ap-benefices
+        - cdc-ap-pregnant
+        - ameli-ap-precautions
+  reviewed: 2026-11-13
+- id: hot-yoga
+  category: heat
+  names:
+    - "Yoga chaud"
+    - "Bikram yoga"
+    - "Hot yoga"
+    - "Hot yoga"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Les salles chaudes et humides sont à éviter pendant la grossesse : ameli conseille d'éviter les lieux chauds et humides, et le NHS de rester au frais et de s'arrêter si vous avez trop chaud ou êtes mal. Le yoga chaud n'est pas cité par les sources, mais c'est la chaleur qui pose problème."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+  reviewed: 2026-11-13
+- id: spinning
+  category: cycling
+  names:
+    - "Spinning"
+    - "Cours de vélo en salle"
+    - "RPM"
+    - "Spinning"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le vélo d'appartement convient, mais les cours rapides et chauds sont différents : ralentissez, restez au frais, buvez de l'eau et arrêtez-vous si vous êtes mal ou avez trop chaud. Demandez l'avis de votre sage-femme ou médecin si vous n'en faisiez pas avant."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - ameli-ap-precautions
+  reviewed: 2026-11-13
+- id: hiking
+  category: walking
+  names:
+    - "Randonnée"
+    - "Trekking"
+    - "Marche en montagne"
+    - "Hiking"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La marche facile convient, mais ameli conseille d'éviter la randonnée en terrain accidenté à partir du 4e au 6e mois environ (équilibre, risque de chute), et ameli comme le NHS déconseillent l'effort en altitude tant que vous n'êtes pas acclimatée."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-13
+- id: skiing
+  category: fall-risk
+  names:
+    - "Ski"
+    - "Ski alpin"
+    - "Ski de piste"
+    - "Skiing"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Le ski alpin est déconseillé pendant la grossesse à cause du risque de chute et de chocs violents sur le ventre."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-13
+- id: horse-riding
+  category: fall-risk
+  names:
+    - "Équitation"
+    - "Cheval"
+    - "Poney"
+    - "Horse riding"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "L'équitation est déconseillée pendant la grossesse à cause du risque de chute et de déséquilibre."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-13
+- id: contact-sports
+  category: contact
+  names:
+    - "Sports de contact"
+    - "Arts martiaux"
+    - "Rugby et football"
+    - "Sports de combat"
+    - "Contact sports"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Les sports de contact et les arts martiaux sont déconseillés : un coup ou une chute sur le ventre pourrait vous blesser ainsi que le bébé."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-13
+- id: racket-sports
+  category: contact
+  names:
+    - "Sports de raquette"
+    - "Tennis et squash"
+    - "Badminton"
+    - "Padel"
+    - "Tennis"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sources ne sont pas tout à fait d'accord : ameli dit que les sports de raquette sont possibles avec prudence et une bonne technique, alors que le NHS cite le tennis et le squash parmi les sports à éviter à cause du risque de choc sur le ventre. Demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-13
+- id: scuba-diving
+  category: water
+  names:
+    - "Plongée sous-marine"
+    - "Plongée avec bouteille"
+    - "Plongée"
+    - "Scuba diving"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Ne faites pas de plongée avec bouteille pendant la grossesse. Le bébé n'est pas protégé contre l'accident de décompression."
+      sources:
+        - nhs-exercise
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-13
+- id: sit-ups-crunches
+  category: strength
+  names:
+    - "Abdominaux"
+    - "Crunchs"
+    - "Relevés de buste"
+    - "Abdos"
+    - "Sit-ups"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les abdominaux et crunchs sur le dos sont à éviter : rester allongée sur le dos plus de quelques minutes en fin de grossesse peut comprimer un gros vaisseau sanguin, et contracter très fort en bloquant la respiration est aussi déconseillé. Les exercices doux du périnée et du ventre conviennent. Demandez à votre sage-femme ou kiné des versions adaptées."
+      sources:
+        - nhs-startforlife-exercise
+        - ameli-ap-precautions
+        - nhs-exercise
+  reviewed: 2026-11-13
+- id: lying-on-back
+  category: position
+  names:
+    - "À plat sur le dos"
+    - "Dormir sur le dos"
+    - "Position allongée sur le dos"
+    - "Lying flat on your back"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Plus tard dans la grossesse, évitez d'être à plat sur le dos plus de quelques minutes, pendant l'exercice comme au repos : le ventre peut comprimer la grosse veine qui ramène le sang au cœur et donner des vertiges ou un malaise. Les sources donnent des points de départ différents : ameli dit à partir de 24 semaines d'aménorrhée, la page NHS Start for Life dit surtout après 16 semaines. Allongez-vous sur le côté ou calez-vous."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-13
+- id: sauna-hammam
+  category: heat
+  names:
+    - "Sauna"
+    - "Hammam"
+    - "Bain de vapeur"
+    - "Spa"
+    - "Sauna"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sources lues ne citent ni sauna ni hammam, mais elles disent d'éviter les lieux chauds et humides, de rester au frais et de s'arrêter si vous avez trop chaud ou êtes mal. Demandez l'avis de votre sage-femme ou médecin avant d'en faire."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+  reviewed: 2026-11-13
+- id: hot-tub-hot-bath
+  category: heat
+  names:
+    - "Jacuzzi"
+    - "Bain à remous"
+    - "Bain chaud"
+    - "Spa"
+    - "Hot tub"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sources lues ne citent pas les bains à remous, mais elles disent d'éviter les conditions chaudes et humides et de rester au frais. Demandez l'avis de votre sage-femme ou médecin avant d'en prendre un."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+  reviewed: 2026-11-13
+- id: heavy-lifting-renovation
+  category: home
+  names:
+    - "Porter des charges lourdes"
+    - "Bricolage"
+    - "Peinture"
+    - "Travaux"
+    - "Déménager des meubles"
+    - "Heavy lifting"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sources lues ne donnent pas de limite de charge : elles disent d'éviter de bloquer la respiration à l'effort. Ameli dit aussi de ne pas participer aux travaux de rénovation à la maison pendant la grossesse. Demandez à votre sage-femme ou médecin ce qui est possible pour vous."
+      sources:
+        - ameli-environnement
+        - ameli-ap-precautions
+  reviewed: 2026-11-13
+- id: housework-carrying
+  category: home
+  names:
+    - "Ménage"
+    - "Faire les courses"
+    - "Porter un enfant"
+    - "Passer l'aspirateur"
+    - "Activité quotidienne"
+    - "Housework"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Les activités du quotidien comme le ménage et les courses comptent comme du mouvement bon pour la santé. Évitez de rester debout immobile longtemps et faites des pauses."
+      sources:
+        - nhs-exercise
+        - ameli-ap-precautions
+  reviewed: 2026-11-13
+- id: long-flights
+  category: travel
+  names:
+    - "Avion"
+    - "Vol long-courrier"
+    - "Voyage en avion"
+    - "Long flights"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Prendre l'avion n'est pas nocif pour vous ni pour le bébé. Au-delà de 4 heures de trajet il existe un petit risque de caillots sanguins : buvez de l'eau, bougez toutes les 30 minutes environ et envisagez des bas de contention. Les compagnies peuvent limiter les vols en fin de grossesse et demander un courrier de votre médecin ou sage-femme après 28 semaines. Parlez-en à votre sage-femme ou médecin avant de partir."
+      sources:
+        - nhs-travelling
+  reviewed: 2026-11-13
+- id: driving
+  category: travel
+  names:
+    - "Conduire"
+    - "Voiture"
+    - "Ceinture de sécurité"
+    - "Trajets en voiture"
+    - "Driving"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Vous pouvez conduire ou voyager en voiture. Portez la ceinture avec la sangle diagonale entre les seins et la sangle ventrale sous le ventre, pas dessus. Évitez les longs trajets si possible, arrêtez-vous régulièrement pour vous étirer et ne faites pas seule un long trajet."
+      sources:
+        - nhs-travelling
+  reviewed: 2026-11-13
+- id: nordic-walking
+  category: walking
+  names:
+    - "Marche nordique"
+    - "Marche avec bâtons"
+    - "Nordic walking"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "La marche nordique est de la marche avec bâtons, et la marche est l'activité la plus recommandée. Restez sur des chemins plats et réguliers : le terrain accidenté est déconseillé à partir du 4e au 6e mois environ. Arrêtez-vous et demandez conseil en cas de malaise, vertige, essoufflement important, douleur à la poitrine, saignement ou contractions régulières et douloureuses."
+      sources:
+        - ameli-ap-choix
+        - has-aps-grossesse
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: treadmill-walking
+  category: walking
+  names:
+    - "Marche sur tapis roulant"
+    - "Tapis de marche"
+    - "Treadmill walking"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Une activité à faible impact du type de celles recommandées par les sources (marche, natation, aérobie douce). Gardez un rythme où vous pouvez encore parler. Arrêtez-vous et demandez conseil en cas de malaise, vertige, essoufflement important, douleur à la poitrine, saignement ou contractions régulières et douloureuses."
+      sources:
+        - ameli-ap-choix
+        - has-aps-grossesse
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: elliptical
+  category: cardio-machine
+  names:
+    - "Vélo elliptique"
+    - "Elliptique"
+    - "Elliptical trainer"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Une machine aérobie à faible impact, sans risque de chute, qui correspond aux activités recommandées par les sources. Restez au frais et buvez de l'eau. Arrêtez-vous et demandez conseil en cas de malaise, vertige, essoufflement important, douleur à la poitrine, saignement ou contractions régulières et douloureuses."
+      sources:
+        - ameli-ap-choix
+        - has-aps-grossesse
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: low-impact-aerobics
+  category: aerobics
+  names:
+    - "Aérobic doux"
+    - "Gym douce pour femmes enceintes"
+    - "Low-impact aerobics"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Les cours d'aérobic conçus pour les femmes enceintes proposent des exercices à faible impact, et les activités aérobies à faible impact sont recommandées. Prévenez l'animateur que vous êtes enceinte. Arrêtez-vous et demandez conseil en cas de malaise, vertige, essoufflement important, douleur à la poitrine, saignement ou contractions régulières et douloureuses."
+      sources:
+        - ameli-ap-choix
+        - has-aps-grossesse
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: stairs-daily
+  category: walking
+  names:
+    - "Prendre les escaliers"
+    - "Escaliers"
+    - "Taking the stairs"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Ameli conseille de préférer les escaliers à l'ascenseur pour aider la circulation et les jambes lourdes. Tenez la rampe et prenez votre temps : votre équilibre change."
+      sources:
+        - ameli-jambes-lourdes
+        - ameli-ap-benefices
+  reviewed: 2026-11-14
+- id: stair-climber-machine
+  category: cardio-machine
+  names:
+    - "Machine à escaliers"
+    - "Stepper"
+    - "Stair climber machine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sources lues ne citent pas cette activité. Si vous la pratiquez déjà, restez à intensité modérée (vous pouvez encore parler), évitez les chutes, la chaleur et le blocage de la respiration, et demandez d'abord l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: rowing-machine
+  category: cardio-machine
+  names:
+    - "Rameur"
+    - "Rameur d'intérieur"
+    - "Rowing machine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sources lues ne citent pas le rameur. Restez à intensité modérée, ne bloquez pas votre respiration en tirant fort et demandez d'abord l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: jump-rope
+  category: cardio
+  names:
+    - "Corde à sauter"
+    - "Saut à la corde"
+    - "Skipping rope"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sauts sont à fort impact et il y a un risque de trébucher. Les sources n'ont pas de données de sécurité pour le sport intense : demandez l'avis de votre sage-femme ou médecin avant."
+      sources:
+        - ameli-ap-benefices
+        - has-aps-grossesse
+        - ameli-ap-precautions
+  reviewed: 2026-11-14
+- id: step-aerobics
+  category: aerobics
+  names:
+    - "Cours de step"
+    - "Step"
+    - "Step aerobics"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Votre équilibre change quand le ventre grossit, et les sources conseillent d'éviter les activités qui peuvent faire perdre l'équilibre ou tomber. Demandez l'avis de votre sage-femme ou médecin et restez sur une version très douce et stable."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: bootcamp-circuit
+  category: cardio
+  names:
+    - "Bootcamp"
+    - "Circuit training"
+    - "Bootcamp"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le sport intense ou de haut niveau demande d'abord un avis médical : les sources n'ont pas de données de sécurité pour une très forte intensité et conseillent d'éviter les chutes, la surchauffe et le blocage de la respiration. Demandez l'avis de votre sage-femme ou médecin avant."
+      sources:
+        - ameli-ap-benefices
+        - has-aps-grossesse
+        - ameli-ap-precautions
+  reviewed: 2026-11-14
+- id: tabata
+  category: cardio
+  names:
+    - "Tabata"
+    - "Fractionné"
+    - "Tabata"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le sport intense ou de haut niveau demande d'abord un avis médical : les sources n'ont pas de données de sécurité pour une très forte intensité et conseillent d'éviter les chutes, la surchauffe et le blocage de la respiration. Demandez l'avis de votre sage-femme ou médecin avant."
+      sources:
+        - ameli-ap-benefices
+        - has-aps-grossesse
+        - ameli-ap-precautions
+  reviewed: 2026-11-14
+- id: sprinting
+  category: running
+  names:
+    - "Sprint"
+    - "Course rapide"
+    - "Sprinting"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le sport intense ou de haut niveau demande d'abord un avis médical : les sources n'ont pas de données de sécurité pour une très forte intensité et conseillent d'éviter les chutes, la surchauffe et le blocage de la respiration. Demandez l'avis de votre sage-femme ou médecin avant."
+      sources:
+        - ameli-ap-benefices
+        - has-aps-grossesse
+        - ameli-ap-precautions
+  reviewed: 2026-11-14
+- id: treadmill-running
+  category: running
+  names:
+    - "Course sur tapis roulant"
+    - "Jogging sur tapis"
+    - "Treadmill running"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Si vous courez déjà, vous pouvez souvent continuer tant que c'est confortable, mais demandez d'abord l'avis de votre sage-femme ou médecin et ne commencez pas la course maintenant. Un tapis permet de rester au frais et de ralentir tout de suite."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: trail-running
+  category: running
+  names:
+    - "Course en sentier"
+    - "Trail"
+    - "Trail running"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Courir sur terrain irrégulier ajoute un risque de chute, et ameli déconseille le terrain accidenté à partir du 4e au 6e mois environ. Demandez l'avis de votre sage-femme ou médecin sur la course elle-même."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: burpees-plyometrics
+  category: cardio
+  names:
+    - "Burpees"
+    - "Pliométrie"
+    - "Burpees"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sauts et les enchaînements sol-debout sont intenses, à fort impact et exposent à une chute. Demandez l'avis de votre sage-femme ou médecin avant."
+      sources:
+        - ameli-ap-benefices
+        - has-aps-grossesse
+        - ameli-ap-precautions
+  reviewed: 2026-11-14
+- id: e-bike
+  category: cycling
+  names:
+    - "Vélo électrique"
+    - "VAE"
+    - "E-bike"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le vélo non stationnaire est déconseillé à partir du 4e au 6e mois environ à cause de l'équilibre et du risque de chute sur le ventre, et le vélo électrique ne change rien. Le vélo d'appartement est plus sûr."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: city-cycling
+  category: cycling
+  names:
+    - "Vélo en ville"
+    - "Vélo pour aller au travail"
+    - "City cycling"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le vélo non stationnaire est déconseillé à partir du 4e au 6e mois environ à cause de l'équilibre et du risque de chute sur le ventre. Dans la circulation le risque est plus grand : le vélo d'appartement ou la marche sont plus sûrs."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: road-cycling
+  category: cycling
+  names:
+    - "Vélo de route"
+    - "Cyclisme sur route"
+    - "Road cycling"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le vélo non stationnaire est déconseillé à partir du 4e au 6e mois environ à cause de l'équilibre et du risque de chute sur le ventre, et rouler vite ajoute du risque. Le vélo d'appartement est plus sûr."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: mountain-biking
+  category: cycling
+  names:
+    - "VTT"
+    - "Vélo tout terrain"
+    - "Mountain biking"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé : le NHS cite le VTT parmi les activités à risque, et ameli déconseille le terrain accidenté et le vélo non stationnaire à partir du 4e au 6e mois environ à cause des chutes."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: dance-general
+  category: dance
+  names:
+    - "Danse"
+    - "Cours de danse"
+    - "Dancing"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La danse n'est pas citée par les sources, mais les activités aérobies à faible impact sont encouragées. Choisissez un cours doux, évitez les sauts, les tours rapides et les chutes, restez au frais, buvez de l'eau et demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: zumba
+  category: dance
+  names:
+    - "Zumba"
+    - "Danse fitness"
+    - "Zumba"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La Zumba n'est pas citée par les sources. Elle mêle danse et sauts dans une salle chaude : choisissez si possible un cours adapté à la grossesse, restez au frais, buvez de l'eau et demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: ballroom-latin-dance
+  category: dance
+  names:
+    - "Danse de salon"
+    - "Salsa et danses latines"
+    - "Ballroom dance"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La danse n'est pas citée par les sources, mais les activités aérobies à faible impact sont encouragées. Choisissez un cours doux, évitez les sauts, les tours rapides et les chutes, restez au frais, buvez de l'eau et demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: ballet-barre-dance
+  category: dance
+  names:
+    - "Danse classique"
+    - "Danse contemporaine"
+    - "Ballet"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La danse n'est pas citée par les sources, mais les activités aérobies à faible impact sont encouragées. Choisissez un cours doux, évitez les sauts, les tours rapides et les chutes, restez au frais, buvez de l'eau et demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: hip-hop-dance
+  category: dance
+  names:
+    - "Danse hip-hop"
+    - "Street dance"
+    - "Hip-hop dance"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le hip-hop et le street dance comportent souvent des sauts, du travail au sol et des chutes : ils ne sont pas cités comme adaptés. Demandez l'avis de votre sage-femme ou médecin et restez sur des mouvements doux à faible impact si vous continuez."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: belly-dance
+  category: dance
+  names:
+    - "Danse orientale"
+    - "Danse du ventre"
+    - "Belly dance"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La danse n'est pas citée par les sources, mais les activités aérobies à faible impact sont encouragées. Choisissez un cours doux, évitez les sauts, les tours rapides et les chutes, restez au frais, buvez de l'eau et demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: pole-dance
+  category: dance
+  names:
+    - "Pole dance"
+    - "Danse sur barre"
+    - "Pole dance"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le pole dance comporte des montées, des tours et un risque de chute, que les sources conseillent d'éviter. Demandez l'avis de votre sage-femme ou médecin et ne faites ni inversions ni montées."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: hatha-yoga
+  category: yoga
+  names:
+    - "Yoga hatha"
+    - "Yoga doux"
+    - "Hatha yoga"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le yoga doux ne présente pas de risque particulier si vous évitez les positions qui peuvent faire baisser la tension, comme être allongée à plat sur le dos plus tard. Prévenez le professeur que vous êtes enceinte."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: yin-restorative-yoga
+  category: yoga
+  names:
+    - "Yoga yin"
+    - "Yoga restauratif"
+    - "Yin yoga"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le yoga lent et soutenu est fait d'étirements doux et de respiration. Calez-vous avec des coussins, sur le côté ou assise et pas à plat sur le dos, plus tard dans la grossesse."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: vinyasa-yoga
+  category: yoga
+  names:
+    - "Yoga vinyasa"
+    - "Yoga dynamique"
+    - "Vinyasa yoga"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sources disent que le yoga convient avec des positions qui ne font pas baisser la tension, mais elles ne citent pas ce style plus rapide ou plus exigeant. Évitez les risques de déséquilibre, le blocage de la respiration, la chaleur et le dos à plat plus tard, prévenez le professeur et demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: ashtanga-yoga
+  category: yoga
+  names:
+    - "Yoga ashtanga"
+    - "Yoga dynamique intense"
+    - "Ashtanga yoga"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sources disent que le yoga convient avec des positions qui ne font pas baisser la tension, mais elles ne citent pas ce style plus rapide ou plus exigeant. Évitez les risques de déséquilibre, le blocage de la respiration, la chaleur et le dos à plat plus tard, prévenez le professeur et demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: aerial-yoga
+  category: yoga
+  names:
+    - "Yoga aérien"
+    - "Yoga en hamac"
+    - "Aerial yoga"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le yoga aérien vous suspend dans un hamac, avec des inversions et un risque de chute, que les sources conseillent d'éviter. Demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: acro-yoga
+  category: yoga
+  names:
+    - "Acro-yoga"
+    - "Acrosport"
+    - "Acro yoga"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé : les portés et équilibres à deux exposent à une chute et à un choc sur le ventre."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: yoga-nidra
+  category: yoga
+  names:
+    - "Yoga nidra"
+    - "Relaxation guidée"
+    - "Yoga nidra"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La relaxation se fait souvent allongée sur le dos. Plus tard dans la grossesse, allongez-vous sur le côté ou calez-vous : rester à plat sur le dos plus de quelques minutes peut donner des vertiges."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: tai-chi
+  category: mind-body
+  names:
+    - "Taï-chi"
+    - "Qi gong"
+    - "Tai chi"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le taï-chi est lent et à faible impact mais les sources lues ne le citent pas. Surveillez votre équilibre quand le ventre grossit, évitez de rester debout immobile longtemps et demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: barre-class
+  category: mind-body
+  names:
+    - "Cours de barre"
+    - "Barre"
+    - "Barre class"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La barre mêle danse classique, Pilates et renforcement léger mais les sources lues ne la citent pas. Évitez les positions qui font baisser la tension, le dos à plat à partir de 24 semaines d'aménorrhée et le blocage de la respiration, et demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: reformer-pilates
+  category: mind-body
+  names:
+    - "Pilates sur reformer"
+    - "Pilates avec machine"
+    - "Reformer Pilates"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le Pilates ne présente pas de risque si vous évitez les positions qui font baisser la tension, mais le travail sur reformer se fait souvent sur le dos. À partir de 24 semaines d'aménorrhée, choisissez des versions sur le côté ou debout, prévenez l'instructeur et demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: foam-rolling
+  category: mobility
+  names:
+    - "Rouleau de massage"
+    - "Auto-massage au rouleau"
+    - "Foam rolling"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sources lues ne citent pas le rouleau de massage. Les étirements doux conviennent : gardez une pression légère, évitez le dos à plat plus tard et demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: warm-up-cool-down
+  category: mobility
+  names:
+    - "Échauffement et retour au calme"
+    - "Récupération douce"
+    - "Warm-up and cool-down"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Échauffez-vous avant l'exercice et récupérez ensuite avec des étirements doux, comme le conseillent ameli et le NHS."
+      sources:
+        - ameli-ap-precautions
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: bodyweight-squats
+  category: strength
+  names:
+    - "Squats au poids du corps"
+    - "Flexions de jambes"
+    - "Squats"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le renforcement musculaire modéré est recommandé, et les squats au poids du corps sont une façon simple de le faire. Ne bloquez pas la respiration et tenez-vous à une chaise ou au mur si votre équilibre est incertain."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: resistance-bands
+  category: strength
+  names:
+    - "Élastiques de musculation"
+    - "Bandes de résistance"
+    - "Resistance bands"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le renforcement musculaire d'intensité modérée est recommandé, et les élastiques légers en sont une façon douce. Ne bloquez pas la respiration en tirant."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: lunges
+  category: strength
+  names:
+    - "Fentes"
+    - "Fentes marchées"
+    - "Lunges"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Votre équilibre change quand le ventre grossit, et les sources conseillent d'éviter les activités qui peuvent faire perdre l'équilibre ou tomber. Demandez l'avis de votre sage-femme ou médecin et restez sur une version très douce et stable."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: deadlift
+  category: strength
+  names:
+    - "Soulevé de terre"
+    - "Deadlift"
+    - "Deadlift"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Ce sont les charges lourdes qui posent problème : la HAS dit que les sportives enceintes doivent être informées des risques des charges lourdes et qu'il vaut mieux s'abstenir de musculation lourde au 1er trimestre. Ne bloquez pas la respiration et demandez l'avis de votre sage-femme ou médecin avant de soulever."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: bench-press
+  category: strength
+  names:
+    - "Développé couché"
+    - "Bench press"
+    - "Bench press"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Il faut éviter d'être à plat sur le dos à partir de 24 semaines d'aménorrhée, et les charges lourdes et le blocage de la respiration sont déconseillés. Choisissez une version inclinée ou assise avec des charges légères et demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: overhead-press
+  category: strength
+  names:
+    - "Développé militaire"
+    - "Développé épaules"
+    - "Overhead press"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le renforcement musculaire léger à modéré est encouragé, mais demandez d'abord l'avis de votre sage-femme ou médecin s'il est nouveau pour vous. Ne bloquez pas votre respiration à l'effort, évitez les charges lourdes et le dos à plat à partir de 24 semaines d'aménorrhée."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: push-ups
+  category: strength
+  names:
+    - "Pompes"
+    - "Push-ups"
+    - "Push-ups"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le renforcement modéré est encouragé, mais les pompes ne sont pas citées par les sources. Les versions contre un mur ou mains surélevées sont plus douces ; évitez de bloquer la respiration et demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: planks
+  category: strength
+  names:
+    - "Gainage"
+    - "Planche"
+    - "Plank"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les maintiens longs qui contractent le ventre peuvent faire bloquer la respiration, ce qui est déconseillé, et le gainage n'est pas cité par les sources. Choisissez des versions courtes et faciles ou un travail doux à quatre pattes, et demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: pull-ups
+  category: strength
+  names:
+    - "Tractions"
+    - "Pull-ups"
+    - "Pull-ups"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le renforcement musculaire léger à modéré est encouragé, mais demandez d'abord l'avis de votre sage-femme ou médecin s'il est nouveau pour vous. Ne bloquez pas votre respiration à l'effort, évitez les charges lourdes et le dos à plat à partir de 24 semaines d'aménorrhée."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: kettlebell
+  category: strength
+  names:
+    - "Kettlebell"
+    - "Haltères à poignée"
+    - "Kettlebell"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le kettlebell implique souvent des charges lourdes qui balancent et un blocage de la respiration, ce que les sources déconseillent. Demandez l'avis de votre sage-femme ou médecin et restez sur des charges légères."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: suspension-trx
+  category: strength
+  names:
+    - "Entraînement en suspension"
+    - "TRX"
+    - "TRX"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sangles de suspension sollicitent l'équilibre, et les sources conseillent d'éviter les activités qui peuvent faire perdre l'équilibre ou tomber. Demandez l'avis de votre sage-femme ou médecin et restez sur des versions très douces et stables."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: leg-press-machine
+  category: strength
+  names:
+    - "Presse à cuisses"
+    - "Machines de musculation"
+    - "Leg press"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le renforcement léger sur machines convient si vous en faites déjà ou après avis de votre sage-femme ou médecin. Ne bloquez pas la respiration, évitez les charges lourdes et le dos à plat à partir de 24 semaines d'aménorrhée."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: heavy-weightlifting
+  category: strength
+  names:
+    - "Haltérophilie"
+    - "Musculation lourde"
+    - "Powerlifting"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La HAS dit de s'abstenir de musculation lourde pendant le 1er trimestre pour les sportives, et d'être informée des risques des charges lourdes. Ne bloquez pas la respiration et demandez l'avis de votre sage-femme ou médecin avant de continuer."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: pelvic-floor-exercises
+  category: core
+  names:
+    - "Exercices du périnée"
+    - "Renforcement du plancher pelvien"
+    - "Pelvic floor exercises"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Les exercices du périnée sont très importants pendant la grossesse et peuvent s'intégrer à votre quotidien. Ils aident au contrôle de la vessie et aux muscles sollicités à l'accouchement."
+      sources:
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+        - ameli-ap-benefices
+  reviewed: 2026-11-14
+- id: gentle-core-work
+  category: core
+  names:
+    - "Abdominaux doux"
+    - "Renforcement doux du ventre"
+    - "Gentle tummy exercises"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Les exercices doux des abdominaux et du périnée sont encouragés pendant la grossesse. Évitez les relevés de buste et tout exercice à plat sur le dos plus de quelques minutes."
+      sources:
+        - nhs-startforlife-exercise
+        - nhs-back-pain
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: all-fours-pelvic-tilt
+  category: core
+  names:
+    - "Bascule du bassin à quatre pattes"
+    - "Dos rond, dos creux"
+    - "Pelvic tilts"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le NHS propose cet exercice doux à quatre pattes pour renforcer les muscles du ventre et soulager le mal de dos. Bougez seulement dans votre confort et ne verrouillez pas les coudes."
+      sources:
+        - nhs-back-pain
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: leg-raises
+  category: core
+  names:
+    - "Relevés de jambes"
+    - "Ciseaux au sol"
+    - "Leg raises"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les relevés de jambes se font sur le dos, ce qu'il faut éviter plus de quelques minutes plus tard dans la grossesse, et ils sollicitent fortement le ventre. Demandez à votre sage-femme ou kiné des versions adaptées."
+      sources:
+        - ameli-ap-choix
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: breathing-exercises
+  category: breathing
+  names:
+    - "Exercices de respiration"
+    - "Respiration profonde"
+    - "Breathing exercises"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Les techniques de respiration douces font partie du yoga prénatal et aident à se détendre et à relâcher les tensions. Asseyez-vous ou allongez-vous sur le côté et respirez lentement et confortablement."
+      sources:
+        - nhs-startforlife-exercise
+        - ameli-ap-benefices
+  reviewed: 2026-11-14
+- id: breath-holding
+  category: breathing
+  names:
+    - "Exercices d'apnée et rétention"
+    - "Méthode Wim Hof"
+    - "Breath-hold training"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Ameli et la HAS conseillent d'éviter de bloquer la respiration pendant l'effort. L'entraînement à l'apnée n'est pas cité : demandez l'avis de votre sage-femme ou médecin avant."
+      sources:
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: fasted-exercise
+  category: general
+  names:
+    - "Sport à jeun"
+    - "Exercice à jeun"
+    - "Exercise on an empty stomach"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS dit de ne pas faire d'exercice à jeun car cela pourrait vous faire faire un malaise, et ameli conseille de manger assez pour compenser l'énergie dépensée. Mangez quelque chose avant."
+      sources:
+        - nhs-exercise
+        - ameli-ap-precautions
+  reviewed: 2026-11-14
+- id: breaststroke
+  category: water
+  names:
+    - "Brasse"
+    - "Nage en brasse"
+    - "Breaststroke"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "La natation et les cours dans l'eau sont recommandés : l'eau soutient votre poids et soulage les muscles et les articulations. Arrêtez-vous et demandez conseil en cas de malaise, vertige, essoufflement important, douleur à la poitrine, saignement ou contractions régulières et douloureuses."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: front-crawl
+  category: water
+  names:
+    - "Crawl"
+    - "Nage libre"
+    - "Front crawl"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "La natation et les cours dans l'eau sont recommandés : l'eau soutient votre poids et soulage les muscles et les articulations. Arrêtez-vous et demandez conseil en cas de malaise, vertige, essoufflement important, douleur à la poitrine, saignement ou contractions régulières et douloureuses."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: backstroke
+  category: water
+  names:
+    - "Dos crawlé"
+    - "Nage sur le dos"
+    - "Backstroke"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La natation est recommandée et l'eau vous soutient, mais sur le dos vous êtes allongée à plat. Plus tard dans la grossesse, évitez de rester sur le dos plus de quelques minutes et alternez avec d'autres nages."
+      sources:
+        - nhs-exercise
+        - ameli-ap-precautions
+        - ameli-ap-choix
+  reviewed: 2026-11-14
+- id: butterfly-stroke
+  category: water
+  names:
+    - "Papillon"
+    - "Nage papillon"
+    - "Butterfly stroke"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La natation est recommandée, mais le papillon est une nage très intense et n'est pas citée par les sources. Demandez l'avis de votre sage-femme ou médecin ; la brasse ou le crawl sont plus doux."
+      sources:
+        - ameli-ap-benefices
+        - has-aps-grossesse
+        - ameli-ap-precautions
+  reviewed: 2026-11-14
+- id: aqua-jogging-aquabike
+  category: water
+  names:
+    - "Aqua-jogging et aquabike"
+    - "Marche aquatique"
+    - "Aqua jogging"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "La natation et les cours dans l'eau sont recommandés : l'eau soutient votre poids et soulage les muscles et les articulations. Arrêtez-vous et demandez conseil en cas de malaise, vertige, essoufflement important, douleur à la poitrine, saignement ou contractions régulières et douloureuses."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: diving-board-slides
+  category: water
+  names:
+    - "Plongeon et toboggans aquatiques"
+    - "Sauts dans l'eau"
+    - "Diving board"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé : sauter ou plonger dans l'eau et les toboggans aquatiques exposent aux chutes et aux chocs sur le ventre."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: water-polo
+  category: water
+  names:
+    - "Water-polo"
+    - "Water polo"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé pendant la grossesse : les sports avec contacts physiques marqués, coups ou combat exposent le ventre aux chocs."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: surfing-wakeboard
+  category: water
+  names:
+    - "Surf"
+    - "Ski nautique et wakeboard"
+    - "Surfing"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé : le surf, le ski nautique et les sports voisins exposent aux chutes et aux impacts violents avec l'eau ou la planche."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: jet-ski-speedboat
+  category: water
+  names:
+    - "Jet-ski et bateau rapide"
+    - "Bouée tractée"
+    - "Jet ski"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé : le jet-ski et les bouées tractées comportent des chocs violents et un risque d'être éjectée, que les sources conseillent d'éviter."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: kayak-canoe
+  category: water
+  names:
+    - "Kayak et canoë"
+    - "Canoë-kayak"
+    - "Kayaking"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Votre équilibre change quand le ventre grossit, et les sources conseillent d'éviter les activités qui peuvent faire perdre l'équilibre ou tomber. Demandez l'avis de votre sage-femme ou médecin et restez sur une version très douce et stable."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: stand-up-paddle
+  category: water
+  names:
+    - "Stand-up paddle"
+    - "Paddle"
+    - "Paddleboarding"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Rester debout sur une planche met l'équilibre en jeu, et les sources conseillent d'éviter les activités qui peuvent faire tomber. Demandez l'avis de votre sage-femme ou médecin ; un lac calme et une position assise ou à genoux sont moins risqués."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: white-water-rafting
+  category: water
+  names:
+    - "Rafting et eaux vives"
+    - "Canyoning"
+    - "Rafting"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé pendant la grossesse : les sources disent d'éviter les activités à haut risque de chute, de déséquilibre ou de choc sur le ventre."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: sailing
+  category: water
+  names:
+    - "Voile"
+    - "Navigation de plaisance"
+    - "Sailing"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Un bateau peut bouger brusquement et les sources conseillent d'éviter les activités qui peuvent faire perdre l'équilibre ou tomber. Les compagnies de ferry et les longues traversées peuvent avoir des règles en fin de grossesse : vérifiez avant de réserver."
+      sources:
+        - nhs-travelling
+        - ameli-ap-precautions
+  reviewed: 2026-11-14
+- id: rowing-outdoors
+  category: water
+  names:
+    - "Aviron"
+    - "Aviron sur l'eau"
+    - "Rowing"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Votre équilibre change quand le ventre grossit, et les sources conseillent d'éviter les activités qui peuvent faire perdre l'équilibre ou tomber. Demandez l'avis de votre sage-femme ou médecin et restez sur une version très douce et stable."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: snorkelling
+  category: water
+  names:
+    - "Masque et tuba"
+    - "Randonnée palmée"
+    - "Snorkelling"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La plongée avec bouteille n'est pas sûre pendant la grossesse, mais la randonnée palmée en surface n'est pas citée par les sources. Restez tranquille, évitez l'eau froide ou agitée et le blocage de la respiration, et demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - nhs-exercise
+        - ameli-ap-precautions
+  reviewed: 2026-11-14
+- id: freediving
+  category: water
+  names:
+    - "Plongée en apnée"
+    - "Apnée"
+    - "Freediving"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La plongée avec bouteille n'est pas sûre pendant la grossesse à cause du risque d'accident de décompression, et l'apnée n'est pas citée par les sources. Demandez l'avis de votre sage-femme ou médecin et évitez-la sauf accord."
+      sources:
+        - nhs-exercise
+        - ameli-ap-choix
+  reviewed: 2026-11-14
+- id: snowboarding
+  category: snow
+  names:
+    - "Snowboard"
+    - "Surf des neiges"
+    - "Snowboarding"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé pendant la grossesse : les sources disent d'éviter les activités à haut risque de chute, de déséquilibre ou de choc sur le ventre."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: cross-country-skiing
+  category: snow
+  names:
+    - "Ski de fond"
+    - "Ski nordique"
+    - "Cross-country skiing"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le ski de fond expose à moins de chutes que le ski alpin, mais les sources ne le citent pas et vous pouvez aussi être en altitude. Évitez l'effort à 2 500 mètres ou plus tant que vous n'êtes pas acclimatée et demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-precautions
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: snowshoeing
+  category: snow
+  names:
+    - "Raquettes à neige"
+    - "Marche hivernale"
+    - "Snowshoeing"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La marche sur neige irrégulière n'est pas citée par les sources, ameli déconseille le terrain accidenté à partir du 4e au 6e mois environ et le NHS déconseille l'effort en altitude tant que vous n'êtes pas acclimatée. Demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: ice-skating
+  category: wheels-ice
+  names:
+    - "Patinage sur glace"
+    - "Patinoire"
+    - "Ice skating"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé pendant la grossesse : les sources disent d'éviter les activités à haut risque de chute, de déséquilibre ou de choc sur le ventre."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: ice-hockey
+  category: wheels-ice
+  names:
+    - "Hockey sur glace"
+    - "Hockey"
+    - "Ice hockey"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé : le NHS cite le hockey parmi les sports exposant à une chute ou à un choc sur le ventre, et ameli déconseille les sports collectifs avec contacts marqués."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: roller-skating
+  category: wheels-ice
+  names:
+    - "Patins à roulettes"
+    - "Rollers en ligne"
+    - "Roller skating"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé pendant la grossesse : les sources disent d'éviter les activités à haut risque de chute, de déséquilibre ou de choc sur le ventre."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: skateboard-scooter
+  category: wheels-ice
+  names:
+    - "Skateboard et trottinette"
+    - "Trottinette électrique"
+    - "Skateboarding"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé pendant la grossesse : les sources disent d'éviter les activités à haut risque de chute, de déséquilibre ou de choc sur le ventre."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: indoor-climbing
+  category: climbing
+  names:
+    - "Escalade"
+    - "Escalade en salle"
+    - "Indoor climbing"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé : l'escalade expose aux chutes et le harnais appuie sur le ventre. Cela vaut pour les murs en salle comme pour la falaise."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: bouldering
+  category: climbing
+  names:
+    - "Escalade de bloc"
+    - "Bloc"
+    - "Bouldering"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé pendant la grossesse : les sources disent d'éviter les activités à haut risque de chute, de déséquilibre ou de choc sur le ventre."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: via-ferrata-high-ropes
+  category: climbing
+  names:
+    - "Via ferrata et accrobranche"
+    - "Tyrolienne"
+    - "Via ferrata"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé pendant la grossesse : les sources disent d'éviter les activités à haut risque de chute, de déséquilibre ou de choc sur le ventre."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: skydiving-bungee
+  category: adventure
+  names:
+    - "Parachutisme et parapente"
+    - "Saut à l'élastique"
+    - "Skydiving"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé : ces activités comportent un haut risque de chute, de réception brutale et de forces soudaines."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: gymnastics-acrobatics
+  category: gym-sport
+  names:
+    - "Gymnastique sportive"
+    - "Acrobatie"
+    - "Gymnastics"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé : la page NHS Start for Life cite la gymnastique parmi les activités pouvant mener à une chute ou un déséquilibre, et ameli déconseille les activités à haut risque de chute."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: trampoline
+  category: gym-sport
+  names:
+    - "Trampoline"
+    - "Parc de trampolines"
+    - "Trampoline"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé : sauter et se réceptionner expose aux chutes et aux déséquilibres, que les sources conseillent d'éviter. La HAS cite aussi le trampoline parmi les activités à impact au sol."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: parkour
+  category: adventure
+  names:
+    - "Parkour"
+    - "Course d'obstacles"
+    - "Parkour"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé pendant la grossesse : les sources disent d'éviter les activités à haut risque de chute, de déséquilibre ou de choc sur le ventre."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: football
+  category: team-sport
+  names:
+    - "Football"
+    - "Foot"
+    - "Football"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé : la page NHS Start for Life cite le football parmi les sports où le ventre peut être heurté, et ameli déconseille les sports collectifs avec contacts marqués."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: basketball
+  category: team-sport
+  names:
+    - "Basket-ball"
+    - "Basket"
+    - "Basketball"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé : les sports collectifs avec contacts physiques marqués, chocs et sauts brusques exposent le ventre aux coups, et ameli cite aussi le basket parmi les sports à à-coups qui sollicitent les veines des jambes."
+      sources:
+        - ameli-ap-choix
+        - ameli-jambes-lourdes
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: volleyball
+  category: team-sport
+  names:
+    - "Volley-ball"
+    - "Beach-volley"
+    - "Volleyball"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le volley a moins de contacts que d'autres sports collectifs mais comporte des sauts et réceptions, et les sources conseillent d'éviter les activités qui peuvent faire tomber ou perdre l'équilibre. Demandez l'avis de votre sage-femme ou médecin ; sur le sable, la chaleur et le soleil comptent aussi."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: handball
+  category: team-sport
+  names:
+    - "Handball"
+    - "Hand"
+    - "Handball"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé pendant la grossesse : les sports avec contacts physiques marqués, coups ou combat exposent le ventre aux chocs."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: rugby
+  category: team-sport
+  names:
+    - "Rugby"
+    - "Rugby à toucher"
+    - "Rugby"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé : le NHS cite le rugby parmi les sports à éviter à cause du risque de chute ou de choc sur le ventre."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: tennis
+  category: racket
+  names:
+    - "Tennis"
+    - "Tennis de court"
+    - "Tennis"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sources ne sont pas tout à fait d'accord : ameli et la HAS disent que les sports de raquette sont possibles avec prudence et une bonne technique, alors que la page NHS Start for Life cite le tennis et le squash parmi les sports à éviter à cause du risque de choc. Demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: squash
+  category: racket
+  names:
+    - "Squash"
+    - "Squash"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sources ne sont pas tout à fait d'accord : ameli et la HAS disent que les sports de raquette sont possibles avec prudence et une bonne technique, alors que la page NHS Start for Life cite le tennis et le squash parmi les sports à éviter à cause du risque de choc. Demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: padel
+  category: racket
+  names:
+    - "Padel"
+    - "Pádel"
+    - "Padel"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sports de raquette peuvent se pratiquer de façon raisonnée, surtout avec une bonne technique et beaucoup d'attention à l'équilibre et aux chutes. Les sources ne citent pas celui-ci : demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-choix
+        - has-aps-grossesse
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: badminton
+  category: racket
+  names:
+    - "Badminton"
+    - "Volant"
+    - "Badminton"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sports de raquette peuvent se pratiquer de façon raisonnée, surtout avec une bonne technique et beaucoup d'attention à l'équilibre et aux chutes. Les sources ne citent pas celui-ci : demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-choix
+        - has-aps-grossesse
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: table-tennis
+  category: racket
+  names:
+    - "Tennis de table"
+    - "Ping-pong"
+    - "Table tennis"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sports de raquette peuvent se pratiquer de façon raisonnée, surtout avec une bonne technique et beaucoup d'attention à l'équilibre et aux chutes. Les sources ne citent pas celui-ci : demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-choix
+        - has-aps-grossesse
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: golf
+  category: precision
+  names:
+    - "Golf"
+    - "Practice de golf"
+    - "Golf"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le golf n'est pas cité par les sources. Marcher sur le parcours est un bon exercice, mais restez au frais, buvez de l'eau, évitez une longue exposition au soleil et les swings très rotatifs, et demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: petanque-bowling
+  category: precision
+  names:
+    - "Pétanque"
+    - "Bowling"
+    - "Pétanque"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La pétanque et le bowling sont peu intenses mais ne sont pas cités par les sources. Évitez de vous pencher et de soulever des boules lourdes de façon brusque, faites des pauses debout et demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-precautions
+        - nhs-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: boxing-sparring
+  category: combat
+  names:
+    - "Boxe avec contact"
+    - "Kickboxing et muay thaï"
+    - "Boxing"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé : les sports de combat et le sparring exposent le ventre aux coups, et ameli cite les sports de combat et arts martiaux parmi les activités à éviter."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: cardio-boxing
+  category: combat
+  names:
+    - "Boxe fitness sans contact"
+    - "Sac de frappe"
+    - "Cardio boxing"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le travail au sac et la boxe dans le vide n'exposent pas aux coups sur le ventre, mais ils sont intenses et non cités par les sources. Évitez les exercices à deux, restez modérée et au frais, et demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-benefices
+        - has-aps-grossesse
+        - ameli-ap-precautions
+  reviewed: 2026-11-14
+- id: judo-karate
+  category: combat
+  names:
+    - "Judo, karaté et arts martiaux"
+    - "Taekwondo"
+    - "Judo"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé : ameli et le NHS disent que les arts martiaux exposent à un coup ou une chute sur le ventre. Ameli cite aussi le judo parmi les sports pouvant gêner la circulation dans les jambes."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - ameli-jambes-lourdes
+  reviewed: 2026-11-14
+- id: mma-krav-maga
+  category: combat
+  names:
+    - "MMA et Krav Maga"
+    - "Cours d'autodéfense"
+    - "MMA"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé pendant la grossesse : les sports avec contacts physiques marqués, coups ou combat exposent le ventre aux chocs."
+      sources:
+        - ameli-ap-choix
+        - nhs-exercise
+        - nhs-startforlife-exercise
+  reviewed: 2026-11-14
+- id: fencing
+  category: combat
+  names:
+    - "Escrime"
+    - "Fleuret et épée"
+    - "Fencing"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "L'escrime comporte des fentes et des déplacements rapides, donc un risque de chute, et n'est pas citée par les sources. Demandez l'avis de votre sage-femme ou médecin et restez sur une pratique lente s'ils sont d'accord."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: capoeira
+  category: combat
+  names:
+    - "Capoeira"
+    - "Capoeira"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Déconseillé pendant la grossesse : les sources disent d'éviter les activités à haut risque de chute, de déséquilibre ou de choc sur le ventre."
+      sources:
+        - ameli-ap-choix
+        - nhs-startforlife-exercise
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: infrared-sauna
+  category: heat
+  names:
+    - "Sauna infrarouge"
+    - "Cabine infrarouge"
+    - "Infrared sauna"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les lieux chauds et humides sont à éviter : ameli et la HAS conseillent d'éviter les environnements chauds et humides, et la HAS indique qu'une température du corps très élevée pendant les trois premiers mois peut nuire au bébé. Les sources ne citent pas cette activité. Demandez l'avis de votre sage-femme ou médecin avant."
+      sources:
+        - ameli-ap-precautions
+        - has-aps-grossesse
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: exercise-in-hot-weather
+  category: heat
+  names:
+    - "Sport par forte chaleur"
+    - "Exercice en canicule"
+    - "Exercise in hot weather"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Évitez l'effort intense par temps chaud car on surchauffe plus facilement. Sortez tôt le matin ou en fin d'après-midi, portez un chapeau et de la crème solaire, buvez beaucoup d'eau et arrêtez-vous en cas de malaise."
+      sources:
+        - ameli-ap-precautions
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: cold-plunge
+  category: heat
+  names:
+    - "Bain glacé"
+    - "Immersion en eau froide"
+    - "Cold plunge"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sources lues ne citent pas les bains glacés. Elles disent d'adapter l'effort au froid et de bien réfléchir avant une activité en conditions hostiles. Demandez l'avis de votre sage-femme ou médecin et évitez le froid extrême brutal."
+      sources:
+        - ameli-ap-precautions
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: high-altitude
+  category: altitude
+  names:
+    - "Haute altitude"
+    - "Séjour en montagne"
+    - "High altitude"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Évitez l'effort à 2 500 mètres ou plus tant que vous n'êtes pas acclimatée : vous et votre bébé risquez le mal des montagnes. Ameli dit d'éviter les activités en altitude qui diminuent le débit sanguin pour le bébé, et la HAS indique qu'un effort modéré jusqu'à 1 800 à 2 500 mètres après acclimatation ne paraît pas poser de problème."
+      sources:
+        - ameli-ap-precautions
+        - nhs-startforlife-exercise
+        - has-aps-grossesse
+  reviewed: 2026-11-14
+- id: massage-relaxing
+  category: massage
+  names:
+    - "Massage relaxant"
+    - "Massage prénatal"
+    - "Relaxing massage"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le NHS propose le massage contre le mal de dos pendant la grossesse, et ameli conseille de masser doucement les jambes des chevilles vers les genoux contre les jambes lourdes. Prévenez le praticien que vous êtes enceinte et allongez-vous sur le côté ou calée plus tard."
+      sources:
+        - nhs-back-pain
+        - ameli-jambes-lourdes
+  reviewed: 2026-11-14
+- id: massage-hot-stone-deep
+  category: massage
+  names:
+    - "Massage aux pierres chaudes"
+    - "Massage profond et shiatsu"
+    - "Hot stone massage"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les sources lues ne citent pas ces massages. C'est la chaleur qui pose question : ameli et la HAS conseillent d'éviter les conditions chaudes et humides. Choisissez une pression douce sans forte chaleur, prévenez le praticien et demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - ameli-ap-precautions
+        - has-aps-grossesse
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: massage-aromatherapy
+  category: massage
+  names:
+    - "Massage aux huiles essentielles"
+    - "Aromathérapie"
+    - "Aromatherapy massage"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique que les huiles essentielles sont quasiment pas étudiées pendant la grossesse et conseille plutôt de s'abstenir en usage thérapeutique, et ameli note que certaines huiles essentielles agissent comme des hormones. Choisissez une huile de massage simple ou demandez l'avis de votre sage-femme ou médecin."
+      sources:
+        - crat-huiles-essentielles
+        - ameli-aliments-eviter
+  reviewed: 2026-11-14
+- id: sex
+  category: intimacy
+  names:
+    - "Rapports sexuels"
+    - "Sexualité pendant la grossesse"
+    - "Sex"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "La HAS indique que les rapports sexuels n'ont pas d'inconvénient particulier pendant la grossesse et ne doivent pas être déconseillés, sauf avis contraire de votre sage-femme ou médecin. Ameli note que certaines infections peuvent se transmettre au bébé : protégez-vous s'il y a un risque d'infection, et arrêtez et demandez conseil en cas de saignement ou de douleur."
+      sources:
+        - has-femmes-enceintes-2005
+        - ameli-ist
+  reviewed: 2026-11-14
+- id: long-train-coach
+  category: travel
+  names:
+    - "Long trajet en train ou en car"
+    - "Voyage en train"
+    - "Long train or coach journey"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Un voyage de plus de 4 heures comporte un petit risque de caillots sanguins. Bougez régulièrement, buvez de l'eau, gardez les jambes allongées plutôt que pliées et demandez à votre sage-femme ou médecin pour les bas de contention."
+      sources:
+        - nhs-travelling
+        - ameli-jambes-lourdes
+  reviewed: 2026-11-14
+- id: long-car-journey
+  category: travel
+  names:
+    - "Long trajet en voiture"
+    - "Voyage en voiture"
+    - "Long car journey"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS dit qu'il vaut mieux éviter les longs trajets en voiture ; sinon, arrêtez-vous régulièrement pour vous étirer et marcher. Portez la ceinture avec la sangle diagonale entre les seins et la sangle ventrale sous le ventre, et ne faites pas seule un long trajet."
+      sources:
+        - nhs-travelling
+        - has-femmes-enceintes-2005
+  reviewed: 2026-11-14
+- id: gardening
+  category: home
+  names:
+    - "Jardinage"
+    - "Travaux de jardin"
+    - "Gardening"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le jardinage est possible si vous portez des gants pour tout contact avec la terre et vous lavez les mains ensuite, car la terre peut véhiculer la toxoplasmose. Évitez de porter lourd et de rester longtemps penchée."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-toxoplasmosis
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-14
+- id: cat-litter
+  category: home
+  names:
+    - "Litière du chat"
+    - "Nettoyer le bac à litière"
+    - "Changing cat litter"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La litière peut véhiculer la toxoplasmose. Ameli conseille de demander à une autre personne de la nettoyer si possible ; sinon portez des gants et lavez-vous bien les mains. Caresser un chat ne présente pas de risque."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-toxoplasmosis
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-14
+- id: ladders-step-stools
+  category: home
+  names:
+    - "Échelle et escabeau"
+    - "Monter sur une chaise"
+    - "Ladders"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Votre équilibre change et une chute pourrait blesser le ventre : évitez les échelles et de monter sur une chaise, et demandez à quelqu'un d'autre. Ameli conseille aussi d'éviter les travaux de rénovation à la maison pendant la grossesse."
+      sources:
+        - ameli-ap-precautions
+        - ameli-ap-choix
+        - nhs-exercise
+  reviewed: 2026-11-14
+- id: standing-long
+  category: work
+  names:
+    - "Station debout prolongée"
+    - "Rester longtemps debout"
+    - "Standing for long periods"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Ameli et la HAS conseillent d'éviter la station debout prolongée, source de baisse de tension et de malaise. Faites des pauses régulières pour marcher ou vous asseoir et bougez les pieds pour activer la circulation dans les jambes."
+      sources:
+        - ameli-ap-precautions
+        - has-aps-grossesse
+        - ameli-jambes-lourdes
+  reviewed: 2026-11-14
+- id: desk-screen-work
+  category: work
+  names:
+    - "Travail sur écran"
+    - "Travail de bureau"
+    - "Working at a screen"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Rester longtemps assise convient si vous coupez ces moments : ameli conseille de se lever ou marcher un peu toutes les heures et de faire une pause plus longue toutes les 90 minutes environ. Gardez les jambes allongées plutôt que pliées quand vous êtes assise."
+      sources:
+        - ameli-ap-choix
+        - ameli-jambes-lourdes
+  reviewed: 2026-11-14
