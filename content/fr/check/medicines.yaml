@@ -4842,7 +4842,7 @@
       verdict: careful
       why: "Le CRAT indique qu'il n'existe pas d'étude chez la femme enceinte exposée à l'aloès, sans effet malformatif ou foetal rapporté ; en cas de constipation il préfère les laxatifs de lest ou osmotiques à tout terme, et déconseille les associations et l'usage prolongé des laxatifs stimulants. Demander conseil avant usage. En cas de doute, demandez à votre pharmacien ou à votre médecin."
       sources:
-        - crat-laxatifs-anthracenic
+        - crat-laxatifs-anthraceniques
         - crat-laxatifs
   reviewed: 2026-11-14
 - id: flu-vaccine

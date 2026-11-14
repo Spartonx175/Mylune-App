@@ -4577,7 +4577,7 @@
       verdict: careful
       why: "CRAT says no studies exist in pregnant women exposed to aloe, though no malformation or fetal effect has been reported; for constipation it prefers bulk-forming or osmotic laxatives at any stage and warns against combination products and long-term stimulant use. Ask before using. If you are unsure, ask your pharmacist or doctor."
       sources:
-        - crat-laxatifs-anthracenic
+        - crat-laxatifs-anthraceniques
         - crat-laxatifs
   reviewed: 2026-11-14
 - id: flu-vaccine
