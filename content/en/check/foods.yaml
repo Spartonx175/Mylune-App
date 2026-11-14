@@ -899,7 +899,16 @@
     - Saumon cru
     - Tartare de saumon
     - Gravlax
-  tips: *a2
+    - Salmon steak
+    - Darne de saumon
+    - Saumon poêlé
+    - Saumon au four
+    - Salmon fillet baked
+    - Saumon grillé
+    - Saumon vapeur
+    - Saumon teriyaki
+  tips:
+    - best
   local: true
   answers:
     - state: cooked
@@ -928,7 +937,38 @@
     - Lox
     - Haddock fumé
     - Hareng saur
-  tips: *a1
+    - Smoked salmon blinis
+    - Blinis au saumon fumé
+    - Blinis saumon
+    - Canapés saumon fumé
+    - Toast saumon fumé
+    - Smoked salmon bagel
+    - Bagel saumon fumé
+    - Bagel au saumon
+    - Bagel saumon cream cheese
+    - Bagel lox
+    - Smoked salmon tartine
+    - Tartine saumon fumé
+    - Tartine saumon avocat
+    - Tartine saumon fromage frais
+    - Toast saumon
+    - Smoked salmon trimmings
+    - Chutes de saumon fumé
+    - Saumon fumé en dés
+    - Saumon fumé en lamelles
+    - Saumon fumé en petits morceaux
+    - Smoked salmon pasta
+    - Pâtes au saumon fumé
+    - Tagliatelles saumon fumé
+    - Spaghetti saumon fumé
+    - Gratin saumon fumé
+    - Smoked fish platter
+    - Plateau de poissons fumés
+    - Assiette nordique
+    - Assiette de saumon fumé
+    - Assiette de poissons fumés
+  tips:
+    - avoid
   local: true
   answers:
     - state: cured
@@ -941,7 +981,7 @@
         - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
-      why: Only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe.
+      why: "Smoked salmon: only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe."
       sources:
         - nhs-foods-to-avoid
         - cdc-listeria-meat-fish
@@ -986,6 +1026,16 @@
     - Steak de thon
     - Thon mi-cuit
     - Tuna steak
+    - Bluefin tuna
+    - Thon rouge
+    - Thon obèse
+    - Thon albacore frais
+    - Thon germon
+    - Albacore
+    - Germon
+    - Thon blanc
+    - Thon germon cuit
+    - Thon à la plancha
   local: true
   answers:
     - state: cooked
@@ -1020,6 +1070,16 @@
     - Thon au naturel
     - Salade de thon
     - Tuna salad
+    - Canned tuna in oil
+    - Thon à l'huile d'olive
+    - Thon au naturel en boîte
+    - Thon en miettes
+    - Thon albacore en conserve
+    - Canned tuna steaks
+    - Thon entier en boîte
+    - Filet de thon en conserve
+    - Thon germon en boîte
+    - Thon blanc en conserve
   local: true
   answers:
     - state: canned
@@ -1038,7 +1098,19 @@
     - Sardines en boîte
     - Sardines à l'huile
     - Sardines grillées
-  tips: *a2
+    - Sardine fresh grilled
+    - Sardines au barbecue
+    - Sardines fraîches
+    - Canned sardines in oil
+    - Sardines à l'huile d'olive
+    - Sardines millésimées
+    - Canned sardines in tomato
+    - Sardines à la tomate
+    - Sardines sauce tomate
+    - Sardines au citron
+    - Sardines au piment
+  tips:
+    - best
   local: true
   answers:
     - state: cooked
@@ -1079,7 +1151,15 @@
     - Pollock
     - Poisson blanc
     - Dos de cabillaud
-  tips: *a2
+    - Pollock Atlantic
+    - Cabillaud skrei
+    - Skrei
+    - Cabillaud de Norvège
+    - Cod fillet
+    - Filet de cabillaud
+    - Pavé de cabillaud
+  tips:
+    - best
   local: true
   answers:
     - state: cooked
@@ -1105,6 +1185,19 @@
     - Maquereau fumé
     - Maquereaux au vin blanc
     - Filet de maquereau
+    - Grilled mackerel
+    - Maquereau grillé
+    - Maquereau au four
+    - Maquereau poêlé
+    - Filets de maquereau cuits
+    - Smoked mackerel
+    - Filet de maquereau fumé
+    - Maquereau fumé au poivre
+    - Maquereau fumé du commerce
+    - Canned mackerel
+    - Filets de maquereaux en boîte
+    - Maquereaux à la moutarde
+    - Maquereaux à la tomate
   local: true
   answers:
     - state: cooked
@@ -1137,6 +1230,11 @@
     - Rollmops
     - Hareng mariné
     - Truite aux amandes
+    - Smoked herring
+    - Hareng fumé
+    - Kipper
+    - Hareng doux
+    - Hareng fumé à l'huile
   local: true
   answers:
     - state: cooked
@@ -1164,7 +1262,17 @@
     - Siki
     - Saumonette
     - Lamproie
-  tips: *a1
+    - Swordfish steak
+    - Espadon grillé
+    - Pavé d'espadon
+    - Espadon à la plancha
+    - Espadon mariné
+    - Smoked swordfish
+    - Espadon fumé
+    - Carpaccio d'espadon fumé
+    - Espadon fumé en tranches
+  tips:
+    - avoid
   local: true
   answers:
     - state: cooked
@@ -1190,16 +1298,31 @@
     - Eel
     - Flétan
     - Halibut
+    - Sea bass sauvage
+    - Loup grillé
+    - Loup au fenouil
+    - Bar grillé
+    - Bass sauvage
+    - Bar commun
+    - Bar sauvage
+    - Loup de mer sauvage
+    - Gilthead bream
+    - Dorade royale
+    - Daurade royale
+    - Daurade grise
+    - Sea bream grilled
+    - Dorade grillée
+    - Daurade grillée
+    - Daurade au four
   local: true
   answers:
     - state: cooked
       verdict: careful
-      why: These large predator fish carry more pollutants. Eat them only now and then, and cooked right through.
+      why: "Sea bass: French health advice (ameli, mangerbouger) lists this fish among those to limit in pregnancy because they build up pollutants such as mercury. Have it only now and then, cooked right through."
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
-        - nhs-foods-to-avoid
-  reviewed: 2026-11-13
+  reviewed: 2026-11-14
 - id: anchovies
   category: fish
   names:
@@ -1209,6 +1332,16 @@
     - Anchois marinés
     - Boquerones
     - Pissaladière
+    - Canned anchovies
+    - Anchois en boîte
+    - Anchois à l'huile en boîte
+    - Filets d'anchois en conserve
+    - Anchois salés en bocal
+    - Raw anchovies marinated
+    - Anchois marinés au vinaigre
+    - Anchois blancs marinés
+    - Boquerones au vinaigre
+    - Anchois à la marinade
   local: true
   answers:
     - state: canned
@@ -1233,6 +1366,10 @@
     - Nuggets de poisson
     - Fish and chips
     - Croquette de poisson
+    - Fish nuggets
+    - Croquettes de poisson
+    - Bâtonnets pané
+    - Boulettes de poisson
   local: true
   answers:
     - state: cooked
@@ -8500,12 +8637,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Haddock fresh: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Haddock fresh: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: plaice
   category: fish
@@ -8519,12 +8662,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Plaice: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Plaice: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: turbot
   category: fish
@@ -8537,12 +8686,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Turbot: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Turbot: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: john-dory
   category: fish
@@ -8555,12 +8710,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "John Dory: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "John Dory: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: red-mullet
   category: fish
@@ -8574,12 +8735,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Red mullet: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Red mullet: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: gurnard
   category: fish
@@ -8592,12 +8759,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Gurnard: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Gurnard: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: mullet
   category: fish
@@ -8610,12 +8783,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Mullet: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Mullet: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pike-perch
   category: fish
@@ -8624,17 +8803,26 @@
     - Sandre
     - Sandre au beurre blanc
     - Filet de sandre
+    - Zander
+    - Sandre de Loire
+    - Filet de sandre rôti
+    - Sandre rôti
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      verdict: careful
+      why: "Pike-perch: the sources we used do not name this fish. Some predator and freshwater fish are on the French limit lists, so have it only now and then, cooked right through, and ask your midwife."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Pike-perch: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: perch
   category: fish
   names:
@@ -8642,17 +8830,26 @@
     - Perche
     - Filet de perche
     - Perche du Nil
+    - Freshwater perch
+    - Perche de lac
+    - Filets de perche
+    - Filets de perche meunière
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      verdict: careful
+      why: "Perch: the sources we used do not name this fish. Some predator and freshwater fish are on the French limit lists, so have it only now and then, cooked right through, and ask your midwife."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Perch: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: nile-perch
   category: fish
   names:
@@ -8664,12 +8861,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Nile perch: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Nile perch: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: tilapia
   category: fish
@@ -8680,12 +8883,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Tilapia: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Tilapia: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pangasius
   category: fish
@@ -8697,12 +8906,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Pangasius: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Pangasius: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pollock-fillet
   category: fish
@@ -8711,33 +8926,26 @@
     - Filet de lieu
     - Colin d'Alaska surgelé
     - Lieu d'Alaska
+    - Coley
+    - Colin lieu
+    - Colin lieu noir
+    - Lieu noir surgelé
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Pollock fillet: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: cod-fillet
-  category: fish
-  names:
-    - Cod fillet
-    - Filet de cabillaud
-    - Pavé de cabillaud
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Pollock fillet: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: salt-cod
   category: fish
@@ -8751,12 +8959,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Salt cod: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Salt cod: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: skate-wing
   category: fish
@@ -8768,14 +8982,19 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      verdict: careful
+      why: "Skate wing: French health advice (ameli, mangerbouger) lists this fish among those to limit in pregnancy because they build up pollutants such as mercury. Have it only now and then, cooked right through."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Skate wing: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: monkfish-tail
   category: fish
   names:
@@ -8786,86 +9005,19 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      verdict: careful
+      why: "Monkfish tail: French health advice (ameli, mangerbouger) lists this fish among those to limit in pregnancy because they build up pollutants such as mercury. Have it only now and then, cooked right through."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: gilthead-bream
-  category: fish
-  names:
-    - Gilthead bream
-    - Dorade royale
-    - Daurade royale
-    - Daurade grise
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: sea-bream-grilled
-  category: fish
-  names:
-    - Sea bream grilled
-    - Dorade grillée
-    - Daurade grillée
-    - Daurade au four
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: sea-bass-sauvage
-  category: fish
-  names:
-    - Sea bass sauvage
-    - Loup grillé
-    - Loup au fenouil
-    - Bar grillé
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: pollock-atlantic
-  category: fish
-  names:
-    - Pollock Atlantic
-    - Cabillaud skrei
-    - Skrei
-    - Cabillaud de Norvège
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Monkfish tail: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: redfish
   category: fish
   names:
@@ -8877,12 +9029,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Redfish: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Redfish: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: conger
   category: fish
@@ -8894,14 +9052,19 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      verdict: careful
+      why: "Conger: the sources we used do not name this fish. Some predator and freshwater fish are on the French limit lists, so have it only now and then, cooked right through, and ask your midwife."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Conger: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: whiting-blue
   category: fish
   names:
@@ -8913,12 +9076,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Whiting blue: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Whiting blue: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: hoki
   category: fish
@@ -8930,12 +9099,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Hoki: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Hoki: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: ling
   category: fish
@@ -8948,12 +9123,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Ling: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Ling: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: lumpfish
   category: fish
@@ -8966,47 +9147,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Lumpfish: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: coley
-  category: fish
-  names:
-    - Coley
-    - Colin lieu
-    - Colin lieu noir
-    - Lieu noir surgelé
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: sardine-fresh-grilled
-  category: fish
-  names:
-    - Sardine fresh grilled
-    - Sardines au barbecue
-    - Sardines fraîches
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Lumpfish: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: anchovy-fresh
   category: fish
@@ -9015,16 +9167,26 @@
     - Anchois frais
     - Anchois frits
     - Anchois grillés
+    - Fresh anchovies fried
+    - Anchois frits à l'huile
+    - Beignets d'anchois
+    - Anchois panés
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Anchovy fresh: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Anchovy fresh: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: smelt
   category: fish
@@ -9037,12 +9199,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Smelt: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Smelt: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: whitebait
   category: fish
@@ -9055,12 +9223,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Whitebait: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Whitebait: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fish-soup
   category: fish
@@ -9069,16 +9243,38 @@
     - Soupe de poisson
     - Soupe de poissons de roche
     - Soupe de poisson rouille croûtons
+    - Fish stew
+    - Matelote
+    - Matelote d'anguille
+    - Waterzooi de poisson
+    - Cotriade
+    - Fish soup creamy
+    - Velouté de poisson
+    - Velouté de la mer
+    - Soupe de poisson crémeuse
+    - Chaudrée
+    - Bisque de poisson
+    - Canned soup fish
+    - Soupe de poisson en boîte
+    - Soupe de poisson en bouteille
+    - Soupe de poissons en conserve
+    - Bisque en conserve
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Fish soup: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Fish soup: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: bouillabaisse
   category: fish
@@ -9090,50 +9286,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Bouillabaisse: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fish-stew
-  category: fish
-  names:
-    - Fish stew
-    - Matelote
-    - Matelote d'anguille
-    - Waterzooi de poisson
-    - Cotriade
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fish-and-potatoes
-  category: fish
-  names:
-    - Fish and potatoes
-    - Poisson pommes vapeur
-    - Poisson du jour
-    - Pavé de poisson
-    - Poisson meunière
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Bouillabaisse: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fish-quenelles
   category: fish
@@ -9147,12 +9311,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Fish quenelles: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Fish quenelles: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fish-papillote
   category: fish
@@ -9162,16 +9332,27 @@
     - Cabillaud en papillote
     - Papillote de poisson
     - Papillote de saumon
+    - Fish and potatoes
+    - Poisson pommes vapeur
+    - Poisson du jour
+    - Pavé de poisson
+    - Poisson meunière
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Fish papillote: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Fish papillote: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fish-en-croute
   category: fish
@@ -9185,12 +9366,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Fish en croûte: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Fish en croûte: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fish-pie
   category: fish
@@ -9200,16 +9387,26 @@
     - Hachis de poisson
     - Gratin de poisson
     - Brandade
+    - Fish pie cooked
+    - Pie au poisson
+    - Gratin de poisson aux crevettes
+    - Pie de saumon
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Fish pie: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Fish pie: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fish-curry
   category: fish
@@ -9223,12 +9420,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Fish curry: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Fish curry: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fresh-herring
   category: fish
@@ -9242,31 +9445,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Fresh herring: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: grilled-mackerel
-  category: fish
-  names:
-    - Grilled mackerel
-    - Maquereau grillé
-    - Maquereau au four
-    - Maquereau poêlé
-    - Filets de maquereau cuits
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Fresh herring: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pilchard
   category: fish
@@ -9279,48 +9469,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Pilchard: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: salmon-steak
-  category: fish
-  names:
-    - Salmon steak
-    - Darne de saumon
-    - Saumon poêlé
-    - Saumon au four
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: salmon-fillet-baked
-  category: fish
-  names:
-    - Salmon fillet baked
-    - Saumon grillé
-    - Saumon vapeur
-    - Saumon teriyaki
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Pilchard: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: arctic-char
   category: fish
@@ -9333,12 +9493,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Arctic char: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Arctic char: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: rainbow-trout
   category: fish
@@ -9348,20 +9514,6 @@
     - Truite de rivière
     - Truite meunière
     - Truite au bleu
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: trout-almonds
-  category: fish
-  names:
     - Trout almonds
     - Truite poêlée
     - Truite grillée
@@ -9370,30 +9522,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Rainbow trout: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fresh-anchovies-fried
-  category: fish
-  names:
-    - Fresh anchovies fried
-    - Anchois frits à l'huile
-    - Beignets d'anchois
-    - Anchois panés
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Rainbow trout: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: sprat
   category: fish
@@ -9406,12 +9546,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Sprat: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Sprat: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: horse-mackerel
   category: fish
@@ -9425,50 +9571,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through, it is a good choice. Aim for fish twice a week and vary the types.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Horse mackerel: cooked right through, it is a good choice. Aim for fish twice a week and vary the types."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: bluefin-tuna
-  category: fish
-  names:
-    - Bluefin tuna
-    - Thon rouge
-    - Thon obèse
-    - Thon albacore frais
-    - Thon germon
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: This fish builds up pollutants such as mercury. Eat it only now and then, and always cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: raw
-      verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: albacore
-  category: fish
-  names:
-    - Albacore
-    - Germon
-    - Thon blanc
-    - Thon germon cuit
-    - Thon à la plancha
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: This fish builds up pollutants such as mercury. Eat it only now and then, and always cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: raw
-      verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Horse mackerel: raw, marinated or lightly cooked fish can carry listeria and parasites. Freezing does not remove listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: bonito
   category: fish
@@ -9481,13 +9595,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: This fish builds up pollutants such as mercury. Eat it only now and then, and always cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Bonito: ameli lists this fish among those to limit in pregnancy because they build up pollutants such as mercury. Have it only now and then, cooked right through."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Bonito: raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: kingfish
   category: fish
   names:
@@ -9499,31 +9618,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: This fish builds up pollutants such as mercury. Eat it only now and then, and always cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Kingfish: the sources we used do not name this fish. Some predator and freshwater fish are on the French limit lists, so have it only now and then, cooked right through, and ask your midwife."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: bass-sauvage
-  category: fish
-  names:
-    - Bass sauvage
-    - Bar commun
-    - Bar sauvage
-    - Loup de mer sauvage
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: This fish builds up pollutants such as mercury. Eat it only now and then, and always cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: raw
-      verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Kingfish: raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: grouper
   category: fish
   names:
@@ -9535,13 +9641,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: This fish builds up pollutants such as mercury. Eat it only now and then, and always cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Grouper: the sources we used do not name this fish. Some predator and freshwater fish are on the French limit lists, so have it only now and then, cooked right through, and ask your midwife."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Grouper: raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: barracuda
   category: fish
   names:
@@ -9552,13 +9663,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: This fish builds up pollutants such as mercury. Eat it only now and then, and always cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Barracuda: the sources we used do not name this fish. Some predator and freshwater fish are on the French limit lists, so have it only now and then, cooked right through, and ask your midwife."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Barracuda: raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: mahi-mahi
   category: fish
   names:
@@ -9569,13 +9685,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: This fish builds up pollutants such as mercury. Eat it only now and then, and always cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Mahi-mahi: the sources we used do not name this fish. Some predator and freshwater fish are on the French limit lists, so have it only now and then, cooked right through, and ask your midwife."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Mahi-mahi: raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: snapper
   category: fish
   names:
@@ -9587,13 +9708,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: This fish builds up pollutants such as mercury. Eat it only now and then, and always cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Snapper: the sources we used do not name this fish. Some predator and freshwater fish are on the French limit lists, so have it only now and then, cooked right through, and ask your midwife."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Snapper: raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: grenadier
   category: fish
   names:
@@ -9604,13 +9730,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: This fish builds up pollutants such as mercury. Eat it only now and then, and always cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Grenadier: ameli lists this fish among those to limit in pregnancy because they build up pollutants such as mercury. Have it only now and then, cooked right through."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Grenadier: raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: sabre-fish
   category: fish
   names:
@@ -9622,13 +9753,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: This fish builds up pollutants such as mercury. Eat it only now and then, and always cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Sabre fish: ameli lists this fish among those to limit in pregnancy because they build up pollutants such as mercury. Have it only now and then, cooked right through."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Sabre fish: raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: roughy
   category: fish
   names:
@@ -9640,13 +9776,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: This fish builds up pollutants such as mercury. Eat it only now and then, and always cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Roughy: ameli lists this fish among those to limit in pregnancy because they build up pollutants such as mercury. Have it only now and then, cooked right through."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Roughy: raw or lightly cooked, it can carry listeria and parasites on top of the pollutant concern."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: dogfish
   category: fish
   names:
@@ -9657,24 +9798,12 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Large predator fish like this build up high levels of mercury and other pollutants, even when well cooked. Avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: swordfish-steak
-  category: fish
-  names:
-    - Swordfish steak
-    - Espadon grillé
-    - Pavé d'espadon
-    - Espadon à la plancha
-    - Espadon mariné
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Large predator fish like this build up high levels of mercury and other pollutants, even when well cooked. Avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Dogfish: French health advice (ameli, mangerbouger) and the NHS name shark among the fish to avoid in pregnancy because of pollutants such as mercury, even when well cooked."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: blue-shark
   category: fish
   names:
@@ -9687,9 +9816,12 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Large predator fish like this build up high levels of mercury and other pollutants, even when well cooked. Avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Blue shark: French health advice (ameli, mangerbouger) and the NHS name shark among the fish to avoid in pregnancy because of pollutants such as mercury, even when well cooked."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: lamprey
   category: fish
   names:
@@ -9701,9 +9833,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Large predator fish like this build up high levels of mercury and other pollutants, even when well cooked. Avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: French health advice (ameli, mangerbouger) names lamprey among the fish to avoid in pregnancy because of pollutants, even when well cooked.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-14
 - id: barbel
   category: fish
   names:
@@ -9715,13 +9849,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Large freshwater fish build up pollutants. Have it rarely, no more than once every couple of months, and cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Barbel: ameli lists this freshwater fish among those that build up pollutants strongly, and advises no more than one meal every two months. Always cooked right through."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Barbel: raw or lightly cooked, it can carry listeria and parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: bream
   category: fish
   names:
@@ -9733,13 +9872,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Large freshwater fish build up pollutants. Have it rarely, no more than once every couple of months, and cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Bream: ameli lists this freshwater fish among those that build up pollutants strongly, and advises no more than one meal every two months. Always cooked right through."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Bream: raw or lightly cooked, it can carry listeria and parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: carp
   category: fish
   names:
@@ -9752,13 +9896,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Large freshwater fish build up pollutants. Have it rarely, no more than once every couple of months, and cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Carp: ameli lists this freshwater fish among those that build up pollutants strongly, and advises no more than one meal every two months. Always cooked right through."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Carp: raw or lightly cooked, it can carry listeria and parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: wels-catfish
   category: fish
   names:
@@ -9770,13 +9919,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Large freshwater fish build up pollutants. Have it rarely, no more than once every couple of months, and cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Wels catfish: ameli lists this freshwater fish among those that build up pollutants strongly, and advises no more than one meal every two months. Always cooked right through."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Wels catfish: raw or lightly cooked, it can carry listeria and parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: pike
   category: fish
   names:
@@ -9789,13 +9943,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Large freshwater fish build up pollutants. Have it rarely, no more than once every couple of months, and cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Pike: ameli lists this fish among those to limit in pregnancy because they build up pollutants such as mercury. Have it only now and then, cooked right through."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Pike: raw or lightly cooked, it can carry listeria and parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: roach
   category: fish
   names:
@@ -9807,49 +9966,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Large freshwater fish build up pollutants. Have it rarely, no more than once every couple of months, and cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Roach: the sources we used do not name this fish. Some predator and freshwater fish are on the French limit lists, so have it only now and then, cooked right through, and ask your midwife."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: zander
-  category: fish
-  names:
-    - Zander
-    - Sandre de Loire
-    - Filet de sandre rôti
-    - Sandre rôti
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: Large freshwater fish build up pollutants. Have it rarely, no more than once every couple of months, and cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: raw
-      verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: freshwater-perch
-  category: fish
-  names:
-    - Freshwater perch
-    - Perche de lac
-    - Filets de perche
-    - Filets de perche meunière
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: Large freshwater fish build up pollutants. Have it rarely, no more than once every couple of months, and cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: raw
-      verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Roach: raw or lightly cooked, it can carry listeria and parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: whitefish
   category: fish
   names:
@@ -9862,13 +9990,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Large freshwater fish build up pollutants. Have it rarely, no more than once every couple of months, and cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Whitefish: the sources we used do not name this fish. Some predator and freshwater fish are on the French limit lists, so have it only now and then, cooked right through, and ask your midwife."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Whitefish: raw or lightly cooked, it can carry listeria and parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: burbot
   category: fish
   names:
@@ -9880,13 +10013,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Large freshwater fish build up pollutants. Have it rarely, no more than once every couple of months, and cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Burbot: the sources we used do not name this fish. Some predator and freshwater fish are on the French limit lists, so have it only now and then, cooked right through, and ask your midwife."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Burbot: raw or lightly cooked, it can carry listeria and parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: sturgeon
   category: fish
   names:
@@ -9898,13 +10036,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Large freshwater fish build up pollutants. Have it rarely, no more than once every couple of months, and cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Sturgeon: the sources we used do not name this fish. Some predator and freshwater fish are on the French limit lists, so have it only now and then, cooked right through, and ask your midwife."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Sturgeon: raw or lightly cooked, it can carry listeria and parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: tench
   category: fish
   names:
@@ -9916,13 +10059,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Large freshwater fish build up pollutants. Have it rarely, no more than once every couple of months, and cooked right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Tench: the sources we used do not name this fish. Some predator and freshwater fish are on the French limit lists, so have it only now and then, cooked right through, and ask your midwife."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Raw or lightly cooked, it can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Tench: raw or lightly cooked, it can carry listeria and parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: smoked-haddock
   category: fish
   names:
@@ -9933,49 +10081,19 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
+      why: "Smoked haddock: smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
-      why: Only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: smoked-herring
-  category: fish
-  names:
-    - Smoked herring
-    - Hareng fumé
-    - Kipper
-    - Hareng doux
-    - Hareng fumé à l'huile
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: careful
-      why: Only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: smoked-mackerel
-  category: fish
-  names:
-    - Smoked mackerel
-    - Filet de maquereau fumé
-    - Maquereau fumé au poivre
-    - Maquereau fumé du commerce
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: careful
-      why: Only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
+      why: "Smoked haddock: only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-meat-fish
+        - ameli-aliments-eviter
   reviewed: 2026-11-13
 - id: smoked-halibut
   category: fish
@@ -9988,30 +10106,19 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
+      why: "Smoked halibut: smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
-      why: Only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: smoked-swordfish
-  category: fish
-  names:
-    - Smoked swordfish
-    - Espadon fumé
-    - Carpaccio d'espadon fumé
-    - Espadon fumé en tranches
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: careful
-      why: Only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
+      why: "Smoked halibut: only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-meat-fish
+        - ameli-aliments-eviter
   reviewed: 2026-11-13
 - id: smoked-tuna
   category: fish
@@ -10024,12 +10131,19 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
+      why: "Smoked tuna: smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
-      why: Only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
+      why: "Smoked tuna: only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-meat-fish
+        - ameli-aliments-eviter
   reviewed: 2026-11-13
 - id: smoked-eel
   category: fish
@@ -10042,12 +10156,19 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
+      why: "Smoked eel: smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
-      why: Only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
+      why: "Smoked eel: only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-meat-fish
+        - ameli-aliments-eviter
   reviewed: 2026-11-13
 - id: smoked-sturgeon
   category: fish
@@ -10060,12 +10181,19 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
+      why: "Smoked sturgeon: smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
-      why: Only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
+      why: "Smoked sturgeon: only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-meat-fish
+        - ameli-aliments-eviter
   reviewed: 2026-11-13
 - id: smoked-cod
   category: fish
@@ -10079,12 +10207,19 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
+      why: "Smoked cod: smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
-      why: Only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
+      why: "Smoked cod: only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-meat-fish
+        - ameli-aliments-eviter
   reviewed: 2026-11-13
 - id: smoked-whitefish
   category: fish
@@ -10098,15 +10233,22 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
+      why: "Smoked whitefish: smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
-      why: Only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
+      why: "Smoked whitefish: only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-meat-fish
+        - ameli-aliments-eviter
   reviewed: 2026-11-13
 - id: smoked-scallop
-  category: fish
+  category: seafood
   names:
     - Smoked scallop
     - Saint-Jacques fumées
@@ -10118,126 +10260,19 @@
     - state: cured
       verdict: avoid
       why: Smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
       why: Only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: smoked-salmon-blinis
-  category: fish
-  names:
-    - Smoked salmon blinis
-    - Blinis au saumon fumé
-    - Blinis saumon
-    - Canapés saumon fumé
-    - Toast saumon fumé
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: careful
-      why: Only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: smoked-salmon-bagel
-  category: fish
-  names:
-    - Smoked salmon bagel
-    - Bagel saumon fumé
-    - Bagel au saumon
-    - Bagel saumon cream cheese
-    - Bagel lox
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: careful
-      why: Only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: smoked-salmon-pasta
-  category: fish
-  names:
-    - Smoked salmon pasta
-    - Pâtes au saumon fumé
-    - Tagliatelles saumon fumé
-    - Spaghetti saumon fumé
-    - Gratin saumon fumé
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: careful
-      why: Only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: smoked-salmon-tartine
-  category: fish
-  names:
-    - Smoked salmon tartine
-    - Tartine saumon fumé
-    - Tartine saumon avocat
-    - Tartine saumon fromage frais
-    - Toast saumon
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: careful
-      why: Only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: smoked-fish-platter
-  category: fish
-  names:
-    - Smoked fish platter
-    - Plateau de poissons fumés
-    - Assiette nordique
-    - Assiette de saumon fumé
-    - Assiette de poissons fumés
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: careful
-      why: Only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: smoked-salmon-trimmings
-  category: fish
-  names:
-    - Smoked salmon trimmings
-    - Chutes de saumon fumé
-    - Saumon fumé en dés
-    - Saumon fumé en lamelles
-    - Saumon fumé en petits morceaux
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: careful
-      why: Only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
-  reviewed: 2026-11-13
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-meat-fish
+        - ameli-aliments-eviter
+  reviewed: 2026-11-14
 - id: gravlax-cured
   category: fish
   names:
@@ -10245,16 +10280,27 @@
     - Saumon gravlax
     - Saumon mariné à l'aneth
     - Saumon mariné
+    - Gravlax-style raw salmon
+    - Saumon cru mariné
+    - Saumon à la scandinave
+    - Saumon mariné au citron vert
   local: true
   answers:
     - state: cured
       verdict: avoid
-      why: Smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
+      why: "Gravlax cured: smoked or cured fish is eaten without cooking and can carry listeria, which grows in the fridge. French advice is to avoid it."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
-      why: Only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
+      why: "Gravlax cured: only if cooked until steaming hot all the way through in a hot dish (gratin, quiche, pasta). Cold smoked fish is not safe."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-meat-fish
+        - ameli-aliments-eviter
   reviewed: 2026-11-13
 - id: salmon-tartare
   category: fish
@@ -10266,8 +10312,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Salmon tartare: raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: tuna-tartare
   category: fish
@@ -10280,8 +10329,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Tuna tartare: raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: sea-bass-tartare
   category: fish
@@ -10295,8 +10347,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Sea bass tartare: raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fish-carpaccio
   category: fish
@@ -10311,8 +10366,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Fish carpaccio: raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: tahitian-raw-fish
   category: fish
@@ -10322,12 +10380,25 @@
     - Poisson cru au lait de coco
     - Poisson cru tahitien
     - Ika mata
+    - Marinated raw fish
+    - Poisson mariné cru
+    - Saumon mariné cru
+    - Poisson mariné au citron
+    - Maquereau mariné cru
+    - Escabeche raw
+    - Poisson en escabèche cru
+    - Escabèche froid
+    - Sardines marinées crues
+    - Sardines à l'escabèche froides
   local: true
   answers:
     - state: raw
       verdict: avoid
-      why: Raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Tahitian raw fish: raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: sashimi-platter
   category: fish
@@ -10341,8 +10412,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Sashimi platter: raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: salmon-nigiri
   category: fish
@@ -10356,8 +10430,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Salmon nigiri: raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: tuna-nigiri
   category: fish
@@ -10371,8 +10448,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Tuna nigiri: raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: salmon-maki
   category: fish
@@ -10386,8 +10466,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Salmon maki: raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: spicy-tuna-roll
   category: fish
@@ -10400,8 +10483,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Spicy tuna roll: raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: california-roll-raw
   category: fish
@@ -10415,8 +10501,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "California roll raw: raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: temaki-salmon
   category: fish
@@ -10430,8 +10519,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Temaki salmon: raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chirashi-bowl
   category: fish
@@ -10444,8 +10536,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Chirashi bowl: raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fish-tataki
   category: fish
@@ -10457,23 +10552,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: marinated-raw-fish
-  category: fish
-  names:
-    - Marinated raw fish
-    - Poisson mariné cru
-    - Saumon mariné cru
-    - Poisson mariné au citron
-    - Maquereau mariné cru
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Fish tataki: raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: raw-herring
   category: fish
@@ -10487,94 +10570,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: raw-anchovies-marinated
-  category: fish
-  names:
-    - Raw anchovies marinated
-    - Anchois marinés au vinaigre
-    - Anchois blancs marinés
-    - Boquerones au vinaigre
-    - Anchois à la marinade
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: gravlax-style-raw-salmon
-  category: fish
-  names:
-    - Gravlax-style raw salmon
-    - Saumon cru mariné
-    - Saumon à la scandinave
-    - Saumon mariné au citron vert
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: escabeche-raw
-  category: fish
-  names:
-    - Escabeche raw
-    - Poisson en escabèche cru
-    - Escabèche froid
-    - Sardines marinées crues
-    - Sardines à l'escabèche froides
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: canned-sardines-in-oil
-  category: fish
-  names:
-    - Canned sardines in oil
-    - Sardines à l'huile d'olive
-    - Sardines millésimées
-  local: true
-  answers:
-    - state: canned
-      verdict: ok
-      why: Tinned fish is safe to eat. Keep an opened tin in the fridge and finish it quickly.
-      sources: [ ameli-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: canned-sardines-in-tomato
-  category: fish
-  names:
-    - Canned sardines in tomato
-    - Sardines à la tomate
-    - Sardines sauce tomate
-    - Sardines au citron
-    - Sardines au piment
-  local: true
-  answers:
-    - state: canned
-      verdict: ok
-      why: Tinned fish is safe to eat. Keep an opened tin in the fridge and finish it quickly.
-      sources: [ ameli-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: canned-mackerel
-  category: fish
-  names:
-    - Canned mackerel
-    - Filets de maquereaux en boîte
-    - Maquereaux à la moutarde
-    - Maquereaux à la tomate
-  local: true
-  answers:
-    - state: canned
-      verdict: ok
-      why: Tinned fish is safe to eat. Keep an opened tin in the fridge and finish it quickly.
-      sources: [ ameli-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Raw herring: raw fish can carry listeria and parasites. Freezing does not remove listeria. Choose a cooked version."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: canned-herring
   category: fish
@@ -10588,8 +10588,10 @@
   answers:
     - state: canned
       verdict: ok
-      why: Tinned fish is safe to eat. Keep an opened tin in the fridge and finish it quickly.
-      sources: [ ameli-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Canned herring: tinned fish is safe to eat. Keep an opened tin in the fridge and finish it quickly."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: canned-salmon
   category: fish
@@ -10603,26 +10605,13 @@
   answers:
     - state: canned
       verdict: ok
-      why: Tinned fish is safe to eat. Keep an opened tin in the fridge and finish it quickly.
-      sources: [ ameli-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: canned-anchovies
-  category: fish
-  names:
-    - Canned anchovies
-    - Anchois en boîte
-    - Anchois à l'huile en boîte
-    - Filets d'anchois en conserve
-    - Anchois salés en bocal
-  local: true
-  answers:
-    - state: canned
-      verdict: ok
-      why: Tinned fish is safe to eat. Keep an opened tin in the fridge and finish it quickly.
-      sources: [ ameli-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Canned salmon: tinned fish is safe to eat. Keep an opened tin in the fridge and finish it quickly."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: canned-mussels
-  category: fish
+  category: seafood
   names:
     - Canned mussels
     - Moules en boîte
@@ -10634,10 +10623,12 @@
     - state: canned
       verdict: ok
       why: Tinned fish is safe to eat. Keep an opened tin in the fridge and finish it quickly.
-      sources: [ ameli-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      sources:
+        - ameli-aliments-eviter
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-14
 - id: canned-crab
-  category: fish
+  category: seafood
   names:
     - Canned crab
     - Crabe en boîte
@@ -10649,23 +10640,10 @@
     - state: canned
       verdict: ok
       why: Tinned fish is safe to eat. Keep an opened tin in the fridge and finish it quickly.
-      sources: [ ameli-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: canned-soup-fish
-  category: fish
-  names:
-    - Canned soup fish
-    - Soupe de poisson en boîte
-    - Soupe de poisson en bouteille
-    - Soupe de poissons en conserve
-    - Bisque en conserve
-  local: true
-  answers:
-    - state: canned
-      verdict: ok
-      why: Tinned fish is safe to eat. Keep an opened tin in the fridge and finish it quickly.
-      sources: [ ameli-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      sources:
+        - ameli-aliments-eviter
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-14
 - id: sardine-rillettes-jar
   category: fish
   names:
@@ -10676,41 +10654,21 @@
     - Rillettes de poisson en conserve
   local: true
   answers:
-    - state: canned
-      verdict: ok
-      why: Tinned fish is safe to eat. Keep an opened tin in the fridge and finish it quickly.
-      sources: [ ameli-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: canned-tuna-in-oil
-  category: fish
-  names:
-    - Canned tuna in oil
-    - Thon à l'huile d'olive
-    - Thon au naturel en boîte
-    - Thon en miettes
-    - Thon albacore en conserve
-  local: true
-  answers:
+    - state: cooked
+      verdict: avoid
+      why: Chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: Tinned or not, this fish carries more pollutants such as mercury. Eat it only now and then.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: canned-tuna-steaks
-  category: fish
-  names:
-    - Canned tuna steaks
-    - Thon entier en boîte
-    - Filet de thon en conserve
-    - Thon germon en boîte
-    - Thon blanc en conserve
-  local: true
-  answers:
-    - state: canned
-      verdict: careful
-      why: Tinned or not, this fish carries more pollutants such as mercury. Eat it only now and then.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: A sealed tin or jar stored at room temperature is safer than the fresh version. Skip any made with liver, and finish it quickly once opened. Ask your midwife if unsure.
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: tuna-pasta
   category: fish
   names:
@@ -10719,21 +10677,6 @@
     - Gratin de thon
     - Tarte au thon
     - Pizza au thon
-  local: true
-  answers:
-    - state: canned
-      verdict: careful
-      why: Tinned or not, this fish carries more pollutants such as mercury. Eat it only now and then.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: tuna-sandwich
-  category: fish
-  names:
-    - Tuna sandwich
-    - Sandwich au thon
-    - Sandwich thon mayo
-    - Pan bagnat
-    - Thon crudités sandwich
   local: true
   answers:
     - state: canned
@@ -10753,8 +10696,11 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Chilled fish spreads, rillettes and mousses are eaten cold and can carry listeria. Avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Fish roe spread: chilled fish spreads, rillettes and mousses are eaten cold and can carry listeria. Avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
   reviewed: 2026-11-13
 - id: sardine-spread
   category: fish
@@ -10768,8 +10714,11 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Chilled fish spreads, rillettes and mousses are eaten cold and can carry listeria. Avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Sardine spread: chilled fish spreads, rillettes and mousses are eaten cold and can carry listeria. Avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
   reviewed: 2026-11-13
 - id: cod-liver-spread
   category: fish
@@ -10783,8 +10732,11 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Chilled fish spreads, rillettes and mousses are eaten cold and can carry listeria. Avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Cod liver spread: chilled fish spreads, rillettes and mousses are eaten cold and can carry listeria. Avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
   reviewed: 2026-11-13
 - id: anchoiade
   category: fish
@@ -10797,8 +10749,11 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Chilled fish spreads, rillettes and mousses are eaten cold and can carry listeria. Avoid them.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Anchoïade: chilled fish spreads, rillettes and mousses are eaten cold and can carry listeria. Avoid them."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
   reviewed: 2026-11-13
 - id: fish-tacos
   category: fish
@@ -10811,12 +10766,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Fine if the fish is cooked right through and the dish is served hot.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Fish tacos: fine if the fish is cooked right through and the dish is served hot."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: reheated
       verdict: ok
-      why: Reheat until steaming hot all the way through, and do not keep leftovers beyond 3 days.
-      sources: [ ameli-aliments-eviter, nhs-healthy-diet ]
+      why: "Fish tacos: reheat until steaming hot all the way through, and do not keep leftovers beyond 3 days."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: fish-burger
   category: fish
@@ -10830,50 +10790,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Fine if the fish is cooked right through and the dish is served hot.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Fish burger: fine if the fish is cooked right through and the dish is served hot."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: reheated
       verdict: ok
-      why: Reheat until steaming hot all the way through, and do not keep leftovers beyond 3 days.
-      sources: [ ameli-aliments-eviter, nhs-healthy-diet ]
-  reviewed: 2026-11-13
-- id: fish-pie-cooked
-  category: fish
-  names:
-    - Fish pie cooked
-    - Pie au poisson
-    - Gratin de poisson aux crevettes
-    - Pie de saumon
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Fine if the fish is cooked right through and the dish is served hot.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: reheated
-      verdict: ok
-      why: Reheat until steaming hot all the way through, and do not keep leftovers beyond 3 days.
-      sources: [ ameli-aliments-eviter, nhs-healthy-diet ]
-  reviewed: 2026-11-13
-- id: fish-soup-creamy
-  category: fish
-  names:
-    - Fish soup creamy
-    - Velouté de poisson
-    - Velouté de la mer
-    - Soupe de poisson crémeuse
-    - Chaudrée
-    - Bisque de poisson
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Fine if the fish is cooked right through and the dish is served hot.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: reheated
-      verdict: ok
-      why: Reheat until steaming hot all the way through, and do not keep leftovers beyond 3 days.
-      sources: [ ameli-aliments-eviter, nhs-healthy-diet ]
+      why: "Fish burger: reheat until steaming hot all the way through, and do not keep leftovers beyond 3 days."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: salmon-quiche
   category: fish
@@ -10887,12 +10814,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Fine if the fish is cooked right through and the dish is served hot.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Salmon quiche: fine if the fish is cooked right through and the dish is served hot."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: reheated
       verdict: ok
-      why: Reheat until steaming hot all the way through, and do not keep leftovers beyond 3 days.
-      sources: [ ameli-aliments-eviter, nhs-healthy-diet ]
+      why: "Salmon quiche: reheat until steaming hot all the way through, and do not keep leftovers beyond 3 days."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: fish-gratin
   category: fish
@@ -10906,12 +10838,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Fine if the fish is cooked right through and the dish is served hot.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Fish gratin: fine if the fish is cooked right through and the dish is served hot."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: reheated
       verdict: ok
-      why: Reheat until steaming hot all the way through, and do not keep leftovers beyond 3 days.
-      sources: [ ameli-aliments-eviter, nhs-healthy-diet ]
+      why: "Fish gratin: reheat until steaming hot all the way through, and do not keep leftovers beyond 3 days."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: salmon-pasta
   category: fish
@@ -10925,12 +10862,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Fine if the fish is cooked right through and the dish is served hot.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Salmon pasta: fine if the fish is cooked right through and the dish is served hot."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: reheated
       verdict: ok
-      why: Reheat until steaming hot all the way through, and do not keep leftovers beyond 3 days.
-      sources: [ ameli-aliments-eviter, nhs-healthy-diet ]
+      why: "Salmon pasta: reheat until steaming hot all the way through, and do not keep leftovers beyond 3 days."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: salmon-rice-bowl
   category: fish
@@ -10944,30 +10886,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Fine if the fish is cooked right through and the dish is served hot.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Salmon rice bowl: fine if the fish is cooked right through and the dish is served hot."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: reheated
       verdict: ok
-      why: Reheat until steaming hot all the way through, and do not keep leftovers beyond 3 days.
-      sources: [ ameli-aliments-eviter, nhs-healthy-diet ]
-  reviewed: 2026-11-13
-- id: fish-nuggets
-  category: fish
-  names:
-    - Fish nuggets
-    - Croquettes de poisson
-    - Bâtonnets pané
-    - Boulettes de poisson
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Fine if the fish is cooked right through and the dish is served hot.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: reheated
-      verdict: ok
-      why: Reheat until steaming hot all the way through, and do not keep leftovers beyond 3 days.
-      sources: [ ameli-aliments-eviter, nhs-healthy-diet ]
+      why: "Salmon rice bowl: reheat until steaming hot all the way through, and do not keep leftovers beyond 3 days."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: belon-oysters
   category: seafood
@@ -18011,12 +17940,21 @@
     - Sandwich thon crudités
     - Sandwich thon œuf
     - Sandwich thon tomate
+    - Tuna sandwich
+    - Sandwich au thon
+    - Sandwich thon mayo
+    - Pan bagnat
+    - Thon crudités sandwich
   local: true
   answers:
     - state: not_applicable
       verdict: careful
       why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: chicken-crudites-sandwich
   category: ready_meal

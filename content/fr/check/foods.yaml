@@ -902,20 +902,29 @@
     - Saumon cru
     - Tartare de saumon
     - Gravlax
+    - Darne de saumon
+    - Saumon poêlé
+    - Saumon au four
+    - Salmon steak
+    - Saumon grillé
+    - Saumon vapeur
+    - Saumon teriyaki
+    - Salmon fillet baked
     - Salmon
-  tips: [best]
+  tips:
+    - best
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: "Le saumon bien cuit est un bon choix, et il est recommandé de manger un poisson gras par semaine. Variez les poissons que vous mangez."
+      why: Le saumon bien cuit est un bon choix, et il est recommandé de manger un poisson gras par semaine. Variez les poissons que vous mangez.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
         - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: "Le saumon cru ou peu cuit (tartare, carpaccio, gravlax, mi-cuit) peut transmettre la listéria et des parasites. La congélation ne supprime pas la listéria."
+      why: Le saumon cru ou peu cuit (tartare, carpaccio, gravlax, mi-cuit) peut transmettre la listéria et des parasites. La congélation ne supprime pas la listéria.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -931,13 +940,44 @@
     - Hareng saur
     - Smoked trout
     - Lox
+    - Blinis au saumon fumé
+    - Blinis saumon
+    - Canapés saumon fumé
+    - Toast saumon fumé
+    - Smoked salmon blinis
+    - Bagel saumon fumé
+    - Bagel au saumon
+    - Bagel saumon cream cheese
+    - Bagel lox
+    - Smoked salmon bagel
+    - Tartine saumon fumé
+    - Tartine saumon avocat
+    - Tartine saumon fromage frais
+    - Toast saumon
+    - Smoked salmon tartine
+    - Chutes de saumon fumé
+    - Saumon fumé en dés
+    - Saumon fumé en lamelles
+    - Saumon fumé en petits morceaux
+    - Smoked salmon trimmings
+    - Pâtes au saumon fumé
+    - Tagliatelles saumon fumé
+    - Spaghetti saumon fumé
+    - Gratin saumon fumé
+    - Smoked salmon pasta
+    - Plateau de poissons fumés
+    - Assiette nordique
+    - Assiette de saumon fumé
+    - Assiette de poissons fumés
+    - Smoked fish platter
     - Smoked salmon
-  tips: [avoid]
+  tips:
+    - avoid
   local: true
   answers:
     - state: cured
       verdict: avoid
-      why: "Le poisson fumé se mange sans cuisson et peut transmettre la listéria, qui se développe au réfrigérateur. Les recommandations françaises demandent de l'éviter."
+      why: Le poisson fumé se mange sans cuisson et peut transmettre la listéria, qui se développe au réfrigérateur. Les recommandations françaises demandent de l'éviter.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -945,7 +985,7 @@
         - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
-      why: "Seulement s'il est cuit jusqu'à ce qu'il fume à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé à froid n'est pas sûr."
+      why: "Saumon fumé : seulement s'il est cuit jusqu'à ce qu'il fume à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé à froid n'est pas sûr."
       sources:
         - nhs-foods-to-avoid
         - cdc-listeria-meat-fish
@@ -989,26 +1029,36 @@
     - Steak de thon
     - Thon mi-cuit
     - Tuna steak
+    - Thon rouge
+    - Thon obèse
+    - Thon albacore frais
+    - Thon germon
+    - Bluefin tuna
+    - Germon
+    - Thon blanc
+    - Thon germon cuit
+    - Thon à la plancha
+    - Albacore
     - Fresh tuna
   local: true
   answers:
     - state: cooked
       verdict: careful
-      why: "Le thon accumule des polluants comme le mercure. Ne le mangez que de temps en temps, et toujours bien cuit à cœur."
+      why: Le thon accumule des polluants comme le mercure. Ne le mangez que de temps en temps, et toujours bien cuit à cœur.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
     - state: undercooked
       verdict: avoid
-      why: "Le thon saisi ou mi-cuit reste cru au centre, ce qui présente un risque de listéria et de parasites. Faites-le cuire à cœur."
+      why: Le thon saisi ou mi-cuit reste cru au centre, ce qui présente un risque de listéria et de parasites. Faites-le cuire à cœur.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
     - state: raw
       verdict: avoid
-      why: "Le thon cru (tartare, tataki, sashimi) peut transmettre la listéria et des parasites."
+      why: Le thon cru (tartare, tataki, sashimi) peut transmettre la listéria et des parasites.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -1023,12 +1073,22 @@
     - Thon au naturel
     - Salade de thon
     - Tuna salad
+    - Thon à l'huile d'olive
+    - Thon au naturel en boîte
+    - Thon en miettes
+    - Thon albacore en conserve
+    - Canned tuna in oil
+    - Thon entier en boîte
+    - Filet de thon en conserve
+    - Thon germon en boîte
+    - Thon blanc en conserve
+    - Canned tuna steaks
     - Canned tuna
   local: true
   answers:
     - state: canned
       verdict: careful
-      why: "Le thon contient du mercure, même en conserve. Ne le mangez que de temps en temps, et variez les poissons que vous choisissez."
+      why: Le thon contient du mercure, même en conserve. Ne le mangez que de temps en temps, et variez les poissons que vous choisissez.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -1041,25 +1101,37 @@
     - Sardines en boîte
     - Sardines à l'huile
     - Sardines grillées
+    - Sardines au barbecue
+    - Sardines fraîches
+    - Sardine fresh grilled
+    - Sardines à l'huile d'olive
+    - Sardines millésimées
+    - Canned sardines in oil
+    - Sardines à la tomate
+    - Sardines sauce tomate
+    - Sardines au citron
+    - Sardines au piment
+    - Canned sardines in tomato
     - Sardines
-  tips: [best]
+  tips:
+    - best
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: "Les sardines fraîches bien cuites sont un bon choix de poisson gras."
+      why: Les sardines fraîches bien cuites sont un bon choix de poisson gras.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
     - state: canned
       verdict: ok
-      why: "Les sardines en boîte sont acceptables et constituent un choix facile de poisson gras. Consommez-les une fois la boîte ouverte et réfrigérée."
+      why: Les sardines en boîte sont acceptables et constituent un choix facile de poisson gras. Consommez-les une fois la boîte ouverte et réfrigérée.
       sources:
         - ameli-aliments-eviter
         - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: "Les sardines crues ou marinées peuvent transmettre la listéria et des parasites."
+      why: Les sardines crues ou marinées peuvent transmettre la listéria et des parasites.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -1082,20 +1154,28 @@
     - Hake
     - Whiting
     - Pollock
+    - Cabillaud skrei
+    - Skrei
+    - Cabillaud de Norvège
+    - Pollock Atlantic
+    - Filet de cabillaud
+    - Pavé de cabillaud
+    - Cod fillet
     - Cod
-  tips: [best]
+  tips:
+    - best
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: "Le poisson blanc bien cuit est un bon choix, peu chargé en polluants. Visez deux portions de poisson par semaine."
+      why: Le poisson blanc bien cuit est un bon choix, peu chargé en polluants. Visez deux portions de poisson par semaine.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
         - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: "Le poisson blanc cru ou mariné peut transmettre la listéria et des parasites."
+      why: Le poisson blanc cru ou mariné peut transmettre la listéria et des parasites.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -1108,25 +1188,38 @@
     - Maquereau fumé
     - Maquereaux au vin blanc
     - Filet de maquereau
+    - Maquereau grillé
+    - Maquereau au four
+    - Maquereau poêlé
+    - Filets de maquereau cuits
+    - Grilled mackerel
+    - Filet de maquereau fumé
+    - Maquereau fumé au poivre
+    - Maquereau fumé du commerce
+    - Smoked mackerel
+    - Filets de maquereaux en boîte
+    - Maquereaux à la moutarde
+    - Maquereaux à la tomate
+    - Canned mackerel
     - Mackerel
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: "Le maquereau frais bien cuit est un bon poisson gras."
+      why: Le maquereau frais bien cuit est un bon poisson gras.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
     - state: cured
       verdict: avoid
-      why: "Le maquereau fumé ou mariné (au vin blanc) se mange sans cuisson et peut transmettre la listéria."
+      why: Le maquereau fumé ou mariné (au vin blanc) se mange sans cuisson et peut transmettre la listéria.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
         - cdc-listeria-meat-fish
     - state: canned
       verdict: ok
-      why: "Le maquereau en boîte est acceptable. Le poisson fumé en boîte fermée, conservé à température ambiante, est la version la plus sûre."
+      why: Le maquereau en boîte est acceptable. Le poisson fumé en boîte fermée, conservé à température ambiante, est la version la plus sûre.
       sources:
         - ameli-aliments-eviter
         - cdc-food-pregnant-women
@@ -1140,18 +1233,23 @@
     - Rollmops
     - Truite aux amandes
     - Herring
+    - Hareng fumé
+    - Kipper
+    - Hareng doux
+    - Hareng fumé à l'huile
+    - Smoked herring
     - Trout
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: "La truite et le hareng bien cuits sont de bons choix de poissons gras."
+      why: La truite et le hareng bien cuits sont de bons choix de poissons gras.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
     - state: cured
       verdict: avoid
-      why: "Les rollmops, le hareng mariné et la truite fumée se mangent sans cuisson et peuvent transmettre la listéria et des parasites."
+      why: Les rollmops, le hareng mariné et la truite fumée se mangent sans cuisson et peuvent transmettre la listéria et des parasites.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -1167,13 +1265,23 @@
     - Saumonette
     - Lamproie
     - Shark
+    - Espadon grillé
+    - Pavé d'espadon
+    - Espadon à la plancha
+    - Espadon mariné
+    - Swordfish steak
+    - Espadon fumé
+    - Carpaccio d'espadon fumé
+    - Espadon fumé en tranches
+    - Smoked swordfish
     - Swordfish
-  tips: [avoid]
+  tips:
+    - avoid
   local: true
   answers:
     - state: cooked
       verdict: avoid
-      why: "L'espadon, le marlin, le requin, la saumonette et la lamproie accumulent des polluants comme le mercure, même bien cuits. Évitez-les."
+      why: L'espadon, le marlin, le requin, la saumonette et la lamproie accumulent des polluants comme le mercure, même bien cuits. Évitez-les.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -1193,17 +1301,32 @@
     - Monkfish
     - Eel
     - Halibut
+    - Loup grillé
+    - Loup au fenouil
+    - Bar grillé
+    - Sea bass sauvage
+    - Bar commun
+    - Bar sauvage
+    - Loup de mer sauvage
+    - Bass sauvage
+    - Dorade royale
+    - Daurade royale
+    - Daurade grise
+    - Gilthead bream
+    - Dorade grillée
+    - Daurade grillée
+    - Daurade au four
+    - Sea bream grilled
     - Sea bass
   local: true
   answers:
     - state: cooked
       verdict: careful
-      why: "Ces gros poissons carnivores contiennent davantage de polluants. Ne les mangez que de temps en temps, et bien cuits à cœur."
+      why: "Bar : ameli et mangerbouger placent ce poisson parmi ceux à limiter pendant la grossesse, car ils accumulent des polluants comme le mercure. Mangez-le de temps en temps seulement, bien cuit."
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
-        - nhs-foods-to-avoid
-  reviewed: 2026-11-13
+  reviewed: 2026-11-14
 - id: anchovies
   category: fish
   names:
@@ -1212,18 +1335,28 @@
     - Anchois marinés
     - Boquerones
     - Pissaladière
+    - Anchois en boîte
+    - Anchois à l'huile en boîte
+    - Filets d'anchois en conserve
+    - Anchois salés en bocal
+    - Canned anchovies
+    - Anchois marinés au vinaigre
+    - Anchois blancs marinés
+    - Boquerones au vinaigre
+    - Anchois à la marinade
+    - Raw anchovies marinated
     - Anchovies
   local: true
   answers:
     - state: canned
       verdict: ok
-      why: "Les anchois en boîte ou en bocal sont acceptables en petites quantités. Le plat doit être cuit, ou les filets rincés. Les anchois frais marinés au vinaigre ne sont pas sûrs."
+      why: Les anchois en boîte ou en bocal sont acceptables en petites quantités. Le plat doit être cuit, ou les filets rincés. Les anchois frais marinés au vinaigre ne sont pas sûrs.
       sources:
         - ameli-aliments-eviter
         - cdc-food-pregnant-women
     - state: cured
       verdict: avoid
-      why: "Les anchois frais marinés au vinaigre et mangés crus peuvent transmettre des parasites et la listéria."
+      why: Les anchois frais marinés au vinaigre et mangés crus peuvent transmettre des parasites et la listéria.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -1236,6 +1369,10 @@
     - Nuggets de poisson
     - Croquette de poisson
     - Fish and chips
+    - Croquettes de poisson
+    - Bâtonnets pané
+    - Boulettes de poisson
+    - Fish nuggets
     - Fish fingers
   local: true
   answers:
@@ -8509,12 +8646,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Églefin : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Églefin : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: plaice
   category: fish
@@ -8528,12 +8671,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Plie : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Plie : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: turbot
   category: fish
@@ -8546,12 +8695,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Barbue : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Barbue : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: john-dory
   category: fish
@@ -8564,12 +8719,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Saint-Pierre : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Saint-Pierre : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: red-mullet
   category: fish
@@ -8583,12 +8744,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Rouget : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Rouget : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: gurnard
   category: fish
@@ -8601,12 +8768,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Grondin rouge : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Grondin rouge : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: mullet
   category: fish
@@ -8619,12 +8792,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Mulet : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Mulet : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pike-perch
   category: fish
@@ -8632,36 +8811,54 @@
     - Sandre
     - Sandre au beurre blanc
     - Filet de sandre
+    - Sandre de Loire
+    - Filet de sandre rôti
+    - Sandre rôti
+    - Zander
     - Pike-perch
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      verdict: careful
+      why: "Sandre : les sources utilisées ne citent pas ce poisson. Certains poissons prédateurs et d'eau douce figurent sur les listes françaises à limiter : mangez-le de temps en temps seulement, bien cuit, et demandez à votre sage-femme."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Sandre : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: perch
   category: fish
   names:
     - Perche
     - Filet de perche
     - Perche du Nil
+    - Perche de lac
+    - Filets de perche
+    - Filets de perche meunière
+    - Freshwater perch
     - Perch
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      verdict: careful
+      why: "Perche : les sources utilisées ne citent pas ce poisson. Certains poissons prédateurs et d'eau douce figurent sur les listes françaises à limiter : mangez-le de temps en temps seulement, bien cuit, et demandez à votre sage-femme."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Perche : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: nile-perch
   category: fish
   names:
@@ -8673,12 +8870,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Capitaine : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Capitaine : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: tilapia
   category: fish
@@ -8689,12 +8892,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Filet de tilapia : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Filet de tilapia : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pangasius
   category: fish
@@ -8706,12 +8915,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Panga : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Panga : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pollock-fillet
   category: fish
@@ -8719,34 +8934,27 @@
     - Filet de lieu
     - Colin d'Alaska surgelé
     - Lieu d'Alaska
+    - Colin lieu
+    - Colin lieu noir
+    - Lieu noir surgelé
+    - Coley
     - Pollock fillet
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Filet de lieu : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: cod-fillet
-  category: fish
-  names:
-    - Filet de cabillaud
-    - Pavé de cabillaud
-    - Cod fillet
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Filet de lieu : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: salt-cod
   category: fish
@@ -8760,12 +8968,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Morue salée : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Morue salée : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: skate-wing
   category: fish
@@ -8777,14 +8991,19 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      verdict: careful
+      why: "Aile de raie : ameli et mangerbouger placent ce poisson parmi ceux à limiter pendant la grossesse, car ils accumulent des polluants comme le mercure. Mangez-le de temps en temps seulement, bien cuit."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Aile de raie : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: monkfish-tail
   category: fish
   names:
@@ -8795,86 +9014,19 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      verdict: careful
+      why: "Queue de lotte : ameli et mangerbouger placent ce poisson parmi ceux à limiter pendant la grossesse, car ils accumulent des polluants comme le mercure. Mangez-le de temps en temps seulement, bien cuit."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: gilthead-bream
-  category: fish
-  names:
-    - Dorade royale
-    - Daurade royale
-    - Daurade grise
-    - Gilthead bream
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: sea-bream-grilled
-  category: fish
-  names:
-    - Dorade grillée
-    - Daurade grillée
-    - Daurade au four
-    - Sea bream grilled
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: sea-bass-sauvage
-  category: fish
-  names:
-    - Loup grillé
-    - Loup au fenouil
-    - Bar grillé
-    - Sea bass sauvage
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: pollock-atlantic
-  category: fish
-  names:
-    - Cabillaud skrei
-    - Skrei
-    - Cabillaud de Norvège
-    - Pollock Atlantic
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Queue de lotte : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: redfish
   category: fish
   names:
@@ -8886,12 +9038,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Sébaste : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Sébaste : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: conger
   category: fish
@@ -8903,14 +9061,19 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      verdict: careful
+      why: "Congre : les sources utilisées ne citent pas ce poisson. Certains poissons prédateurs et d'eau douce figurent sur les listes françaises à limiter : mangez-le de temps en temps seulement, bien cuit, et demandez à votre sage-femme."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Congre : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: whiting-blue
   category: fish
   names:
@@ -8922,12 +9085,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Poutassou : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Poutassou : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: hoki
   category: fish
@@ -8939,12 +9108,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Filet de hoki : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Filet de hoki : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: ling
   category: fish
@@ -8957,12 +9132,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Lingue : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Lingue : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: lumpfish
   category: fish
@@ -8975,47 +9156,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Lump : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: coley
-  category: fish
-  names:
-    - Colin lieu
-    - Colin lieu noir
-    - Lieu noir surgelé
-    - Coley
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: sardine-fresh-grilled
-  category: fish
-  names:
-    - Sardines au barbecue
-    - Sardines fraîches
-    - Sardine fresh grilled
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Lump : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: anchovy-fresh
   category: fish
@@ -9023,17 +9175,27 @@
     - Anchois frais
     - Anchois frits
     - Anchois grillés
+    - Anchois frits à l'huile
+    - Beignets d'anchois
+    - Anchois panés
+    - Fresh anchovies fried
     - Anchovy fresh
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Anchois frais : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Anchois frais : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: smelt
   category: fish
@@ -9046,12 +9208,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Éperlan : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Éperlan : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: whitebait
   category: fish
@@ -9064,12 +9232,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Blanchaille : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Blanchaille : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fish-soup
   category: fish
@@ -9077,17 +9251,39 @@
     - Soupe de poisson
     - Soupe de poissons de roche
     - Soupe de poisson rouille croûtons
+    - Matelote
+    - Matelote d'anguille
+    - Waterzooi de poisson
+    - Cotriade
+    - Fish stew
+    - Velouté de poisson
+    - Velouté de la mer
+    - Soupe de poisson crémeuse
+    - Chaudrée
+    - Bisque de poisson
+    - Fish soup creamy
+    - Soupe de poisson en boîte
+    - Soupe de poisson en bouteille
+    - Soupe de poissons en conserve
+    - Bisque en conserve
+    - Canned soup fish
     - Fish soup
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Soupe de poisson : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Soupe de poisson : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: bouillabaisse
   category: fish
@@ -9099,50 +9295,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Bouillabaisse marseillaise : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fish-stew
-  category: fish
-  names:
-    - Matelote
-    - Matelote d'anguille
-    - Waterzooi de poisson
-    - Cotriade
-    - Fish stew
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fish-and-potatoes
-  category: fish
-  names:
-    - Poisson pommes vapeur
-    - Poisson du jour
-    - Pavé de poisson
-    - Poisson meunière
-    - Fish and potatoes
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Bouillabaisse marseillaise : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fish-quenelles
   category: fish
@@ -9156,12 +9320,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Quenelles de brochet : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Quenelles de brochet : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fish-papillote
   category: fish
@@ -9170,17 +9340,28 @@
     - Cabillaud en papillote
     - Papillote de poisson
     - Papillote de saumon
+    - Poisson pommes vapeur
+    - Poisson du jour
+    - Pavé de poisson
+    - Poisson meunière
+    - Fish and potatoes
     - Fish papillote
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Poisson en papillote : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Poisson en papillote : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fish-en-croute
   category: fish
@@ -9194,12 +9375,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Saumon en croûte : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Saumon en croûte : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fish-pie
   category: fish
@@ -9208,17 +9395,27 @@
     - Hachis de poisson
     - Gratin de poisson
     - Brandade
+    - Pie au poisson
+    - Gratin de poisson aux crevettes
+    - Pie de saumon
+    - Fish pie cooked
     - Fish pie
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Parmentier de poisson : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Parmentier de poisson : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fish-curry
   category: fish
@@ -9232,12 +9429,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Curry de poisson : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Curry de poisson : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fresh-herring
   category: fish
@@ -9251,31 +9454,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Hareng frais : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: grilled-mackerel
-  category: fish
-  names:
-    - Maquereau grillé
-    - Maquereau au four
-    - Maquereau poêlé
-    - Filets de maquereau cuits
-    - Grilled mackerel
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Hareng frais : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pilchard
   category: fish
@@ -9288,48 +9478,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Sardine pilchard : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: salmon-steak
-  category: fish
-  names:
-    - Darne de saumon
-    - Saumon poêlé
-    - Saumon au four
-    - Salmon steak
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: salmon-fillet-baked
-  category: fish
-  names:
-    - Saumon grillé
-    - Saumon vapeur
-    - Saumon teriyaki
-    - Salmon fillet baked
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Sardine pilchard : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: arctic-char
   category: fish
@@ -9342,12 +9502,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Omble chevalier : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Omble chevalier : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: rainbow-trout
   category: fish
@@ -9356,53 +9522,27 @@
     - Truite de rivière
     - Truite meunière
     - Truite au bleu
+    - Truite poêlée
+    - Truite grillée
+    - Truite au four
+    - Trout almonds
     - Rainbow trout
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Truite arc-en-ciel : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: trout-almonds
-  category: fish
-  names:
-    - Truite poêlée
-    - Truite grillée
-    - Truite au four
-    - Trout almonds
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fresh-anchovies-fried
-  category: fish
-  names:
-    - Anchois frits à l'huile
-    - Beignets d'anchois
-    - Anchois panés
-    - Fresh anchovies fried
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: raw
-      verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Truite arc-en-ciel : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: sprat
   category: fish
@@ -9415,12 +9555,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Esprot : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Esprot : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: horse-mackerel
   category: fish
@@ -9434,50 +9580,18 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Chinchard : bien cuit, c'est un bon choix. Visez du poisson deux fois par semaine, en variant les espèces."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: bluefin-tuna
-  category: fish
-  names:
-    - Thon rouge
-    - Thon obèse
-    - Thon albacore frais
-    - Thon germon
-    - Bluefin tuna
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: Ce poisson accumule des polluants comme le mercure. Ne le mangez que de temps en temps, et toujours bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: raw
-      verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: albacore
-  category: fish
-  names:
-    - Germon
-    - Thon blanc
-    - Thon germon cuit
-    - Thon à la plancha
-    - Albacore
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: Ce poisson accumule des polluants comme le mercure. Ne le mangez que de temps en temps, et toujours bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: raw
-      verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Chinchard : le poisson cru, mariné ou peu cuit peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: bonito
   category: fish
@@ -9490,13 +9604,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Ce poisson accumule des polluants comme le mercure. Ne le mangez que de temps en temps, et toujours bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Bonite : ameli place ce poisson parmi ceux à limiter pendant la grossesse, car ils accumulent des polluants comme le mercure. Mangez-le de temps en temps seulement, bien cuit."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Bonite : cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: kingfish
   category: fish
   names:
@@ -9508,31 +9627,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Ce poisson accumule des polluants comme le mercure. Ne le mangez que de temps en temps, et toujours bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Thazard : les sources utilisées ne citent pas ce poisson. Certains poissons prédateurs et d'eau douce figurent sur les listes françaises à limiter : mangez-le de temps en temps seulement, bien cuit, et demandez à votre sage-femme."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: bass-sauvage
-  category: fish
-  names:
-    - Bar commun
-    - Bar sauvage
-    - Loup de mer sauvage
-    - Bass sauvage
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: Ce poisson accumule des polluants comme le mercure. Ne le mangez que de temps en temps, et toujours bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: raw
-      verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Thazard : cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: grouper
   category: fish
   names:
@@ -9544,13 +9650,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Ce poisson accumule des polluants comme le mercure. Ne le mangez que de temps en temps, et toujours bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Mérou : les sources utilisées ne citent pas ce poisson. Certains poissons prédateurs et d'eau douce figurent sur les listes françaises à limiter : mangez-le de temps en temps seulement, bien cuit, et demandez à votre sage-femme."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Mérou : cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: barracuda
   category: fish
   names:
@@ -9561,13 +9672,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Ce poisson accumule des polluants comme le mercure. Ne le mangez que de temps en temps, et toujours bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Brochet de mer : les sources utilisées ne citent pas ce poisson. Certains poissons prédateurs et d'eau douce figurent sur les listes françaises à limiter : mangez-le de temps en temps seulement, bien cuit, et demandez à votre sage-femme."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Brochet de mer : cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: mahi-mahi
   category: fish
   names:
@@ -9578,13 +9694,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Ce poisson accumule des polluants comme le mercure. Ne le mangez que de temps en temps, et toujours bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Dorade coryphène : les sources utilisées ne citent pas ce poisson. Certains poissons prédateurs et d'eau douce figurent sur les listes françaises à limiter : mangez-le de temps en temps seulement, bien cuit, et demandez à votre sage-femme."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Dorade coryphène : cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: snapper
   category: fish
   names:
@@ -9596,13 +9717,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Ce poisson accumule des polluants comme le mercure. Ne le mangez que de temps en temps, et toujours bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Vivaneau : les sources utilisées ne citent pas ce poisson. Certains poissons prédateurs et d'eau douce figurent sur les listes françaises à limiter : mangez-le de temps en temps seulement, bien cuit, et demandez à votre sage-femme."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Vivaneau : cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: grenadier
   category: fish
   names:
@@ -9613,13 +9739,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Ce poisson accumule des polluants comme le mercure. Ne le mangez que de temps en temps, et toujours bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Grenadier de roche : ameli place ce poisson parmi ceux à limiter pendant la grossesse, car ils accumulent des polluants comme le mercure. Mangez-le de temps en temps seulement, bien cuit."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Grenadier de roche : cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: sabre-fish
   category: fish
   names:
@@ -9631,13 +9762,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Ce poisson accumule des polluants comme le mercure. Ne le mangez que de temps en temps, et toujours bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Sabre : ameli place ce poisson parmi ceux à limiter pendant la grossesse, car ils accumulent des polluants comme le mercure. Mangez-le de temps en temps seulement, bien cuit."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Sabre : cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: roughy
   category: fish
   names:
@@ -9649,13 +9785,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Ce poisson accumule des polluants comme le mercure. Ne le mangez que de temps en temps, et toujours bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Empereur : ameli place ce poisson parmi ceux à limiter pendant la grossesse, car ils accumulent des polluants comme le mercure. Mangez-le de temps en temps seulement, bien cuit."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Empereur : cru ou peu cuit, il peut contenir la listeria et des parasites, en plus des polluants."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: dogfish
   category: fish
   names:
@@ -9666,24 +9807,12 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les grands poissons prédateurs comme celui-ci accumulent beaucoup de mercure et d'autres polluants, même bien cuits. Évitez-les.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: swordfish-steak
-  category: fish
-  names:
-    - Espadon grillé
-    - Pavé d'espadon
-    - Espadon à la plancha
-    - Espadon mariné
-    - Swordfish steak
-  local: true
-  answers:
-    - state: cooked
-      verdict: avoid
-      why: Les grands poissons prédateurs comme celui-ci accumulent beaucoup de mercure et d'autres polluants, même bien cuits. Évitez-les.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Roussette : ameli, mangerbouger et le NHS citent le requin parmi les poissons à éviter pendant la grossesse à cause de polluants comme le mercure, même bien cuit."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: blue-shark
   category: fish
   names:
@@ -9696,9 +9825,12 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les grands poissons prédateurs comme celui-ci accumulent beaucoup de mercure et d'autres polluants, même bien cuits. Évitez-les.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Peau bleue : ameli, mangerbouger et le NHS citent le requin parmi les poissons à éviter pendant la grossesse à cause de polluants comme le mercure, même bien cuit."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: lamprey
   category: fish
   names:
@@ -9710,9 +9842,11 @@
   answers:
     - state: cooked
       verdict: avoid
-      why: Les grands poissons prédateurs comme celui-ci accumulent beaucoup de mercure et d'autres polluants, même bien cuits. Évitez-les.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: Ameli et mangerbouger citent la lamproie parmi les poissons à éviter pendant la grossesse à cause des polluants, même bien cuite.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-14
 - id: barbel
   category: fish
   names:
@@ -9724,13 +9858,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les gros poissons d'eau douce accumulent des polluants. Mangez-en rarement, pas plus d'une fois tous les deux mois, et bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Barbeau : ameli classe ce poisson d'eau douce parmi ceux qui accumulent fortement les polluants et conseille de n'en manger qu'un repas tous les deux mois au plus. Toujours bien cuit."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Barbeau : cru ou peu cuit, il peut contenir la listeria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: bream
   category: fish
   names:
@@ -9742,13 +9881,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les gros poissons d'eau douce accumulent des polluants. Mangez-en rarement, pas plus d'une fois tous les deux mois, et bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Brème : ameli classe ce poisson d'eau douce parmi ceux qui accumulent fortement les polluants et conseille de n'en manger qu'un repas tous les deux mois au plus. Toujours bien cuit."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Brème : cru ou peu cuit, il peut contenir la listeria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: carp
   category: fish
   names:
@@ -9761,13 +9905,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les gros poissons d'eau douce accumulent des polluants. Mangez-en rarement, pas plus d'une fois tous les deux mois, et bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Carpe : ameli classe ce poisson d'eau douce parmi ceux qui accumulent fortement les polluants et conseille de n'en manger qu'un repas tous les deux mois au plus. Toujours bien cuit."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Carpe : cru ou peu cuit, il peut contenir la listeria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: wels-catfish
   category: fish
   names:
@@ -9779,13 +9928,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les gros poissons d'eau douce accumulent des polluants. Mangez-en rarement, pas plus d'une fois tous les deux mois, et bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Silure : ameli classe ce poisson d'eau douce parmi ceux qui accumulent fortement les polluants et conseille de n'en manger qu'un repas tous les deux mois au plus. Toujours bien cuit."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Silure : cru ou peu cuit, il peut contenir la listeria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: pike
   category: fish
   names:
@@ -9798,13 +9952,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les gros poissons d'eau douce accumulent des polluants. Mangez-en rarement, pas plus d'une fois tous les deux mois, et bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Brochet : ameli place ce poisson parmi ceux à limiter pendant la grossesse, car ils accumulent des polluants comme le mercure. Mangez-le de temps en temps seulement, bien cuit."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Brochet : cru ou peu cuit, il peut contenir la listeria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: roach
   category: fish
   names:
@@ -9816,49 +9975,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les gros poissons d'eau douce accumulent des polluants. Mangez-en rarement, pas plus d'une fois tous les deux mois, et bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Gardon : les sources utilisées ne citent pas ce poisson. Certains poissons prédateurs et d'eau douce figurent sur les listes françaises à limiter : mangez-le de temps en temps seulement, bien cuit, et demandez à votre sage-femme."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: zander
-  category: fish
-  names:
-    - Sandre de Loire
-    - Filet de sandre rôti
-    - Sandre rôti
-    - Zander
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: Les gros poissons d'eau douce accumulent des polluants. Mangez-en rarement, pas plus d'une fois tous les deux mois, et bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: raw
-      verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: freshwater-perch
-  category: fish
-  names:
-    - Perche de lac
-    - Filets de perche
-    - Filets de perche meunière
-    - Freshwater perch
-  local: true
-  answers:
-    - state: cooked
-      verdict: careful
-      why: Les gros poissons d'eau douce accumulent des polluants. Mangez-en rarement, pas plus d'une fois tous les deux mois, et bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-    - state: raw
-      verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Gardon : cru ou peu cuit, il peut contenir la listeria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: whitefish
   category: fish
   names:
@@ -9871,13 +9999,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les gros poissons d'eau douce accumulent des polluants. Mangez-en rarement, pas plus d'une fois tous les deux mois, et bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Corégone : les sources utilisées ne citent pas ce poisson. Certains poissons prédateurs et d'eau douce figurent sur les listes françaises à limiter : mangez-le de temps en temps seulement, bien cuit, et demandez à votre sage-femme."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Corégone : cru ou peu cuit, il peut contenir la listeria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: burbot
   category: fish
   names:
@@ -9889,13 +10022,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les gros poissons d'eau douce accumulent des polluants. Mangez-en rarement, pas plus d'une fois tous les deux mois, et bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Lotte de rivière : les sources utilisées ne citent pas ce poisson. Certains poissons prédateurs et d'eau douce figurent sur les listes françaises à limiter : mangez-le de temps en temps seulement, bien cuit, et demandez à votre sage-femme."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Lotte de rivière : cru ou peu cuit, il peut contenir la listeria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: sturgeon
   category: fish
   names:
@@ -9907,13 +10045,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les gros poissons d'eau douce accumulent des polluants. Mangez-en rarement, pas plus d'une fois tous les deux mois, et bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Esturgeon : les sources utilisées ne citent pas ce poisson. Certains poissons prédateurs et d'eau douce figurent sur les listes françaises à limiter : mangez-le de temps en temps seulement, bien cuit, et demandez à votre sage-femme."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Esturgeon : cru ou peu cuit, il peut contenir la listeria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: tench
   category: fish
   names:
@@ -9925,13 +10068,18 @@
   answers:
     - state: cooked
       verdict: careful
-      why: Les gros poissons d'eau douce accumulent des polluants. Mangez-en rarement, pas plus d'une fois tous les deux mois, et bien cuit.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Tanche : les sources utilisées ne citent pas ce poisson. Certains poissons prédateurs et d'eau douce figurent sur les listes françaises à limiter : mangez-le de temps en temps seulement, bien cuit, et demandez à votre sage-femme."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
     - state: raw
       verdict: avoid
-      why: Cru ou peu cuit, il peut contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Tanche : cru ou peu cuit, il peut contenir la listeria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: smoked-haddock
   category: fish
   names:
@@ -9942,49 +10090,19 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
+      why: "Églefin fumé : le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
-      why: Seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: smoked-herring
-  category: fish
-  names:
-    - Hareng fumé
-    - Kipper
-    - Hareng doux
-    - Hareng fumé à l'huile
-    - Smoked herring
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: careful
-      why: Seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: smoked-mackerel
-  category: fish
-  names:
-    - Filet de maquereau fumé
-    - Maquereau fumé au poivre
-    - Maquereau fumé du commerce
-    - Smoked mackerel
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: careful
-      why: Seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
+      why: "Églefin fumé : seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-meat-fish
+        - ameli-aliments-eviter
   reviewed: 2026-11-13
 - id: smoked-halibut
   category: fish
@@ -9997,30 +10115,19 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
+      why: "Flétan fumé : le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
-      why: Seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: smoked-swordfish
-  category: fish
-  names:
-    - Espadon fumé
-    - Carpaccio d'espadon fumé
-    - Espadon fumé en tranches
-    - Smoked swordfish
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: careful
-      why: Seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
+      why: "Flétan fumé : seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-meat-fish
+        - ameli-aliments-eviter
   reviewed: 2026-11-13
 - id: smoked-tuna
   category: fish
@@ -10033,12 +10140,19 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
+      why: "Thon fumé : le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
-      why: Seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
+      why: "Thon fumé : seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-meat-fish
+        - ameli-aliments-eviter
   reviewed: 2026-11-13
 - id: smoked-eel
   category: fish
@@ -10051,12 +10165,19 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
+      why: "Anguille fumée : le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
-      why: Seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
+      why: "Anguille fumée : seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-meat-fish
+        - ameli-aliments-eviter
   reviewed: 2026-11-13
 - id: smoked-sturgeon
   category: fish
@@ -10069,12 +10190,19 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
+      why: "Esturgeon fumé : le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
-      why: Seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
+      why: "Esturgeon fumé : seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-meat-fish
+        - ameli-aliments-eviter
   reviewed: 2026-11-13
 - id: smoked-cod
   category: fish
@@ -10088,12 +10216,19 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
+      why: "Cabillaud fumé : le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
-      why: Seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
+      why: "Cabillaud fumé : seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-meat-fish
+        - ameli-aliments-eviter
   reviewed: 2026-11-13
 - id: smoked-whitefish
   category: fish
@@ -10107,15 +10242,22 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
+      why: "Poisson blanc fumé : le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
-      why: Seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
+      why: "Poisson blanc fumé : seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-meat-fish
+        - ameli-aliments-eviter
   reviewed: 2026-11-13
 - id: smoked-scallop
-  category: fish
+  category: seafood
   names:
     - Saint-Jacques fumées
     - Noix de Saint-Jacques fumées
@@ -10127,143 +10269,47 @@
     - state: cured
       verdict: avoid
       why: Le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
       why: Seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: smoked-salmon-blinis
-  category: fish
-  names:
-    - Blinis au saumon fumé
-    - Blinis saumon
-    - Canapés saumon fumé
-    - Toast saumon fumé
-    - Smoked salmon blinis
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: careful
-      why: Seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: smoked-salmon-bagel
-  category: fish
-  names:
-    - Bagel saumon fumé
-    - Bagel au saumon
-    - Bagel saumon cream cheese
-    - Bagel lox
-    - Smoked salmon bagel
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: careful
-      why: Seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: smoked-salmon-pasta
-  category: fish
-  names:
-    - Pâtes au saumon fumé
-    - Tagliatelles saumon fumé
-    - Spaghetti saumon fumé
-    - Gratin saumon fumé
-    - Smoked salmon pasta
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: careful
-      why: Seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: smoked-salmon-tartine
-  category: fish
-  names:
-    - Tartine saumon fumé
-    - Tartine saumon avocat
-    - Tartine saumon fromage frais
-    - Toast saumon
-    - Smoked salmon tartine
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: careful
-      why: Seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: smoked-fish-platter
-  category: fish
-  names:
-    - Plateau de poissons fumés
-    - Assiette nordique
-    - Assiette de saumon fumé
-    - Assiette de poissons fumés
-    - Smoked fish platter
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: careful
-      why: Seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: smoked-salmon-trimmings
-  category: fish
-  names:
-    - Chutes de saumon fumé
-    - Saumon fumé en dés
-    - Saumon fumé en lamelles
-    - Saumon fumé en petits morceaux
-    - Smoked salmon trimmings
-  local: true
-  answers:
-    - state: cured
-      verdict: avoid
-      why: Le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: careful
-      why: Seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
-  reviewed: 2026-11-13
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-meat-fish
+        - ameli-aliments-eviter
+  reviewed: 2026-11-14
 - id: gravlax-cured
   category: fish
   names:
     - Saumon gravlax
     - Saumon mariné à l'aneth
     - Saumon mariné
+    - Saumon cru mariné
+    - Saumon à la scandinave
+    - Saumon mariné au citron vert
+    - Gravlax-style raw salmon
     - Gravlax cured
   local: true
   answers:
     - state: cured
       verdict: avoid
-      why: Le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-meat-fish, nhs-foods-to-avoid ]
+      why: "Saumon gravlax : le poisson fumé ou séché se mange sans cuisson et peut contenir la listeria, qui se développe au frigo. Les autorités françaises conseillent de l'éviter."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-meat-fish
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: careful
-      why: Seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr.
-      sources: [ nhs-foods-to-avoid, cdc-listeria-meat-fish, ameli-aliments-eviter ]
+      why: "Saumon gravlax : seulement s'il est cuit jusqu'à être fumant à cœur dans un plat chaud (gratin, quiche, pâtes). Le poisson fumé froid n'est pas sûr."
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-meat-fish
+        - ameli-aliments-eviter
   reviewed: 2026-11-13
 - id: salmon-tartare
   category: fish
@@ -10275,8 +10321,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Tartare de saumon à l'avocat : le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: tuna-tartare
   category: fish
@@ -10289,8 +10338,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Tartare de thon : le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: sea-bass-tartare
   category: fish
@@ -10304,8 +10356,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Tartare de bar : le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fish-carpaccio
   category: fish
@@ -10320,8 +10375,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Carpaccio de saumon : le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: tahitian-raw-fish
   category: fish
@@ -10330,13 +10388,26 @@
     - Poisson cru au lait de coco
     - Poisson cru tahitien
     - Ika mata
+    - Poisson mariné cru
+    - Saumon mariné cru
+    - Poisson mariné au citron
+    - Maquereau mariné cru
+    - Marinated raw fish
+    - Poisson en escabèche cru
+    - Escabèche froid
+    - Sardines marinées crues
+    - Sardines à l'escabèche froides
+    - Escabeche raw
     - Tahitian raw fish
   local: true
   answers:
     - state: raw
       verdict: avoid
-      why: Le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Poisson cru : le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: sashimi-platter
   category: fish
@@ -10350,8 +10421,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Sashimi de saumon : le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: salmon-nigiri
   category: fish
@@ -10365,8 +10439,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Nigiri saumon : le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: tuna-nigiri
   category: fish
@@ -10380,8 +10457,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Nigiri thon : le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: salmon-maki
   category: fish
@@ -10395,8 +10475,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Maki saumon : le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: spicy-tuna-roll
   category: fish
@@ -10409,8 +10492,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Rouleau thon épicé : le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: california-roll-raw
   category: fish
@@ -10424,8 +10510,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "California roll saumon : le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: temaki-salmon
   category: fish
@@ -10439,8 +10528,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Temaki saumon : le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: chirashi-bowl
   category: fish
@@ -10453,8 +10545,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Chirashi saumon : le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: fish-tataki
   category: fish
@@ -10466,23 +10561,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: marinated-raw-fish
-  category: fish
-  names:
-    - Poisson mariné cru
-    - Saumon mariné cru
-    - Poisson mariné au citron
-    - Maquereau mariné cru
-    - Marinated raw fish
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Tataki de thon : le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: raw-herring
   category: fish
@@ -10496,94 +10579,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: raw-anchovies-marinated
-  category: fish
-  names:
-    - Anchois marinés au vinaigre
-    - Anchois blancs marinés
-    - Boquerones au vinaigre
-    - Anchois à la marinade
-    - Raw anchovies marinated
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: gravlax-style-raw-salmon
-  category: fish
-  names:
-    - Saumon cru mariné
-    - Saumon à la scandinave
-    - Saumon mariné au citron vert
-    - Gravlax-style raw salmon
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: escabeche-raw
-  category: fish
-  names:
-    - Poisson en escabèche cru
-    - Escabèche froid
-    - Sardines marinées crues
-    - Sardines à l'escabèche froides
-    - Escabeche raw
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: canned-sardines-in-oil
-  category: fish
-  names:
-    - Sardines à l'huile d'olive
-    - Sardines millésimées
-    - Canned sardines in oil
-  local: true
-  answers:
-    - state: canned
-      verdict: ok
-      why: Le poisson en conserve est sans danger. Gardez une boîte ouverte au frigo et consommez-la vite.
-      sources: [ ameli-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: canned-sardines-in-tomato
-  category: fish
-  names:
-    - Sardines à la tomate
-    - Sardines sauce tomate
-    - Sardines au citron
-    - Sardines au piment
-    - Canned sardines in tomato
-  local: true
-  answers:
-    - state: canned
-      verdict: ok
-      why: Le poisson en conserve est sans danger. Gardez une boîte ouverte au frigo et consommez-la vite.
-      sources: [ ameli-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: canned-mackerel
-  category: fish
-  names:
-    - Filets de maquereaux en boîte
-    - Maquereaux à la moutarde
-    - Maquereaux à la tomate
-    - Canned mackerel
-  local: true
-  answers:
-    - state: canned
-      verdict: ok
-      why: Le poisson en conserve est sans danger. Gardez une boîte ouverte au frigo et consommez-la vite.
-      sources: [ ameli-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Hareng cru : le poisson cru peut contenir la listeria et des parasites. La congélation ne supprime pas la listeria. Choisissez une version cuite."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: canned-herring
   category: fish
@@ -10597,8 +10597,10 @@
   answers:
     - state: canned
       verdict: ok
-      why: Le poisson en conserve est sans danger. Gardez une boîte ouverte au frigo et consommez-la vite.
-      sources: [ ameli-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Harengs en boîte : le poisson en conserve est sans danger. Gardez une boîte ouverte au frigo et consommez-la vite."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: canned-salmon
   category: fish
@@ -10612,26 +10614,13 @@
   answers:
     - state: canned
       verdict: ok
-      why: Le poisson en conserve est sans danger. Gardez une boîte ouverte au frigo et consommez-la vite.
-      sources: [ ameli-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: canned-anchovies
-  category: fish
-  names:
-    - Anchois en boîte
-    - Anchois à l'huile en boîte
-    - Filets d'anchois en conserve
-    - Anchois salés en bocal
-    - Canned anchovies
-  local: true
-  answers:
-    - state: canned
-      verdict: ok
-      why: Le poisson en conserve est sans danger. Gardez une boîte ouverte au frigo et consommez-la vite.
-      sources: [ ameli-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Saumon en boîte : le poisson en conserve est sans danger. Gardez une boîte ouverte au frigo et consommez-la vite."
+      sources:
+        - ameli-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: canned-mussels
-  category: fish
+  category: seafood
   names:
     - Moules en boîte
     - Moules à l'escabèche en boîte
@@ -10643,10 +10632,12 @@
     - state: canned
       verdict: ok
       why: Le poisson en conserve est sans danger. Gardez une boîte ouverte au frigo et consommez-la vite.
-      sources: [ ameli-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      sources:
+        - ameli-aliments-eviter
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-14
 - id: canned-crab
-  category: fish
+  category: seafood
   names:
     - Crabe en boîte
     - Miettes de crabe en boîte
@@ -10658,23 +10649,10 @@
     - state: canned
       verdict: ok
       why: Le poisson en conserve est sans danger. Gardez une boîte ouverte au frigo et consommez-la vite.
-      sources: [ ameli-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: canned-soup-fish
-  category: fish
-  names:
-    - Soupe de poisson en boîte
-    - Soupe de poisson en bouteille
-    - Soupe de poissons en conserve
-    - Bisque en conserve
-    - Canned soup fish
-  local: true
-  answers:
-    - state: canned
-      verdict: ok
-      why: Le poisson en conserve est sans danger. Gardez une boîte ouverte au frigo et consommez-la vite.
-      sources: [ ameli-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      sources:
+        - ameli-aliments-eviter
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-14
 - id: sardine-rillettes-jar
   category: fish
   names:
@@ -10685,41 +10663,21 @@
     - Sardine rillettes jar
   local: true
   answers:
-    - state: canned
-      verdict: ok
-      why: Le poisson en conserve est sans danger. Gardez une boîte ouverte au frigo et consommez-la vite.
-      sources: [ ameli-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: canned-tuna-in-oil
-  category: fish
-  names:
-    - Thon à l'huile d'olive
-    - Thon au naturel en boîte
-    - Thon en miettes
-    - Thon albacore en conserve
-    - Canned tuna in oil
-  local: true
-  answers:
+    - state: cooked
+      verdict: avoid
+      why: Les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
     - state: canned
       verdict: careful
-      why: En conserve ou non, ce poisson contient davantage de polluants comme le mercure. Ne le mangez que de temps en temps.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: canned-tuna-steaks
-  category: fish
-  names:
-    - Thon entier en boîte
-    - Filet de thon en conserve
-    - Thon germon en boîte
-    - Thon blanc en conserve
-    - Canned tuna steaks
-  local: true
-  answers:
-    - state: canned
-      verdict: careful
-      why: En conserve ou non, ce poisson contient davantage de polluants comme le mercure. Ne le mangez que de temps en temps.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: Une boîte ou un bocal scellé, conservé à température ambiante, est plus sûr que la version fraîche. Évitez ceux à base de foie, et consommez-le vite une fois ouvert. Demandez à votre sage-femme en cas de doute.
+      sources:
+        - cdc-listeria-meat-fish
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: tuna-pasta
   category: fish
   names:
@@ -10728,21 +10686,6 @@
     - Tarte au thon
     - Pizza au thon
     - Tuna pasta
-  local: true
-  answers:
-    - state: canned
-      verdict: careful
-      why: En conserve ou non, ce poisson contient davantage de polluants comme le mercure. Ne le mangez que de temps en temps.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: tuna-sandwich
-  category: fish
-  names:
-    - Sandwich au thon
-    - Sandwich thon mayo
-    - Pan bagnat
-    - Thon crudités sandwich
-    - Tuna sandwich
   local: true
   answers:
     - state: canned
@@ -10762,8 +10705,11 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Les rillettes, mousses et préparations de poisson réfrigérées se mangent froides et peuvent contenir la listeria. Évitez-les.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Œufs de lump en pot : les rillettes, mousses et préparations de poisson réfrigérées se mangent froides et peuvent contenir la listeria. Évitez-les."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
   reviewed: 2026-11-13
 - id: sardine-spread
   category: fish
@@ -10777,8 +10723,11 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Les rillettes, mousses et préparations de poisson réfrigérées se mangent froides et peuvent contenir la listeria. Évitez-les.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Tartinade de sardines : les rillettes, mousses et préparations de poisson réfrigérées se mangent froides et peuvent contenir la listeria. Évitez-les."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
   reviewed: 2026-11-13
 - id: cod-liver-spread
   category: fish
@@ -10792,8 +10741,11 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Les rillettes, mousses et préparations de poisson réfrigérées se mangent froides et peuvent contenir la listeria. Évitez-les.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Pâté de foie de morue : les rillettes, mousses et préparations de poisson réfrigérées se mangent froides et peuvent contenir la listeria. Évitez-les."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
   reviewed: 2026-11-13
 - id: anchoiade
   category: fish
@@ -10806,8 +10758,11 @@
   answers:
     - state: cured
       verdict: avoid
-      why: Les rillettes, mousses et préparations de poisson réfrigérées se mangent froides et peuvent contenir la listeria. Évitez-les.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, cdc-listeria-prevention ]
+      why: "Tapenade aux anchois : les rillettes, mousses et préparations de poisson réfrigérées se mangent froides et peuvent contenir la listeria. Évitez-les."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
   reviewed: 2026-11-13
 - id: fish-tacos
   category: fish
@@ -10820,12 +10775,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger si le poisson est cuit à cœur et le plat servi chaud.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Tacos de poisson : sans danger si le poisson est cuit à cœur et le plat servi chaud."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, et ne gardez pas les restes plus de 3 jours.
-      sources: [ ameli-aliments-eviter, nhs-healthy-diet ]
+      why: "Tacos de poisson : réchauffez jusqu'à ce que ce soit fumant à cœur, et ne gardez pas les restes plus de 3 jours."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: fish-burger
   category: fish
@@ -10839,50 +10799,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger si le poisson est cuit à cœur et le plat servi chaud.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Burger de poisson : sans danger si le poisson est cuit à cœur et le plat servi chaud."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, et ne gardez pas les restes plus de 3 jours.
-      sources: [ ameli-aliments-eviter, nhs-healthy-diet ]
-  reviewed: 2026-11-13
-- id: fish-pie-cooked
-  category: fish
-  names:
-    - Pie au poisson
-    - Gratin de poisson aux crevettes
-    - Pie de saumon
-    - Fish pie cooked
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger si le poisson est cuit à cœur et le plat servi chaud.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, et ne gardez pas les restes plus de 3 jours.
-      sources: [ ameli-aliments-eviter, nhs-healthy-diet ]
-  reviewed: 2026-11-13
-- id: fish-soup-creamy
-  category: fish
-  names:
-    - Velouté de poisson
-    - Velouté de la mer
-    - Soupe de poisson crémeuse
-    - Chaudrée
-    - Bisque de poisson
-    - Fish soup creamy
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger si le poisson est cuit à cœur et le plat servi chaud.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, et ne gardez pas les restes plus de 3 jours.
-      sources: [ ameli-aliments-eviter, nhs-healthy-diet ]
+      why: "Burger de poisson : réchauffez jusqu'à ce que ce soit fumant à cœur, et ne gardez pas les restes plus de 3 jours."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: salmon-quiche
   category: fish
@@ -10896,12 +10823,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger si le poisson est cuit à cœur et le plat servi chaud.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Quiche au saumon : sans danger si le poisson est cuit à cœur et le plat servi chaud."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, et ne gardez pas les restes plus de 3 jours.
-      sources: [ ameli-aliments-eviter, nhs-healthy-diet ]
+      why: "Quiche au saumon : réchauffez jusqu'à ce que ce soit fumant à cœur, et ne gardez pas les restes plus de 3 jours."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: fish-gratin
   category: fish
@@ -10915,12 +10847,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger si le poisson est cuit à cœur et le plat servi chaud.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Gratin de saumon : sans danger si le poisson est cuit à cœur et le plat servi chaud."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, et ne gardez pas les restes plus de 3 jours.
-      sources: [ ameli-aliments-eviter, nhs-healthy-diet ]
+      why: "Gratin de saumon : réchauffez jusqu'à ce que ce soit fumant à cœur, et ne gardez pas les restes plus de 3 jours."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: salmon-pasta
   category: fish
@@ -10934,12 +10871,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger si le poisson est cuit à cœur et le plat servi chaud.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Pâtes au saumon cuit : sans danger si le poisson est cuit à cœur et le plat servi chaud."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, et ne gardez pas les restes plus de 3 jours.
-      sources: [ ameli-aliments-eviter, nhs-healthy-diet ]
+      why: "Pâtes au saumon cuit : réchauffez jusqu'à ce que ce soit fumant à cœur, et ne gardez pas les restes plus de 3 jours."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: salmon-rice-bowl
   category: fish
@@ -10953,30 +10895,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger si le poisson est cuit à cœur et le plat servi chaud.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Bol de riz saumon cuit : sans danger si le poisson est cuit à cœur et le plat servi chaud."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
     - state: reheated
       verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, et ne gardez pas les restes plus de 3 jours.
-      sources: [ ameli-aliments-eviter, nhs-healthy-diet ]
-  reviewed: 2026-11-13
-- id: fish-nuggets
-  category: fish
-  names:
-    - Croquettes de poisson
-    - Bâtonnets pané
-    - Boulettes de poisson
-    - Fish nuggets
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger si le poisson est cuit à cœur et le plat servi chaud.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-healthy-diet ]
-    - state: reheated
-      verdict: ok
-      why: Réchauffez jusqu'à ce que ce soit fumant à cœur, et ne gardez pas les restes plus de 3 jours.
-      sources: [ ameli-aliments-eviter, nhs-healthy-diet ]
+      why: "Bol de riz saumon cuit : réchauffez jusqu'à ce que ce soit fumant à cœur, et ne gardez pas les restes plus de 3 jours."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: belon-oysters
   category: seafood
@@ -18019,13 +17948,22 @@
     - Sandwich thon crudités
     - Sandwich thon œuf
     - Sandwich thon tomate
+    - Sandwich au thon
+    - Sandwich thon mayo
+    - Pan bagnat
+    - Thon crudités sandwich
+    - Tuna sandwich
     - Tuna mayo sandwich
   local: true
   answers:
     - state: not_applicable
       verdict: careful
       why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
-      sources: [ mangerbouger-aliments-eviter, nhs-foods-to-avoid, ameli-toxo-prevention, cdc-food-pregnant-women ]
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: chicken-crudites-sandwich
   category: ready_meal
