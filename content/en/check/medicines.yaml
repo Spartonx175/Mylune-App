@@ -4464,6 +4464,122 @@
         - crat-cafeine
         - nhs-foods-to-avoid
   reviewed: 2026-11-14
+- id: ginger-supplements
+  category: herbal
+  names:
+    - "Ginger supplements"
+    - "ginger capsules"
+    - "ginger tea"
+  active_ingredient: "Ginger (Zingiber officinale)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "NHS says ginger foods or drinks may ease nausea, but to check with a pharmacist before taking ginger supplements. ameli says ginger may calm the stomach only in mild nausea and to ask a pharmacist first. Limited data; ask before using capsules. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - nhs-vomiting-morning-sickness
+        - ameli-nausees
+  reviewed: 2026-11-14
+- id: cannabis-thc
+  category: other
+  names:
+    - "Cannabis (THC)"
+    - "marijuana"
+    - "weed"
+    - "hash"
+    - "joint"
+  active_ingredient: "Tetrahydrocannabinol (THC)"
+  tips: [avoid]
+  local: false
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "CRAT says it is better to avoid cannabis in pregnancy because THC crosses the placenta and it cannot be considered risk-free; no malformation effect is retained for first-trimester exposure, so a woman who used it early can be reassured. Regular heavy use is linked to prematurity, poor growth and later attention problems. NHS and ameli also advise against it. Talk to a doctor or midwife for support to stop. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-cannabis-grossesse
+        - ameli-drogues-grossesse
+        - nhs-illegal-drugs
+  reviewed: 2026-11-14
+- id: st-johns-wort
+  category: herbal
+  names:
+    - "St John's wort"
+    - "Hypericum"
+  active_ingredient: "Hypericum perforatum extract"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT finds no specific malformation or fetal effect so far (limited data, not teratogenic in animals), but prefers a better-studied antidepressant when one is needed, and warns it can make hormonal contraception ineffective. NHS advises pregnant women not to take herbal medicines. Do not stop or change a treatment for low mood without medical advice. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-millepertuis-grossesse
+        - ansm-medicaments-bons-reflexes
+  reviewed: 2026-11-14
+- id: homeopathy
+  category: other
+  names:
+    - "Homeopathy"
+    - "homeopathic granules"
+    - "homeopathic remedies"
+  active_ingredient: "Highly diluted preparations (various)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT reports no malformation or fetal effect linked to homeopathy and probably no major risk, but cannot give an opinion on its use because its efficacy cannot be judged with usual criteria; the main risk is delaying proper treatment. NHS says to tell your midwife, doctor or pharmacist and see a qualified practitioner who knows you are pregnant. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-homeopathie-grossesse
+        - nhs-medicines
+  reviewed: 2026-11-14
+- id: orlistat
+  category: weight-loss
+  names:
+    - "Orlistat"
+    - "weight-loss capsules"
+  active_ingredient: "Orlistat"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "CRAT prefers not to use orlistat in pregnancy and to stop it if pregnancy is discovered; first-trimester data show no malformation, so there is no need to panic after early exposure. NHS says it is not used in pregnancy because evidence of safety is lacking. Discuss any planned pregnancy with a doctor. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-orlistat
+        - nhs-orlistat
+  reviewed: 2026-11-14
+- id: liquorice
+  category: herbal
+  names:
+    - "Liquorice (tea"
+    - "sweets"
+    - "supplements)"
+  active_ingredient: "Glycyrrhizin (liquorice root)"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "ameli says liquorice in any form (teas, sweets, syrups, supplements) is contraindicated in pregnancy, citing blood pressure and heart rhythm effects. NHS says to avoid herbal teas containing liquorice root as they may harm the baby's development. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
+- id: aloe-vera-oral
+  category: herbal
+  names:
+    - "Aloe vera (oral"
+    - "juice"
+    - "laxative)"
+  active_ingredient: "Aloe (anthracenic compounds)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT says no studies exist in pregnant women exposed to aloe, though no malformation or fetal effect has been reported; for constipation it prefers bulk-forming or osmotic laxatives at any stage and warns against combination products and long-term stimulant use. Ask before using. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-laxatifs-anthracenic
+        - crat-laxatifs
+  reviewed: 2026-11-14
 - id: flu-vaccine
   category: vaccines
   names:
@@ -4938,4 +5054,170 @@
         - nhs-vaccines-pregnancy
         - nhs-travelling
         - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: articaine
+  category: anaesthetics
+  names:
+    - "Articaine (dental anaesthetic)"
+    - "Septanest"
+    - "Ultracaine"
+  active_ingredient: "articaine (with or without adrenaline)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT says articaine can be used at any stage of pregnancy, also with adrenaline. Published first-trimester data are very limited but no malformation linked to it has been reported. The CRAT dental anaesthesia page also lists it as usable at any stage. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-articaine
+        - crat-anesthesie-dentaire
+  reviewed: 2026-11-14
+- id: lidocaine-dental
+  category: anaesthetics
+  names:
+    - "Lidocaine (local anaesthetic"
+    - "dental)"
+    - "Xylocaine"
+    - "Lidocaine with adrenaline"
+  active_ingredient: "lidocaine (alone, or with prilocaine, with or without adrenaline)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT says lidocaine can be used at any stage of pregnancy and by any route; many pregnant women have been exposed with no malformation or fetal effect attributed to it. For dental anaesthesia the CRAT lists it, with or without adrenaline, at any stage. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-lidocaine
+        - crat-anesthesie-dentaire
+  reviewed: 2026-11-14
+- id: nitrous-oxide-meopa
+  category: anaesthetics
+  names:
+    - "Nitrous oxide / gas and air"
+    - "Entonox"
+    - "Meopa"
+    - "laughing gas"
+  active_ingredient: "nitrous oxide (equimolar mix with oxygen)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT says nitrous oxide, alone or as the oxygen mix (MEOPA), can be used for anaesthesia or pain relief at any stage of pregnancy, with no malformation linked to it. The NHS lists gas and air (nitrous oxide and oxygen) as a pain relief option in labour; it can cause light-headedness, nausea or sleepiness. Recreational inhalation is a different matter and is not covered here. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-protoxyde-azote
+        - nhs-pain-relief-labour
+  reviewed: 2026-11-14
+- id: imaging-ultrasound
+  category: imaging
+  names:
+    - "Ultrasound scan"
+    - "sonogram"
+    - "echography"
+  active_ingredient: "sound waves (no ionising radiation)"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "The NHS says ultrasound is considered safe because it uses sound waves, not radiation like X-rays or CT. The CRAT says that when the uterus would be in an X-ray beam, ultrasound or MRI is preferred when suitable. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - nhs-ultrasound-scan
+        - crat-radiations-ionisantes
+  reviewed: 2026-11-14
+- id: imaging-mri
+  category: imaging
+  names:
+    - "MRI scan without contrast"
+  active_ingredient: "magnetic fields (no ionising radiation)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT says an MRI for the mother, placenta or baby can be considered for any body region and at any stage of pregnancy; no effect on the baby has been identified. It is preferred over X-ray exams when the uterus would be in the beam. Always tell the radiographer you are pregnant. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-irm-grossesse
+        - crat-radiations-ionisantes
+  reviewed: 2026-11-14
+- id: imaging-gadolinium
+  category: imaging
+  names:
+    - "MRI contrast (gadolinium)"
+    - "gadoterate"
+    - "Dotarem"
+    - "gadobutrol"
+    - "Gadovist"
+  active_ingredient: "gadolinium-based contrast agents"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT says that if gadolinium is medically necessary it can be used at any stage, preferably avoiding gadobenate; no specific malformation or fetal harm has been linked to it. The MRI page says contrast follows the gadolinium guidance. Only if the doctor judges it necessary; say you are pregnant. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-gadolinium
+        - crat-irm-grossesse
+  reviewed: 2026-11-14
+- id: imaging-iodinated-contrast
+  category: imaging
+  names:
+    - "CT contrast (iodinated)"
+    - "iodinated contrast dye"
+    - "Iomeron"
+    - "Omnipaque"
+  active_ingredient: "water-soluble iodinated contrast agents"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT says water-soluble iodinated contrast can be used at any stage and by any route; no malformation or effect on the newborn's thyroid has been identified in usual single-dose conditions. The NHS CT page asks you to tell the hospital if you are or might be pregnant. Only when the scan is needed. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-contraste-iode
+        - nhs-ct-scan
+  reviewed: 2026-11-14
+- id: imaging-xray
+  category: imaging
+  names:
+    - "X-ray (radiography)"
+    - "chest X-ray"
+    - "limb X-ray"
+  active_ingredient: "ionising radiation"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT says common diagnostic X-ray exams give uterine doses well below the accepted pregnancy threshold; when the uterus is outside the beam (skull, chest, limbs) the exam can go ahead, ideally with a lead apron. The NHS asks you to tell staff if you are or might be pregnant. Always say you are pregnant; the team decides. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-radiations-ionisantes
+        - crat-radiodiagnostic-connaissances
+        - nhs-xray
+  reviewed: 2026-11-14
+- id: imaging-ct
+  category: imaging
+  names:
+    - "CT scan"
+    - "CAT scan"
+    - "computed tomography"
+  active_ingredient: "ionising radiation"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT says chest CT angiography and head scans leave the uterus outside the beam; an abdominal-pelvic CT, with the uterus in the beam, can usually go ahead when needed for the mother's care, with dose-reduction decided case by case, and MRI or ultrasound are preferred if suitable. The NHS asks you to tell the hospital about pregnancy before a CT. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-radiations-ionisantes
+        - crat-radiodiagnostic-connaissances
+        - nhs-ct-scan
+  reviewed: 2026-11-14
+- id: timolol-eye-drops
+  category: eye-ear
+  names:
+    - "Timolol eye drops (glaucoma)"
+    - "Timoptol"
+    - "Nyogel"
+  active_ingredient: "timolol (beta-blocker eye drops)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT says timolol eye drops can be used at any stage and are the preferred beta-blocker eye drop; gel or long-acting forms reduce absorption, as does pressing the inner corner of the eye for a couple of minutes. Do not stop glaucoma treatment without medical advice. Tell the baby's team if used until birth. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-timolol
+        - crat-antiglaucomateux
   reviewed: 2026-11-14

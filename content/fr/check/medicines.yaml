@@ -4724,6 +4724,127 @@
         - crat-cafeine
         - nhs-foods-to-avoid
   reviewed: 2026-11-14
+- id: ginger-supplements
+  category: herbal
+  names:
+    - "Gingembre (gélules"
+    - "compléments)"
+    - "tisane de gingembre"
+    - "Ginger supplements"
+  active_ingredient: "Ginger (Zingiber officinale)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS indique que le gingembre en aliment ou boisson peut soulager les nausées, mais de demander l'avis d'un pharmacien avant des compléments au gingembre. L'Assurance Maladie le réserve aux nausées légères, avec avis du pharmacien. Données limitées : demander avant de prendre des gélules. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-vomiting-morning-sickness
+        - ameli-nausees
+  reviewed: 2026-11-14
+- id: cannabis-thc
+  category: other
+  names:
+    - "Cannabis (THC)"
+    - "marijuana"
+    - "haschich"
+    - "joint"
+    - "shit"
+    - "Cannabis (THC)"
+  active_ingredient: "Tetrahydrocannabinol (THC)"
+  tips: [avoid]
+  local: false
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Le CRAT recommande d'éviter le cannabis pendant la grossesse : le THC passe le placenta et on ne peut pas le considérer sans risque. Aucun effet malformatif n'est retenu pour une exposition au premier trimestre, donc une femme qui en a consommé tôt peut être rassurée. Une consommation régulière et importante est associée à la prématurité, au retard de croissance et à des troubles de l'attention plus tard. Le NHS et ameli le déconseillent aussi. En parler à un médecin ou une sage-femme pour être aidée à arrêter. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-cannabis-grossesse
+        - ameli-drogues-grossesse
+        - nhs-illegal-drugs
+  reviewed: 2026-11-14
+- id: st-johns-wort
+  category: herbal
+  names:
+    - "Millepertuis"
+    - "St John's wort"
+  active_ingredient: "Hypericum perforatum extract"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT ne retient aucun effet malformatif ni foetal spécifique à ce jour (données limitées, non tératogène chez l'animal), mais préfère un antidépresseur mieux connu si un traitement est nécessaire, et signale qu'il peut rendre une contraception hormonale inefficace. Le NHS déconseille les plantes médicinales pendant la grossesse. Ne pas arrêter ni modifier un traitement d'un état dépressif sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-millepertuis-grossesse
+        - ansm-medicaments-bons-reflexes
+  reviewed: 2026-11-14
+- id: homeopathy
+  category: other
+  names:
+    - "Homéopathie"
+    - "granules homéopathiques"
+    - "Homeopathy"
+  active_ingredient: "Highly diluted preparations (various)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT ne signale ni malformation ni effet foetal lié à l'homéopathie et pas de risque majeur probable, mais ne peut pas se prononcer sur son usage car son efficacité ne peut pas être évaluée avec les critères habituels ; le principal risque est de retarder un vrai traitement. Le NHS conseille d'en parler à sa sage-femme, son médecin ou son pharmacien et de consulter un praticien qualifié informé de la grossesse. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-homeopathie-grossesse
+        - nhs-medicines
+  reviewed: 2026-11-14
+- id: orlistat
+  category: weight-loss
+  names:
+    - "Orlistat"
+    - "Xenical"
+    - "Alli"
+    - "Orlistat"
+  active_ingredient: "Orlistat"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Le CRAT préfère ne pas utiliser l'orlistat pendant la grossesse et l'arrêter si une grossesse est découverte ; les données du premier trimestre ne montrent pas de malformation, donc pas d'inquiétude après une exposition précoce. Le NHS indique qu'il n'est pas utilisé pendant la grossesse faute de preuves de sécurité. En parler à un médecin si une grossesse est prévue. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-orlistat
+        - nhs-orlistat
+  reviewed: 2026-11-14
+- id: liquorice
+  category: herbal
+  names:
+    - "Réglisse (tisane"
+    - "bonbons"
+    - "compléments)"
+    - "Liquorice (tea"
+  active_ingredient: "Glycyrrhizin (liquorice root)"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "L'Assurance Maladie indique que la réglisse sous toutes ses formes (tisanes, bonbons, sirops, compléments) est contre-indiquée pendant la grossesse, en raison d'effets sur la tension et le rythme cardiaque. Le NHS déconseille les tisanes contenant de la racine de réglisse, qui peut nuire au développement du bébé. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - ameli-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
+- id: aloe-vera-oral
+  category: herbal
+  names:
+    - "Aloès / aloe vera (voie orale"
+    - "laxatif)"
+    - "Aloe vera (oral"
+  active_ingredient: "Aloe (anthracenic compounds)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique qu'il n'existe pas d'étude chez la femme enceinte exposée à l'aloès, sans effet malformatif ou foetal rapporté ; en cas de constipation il préfère les laxatifs de lest ou osmotiques à tout terme, et déconseille les associations et l'usage prolongé des laxatifs stimulants. Demander conseil avant usage. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-laxatifs-anthracenic
+        - crat-laxatifs
+  reviewed: 2026-11-14
 - id: flu-vaccine
   category: vaccines
   names:
@@ -5234,4 +5355,180 @@
         - nhs-vaccines-pregnancy
         - nhs-travelling
         - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: articaine
+  category: anaesthetics
+  names:
+    - "Articaïne (anesthésie dentaire)"
+    - "Septanest"
+    - "Ultracaïne"
+    - "Articaine (dental anaesthetic)"
+  active_ingredient: "articaine (with or without adrenaline)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique que l'articaïne peut être utilisée à tout stade de la grossesse, y compris avec de l'adrénaline. Les données du 1er trimestre sont très limitées mais aucune malformation liée au produit n'a été rapportée. La fiche CRAT sur l'anesthésie dentaire la cite aussi comme utilisable à tout terme. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-articaine
+        - crat-anesthesie-dentaire
+  reviewed: 2026-11-14
+- id: lidocaine-dental
+  category: anaesthetics
+  names:
+    - "Lidocaïne (anesthésie locale"
+    - "dentaire)"
+    - "Xylocaïne"
+    - "Lidocaïne adrénalinée"
+    - "Lidocaine (local anaesthetic"
+  active_ingredient: "lidocaine (alone, or with prilocaine, with or without adrenaline)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique que la lidocaïne peut être utilisée à tout terme et par toutes les voies ; de nombreuses grossesses exposées n'ont montré aucun effet malformatif ou fœtal attribuable. Pour l'anesthésie dentaire, elle est utilisable avec ou sans adrénaline, quel que soit le terme. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-lidocaine
+        - crat-anesthesie-dentaire
+  reviewed: 2026-11-14
+- id: nitrous-oxide-meopa
+  category: anaesthetics
+  names:
+    - "Protoxyde d'azote"
+    - "MEOPA"
+    - "Kalinox"
+    - "Entonox"
+    - "gaz hilarant médical"
+    - "Nitrous oxide / gas and air"
+  active_ingredient: "nitrous oxide (equimolar mix with oxygen)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique que le protoxyde d'azote, seul ou en mélange avec l'oxygène (MEOPA), peut être utilisé pour l'anesthésie ou l'analgésie à tout stade de la grossesse, sans malformation liée. Le NHS cite le gaz et air (protoxyde d'azote et oxygène) comme option antidouleur pendant le travail ; il peut causer vertiges, nausées ou somnolence. L'usage récréatif est un autre sujet, non traité ici. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-protoxyde-azote
+        - nhs-pain-relief-labour
+  reviewed: 2026-11-14
+- id: imaging-ultrasound
+  category: imaging
+  names:
+    - "Échographie"
+    - "Ultrasound scan"
+  active_ingredient: "sound waves (no ionising radiation)"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le NHS indique que l'échographie est considérée comme sûre car elle utilise des ultrasons et non des rayonnements comme les rayons X ou le scanner. Le CRAT précise que, si l'utérus serait dans le faisceau, l'échographie ou l'IRM sont préférées lorsqu'elles conviennent. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-ultrasound-scan
+        - crat-radiations-ionisantes
+  reviewed: 2026-11-14
+- id: imaging-mri
+  category: imaging
+  names:
+    - "IRM sans produit de contraste"
+    - "MRI scan without contrast"
+  active_ingredient: "magnetic fields (no ionising radiation)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique qu'une IRM pour la mère, le placenta ou le fœtus peut être envisagée pour toute région et à tout terme ; aucun effet sur l'enfant n'a été identifié. Elle est préférée aux examens par rayons X lorsque l'utérus serait dans le faisceau. Signalez toujours votre grossesse au manipulateur. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-irm-grossesse
+        - crat-radiations-ionisantes
+  reviewed: 2026-11-14
+- id: imaging-gadolinium
+  category: imaging
+  names:
+    - "Produit de contraste IRM (gadolinium)"
+    - "gadotérate"
+    - "Dotarem"
+    - "gadobutrol"
+    - "Gadovist"
+    - "MRI contrast (gadolinium)"
+  active_ingredient: "gadolinium-based contrast agents"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique que, si le gadolinium est nécessaire, il peut être utilisé à tout terme, en évitant si possible le gadobénate ; aucune malformation ni atteinte fœtale spécifique n'a été liée. La fiche IRM renvoie à cette règle. Uniquement si le médecin le juge nécessaire ; signalez la grossesse. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-gadolinium
+        - crat-irm-grossesse
+  reviewed: 2026-11-14
+- id: imaging-iodinated-contrast
+  category: imaging
+  names:
+    - "Produit de contraste iodé (scanner)"
+    - "Iomeron"
+    - "Omnipaque"
+    - "Iopamiron"
+    - "CT contrast (iodinated)"
+  active_ingredient: "water-soluble iodinated contrast agents"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique que les produits de contraste iodés hydrosolubles peuvent être utilisés à tout terme et par toute voie ; aucune malformation ni effet sur la thyroïde du nouveau-né n'a été identifié en conditions usuelles. La page scanner du NHS demande de signaler une grossesse possible. Uniquement si l'examen est nécessaire. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-contraste-iode
+        - nhs-ct-scan
+  reviewed: 2026-11-14
+- id: imaging-xray
+  category: imaging
+  names:
+    - "Radiographie"
+    - "radio du thorax"
+    - "radio d'un membre"
+    - "X-ray (radiography)"
+  active_ingredient: "ionising radiation"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique que les radiographies diagnostiques courantes délivrent à l'utérus des doses bien inférieures au seuil admis en grossesse ; si l'utérus est hors du faisceau (crâne, thorax, membres), l'examen est possible, si possible avec un tablier de plomb. Le NHS demande de signaler une grossesse possible. Signalez toujours la grossesse ; l'équipe décide. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-radiations-ionisantes
+        - crat-radiodiagnostic-connaissances
+        - nhs-xray
+  reviewed: 2026-11-14
+- id: imaging-ct
+  category: imaging
+  names:
+    - "Scanner"
+    - "tomodensitométrie"
+    - "TDM"
+    - "CT scan"
+  active_ingredient: "ionising radiation"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique que l'angioscanner thoracique et le scanner du crâne laissent l'utérus hors du faisceau ; un scanner abdomino-pelvien, utérus dans le faisceau, peut en général être réalisé s'il est nécessaire pour la mère, avec réduction de dose décidée au cas par cas ; IRM ou échographie sont préférées si elles conviennent. Le NHS demande de signaler la grossesse avant un scanner. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-radiations-ionisantes
+        - crat-radiodiagnostic-connaissances
+        - nhs-ct-scan
+  reviewed: 2026-11-14
+- id: timolol-eye-drops
+  category: eye-ear
+  names:
+    - "Timolol collyre (glaucome)"
+    - "Timoptol"
+    - "Nyogel"
+    - "Timabak"
+    - "Timolol eye drops (glaucoma)"
+  active_ingredient: "timolol (beta-blocker eye drops)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique que le timolol en collyre peut être utilisé à tout terme et est le bêtabloquant oculaire préféré ; les formes gel ou LP et la compression de l'angle interne de l'œil pendant 2 minutes limitent le passage dans le sang. N'arrêtez pas un traitement du glaucome sans avis médical. Informer l'équipe néonatale si utilisé jusqu'à l'accouchement. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-timolol
+        - crat-antiglaucomateux
   reviewed: 2026-11-14
