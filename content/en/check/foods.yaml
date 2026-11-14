@@ -1720,6 +1720,20 @@
     - Omelette baveuse
     - Œuf Benedict
     - Œufs au bacon
+    - Truffle scrambled eggs
+    - Brouillade aux truffes
+    - Œufs brouillés truffés
+    - Œufs brouillés à la truffe
+    - Œufs brouillés au fromage
+    - Sunny-side up
+    - Œuf au plat sur le plat
+    - Œufs au jambon
+    - Œufs miroirs
+    - Free range egg
+    - Œuf de poule plein air
+    - Œufs bio
+    - Œufs fermiers
+    - Œufs de poules élevées en plein air
   local: true
   answers:
     - state: undercooked
@@ -1744,6 +1758,10 @@
     - Œufs mimosa
     - Œuf mayonnaise
     - Œufs mayo
+    - Egg mayo
+    - Œufs mayonnaise
+    - Œuf mayo
+    - Œuf dur mayonnaise
   local: true
   answers:
     - state: cooked
@@ -1767,7 +1785,17 @@
     - Sauce Caesar
     - Mayonnaise maison
     - Mayonnaise du commerce
-  tips: *a1
+    - Aioli sauce
+    - Aïoli maison
+    - Aïoli du commerce
+    - Rouille
+    - Garlic sauce
+    - Sauce à l'ail
+    - Sauce blanche kebab
+    - Sauce algérienne
+    - Sauce biggy
+  tips:
+    - avoid
   local: true
   answers:
     - state: raw
@@ -1794,18 +1822,28 @@
     - Sauce mousseline
     - Zabaglione
     - Sauce béarnaise
+    - Hollandaise bottle
+    - Hollandaise en sachet
+    - Hollandaise en bouteille
+    - Sauce hollandaise du commerce
+    - Béarnaise du commerce
+    - Hollandaise restaurant
+    - Sauce hollandaise restaurant
+    - Sauce béarnaise restaurant
+    - Béarnaise maison
+    - Hollandaise maison
   local: true
   answers:
     - state: undercooked
       verdict: avoid
-      why: These sauces are warmed egg yolks, not cooked firm, and can carry salmonella. A restaurant version made fresh is not safe.
+      why: "Hollandaise: these sauces are warmed egg yolks, not cooked firm, and can carry salmonella. A restaurant version made fresh is not safe."
       sources:
         - mangerbouger-aliments-eviter
         - cdc-food-pregnant-women
         - nhs-healthy-diet
     - state: pasteurised
       verdict: careful
-      why: A sauce made with pasteurised egg and heated until thick may be fine. Ask the kitchen, and skip it if unsure.
+      why: "Hollandaise: a sauce made with pasteurised egg and heated until thick may be fine. Ask the kitchen, and skip it if unsure."
       sources:
         - cdc-food-pregnant-women
         - mangerbouger-aliments-eviter
@@ -1819,6 +1857,26 @@
     - Mousse au chocolat du commerce
     - Chocolate pot
     - Pot de crème
+    - Raw egg mousse
+    - Mousse au citron
+    - Mousse au caramel
+    - Mousse aux fruits
+    - Mousse de fruits
+    - Coffee mousse
+    - Mousse au café
+    - Mousse au chocolat blanc
+    - Mousse au chocolat au lait
+    - Mousse au spéculoos
+    - Chantilly mousse
+    - Chantilly aux œufs
+    - Crème chiboust
+    - Chiboust
+    - Crème légère
+    - Chocolate mousse with rum
+    - Mousse au chocolat au rhum
+    - Mousse au chocolat à l'orange liqueur
+    - Mousse au chocolat au Grand Marnier
+    - Mousse au chocolat à l'alcool
   local: true
   answers:
     - state: raw
@@ -1843,6 +1901,16 @@
     - Mascarpone dessert
     - Dessert italien
     - Zuppa inglese
+    - Tiramisu variants
+    - Tiramisu aux fraises
+    - Tiramisu au spéculoos
+    - Tiramisu au citron
+    - Tiramisu au chocolat
+    - Tiramisu with liqueur
+    - Tiramisu à l'amaretto
+    - Tiramisu au marsala
+    - Tiramisu au café et liqueur
+    - Tiramisu à l'alcool
   local: true
   answers:
     - state: raw
@@ -1870,6 +1938,15 @@
     - Île flottante
     - Crème caramel
     - Pastry cream
+    - Egg cream dessert
+    - Crème dessert aux œufs
+    - Crème dessert vanille aux œufs
+    - Crème dessert maison
+    - Meringue raw cream
+    - Meringue italienne crue
+    - Meringue suisse crue
+    - Meringue non cuite
+    - Chantilly meringuée
   local: true
   answers:
     - state: cooked
@@ -1897,6 +1974,19 @@
     - Raw cake batter
     - Pâte à gâteau crue
     - Cookie dough
+    - Sponge cake
+    - Génoise
+    - Gâteau de Savoie
+    - Biscuit de Savoie
+    - Biscuit cuillère
+    - Pound cake
+    - Quatre-quarts
+    - Quatre quarts
+    - Gâteau marbré
+    - Cookie dough raw
+    - Pâte à cookie crue
+    - Pâte à cookie
+    - Pâte à tarte aux œufs crue
   local: true
   answers:
     - state: cooked
@@ -2040,6 +2130,11 @@
     - Glace italienne
     - Gelato
     - Soft ice
+    - Home-made ice cream
+    - Glace maison
+    - Crème glacée maison
+    - Glace à la vanille maison
+    - Glace aux œufs
   local: true
   answers:
     - state: pasteurised
@@ -11868,12 +11963,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Omelette plain: a runny yolk or wet white can carry salmonella. Cook until both are firm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Omelette plain: cooked until the white and yolk are firm, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: omelette-ham-cheese
   category: egg
@@ -11887,12 +11988,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Omelette ham cheese: a runny yolk or wet white can carry salmonella. Cook until both are firm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Omelette ham cheese: cooked until the white and yolk are firm, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: omelette-mother-poulard
   category: egg
@@ -11906,12 +12013,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Omelette mother Poulard: a runny yolk or wet white can carry salmonella. Cook until both are firm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Omelette mother Poulard: cooked until the white and yolk are firm, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: egg-en-cocotte
   category: egg
@@ -11924,12 +12037,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Egg en cocotte: a runny yolk or wet white can carry salmonella. Cook until both are firm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Egg en cocotte: cooked until the white and yolk are firm, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: egg-benedict
   category: egg
@@ -11943,31 +12062,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: sunny-side-up
-  category: egg
-  names:
-    - Sunny-side up
-    - Œuf au plat sur le plat
-    - Œufs au jambon
-    - Œufs miroirs
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Egg Benedict: these sauces are warmed egg yolks, not cooked firm, and can carry salmonella. A restaurant version made fresh is not safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
+        - nhs-healthy-diet
+    - state: pasteurised
+      verdict: careful
+      why: "Egg Benedict: a sauce made with pasteurised egg and heated until thick may be fine. Ask the kitchen, and skip it if unsure."
+      sources:
+        - cdc-food-pregnant-women
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-14
 - id: shakshuka
   category: egg
   names:
@@ -11979,12 +12085,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Shakshuka: a runny yolk or wet white can carry salmonella. Cook until both are firm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Shakshuka: cooked until the white and yolk are firm, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: egg-bagel
   category: egg
@@ -11998,30 +12110,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Egg bagel: a runny yolk or wet white can carry salmonella. Cook until both are firm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: egg-mayo
-  category: egg
-  names:
-    - Egg mayo
-    - Œufs mayonnaise
-    - Œuf mayo
-    - Œuf dur mayonnaise
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Egg bagel: cooked until the white and yolk are firm, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: egg-fried-rice
   category: egg
@@ -12035,15 +12135,21 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Egg-fried rice: a runny yolk or wet white can carry salmonella. Cook until both are firm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Egg-fried rice: cooked until the white and yolk are firm, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: egg-noodles
-  category: egg
+  category: grain
   names:
     - Egg noodles
     - Nouilles sautées aux œufs
@@ -12052,53 +12158,13 @@
     - Chow mein
   local: true
   answers:
-    - state: undercooked
-      verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
     - state: cooked
       verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: egg-salad
-  category: egg
-  names:
-    - Egg salad
-    - Salade d'œufs
-    - Salade niçoise œuf
-    - Salade lyonnaise œuf poché
-    - Salade au lard œuf poché
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: truffle-scrambled-eggs
-  category: egg
-  names:
-    - Truffle scrambled eggs
-    - Brouillade aux truffes
-    - Œufs brouillés truffés
-    - Œufs brouillés à la truffe
-    - Œufs brouillés au fromage
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: Egg noodles have egg in the dough and are cooked until firm, so they are fine. Eat them hot, or reheated until steaming.
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-healthy-diet
+  reviewed: 2026-11-14
 - id: tamago
   category: egg
   names:
@@ -12111,12 +12177,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Tamago: a runny yolk or wet white can carry salmonella. Cook until both are firm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Tamago: cooked until the white and yolk are firm, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: eggs-in-purgatory
   category: egg
@@ -12130,12 +12202,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Eggs in purgatory: a runny yolk or wet white can carry salmonella. Cook until both are firm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Eggs in purgatory: cooked until the white and yolk are firm, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: egg-curry
   category: egg
@@ -12149,12 +12227,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Egg curry: a runny yolk or wet white can carry salmonella. Cook until both are firm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Egg curry: cooked until the white and yolk are firm, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: quail-egg
   category: egg
@@ -12168,12 +12252,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Quail egg: a runny yolk or wet white can carry salmonella. Cook until both are firm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Quail egg: cooked until the white and yolk are firm, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: duck-egg
   category: egg
@@ -12187,31 +12277,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Duck egg: a runny yolk or wet white can carry salmonella. Cook until both are firm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: free-range-egg
-  category: egg
-  names:
-    - Free range egg
-    - Œuf de poule plein air
-    - Œufs bio
-    - Œufs fermiers
-    - Œufs de poules élevées en plein air
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Duck egg: cooked until the white and yolk are firm, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: lava-cake
   category: egg
@@ -12224,12 +12301,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Lava cake: a runny yolk or wet white can carry salmonella. Cook until both are firm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Lava cake: cooked until the white and yolk are firm, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: pasta-carbonara
   category: egg
@@ -12243,12 +12326,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: A runny yolk or wet white can carry salmonella. Cook until both are firm.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Pasta carbonara: a runny yolk or wet white can carry salmonella. Cook until both are firm."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked until the white and yolk are firm, it is safe.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Pasta carbonara: cooked until the white and yolk are firm, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: souffle
   category: egg
@@ -12262,8 +12351,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Baked or cooked right through, it is safe.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Soufflé: baked or cooked right through, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: egg-tart-baked
   category: egg
@@ -12277,8 +12368,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Baked or cooked right through, it is safe.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Egg tart baked: baked or cooked right through, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: meringue
   category: egg
@@ -12291,8 +12384,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Baked or cooked right through, it is safe.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Meringue: baked or cooked right through, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: macaron
   category: egg
@@ -12305,23 +12400,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Baked or cooked right through, it is safe.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: sponge-cake
-  category: egg
-  names:
-    - Sponge cake
-    - Génoise
-    - Gâteau de Savoie
-    - Biscuit de Savoie
-    - Biscuit cuillère
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Baked or cooked right through, it is safe.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Macaron: baked or cooked right through, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: french-toast
   category: egg
@@ -12335,8 +12417,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Baked or cooked right through, it is safe.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "French toast: baked or cooked right through, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: waffles
   category: egg
@@ -12349,8 +12433,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Baked or cooked right through, it is safe.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Waffles: baked or cooked right through, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: choux-pastry
   category: egg
@@ -12360,16 +12446,6 @@
     - Gougères
     - Profiteroles
     - Chouquettes
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Baked or cooked right through, it is safe.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: pate-a-choux-dessert
-  category: egg
-  names:
     - Pâte à choux dessert
     - Éclair au chocolat
     - Religieuse
@@ -12379,8 +12455,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Baked or cooked right through, it is safe.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Choux pastry: baked or cooked right through, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: egg-bread
   category: egg
@@ -12394,8 +12472,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Baked or cooked right through, it is safe.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Egg bread: baked or cooked right through, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: clafoutis
   category: egg
@@ -12408,8 +12488,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Baked or cooked right through, it is safe.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Clafoutis: baked or cooked right through, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: savoury-cake
   category: egg
@@ -12423,8 +12505,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Baked or cooked right through, it is safe.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Savoury cake: baked or cooked right through, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: egg-based-flan
   category: egg
@@ -12433,12 +12517,19 @@
     - Flan
     - Flan nature
     - Flan aux œufs
+    - Custard tart
+    - Tarte à la crème
+    - Flan pâtissier à la crème
+    - Tarte au flan
+    - Pastel de nata
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Baked or cooked right through, it is safe.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Egg-based flan: baked or cooked right through, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cannele
   category: egg
@@ -12451,11 +12542,13 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Baked or cooked right through, it is safe.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Cannelé: baked or cooked right through, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: kouign-amann
-  category: egg
+  category: sweet
   names:
     - Kouign-amann
     - Kouign amann
@@ -12465,23 +12558,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Baked or cooked right through, it is safe.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: pound-cake
-  category: egg
-  names:
-    - Pound cake
-    - Quatre-quarts
-    - Quatre quarts
-    - Gâteau marbré
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Baked or cooked right through, it is safe.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: This baked pastry is made with butter, sugar and flour and has no raw egg. Fine as an occasional treat; it is not a food the sources restrict.
+      sources:
+        - nhs-healthy-diet
+  reviewed: 2026-11-14
 - id: fondant-chocolate-cooked
   category: egg
   names:
@@ -12494,8 +12574,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Baked or cooked right through, it is safe.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Fondant chocolate cooked: baked or cooked right through, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: tarte-au-citron-meringuee-cooked
   category: egg
@@ -12509,8 +12591,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Baked or cooked right through, it is safe.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Tarte au citron meringuée cooked: baked or cooked right through, it is safe."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: lemon-curd
   category: egg
@@ -12523,15 +12607,19 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked until thick or set, it is safe. Keep it chilled and eat it within a day or two.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Lemon curd: cooked until thick or set, it is safe. Keep it chilled and eat it within a day or two."
+      sources:
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: If made with raw egg and not cooked, it can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Lemon curd: if made with raw egg and not cooked, it can carry salmonella."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: rice-pudding
-  category: egg
+  category: sweet
   names:
     - Rice pudding
     - Riz au lait
@@ -12542,13 +12630,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked until thick or set, it is safe. Keep it chilled and eat it within a day or two.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: If made with raw egg and not cooked, it can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
-  reviewed: 2026-11-13
+      why: Rice pudding is rice cooked in milk with sugar. It is fine when made with pasteurised milk and eaten chilled before its date.
+      sources:
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: floating-island
   category: egg
   names:
@@ -12560,31 +12645,16 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked until thick or set, it is safe. Keep it chilled and eat it within a day or two.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Floating island: cooked until thick or set, it is safe. Keep it chilled and eat it within a day or two."
+      sources:
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: If made with raw egg and not cooked, it can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
-  reviewed: 2026-11-13
-- id: custard-tart
-  category: egg
-  names:
-    - Custard tart
-    - Tarte à la crème
-    - Flan pâtissier à la crème
-    - Tarte au flan
-    - Pastel de nata
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked until thick or set, it is safe. Keep it chilled and eat it within a day or two.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: If made with raw egg and not cooked, it can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Floating island: if made with raw egg and not cooked, it can carry salmonella."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: bread-pudding
   category: egg
@@ -12598,12 +12668,16 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked until thick or set, it is safe. Keep it chilled and eat it within a day or two.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Bread pudding: cooked until thick or set, it is safe. Keep it chilled and eat it within a day or two."
+      sources:
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: If made with raw egg and not cooked, it can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Bread pudding: if made with raw egg and not cooked, it can carry salmonella."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: pastry-cream-tart
   category: egg
@@ -12613,20 +12687,6 @@
     - Tarte aux fraises
     - Tarte aux fruits frais
     - Tarte au citron crème
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked until thick or set, it is safe. Keep it chilled and eat it within a day or two.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: If made with raw egg and not cooked, it can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
-  reviewed: 2026-11-13
-- id: vanilla-slice
-  category: egg
-  names:
     - Vanilla slice
     - Mille-feuille
     - Millefeuille
@@ -12636,12 +12696,16 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked until thick or set, it is safe. Keep it chilled and eat it within a day or two.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Pastry cream tart: cooked until thick or set, it is safe. Keep it chilled and eat it within a day or two."
+      sources:
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: If made with raw egg and not cooked, it can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Pastry cream tart: if made with raw egg and not cooked, it can carry salmonella."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: eclair-coffee
   category: egg
@@ -12651,20 +12715,6 @@
     - Éclair à la vanille
     - Éclair à la pistache
     - Éclair au caramel
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked until thick or set, it is safe. Keep it chilled and eat it within a day or two.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: If made with raw egg and not cooked, it can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
-  reviewed: 2026-11-13
-- id: cream-puff
-  category: egg
-  names:
     - Cream puff
     - Chou à la crème
     - Chou chantilly
@@ -12674,15 +12724,19 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked until thick or set, it is safe. Keep it chilled and eat it within a day or two.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Éclair coffee: cooked until thick or set, it is safe. Keep it chilled and eat it within a day or two."
+      sources:
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: If made with raw egg and not cooked, it can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Éclair coffee: if made with raw egg and not cooked, it can carry salmonella."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: panna-cotta
-  category: egg
+  category: dairy
   names:
     - Panna cotta
     - Panna cotta maison
@@ -12690,73 +12744,23 @@
     - Panacotta
   local: true
   answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked until thick or set, it is safe. Keep it chilled and eat it within a day or two.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: If made with raw egg and not cooked, it can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
-  reviewed: 2026-11-13
-- id: egg-cream-dessert
-  category: egg
-  names:
-    - Egg cream dessert
-    - Crème dessert aux œufs
-    - Crème dessert vanille aux œufs
-    - Crème dessert maison
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked until thick or set, it is safe. Keep it chilled and eat it within a day or two.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: If made with raw egg and not cooked, it can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
-  reviewed: 2026-11-13
-- id: raw-egg-mousse
-  category: egg
-  names:
-    - Raw egg mousse
-    - Mousse au citron
-    - Mousse au caramel
-    - Mousse aux fruits
-    - Mousse de fruits
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Made with raw or barely cooked egg, it can carry salmonella. Skip the home-made or restaurant version.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
     - state: pasteurised
       verdict: ok
-      why: Shop-bought versions or ones made with pasteurised egg are considered safe. Check the label for alcohol.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: coffee-mousse
-  category: egg
-  names:
-    - Coffee mousse
-    - Mousse au café
-    - Mousse au chocolat blanc
-    - Mousse au chocolat au lait
-    - Mousse au spéculoos
-  local: true
-  answers:
-    - state: raw
+      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+    - state: unpasteurised
       verdict: avoid
-      why: Made with raw or barely cooked egg, it can carry salmonella. Skip the home-made or restaurant version.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: ok
-      why: Shop-bought versions or ones made with pasteurised egg are considered safe. Check the label for alcohol.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: cheesecake-no-bake
-  category: egg
+  category: dairy
   names:
     - Cheesecake no bake
     - Cheesecake sans cuisson
@@ -12765,15 +12769,21 @@
     - Cheesecake à froid
   local: true
   answers:
-    - state: raw
-      verdict: avoid
-      why: Made with raw or barely cooked egg, it can carry salmonella. Skip the home-made or restaurant version.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
     - state: pasteurised
       verdict: ok
-      why: Shop-bought versions or ones made with pasteurised egg are considered safe. Check the label for alcohol.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: Made from pasteurised milk, it is safe. This is how nearly all supermarket versions are made.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+    - state: unpasteurised
+      verdict: avoid
+      why: Made from raw (unpasteurised) milk, it can carry listeria. Avoid farm and market versions unless the label says pasteurised.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: parfait-glace
   category: egg
   names:
@@ -12785,106 +12795,17 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Made with raw or barely cooked egg, it can carry salmonella. Skip the home-made or restaurant version.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Parfait glacé: made with raw or barely cooked egg, it can carry salmonella. Skip the home-made or restaurant version."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: ok
-      why: Shop-bought versions or ones made with pasteurised egg are considered safe. Check the label for alcohol.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: home-made-ice-cream
-  category: egg
-  names:
-    - Home-made ice cream
-    - Glace maison
-    - Crème glacée maison
-    - Glace à la vanille maison
-    - Glace aux œufs
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Made with raw or barely cooked egg, it can carry salmonella. Skip the home-made or restaurant version.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: ok
-      why: Shop-bought versions or ones made with pasteurised egg are considered safe. Check the label for alcohol.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: tiramisu-variants
-  category: egg
-  names:
-    - Tiramisu variants
-    - Tiramisu aux fraises
-    - Tiramisu au spéculoos
-    - Tiramisu au citron
-    - Tiramisu au chocolat
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Made with raw or barely cooked egg, it can carry salmonella. Skip the home-made or restaurant version.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: ok
-      why: Shop-bought versions or ones made with pasteurised egg are considered safe. Check the label for alcohol.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cookie-dough-raw
-  category: egg
-  names:
-    - Cookie dough raw
-    - Pâte à cookie crue
-    - Pâte à cookie
-    - Pâte à tarte aux œufs crue
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Made with raw or barely cooked egg, it can carry salmonella. Skip the home-made or restaurant version.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: ok
-      why: Shop-bought versions or ones made with pasteurised egg are considered safe. Check the label for alcohol.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: chantilly-mousse
-  category: egg
-  names:
-    - Chantilly mousse
-    - Chantilly aux œufs
-    - Crème chiboust
-    - Chiboust
-    - Crème légère
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Made with raw or barely cooked egg, it can carry salmonella. Skip the home-made or restaurant version.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: ok
-      why: Shop-bought versions or ones made with pasteurised egg are considered safe. Check the label for alcohol.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: meringue-raw-cream
-  category: egg
-  names:
-    - Meringue raw cream
-    - Meringue italienne crue
-    - Meringue suisse crue
-    - Meringue non cuite
-    - Chantilly meringuée
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Made with raw or barely cooked egg, it can carry salmonella. Skip the home-made or restaurant version.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: ok
-      why: Shop-bought versions or ones made with pasteurised egg are considered safe. Check the label for alcohol.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Parfait glacé: shop-bought versions or ones made with pasteurised egg are considered safe. Check the label for alcohol."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: raw-egg-yolk
   category: egg
@@ -12894,58 +12815,16 @@
     - Jaune d'œuf sur steak tartare
     - Œuf cru
     - Blanc d'œuf cru
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Made with raw or barely cooked egg, it can carry salmonella. Skip the home-made or restaurant version.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: ok
-      why: Shop-bought versions or ones made with pasteurised egg are considered safe. Check the label for alcohol.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: raw-egg-white-drink
-  category: egg
-  names:
     - Raw egg white drink
     - Blanc d'œuf en cocktail
     - Cocktail au blanc d'œuf
     - Whisky sour
     - Pisco sour
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Made with raw or barely cooked egg, it can carry salmonella. Skip the home-made or restaurant version.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: ok
-      why: Shop-bought versions or ones made with pasteurised egg are considered safe. Check the label for alcohol.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: raw-egg-smoothie
-  category: egg
-  names:
     - Raw egg smoothie
     - Smoothie à l'œuf cru
     - Œuf cru dans le lait
     - Lait de poule maison
     - Shake aux œufs crus
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Made with raw or barely cooked egg, it can carry salmonella. Skip the home-made or restaurant version.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: ok
-      why: Shop-bought versions or ones made with pasteurised egg are considered safe. Check the label for alcohol.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: tartare-yolk
-  category: egg
-  names:
     - Tartare yolk
     - Tartare avec jaune d'œuf
     - Steak tartare œuf
@@ -12955,12 +12834,17 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Made with raw or barely cooked egg, it can carry salmonella. Skip the home-made or restaurant version.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Raw egg yolk: made with raw or barely cooked egg, it can carry salmonella. Skip the home-made or restaurant version."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: ok
-      why: Shop-bought versions or ones made with pasteurised egg are considered safe. Check the label for alcohol.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Raw egg yolk: shop-bought versions or ones made with pasteurised egg are considered safe. Check the label for alcohol."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: eggnog
   category: egg
@@ -12972,8 +12856,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw egg can carry salmonella, and this recipe usually contains alcohol too. Skip it.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Eggnog: raw egg can carry salmonella, and this recipe usually contains alcohol too. Skip it."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: zabaglione-with-marsala
   category: egg
@@ -12987,52 +12874,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw egg can carry salmonella, and this recipe usually contains alcohol too. Skip it.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
-  reviewed: 2026-11-13
-- id: chocolate-mousse-with-rum
-  category: egg
-  names:
-    - Chocolate mousse with rum
-    - Mousse au chocolat au rhum
-    - Mousse au chocolat à l'orange liqueur
-    - Mousse au chocolat au Grand Marnier
-    - Mousse au chocolat à l'alcool
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Raw egg can carry salmonella, and this recipe usually contains alcohol too. Skip it.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
-  reviewed: 2026-11-13
-- id: tiramisu-with-liqueur
-  category: egg
-  names:
-    - Tiramisu with liqueur
-    - Tiramisu à l'amaretto
-    - Tiramisu au marsala
-    - Tiramisu au café et liqueur
-    - Tiramisu à l'alcool
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Raw egg can carry salmonella, and this recipe usually contains alcohol too. Skip it.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
-  reviewed: 2026-11-13
-- id: baba-au-rhum-egg
-  category: egg
-  names:
-    - Baba au rhum egg
-    - Savarin au rhum
-    - Savarin
-    - Baba
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Raw egg can carry salmonella, and this recipe usually contains alcohol too. Skip it.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Zabaglione with Marsala: raw egg can carry salmonella, and this recipe usually contains alcohol too. Skip it."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: burger-sauce
   category: egg
@@ -13046,12 +12892,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Bottled or tubed shop-bought sauce is made with pasteurised egg and is considered safe. Keep opened jars chilled.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Burger sauce: bottled or tubed shop-bought sauce is made with pasteurised egg and is considered safe. Keep opened jars chilled."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Home-made or restaurant versions often use raw egg yolk and can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Burger sauce: home-made or restaurant versions often use raw egg yolk and can carry salmonella."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: andalouse-sauce
   category: egg
@@ -13065,12 +12916,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Bottled or tubed shop-bought sauce is made with pasteurised egg and is considered safe. Keep opened jars chilled.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Andalouse sauce: bottled or tubed shop-bought sauce is made with pasteurised egg and is considered safe. Keep opened jars chilled."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Home-made or restaurant versions often use raw egg yolk and can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Andalouse sauce: home-made or restaurant versions often use raw egg yolk and can carry salmonella."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: tartar-sauce
   category: egg
@@ -13083,12 +12939,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Bottled or tubed shop-bought sauce is made with pasteurised egg and is considered safe. Keep opened jars chilled.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Tartar sauce: bottled or tubed shop-bought sauce is made with pasteurised egg and is considered safe. Keep opened jars chilled."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Home-made or restaurant versions often use raw egg yolk and can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Tartar sauce: home-made or restaurant versions often use raw egg yolk and can carry salmonella."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: caesar-dressing
   category: egg
@@ -13100,66 +12961,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Bottled or tubed shop-bought sauce is made with pasteurised egg and is considered safe. Keep opened jars chilled.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Caesar dressing: bottled or tubed shop-bought sauce is made with pasteurised egg and is considered safe. Keep opened jars chilled."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Home-made or restaurant versions often use raw egg yolk and can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: aioli-sauce
-  category: egg
-  names:
-    - Aioli sauce
-    - Aïoli maison
-    - Aïoli du commerce
-    - Rouille
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Bottled or tubed shop-bought sauce is made with pasteurised egg and is considered safe. Keep opened jars chilled.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: Home-made or restaurant versions often use raw egg yolk and can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: garlic-sauce
-  category: egg
-  names:
-    - Garlic sauce
-    - Sauce à l'ail
-    - Sauce blanche kebab
-    - Sauce algérienne
-    - Sauce biggy
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Bottled or tubed shop-bought sauce is made with pasteurised egg and is considered safe. Keep opened jars chilled.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: Home-made or restaurant versions often use raw egg yolk and can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: remoulade-celery
-  category: egg
-  names:
-    - Remoulade celery
-    - Sauce rémoulade
-    - Rémoulade de céleri
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Bottled or tubed shop-bought sauce is made with pasteurised egg and is considered safe. Keep opened jars chilled.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: Home-made or restaurant versions often use raw egg yolk and can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Caesar dressing: home-made or restaurant versions often use raw egg yolk and can carry salmonella."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: gribiche
   category: egg
@@ -13171,50 +12983,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Bottled or tubed shop-bought sauce is made with pasteurised egg and is considered safe. Keep opened jars chilled.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Gribiche: bottled or tubed shop-bought sauce is made with pasteurised egg and is considered safe. Keep opened jars chilled."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Home-made or restaurant versions often use raw egg yolk and can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: hollandaise-bottle
-  category: egg
-  names:
-    - Hollandaise bottle
-    - Hollandaise en sachet
-    - Hollandaise en bouteille
-    - Sauce hollandaise du commerce
-    - Béarnaise du commerce
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Bottled or tubed shop-bought sauce is made with pasteurised egg and is considered safe. Keep opened jars chilled.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: Home-made or restaurant versions often use raw egg yolk and can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: hollandaise-restaurant
-  category: egg
-  names:
-    - Hollandaise restaurant
-    - Sauce hollandaise restaurant
-    - Sauce béarnaise restaurant
-    - Béarnaise maison
-    - Hollandaise maison
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Bottled or tubed shop-bought sauce is made with pasteurised egg and is considered safe. Keep opened jars chilled.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: Home-made or restaurant versions often use raw egg yolk and can carry salmonella.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Gribiche: home-made or restaurant versions often use raw egg yolk and can carry salmonella."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: skimmed-milk
   category: dairy
@@ -18114,12 +17893,18 @@
     - Salade de céleri
     - Céleri rémoulade du commerce
     - Rémoulade de céleri du traiteur
+    - Remoulade celery
+    - Sauce rémoulade
+    - Rémoulade de céleri
   local: true
   answers:
     - state: not_applicable
       verdict: avoid
       why: Chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: beetroot-salad
   category: ready_meal
@@ -18258,12 +18043,20 @@
     - Œufs mimosa du traiteur
     - Œufs durs mayonnaise
     - Salade piémontaise œuf
+    - Egg salad
+    - Salade d'œufs
+    - Salade niçoise œuf
+    - Salade lyonnaise œuf poché
+    - Salade au lard œuf poché
   local: true
   answers:
     - state: not_applicable
       verdict: avoid
       why: Chilled deli and traiteur salads are a listeria risk, and raw vegetables add a toxoplasmosis risk from soil. Make your own salad and wash it well.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: crudites-platter
   category: ready_meal
@@ -18371,12 +18164,19 @@
     - Gâteau à la liqueur
     - Cake au rhum
     - Cake aux fruits confits au rhum
+    - Baba au rhum egg
+    - Savarin au rhum
+    - Savarin
+    - Baba
   local: true
   answers:
     - state: cooked
       verdict: avoid
       why: Dishes cooked or flambéed with alcohol still hold some alcohol, even after long cooking. Choose a version without.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: flambe-dessert
   category: ready_meal

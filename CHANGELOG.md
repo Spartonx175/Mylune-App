@@ -24,3 +24,4 @@
 - 2026-11-14: Checker audit, charcuterie: 37 duplicate/padding items merged (foie gras, pâté, jellied, sausage variants), vegetable terrine and andouille/ham mousse re-ruled, unique why per item (EN+FR).
 - 2026-11-14: Checker audit, fish: lamprey/shark/swordfish, limit-list fish (skate, monkfish, sea bass, bream, pike, tuna family), freshwater fish and unnamed predators re-ruled per ameli/mangerbouger; 40+ variants merged; unique why per item (EN+FR).
 - 2026-11-14: Checker audit, seafood: oyster/scallop/crab/prawn variants merged, ready-cooked shrimp and cold whelks/winkles set to careful, wine-based dishes flagged, sea urchin raw-only; unique why per item (EN+FR).
+- 2026-11-14: Checker audit, egg: 31 duplicate/padding egg items merged, items with no egg moved to sweet/grain/dairy (rice pudding, kouign-amann, egg noodles, panna cotta, no-bake cheesecake), egg Benedict follows hollandaise rule; unique why per item (EN+FR).

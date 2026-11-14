@@ -1723,19 +1723,33 @@
     - Œuf Benedict
     - Œufs au bacon
     - Scrambled eggs
+    - Brouillade aux truffes
+    - Œufs brouillés truffés
+    - Œufs brouillés à la truffe
+    - Œufs brouillés au fromage
+    - Truffle scrambled eggs
+    - Œuf au plat sur le plat
+    - Œufs au jambon
+    - Œufs miroirs
+    - Sunny-side up
+    - Œuf de poule plein air
+    - Œufs bio
+    - Œufs fermiers
+    - Œufs de poules élevées en plein air
+    - Free range egg
     - Fried egg
   local: true
   answers:
     - state: undercooked
       verdict: avoid
-      why: "Les œufs au plat au jaune coulant, l'omelette baveuse ou les œufs brouillés mous peuvent transmettre la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes."
+      why: Les œufs au plat au jaune coulant, l'omelette baveuse ou les œufs brouillés mous peuvent transmettre la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
       sources:
         - mangerbouger-aliments-eviter
         - nhs-healthy-diet
         - cdc-food-pregnant-women
     - state: cooked
       verdict: ok
-      why: "Les œufs cuits jusqu'à ce que le blanc et le jaune soient fermes sont sans danger."
+      why: Les œufs cuits jusqu'à ce que le blanc et le jaune soient fermes sont sans danger.
       sources:
         - mangerbouger-aliments-eviter
         - nhs-healthy-diet
@@ -1747,6 +1761,10 @@
     - Œuf mayonnaise
     - Œufs mayo
     - Deviled eggs
+    - Œufs mayonnaise
+    - Œuf mayo
+    - Œuf dur mayonnaise
+    - Egg mayo
     - Œuf mimosa
   local: true
   answers:
@@ -1770,20 +1788,30 @@
     - Sauce Caesar
     - Mayonnaise maison
     - Mayonnaise du commerce
+    - Aïoli maison
+    - Aïoli du commerce
+    - Rouille
+    - Aioli sauce
+    - Sauce à l'ail
+    - Sauce blanche kebab
+    - Sauce algérienne
+    - Sauce biggy
+    - Garlic sauce
     - Mayonnaise
-  tips: [avoid]
+  tips:
+    - avoid
   local: true
   answers:
     - state: raw
       verdict: avoid
-      why: "La mayonnaise maison, l'aïoli et la rouille contiennent du jaune d'œuf cru et peuvent transmettre la salmonelle."
+      why: La mayonnaise maison, l'aïoli et la rouille contiennent du jaune d'œuf cru et peuvent transmettre la salmonelle.
       sources:
         - mangerbouger-aliments-eviter
         - nhs-healthy-diet
         - cdc-food-pregnant-women
     - state: pasteurised
       verdict: ok
-      why: "La mayonnaise du commerce, en pot ou en tube, est faite avec de l'œuf pasteurisé et est considérée comme sûre."
+      why: La mayonnaise du commerce, en pot ou en tube, est faite avec de l'œuf pasteurisé et est considérée comme sûre.
       sources:
         - mangerbouger-aliments-eviter
         - cdc-food-pregnant-women
@@ -1797,19 +1825,29 @@
     - Sauce mousseline
     - Zabaglione
     - Sauce béarnaise
+    - Hollandaise en sachet
+    - Hollandaise en bouteille
+    - Sauce hollandaise du commerce
+    - Béarnaise du commerce
+    - Hollandaise bottle
+    - Sauce hollandaise restaurant
+    - Sauce béarnaise restaurant
+    - Béarnaise maison
+    - Hollandaise maison
+    - Hollandaise restaurant
     - Hollandaise
   local: true
   answers:
     - state: undercooked
       verdict: avoid
-      why: "Ces sauces sont à base de jaunes d'œufs tièdes, pas cuits jusqu'à être fermes, et peuvent transmettre la salmonelle. Une version de restaurant préparée fraîchement n'est pas sûre."
+      why: "Béarnaise : ces sauces sont à base de jaunes d'œufs tièdes, pas cuits jusqu'à être fermes, et peuvent transmettre la salmonelle. Une version de restaurant préparée fraîchement n'est pas sûre."
       sources:
         - mangerbouger-aliments-eviter
         - cdc-food-pregnant-women
         - nhs-healthy-diet
     - state: pasteurised
       verdict: careful
-      why: "Une sauce faite avec de l'œuf pasteurisé et chauffée jusqu'à épaissir peut convenir. Demandez en cuisine, et abstenez-vous en cas de doute."
+      why: "Béarnaise : une sauce faite avec de l'œuf pasteurisé et chauffée jusqu'à épaissir peut convenir. Demandez en cuisine, et abstenez-vous en cas de doute."
       sources:
         - cdc-food-pregnant-women
         - mangerbouger-aliments-eviter
@@ -1822,19 +1860,39 @@
     - Mousse au chocolat du commerce
     - Pot de crème
     - Chocolate pot
+    - Mousse au citron
+    - Mousse au caramel
+    - Mousse aux fruits
+    - Mousse de fruits
+    - Raw egg mousse
+    - Mousse au café
+    - Mousse au chocolat blanc
+    - Mousse au chocolat au lait
+    - Mousse au spéculoos
+    - Coffee mousse
+    - Chantilly aux œufs
+    - Crème chiboust
+    - Chiboust
+    - Crème légère
+    - Chantilly mousse
+    - Mousse au chocolat au rhum
+    - Mousse au chocolat à l'orange liqueur
+    - Mousse au chocolat au Grand Marnier
+    - Mousse au chocolat à l'alcool
+    - Chocolate mousse with rum
     - Chocolate mousse
   local: true
   answers:
     - state: raw
       verdict: avoid
-      why: "La mousse maison est faite avec de l'œuf cru et peut transmettre la salmonelle. Évitez aussi les versions contenant de l'alcool."
+      why: La mousse maison est faite avec de l'œuf cru et peut transmettre la salmonelle. Évitez aussi les versions contenant de l'alcool.
       sources:
         - mangerbouger-aliments-eviter
         - nhs-healthy-diet
         - nhs-foods-to-avoid
     - state: pasteurised
       verdict: ok
-      why: "La mousse du commerce, ou la mousse maison faite avec de l'œuf pasteurisé, est considérée comme sûre. Vérifiez sur l'étiquette qu'il n'y a pas d'alcool."
+      why: La mousse du commerce, ou la mousse maison faite avec de l'œuf pasteurisé, est considérée comme sûre. Vérifiez sur l'étiquette qu'il n'y a pas d'alcool.
       sources:
         - mangerbouger-aliments-eviter
         - cdc-food-pregnant-women
@@ -1847,19 +1905,29 @@
     - Dessert italien
     - Zuppa inglese
     - Mascarpone dessert
+    - Tiramisu aux fraises
+    - Tiramisu au spéculoos
+    - Tiramisu au citron
+    - Tiramisu au chocolat
+    - Tiramisu variants
+    - Tiramisu à l'amaretto
+    - Tiramisu au marsala
+    - Tiramisu au café et liqueur
+    - Tiramisu à l'alcool
+    - Tiramisu with liqueur
     - Tiramisu
   local: true
   answers:
     - state: raw
       verdict: avoid
-      why: "Le tiramisu maison contient de l'œuf cru, peut transmettre la salmonelle et contient souvent de l'alcool ou du café fort."
+      why: Le tiramisu maison contient de l'œuf cru, peut transmettre la salmonelle et contient souvent de l'alcool ou du café fort.
       sources:
         - mangerbouger-aliments-eviter
         - nhs-healthy-diet
         - nhs-foods-to-avoid
     - state: pasteurised
       verdict: careful
-      why: "Le tiramisu du commerce est considéré comme sûr pour l'œuf, mais vérifiez qu'il ne contient pas d'alcool et consommez-le avant la date limite."
+      why: Le tiramisu du commerce est considéré comme sûr pour l'œuf, mais vérifiez qu'il ne contient pas d'alcool et consommez-le avant la date limite.
       sources:
         - mangerbouger-aliments-eviter
         - cdc-food-pregnant-women
@@ -1874,18 +1942,27 @@
     - Île flottante
     - Crème caramel
     - Pastry cream
+    - Crème dessert aux œufs
+    - Crème dessert vanille aux œufs
+    - Crème dessert maison
+    - Egg cream dessert
+    - Meringue italienne crue
+    - Meringue suisse crue
+    - Meringue non cuite
+    - Chantilly meringuée
+    - Meringue raw cream
     - Custard
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: "La crème anglaise, la crème pâtissière et les flans cuits sont cuits jusqu'à épaissir ou à prendre, ce qui les rend sûrs. Gardez-les au frais et mangez-les le jour même."
+      why: La crème anglaise, la crème pâtissière et les flans cuits sont cuits jusqu'à épaissir ou à prendre, ce qui les rend sûrs. Gardez-les au frais et mangez-les le jour même.
       sources:
         - nhs-healthy-diet
         - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: "Une crème non cuite à base d'œuf cru, ou une meringue laissée crue, peut transmettre la salmonelle."
+      why: Une crème non cuite à base d'œuf cru, ou une meringue laissée crue, peut transmettre la salmonelle.
       sources:
         - mangerbouger-aliments-eviter
         - nhs-healthy-diet
@@ -1901,18 +1978,31 @@
     - Pâte à gâteau crue
     - Cookie dough
     - Raw cake batter
+    - Génoise
+    - Gâteau de Savoie
+    - Biscuit de Savoie
+    - Biscuit cuillère
+    - Sponge cake
+    - Quatre-quarts
+    - Quatre quarts
+    - Gâteau marbré
+    - Pound cake
+    - Pâte à cookie crue
+    - Pâte à cookie
+    - Pâte à tarte aux œufs crue
+    - Cookie dough raw
     - Cake
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: "Les pâtisseries aux œufs sont sans danger une fois bien cuites à cœur."
+      why: Les pâtisseries aux œufs sont sans danger une fois bien cuites à cœur.
       sources:
         - mangerbouger-aliments-eviter
         - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: "La pâte à gâteau crue ou la pâte à cookies avec de l'œuf cru peut transmettre la salmonelle. Ne léchez pas la cuillère."
+      why: La pâte à gâteau crue ou la pâte à cookies avec de l'œuf cru peut transmettre la salmonelle. Ne léchez pas la cuillère.
       sources:
         - mangerbouger-aliments-eviter
         - nhs-healthy-diet
@@ -2044,6 +2134,11 @@
     - Glace italienne
     - Gelato
     - Soft ice
+    - Glace maison
+    - Crème glacée maison
+    - Glace à la vanille maison
+    - Glace aux œufs
+    - Home-made ice cream
     - Ice cream
   local: true
   answers:
@@ -2055,7 +2150,7 @@
         - cdc-listeria-prevention
     - state: unpasteurised
       verdict: avoid
-      why: "Une glace faite avec du lait cru ou des œufs crus peut transmettre la listéria ou la salmonelle."
+      why: Une glace faite avec du lait cru ou des œufs crus peut transmettre la listéria ou la salmonelle.
       sources:
         - nhs-foods-to-avoid
         - cdc-listeria-prevention
@@ -11877,12 +11972,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Omelette nature : un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Omelette nature : cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: omelette-ham-cheese
   category: egg
@@ -11896,12 +11997,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Omelette jambon fromage : un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Omelette jambon fromage : cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: omelette-mother-poulard
   category: egg
@@ -11915,12 +12022,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Omelette de la mère Poulard : un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Omelette de la mère Poulard : cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: egg-en-cocotte
   category: egg
@@ -11933,12 +12046,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Œufs cocotte : un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Œufs cocotte : cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: egg-benedict
   category: egg
@@ -11952,31 +12071,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: sunny-side-up
-  category: egg
-  names:
-    - Œuf au plat sur le plat
-    - Œufs au jambon
-    - Œufs miroirs
-    - Sunny-side up
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Œufs Bénédicte : ces sauces sont à base de jaunes d'œufs tièdes, pas cuits jusqu'à être fermes, et peuvent transmettre la salmonelle. Une version de restaurant préparée fraîchement n'est pas sûre."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
+        - nhs-healthy-diet
+    - state: pasteurised
+      verdict: careful
+      why: "Œufs Bénédicte : une sauce faite avec de l'œuf pasteurisé et chauffée jusqu'à épaissir peut convenir. Demandez en cuisine, et abstenez-vous en cas de doute."
+      sources:
+        - cdc-food-pregnant-women
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-14
 - id: shakshuka
   category: egg
   names:
@@ -11988,12 +12094,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Chakchouka : un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Chakchouka : cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: egg-bagel
   category: egg
@@ -12007,30 +12119,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Bagel œuf bacon : un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: egg-mayo
-  category: egg
-  names:
-    - Œufs mayonnaise
-    - Œuf mayo
-    - Œuf dur mayonnaise
-    - Egg mayo
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Bagel œuf bacon : cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: egg-fried-rice
   category: egg
@@ -12044,15 +12144,21 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Riz cantonais : un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Riz cantonais : cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: egg-noodles
-  category: egg
+  category: grain
   names:
     - Nouilles sautées aux œufs
     - Pad thaï
@@ -12061,53 +12167,13 @@
     - Egg noodles
   local: true
   answers:
-    - state: undercooked
-      verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: egg-salad
-  category: egg
-  names:
-    - Salade d'œufs
-    - Salade niçoise œuf
-    - Salade lyonnaise œuf poché
-    - Salade au lard œuf poché
-    - Egg salad
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: truffle-scrambled-eggs
-  category: egg
-  names:
-    - Brouillade aux truffes
-    - Œufs brouillés truffés
-    - Œufs brouillés à la truffe
-    - Œufs brouillés au fromage
-    - Truffle scrambled eggs
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Les nouilles aux œufs contiennent de l'œuf dans la pâte et sont cuites à cœur : elles conviennent. Mangez-les chaudes, ou réchauffées jusqu'à ce qu'elles fument."
+      sources:
+        - nhs-foods-to-avoid
+        - nhs-healthy-diet
+  reviewed: 2026-11-14
 - id: tamago
   category: egg
   names:
@@ -12120,12 +12186,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Tamagoyaki : un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Tamagoyaki : cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: eggs-in-purgatory
   category: egg
@@ -12139,12 +12211,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Œufs en purgatoire : un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Œufs en purgatoire : cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: egg-curry
   category: egg
@@ -12158,12 +12236,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Curry d'œufs : un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Curry d'œufs : cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: quail-egg
   category: egg
@@ -12177,12 +12261,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Œuf de caille : un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Œuf de caille : cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: duck-egg
   category: egg
@@ -12196,31 +12286,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Œuf de canard : un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: free-range-egg
-  category: egg
-  names:
-    - Œuf de poule plein air
-    - Œufs bio
-    - Œufs fermiers
-    - Œufs de poules élevées en plein air
-    - Free range egg
-  local: true
-  answers:
-    - state: undercooked
-      verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Œuf de canard : cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: lava-cake
   category: egg
@@ -12233,12 +12310,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Moelleux au chocolat : un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Moelleux au chocolat : cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: pasta-carbonara
   category: egg
@@ -12252,12 +12335,18 @@
   answers:
     - state: undercooked
       verdict: avoid
-      why: Un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, nhs-foods-to-avoid ]
+      why: "Pâtes carbonara : un jaune coulant ou un blanc baveux peut contenir la salmonelle. Faites cuire jusqu'à ce que le blanc et le jaune soient fermes."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Pâtes carbonara : cuit jusqu'à ce que le blanc et le jaune soient fermes, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: souffle
   category: egg
@@ -12271,8 +12360,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuit à cœur, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Soufflé au fromage : cuit à cœur, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: egg-tart-baked
   category: egg
@@ -12286,8 +12377,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuit à cœur, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Tarte aux œufs : cuit à cœur, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: meringue
   category: egg
@@ -12300,8 +12393,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuit à cœur, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Meringues : cuit à cœur, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: macaron
   category: egg
@@ -12314,23 +12409,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuit à cœur, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: sponge-cake
-  category: egg
-  names:
-    - Génoise
-    - Gâteau de Savoie
-    - Biscuit de Savoie
-    - Biscuit cuillère
-    - Sponge cake
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cuit à cœur, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Macarons : cuit à cœur, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: french-toast
   category: egg
@@ -12344,8 +12426,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuit à cœur, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Pain perdu : cuit à cœur, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: waffles
   category: egg
@@ -12358,8 +12442,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuit à cœur, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Gaufre de Liège : cuit à cœur, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: choux-pastry
   category: egg
@@ -12368,28 +12454,20 @@
     - Gougères
     - Profiteroles
     - Chouquettes
-    - Choux pastry
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cuit à cœur, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: pate-a-choux-dessert
-  category: egg
-  names:
     - Éclair au chocolat
     - Religieuse
     - Paris-Brest
     - Saint-Honoré
     - Pâte à choux dessert
+    - Choux pastry
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Cuit à cœur, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Choux : cuit à cœur, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: egg-bread
   category: egg
@@ -12403,8 +12481,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuit à cœur, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Pain au lait : cuit à cœur, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: clafoutis
   category: egg
@@ -12417,8 +12497,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuit à cœur, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Clafoutis aux cerises : cuit à cœur, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: savoury-cake
   category: egg
@@ -12432,8 +12514,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuit à cœur, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Cake aux olives : cuit à cœur, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: egg-based-flan
   category: egg
@@ -12441,13 +12525,20 @@
     - Flan
     - Flan nature
     - Flan aux œufs
+    - Tarte à la crème
+    - Flan pâtissier à la crème
+    - Tarte au flan
+    - Pastel de nata
+    - Custard tart
     - Egg-based flan
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Cuit à cœur, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Flan : cuit à cœur, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cannele
   category: egg
@@ -12460,11 +12551,13 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuit à cœur, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Cannelés de Bordeaux : cuit à cœur, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: kouign-amann
-  category: egg
+  category: sweet
   names:
     - Kouign amann
     - Gâteau breton
@@ -12474,23 +12567,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuit à cœur, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: pound-cake
-  category: egg
-  names:
-    - Quatre-quarts
-    - Quatre quarts
-    - Gâteau marbré
-    - Pound cake
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cuit à cœur, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: Cette pâtisserie cuite se fait avec du beurre, du sucre et de la farine, sans œuf cru. Elle convient en petite quantité ; les sources ne la restreignent pas.
+      sources:
+        - nhs-healthy-diet
+  reviewed: 2026-11-14
 - id: fondant-chocolate-cooked
   category: egg
   names:
@@ -12503,8 +12583,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuit à cœur, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Gâteau au chocolat cuit : cuit à cœur, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: tarte-au-citron-meringuee-cooked
   category: egg
@@ -12518,8 +12600,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuit à cœur, c'est sans danger.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Tarte au citron meringuée : cuit à cœur, c'est sans danger."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: lemon-curd
   category: egg
@@ -12532,15 +12616,19 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuite jusqu'à épaississement ou prise, elle est sans danger. Gardez-la au frais et mangez-la dans un jour ou deux.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Crème de citron : cuite jusqu'à épaississement ou prise, elle est sans danger. Gardez-la au frais et mangez-la dans un jour ou deux."
+      sources:
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Si elle est faite avec de l'œuf cru et non cuite, elle peut contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Crème de citron : si elle est faite avec de l'œuf cru et non cuite, elle peut contenir la salmonelle."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: rice-pudding
-  category: egg
+  category: sweet
   names:
     - Riz au lait
     - Riz au lait maison
@@ -12551,13 +12639,10 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuite jusqu'à épaississement ou prise, elle est sans danger. Gardez-la au frais et mangez-la dans un jour ou deux.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: Si elle est faite avec de l'œuf cru et non cuite, elle peut contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
-  reviewed: 2026-11-13
+      why: Le riz au lait est du riz cuit dans du lait avec du sucre. Il convient s'il est fait avec du lait pasteurisé et mangé frais avant la date.
+      sources:
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: floating-island
   category: egg
   names:
@@ -12569,31 +12654,16 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuite jusqu'à épaississement ou prise, elle est sans danger. Gardez-la au frais et mangez-la dans un jour ou deux.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Île flottante maison : cuite jusqu'à épaississement ou prise, elle est sans danger. Gardez-la au frais et mangez-la dans un jour ou deux."
+      sources:
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Si elle est faite avec de l'œuf cru et non cuite, elle peut contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
-  reviewed: 2026-11-13
-- id: custard-tart
-  category: egg
-  names:
-    - Tarte à la crème
-    - Flan pâtissier à la crème
-    - Tarte au flan
-    - Pastel de nata
-    - Custard tart
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cuite jusqu'à épaississement ou prise, elle est sans danger. Gardez-la au frais et mangez-la dans un jour ou deux.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: Si elle est faite avec de l'œuf cru et non cuite, elle peut contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Île flottante maison : si elle est faite avec de l'œuf cru et non cuite, elle peut contenir la salmonelle."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: bread-pudding
   category: egg
@@ -12607,12 +12677,16 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuite jusqu'à épaississement ou prise, elle est sans danger. Gardez-la au frais et mangez-la dans un jour ou deux.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Pudding : cuite jusqu'à épaississement ou prise, elle est sans danger. Gardez-la au frais et mangez-la dans un jour ou deux."
+      sources:
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Si elle est faite avec de l'œuf cru et non cuite, elle peut contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Pudding : si elle est faite avec de l'œuf cru et non cuite, elle peut contenir la salmonelle."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: pastry-cream-tart
   category: egg
@@ -12621,36 +12695,26 @@
     - Tarte aux fraises
     - Tarte aux fruits frais
     - Tarte au citron crème
-    - Pastry cream tart
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cuite jusqu'à épaississement ou prise, elle est sans danger. Gardez-la au frais et mangez-la dans un jour ou deux.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: Si elle est faite avec de l'œuf cru et non cuite, elle peut contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
-  reviewed: 2026-11-13
-- id: vanilla-slice
-  category: egg
-  names:
     - Mille-feuille
     - Millefeuille
     - Mille-feuille à la vanille
     - Napoléon
     - Vanilla slice
+    - Pastry cream tart
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Cuite jusqu'à épaississement ou prise, elle est sans danger. Gardez-la au frais et mangez-la dans un jour ou deux.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Tarte aux fruits à la crème pâtissière : cuite jusqu'à épaississement ou prise, elle est sans danger. Gardez-la au frais et mangez-la dans un jour ou deux."
+      sources:
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Si elle est faite avec de l'œuf cru et non cuite, elle peut contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Tarte aux fruits à la crème pâtissière : si elle est faite avec de l'œuf cru et non cuite, elle peut contenir la salmonelle."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: eclair-coffee
   category: egg
@@ -12659,39 +12723,29 @@
     - Éclair à la vanille
     - Éclair à la pistache
     - Éclair au caramel
-    - Éclair coffee
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cuite jusqu'à épaississement ou prise, elle est sans danger. Gardez-la au frais et mangez-la dans un jour ou deux.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: Si elle est faite avec de l'œuf cru et non cuite, elle peut contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
-  reviewed: 2026-11-13
-- id: cream-puff
-  category: egg
-  names:
     - Chou à la crème
     - Chou chantilly
     - Chou craquelin
     - Chou à la vanille
     - Cream puff
+    - Éclair coffee
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Cuite jusqu'à épaississement ou prise, elle est sans danger. Gardez-la au frais et mangez-la dans un jour ou deux.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Éclair au café : cuite jusqu'à épaississement ou prise, elle est sans danger. Gardez-la au frais et mangez-la dans un jour ou deux."
+      sources:
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Si elle est faite avec de l'œuf cru et non cuite, elle peut contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
+      why: "Éclair au café : si elle est faite avec de l'œuf cru et non cuite, elle peut contenir la salmonelle."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
   reviewed: 2026-11-13
 - id: panna-cotta
-  category: egg
+  category: dairy
   names:
     - Panna cotta maison
     - Pannacotta
@@ -12699,73 +12753,23 @@
     - Panna cotta
   local: true
   answers:
-    - state: cooked
-      verdict: ok
-      why: Cuite jusqu'à épaississement ou prise, elle est sans danger. Gardez-la au frais et mangez-la dans un jour ou deux.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: Si elle est faite avec de l'œuf cru et non cuite, elle peut contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
-  reviewed: 2026-11-13
-- id: egg-cream-dessert
-  category: egg
-  names:
-    - Crème dessert aux œufs
-    - Crème dessert vanille aux œufs
-    - Crème dessert maison
-    - Egg cream dessert
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cuite jusqu'à épaississement ou prise, elle est sans danger. Gardez-la au frais et mangez-la dans un jour ou deux.
-      sources: [ nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: Si elle est faite avec de l'œuf cru et non cuite, elle peut contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet ]
-  reviewed: 2026-11-13
-- id: raw-egg-mousse
-  category: egg
-  names:
-    - Mousse au citron
-    - Mousse au caramel
-    - Mousse aux fruits
-    - Mousse de fruits
-    - Raw egg mousse
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Préparé avec de l'œuf cru ou à peine cuit, il peut contenir la salmonelle. Évitez la version maison ou de restaurant.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
     - state: pasteurised
       verdict: ok
-      why: Les versions du commerce ou faites avec de l'œuf pasteurisé sont considérées comme sûres. Vérifiez l'absence d'alcool sur l'étiquette.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: coffee-mousse
-  category: egg
-  names:
-    - Mousse au café
-    - Mousse au chocolat blanc
-    - Mousse au chocolat au lait
-    - Mousse au spéculoos
-    - Coffee mousse
-  local: true
-  answers:
-    - state: raw
+      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+    - state: unpasteurised
       verdict: avoid
-      why: Préparé avec de l'œuf cru ou à peine cuit, il peut contenir la salmonelle. Évitez la version maison ou de restaurant.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: ok
-      why: Les versions du commerce ou faites avec de l'œuf pasteurisé sont considérées comme sûres. Vérifiez l'absence d'alcool sur l'étiquette.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: cheesecake-no-bake
-  category: egg
+  category: dairy
   names:
     - Cheesecake sans cuisson
     - Cheesecake cru
@@ -12774,15 +12778,21 @@
     - Cheesecake no bake
   local: true
   answers:
-    - state: raw
-      verdict: avoid
-      why: Préparé avec de l'œuf cru ou à peine cuit, il peut contenir la salmonelle. Évitez la version maison ou de restaurant.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
     - state: pasteurised
       verdict: ok
-      why: Les versions du commerce ou faites avec de l'œuf pasteurisé sont considérées comme sûres. Vérifiez l'absence d'alcool sur l'étiquette.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: Fait avec du lait pasteurisé, c'est sans danger. C'est le cas de presque toutes les versions de supermarché.
+      sources:
+        - nhs-foods-to-avoid
+        - cdc-listeria-prevention
+    - state: unpasteurised
+      verdict: avoid
+      why: Fait avec du lait cru (non pasteurisé), il peut contenir la listeria. Évitez les versions de ferme ou de marché sauf si l'étiquette indique pasteurisé.
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-prevention
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: parfait-glace
   category: egg
   names:
@@ -12794,106 +12804,17 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Préparé avec de l'œuf cru ou à peine cuit, il peut contenir la salmonelle. Évitez la version maison ou de restaurant.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Parfait glacé au café : préparé avec de l'œuf cru ou à peine cuit, il peut contenir la salmonelle. Évitez la version maison ou de restaurant."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: ok
-      why: Les versions du commerce ou faites avec de l'œuf pasteurisé sont considérées comme sûres. Vérifiez l'absence d'alcool sur l'étiquette.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: home-made-ice-cream
-  category: egg
-  names:
-    - Glace maison
-    - Crème glacée maison
-    - Glace à la vanille maison
-    - Glace aux œufs
-    - Home-made ice cream
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Préparé avec de l'œuf cru ou à peine cuit, il peut contenir la salmonelle. Évitez la version maison ou de restaurant.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: ok
-      why: Les versions du commerce ou faites avec de l'œuf pasteurisé sont considérées comme sûres. Vérifiez l'absence d'alcool sur l'étiquette.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: tiramisu-variants
-  category: egg
-  names:
-    - Tiramisu aux fraises
-    - Tiramisu au spéculoos
-    - Tiramisu au citron
-    - Tiramisu au chocolat
-    - Tiramisu variants
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Préparé avec de l'œuf cru ou à peine cuit, il peut contenir la salmonelle. Évitez la version maison ou de restaurant.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: ok
-      why: Les versions du commerce ou faites avec de l'œuf pasteurisé sont considérées comme sûres. Vérifiez l'absence d'alcool sur l'étiquette.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cookie-dough-raw
-  category: egg
-  names:
-    - Pâte à cookie crue
-    - Pâte à cookie
-    - Pâte à tarte aux œufs crue
-    - Cookie dough raw
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Préparé avec de l'œuf cru ou à peine cuit, il peut contenir la salmonelle. Évitez la version maison ou de restaurant.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: ok
-      why: Les versions du commerce ou faites avec de l'œuf pasteurisé sont considérées comme sûres. Vérifiez l'absence d'alcool sur l'étiquette.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: chantilly-mousse
-  category: egg
-  names:
-    - Chantilly aux œufs
-    - Crème chiboust
-    - Chiboust
-    - Crème légère
-    - Chantilly mousse
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Préparé avec de l'œuf cru ou à peine cuit, il peut contenir la salmonelle. Évitez la version maison ou de restaurant.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: ok
-      why: Les versions du commerce ou faites avec de l'œuf pasteurisé sont considérées comme sûres. Vérifiez l'absence d'alcool sur l'étiquette.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: meringue-raw-cream
-  category: egg
-  names:
-    - Meringue italienne crue
-    - Meringue suisse crue
-    - Meringue non cuite
-    - Chantilly meringuée
-    - Meringue raw cream
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Préparé avec de l'œuf cru ou à peine cuit, il peut contenir la salmonelle. Évitez la version maison ou de restaurant.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: ok
-      why: Les versions du commerce ou faites avec de l'œuf pasteurisé sont considérées comme sûres. Vérifiez l'absence d'alcool sur l'étiquette.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Parfait glacé au café : les versions du commerce ou faites avec de l'œuf pasteurisé sont considérées comme sûres. Vérifiez l'absence d'alcool sur l'étiquette."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: raw-egg-yolk
   category: egg
@@ -12902,74 +12823,37 @@
     - Jaune d'œuf sur steak tartare
     - Œuf cru
     - Blanc d'œuf cru
-    - Raw egg yolk
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Préparé avec de l'œuf cru ou à peine cuit, il peut contenir la salmonelle. Évitez la version maison ou de restaurant.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: ok
-      why: Les versions du commerce ou faites avec de l'œuf pasteurisé sont considérées comme sûres. Vérifiez l'absence d'alcool sur l'étiquette.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: raw-egg-white-drink
-  category: egg
-  names:
     - Blanc d'œuf en cocktail
     - Cocktail au blanc d'œuf
     - Whisky sour
     - Pisco sour
     - Raw egg white drink
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Préparé avec de l'œuf cru ou à peine cuit, il peut contenir la salmonelle. Évitez la version maison ou de restaurant.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: ok
-      why: Les versions du commerce ou faites avec de l'œuf pasteurisé sont considérées comme sûres. Vérifiez l'absence d'alcool sur l'étiquette.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: raw-egg-smoothie
-  category: egg
-  names:
     - Smoothie à l'œuf cru
     - Œuf cru dans le lait
     - Lait de poule maison
     - Shake aux œufs crus
     - Raw egg smoothie
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Préparé avec de l'œuf cru ou à peine cuit, il peut contenir la salmonelle. Évitez la version maison ou de restaurant.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-    - state: pasteurised
-      verdict: ok
-      why: Les versions du commerce ou faites avec de l'œuf pasteurisé sont considérées comme sûres. Vérifiez l'absence d'alcool sur l'étiquette.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: tartare-yolk
-  category: egg
-  names:
     - Tartare avec jaune d'œuf
     - Steak tartare œuf
     - Jaune d'œuf cru tartare
     - Œuf cru ramen
     - Tartare yolk
+    - Raw egg yolk
   local: true
   answers:
     - state: raw
       verdict: avoid
-      why: Préparé avec de l'œuf cru ou à peine cuit, il peut contenir la salmonelle. Évitez la version maison ou de restaurant.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Jaune d'œuf cru : préparé avec de l'œuf cru ou à peine cuit, il peut contenir la salmonelle. Évitez la version maison ou de restaurant."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
     - state: pasteurised
       verdict: ok
-      why: Les versions du commerce ou faites avec de l'œuf pasteurisé sont considérées comme sûres. Vérifiez l'absence d'alcool sur l'étiquette.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Jaune d'œuf cru : les versions du commerce ou faites avec de l'œuf pasteurisé sont considérées comme sûres. Vérifiez l'absence d'alcool sur l'étiquette."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: eggnog
   category: egg
@@ -12981,8 +12865,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: L'œuf cru peut contenir la salmonelle, et cette recette contient en général de l'alcool. Évitez-la.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Lait de poule : l'œuf cru peut contenir la salmonelle, et cette recette contient en général de l'alcool. Évitez-la."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: zabaglione-with-marsala
   category: egg
@@ -12996,52 +12883,11 @@
   answers:
     - state: raw
       verdict: avoid
-      why: L'œuf cru peut contenir la salmonelle, et cette recette contient en général de l'alcool. Évitez-la.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
-  reviewed: 2026-11-13
-- id: chocolate-mousse-with-rum
-  category: egg
-  names:
-    - Mousse au chocolat au rhum
-    - Mousse au chocolat à l'orange liqueur
-    - Mousse au chocolat au Grand Marnier
-    - Mousse au chocolat à l'alcool
-    - Chocolate mousse with rum
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: L'œuf cru peut contenir la salmonelle, et cette recette contient en général de l'alcool. Évitez-la.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
-  reviewed: 2026-11-13
-- id: tiramisu-with-liqueur
-  category: egg
-  names:
-    - Tiramisu à l'amaretto
-    - Tiramisu au marsala
-    - Tiramisu au café et liqueur
-    - Tiramisu à l'alcool
-    - Tiramisu with liqueur
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: L'œuf cru peut contenir la salmonelle, et cette recette contient en général de l'alcool. Évitez-la.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
-  reviewed: 2026-11-13
-- id: baba-au-rhum-egg
-  category: egg
-  names:
-    - Savarin au rhum
-    - Savarin
-    - Baba
-    - Baba au rhum egg
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: L'œuf cru peut contenir la salmonelle, et cette recette contient en général de l'alcool. Évitez-la.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      why: "Sabayon au Marsala : l'œuf cru peut contenir la salmonelle, et cette recette contient en général de l'alcool. Évitez-la."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: burger-sauce
   category: egg
@@ -13055,12 +12901,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Les sauces industrielles en bouteille ou en tube sont faites avec de l'œuf pasteurisé et sont considérées comme sûres. Gardez les pots ouverts au frigo.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Sauce burger : les sauces industrielles en bouteille ou en tube sont faites avec de l'œuf pasteurisé et sont considérées comme sûres. Gardez les pots ouverts au frigo."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Les versions maison ou de restaurant utilisent souvent du jaune d'œuf cru et peuvent contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Sauce burger : les versions maison ou de restaurant utilisent souvent du jaune d'œuf cru et peuvent contenir la salmonelle."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: andalouse-sauce
   category: egg
@@ -13074,12 +12925,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Les sauces industrielles en bouteille ou en tube sont faites avec de l'œuf pasteurisé et sont considérées comme sûres. Gardez les pots ouverts au frigo.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Sauce andalouse : les sauces industrielles en bouteille ou en tube sont faites avec de l'œuf pasteurisé et sont considérées comme sûres. Gardez les pots ouverts au frigo."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Les versions maison ou de restaurant utilisent souvent du jaune d'œuf cru et peuvent contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Sauce andalouse : les versions maison ou de restaurant utilisent souvent du jaune d'œuf cru et peuvent contenir la salmonelle."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: tartar-sauce
   category: egg
@@ -13092,12 +12948,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Les sauces industrielles en bouteille ou en tube sont faites avec de l'œuf pasteurisé et sont considérées comme sûres. Gardez les pots ouverts au frigo.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Tartare sauce : les sauces industrielles en bouteille ou en tube sont faites avec de l'œuf pasteurisé et sont considérées comme sûres. Gardez les pots ouverts au frigo."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Les versions maison ou de restaurant utilisent souvent du jaune d'œuf cru et peuvent contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Tartare sauce : les versions maison ou de restaurant utilisent souvent du jaune d'œuf cru et peuvent contenir la salmonelle."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: caesar-dressing
   category: egg
@@ -13109,66 +12970,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Les sauces industrielles en bouteille ou en tube sont faites avec de l'œuf pasteurisé et sont considérées comme sûres. Gardez les pots ouverts au frigo.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Sauce César : les sauces industrielles en bouteille ou en tube sont faites avec de l'œuf pasteurisé et sont considérées comme sûres. Gardez les pots ouverts au frigo."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Les versions maison ou de restaurant utilisent souvent du jaune d'œuf cru et peuvent contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: aioli-sauce
-  category: egg
-  names:
-    - Aïoli maison
-    - Aïoli du commerce
-    - Rouille
-    - Aioli sauce
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Les sauces industrielles en bouteille ou en tube sont faites avec de l'œuf pasteurisé et sont considérées comme sûres. Gardez les pots ouverts au frigo.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: Les versions maison ou de restaurant utilisent souvent du jaune d'œuf cru et peuvent contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: garlic-sauce
-  category: egg
-  names:
-    - Sauce à l'ail
-    - Sauce blanche kebab
-    - Sauce algérienne
-    - Sauce biggy
-    - Garlic sauce
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Les sauces industrielles en bouteille ou en tube sont faites avec de l'œuf pasteurisé et sont considérées comme sûres. Gardez les pots ouverts au frigo.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: Les versions maison ou de restaurant utilisent souvent du jaune d'œuf cru et peuvent contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: remoulade-celery
-  category: egg
-  names:
-    - Sauce rémoulade
-    - Rémoulade de céleri
-    - Remoulade celery
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Les sauces industrielles en bouteille ou en tube sont faites avec de l'œuf pasteurisé et sont considérées comme sûres. Gardez les pots ouverts au frigo.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: Les versions maison ou de restaurant utilisent souvent du jaune d'œuf cru et peuvent contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Sauce César : les versions maison ou de restaurant utilisent souvent du jaune d'œuf cru et peuvent contenir la salmonelle."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: gribiche
   category: egg
@@ -13180,50 +12992,17 @@
   answers:
     - state: pasteurised
       verdict: ok
-      why: Les sauces industrielles en bouteille ou en tube sont faites avec de l'œuf pasteurisé et sont considérées comme sûres. Gardez les pots ouverts au frigo.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Gribiche maison : les sauces industrielles en bouteille ou en tube sont faites avec de l'œuf pasteurisé et sont considérées comme sûres. Gardez les pots ouverts au frigo."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Les versions maison ou de restaurant utilisent souvent du jaune d'œuf cru et peuvent contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: hollandaise-bottle
-  category: egg
-  names:
-    - Hollandaise en sachet
-    - Hollandaise en bouteille
-    - Sauce hollandaise du commerce
-    - Béarnaise du commerce
-    - Hollandaise bottle
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Les sauces industrielles en bouteille ou en tube sont faites avec de l'œuf pasteurisé et sont considérées comme sûres. Gardez les pots ouverts au frigo.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: Les versions maison ou de restaurant utilisent souvent du jaune d'œuf cru et peuvent contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: hollandaise-restaurant
-  category: egg
-  names:
-    - Sauce hollandaise restaurant
-    - Sauce béarnaise restaurant
-    - Béarnaise maison
-    - Hollandaise maison
-    - Hollandaise restaurant
-  local: true
-  answers:
-    - state: pasteurised
-      verdict: ok
-      why: Les sauces industrielles en bouteille ou en tube sont faites avec de l'œuf pasteurisé et sont considérées comme sûres. Gardez les pots ouverts au frigo.
-      sources: [ mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: Les versions maison ou de restaurant utilisent souvent du jaune d'œuf cru et peuvent contenir la salmonelle.
-      sources: [ mangerbouger-aliments-eviter, nhs-healthy-diet, cdc-food-pregnant-women ]
+      why: "Gribiche maison : les versions maison ou de restaurant utilisent souvent du jaune d'œuf cru et peuvent contenir la salmonelle."
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-healthy-diet
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: skimmed-milk
   category: dairy
@@ -18122,13 +17901,19 @@
     - Salade de céleri
     - Céleri rémoulade du commerce
     - Rémoulade de céleri du traiteur
+    - Sauce rémoulade
+    - Rémoulade de céleri
+    - Remoulade celery
     - Celeriac remoulade
   local: true
   answers:
     - state: not_applicable
       verdict: avoid
       why: Les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: beetroot-salad
   category: ready_meal
@@ -18266,13 +18051,21 @@
     - Œufs mimosa du traiteur
     - Œufs durs mayonnaise
     - Salade piémontaise œuf
+    - Salade d'œufs
+    - Salade niçoise œuf
+    - Salade lyonnaise œuf poché
+    - Salade au lard œuf poché
+    - Egg salad
     - Egg salad deli
   local: true
   answers:
     - state: not_applicable
       verdict: avoid
       why: Les salades de traiteur réfrigérées présentent un risque de listeria, et les légumes crus ajoutent un risque de toxoplasmose lié à la terre. Préparez votre salade vous-même et lavez-la bien.
-      sources: [ cdc-listeria-deli, cdc-food-pregnant-women, ameli-toxo-prevention ]
+      sources:
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
+        - ameli-toxo-prevention
   reviewed: 2026-11-13
 - id: crudites-platter
   category: ready_meal
@@ -18379,13 +18172,20 @@
     - Gâteau à la liqueur
     - Cake au rhum
     - Cake aux fruits confits au rhum
+    - Savarin au rhum
+    - Savarin
+    - Baba
+    - Baba au rhum egg
     - Rum cake
   local: true
   answers:
     - state: cooked
       verdict: avoid
       why: Les plats cuisinés ou flambés à l'alcool en contiennent encore, même après une longue cuisson. Choisissez une version sans alcool.
-      sources: [ mangerbouger-aliments-eviter, ameli-zero-alcool, nhs-alcohol ]
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-alcohol
   reviewed: 2026-11-13
 - id: flambe-dessert
   category: ready_meal
