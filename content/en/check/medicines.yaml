@@ -2913,6 +2913,1002 @@
         - crat-pregabaline
         - nhs-pregabalin
   reviewed: 2026-11-14
+- id: amoxicillin
+  category: antibiotics
+  names:
+    - "Amoxicillin"
+    - "Clamoxyl"
+  active_ingredient: "amoxicillin"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT says amoxicillin can be used at any stage of pregnancy: many published pregnancies, no malformation or foetal/newborn effect attributed to it. NHS also considers it safe in pregnancy. Take it only when prescribed, and finish the course the doctor planned. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-amoxicilline
+        - crat-penicillines
+        - nhs-amoxicillin
+  reviewed: 2026-11-14
+- id: amoxicillin-clavulanate
+  category: antibiotics
+  names:
+    - "Amoxicillin-clavulanate"
+    - "Co-amoxiclav"
+    - "Augmentin"
+    - "Levmentin"
+  active_ingredient: "amoxicillin + clavulanic acid"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT says Augmentin can be used at any stage of pregnancy. A study linking late-pregnancy use to a newborn bowel problem was judged unreliable by CRAT and not confirmed by other studies. NHS says it can usually be taken in pregnancy if a doctor thinks it is needed. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-augmentin
+        - crat-penicillines
+        - nhs-co-amoxiclav
+  reviewed: 2026-11-14
+- id: penicillin-v
+  category: antibiotics
+  names:
+    - "Penicillin V"
+    - "Phenoxymethylpenicillin"
+    - "Oracilline"
+  active_ingredient: "phenoxymethylpenicillin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT lists oral penicillin V among the penicillins with plenty of data and no harm attributed, usable at any stage. NHS says it is generally acceptable in pregnancy. Only when prescribed. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-penicillines
+        - nhs-phenoxymethylpenicillin
+  reviewed: 2026-11-14
+- id: ampicillin
+  category: antibiotics
+  names:
+    - "Ampicillin"
+  active_ingredient: "ampicillin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT says ampicillin can be used at any stage of pregnancy, with many published pregnancies and no attributed malformation or foetal/newborn effect. Mostly given by injection in hospital. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-ampicilline
+        - crat-penicillines
+  reviewed: 2026-11-14
+- id: penicillins-other
+  category: antibiotics
+  names:
+    - "Other penicillins (cloxacillin"
+    - "oxacillin"
+    - "ticarcillin"
+    - "piperacillin)"
+  active_ingredient: "cloxacillin, oxacillin, ticarcillin, piperacillin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT says cloxacillin and oxacillin can be used at any stage; ticarcillin and piperacillin have little data but nothing worrying and can be considered when the benefit is clear. These are mostly hospital injections, so the doctor decides. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-penicillines
+        - crat-ampicilline
+  reviewed: 2026-11-14
+- id: cefalexin
+  category: antibiotics
+  names:
+    - "Cefalexin"
+    - "Cephalexin"
+  active_ingredient: "cefalexin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT says cefalexin can be used at any stage of pregnancy (very many published cases, no harm attributed). NHS says the same: no evidence of harm to the baby. Only when prescribed. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-cefalexine
+        - crat-cephalosporines
+        - nhs-cefalexin
+  reviewed: 2026-11-14
+- id: cefuroxime
+  category: antibiotics
+  names:
+    - "Cefuroxime"
+  active_ingredient: "cefuroxime"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: few published pregnancies but nothing worrying; when a second-generation cephalosporin is needed, cefuroxime is the one preferred and can be used at any stage. Only when prescribed. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-cefuroxime
+        - crat-cephalosporines
+  reviewed: 2026-11-14
+- id: cefixime
+  category: antibiotics
+  names:
+    - "Cefixime"
+    - "Oroken"
+  active_ingredient: "cefixime"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: no particular harm reported but few data, and amoxicillin (alone or with clavulanic acid) is preferred when possible. It is no longer recommended in pregnancy for simple cystitis or bladder bacteria without symptoms. Only if the doctor sees a clear advantage. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-cefixime
+        - crat-cephalosporines
+  reviewed: 2026-11-14
+- id: cefpodoxime
+  category: antibiotics
+  names:
+    - "Cefpodoxime"
+    - "Orelox"
+  active_ingredient: "cefpodoxime"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The CRAT cephalosporin page treats cefpodoxime like cefixime: only if a third-generation cephalosporin brings a real advantage, with amoxicillin preferred when possible; usable at any stage when chosen. Only one source read for it. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-cephalosporines
+        - crat-cefixime
+  reviewed: 2026-11-14
+- id: ceftriaxone
+  category: antibiotics
+  names:
+    - "Ceftriaxone"
+  active_ingredient: "ceftriaxone"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT says that because of its therapeutic value ceftriaxone can be used at any stage of pregnancy; first-trimester data are limited but nothing worrying, and late-pregnancy data are numerous. Injection, given by a professional. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-ceftriaxone
+        - crat-cephalosporines
+  reviewed: 2026-11-14
+- id: azithromycin
+  category: antibiotics
+  names:
+    - "Azithromycin"
+    - "Zithromax"
+  active_ingredient: "azithromycin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT: very many published pregnancies, no malformation or foetal/newborn effect attributed, usable at any stage. NHS says it may be used when an infection needs treating, though another antibiotic might suit better. Only when prescribed. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-azithromycine
+        - crat-macrolides
+        - nhs-azithromycin
+  reviewed: 2026-11-14
+- id: clarithromycin
+  category: antibiotics
+  names:
+    - "Clarithromycin"
+    - "Zeclar"
+  active_ingredient: "clarithromycin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT: very many published pregnancies, nothing attributed to the drug, usable at any stage. NHS considers it usable in pregnancy but another antibiotic may be a better choice. Only when prescribed. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-clarithromycine
+        - crat-macrolides
+        - nhs-clarithromycin
+  reviewed: 2026-11-14
+- id: erythromycin
+  category: antibiotics
+  names:
+    - "Erythromycin"
+    - "Erythrocine"
+  active_ingredient: "erythromycin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT: very many published pregnancies, no harm attributed (no increase in newborn pyloric stenosis), usable at any stage. NHS says it can be prescribed in pregnancy when needed. Only when prescribed. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-erythromycine
+        - crat-macrolides
+        - nhs-erythromycin
+  reviewed: 2026-11-14
+- id: spiramycin
+  category: antibiotics
+  names:
+    - "Spiramycin"
+    - "Rovamycine"
+  active_ingredient: "spiramycin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT: extensive experience in pregnancy (notably 2nd and 3rd trimesters, e.g. toxoplasmosis), no harm attributed, usable at any stage. Only when prescribed. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-spiramycine
+        - crat-macrolides
+  reviewed: 2026-11-14
+- id: josamycin
+  category: antibiotics
+  names:
+    - "Josamycin"
+    - "Josacine"
+  active_ingredient: "josamycin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: limited data but no harm reported; a macrolide better known in pregnancy is preferred, and josamycin is kept for when it has a clear advantage. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-josamycine
+        - crat-macrolides
+  reviewed: 2026-11-14
+- id: roxithromycin
+  category: antibiotics
+  names:
+    - "Roxithromycin"
+  active_ingredient: "roxithromycin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT: extensive published data, no harm attributed, very low placental passage, usable at any stage. Only when prescribed. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-roxithromycine
+        - crat-macrolides
+  reviewed: 2026-11-14
+- id: pristinamycin
+  category: antibiotics
+  names:
+    - "Pristinamycin"
+    - "Pyostacine"
+  active_ingredient: "pristinamycin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: no published data in pregnant women, but no harm reported and none in animals. It can be considered at any stage if an antibiotic against staphylococci is needed; a better-known macrolide is preferred otherwise. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-pristinamycine
+        - crat-macrolides
+  reviewed: 2026-11-14
+- id: nitrofurantoin
+  category: antibiotics
+  names:
+    - "Nitrofurantoin"
+    - "Furadantine"
+    - "Macrodantine"
+  active_ingredient: "nitrofurantoin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: many short-course pregnancies, no particular harm, but it is only a later choice for cystitis once other options are ruled out, and there is no data on long-term use. NHS says it is usually fine before 28 weeks of pregnancy; after that a doctor may avoid it because it can affect the baby's red blood cells. Ask the prescriber, especially late in pregnancy. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-nitrofurantoine
+        - crat-cystite-aigue
+        - nhs-nitrofurantoin
+  reviewed: 2026-11-14
+- id: fosfomycin
+  category: antibiotics
+  names:
+    - "Fosfomycin trometamol"
+    - "Monuril"
+    - "Uridoz"
+  active_ingredient: "fosfomycin trometamol"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT: very many published pregnancies, no harm attributed, usable at any stage. It is the first choice for cystitis in pregnancy while waiting for the urine culture result. A urine test is done before treatment. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-fosfomycine
+        - crat-cystite-aigue
+  reviewed: 2026-11-14
+- id: pivmecillinam
+  category: antibiotics
+  names:
+    - "Pivmecillinam"
+    - "Selexid"
+  active_ingredient: "pivmecillinam"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT: very many published pregnancies, no harm attributed, usable at any stage. Second choice for cystitis in pregnancy (after fosfomycin) while waiting for the urine culture. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-pivmecillinam
+        - crat-cystite-aigue
+  reviewed: 2026-11-14
+- id: cyclines
+  category: antibiotics
+  names:
+    - "[object Object]"
+    - "minocycline"
+    - "lymecycline"
+  active_ingredient: "tetracycline class"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: usable in the first trimester for infections other than acne, but avoid starting them for acne. After the first trimester another antibiotic is preferred, especially for a long course, because taken in the third trimester for about 15 days or more they can stain the baby's milk teeth. Permanent teeth are not affected. Do not start or stop without the prescriber. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-cyclines
+        - crat-doxycycline
+        - nhs-doxycycline
+  reviewed: 2026-11-14
+- id: doxycycline
+  category: antibiotics
+  names:
+    - "Doxycycline"
+    - "Vibramycin"
+  active_ingredient: "doxycycline"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: no malformation attributed after first-trimester exposure; for acne avoid it. After the first trimester another antibiotic is preferred, as use late in pregnancy can discolour the baby's milk teeth. NHS says it is not usually used in pregnancy because of effects on tooth development, with lower risk in the first 13 weeks. Only if the prescriber judges it necessary. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-doxycycline
+        - crat-cyclines
+        - nhs-doxycycline
+  reviewed: 2026-11-14
+- id: minocycline
+  category: antibiotics
+  names:
+    - "Minocycline"
+  active_ingredient: "minocycline"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: few published pregnancies, no malformation reported; usable in the first trimester within its approved uses (not for acne). After that, another antibiotic is preferred, as use in the third trimester can discolour milk teeth. Only if the prescriber judges it necessary. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-minocycline
+        - crat-cyclines
+  reviewed: 2026-11-14
+- id: fluoroquinolones
+  category: antibiotics
+  names:
+    - "Fluoroquinolones (ofloxacin"
+    - "levofloxacin"
+    - "norfloxacin"
+    - "moxifloxacin)"
+  active_ingredient: "fluoroquinolone class"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: no malformation established, but they are no longer used for simple cystitis or bladder bacteria in pregnancy, and ciprofloxacin is the preferred member; ofloxacin and levofloxacin only if it does not suit. Members differ, and NHS says ciprofloxacin is not usually used in pregnancy when other antibiotics work. Only if the prescriber judges it necessary. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-fluoroquinolones
+        - crat-ofloxacine
+        - nhs-ciprofloxacin
+  reviewed: 2026-11-14
+- id: ciprofloxacin
+  category: antibiotics
+  names:
+    - "Ciprofloxacin"
+    - "Ciflox"
+  active_ingredient: "ciprofloxacin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: the preferred fluoroquinolone in pregnancy, any trimester; many first-trimester pregnancies without attributed malformation, and no cartilage problem seen in children exposed in the womb. Not used for cystitis in pregnancy. NHS says it is not usually used in pregnancy when other antibiotics can be used. Only if the prescriber judges it necessary. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-ciprofloxacine
+        - crat-fluoroquinolones
+        - nhs-ciprofloxacin
+  reviewed: 2026-11-14
+- id: metronidazole
+  category: antibiotics
+  names:
+    - "Metronidazole"
+    - "Flagyl"
+  active_ingredient: "metronidazole"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT: very many published pregnancies, no harm attributed, can be used at any stage; it is the preferred nitroimidazole in pregnancy. Only when prescribed. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-metronidazole
+        - crat-tinidazole
+        - crat-secnidazole
+  reviewed: 2026-11-14
+- id: tinidazole
+  category: antibiotics
+  names:
+    - "Tinidazole"
+  active_ingredient: "tinidazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: no first-trimester data, though no malformation reported; metronidazole is preferred, and tinidazole can be considered in the second and third trimesters. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-tinidazole
+        - crat-metronidazole
+  reviewed: 2026-11-14
+- id: secnidazole
+  category: antibiotics
+  names:
+    - "Secnidazole"
+    - "Secnol"
+  active_ingredient: "secnidazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: no first-trimester data, though no malformation reported; metronidazole is preferred, and secnidazole can be considered in the second and third trimesters. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-secnidazole
+        - crat-metronidazole
+  reviewed: 2026-11-14
+- id: cotrimoxazole
+  category: antibiotics
+  names:
+    - "Cotrimoxazole"
+    - "Co-trimoxazole"
+    - "Bactrim"
+    - "Eusaprim"
+  active_ingredient: "sulfamethoxazole + trimethoprim"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: before 10 weeks of amenorrhoea another antibiotic is preferred, because of a suspected increase in some malformations (it works against folate); if no alternative, folic acid and a detailed ultrasound are considered. After 10 weeks it can be used, but it is a late choice for cystitis. Only on prescription. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-cotrimoxazole
+        - crat-cystite-aigue
+        - crat-trimethoprime
+  reviewed: 2026-11-14
+- id: trimethoprim
+  category: antibiotics
+  names:
+    - "Trimethoprim"
+    - "Delprim"
+  active_ingredient: "trimethoprim"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: possible increase in some malformations (neural tube, heart, cleft), thought linked to its anti-folate action, so avoid it before 10 weeks of amenorrhoea; after 10 weeks only once other options are ruled out. NHS says doctors generally avoid it in early pregnancy and, if it is the only suitable option, give higher-dose folic acid. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-trimethoprime
+        - crat-cystite-aigue
+        - nhs-trimethoprim
+  reviewed: 2026-11-14
+- id: aminoglycosides
+  category: antibiotics
+  names:
+    - "Aminoglycosides (gentamicin"
+    - "amikacin"
+    - "tobramycin; not streptomycin/kanamycin)"
+  active_ingredient: "aminoglycoside class"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: injectable gentamicin, amikacin and tobramycin can be used at any stage under usual hospital monitoring (kidney function); for long courses the baby's hearing screening should account for exposure. Streptomycin and kanamycin injections should not be used in pregnancy except in exceptional cases. Hospital use only. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-aminosides
+        - crat-neomycine
+  reviewed: 2026-11-14
+- id: tobramycin-eye-ear
+  category: eye-ear
+  names:
+    - "Tobramycin eye/ear drops"
+    - "Tobrex"
+    - "gentamicin eye drops"
+  active_ingredient: "tobramycin (also gentamicin, neomycin)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT: gentamicin, neomycin and tobramycin in eye, ear or dental forms can be used at any stage of pregnancy because only small amounts are given. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-aminosides
+        - crat-neomycine
+  reviewed: 2026-11-14
+- id: azithromycin-eye
+  category: eye-ear
+  names:
+    - "Azithromycin eye drops"
+    - "Azyter"
+  active_ingredient: "azithromycin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT says azithromycin (by mouth) can be used at any stage with very many published pregnancies; its pages do not give a separate rule for eye drops, which pass very little into the body. Ask the prescriber. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-azithromycine
+        - crat-macrolides
+  reviewed: 2026-11-14
+- id: ofloxacin-ear-eye
+  category: eye-ear
+  names:
+    - "Ofloxacin ear/eye drops"
+    - "Oflocet"
+    - "Exocine"
+  active_ingredient: "ofloxacin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT: ofloxacin eye drops and ear drops can be used at any stage of pregnancy because exposure of the body is negligible by these routes. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-ofloxacine
+        - crat-fluoroquinolones
+  reviewed: 2026-11-14
+- id: ciprofloxacin-ear-eye
+  category: eye-ear
+  names:
+    - "Ciprofloxacin ear/eye drops"
+    - "Ciloxan"
+  active_ingredient: "ciprofloxacin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT: ciprofloxacin by eye or ear can be used at any stage of pregnancy because exposure of the body is negligible by these routes. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-ciprofloxacine
+        - crat-fluoroquinolones
+  reviewed: 2026-11-14
+- id: miconazole
+  category: antifungals
+  names:
+    - "Miconazole"
+    - "Daktarin"
+    - "Loramyc"
+  active_ingredient: "miconazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT says miconazole used on the skin or gums can be used at any stage of pregnancy: many pregnancies exposed, no harm to the baby linked to it, and very little reaches the blood. It is listed with the best-known skin antifungals. For vaginal thrush CRAT lists other products first. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-miconazole
+        - crat-antifongiques-cutanes
+  reviewed: 2026-11-14
+- id: econazole
+  category: antifungals
+  names:
+    - "Econazole"
+    - "Pevaryl"
+    - "Gyno-Pevaryl"
+  active_ingredient: "econazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT reports no harm to the baby linked to econazole and very low absorption, but data are limited. It advises choosing better-known antifungals first (clotrimazole or sertaconazole for the vagina; miconazole, ketoconazole, sertaconazole or terbinafine for the skin) and keeping econazole as a second choice, especially after the first trimester. Avoid products combining several active ingredients. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-econazole
+        - crat-antifongiques-vulvo-vaginaux
+        - crat-antifongiques-cutanes
+  reviewed: 2026-11-14
+- id: fenticonazole
+  category: antifungals
+  names:
+    - "Fenticonazole"
+    - "Lomexin"
+  active_ingredient: "fenticonazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "No published data in pregnant women, no harm reported, and not harmful in animals. CRAT prefers better-known antifungals first and keeps fenticonazole as a second choice, especially after the first trimester. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-fenticonazole
+        - crat-antifongiques-vulvo-vaginaux
+  reviewed: 2026-11-14
+- id: sertaconazole
+  category: antifungals
+  names:
+    - "Sertaconazole"
+    - "Monazol"
+    - "Candazol"
+  active_ingredient: "sertaconazole"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT: many pregnancies exposed, no harm to the baby linked to it, can be used at any stage. It is one of the best-known first-choice antifungals, both for vaginal thrush and for skin infections. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-sertaconazole
+        - crat-antifongiques-vulvo-vaginaux
+        - crat-antifongiques-cutanes
+  reviewed: 2026-11-14
+- id: ketoconazole-topical
+  category: antifungals
+  names:
+    - "Ketoconazole (cream"
+    - "shampoo)"
+    - "Ketoderm"
+  active_ingredient: "ketoconazole, topical"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT says topical ketoconazole can be used at any stage of pregnancy, with negligible absorption through the skin. It is among the best-known skin antifungals. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-ketoconazole
+        - crat-antifongiques-cutanes
+  reviewed: 2026-11-14
+- id: fluconazole-single-dose
+  category: antifungals
+  names:
+    - "Fluconazole single capsule for thrush"
+    - "Triflucan"
+    - "Beagyne"
+  active_ingredient: "fluconazole, one-off dose"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT accepts a single oral dose for vaginal thrush at any stage, but only after local treatment has failed; many first-trimester exposures showed no harm linked to a single dose. NHS says fluconazole is not usually recommended in pregnancy and only if the doctor judges the benefit worth it. Ask a doctor or pharmacist first. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-fluconazole
+        - crat-antifongiques-vulvo-vaginaux
+        - nhs-fluconazole
+  reviewed: 2026-11-14
+- id: fluconazole-high-dose
+  category: antifungals
+  names:
+    - "Fluconazole repeated or high-dose"
+    - "long courses"
+  active_ingredient: "fluconazole, repeated or high-dose"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "CRAT cannot rule out a higher risk of malformation with repeated or high-dose use; case reports of long high-dose exposure showed bone and some heart and palate anomalies, and a possible higher miscarriage risk needs confirming. NHS says fluconazole is not usually recommended in pregnancy. Do not use without specialist advice. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-fluconazole
+        - nhs-fluconazole
+  reviewed: 2026-11-14
+- id: terbinafine-topical
+  category: antifungals
+  names:
+    - "Terbinafine cream"
+    - "Lamisil"
+  active_ingredient: "terbinafine, cream"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT lists terbinafine among the best-known skin antifungals at any stage; first-trimester data are many with no harm to the baby linked to it. NHS suggests checking with a doctor or pharmacist first. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-terbinafine
+        - crat-antifongiques-cutanes
+        - nhs-terbinafine
+  reviewed: 2026-11-14
+- id: terbinafine-oral
+  category: antifungals
+  names:
+    - "Terbinafine tablets"
+    - "Lamisil tablets"
+  active_ingredient: "terbinafine, oral"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: no harm linked to it in many first-trimester exposures, but oral use is only considered when really needed and cannot wait (for nail infections, wait until after delivery and use a nail lacquer meanwhile). NHS says terbinafine is generally avoided in pregnancy. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-terbinafine
+        - nhs-terbinafine
+  reviewed: 2026-11-14
+- id: amorolfine
+  category: antifungals
+  names:
+    - "Amorolfine nail lacquer"
+    - "Locéryl"
+  active_ingredient: "amorolfine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT says amorolfine, bifonazole or ciclopirox nail lacquers can be used throughout pregnancy because only tiny amounts are applied and very little is absorbed. The terbinafine page also points to these lacquers for nail infections at any stage. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-antifongiques-cutanes
+        - crat-terbinafine
+  reviewed: 2026-11-14
+- id: ciclopirox
+  category: antifungals
+  names:
+    - "Ciclopirox"
+    - "Mycoster"
+  active_ingredient: "ciclopirox"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT says the nail lacquer can be used throughout pregnancy. For skin infections it is a second-choice option after miconazole, ketoconazole, sertaconazole or terbinafine, especially after the first trimester. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-antifongiques-cutanes
+        - crat-terbinafine
+  reviewed: 2026-11-14
+- id: aciclovir
+  category: antivirals
+  names:
+    - "Aciclovir (acyclovir)"
+    - "Zovirax"
+  active_ingredient: "aciclovir"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT (valaciclovir page, which states the aciclovir findings too): many exposed pregnancies and no harm to the baby linked to aciclovir. NHS says it is usually considered safe in pregnancy but to check with a pharmacist or doctor first. The CRAT aciclovir pregnancy page itself was not found, and cream vs tablets is not separated. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-valaciclovir
+        - nhs-aciclovir
+  reviewed: 2026-11-14
+- id: permethrin-scabies
+  category: antiparasitics
+  names:
+    - "Permethrin 5% cream for scabies"
+    - "Topiscab"
+  active_ingredient: "permethrin"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT: first choice for scabies in pregnancy at any stage because very little reaches the blood. Data in pregnancy are limited, especially in the first trimester, but use is long-standing and no harm to the baby is linked to it. The CRAT page covers scabies only, not head lice. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-permethrine
+        - crat-scabicides
+  reviewed: 2026-11-14
+- id: benzyl-benzoate
+  category: antiparasitics
+  names:
+    - "Benzyl benzoate"
+    - "Ascabiol"
+  active_ingredient: "benzyl benzoate"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: usable for scabies if needed, especially after the first trimester. Permethrin is preferred at any stage. First-trimester data are few, later data many, with no harm to the baby linked to it. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-benzoate-benzyle
+        - crat-scabicides
+  reviewed: 2026-11-14
+- id: ivermectin
+  category: antiparasitics
+  names:
+    - "Ivermectin"
+    - "Stromectol"
+  active_ingredient: "ivermectin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: many exposed pregnancies with one oral dose and no harm to the baby linked to it, usable at any stage. For scabies skin treatment is preferred and ivermectin is kept for when it is unsuitable or not enough. High repeated doses caused cleft palate in animals. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-ivermectine
+        - crat-scabicides
+  reviewed: 2026-11-14
+- id: pyrantel
+  category: antiparasitics
+  names:
+    - "Pyrantel"
+    - "Combantrin"
+  active_ingredient: "pyrantel"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT: pyrantel is the preferred worm treatment (pinworm, roundworm) in pregnancy, usable at any stage, no harm to the baby linked to it and not harmful in animals. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-pyrantel
+        - crat-oxyures
+  reviewed: 2026-11-14
+- id: albendazole
+  category: antiparasitics
+  names:
+    - "Albendazole"
+    - "Zentel"
+  active_ingredient: "albendazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: usable in the second and third trimesters (many data, no harm to the baby linked to it). In the first trimester it is not the first choice; pyrantel is preferred and albendazole only if the others do not suit and treatment cannot wait. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-albendazole
+        - crat-oxyures
+  reviewed: 2026-11-14
+- id: hydroxychloroquine
+  category: antiparasitics
+  names:
+    - "Hydroxychloroquine"
+    - "Plaquenil"
+  active_ingredient: "hydroxychloroquine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: no harm to the baby linked to it, can be used at any stage if the mother needs it, and in conditions such as lupus it should be continued during pregnancy. NHS: prescribed in pregnancy when needed, at the lowest effective dose. Do not stop or change it without medical advice. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-hydroxychloroquine
+        - nhs-hydroxychloroquine
+  reviewed: 2026-11-14
+- id: atovaquone-proguanil
+  category: antiparasitics
+  names:
+    - "Atovaquone-proguanil"
+    - "Malarone"
+  active_ingredient: "atovaquone + proguanil"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT: many first-trimester exposures with no harm to the baby linked to it, and long use later with no fetal or newborn effect; can be used if the destination needs it. Travel to malaria areas is discouraged in pregnancy, so talk to a travel doctor. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-malarone
+        - crat-chimioprophylaxie-paludisme
+  reviewed: 2026-11-14
+- id: repellent-deet
+  category: antiparasitics
+  names:
+    - "DEET insect repellent"
+  active_ingredient: "DEET"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT: DEET (20 to 50 percent, at least 30 for malaria areas) is the best-studied repellent in pregnancy, with no harm to the baby linked to it. CDC: repellents registered with the US EPA are safe for pregnant women when used per the label. Do not apply to skin lesions or mucous membranes. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-repulsifs-grossesse
+        - cdc-mosquito-prevention
+  reviewed: 2026-11-14
+- id: repellent-icaridin
+  category: antiparasitics
+  names:
+    - "Icaridin (picaridin) repellent"
+  active_ingredient: "icaridin (KBR3023)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT: icaridin (20 percent) has no published data in pregnant women but no harm to the baby has been reported. CDC lists picaridin among repellents proven safe for pregnant women when used per the label. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-repulsifs-grossesse
+        - cdc-mosquito-prevention
+  reviewed: 2026-11-14
+- id: repellent-ir3535
+  category: antiparasitics
+  names:
+    - "IR3535 repellent"
+  active_ingredient: "IR3535"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT: IR3535 (20 percent) has no published data in pregnant women but no harm to the baby has been reported. CDC lists IR3535 among repellents proven safe for pregnant women when used per the label. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-repulsifs-grossesse
+        - cdc-mosquito-prevention
+  reviewed: 2026-11-14
+- id: combined-pill
+  category: contraception
+  names:
+    - "Combined contraceptive pill"
+    - "Oestrogen-progestogen pill"
+    - "Optilova"
+    - "Minidril"
+  active_ingredient: "ethinylestradiol + a progestin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The pill has no use in pregnancy. If you find you are pregnant while taking it, stop it and tell your doctor or midwife. CRAT says very many pregnancies were exposed and no malformation or fetal effect has been attributed to ethinylestradiol, so you can be reassured about the baby. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-ethinylestradiol
+        - crat-desogestrel
+  reviewed: 2026-11-14
+- id: vaginal-ring
+  category: contraception
+  names:
+    - "Vaginal ring (etonogestrel + ethinylestradiol)"
+    - "Etoring"
+    - "NuvaRing"
+  active_ingredient: "etonogestrel + ethinylestradiol"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "If pregnancy is discovered, remove the ring and tell your doctor or midwife. CRAT reports no malformation or fetal effect attributed to etonogestrel or ethinylestradiol, so you can be reassured. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-etonogestrel
+        - crat-ethinylestradiol
+  reviewed: 2026-11-14
+- id: misoprostol
+  category: hormones
+  names:
+    - "Misoprostol"
+    - "Cytotec"
+    - "Gymiso"
+  active_ingredient: "misoprostol"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Misoprostol can cause birth defects (nerve and face problems such as Moebius syndrome, limb defects) when taken in early pregnancy. CRAT lists it among proven teratogens to avoid. If you took it, see your doctor for targeted ultrasound checks. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-misoprostol
+        - crat-medicaments-dangereux
+  reviewed: 2026-11-14
+- id: ramipril
+  category: blood-pressure
+  names:
+    - "Ramipril"
+    - "Triatec"
+    - "ACE inhibitors"
+  active_ingredient: "ramipril"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "NHS says ramipril is not recommended in pregnancy because it can harm the baby's kidneys, mainly in the 2nd and 3rd trimesters. CRAT lists ACE inhibitors as harmful to the fetus from the 3rd month. If pregnant on it, contact your doctor straight away for a switch; do not just stop blood pressure treatment on your own. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - nhs-ramipril
+        - crat-medicaments-dangereux
+  reviewed: 2026-11-14
+- id: enalapril
+  category: blood-pressure
+  names:
+    - "Enalapril"
+    - "Renitec"
+  active_ingredient: "enalapril"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "NHS says enalapril is not usually used in pregnancy because it can affect the baby's development; CRAT lists it as harmful to the fetus from the 3rd month. Contact your doctor promptly for a safer alternative. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - nhs-enalapril
+        - crat-medicaments-dangereux
+  reviewed: 2026-11-14
+- id: losartan
+  category: blood-pressure
+  names:
+    - "Losartan"
+    - "Cozaar"
+    - "ARBs"
+  active_ingredient: "losartan"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "NHS says losartan is generally avoided in pregnancy; CRAT lists it among drugs harmful to the fetus from the 3rd month. Contact your doctor promptly for a switch; do not stop treatment on your own. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - nhs-losartan
+        - crat-medicaments-dangereux
+  reviewed: 2026-11-14
 - id: isotretinoin-oral
   category: skin
   names:
@@ -3467,4 +4463,479 @@
       sources:
         - crat-cafeine
         - nhs-foods-to-avoid
+  reviewed: 2026-11-14
+- id: flu-vaccine
+  category: vaccines
+  names:
+    - "Seasonal flu vaccine"
+    - "Flu jab"
+    - "Influenza vaccine"
+  active_ingredient: "Inactivated influenza vaccine"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT says the flu vaccines used in France are inactivated and can be given at any stage of pregnancy, with no harm to the baby linked to them. NHS and CDC also recommend it in pregnancy; the nasal live spray is not for pregnancy. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-grippe
+        - nhs-flu-vaccine
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: covid-vaccine
+  category: vaccines
+  names:
+    - "Covid-19 vaccine"
+    - "Comirnaty"
+  active_ingredient: "mRNA Covid-19 vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT considers the mRNA Covid-19 vaccine possible and recommended at any stage of pregnancy, with no need to delay conception afterwards. NHS says eligible people can generally have it while pregnant; CDC recommends it for adults including pregnant women. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-covid
+        - nhs-covid-vaccine
+        - cdc-vaccine-recommendations-pregnancy
+  reviewed: 2026-11-14
+- id: whooping-cough-vaccine
+  category: vaccines
+  names:
+    - "Whooping cough vaccine"
+    - "Pertussis vaccine"
+    - "Tdap"
+    - "dTcaP"
+  active_ingredient: "Inactivated acellular pertussis vaccine (with diphtheria, tetanus, +/- polio)"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT calls it safe in pregnancy and recommends it in every pregnancy, most useful for the baby between 20 and 36 weeks of amenorrhoea. NHS offers it around 20 weeks (from 16 weeks, ideally before 32 weeks); CDC recommends it in every pregnancy, weeks 27 to 36. Timing differs slightly between countries: follow the French midwife or doctor. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-coqueluche
+        - crat-repevax
+        - nhs-whooping-cough-pregnancy
+        - cdc-vaccine-recommendations-pregnancy
+  reviewed: 2026-11-14
+- id: repevax
+  category: vaccines
+  names:
+    - "Repevax"
+    - "dTcaP vaccine"
+  active_ingredient: "Diphtheria-tetanus-acellular pertussis-polio vaccine (inactivated)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT considers Repevax safe in pregnancy because it is inactivated and cannot infect the baby, with no waiting period before conception. See the whooping cough entry for the best timing. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-repevax
+        - crat-vaccin-coqueluche
+  reviewed: 2026-11-14
+- id: rsv-vaccine
+  category: vaccines
+  names:
+    - "RSV vaccine"
+    - "Abrysvo"
+  active_ingredient: "Bivalent RSV prefusion F vaccine (inactivated)"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT considers Abrysvo acceptable in the third trimester, between 32 and 36 weeks of amenorrhoea, to protect the baby for its first months. CDC recommends it at 32 to 36 weeks in season; NHS offers it from about 28 weeks. Alternative is an antibody injection for the newborn: ask the midwife. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-abrysvo
+        - nhs-rsv-vaccine
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: tetanus-vaccine
+  category: vaccines
+  names:
+    - "Tetanus vaccine"
+  active_ingredient: "Tetanus toxoid (inactivated)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT says it is safe at any stage of pregnancy and an unfinished schedule can be continued. NHS lists tetanus vaccine as safe in pregnancy if needed. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-tetanos
+        - nhs-vaccines-pregnancy
+  reviewed: 2026-11-14
+- id: diphtheria-vaccine
+  category: vaccines
+  names:
+    - "Diphtheria vaccine"
+  active_ingredient: "Diphtheria toxoid (inactivated)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT says it is safe in pregnancy because it is inactivated, at any stage, and remaining doses can be completed. Only CRAT gave a dedicated page; it is also in the combined vaccines used for whooping cough. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-diphterie
+        - crat-vaccins
+  reviewed: 2026-11-14
+- id: polio-inactivated-vaccine
+  category: vaccines
+  names:
+    - "Polio vaccine (injected)"
+    - "Inactivated polio vaccine"
+    - "dTP"
+    - "Tetanus-diphtheria-polio"
+  active_ingredient: "Inactivated poliovirus vaccine (often combined with diphtheria and tetanus: dTP)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT describes the polio vaccine as inactivated and possible at any stage of pregnancy, and unfinished schedules can be completed. This also applies to the combined tetanus-diphtheria-polio (dTP) vaccine whose components each have a CRAT page saying the same. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-polio
+        - crat-vaccin-tetanos
+        - crat-vaccin-diphterie
+  reviewed: 2026-11-14
+- id: hepatitis-a-vaccine
+  category: vaccines
+  names:
+    - "Hepatitis A vaccine"
+  active_ingredient: "Inactivated hepatitis A vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT says it is inactivated, with no harm linked in many pregnancies, and can be given at any stage. CDC recommends it for pregnant women at risk (travel, liver disease, exposure). If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-hepatite-a
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: hepatitis-b-vaccine
+  category: vaccines
+  names:
+    - "Hepatitis B vaccine"
+  active_ingredient: "Recombinant hepatitis B vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT says it is possible at any stage and a started series should be finished. NHS says it is generally safe in pregnancy; CDC says pregnancy is not a reason to withhold it. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-hepatite-b
+        - nhs-hepb-vaccine
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: mmr-vaccine
+  category: vaccines
+  names:
+    - "MMR vaccine"
+    - "Measles-mumps-rubella vaccine"
+    - "Priorix"
+    - "M-M-RvaxPro"
+  active_ingredient: "Live attenuated measles, mumps, rubella vaccine"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "This is a live vaccine: CRAT, NHS and CDC all say not to give it during pregnancy; it should be given after delivery. Conception should be avoided for about one month after it. If given by accident, CRAT advises reassurance and specialist follow-up, not alarm. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-ror
+        - nhs-mmr-vaccine
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: rubella-vaccine
+  category: vaccines
+  names:
+    - "Rubella vaccine"
+    - "German measles vaccine"
+  active_ingredient: "Live attenuated rubella vaccine (usually within MMR/ROR)"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "The rubella vaccine is live: CRAT says not to vaccinate during pregnancy or in the month before conception (it is given inside the MMR vaccine). CRAT recommends checking rubella immunity before pregnancy. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccins
+        - crat-vaccin-ror
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: varicella-vaccine
+  category: vaccines
+  names:
+    - "Varicella vaccine"
+    - "Chickenpox vaccine"
+    - "Varivax"
+  active_ingredient: "Live attenuated varicella vaccine"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Live vaccine: CRAT advises against vaccinating pregnant women and recommends avoiding conception for a month after; no harm to babies has been found in exposed pregnancies so far. NHS and CDC also say not to give it in pregnancy. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-varicelle
+        - nhs-chickenpox-vaccine
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: yellow-fever-vaccine
+  category: vaccines
+  names:
+    - "Yellow fever vaccine"
+    - "Stamaril"
+  active_ingredient: "Live attenuated yellow fever vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Live vaccine: CRAT says it is possible at any stage only if the trip cannot be postponed; no harm was seen in studied pregnancies. NHS and CDC say it is usually delayed but may be used if travel to a risk area is unavoidable. Decide with a doctor or travel clinic. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-fievre-jaune
+        - nhs-vaccines-pregnancy
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: bcg-vaccine
+  category: vaccines
+  names:
+    - "BCG vaccine"
+    - "Tuberculosis vaccine"
+  active_ingredient: "Live attenuated BCG vaccine"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "CRAT does not recommend vaccinating a pregnant woman and no harm to babies has been reported so far; NHS says pregnant people should not have BCG (live vaccine). A pregnancy discovered after BCG is not a cause for alarm. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-bcg
+        - nhs-bcg-vaccine
+        - nhs-vaccines-pregnancy
+  reviewed: 2026-11-14
+- id: hpv-vaccine
+  category: vaccines
+  names:
+    - "HPV vaccine"
+    - "Gardasil"
+    - "Gardasil 9"
+    - "Cervarix"
+  active_ingredient: "Inactivated HPV vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT says it is not justified to vaccinate while pregnant (can wait until after delivery), though no harm was found in women vaccinated before knowing they were pregnant. CDC says not recommended in pregnancy and to resume afterwards; NHS finds no sign of harm but some people are advised to wait. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-hpv
+        - nhs-hpv-vaccine
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: meningococcal-acwy-vaccine
+  category: vaccines
+  names:
+    - "Meningococcal ACWY vaccine"
+    - "MenACWY"
+    - "Nimenrix"
+    - "MenQuadfi"
+  active_ingredient: "Inactivated meningococcal A, C, W, Y conjugate vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT says meningococcal vaccines (ACWY and B) are inactivated and possible at any stage of pregnancy. CDC says pregnancy should not prevent MenACWY vaccination when it is indicated. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-meningocoque
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: meningococcal-b-vaccine
+  category: vaccines
+  names:
+    - "Meningococcal B vaccine"
+    - "MenB"
+    - "Bexsero"
+    - "Trumenba"
+  active_ingredient: "Inactivated meningococcal B vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT says meningococcal B vaccines are possible at any stage of pregnancy. CDC generally defers MenB in pregnancy unless the woman is at increased risk and benefits outweigh risks, so decide with a doctor. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-meningocoque
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: pneumococcal-vaccine
+  category: vaccines
+  names:
+    - "Pneumococcal vaccine"
+    - "Prevenar"
+    - "Pneumovax"
+  active_ingredient: "Inactivated pneumococcal vaccine (conjugate or polysaccharide)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT says it is inactivated and possible at any stage, and NHS says people who need it can have it in pregnancy. CDC makes no recommendation in pregnancy because data are limited, so it is given only if there is a medical reason. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-pneumocoque
+        - nhs-pneumococcal-vaccine
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: rabies-vaccine
+  category: vaccines
+  names:
+    - "Rabies vaccine"
+  active_ingredient: "Inactivated rabies vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT says it is inactivated and possible at any stage of pregnancy. CDC says pregnancy is not a reason to withhold it after an exposure, and it may be used beforehand if the exposure risk is substantial. After a bite or scratch from an animal, seek care at once. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-rage
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: typhoid-injectable-vaccine
+  category: vaccines
+  names:
+    - "Typhoid vaccine (injectable)"
+    - "Typhim Vi"
+  active_ingredient: "Inactivated Vi polysaccharide typhoid vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT says the inactivated Typhim can be used at any stage and is preferred over the oral live vaccine. CDC notes there are no pregnancy data and says to give the Vi vaccine only if clearly needed. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-typhoide
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: typhoid-oral-vaccine
+  category: vaccines
+  names:
+    - "Typhoid vaccine (oral)"
+    - "Vivotif"
+  active_ingredient: "Live attenuated Ty21a typhoid vaccine (oral)"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Live oral vaccine: CRAT prefers the inactivated injectable one in pregnancy, CDC says the oral live vaccine is contraindicated, and NHS lists oral typhoid among live vaccines usually delayed until after birth. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-typhoide
+        - cdc-vaccine-guidelines-pregnancy
+        - nhs-vaccines-pregnancy
+  reviewed: 2026-11-14
+- id: cholera-vaccine
+  category: vaccines
+  names:
+    - "Cholera vaccine"
+    - "Dukoral"
+  active_ingredient: "Inactivated oral cholera vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT says it is inactivated and possible at any stage with no harm seen. CDC notes there are no data on the licensed vaccine in pregnancy and asks to weigh the risk of travel to affected areas. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-cholera
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: japanese-encephalitis-vaccine
+  category: vaccines
+  names:
+    - "Japanese encephalitis vaccine"
+    - "Ixiaro"
+  active_ingredient: "Inactivated Japanese encephalitis vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT says it is inactivated and possible at any stage, with no harm seen. CDC lists pregnancy as a precaution: usually deferred but may be given to travellers to high-risk areas if benefit outweighs risk. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-encephalite-japonaise
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: hib-vaccine
+  category: vaccines
+  names:
+    - "Hib vaccine"
+    - "Haemophilus influenzae b vaccine"
+  active_ingredient: "Inactivated Hib conjugate vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT lists it as not justified in routine, but says no harm is known and it can be given at any stage if an adult really needs it. Only one allowlisted source. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccin-hib
+        - crat-vaccins
+  reviewed: 2026-11-14
+- id: mpox-vaccine
+  category: vaccines
+  names:
+    - "Mpox vaccine"
+    - "Monkeypox vaccine"
+    - "Jynneos"
+    - "Imvanex"
+  active_ingredient: "Non-replicating smallpox/mpox vaccine (MVA-BN)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "NHS says pregnant people who are advised to get it can generally have it. CDC says human data are insufficient, so use is a risk-benefit decision with a provider, with no fetal harm seen in animals. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - nhs-mpox-vaccine
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: travel-vaccines-general
+  category: vaccines
+  names:
+    - "Travel vaccines in pregnancy"
+  active_ingredient: "Various travel vaccines"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Inactivated travel vaccines are generally considered safe; live ones are usually avoided unless the risk of the infection is greater. Best to avoid trips needing vaccines if possible, and discuss the destination with a doctor or travel clinic several weeks before leaving. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - nhs-travelling
+        - nhs-vaccines-pregnancy
+        - cdc-vaccine-recommendations-pregnancy
+  reviewed: 2026-11-14
+- id: anti-d-immunoglobulin
+  category: vaccines
+  names:
+    - "Anti-D immunoglobulin"
+    - "Anti-D injection"
+    - "Rhophylac"
+    - "Rhesus prophylaxis"
+  active_ingredient: "Human anti-D immunoglobulin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "NHS says rhesus (D) negative women carrying a D-positive baby can be offered an anti-D injection to stop their body making antibodies against the baby's blood, and a midwife may offer it around 28 weeks. Only NHS pages were found (no CNGOF/HAS/ameli page located): the injection is prescribed by the care team. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - nhs-hdfn
+        - nhs-antenatal-appointments
+  reviewed: 2026-11-14
+- id: live-vaccines-class
+  category: vaccines
+  names:
+    - "Live vaccines (class)"
+    - "Live attenuated vaccines"
+  active_ingredient: "Live attenuated vaccines (MMR, varicella, BCG, oral typhoid, yellow fever, nasal flu spray)"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "As a rule live vaccines are not given in pregnancy and conception should wait after some of them (about a month for MMR and varicella). Exception: yellow fever can be possible if travel cannot be postponed. NHS notes no evidence that any live vaccine causes birth defects, so a vaccine given by accident is not a reason to panic. If you are unsure, ask your pharmacist or doctor."
+      sources:
+        - crat-vaccins
+        - nhs-vaccines-pregnancy
+        - nhs-travelling
+        - cdc-vaccine-guidelines-pregnancy
   reviewed: 2026-11-14

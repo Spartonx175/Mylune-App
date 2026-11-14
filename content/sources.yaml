@@ -1481,6 +1481,1432 @@ sources:
     url: https://www.nhs.uk/medicines/pregabalin/pregnancy-breastfeeding-and-fertility-while-taking-pregabalin/
     title: "Pregnancy, breastfeeding and fertility while taking pregabalin - NHS"
     accessed: 2026-11-14
+  # --- medicines checker expansion, pages read 2026-11-14 ---
+  - id: crat-ketoprofene
+    name: CRAT
+    url: https://www.lecrat.fr/15338/
+    title: "Kétoprofène – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-naproxene
+    name: CRAT
+    url: https://www.lecrat.fr/15359/
+    title: "Naproxène – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-celecoxib
+    name: CRAT
+    url: https://www.lecrat.fr/15396/
+    title: "Célécoxib – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-acide-mefenamique
+    name: CRAT
+    url: https://www.lecrat.fr/7481/
+    title: "Acide méfénamique – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-flurbiprofene
+    name: CRAT
+    url: https://www.lecrat.fr/15293/
+    title: "Flurbiprofène – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-morphine
+    name: CRAT
+    url: https://www.lecrat.fr/4552/
+    title: "Morphine – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-oxycodone
+    name: CRAT
+    url: https://www.lecrat.fr/11744/
+    title: "Oxycodone – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-opium
+    name: CRAT
+    url: https://www.lecrat.fr/11750/
+    title: "Opium – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-methadone
+    name: CRAT
+    url: https://www.lecrat.fr/12738/
+    title: "Méthadone – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-baclofene
+    name: CRAT
+    url: https://www.lecrat.fr/9133/
+    title: "Baclofène – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-colchicine
+    name: CRAT
+    url: https://www.lecrat.fr/9166/
+    title: "Colchicine – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-ergotamine
+    name: CRAT
+    url: https://www.lecrat.fr/4270/
+    title: "Ergotamine – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-dihydroergotamine
+    name: CRAT
+    url: https://www.lecrat.fr/4299/
+    title: "Dihydroergotamine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-pizotifene
+    name: CRAT
+    url: https://www.lecrat.fr/4381/
+    title: "Pizotifène – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-propranolol
+    name: CRAT
+    url: https://www.lecrat.fr/4317/
+    title: "Propranolol – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-lidocaine
+    name: CRAT
+    url: https://www.lecrat.fr/8323/
+    title: "Lidocaïne – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-douleurs-neuropathiques
+    name: CRAT
+    url: https://www.lecrat.fr/12529/
+    title: "Douleurs neuropathiques – Grossesse"
+    accessed: 2026-11-14
+  - id: nhs-naproxen
+    name: NHS
+    url: https://www.nhs.uk/medicines/naproxen/pregnancy-breastfeeding-and-fertility-while-taking-naproxen/
+    title: "Naproxen: a painkiller that also treats inflammation - NHS"
+    accessed: 2026-11-14
+  - id: nhs-morphine
+    name: NHS
+    url: https://www.nhs.uk/medicines/morphine/pregnancy-breastfeeding-and-fertility-while-taking-morphine/
+    title: "Morphine: medicine for severe pain - NHS"
+    accessed: 2026-11-14
+  - id: nhs-oxycodone
+    name: NHS
+    url: https://www.nhs.uk/medicines/oxycodone/
+    title: "Oxycodone: a medicine for severe pain - NHS"
+    accessed: 2026-11-14
+  - id: nhs-methadone
+    name: NHS
+    url: https://www.nhs.uk/medicines/methadone/pregnancy-breastfeeding-and-fertility-while-taking-methadone/
+    title: "Pregnancy, breastfeeding and fertility while taking methadone - NHS"
+    accessed: 2026-11-14
+  - id: nhs-baclofen
+    name: NHS
+    url: https://www.nhs.uk/medicines/baclofen/
+    title: "Baclofen: medicine that relieves muscle spasms - NHS"
+    accessed: 2026-11-14
+  - id: nhs-colchicine
+    name: NHS
+    url: https://www.nhs.uk/medicines/colchicine/
+    title: "Colchicine: a medicine to treat gout - NHS"
+    accessed: 2026-11-14
+  - id: crat-esomeprazole
+    name: CRAT
+    url: https://www.lecrat.fr/12852/
+    title: "Esoméprazole – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-pantoprazole
+    name: CRAT
+    url: https://www.lecrat.fr/12889/
+    title: "Pantoprazole – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-lansoprazole
+    name: CRAT
+    url: https://www.lecrat.fr/12850/
+    title: "Lansoprazole – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-rabeprazole
+    name: CRAT
+    url: https://www.lecrat.fr/12848/
+    title: "Rabéprazole – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-famotidine
+    name: CRAT
+    url: https://www.lecrat.fr/12839/
+    title: "Famotidine – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-racecadotril
+    name: CRAT
+    url: https://www.lecrat.fr/6606/
+    title: "Racécadotril = Acétorphan – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-lactitol
+    name: CRAT
+    url: https://www.lecrat.fr/8828/
+    title: "Lactitol – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-docusate
+    name: CRAT
+    url: https://www.lecrat.fr/8801/
+    title: "Docusate sodique – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-paraffine
+    name: CRAT
+    url: https://www.lecrat.fr/8787/
+    title: "Huile de paraffine = vaseline – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-picosulfate
+    name: CRAT
+    url: https://www.lecrat.fr/8837/
+    title: "Picosulfate de sodium – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-bisacodyl
+    name: CRAT
+    url: https://www.lecrat.fr/8790/
+    title: "Bisacodyl – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-laxatifs-anthraceniques
+    name: CRAT
+    url: https://www.lecrat.fr/8815/
+    title: "Laxatifs anthracéniques = boldo, cascara, aloès, séné… – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-mesalazine
+    name: CRAT
+    url: https://www.lecrat.fr/10857/
+    title: "Mésalazine – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-budesonide
+    name: CRAT
+    url: https://www.lecrat.fr/8207/
+    title: "Budésonide – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-dimenhydrinate
+    name: CRAT
+    url: https://www.lecrat.fr/3460/
+    title: "Diménhydrinate – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-metopimazine
+    name: CRAT
+    url: https://www.lecrat.fr/11549/
+    title: "Métopimazine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-chlorpromazine
+    name: CRAT
+    url: https://www.lecrat.fr/3580/
+    title: "Chlorpromazine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-antihemorroidaires
+    name: CRAT
+    url: https://www.lecrat.fr/12336/
+    title: "Antihémorroïdaires – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-veinotoniques
+    name: CRAT
+    url: https://www.lecrat.fr/8530/
+    title: "Veinotoniques – Grossesse"
+    accessed: 2026-11-14
+  - id: nhs-lansoprazole
+    name: NHS
+    url: https://www.nhs.uk/medicines/lansoprazole/pregnancy-breastfeeding-and-fertility-while-taking-lansoprazole/
+    title: "Pregnancy, breastfeeding and fertility while taking lansoprazole - NHS"
+    accessed: 2026-11-14
+  - id: nhs-esomeprazole
+    name: NHS
+    url: https://www.nhs.uk/medicines/esomeprazole/pregnancy-breastfeeding-and-fertility-while-taking-esomeprazole/
+    title: "Pregnancy, breastfeeding and fertility while taking esomeprazole"
+    accessed: 2026-11-14
+  - id: nhs-pantoprazole
+    name: NHS
+    url: https://www.nhs.uk/medicines/pantoprazole/pregnancy-breastfeeding-and-fertility-while-taking-pantoprazole/
+    title: "Pregnancy, breastfeeding and fertility while taking pantoprazole"
+    accessed: 2026-11-14
+  - id: nhs-mesalazine
+    name: NHS
+    url: https://www.nhs.uk/medicines/mesalazine/pregnancy-breastfeeding-and-fertility-while-taking-mesalazine/
+    title: "Pregnancy, breastfeeding and fertility while taking mesalazine"
+    accessed: 2026-11-14
+  - id: nhs-bisacodyl
+    name: NHS
+    url: https://www.nhs.uk/medicines/bisacodyl/pregnancy-breastfeeding-and-fertility-while-taking-bisacodyl/
+    title: "Pregnancy, breastfeeding and fertility while taking bisacodyl - NHS"
+    accessed: 2026-11-14
+  - id: nhs-senna
+    name: NHS
+    url: https://www.nhs.uk/medicines/senna/pregnancy-breastfeeding-and-fertility-while-taking-senna/
+    title: "Senna: a laxative medicine to treat constipation - NHS"
+    accessed: 2026-11-14
+  - id: nhs-docusate
+    name: NHS
+    url: https://www.nhs.uk/medicines/docusate/
+    title: "Docusate: a laxative medicine to treat constipation - NHS"
+    accessed: 2026-11-14
+  - id: crat-oxomemazine
+    name: CRAT
+    url: https://www.lecrat.fr/11893/
+    title: "Oxomémazine – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-acetylcysteine
+    name: CRAT
+    url: https://www.lecrat.fr/4702/
+    title: "N-Acétylcystéine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-carbocisteine
+    name: CRAT
+    url: https://www.lecrat.fr/4720/
+    title: "Carbocistéine = carbocystéine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-ambroxol
+    name: CRAT
+    url: https://www.lecrat.fr/4713/
+    title: "Ambroxol – Grossesse"
+    accessed: 2026-11-14
+  - id: nhs-carbocisteine
+    name: NHS
+    url: https://www.nhs.uk/medicines/carbocisteine/pregnancy-breastfeeding-and-fertility-while-taking-carbocisteine/
+    title: "Pregnancy, breastfeeding and fertility while taking carbocisteine - Brand name: Mucodyne"
+    accessed: 2026-11-14
+  - id: nhs-sore-throat
+    name: NHS
+    url: https://www.nhs.uk/conditions/sore-throat/
+    title: "Sore throat - NHS"
+    accessed: 2026-11-14
+  - id: ansm-pholcodine-retrait
+    name: ANSM
+    url: https://ansm.sante.fr/actualites/decision-du-05-04-2023-portant-retrait-de-lautorisation-de-mise-sur-le-marche-de-la-specialite-pholcodine-biogaran-6-55-mg-5-ml-sirop
+    title: "Décision du 05/04/2023 portant retrait de l'autorisation de mise sur le marché de la spécialité Pholcodine Biogaran 6,55 mg/5 mL, sirop - ANSM"
+    accessed: 2026-11-14
+  - id: ansm-prac-2022-09
+    name: ANSM
+    url: https://ansm.sante.fr/actualites/retour-dinformation-sur-le-prac-de-septembre-2022-29-aout-1er-septembre
+    title: "Retour d'information sur le PRAC de septembre 2022 (29 août - 1er septembre)"
+    accessed: 2026-11-14
+  - id: has-paxlovid-rr
+    name: HAS
+    url: https://has-sante.fr/upload/docs/application/pdf/2022-01/reco458_fiche_rr_paxlovid_mel.pdf
+    title: "Réponse rapide dans le cadre de la COVID-19 - Traitement par Paxlovid des patients à risque de forme grave de Covid-19"
+    accessed: 2026-11-14
+  - id: ansm-paxlovid-acces-precoce
+    name: ANSM
+    url: https://ansm.sante.fr/actualites/impression/3267
+    title: "Covid-19 : accès précoce accordé au Paxlovid en traitement curatif"
+    accessed: 2026-11-14
+  - id: crat-levocetirizine
+    name: CRAT
+    url: https://www.lecrat.fr/3101/
+    title: "Lévocétirizine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-desloratadine
+    name: CRAT
+    url: https://www.lecrat.fr/3662/
+    title: "Desloratadine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-fexofenadine
+    name: CRAT
+    url: https://www.lecrat.fr/4981/
+    title: "Fexofénadine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-dexchlorpheniramine
+    name: CRAT
+    url: https://www.lecrat.fr/6800/
+    title: "Dexchlorphéniramine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-diphenhydramine
+    name: CRAT
+    url: https://www.lecrat.fr/3474/
+    title: "Diphénhydramine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-promethazine
+    name: CRAT
+    url: https://www.lecrat.fr/3528/
+    title: "Prométhazine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-hydroxyzine
+    name: CRAT
+    url: https://www.lecrat.fr/3899/
+    title: "Hydroxyzine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-cyproheptadine
+    name: CRAT
+    url: https://www.lecrat.fr/6794/
+    title: "Cyproheptadine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-ketotifene
+    name: CRAT
+    url: https://www.lecrat.fr/6804/
+    title: "Kétotifène – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-bilastine
+    name: CRAT
+    url: https://www.lecrat.fr/6816/
+    title: "Bilastine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-rupatadine
+    name: CRAT
+    url: https://www.lecrat.fr/6831/
+    title: "Rupatadine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-ebastine
+    name: CRAT
+    url: https://www.lecrat.fr/6821/
+    title: "Ebastine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-mizolastine
+    name: CRAT
+    url: https://www.lecrat.fr/6826/
+    title: "Mizolastine – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-collyres-antiallergiques
+    name: CRAT
+    url: https://www.lecrat.fr/6846/
+    title: "Collyres antiallergiques – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-olopatadine
+    name: CRAT
+    url: https://www.lecrat.fr/6930/
+    title: "Olopatadine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-cromoglicate
+    name: CRAT
+    url: https://www.lecrat.fr/4745/
+    title: "Cromoglicate de sodium – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-mometasone
+    name: CRAT
+    url: https://www.lecrat.fr/8128/
+    title: "Mométasone – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-fluticasone
+    name: CRAT
+    url: https://www.lecrat.fr/8107/
+    title: "Fluticasone – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-beclometasone
+    name: CRAT
+    url: https://www.lecrat.fr/8199/
+    title: "Béclométasone – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-terbutaline
+    name: CRAT
+    url: https://www.lecrat.fr/8060/
+    title: "Terbutaline – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-formoterol
+    name: CRAT
+    url: https://www.lecrat.fr/8043/
+    title: "Formotérol – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-salmeterol
+    name: CRAT
+    url: https://www.lecrat.fr/8053/
+    title: "Salmétérol – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-ipratropium
+    name: CRAT
+    url: https://www.lecrat.fr/4922/
+    title: "Ipratropium – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-tiotropium
+    name: CRAT
+    url: https://www.lecrat.fr/4928/
+    title: "Tiotropium – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-theophylline
+    name: CRAT
+    url: https://www.lecrat.fr/4958/
+    title: "Théophylline – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-montelukast
+    name: CRAT
+    url: https://www.lecrat.fr/4943/
+    title: "Montélukast – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-prednisone
+    name: CRAT
+    url: https://www.lecrat.fr/3515/
+    title: "Prednisone – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-prednisolone
+    name: CRAT
+    url: https://www.lecrat.fr/3509/
+    title: "Prednisolone – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-methylprednisolone
+    name: CRAT
+    url: https://www.lecrat.fr/3521/
+    title: "Méthylprednisolone – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-betamethasone
+    name: CRAT
+    url: https://www.lecrat.fr/5016/
+    title: "Bétaméthasone – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-dexamethasone
+    name: CRAT
+    url: https://www.lecrat.fr/5021/
+    title: "Dexaméthasone – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-desensibilisation
+    name: CRAT
+    url: https://www.lecrat.fr/11609/
+    title: "Désensibilisation – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-omalizumab
+    name: CRAT
+    url: https://www.lecrat.fr/4948/
+    title: "Omalizumab – Grossesse"
+    accessed: 2026-11-14
+  - id: nhs-montelukast
+    name: NHS
+    url: https://www.nhs.uk/medicines/montelukast/pregnancy-breastfeeding-and-fertility-while-taking-montelukast/
+    title: "Pregnancy, breastfeeding and fertility while taking montelukast - NHS"
+    accessed: 2026-11-14
+  - id: nhs-promethazine
+    name: NHS
+    url: https://www.nhs.uk/medicines/promethazine/pregnancy-breastfeeding-and-fertility-while-taking-promethazine/
+    title: "Pregnancy, breastfeeding and fertility while taking promethazine - NHS"
+    accessed: 2026-11-14
+  - id: crat-isotretinoine
+    name: CRAT
+    url: https://www.lecrat.fr/6376/
+    title: "Isotrétinoïne – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-acitretine
+    name: CRAT
+    url: https://www.lecrat.fr/10880/
+    title: "Acitrétine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-adapalene
+    name: CRAT
+    url: https://www.lecrat.fr/6371/
+    title: "Adapalène – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-tretinoine-locale
+    name: CRAT
+    url: https://www.lecrat.fr/6385/
+    title: "Trétinoïne locale – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-peroxyde-benzoyle
+    name: CRAT
+    url: https://www.lecrat.fr/6314/
+    title: "Peroxyde de benzoyle – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-acide-azelaique
+    name: CRAT
+    url: https://www.lecrat.fr/6347/
+    title: "Acide azélaïque – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-antiacneiques
+    name: CRAT
+    url: https://www.lecrat.fr/6311/
+    title: "Antiacnéiques – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-clindamycine
+    name: CRAT
+    url: https://www.lecrat.fr/6313/
+    title: "Clindamycine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-erythromycine
+    name: CRAT
+    url: https://www.lecrat.fr/6322/
+    title: "Erythromycine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-methotrexate
+    name: CRAT
+    url: http://www.lecrat.fr/3331/
+    title: "Méthotrexate – Grossesse"
+    accessed: 2026-11-14
+  - id: nhs-vit-b
+    name: NHS
+    url: https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-b/
+    title: "B vitamins and folic acid - Vitamins and minerals - NHS"
+    accessed: 2026-11-14
+  - id: nhs-vit-c
+    name: NHS
+    url: https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-c/
+    title: "Vitamins and minerals - Vitamin C - NHS"
+    accessed: 2026-11-14
+  - id: nhs-vit-e
+    name: NHS
+    url: https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-e/
+    title: "Vitamins and minerals - Vitamin E - NHS"
+    accessed: 2026-11-14
+  - id: nhs-vit-k
+    name: NHS
+    url: https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-k/
+    title: "Vitamins and minerals - Vitamin K - NHS"
+    accessed: 2026-11-14
+  - id: nhs-vit-others
+    name: NHS
+    url: https://www.nhs.uk/conditions/vitamins-and-minerals/others/
+    title: "Vitamins and minerals - Others - NHS"
+    accessed: 2026-11-14
+  - id: nhs-iron
+    name: NHS
+    url: https://www.nhs.uk/conditions/vitamins-and-minerals/iron/
+    title: "Vitamins and minerals - Iron - NHS"
+    accessed: 2026-11-14
+  - id: nhs-calcium
+    name: NHS
+    url: https://www.nhs.uk/conditions/vitamins-and-minerals/calcium/
+    title: "Vitamins and minerals - Calcium - NHS"
+    accessed: 2026-11-14
+  - id: nhs-iodine
+    name: NHS
+    url: https://www.nhs.uk/conditions/vitamins-and-minerals/iodine/
+    title: "Vitamins and minerals - Iodine - NHS"
+    accessed: 2026-11-14
+  - id: nhs-iron-def-anaemia
+    name: NHS
+    url: https://www.nhs.uk/conditions/iron-deficiency-anaemia/
+    title: "Iron deficiency anaemia - NHS"
+    accessed: 2026-11-14
+  - id: nhs-fish-shellfish
+    name: NHS
+    url: https://www.nhs.uk/live-well/eat-well/food-types/fish-and-shellfish-nutrition/
+    title: "Fish and shellfish - NHS"
+    accessed: 2026-11-14
+  - id: crat-cafeine
+    name: CRAT
+    url: https://www.lecrat.fr/4278/
+    title: "Caféine – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-zinc
+    name: CRAT
+    url: https://www.lecrat.fr/6356/
+    title: "Gluconate de zinc – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-zolpidem
+    name: CRAT
+    url: https://www.lecrat.fr/3536/
+    title: "Zolpidem – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-zopiclone
+    name: CRAT
+    url: https://www.lecrat.fr/3545/
+    title: "Zopiclone – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-anxiolytiques
+    name: CRAT
+    url: https://www.lecrat.fr/3908/
+    title: "Anxiolytiques – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-antidepresseurs
+    name: CRAT
+    url: https://www.lecrat.fr/3962/
+    title: "Antidépresseurs – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-antiepileptiques
+    name: CRAT
+    url: https://www.lecrat.fr/12608/
+    title: "Antiépileptiques – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-antipsychotiques
+    name: CRAT
+    url: https://www.lecrat.fr/11992/
+    title: "Neuroleptiques/antipsychotiques – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-alprazolam
+    name: CRAT
+    url: https://www.lecrat.fr/6046/
+    title: "Alprazolam – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-bromazepam
+    name: CRAT
+    url: https://www.lecrat.fr/6057/
+    title: "Bromazépam – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-lorazepam
+    name: CRAT
+    url: https://www.lecrat.fr/6061/
+    title: "Lorazépam – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-oxazepam
+    name: CRAT
+    url: https://www.lecrat.fr/3891/
+    title: "Oxazépam – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-clonazepam
+    name: CRAT
+    url: https://www.lecrat.fr/11239/
+    title: "Clonazépam – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-clorazepate
+    name: CRAT
+    url: https://www.lecrat.fr/3878/
+    title: "Clorazépate dipotassique – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-sertraline
+    name: CRAT
+    url: https://www.lecrat.fr/4044/
+    title: "Sertraline – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-fluoxetine
+    name: CRAT
+    url: https://www.lecrat.fr/4025/
+    title: "Fluoxétine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-paroxetine
+    name: CRAT
+    url: https://www.lecrat.fr/4033/
+    title: "Paroxétine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-escitalopram
+    name: CRAT
+    url: https://www.lecrat.fr/4018/
+    title: "Escitalopram – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-citalopram
+    name: CRAT
+    url: https://www.lecrat.fr/3961/
+    title: "Citalopram – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-venlafaxine
+    name: CRAT
+    url: https://www.lecrat.fr/4091/
+    title: "Venlafaxine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-duloxetine
+    name: CRAT
+    url: https://www.lecrat.fr/4078/
+    title: "Duloxétine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-mirtazapine
+    name: CRAT
+    url: https://www.lecrat.fr/4116/
+    title: "Mirtazapine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-lithium
+    name: CRAT
+    url: https://www.lecrat.fr/11974/
+    title: "Lithium – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-valproate
+    name: CRAT
+    url: https://www.lecrat.fr/12594/
+    title: "Acide valproïque – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-lamotrigine
+    name: CRAT
+    url: https://www.lecrat.fr/7035/
+    title: "Lamotrigine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-carbamazepine
+    name: CRAT
+    url: https://www.lecrat.fr/12249/
+    title: "Carbamazépine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-levetiracetam
+    name: CRAT
+    url: https://www.lecrat.fr/7045/
+    title: "Lévétiracétam – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-topiramate
+    name: CRAT
+    url: https://www.lecrat.fr/12235/
+    title: "Topiramate – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-phenobarbital
+    name: CRAT
+    url: https://www.lecrat.fr/8134/
+    title: "Phénobarbital – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-gabapentine
+    name: CRAT
+    url: https://www.lecrat.fr/12557/
+    title: "Gabapentine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-pregabaline
+    name: CRAT
+    url: https://www.lecrat.fr/12574/
+    title: "Prégabaline – Grossesse"
+    accessed: 2026-11-14
+  - id: nhs-zolpidem
+    name: NHS
+    url: https://www.nhs.uk/medicines/zolpidem/
+    title: "Zolpidem: medicine used for sleeping problems (insomnia) - NHS"
+    accessed: 2026-11-14
+  - id: nhs-zopiclone
+    name: NHS
+    url: https://www.nhs.uk/medicines/zopiclone/
+    title: "Zopiclone: a medicine used to treat insomnia - NHS"
+    accessed: 2026-11-14
+  - id: nhs-diazepam
+    name: NHS
+    url: https://www.nhs.uk/medicines/diazepam/
+    title: "Diazepam - NHS"
+    accessed: 2026-11-14
+  - id: nhs-lorazepam
+    name: NHS
+    url: https://www.nhs.uk/medicines/lorazepam/
+    title: "Lorazepam: a medicine to treat anxiety - NHS"
+    accessed: 2026-11-14
+  - id: nhs-sertraline
+    name: NHS
+    url: https://www.nhs.uk/medicines/sertraline/pregnancy-breastfeeding-and-fertility-while-taking-sertraline/
+    title: "Sertraline: an antidepressant medicine - NHS"
+    accessed: 2026-11-14
+  - id: nhs-fluoxetine
+    name: NHS
+    url: https://www.nhs.uk/medicines/fluoxetine/
+    title: "Fluoxetine: an antidepressant medicine - NHS"
+    accessed: 2026-11-14
+  - id: nhs-paroxetine
+    name: NHS
+    url: https://www.nhs.uk/medicines/paroxetine/
+    title: "Paroxetine: a medicine to treat depression - NHS"
+    accessed: 2026-11-14
+  - id: nhs-citalopram
+    name: NHS
+    url: https://www.nhs.uk/medicines/citalopram/pregnancy-breastfeeding-and-fertility-while-taking-citalopram/
+    title: "Citalopram: an antidepressant medicine - NHS"
+    accessed: 2026-11-14
+  - id: nhs-escitalopram
+    name: NHS
+    url: https://www.nhs.uk/medicines/escitalopram/
+    title: "Escitalopram: a medicine used to treat depression and anxiety - NHS"
+    accessed: 2026-11-14
+  - id: nhs-venlafaxine
+    name: NHS
+    url: https://www.nhs.uk/medicines/venlafaxine/pregnancy-breastfeeding-and-fertility-while-taking-venlafaxine/
+    title: "Venlafaxine: an antidepressant medicine - NHS"
+    accessed: 2026-11-14
+  - id: nhs-duloxetine
+    name: NHS
+    url: https://www.nhs.uk/medicines/duloxetine/
+    title: "Duloxetine: an antidepressant medicine - NHS"
+    accessed: 2026-11-14
+  - id: nhs-mirtazapine
+    name: NHS
+    url: https://www.nhs.uk/medicines/mirtazapine/
+    title: "Mirtazapine - NHS"
+    accessed: 2026-11-14
+  - id: nhs-amitriptyline
+    name: NHS
+    url: https://www.nhs.uk/medicines/amitriptyline-for-depression/pregnancy-breastfeeding-and-fertility-while-taking-amitriptyline-for-depression/
+    title: "Pregnancy, breastfeeding and fertility while taking amitriptyline for depression - NHS"
+    accessed: 2026-11-14
+  - id: nhs-lithium
+    name: NHS
+    url: https://www.nhs.uk/medicines/lithium/pregnancy-breastfeeding-and-fertility-while-taking-lithium/
+    title: "Pregnancy, breastfeeding and fertility while taking lithium - NHS"
+    accessed: 2026-11-14
+  - id: nhs-quetiapine
+    name: NHS
+    url: https://www.nhs.uk/medicines/quetiapine/
+    title: "Quetiapine: medicine to treat schizophrenia, bipolar disorder and severe depression - NHS"
+    accessed: 2026-11-14
+  - id: nhs-olanzapine
+    name: NHS
+    url: https://www.nhs.uk/medicines/olanzapine/pregnancy-breastfeeding-and-fertility-while-taking-olanzapine/
+    title: "Pregnancy, breastfeeding and fertility while taking olanzapine - Brand name: Zyprexa - NHS"
+    accessed: 2026-11-14
+  - id: nhs-aripiprazole
+    name: NHS
+    url: https://www.nhs.uk/medicines/aripiprazole/
+    title: "Aripiprazole: medicine for schizophrenia and bipolar disorder - NHS"
+    accessed: 2026-11-14
+  - id: nhs-valproate
+    name: NHS
+    url: https://www.nhs.uk/medicines/sodium-valproate/pregnancy-breastfeeding-and-fertility-while-taking-sodium-valproate/
+    title: "Pregnancy, breastfeeding and fertility while taking sodium valproate - NHS"
+    accessed: 2026-11-14
+  - id: nhs-lamotrigine
+    name: NHS
+    url: https://www.nhs.uk/medicines/lamotrigine/pregnancy-breastfeeding-and-fertility-while-taking-lamotrigine/
+    title: "Lamotrigine: medicine to treat epilepsy and bipolar disorder - NHS"
+    accessed: 2026-11-14
+  - id: nhs-carbamazepine
+    name: NHS
+    url: https://www.nhs.uk/medicines/carbamazepine/pregnancy-breastfeeding-and-fertility-while-taking-carbamazepine/
+    title: "Carbamazepine: medicine to treat epilepsy, facial pain and bipolar disorder - NHS"
+    accessed: 2026-11-14
+  - id: nhs-levetiracetam
+    name: NHS
+    url: https://www.nhs.uk/medicines/levetiracetam/pregnancy-breastfeeding-and-fertility-while-taking-levetiracetam/
+    title: "Levetiracetam: medicine to treat epilepsy - NHS"
+    accessed: 2026-11-14
+  - id: nhs-topiramate
+    name: NHS
+    url: https://www.nhs.uk/medicines/topiramate/pregnancy-breastfeeding-and-fertility-while-taking-topiramate/
+    title: "Topiramate: medicine used to treat epilepsy and prevent migraines - NHS"
+    accessed: 2026-11-14
+  - id: nhs-gabapentin
+    name: NHS
+    url: https://www.nhs.uk/medicines/gabapentin/pregnancy-breastfeeding-and-fertility-while-taking-gabapentin/
+    title: "Pregnancy, breastfeeding and fertility while taking gabapentin - NHS"
+    accessed: 2026-11-14
+  - id: nhs-pregabalin
+    name: NHS
+    url: https://www.nhs.uk/medicines/pregabalin/pregnancy-breastfeeding-and-fertility-while-taking-pregabalin/
+    title: "Pregnancy, breastfeeding and fertility while taking pregabalin - NHS"
+    accessed: 2026-11-14
+  - id: crat-amoxicilline
+    name: CRAT
+    url: https://www.lecrat.fr/6654/
+    title: "Amoxicilline – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-augmentin
+    name: CRAT
+    url: https://www.lecrat.fr/6701/
+    title: "Augmentin®, Levmentin® – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-penicillines
+    name: CRAT
+    url: https://www.lecrat.fr/13385/
+    title: "Pénicillines – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-ampicilline
+    name: CRAT
+    url: https://www.lecrat.fr/13210/
+    title: "Ampicilline – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-cephalosporines
+    name: CRAT
+    url: https://www.lecrat.fr/13360/
+    title: "Céphalosporines – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-cefalexine
+    name: CRAT
+    url: https://www.lecrat.fr/13208/
+    title: "Céfalexine – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-cefuroxime
+    name: CRAT
+    url: https://www.lecrat.fr/13343/
+    title: "Céfuroxime – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-cefixime
+    name: CRAT
+    url: https://www.lecrat.fr/13143/
+    title: "Céfixime – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-ceftriaxone
+    name: CRAT
+    url: https://www.lecrat.fr/3635/
+    title: "Ceftriaxone – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-macrolides
+    name: CRAT
+    url: https://www.lecrat.fr/12927/
+    title: "Macrolides et apparentés – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-azithromycine
+    name: CRAT
+    url: https://www.lecrat.fr/6362/
+    title: "Azithromycine – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-clarithromycine
+    name: CRAT
+    url: https://www.lecrat.fr/13419/
+    title: "Clarithromycine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-spiramycine
+    name: CRAT
+    url: https://www.lecrat.fr/13448/
+    title: "Spiramycine – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-josamycine
+    name: CRAT
+    url: https://www.lecrat.fr/13438/
+    title: "Josamycine – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-roxithromycine
+    name: CRAT
+    url: https://www.lecrat.fr/13450/
+    title: "Roxithromycine – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-pristinamycine
+    name: CRAT
+    url: https://www.lecrat.fr/13417/
+    title: "Pristinamycine – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-nitrofurantoine
+    name: CRAT
+    url: https://www.lecrat.fr/6683/
+    title: "Nitrofurantoïne – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-fosfomycine
+    name: CRAT
+    url: https://www.lecrat.fr/6678/
+    title: "Fosfomycine – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-pivmecillinam
+    name: CRAT
+    url: https://www.lecrat.fr/6688/
+    title: "Pivmécillinam – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-cystite-aigue
+    name: CRAT
+    url: https://www.lecrat.fr/6640/
+    title: "Cystite aiguë – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-cyclines
+    name: CRAT
+    url: https://www.lecrat.fr/13144/
+    title: "Cyclines – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-doxycycline
+    name: CRAT
+    url: https://www.lecrat.fr/6396/
+    title: "Doxycycline – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-minocycline
+    name: CRAT
+    url: https://www.lecrat.fr/12925/
+    title: "Minocycline – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-fluoroquinolones
+    name: CRAT
+    url: https://www.lecrat.fr/13399/
+    title: "Fluoroquinolones – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-ciprofloxacine
+    name: CRAT
+    url: https://www.lecrat.fr/6630/
+    title: "Ciprofloxacine – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-ofloxacine
+    name: CRAT
+    url: https://www.lecrat.fr/6625/
+    title: "Ofloxacine – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-metronidazole
+    name: CRAT
+    url: https://www.lecrat.fr/10412/
+    title: "Métronidazole – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-tinidazole
+    name: CRAT
+    url: https://www.lecrat.fr/10416/
+    title: "Tinidazole – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-secnidazole
+    name: CRAT
+    url: https://www.lecrat.fr/10500/
+    title: "Secnidazole – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-cotrimoxazole
+    name: CRAT
+    url: https://www.lecrat.fr/6660/
+    title: "Cotrimoxazole – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-trimethoprime
+    name: CRAT
+    url: https://www.lecrat.fr/6669/
+    title: "Triméthoprime – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-aminosides
+    name: CRAT
+    url: https://www.lecrat.fr/7720/
+    title: "Aminosides – Grossesse – Le CRAT"
+    accessed: 2026-11-14
+  - id: crat-neomycine
+    name: CRAT
+    url: https://www.lecrat.fr/5053/
+    title: "Néomycine – Grossesse"
+    accessed: 2026-11-14
+  - id: nhs-amoxicillin
+    name: NHS
+    url: https://www.nhs.uk/medicines/amoxicillin/pregnancy-breastfeeding-and-fertility-while-taking-amoxicillin/
+    title: "Pregnancy, breastfeeding and fertility while taking amoxicillin - NHS"
+    accessed: 2026-11-14
+  - id: nhs-co-amoxiclav
+    name: NHS
+    url: https://www.nhs.uk/medicines/co-amoxiclav/
+    title: "Co-amoxiclav: antibiotic for bacterial infections - NHS"
+    accessed: 2026-11-14
+  - id: nhs-phenoxymethylpenicillin
+    name: NHS
+    url: https://www.nhs.uk/medicines/phenoxymethylpenicillin/
+    title: "Phenoxymethylpenicillin: antibiotic for bacterial infections - NHS"
+    accessed: 2026-11-14
+  - id: nhs-cefalexin
+    name: NHS
+    url: https://www.nhs.uk/medicines/cefalexin/pregnancy-breastfeeding-and-fertility-while-taking-cefalexin/
+    title: "Pregnancy, breastfeeding and fertility while taking cefalexin - NHS"
+    accessed: 2026-11-14
+  - id: nhs-azithromycin
+    name: NHS
+    url: https://www.nhs.uk/medicines/azithromycin/pregnancy-breastfeeding-and-fertility-while-taking-azithromycin/
+    title: "Pregnancy, breastfeeding and fertility while taking azithromycin - NHS"
+    accessed: 2026-11-14
+  - id: nhs-clarithromycin
+    name: NHS
+    url: https://www.nhs.uk/medicines/clarithromycin/pregnancy-breastfeeding-and-fertility-while-taking-clarithromycin/
+    title: "Pregnancy, breastfeeding and fertility while taking clarithromycin - NHS"
+    accessed: 2026-11-14
+  - id: nhs-erythromycin
+    name: NHS
+    url: https://www.nhs.uk/medicines/erythromycin/
+    title: "Erythromycin: antibiotic for bacterial infections - NHS"
+    accessed: 2026-11-14
+  - id: nhs-nitrofurantoin
+    name: NHS
+    url: https://www.nhs.uk/medicines/nitrofurantoin/
+    title: "Nitrofurantoin: a medicine to treat urinary tract infections (UTIs) - NHS"
+    accessed: 2026-11-14
+  - id: nhs-trimethoprim
+    name: NHS
+    url: https://www.nhs.uk/medicines/trimethoprim/pregnancy-breastfeeding-and-fertility-while-taking-trimethoprim/
+    title: "Pregnancy, breastfeeding and fertility while taking trimethoprim - NHS"
+    accessed: 2026-11-14
+  - id: nhs-doxycycline
+    name: NHS
+    url: https://www.nhs.uk/medicines/doxycycline/
+    title: "Doxycycline: antibiotic for bacterial infections - NHS"
+    accessed: 2026-11-14
+  - id: nhs-ciprofloxacin
+    name: NHS
+    url: https://www.nhs.uk/medicines/ciprofloxacin/
+    title: "Ciprofloxacin: antibiotic for bacterial infections - NHS"
+    accessed: 2026-11-14
+  - id: crat-miconazole
+    name: CRAT
+    url: https://www.lecrat.fr/7524/
+    title: "Miconazole – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-econazole
+    name: CRAT
+    url: https://www.lecrat.fr/10272/
+    title: "Econazole – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-fenticonazole
+    name: CRAT
+    url: https://www.lecrat.fr/10274/
+    title: "Fenticonazole – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-sertaconazole
+    name: CRAT
+    url: https://www.lecrat.fr/10312/
+    title: "Sertaconazole – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-antifongiques-cutanes
+    name: CRAT
+    url: https://www.lecrat.fr/10187/
+    title: "Antifongiques cutanés et unguéaux – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-antifongiques-vulvo-vaginaux
+    name: CRAT
+    url: https://www.lecrat.fr/10185/
+    title: "Antifongiques vulvo-vaginaux – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-ketoconazole
+    name: CRAT
+    url: https://www.lecrat.fr/7564/
+    title: "Kétoconazole – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-fluconazole
+    name: CRAT
+    url: https://www.lecrat.fr/10230/
+    title: "Fluconazole – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-terbinafine
+    name: CRAT
+    url: https://www.lecrat.fr/10267/
+    title: "Terbinafine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-valaciclovir
+    name: CRAT
+    url: https://www.lecrat.fr/8595/
+    title: "Valaciclovir – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-permethrine
+    name: CRAT
+    url: https://www.lecrat.fr/7614/
+    title: "Perméthrine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-scabicides
+    name: CRAT
+    url: https://www.lecrat.fr/10410/
+    title: "Scabicides – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-benzoate-benzyle
+    name: CRAT
+    url: https://www.lecrat.fr/7606/
+    title: "Benzoate de benzyle – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-ivermectine
+    name: CRAT
+    url: https://www.lecrat.fr/7600/
+    title: "Ivermectine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-pyrantel
+    name: CRAT
+    url: https://www.lecrat.fr/7588/
+    title: "Pyrantel – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-albendazole
+    name: CRAT
+    url: https://www.lecrat.fr/7580/
+    title: "Albendazole – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-oxyures
+    name: CRAT
+    url: https://www.lecrat.fr/7650/
+    title: "Traitement des oxyures – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-hydroxychloroquine
+    name: CRAT
+    url: https://www.lecrat.fr/3386/
+    title: "Hydroxychloroquine – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-malarone
+    name: CRAT
+    url: https://www.lecrat.fr/6459/
+    title: "Malarone® – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-chimioprophylaxie-paludisme
+    name: CRAT
+    url: https://www.lecrat.fr/6449/
+    title: "Chimioprophylaxie antipaludique – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-repulsifs-grossesse
+    name: CRAT
+    url: https://www.lecrat.fr/6503/
+    title: "Répulsifs – Grossesse"
+    accessed: 2026-11-14
+  - id: cdc-mosquito-prevention
+    name: CDC
+    url: https://www.cdc.gov/mosquitoes/prevention/index.html
+    title: "Preventing Mosquito Bites | Mosquitoes | CDC"
+    accessed: 2026-11-14
+  - id: nhs-aciclovir
+    name: NHS
+    url: https://www.nhs.uk/medicines/aciclovir/
+    title: "Aciclovir - NHS ()"
+    accessed: 2026-11-14
+  - id: nhs-fluconazole
+    name: NHS
+    url: https://www.nhs.uk/medicines/fluconazole/
+    title: "Fluconazole - NHS ()"
+    accessed: 2026-11-14
+  - id: nhs-terbinafine
+    name: NHS
+    url: https://www.nhs.uk/medicines/terbinafine/
+    title: "Terbinafine - NHS ()"
+    accessed: 2026-11-14
+  - id: nhs-hydroxychloroquine
+    name: NHS
+    url: https://www.nhs.uk/medicines/hydroxychloroquine/
+    title: "Hydroxychloroquine - NHS ()"
+    accessed: 2026-11-14
+  - id: crat-etonogestrel
+    name: CRAT
+    url: https://www.lecrat.fr/6261/
+    title: "Etonogestrel – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-desogestrel
+    name: CRAT
+    url: http://www.lecrat.fr/6224/
+    title: "Désogestrel – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-ethinylestradiol
+    name: CRAT
+    url: https://www.lecrat.fr/6225/
+    title: "Ethinylestradiol – Grossesse"
+    accessed: 2026-11-14
+  - id: crat-misoprostol
+    name: CRAT
+    url: https://www.lecrat.fr/3357/
+    title: "Misoprostol – Grossesse"
+    accessed: 2026-11-14
+  - id: nhs-ramipril
+    name: NHS
+    url: https://www.nhs.uk/medicines/ramipril/pregnancy-breastfeeding-and-fertility-while-taking-ramipril/
+    title: "Pregnancy, breastfeeding and fertility while taking ramipril - NHS"
+    accessed: 2026-11-14
+  - id: nhs-enalapril
+    name: NHS
+    url: https://www.nhs.uk/medicines/enalapril/
+    title: "Enalapril: a medicine to treat high blood pressure - NHS"
+    accessed: 2026-11-14
+  - id: nhs-losartan
+    name: NHS
+    url: https://www.nhs.uk/medicines/losartan/
+    title: "Losartan: medicine for high blood pressure - NHS"
+    accessed: 2026-11-14
+  - id: crat-vaccins
+    name: CRAT
+    url: https://www.lecrat.fr/6584/
+    title: "Vaccins - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-vaccin-grippe
+    name: CRAT
+    url: https://www.lecrat.fr/9425/
+    title: "Vaccin contre la grippe - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-vaccin-covid
+    name: CRAT
+    url: https://www.lecrat.fr/9427/
+    title: "Vaccin contre la Covid 19 - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-vaccin-coqueluche
+    name: CRAT
+    url: https://www.lecrat.fr/9429/
+    title: "Vaccin coqueluche - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-repevax
+    name: CRAT
+    url: https://www.lecrat.fr/9672/
+    title: "Repevax - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-abrysvo
+    name: CRAT
+    url: https://www.lecrat.fr/18630/
+    title: "Abrysvo - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-vaccin-tetanos
+    name: CRAT
+    url: https://www.lecrat.fr/9640/
+    title: "Vaccin tétanos - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-vaccin-diphterie
+    name: CRAT
+    url: https://www.lecrat.fr/9526/
+    title: "Vaccin diphtérie - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-vaccin-polio
+    name: CRAT
+    url: https://www.lecrat.fr/9583/
+    title: "Vaccin poliomyélite - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-vaccin-hepatite-a
+    name: CRAT
+    url: https://www.lecrat.fr/9563/
+    title: "Vaccin hépatite A - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-vaccin-hepatite-b
+    name: CRAT
+    url: https://www.lecrat.fr/9574/
+    title: "Vaccin hépatite B - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-vaccin-ror
+    name: CRAT
+    url: https://www.lecrat.fr/9503/
+    title: "Priorix - M-M-RvaxPro - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-vaccin-varicelle
+    name: CRAT
+    url: https://www.lecrat.fr/9433/
+    title: "Vaccin varicelle - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-vaccin-fievre-jaune
+    name: CRAT
+    url: https://www.lecrat.fr/9431/
+    title: "Vaccin fièvre jaune - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-vaccin-bcg
+    name: CRAT
+    url: https://www.lecrat.fr/9505/
+    title: "Vaccin BCG - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-vaccin-hpv
+    name: CRAT
+    url: https://www.lecrat.fr/9664/
+    title: "Vaccin papillomavirus (HPV) - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-vaccin-meningocoque
+    name: CRAT
+    url: https://www.lecrat.fr/9577/
+    title: "Vaccin méningocoque - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-vaccin-pneumocoque
+    name: CRAT
+    url: https://www.lecrat.fr/9581/
+    title: "Vaccin pneumocoque - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-vaccin-rage
+    name: CRAT
+    url: https://www.lecrat.fr/9585/
+    title: "Vaccin rage - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-vaccin-typhoide
+    name: CRAT
+    url: https://www.lecrat.fr/9524/
+    title: "Vaccin fièvre typhoïde - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-vaccin-cholera
+    name: CRAT
+    url: https://www.lecrat.fr/9515/
+    title: "Vaccin choléra - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-vaccin-encephalite-japonaise
+    name: CRAT
+    url: https://www.lecrat.fr/9666/
+    title: "Vaccin encéphalite japonaise - Grossesse"
+    accessed: 2026-11-14
+  - id: crat-vaccin-hib
+    name: CRAT
+    url: https://www.lecrat.fr/9557/
+    title: "Vaccin haemophilus influenzae type b - Grossesse"
+    accessed: 2026-11-14
+  - id: nhs-vaccines-pregnancy
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/keeping-well/vaccinations/
+    title: "Vaccinations in pregnancy - NHS"
+    accessed: 2026-11-14
+  - id: nhs-rsv-vaccine
+    name: NHS
+    url: https://www.nhs.uk/vaccinations/rsv-vaccine/
+    title: "RSV vaccine - NHS"
+    accessed: 2026-11-14
+  - id: nhs-whooping-cough-pregnancy
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/keeping-well/whooping-cough-vaccination/
+    title: "Whooping cough vaccination in pregnancy - NHS"
+    accessed: 2026-11-14
+  - id: nhs-flu-vaccine
+    name: NHS
+    url: https://www.nhs.uk/vaccinations/flu-vaccine/
+    title: "Flu vaccine - NHS"
+    accessed: 2026-11-14
+  - id: nhs-covid-vaccine
+    name: NHS
+    url: https://www.nhs.uk/vaccinations/covid-19-vaccine/
+    title: "COVID-19 vaccine - NHS"
+    accessed: 2026-11-14
+  - id: nhs-mmr-vaccine
+    name: NHS
+    url: https://www.nhs.uk/vaccinations/mmr-vaccine/
+    title: "MMR (measles, mumps and rubella) vaccine - NHS"
+    accessed: 2026-11-14
+  - id: nhs-bcg-vaccine
+    name: NHS
+    url: https://www.nhs.uk/vaccinations/bcg-vaccine-for-tuberculosis-tb/
+    title: "BCG vaccine for tuberculosis (TB) - NHS"
+    accessed: 2026-11-14
+  - id: nhs-hpv-vaccine
+    name: NHS
+    url: https://www.nhs.uk/vaccinations/hpv-vaccine/
+    title: "HPV vaccine - NHS"
+    accessed: 2026-11-14
+  - id: nhs-hepb-vaccine
+    name: NHS
+    url: https://www.nhs.uk/vaccinations/hepatitis-b-vaccine/
+    title: "Hepatitis B vaccine - NHS"
+    accessed: 2026-11-14
+  - id: nhs-mpox-vaccine
+    name: NHS
+    url: https://www.nhs.uk/vaccinations/mpox-vaccine/
+    title: "Mpox vaccine - NHS"
+    accessed: 2026-11-14
+  - id: nhs-chickenpox-vaccine
+    name: NHS
+    url: https://www.nhs.uk/vaccinations/chickenpox-vaccine/
+    title: "Chickenpox vaccine - NHS"
+    accessed: 2026-11-14
+  - id: nhs-pneumococcal-vaccine
+    name: NHS
+    url: https://www.nhs.uk/vaccinations/pneumococcal-vaccine/
+    title: "Pneumococcal vaccine - NHS"
+    accessed: 2026-11-14
+  - id: nhs-hdfn
+    name: NHS
+    url: https://www.nhs.uk/conditions/rhesus-disease/
+    title: "Haemolytic disease of the fetus and newborn (HDFN) - NHS"
+    accessed: 2026-11-14
+  - id: nhs-antenatal-appointments
+    name: NHS
+    url: https://www.nhs.uk/pregnancy/your-pregnancy-care/your-antenatal-appointments/
+    title: "Antenatal (pregnancy) care and appointments"
+    accessed: 2026-11-14
+  - id: cdc-vaccine-guidelines-pregnancy
+    name: CDC
+    url: https://www.cdc.gov/vaccines-pregnancy/hcp/vaccination-guidelines/index.html
+    title: "Guidelines for Vaccinating Pregnant Women (CDC)"
+    accessed: 2026-11-14
+  - id: cdc-vaccine-recommendations-pregnancy
+    name: CDC
+    url: https://www.cdc.gov/vaccines-pregnancy/recommended-vaccines/index.html
+    title: "Vaccine Recommendations Before, During, and After Pregnancy"
+    accessed: 2026-11-14
 # Entry shape:
 # - id: ameli-toxo
 #   name: ameli

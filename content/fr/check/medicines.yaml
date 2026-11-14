@@ -3078,6 +3078,1061 @@
         - crat-pregabaline
         - nhs-pregabalin
   reviewed: 2026-11-14
+- id: amoxicillin
+  category: antibiotics
+  names:
+    - "Amoxicilline"
+    - "Clamoxyl"
+    - "Amoxicillin"
+  active_ingredient: "amoxicillin"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique que l'amoxicilline peut être utilisée à tout moment de la grossesse : les données sont très nombreuses et aucun effet sur le bébé n'est retenu. Le NHS la juge aussi sans danger. À prendre uniquement sur ordonnance, et à terminer comme prévu par le médecin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-amoxicilline
+        - crat-penicillines
+        - nhs-amoxicillin
+  reviewed: 2026-11-14
+- id: amoxicillin-clavulanate
+  category: antibiotics
+  names:
+    - "Amoxicilline-acide clavulanique"
+    - "Augmentin"
+    - "Levmentin"
+    - "Amoxicillin-clavulanate"
+  active_ingredient: "amoxicillin + clavulanic acid"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique que l'Augmentin peut être utilisé à tout terme. Une étude évoquant un problème intestinal chez le nouveau-né en cas de prise en fin de grossesse n'a pas été retenue par le CRAT et n'a pas été confirmée. Le NHS dit qu'on peut généralement le prendre si le médecin le juge nécessaire. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-augmentin
+        - crat-penicillines
+        - nhs-co-amoxiclav
+  reviewed: 2026-11-14
+- id: penicillin-v
+  category: antibiotics
+  names:
+    - "Pénicilline V"
+    - "Phénoxyméthylpénicilline"
+    - "Oracilline"
+    - "Penicillin V"
+  active_ingredient: "phenoxymethylpenicillin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT classe la pénicilline V orale parmi les pénicillines bien connues, utilisables à tout terme, sans effet nocif retenu. Le NHS la juge généralement acceptable pendant la grossesse. Uniquement sur ordonnance. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-penicillines
+        - nhs-phenoxymethylpenicillin
+  reviewed: 2026-11-14
+- id: ampicillin
+  category: antibiotics
+  names:
+    - "Ampicilline"
+    - "Ampicillin"
+  active_ingredient: "ampicillin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique que l'ampicilline peut être utilisée à tout terme, avec de nombreuses données et aucun effet retenu pour le bébé. Surtout utilisée en injection à l'hôpital. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ampicilline
+        - crat-penicillines
+  reviewed: 2026-11-14
+- id: penicillins-other
+  category: antibiotics
+  names:
+    - "Autres pénicillines (cloxacilline"
+    - "oxacilline"
+    - "ticarcilline"
+    - "pipéracilline)"
+    - "Other penicillins (cloxacillin"
+  active_ingredient: "cloxacillin, oxacillin, ticarcillin, piperacillin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique que la cloxacilline et l'oxacilline sont utilisables à tout terme ; la ticarcilline et la pipéracilline ont peu de données mais rien d'inquiétant et peuvent être envisagées si le bénéfice est net. Surtout des injections à l'hôpital : c'est le médecin qui décide. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-penicillines
+        - crat-ampicilline
+  reviewed: 2026-11-14
+- id: cefalexin
+  category: antibiotics
+  names:
+    - "Céfalexine"
+    - "Cefalexin"
+  active_ingredient: "cefalexin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique que la céfalexine peut être utilisée à tout terme (données très nombreuses, aucun effet nocif retenu). Le NHS va dans le même sens : aucune preuve de risque pour le bébé. Uniquement sur ordonnance. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-cefalexine
+        - crat-cephalosporines
+        - nhs-cefalexin
+  reviewed: 2026-11-14
+- id: cefuroxime
+  category: antibiotics
+  names:
+    - "Céfuroxime"
+    - "Cefuroxime"
+  active_ingredient: "cefuroxime"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : peu de données publiées mais rien d'inquiétant ; si une céphalosporine de 2e génération est nécessaire, le céfuroxime est celle qu'on préfère, à tout terme. Uniquement sur ordonnance. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-cefuroxime
+        - crat-cephalosporines
+  reviewed: 2026-11-14
+- id: cefixime
+  category: antibiotics
+  names:
+    - "Céfixime"
+    - "Oroken"
+    - "Cefixime"
+  active_ingredient: "cefixime"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucun effet particulier rapporté mais peu de données ; on préfère l'amoxicilline (seule ou avec acide clavulanique) quand c'est possible. Il n'est plus recommandé pendant la grossesse pour une cystite simple ou une bactériurie sans symptôme. Seulement si le médecin y voit un net avantage. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-cefixime
+        - crat-cephalosporines
+  reviewed: 2026-11-14
+- id: cefpodoxime
+  category: antibiotics
+  names:
+    - "Cefpodoxime"
+    - "Orelox"
+    - "Cefpodoxime"
+  active_ingredient: "cefpodoxime"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La page du CRAT sur les céphalosporines traite le cefpodoxime comme le céfixime : seulement si une céphalosporine de 3e génération apporte un vrai avantage, l'amoxicilline étant préférée quand c'est possible ; utilisable à tout terme si choisi. Une seule source lue pour ce médicament. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-cephalosporines
+        - crat-cefixime
+  reviewed: 2026-11-14
+- id: ceftriaxone
+  category: antibiotics
+  names:
+    - "Ceftriaxone"
+  active_ingredient: "ceftriaxone"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique que, vu son intérêt thérapeutique, la ceftriaxone peut être utilisée à tout terme ; données limitées au 1er trimestre mais rien d'inquiétant, nombreuses en fin de grossesse. Injection faite par un professionnel. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ceftriaxone
+        - crat-cephalosporines
+  reviewed: 2026-11-14
+- id: azithromycin
+  category: antibiotics
+  names:
+    - "Azithromycine"
+    - "Zithromax"
+    - "Azithromycin"
+  active_ingredient: "azithromycin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : données très nombreuses, aucun effet malformatif ou néonatal retenu, utilisable à tout terme. Le NHS indique qu'on peut l'utiliser si une infection le nécessite, un autre antibiotique pouvant parfois mieux convenir. Uniquement sur ordonnance. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-azithromycine
+        - crat-macrolides
+        - nhs-azithromycin
+  reviewed: 2026-11-14
+- id: clarithromycin
+  category: antibiotics
+  names:
+    - "Clarithromycine"
+    - "Zeclar"
+    - "Clarithromycin"
+  active_ingredient: "clarithromycin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : données très nombreuses, aucun effet retenu, utilisable à tout terme. Le NHS la considère utilisable pendant la grossesse mais un autre antibiotique peut être préférable. Uniquement sur ordonnance. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-clarithromycine
+        - crat-macrolides
+        - nhs-clarithromycin
+  reviewed: 2026-11-14
+- id: erythromycin
+  category: antibiotics
+  names:
+    - "Érythromycine"
+    - "Erythrocine"
+    - "Erythromycin"
+  active_ingredient: "erythromycin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : données très nombreuses, aucun effet retenu (pas d'augmentation de la sténose du pylore chez le nouveau-né), utilisable à tout terme. Le NHS indique qu'elle peut être prescrite pendant la grossesse si nécessaire. Uniquement sur ordonnance. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-erythromycine
+        - crat-macrolides
+        - nhs-erythromycin
+  reviewed: 2026-11-14
+- id: spiramycin
+  category: antibiotics
+  names:
+    - "Spiramycine"
+    - "Rovamycine"
+    - "Spiramycin"
+  active_ingredient: "spiramycin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : très large recul pendant la grossesse (surtout aux 2e et 3e trimestres, par ex. toxoplasmose), aucun effet nocif retenu, utilisable à tout terme. Uniquement sur ordonnance. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-spiramycine
+        - crat-macrolides
+  reviewed: 2026-11-14
+- id: josamycin
+  category: antibiotics
+  names:
+    - "Josamycine"
+    - "Josacine"
+    - "Josamycin"
+  active_ingredient: "josamycin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : données limitées mais aucun effet rapporté ; on préfère un macrolide mieux connu pendant la grossesse, la josamycine étant réservée aux cas où elle présente un net avantage. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-josamycine
+        - crat-macrolides
+  reviewed: 2026-11-14
+- id: roxithromycin
+  category: antibiotics
+  names:
+    - "Roxithromycine"
+    - "Roxithromycin"
+  active_ingredient: "roxithromycin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : données publiées étendues, aucun effet nocif retenu, passage placentaire très faible, utilisable à tout terme. Uniquement sur ordonnance. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-roxithromycine
+        - crat-macrolides
+  reviewed: 2026-11-14
+- id: pristinamycin
+  category: antibiotics
+  names:
+    - "Pristinamycine"
+    - "Pyostacine"
+    - "Pristinamycin"
+  active_ingredient: "pristinamycin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucune donnée publiée chez la femme enceinte, mais aucun effet rapporté et rien chez l'animal. Envisageable à tout terme si un antistaphylococcique est nécessaire ; sinon on préfère un macrolide mieux connu. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-pristinamycine
+        - crat-macrolides
+  reviewed: 2026-11-14
+- id: nitrofurantoin
+  category: antibiotics
+  names:
+    - "Nitrofurantoïne"
+    - "Furadantine"
+    - "Furadoïne"
+    - "Nitrofurantoin"
+  active_ingredient: "nitrofurantoin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : nombreuses données en cure courte, aucun effet particulier, mais c'est un choix de dernier recours pour la cystite, après les autres options, et il n'y a pas de données en traitement prolongé. Le NHS indique qu'elle est en général acceptable avant 28 semaines de grossesse ; ensuite le médecin peut l'éviter car elle peut toucher les globules rouges du bébé. Demandez conseil au prescripteur, surtout en fin de grossesse. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-nitrofurantoine
+        - crat-cystite-aigue
+        - nhs-nitrofurantoin
+  reviewed: 2026-11-14
+- id: fosfomycin
+  category: antibiotics
+  names:
+    - "Fosfomycine trométamol"
+    - "Monuril"
+    - "Uridoz"
+    - "Fosfomycin trometamol"
+  active_ingredient: "fosfomycin trometamol"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : données très nombreuses, aucun effet retenu, utilisable à tout terme. C'est le premier choix pour une cystite pendant la grossesse en attendant l'antibiogramme. Un ECBU est fait avant le traitement. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-fosfomycine
+        - crat-cystite-aigue
+  reviewed: 2026-11-14
+- id: pivmecillinam
+  category: antibiotics
+  names:
+    - "Pivmécillinam"
+    - "Selexid"
+    - "Pivmecillinam"
+  active_ingredient: "pivmecillinam"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : données très nombreuses, aucun effet retenu, utilisable à tout terme. Deuxième choix pour une cystite pendant la grossesse (après la fosfomycine) en attendant l'antibiogramme. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-pivmecillinam
+        - crat-cystite-aigue
+  reviewed: 2026-11-14
+- id: cyclines
+  category: antibiotics
+  names:
+    - "[object Object]"
+    - "minocycline"
+    - "lymécycline"
+    - "[object Object]"
+  active_ingredient: "tetracycline class"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : utilisables au 1er trimestre pour une infection autre que l'acné, mais à éviter de débuter pour l'acné. Après le 1er trimestre on préfère un autre antibiotique, surtout pour un traitement long, car pris au 3e trimestre pendant une quinzaine de jours ou plus, ils peuvent colorer les dents de lait du bébé. Les dents définitives ne sont pas touchées. Ne rien commencer ni arrêter sans le prescripteur. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-cyclines
+        - crat-doxycycline
+        - nhs-doxycycline
+  reviewed: 2026-11-14
+- id: doxycycline
+  category: antibiotics
+  names:
+    - "Doxycycline"
+    - "Doxy"
+    - "Vibraveineuse"
+    - "Doxycycline"
+  active_ingredient: "doxycycline"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucun effet malformatif retenu après exposition au 1er trimestre ; à éviter pour l'acné. Après le 1er trimestre on préfère un autre antibiotique, car une prise tardive peut colorer les dents de lait du bébé. Le NHS indique qu'elle n'est pas utilisée habituellement pendant la grossesse à cause du risque pour les dents, plus faible pendant les 13 premières semaines. Seulement si le prescripteur la juge nécessaire. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-doxycycline
+        - crat-cyclines
+        - nhs-doxycycline
+  reviewed: 2026-11-14
+- id: minocycline
+  category: antibiotics
+  names:
+    - "Minocycline"
+  active_ingredient: "minocycline"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : peu de données, aucune malformation rapportée ; utilisable au 1er trimestre dans ses indications (pas pour l'acné). Ensuite on préfère un autre antibiotique, car une prise au 3e trimestre peut colorer les dents de lait. Seulement si le prescripteur la juge nécessaire. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-minocycline
+        - crat-cyclines
+  reviewed: 2026-11-14
+- id: fluoroquinolones
+  category: antibiotics
+  names:
+    - "Fluoroquinolones (ofloxacine"
+    - "lévofloxacine"
+    - "norfloxacine"
+    - "moxifloxacine)"
+    - "Fluoroquinolones (ofloxacin"
+  active_ingredient: "fluoroquinolone class"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucune malformation établie, mais elles ne sont plus utilisées pour une cystite simple ou une bactériurie pendant la grossesse, et la ciprofloxacine est la plus indiquée ; ofloxacine et lévofloxacine seulement si elle ne convient pas. Les molécules diffèrent, et le NHS dit que la ciprofloxacine n'est pas utilisée habituellement pendant la grossesse si d'autres antibiotiques conviennent. Seulement si le prescripteur la juge nécessaire. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-fluoroquinolones
+        - crat-ofloxacine
+        - nhs-ciprofloxacin
+  reviewed: 2026-11-14
+- id: ciprofloxacin
+  category: antibiotics
+  names:
+    - "Ciprofloxacine"
+    - "Ciflox"
+    - "Ciprofloxacin"
+  active_ingredient: "ciprofloxacin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : la fluoroquinolone à privilégier pendant la grossesse, à tout trimestre ; nombreuses grossesses exposées au 1er trimestre sans malformation retenue, et aucune atteinte du cartilage chez les enfants exposés in utero. Non utilisée pour la cystite pendant la grossesse. Le NHS indique qu'elle n'est pas utilisée habituellement pendant la grossesse si d'autres antibiotiques conviennent. Seulement si le prescripteur la juge nécessaire. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ciprofloxacine
+        - crat-fluoroquinolones
+        - nhs-ciprofloxacin
+  reviewed: 2026-11-14
+- id: metronidazole
+  category: antibiotics
+  names:
+    - "Métronidazole"
+    - "Flagyl"
+    - "Metronidazole"
+  active_ingredient: "metronidazole"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : données très nombreuses, aucun effet retenu, utilisable à tout terme ; c'est le nitro-imidazolé à privilégier pendant la grossesse. Uniquement sur ordonnance. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-metronidazole
+        - crat-tinidazole
+        - crat-secnidazole
+  reviewed: 2026-11-14
+- id: tinidazole
+  category: antibiotics
+  names:
+    - "Tinidazole"
+    - "Fasigyne"
+    - "Tinidazole"
+  active_ingredient: "tinidazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : pas de données au 1er trimestre, bien qu'aucune malformation n'ait été rapportée ; on préfère le métronidazole, et le tinidazole peut être envisagé aux 2e et 3e trimestres. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-tinidazole
+        - crat-metronidazole
+  reviewed: 2026-11-14
+- id: secnidazole
+  category: antibiotics
+  names:
+    - "Secnidazole"
+    - "Secnol"
+    - "Secnidazole"
+  active_ingredient: "secnidazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : pas de données au 1er trimestre, bien qu'aucune malformation n'ait été rapportée ; on préfère le métronidazole, et le secnidazole peut être envisagé aux 2e et 3e trimestres. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-secnidazole
+        - crat-metronidazole
+  reviewed: 2026-11-14
+- id: cotrimoxazole
+  category: antibiotics
+  names:
+    - "Cotrimoxazole"
+    - "Bactrim"
+    - "Cotrimoxazole"
+  active_ingredient: "sulfamethoxazole + trimethoprim"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : avant 10 SA on préfère un autre antibiotique, car une augmentation de certaines malformations est suspectée (action anti-folates) ; sans alternative, acide folique et échographie ciblée sont envisagés. Après 10 SA il peut être utilisé, mais c'est un choix tardif pour la cystite. Uniquement sur ordonnance. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-cotrimoxazole
+        - crat-cystite-aigue
+        - crat-trimethoprime
+  reviewed: 2026-11-14
+- id: trimethoprim
+  category: antibiotics
+  names:
+    - "Triméthoprime"
+    - "Delprim"
+    - "Trimethoprim"
+  active_ingredient: "trimethoprim"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : augmentation possible de certaines malformations (tube neural, cœur, fentes), liée à son action anti-folates : à éviter avant 10 SA ; après 10 SA seulement si les autres options sont écartées. Le NHS indique que les médecins l'évitent en début de grossesse et, si c'est la seule option, prescrivent de l'acide folique à forte dose. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-trimethoprime
+        - crat-cystite-aigue
+        - nhs-trimethoprim
+  reviewed: 2026-11-14
+- id: aminoglycosides
+  category: antibiotics
+  names:
+    - "Aminosides (gentamicine"
+    - "amikacine"
+    - "tobramycine ; pas streptomycine/kanamycine)"
+    - "Aminoglycosides (gentamicin"
+  active_ingredient: "aminoglycoside class"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : gentamicine, amikacine et tobramycine injectables utilisables à tout terme avec la surveillance hospitalière habituelle (fonction rénale) ; en cas de traitement prolongé, on en tient compte pour le dépistage de l'audition du bébé. Streptomycine et kanamycine injectables : à ne pas utiliser pendant la grossesse sauf situation exceptionnelle. Usage hospitalier. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-aminosides
+        - crat-neomycine
+  reviewed: 2026-11-14
+- id: tobramycin-eye-ear
+  category: eye-ear
+  names:
+    - "Tobramycine collyre / gouttes auriculaires"
+    - "Tobrex"
+    - "gentamicine collyre"
+    - "Tobramycin eye/ear drops"
+  active_ingredient: "tobramycin (also gentamicin, neomycin)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : gentamicine, néomycine et tobramycine en collyre, gouttes auriculaires ou forme dentaire peuvent être utilisées à tout terme, car les quantités administrées sont faibles. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-aminosides
+        - crat-neomycine
+  reviewed: 2026-11-14
+- id: azithromycin-eye
+  category: eye-ear
+  names:
+    - "Azithromycine collyre"
+    - "Azyter"
+    - "Azithromycin eye drops"
+  active_ingredient: "azithromycin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique que l'azithromycine (voie orale) est utilisable à tout terme, avec des données très nombreuses ; ses pages ne donnent pas de règle propre au collyre, qui passe très peu dans l'organisme. Demandez conseil au prescripteur. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-azithromycine
+        - crat-macrolides
+  reviewed: 2026-11-14
+- id: ofloxacin-ear-eye
+  category: eye-ear
+  names:
+    - "Ofloxacine gouttes auriculaires / collyre"
+    - "Oflocet"
+    - "Exocine"
+    - "Ofloxacin ear/eye drops"
+  active_ingredient: "ofloxacin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : l'ofloxacine en collyre ou en gouttes auriculaires peut être utilisée à tout terme, l'exposition de l'organisme étant négligeable par ces voies. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ofloxacine
+        - crat-fluoroquinolones
+  reviewed: 2026-11-14
+- id: ciprofloxacin-ear-eye
+  category: eye-ear
+  names:
+    - "Ciprofloxacine gouttes auriculaires / collyre"
+    - "Ciloxan"
+    - "Ciprofloxacin ear/eye drops"
+  active_ingredient: "ciprofloxacin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : la ciprofloxacine par voie oculaire ou auriculaire peut être utilisée à tout terme, l'exposition de l'organisme étant négligeable par ces voies. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ciprofloxacine
+        - crat-fluoroquinolones
+  reviewed: 2026-11-14
+- id: miconazole
+  category: antifungals
+  names:
+    - "Miconazole"
+    - "Daktarin"
+    - "Loramyc"
+    - "Miconazole"
+  active_ingredient: "miconazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique que le miconazole utilisé sur la peau ou les gencives est possible à tout terme : nombreuses grossesses exposées, aucun effet néfaste pour le bébé retenu, et très faible passage dans le sang. Il fait partie des antifongiques cutanés les mieux connus. Pour une mycose vaginale, le CRAT cite d'autres produits en premier. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-miconazole
+        - crat-antifongiques-cutanes
+  reviewed: 2026-11-14
+- id: econazole
+  category: antifungals
+  names:
+    - "Éconazole"
+    - "Pevaryl"
+    - "Gyno-Pevaryl"
+    - "Econazole"
+  active_ingredient: "econazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT ne retient aucun effet néfaste pour le bébé avec l'éconazole et son passage dans le sang est très faible, mais les données sont limitées. Il conseille d'abord des antifongiques mieux connus (clotrimazole ou sertaconazole en vaginal ; miconazole, kétoconazole, sertaconazole ou terbinafine sur la peau) et de réserver l'éconazole en second choix, surtout après le 1er trimestre. Éviter les produits associant plusieurs principes actifs. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-econazole
+        - crat-antifongiques-vulvo-vaginaux
+        - crat-antifongiques-cutanes
+  reviewed: 2026-11-14
+- id: fenticonazole
+  category: antifungals
+  names:
+    - "Fenticonazole"
+    - "Lomexin"
+    - "Fenticonazole"
+  active_ingredient: "fenticonazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Pas de données publiées chez la femme enceinte, aucun effet néfaste rapporté, et pas d'effet néfaste chez l'animal. Le CRAT préfère d'abord des antifongiques mieux connus et réserve le fenticonazole en second choix, surtout après le 1er trimestre. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-fenticonazole
+        - crat-antifongiques-vulvo-vaginaux
+  reviewed: 2026-11-14
+- id: sertaconazole
+  category: antifungals
+  names:
+    - "Sertaconazole"
+    - "Monazol"
+    - "Candazol"
+    - "Sertaconazole"
+  active_ingredient: "sertaconazole"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT : nombreuses grossesses exposées, aucun effet néfaste pour le bébé retenu, utilisable à tout terme. C'est l'un des antifongiques de premier choix les mieux connus, en mycose vaginale comme cutanée. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-sertaconazole
+        - crat-antifongiques-vulvo-vaginaux
+        - crat-antifongiques-cutanes
+  reviewed: 2026-11-14
+- id: ketoconazole-topical
+  category: antifungals
+  names:
+    - "Kétoconazole (crème"
+    - "shampooing)"
+    - "Kétoderm"
+    - "Ketoconazole (cream"
+  active_ingredient: "ketoconazole, topical"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique que le kétoconazole local est possible à tout terme, avec un passage négligeable à travers la peau. Il fait partie des antifongiques cutanés les mieux connus. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ketoconazole
+        - crat-antifongiques-cutanes
+  reviewed: 2026-11-14
+- id: fluconazole-single-dose
+  category: antifungals
+  names:
+    - "Fluconazole en prise unique (mycose vaginale)"
+    - "Triflucan"
+    - "Beagyne"
+    - "Fluconazole single capsule for thrush"
+  active_ingredient: "fluconazole, one-off dose"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT admet une prise orale unique pour une mycose vaginale à tout terme, mais seulement après échec du traitement local ; de nombreuses expositions au 1er trimestre n'ont montré aucun effet néfaste lié à une prise unique. Le NHS indique que le fluconazole n'est en général pas recommandé pendant la grossesse, sauf si le médecin juge le bénéfice supérieur au risque. Demander d'abord l'avis d'un médecin ou d'un pharmacien. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-fluconazole
+        - crat-antifongiques-vulvo-vaginaux
+        - nhs-fluconazole
+  reviewed: 2026-11-14
+- id: fluconazole-high-dose
+  category: antifungals
+  names:
+    - "Fluconazole doses répétées ou élevées"
+    - "cures longues"
+    - "Fluconazole repeated or high-dose"
+  active_ingredient: "fluconazole, repeated or high-dose"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Le CRAT ne peut pas exclure un risque malformatif plus élevé avec des doses répétées ou élevées ; des cas rapportés après exposition prolongée à forte dose montrent des anomalies osseuses et parfois cardiaques ou du palais, et un possible sur-risque de fausse couche reste à confirmer. Le NHS indique que le fluconazole n'est en général pas recommandé pendant la grossesse. Ne pas l'utiliser sans avis spécialisé. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-fluconazole
+        - nhs-fluconazole
+  reviewed: 2026-11-14
+- id: terbinafine-topical
+  category: antifungals
+  names:
+    - "Terbinafine crème"
+    - "Lamisil"
+    - "Terbinafine cream"
+  active_ingredient: "terbinafine, cream"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT classe la terbinafine parmi les antifongiques cutanés les mieux connus à tout terme ; les données du 1er trimestre sont nombreuses, sans effet néfaste pour le bébé retenu. Le NHS suggère de demander d'abord l'avis d'un médecin ou d'un pharmacien. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-terbinafine
+        - crat-antifongiques-cutanes
+        - nhs-terbinafine
+  reviewed: 2026-11-14
+- id: terbinafine-oral
+  category: antifungals
+  names:
+    - "Terbinafine comprimés"
+    - "Lamisil comprimés"
+    - "Terbinafine tablets"
+  active_ingredient: "terbinafine, oral"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT : aucun effet néfaste lié en cas d'exposition au 1er trimestre (nombreuses données), mais la voie orale n'est envisagée que si elle est indispensable et ne peut attendre (pour un ongle, attendre après l'accouchement et utiliser un vernis en attendant). Le NHS indique que la terbinafine est en général évitée pendant la grossesse. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-terbinafine
+        - nhs-terbinafine
+  reviewed: 2026-11-14
+- id: amorolfine
+  category: antifungals
+  names:
+    - "Amorolfine vernis à ongles"
+    - "Locéryl"
+    - "Amorolfine nail lacquer"
+  active_ingredient: "amorolfine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique que les vernis à l'amorolfine, au bifonazole ou au ciclopirox sont utilisables pendant toute la grossesse car les quantités sont faibles et le passage dans le sang très faible. La fiche terbinafine renvoie aussi vers ces vernis pour les ongles, à tout terme. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antifongiques-cutanes
+        - crat-terbinafine
+  reviewed: 2026-11-14
+- id: ciclopirox
+  category: antifungals
+  names:
+    - "Ciclopirox"
+    - "Mycoster"
+    - "Ciclopirox"
+  active_ingredient: "ciclopirox"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique que le vernis à ongles est utilisable pendant toute la grossesse. Sur la peau, c'est un second choix après le miconazole, le kétoconazole, le sertaconazole ou la terbinafine, surtout après le 1er trimestre. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antifongiques-cutanes
+        - crat-terbinafine
+  reviewed: 2026-11-14
+- id: aciclovir
+  category: antivirals
+  names:
+    - "Aciclovir"
+    - "Zovirax"
+    - "Aciclovir (acyclovir)"
+  active_ingredient: "aciclovir"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT (fiche valaciclovir, qui rapporte aussi les données de l'aciclovir) : nombreuses grossesses exposées et aucun effet néfaste pour le bébé lié à l'aciclovir. Le NHS indique qu'il est en général considéré comme sûr pendant la grossesse, mais de demander d'abord l'avis d'un pharmacien ou d'un médecin. La fiche CRAT aciclovir grossesse n'a pas été retrouvée, et crème et comprimés ne sont pas distingués. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-valaciclovir
+        - nhs-aciclovir
+  reviewed: 2026-11-14
+- id: permethrin-scabies
+  category: antiparasitics
+  names:
+    - "Perméthrine crème (gale)"
+    - "Topiscab"
+    - "Permethrin 5% cream for scabies"
+  active_ingredient: "permethrin"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT : premier choix pour la gale pendant la grossesse à tout terme car très peu passe dans le sang. Les données sont limitées, surtout au 1er trimestre, mais l'usage est ancien et aucun effet néfaste pour le bébé n'est retenu. La fiche CRAT concerne la gale, pas les poux. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-permethrine
+        - crat-scabicides
+  reviewed: 2026-11-14
+- id: benzyl-benzoate
+  category: antiparasitics
+  names:
+    - "Benzoate de benzyle"
+    - "Ascabiol"
+    - "Benzyl benzoate"
+  active_ingredient: "benzyl benzoate"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT : utilisable contre la gale si besoin, surtout après le 1er trimestre. La perméthrine est préférée à tout terme. Données peu nombreuses au 1er trimestre, nombreuses ensuite, sans effet néfaste pour le bébé retenu. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-benzoate-benzyle
+        - crat-scabicides
+  reviewed: 2026-11-14
+- id: ivermectin
+  category: antiparasitics
+  names:
+    - "Ivermectine"
+    - "Stromectol"
+    - "Ivermectin"
+  active_ingredient: "ivermectin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT : nombreuses grossesses exposées à une prise orale unique, sans effet néfaste pour le bébé retenu, utilisable à tout terme. Pour la gale le traitement sur la peau est préféré et l'ivermectine est réservée aux cas où il ne convient pas ou ne suffit pas. De fortes doses répétées ont provoqué des fentes palatines chez l'animal. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ivermectine
+        - crat-scabicides
+  reviewed: 2026-11-14
+- id: pyrantel
+  category: antiparasitics
+  names:
+    - "Pyrantel"
+    - "Combantrin"
+    - "Pyrantel"
+  active_ingredient: "pyrantel"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT : le pyrantel est le traitement vermifuge préféré (oxyures, ascaris) pendant la grossesse, utilisable à tout terme, sans effet néfaste pour le bébé retenu ni chez l'animal. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-pyrantel
+        - crat-oxyures
+  reviewed: 2026-11-14
+- id: albendazole
+  category: antiparasitics
+  names:
+    - "Albendazole"
+    - "Zentel"
+    - "Albendazole"
+  active_ingredient: "albendazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT : utilisable aux 2e et 3e trimestres (nombreuses données, aucun effet néfaste retenu). Au 1er trimestre ce n'est pas le premier choix ; le pyrantel est préféré et l'albendazole seulement si les autres ne conviennent pas et que le traitement ne peut attendre. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-albendazole
+        - crat-oxyures
+  reviewed: 2026-11-14
+- id: hydroxychloroquine
+  category: antiparasitics
+  names:
+    - "Hydroxychloroquine"
+    - "Plaquenil"
+    - "Hydroxychloroquine"
+  active_ingredient: "hydroxychloroquine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT : aucun effet néfaste pour le bébé retenu, utilisable à tout terme si la mère en a besoin, et dans des maladies comme le lupus il doit être poursuivi pendant la grossesse. NHS : prescrit pendant la grossesse si nécessaire, à la dose efficace la plus faible. Ne pas l'arrêter ni le modifier sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-hydroxychloroquine
+        - nhs-hydroxychloroquine
+  reviewed: 2026-11-14
+- id: atovaquone-proguanil
+  category: antiparasitics
+  names:
+    - "Atovaquone-proguanil"
+    - "Malarone"
+    - "Atovaquone-proguanil"
+  active_ingredient: "atovaquone + proguanil"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT : nombreuses expositions au 1er trimestre sans effet néfaste pour le bébé retenu, et usage ancien ensuite sans effet sur le fœtus ou le nouveau-né ; utilisable si la destination l'exige. Les séjours en zone de paludisme sont déconseillés pendant la grossesse, voir un médecin des voyages. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-malarone
+        - crat-chimioprophylaxie-paludisme
+  reviewed: 2026-11-14
+- id: repellent-deet
+  category: antiparasitics
+  names:
+    - "Répulsif DEET"
+    - "DEET insect repellent"
+  active_ingredient: "DEET"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT : le DEET (20 à 50 %, au moins 30 % en zone de paludisme) est le répulsif le mieux étudié pendant la grossesse, sans effet néfaste pour le bébé retenu. CDC : les répulsifs homologués par l'EPA américaine sont sûrs pour la femme enceinte s'ils sont utilisés selon l'étiquette. Ne pas appliquer sur les lésions cutanées ni les muqueuses. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-repulsifs-grossesse
+        - cdc-mosquito-prevention
+  reviewed: 2026-11-14
+- id: repellent-icaridin
+  category: antiparasitics
+  names:
+    - "Répulsif icaridine"
+    - "Icaridin (picaridin) repellent"
+  active_ingredient: "icaridin (KBR3023)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT : l'icaridine (20 %) n'a pas de données publiées chez la femme enceinte mais aucun effet néfaste pour le bébé n'a été rapporté. Le CDC cite la picaridine parmi les répulsifs sûrs pour la femme enceinte s'ils sont utilisés selon l'étiquette. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-repulsifs-grossesse
+        - cdc-mosquito-prevention
+  reviewed: 2026-11-14
+- id: repellent-ir3535
+  category: antiparasitics
+  names:
+    - "Répulsif IR3535"
+    - "IR3535 repellent"
+  active_ingredient: "IR3535"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT : l'IR3535 (20 %) n'a pas de données publiées chez la femme enceinte mais aucun effet néfaste pour le bébé n'a été rapporté. Le CDC cite l'IR3535 parmi les répulsifs sûrs pour la femme enceinte s'ils sont utilisés selon l'étiquette. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-repulsifs-grossesse
+        - cdc-mosquito-prevention
+  reviewed: 2026-11-14
+- id: combined-pill
+  category: contraception
+  names:
+    - "Pilule combinée"
+    - "Pilule oestroprogestative"
+    - "Optilova"
+    - "Minidril"
+    - "Combined contraceptive pill"
+  active_ingredient: "ethinylestradiol + a progestin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La pilule n'a pas d'utilité pendant la grossesse. Si vous découvrez une grossesse sous pilule, arrêtez-la et prévenez votre médecin ou sage-femme. Le CRAT indique que les expositions sont très nombreuses et qu'aucun effet malformatif ou fœtal n'est attribué à l'éthinylestradiol : la patiente peut être rassurée. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ethinylestradiol
+        - crat-desogestrel
+  reviewed: 2026-11-14
+- id: vaginal-ring
+  category: contraception
+  names:
+    - "Anneau vaginal contraceptif"
+    - "Etoring"
+    - "NuvaRing"
+    - "Vaginal ring (etonogestrel + ethinylestradiol)"
+  active_ingredient: "etonogestrel + ethinylestradiol"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Si une grossesse est découverte, retirez l'anneau et prévenez votre médecin ou sage-femme. Le CRAT ne rapporte aucun effet malformatif ou fœtal attribué à l'étonogestrel ou à l'éthinylestradiol : la patiente peut être rassurée. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-etonogestrel
+        - crat-ethinylestradiol
+  reviewed: 2026-11-14
+- id: misoprostol
+  category: hormones
+  names:
+    - "Misoprostol"
+    - "Cytotec"
+    - "Gymiso"
+    - "Misoprostol"
+  active_ingredient: "misoprostol"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Le misoprostol peut provoquer des malformations en début de grossesse (atteintes nerveuses et faciales comme le syndrome de Moebius, anomalies des membres). Le CRAT le classe parmi les tératogènes avérés à proscrire. En cas de prise, consultez pour une surveillance échographique ciblée. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-misoprostol
+        - crat-medicaments-dangereux
+  reviewed: 2026-11-14
+- id: ramipril
+  category: blood-pressure
+  names:
+    - "Ramipril"
+    - "Triatec"
+    - "IEC"
+    - "Ramipril"
+  active_ingredient: "ramipril"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Le NHS indique que le ramipril n'est pas recommandé pendant la grossesse car il peut atteindre les reins du bébé, surtout aux 2e et 3e trimestres. Le CRAT classe les IEC parmi les médicaments fœtotoxiques à proscrire dès le 3e mois. Si vous êtes enceinte sous ce traitement, contactez rapidement votre médecin pour un relais ; n'arrêtez pas seule un traitement antihypertenseur. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-ramipril
+        - crat-medicaments-dangereux
+  reviewed: 2026-11-14
+- id: enalapril
+  category: blood-pressure
+  names:
+    - "Énalapril"
+    - "Rénitec"
+    - "Enalapril"
+  active_ingredient: "enalapril"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Le NHS indique que l'énalapril n'est en général pas utilisé pendant la grossesse car il peut perturber le développement du bébé ; le CRAT le classe parmi les fœtotoxiques à proscrire dès le 3e mois. Contactez rapidement votre médecin pour un traitement plus sûr. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-enalapril
+        - crat-medicaments-dangereux
+  reviewed: 2026-11-14
+- id: losartan
+  category: blood-pressure
+  names:
+    - "Losartan"
+    - "Cozaar"
+    - "Sartans"
+    - "Losartan"
+  active_ingredient: "losartan"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Le NHS indique que le losartan est en général évité pendant la grossesse ; le CRAT le classe parmi les fœtotoxiques à proscrire dès le 3e mois. Contactez rapidement votre médecin pour un relais ; n'arrêtez pas seule le traitement. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-losartan
+        - crat-medicaments-dangereux
+  reviewed: 2026-11-14
 - id: isotretinoin-oral
   category: skin
   names:
@@ -3668,4 +4723,515 @@
       sources:
         - crat-cafeine
         - nhs-foods-to-avoid
+  reviewed: 2026-11-14
+- id: flu-vaccine
+  category: vaccines
+  names:
+    - "Vaccin contre la grippe saisonnière"
+    - "Vaccin antigrippal"
+    - "Grippe"
+    - "Seasonal flu vaccine"
+  active_ingredient: "Inactivated influenza vaccine"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique que les vaccins contre la grippe utilisés en France sont inactivés et possibles à tout stade de la grossesse, sans effet nocif lié pour le bébé. Le NHS et le CDC le recommandent aussi pendant la grossesse ; le spray nasal vivant est contre-indiqué. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-grippe
+        - nhs-flu-vaccine
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: covid-vaccine
+  category: vaccines
+  names:
+    - "Vaccin contre la Covid-19"
+    - "Comirnaty"
+    - "Covid-19 vaccine"
+  active_ingredient: "mRNA Covid-19 vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT considère le vaccin à ARNm contre la Covid-19 possible et recommandé à tout stade de la grossesse, sans délai à respecter avant une conception. Le NHS indique qu'il peut en général être reçu pendant la grossesse ; le CDC le recommande aux adultes dont les femmes enceintes. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-covid
+        - nhs-covid-vaccine
+        - cdc-vaccine-recommendations-pregnancy
+  reviewed: 2026-11-14
+- id: whooping-cough-vaccine
+  category: vaccines
+  names:
+    - "Vaccin contre la coqueluche"
+    - "Coqueluche"
+    - "dTcaP"
+    - "Repevax"
+    - "Whooping cough vaccine"
+  active_ingredient: "Inactivated acellular pertussis vaccine (with diphtheria, tetanus, +/- polio)"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT le juge sûr pendant la grossesse et le recommande à chaque grossesse, avec un bénéfice maximal pour le bébé entre 20 et 36 SA. Le NHS le propose vers 20 semaines (dès 16, idéalement avant 32) ; le CDC le recommande à chaque grossesse entre 27 et 36 semaines. Les délais varient selon les pays : suivre l'avis de la sage-femme ou du médecin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-coqueluche
+        - crat-repevax
+        - nhs-whooping-cough-pregnancy
+        - cdc-vaccine-recommendations-pregnancy
+  reviewed: 2026-11-14
+- id: repevax
+  category: vaccines
+  names:
+    - "Repevax"
+    - "dTcaP"
+    - "Repevax"
+  active_ingredient: "Diphtheria-tetanus-acellular pertussis-polio vaccine (inactivated)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT considère Repevax sûr pendant la grossesse car il est inactivé et ne peut pas infecter le bébé, sans délai à respecter avant une conception. Voir la fiche coqueluche pour le meilleur moment. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-repevax
+        - crat-vaccin-coqueluche
+  reviewed: 2026-11-14
+- id: rsv-vaccine
+  category: vaccines
+  names:
+    - "Vaccin contre le VRS"
+    - "Abrysvo"
+    - "Virus respiratoire syncytial"
+    - "RSV vaccine"
+  active_ingredient: "Bivalent RSV prefusion F vaccine (inactivated)"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT juge Abrysvo acceptable au troisième trimestre, entre 32 et 36 SA, pour protéger le bébé durant ses premiers mois. Le CDC le recommande de 32 à 36 semaines en saison ; le NHS le propose dès environ 28 semaines. Une alternative existe (anticorps injecté au nouveau-né) : en parler à la sage-femme. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-abrysvo
+        - nhs-rsv-vaccine
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: tetanus-vaccine
+  category: vaccines
+  names:
+    - "Vaccin contre le tétanos"
+    - "Tétanos"
+    - "Tetanus vaccine"
+  active_ingredient: "Tetanus toxoid (inactivated)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique qu'il est possible à tout stade de la grossesse et qu'un schéma incomplet peut être poursuivi. Le NHS le considère sûr pendant la grossesse si nécessaire. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-tetanos
+        - nhs-vaccines-pregnancy
+  reviewed: 2026-11-14
+- id: diphtheria-vaccine
+  category: vaccines
+  names:
+    - "Vaccin contre la diphtérie"
+    - "Diphtérie"
+    - "Diphtheria vaccine"
+  active_ingredient: "Diphtheria toxoid (inactivated)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique qu'il est possible pendant la grossesse car inactivé, à tout stade, et que les doses restantes peuvent être complétées. Seul le CRAT a une fiche dédiée ; il figure aussi dans les vaccins combinés contre la coqueluche. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-diphterie
+        - crat-vaccins
+  reviewed: 2026-11-14
+- id: polio-inactivated-vaccine
+  category: vaccines
+  names:
+    - "Vaccin contre la poliomyélite (injectable)"
+    - "Polio"
+    - "dTP"
+    - "DTPolio"
+    - "Polio vaccine (injected)"
+  active_ingredient: "Inactivated poliovirus vaccine (often combined with diphtheria and tetanus: dTP)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT décrit le vaccin contre la polio comme inactivé et possible à tout stade de la grossesse ; un schéma incomplet peut être terminé. Cela vaut aussi pour le vaccin combiné dTP dont chaque composant a une fiche CRAT concordante. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-polio
+        - crat-vaccin-tetanos
+        - crat-vaccin-diphterie
+  reviewed: 2026-11-14
+- id: hepatitis-a-vaccine
+  category: vaccines
+  names:
+    - "Vaccin contre l'hépatite A"
+    - "Hépatite A"
+    - "Hepatitis A vaccine"
+  active_ingredient: "Inactivated hepatitis A vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique qu'il est inactivé, sans effet nocif lié dans de nombreuses grossesses, et possible à tout stade. Le CDC le recommande aux femmes enceintes à risque (voyage, maladie du foie, exposition). En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-hepatite-a
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: hepatitis-b-vaccine
+  category: vaccines
+  names:
+    - "Vaccin contre l'hépatite B"
+    - "Hépatite B"
+    - "Hepatitis B vaccine"
+  active_ingredient: "Recombinant hepatitis B vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique qu'il est possible à tout stade et qu'une série commencée doit être terminée. Le NHS le juge généralement sûr pendant la grossesse ; le CDC précise que la grossesse n'est pas une raison de le différer. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-hepatite-b
+        - nhs-hepb-vaccine
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: mmr-vaccine
+  category: vaccines
+  names:
+    - "Vaccin ROR"
+    - "Rougeole-oreillons-rubéole"
+    - "Priorix"
+    - "M-M-RvaxPro"
+    - "MMR vaccine"
+  active_ingredient: "Live attenuated measles, mumps, rubella vaccine"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "C'est un vaccin vivant : le CRAT, le NHS et le CDC indiquent de ne pas le faire pendant la grossesse ; il se fait après l'accouchement. Il faut éviter une conception pendant environ un mois après. En cas de vaccination accidentelle, le CRAT conseille de rassurer et d'orienter vers un suivi spécialisé. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-ror
+        - nhs-mmr-vaccine
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: rubella-vaccine
+  category: vaccines
+  names:
+    - "Vaccin contre la rubéole"
+    - "Rubéole"
+    - "Rubella vaccine"
+  active_ingredient: "Live attenuated rubella vaccine (usually within MMR/ROR)"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Le vaccin contre la rubéole est vivant : le CRAT indique de ne pas vacciner pendant la grossesse ni le mois précédant la conception (il est donné dans le vaccin ROR). Le CRAT recommande de vérifier l'immunité avant une grossesse. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccins
+        - crat-vaccin-ror
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: varicella-vaccine
+  category: vaccines
+  names:
+    - "Vaccin contre la varicelle"
+    - "Varicelle"
+    - "Varivax"
+    - "Varicella vaccine"
+  active_ingredient: "Live attenuated varicella vaccine"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Vaccin vivant : le CRAT déconseille de vacciner une femme enceinte et recommande d'éviter une conception pendant un mois après ; aucun effet nocif pour le bébé n'a été identifié dans les grossesses exposées à ce jour. Le NHS et le CDC indiquent aussi de ne pas le faire pendant la grossesse. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-varicelle
+        - nhs-chickenpox-vaccine
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: yellow-fever-vaccine
+  category: vaccines
+  names:
+    - "Vaccin contre la fièvre jaune"
+    - "Fièvre jaune"
+    - "Stamaril"
+    - "Yellow fever vaccine"
+  active_ingredient: "Live attenuated yellow fever vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Vaccin vivant : le CRAT le juge possible à tout stade seulement si le voyage ne peut être reporté ; aucun effet nocif n'a été observé dans les grossesses étudiées. Le NHS et le CDC indiquent qu'il est en général différé mais peut être utilisé si le voyage en zone à risque est inévitable. Décision avec un médecin ou un centre de vaccinations internationales. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-fievre-jaune
+        - nhs-vaccines-pregnancy
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: bcg-vaccine
+  category: vaccines
+  names:
+    - "Vaccin BCG"
+    - "Tuberculose"
+    - "BCG vaccine"
+  active_ingredient: "Live attenuated BCG vaccine"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Le CRAT ne recommande pas de vacciner une femme enceinte (aucun effet nocif n'est rapporté à ce jour) ; le NHS indique que les femmes enceintes ne doivent pas recevoir le BCG (vaccin vivant). Une grossesse découverte après un BCG ne doit pas inquiéter. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-bcg
+        - nhs-bcg-vaccine
+        - nhs-vaccines-pregnancy
+  reviewed: 2026-11-14
+- id: hpv-vaccine
+  category: vaccines
+  names:
+    - "Vaccin contre les papillomavirus (HPV)"
+    - "Gardasil"
+    - "Gardasil 9"
+    - "Cervarix"
+    - "HPV vaccine"
+  active_ingredient: "Inactivated HPV vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique que la vaccination n'est pas justifiée pendant la grossesse (elle peut attendre l'après-accouchement), sans effet nocif constaté chez les femmes vaccinées avant de se savoir enceintes. Le CDC ne la recommande pas pendant la grossesse et la reprend après ; le NHS ne note pas de signe de danger mais conseille parfois d'attendre. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-hpv
+        - nhs-hpv-vaccine
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: meningococcal-acwy-vaccine
+  category: vaccines
+  names:
+    - "Vaccin méningococcique ACWY"
+    - "Méningocoque ACWY"
+    - "Nimenrix"
+    - "MenQuadfi"
+    - "Meningococcal ACWY vaccine"
+  active_ingredient: "Inactivated meningococcal A, C, W, Y conjugate vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique que les vaccins méningococciques (ACWY et B) sont inactivés et possibles à tout stade de la grossesse. Le CDC précise que la grossesse ne doit pas empêcher la vaccination ACWY lorsqu'elle est indiquée. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-meningocoque
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: meningococcal-b-vaccine
+  category: vaccines
+  names:
+    - "Vaccin méningococcique B"
+    - "Méningocoque B"
+    - "Bexsero"
+    - "Trumenba"
+    - "Meningococcal B vaccine"
+  active_ingredient: "Inactivated meningococcal B vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique que les vaccins méningococciques B sont possibles à tout stade de la grossesse. Le CDC diffère en général le vaccin B pendant la grossesse sauf risque accru et bénéfice supérieur au risque : décision avec un médecin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-meningocoque
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: pneumococcal-vaccine
+  category: vaccines
+  names:
+    - "Vaccin contre le pneumocoque"
+    - "Pneumocoque"
+    - "Prevenar"
+    - "Pneumovax"
+    - "Pneumococcal vaccine"
+  active_ingredient: "Inactivated pneumococcal vaccine (conjugate or polysaccharide)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique qu'il est inactivé et possible à tout stade, et le NHS que les personnes qui en ont besoin peuvent le recevoir enceintes. Le CDC ne fait pas de recommandation pendant la grossesse faute de données : à réserver aux indications médicales. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-pneumocoque
+        - nhs-pneumococcal-vaccine
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: rabies-vaccine
+  category: vaccines
+  names:
+    - "Vaccin contre la rage"
+    - "Rage"
+    - "Rabies vaccine"
+  active_ingredient: "Inactivated rabies vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique qu'il est inactivé et possible à tout stade de la grossesse. Le CDC précise que la grossesse n'empêche pas la vaccination après exposition et qu'elle peut aussi être faite avant si le risque est important. Après morsure ou griffure d'un animal, consulter sans attendre. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-rage
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: typhoid-injectable-vaccine
+  category: vaccines
+  names:
+    - "Vaccin typhoïdique injectable"
+    - "Typhoïde"
+    - "Typhim Vi"
+    - "Typhoid vaccine (injectable)"
+  active_ingredient: "Inactivated Vi polysaccharide typhoid vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique que le vaccin inactivé Typhim est possible à tout stade et préférable au vaccin oral vivant. Le CDC note l'absence de données et ne conseille le vaccin Vi que s'il est clairement nécessaire. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-typhoide
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: typhoid-oral-vaccine
+  category: vaccines
+  names:
+    - "Vaccin typhoïdique oral"
+    - "Vivotif"
+    - "Typhoid vaccine (oral)"
+  active_ingredient: "Live attenuated Ty21a typhoid vaccine (oral)"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Vaccin oral vivant : le CRAT préfère le vaccin injectable inactivé pendant la grossesse, le CDC indique que le vaccin oral vivant est contre-indiqué, et le NHS classe la typhoïde orale parmi les vaccins vivants en général différés après la naissance. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-typhoide
+        - cdc-vaccine-guidelines-pregnancy
+        - nhs-vaccines-pregnancy
+  reviewed: 2026-11-14
+- id: cholera-vaccine
+  category: vaccines
+  names:
+    - "Vaccin contre le choléra"
+    - "Choléra"
+    - "Dukoral"
+    - "Cholera vaccine"
+  active_ingredient: "Inactivated oral cholera vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique qu'il est inactivé et possible à tout stade, sans effet nocif constaté. Le CDC note l'absence de données sur le vaccin autorisé pendant la grossesse et invite à évaluer le risque du voyage en zone touchée. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-cholera
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: japanese-encephalitis-vaccine
+  category: vaccines
+  names:
+    - "Vaccin contre l'encéphalite japonaise"
+    - "Ixiaro"
+    - "Japanese encephalitis vaccine"
+  active_ingredient: "Inactivated Japanese encephalitis vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique qu'il est inactivé et possible à tout stade, sans effet nocif constaté. Le CDC classe la grossesse comme précaution : en général différé, mais possible pour un voyage en zone à haut risque si le bénéfice l'emporte. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-encephalite-japonaise
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: hib-vaccine
+  category: vaccines
+  names:
+    - "Vaccin contre Haemophilus influenzae b"
+    - "Hib"
+    - "Hib vaccine"
+  active_ingredient: "Inactivated Hib conjugate vaccine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT le classe comme non justifié en routine, mais aucun effet nocif n'est connu et il peut être fait à tout stade si une femme adulte en a réellement besoin. Une seule source. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccin-hib
+        - crat-vaccins
+  reviewed: 2026-11-14
+- id: mpox-vaccine
+  category: vaccines
+  names:
+    - "Vaccin contre le mpox"
+    - "Variole du singe"
+    - "Imvanex"
+    - "Mpox vaccine"
+  active_ingredient: "Non-replicating smallpox/mpox vaccine (MVA-BN)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS indique que les femmes enceintes pour qui il est conseillé peuvent en général le recevoir. Le CDC précise que les données humaines sont insuffisantes : décision au cas par cas avec un soignant, sans effet fœtal observé chez l'animal. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-mpox-vaccine
+        - cdc-vaccine-guidelines-pregnancy
+  reviewed: 2026-11-14
+- id: travel-vaccines-general
+  category: vaccines
+  names:
+    - "Vaccins du voyageur pendant la grossesse"
+    - "Travel vaccines in pregnancy"
+  active_ingredient: "Various travel vaccines"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les vaccins du voyageur inactivés sont en général considérés comme sûrs ; les vaccins vivants sont habituellement évités sauf si le risque de l'infection est plus grand. Mieux vaut éviter les voyages nécessitant des vaccins et en parler à un médecin ou un centre de vaccinations internationales plusieurs semaines avant le départ. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-travelling
+        - nhs-vaccines-pregnancy
+        - cdc-vaccine-recommendations-pregnancy
+  reviewed: 2026-11-14
+- id: anti-d-immunoglobulin
+  category: vaccines
+  names:
+    - "Immunoglobuline anti-D"
+    - "Rhophylac"
+    - "Prévention de l'allo-immunisation rhésus"
+    - "Anti-D immunoglobulin"
+  active_ingredient: "Human anti-D immunoglobulin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS indique qu'une femme de rhésus D négatif portant un bébé D positif peut recevoir une injection d'anti-D pour éviter la production d'anticorps contre le sang du bébé ; elle peut être proposée vers 28 semaines. Seules des pages NHS ont été trouvées (pas de page CNGOF/HAS/ameli localisée) : l'injection est prescrite par l'équipe de suivi. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-hdfn
+        - nhs-antenatal-appointments
+  reviewed: 2026-11-14
+- id: live-vaccines-class
+  category: vaccines
+  names:
+    - "Vaccins vivants atténués (classe)"
+    - "Live vaccines (class)"
+  active_ingredient: "Live attenuated vaccines (MMR, varicella, BCG, oral typhoid, yellow fever, nasal flu spray)"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "En règle générale, les vaccins vivants ne se font pas pendant la grossesse et il faut attendre avant de concevoir après certains d'entre eux (environ un mois pour ROR et varicelle). Exception : la fièvre jaune peut être possible si le voyage ne peut être reporté. Le NHS note qu'aucune preuve ne relie un vaccin vivant à des malformations : une vaccination accidentelle n'est pas une raison de paniquer. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-vaccins
+        - nhs-vaccines-pregnancy
+        - nhs-travelling
+        - cdc-vaccine-guidelines-pregnancy
   reviewed: 2026-11-14
