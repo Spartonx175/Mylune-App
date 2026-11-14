@@ -5,7 +5,7 @@ import type { CheckKind } from "../lib/content/check-types";
 
 // French checker files must mirror the English ones 1:1 (CLAUDE.md: FR mirrors EN keys).
 const realRoot = path.join(__dirname, "..", "content");
-const KINDS = ["foods", "drinks"] as const satisfies readonly CheckKind[];
+const KINDS = ["foods", "drinks", "medicines"] as const satisfies readonly CheckKind[];
 
 describe.each(KINDS)("checker FR mirrors EN: %s", (kind) => {
   const en = loadChecks("en", kind, realRoot);

@@ -1,0 +1,3671 @@
+# « Puis-je prendre ceci ? » (vérificateur), partie médicaments
+# Traduction de content/en/check/medicines.yaml
+# Mêmes ids, verdicts, sources.
+- id: paracetamol
+  category: pain-fever
+  names:
+    - "Paracétamol"
+    - "Doliprane"
+    - "Dafalgan"
+    - "Efferalgan"
+    - "Dolko"
+    - "Acétaminophène"
+    - "Paracetamol"
+  active_ingredient: "paracétamol"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le paracétamol est le premier choix habituel contre la douleur ou la fièvre pendant la grossesse, à tous les stades. Les sources françaises et britanniques s'accordent : c'est l'antalgique à privilégier. Prenez-le seulement en quantité nécessaire, et uniquement comme l'indique la notice ou votre médecin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-paracetamol
+        - ansm-douleur
+        - nhs-paracetamol
+        - crat-paracetamol-news
+  reviewed: 2026-11-13
+- id: ibuprofen
+  category: pain-fever
+  names:
+    - "Ibuprofène"
+    - "Advil"
+    - "Nurofen"
+    - "Antarène"
+    - "Spedifen"
+    - "Ibuprofen"
+  active_ingredient: "ibuprofène"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Les anti-inflammatoires comme l'ibuprofène ne doivent pas être pris de votre propre initiative pendant la grossesse. À partir de 24 semaines d'aménorrhée (SA) (le début du 6e mois), ils sont formellement interdits, même un seul comprimé, car ils peuvent nuire aux reins et au cœur du bébé. Avant cette date, seulement si un médecin juge que c'est vraiment nécessaire. Le paracétamol est préféré. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ibuprofene
+        - ansm-douleur
+        - nhs-ibuprofen
+  reviewed: 2026-11-13
+- id: aspirin
+  category: pain-fever
+  names:
+    - "Aspirine"
+    - "Aspégic"
+    - "Aspirine du Rhône"
+    - "Kardegic"
+    - "Aspirine UPSA"
+    - "Aspirin"
+  active_ingredient: "acide acétylsalicylique (aspirine)"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "L'aspirine prise contre la douleur ou la fièvre est un anti-inflammatoire : à éviter. À partir de 24 semaines d'aménorrhée (SA), elle est formellement interdite, et avant cette date, seulement sur avis médical. Si un médecin vous a prescrit une aspirine faiblement dosée, c'est différent : suivez ses conseils et ne l'arrêtez pas de vous-même. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ains
+        - ansm-douleur
+        - nhs-aspirin
+  reviewed: 2026-11-13
+- id: diclofenac
+  category: pain-fever
+  names:
+    - "Diclofénac"
+    - "Voltarène"
+    - "Voltaren"
+    - "Flector"
+    - "Diclofenac"
+  active_ingredient: "diclofénac"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Le diclofénac est un anti-inflammatoire. Évitez-le pendant la grossesse, sauf si un médecin juge qu'il est nécessaire. À partir de 24 semaines d'aménorrhée (SA), il est formellement interdit, quelle que soit la forme. Il peut affecter la circulation sanguine du bébé et le liquide amniotique. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-diclofenac
+        - ansm-douleur
+        - nhs-diclofenac
+  reviewed: 2026-11-13
+- id: other-nsaids
+  category: pain-fever
+  names:
+    - "Autres anti-inflammatoires"
+    - "AINS"
+    - "Kétoprofène"
+    - "Ketum"
+    - "Bi-Profénid"
+    - "Naproxène"
+    - "Apranax"
+    - "Nimésulide"
+    - "Célécoxib"
+    - "Anti-inflammatoires"
+    - "Other anti-inflammatories"
+  active_ingredient: "anti-inflammatoires (AINS)"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Toute cette famille (kétoprofène, naproxène, nimésulide et similaires) est à éviter pendant la grossesse. À partir de 24 semaines d'aménorrhée (SA), ils sont formellement interdits, et avant cette date, seulement sur avis médical. De nombreux produits contre la douleur et le rhume en contiennent, lisez donc l'étiquette. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ains
+        - ansm-douleur
+        - crat-medicaments-dangereux
+  reviewed: 2026-11-13
+- id: codeine
+  category: pain-fever
+  names:
+    - "Codéine"
+    - "Codoliprane"
+    - "Dafalgan codéine"
+    - "Efferalgan codéiné"
+    - "Klipal"
+    - "Paracétamol avec codéine"
+    - "Codeine"
+  active_ingredient: "codéine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La codéine peut être utilisée pendant la grossesse lorsque le paracétamol seul ne suffit pas, mais seulement sur conseil d'un médecin ou d'un pharmacien, et pendant la durée la plus courte possible. Prise jusqu'à l'accouchement, elle peut provoquer chez le nouveau-né des signes de sevrage : l'équipe de maternité doit donc être informée. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-codeine
+        - nhs-codeine
+        - ansm-douleur
+  reviewed: 2026-11-13
+- id: tramadol
+  category: pain-fever
+  names:
+    - "Topalgic"
+    - "Contramal"
+    - "Ixprim"
+    - "Zaldiar"
+    - "Tramadol"
+  active_ingredient: "tramadol"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le tramadol est un antalgique puissant, sur ordonnance. Pendant les trois premiers mois, il est déconseillé car les données sont limitées. Plus tard, il peut être utilisé si un médecin le juge nécessaire, mais pris jusqu'à l'accouchement, il peut provoquer un sevrage chez le nouveau-né : l'équipe de maternité doit en être informée. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-tramadol
+        - ansm-douleur
+        - nhs-tramadol
+  reviewed: 2026-11-13
+- id: alginate-gaviscon
+  category: stomach-reflux
+  names:
+    - "Alginate"
+    - "Liquide contre les brûlures"
+    - "Brûlures d'estomac"
+    - "Reflux"
+    - "Topaal"
+    - "Gaviscon Menthe"
+    - "Gaviscon"
+  active_ingredient: "alginate"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Les produits à base d'alginate, comme Gaviscon, sont indiqués comme utilisables à tout stade de la grossesse contre les brûlures d'estomac, lorsque des mesures simples, comme des repas plus légers, n'ont pas suffi. Vérifiez l'étiquette pour les ingrédients supplémentaires. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-reflux
+        - nhs-antacids
+  reviewed: 2026-11-13
+- id: antacid-aluminium-magnesium
+  category: stomach-reflux
+  names:
+    - "Antiacide aluminium-magnésium"
+    - "Gelox"
+    - "Xolaam"
+    - "Antiacide"
+    - "Anti-acide"
+    - "Mucogel"
+    - "Maalox"
+  active_ingredient: "antiacides à l'aluminium et au magnésium"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Les antiacides à base d'aluminium et de magnésium (comme Maalox ou Gelox) sont indiqués comme utilisables à tout stade de la grossesse contre les brûlures d'estomac. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-reflux
+        - nhs-antacids
+  reviewed: 2026-11-13
+- id: rennie-calcium-antacid
+  category: stomach-reflux
+  names:
+    - "Anti-acide au calcium"
+    - "Antiacide au carbonate de calcium"
+    - "Tums"
+    - "Anti-acide à croquer"
+    - "Gaviscon Rennie"
+    - "Rennie"
+  active_ingredient: "carbonate de calcium / carbonate de magnésium"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les antiacides sont généralement considérés comme acceptables pendant la grossesse, mais ce type (à base de calcium, comme Rennie) n'est pas mentionné sur la page de référence française, qui cite les alginates et les produits aluminium/magnésium. Demandez l'avis d'un pharmacien avant de l'utiliser régulièrement. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-reflux
+        - nhs-antacids
+  reviewed: 2026-11-13
+- id: omeprazole
+  category: stomach-reflux
+  names:
+    - "Oméprazole"
+    - "Mopral"
+    - "Zoltum"
+    - "Inexium"
+    - "Ésoméprazole"
+    - "Pantoprazole"
+    - "Eupantol"
+    - "Inipomp"
+    - "Lansoprazole"
+    - "Lanzor"
+    - "Ogast"
+    - "Réducteur d'acidité gastrique"
+    - "Omeprazole"
+  active_ingredient: "oméprazole / ésoméprazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "L'oméprazole et les autres médicaments « -prazole » contre le reflux sont indiqués comme utilisables à tout stade de la grossesse lorsque les mesures simples et les antiacides ne suffisent pas. Ils sont sur ordonnance ou disponibles au comptoir de la pharmacie : faites confirmer par un pharmacien ou un médecin lequel convient. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-omeprazole
+        - crat-reflux
+        - nhs-omeprazole
+  reviewed: 2026-11-13
+- id: domperidone
+  category: nausea
+  names:
+    - "Dompéridone"
+    - "Motilium"
+    - "Peridys"
+    - "Anti-nauséeux"
+    - "Domperidone"
+  active_ingredient: "dompéridone"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La référence française indique que la dompéridone peut être utilisée à tout stade de la grossesse, mais c'est un antinauséeux de deuxième intention : d'autres options passent avant, et un médecin doit décider. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-domperidone
+        - ansm-nausees
+        - nhs-domperidone
+  reviewed: 2026-11-13
+- id: metoclopramide
+  category: nausea
+  names:
+    - "Métoclopramide"
+    - "Primpéran"
+    - "Prokinyl"
+    - "Anti-nauséeux"
+    - "Comprimé contre les nausées"
+    - "Metoclopramide"
+  active_ingredient: "métoclopramide"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le métoclopramide fait partie des antinauséeux de première intention pendant la grossesse et peut être utilisé à tout stade, mais il est sur ordonnance : un médecin doit décider. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-metoclopramide
+        - crat-antiemetiques
+        - ansm-nausees
+        - nhs-metoclopramide
+  reviewed: 2026-11-13
+- id: doxylamine-b6-nausea
+  category: nausea
+  names:
+    - "Doxylamine et vitamine B6"
+    - "Cariban"
+    - "Xonvea"
+    - "Médicament contre les nausées du matin"
+    - "Nausées"
+    - "Vomissements"
+    - "Doxylamine-pyridoxine"
+    - "Doxylamine and vitamin B6"
+  active_ingredient: "doxylamine + pyridoxine (vitamine B6)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La doxylamine associée à la vitamine B6 est un traitement de première intention contre les nausées de la grossesse. L'agence sanitaire française recommande de l'éviter pendant les trois derniers mois, car le nouveau-né peut présenter des effets indésirables. Elle est prescrite par un médecin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - ansm-nausees
+        - crat-antiemetiques
+        - crat-doxylamine
+  reviewed: 2026-11-13
+- id: donormyl-doxylamine-sleep
+  category: sleep
+  names:
+    - "Doxylamine"
+    - "Lidène"
+    - "Comprimé pour dormir"
+    - "Somnifère"
+    - "Aide au sommeil"
+    - "Donormyl"
+  active_ingredient: "doxylamine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La doxylamine (présente dans Donormyl, un médicament pour le sommeil) peut être utilisée pendant la grossesse si un médicament est vraiment nécessaire, mais l'agence sanitaire française recommande de l'éviter pendant les trois derniers mois, car le nouveau-né peut présenter des effets indésirables. Parlez-en à un pharmacien ou à un médecin avant de l'utiliser pour dormir. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-doxylamine
+        - ansm-nausees
+  reviewed: 2026-11-13
+- id: ondansetron
+  category: nausea
+  names:
+    - "Ondansétron"
+    - "Zophren"
+    - "Antinauséeux puissant"
+    - "Ondansetron"
+  active_ingredient: "ondansétron"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "L'ondansétron est réservé aux nausées sévères lorsque les autres traitements n'ont pas fonctionné. Les sources françaises déconseillent de l'utiliser pendant les trois premiers mois. Il est sur ordonnance : un médecin décide. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - ansm-nausees
+        - crat-antiemetiques
+  reviewed: 2026-11-13
+- id: lactulose
+  category: constipation
+  names:
+    - "Duphalac"
+    - "Importal"
+    - "Laxatif osmotique"
+    - "Constipation"
+    - "Lactulose"
+  active_ingredient: "lactulose"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Les laxatifs osmotiques doux comme le lactulose sont préférés pendant la grossesse, à tout stade, lorsque manger davantage de fibres et boire davantage n'ont pas suffi. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-laxatifs
+        - nhs-lactulose
+  reviewed: 2026-11-13
+- id: psyllium-bulking-laxatives
+  category: constipation
+  names:
+    - "Ispaghul"
+    - "Spagulax"
+    - "Transilane"
+    - "Normacol"
+    - "Supplément de fibres"
+    - "Laxatif de lest"
+    - "Mucilage"
+    - "Sterculia"
+    - "Fibres"
+    - "Psyllium"
+  active_ingredient: "psyllium / ispaghul"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Les laxatifs de lest (psyllium, ispaghul) font partie des types préférés pendant la grossesse, à tout stade. Buvez beaucoup d'eau avec eux. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-laxatifs
+        - nhs-laxatives
+  reviewed: 2026-11-13
+- id: macrogol
+  category: constipation
+  names:
+    - "Forlax"
+    - "Movicol"
+    - "Transipeg"
+    - "Laxarix"
+    - "PEG"
+    - "Polyéthylène glycol"
+    - "Macrogol"
+  active_ingredient: "macrogol"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le macrogol (Forlax, Transipeg) est un laxatif osmotique, l'un des types préférés pendant la grossesse, à tout stade. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-laxatifs
+        - nhs-laxatives
+  reviewed: 2026-11-13
+- id: stimulant-laxatives
+  category: constipation
+  names:
+    - "Laxatifs stimulants"
+    - "Séné"
+    - "Bisacodyl"
+    - "Dulcolax"
+    - "Contalax"
+    - "Laxatif"
+    - "Comprimés laxatifs"
+    - "Tisane laxative"
+    - "Stimulant laxatives"
+  active_ingredient: "séné / bisacodyl"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les laxatifs stimulants ne sont pas le premier choix : un usage régulier est fortement déconseillé pendant la grossesse. Le séné est celui à privilégier si un laxatif est nécessaire de temps en temps. Les laxatifs de lest ou osmotiques doux passent avant. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-laxatifs
+        - nhs-laxatives
+  reviewed: 2026-11-13
+- id: loperamide
+  category: diarrhoea
+  names:
+    - "Lopéramide"
+    - "Imodium"
+    - "Arrêt diarrhée"
+    - "Comprimé contre la diarrhée"
+    - "Antidiarrhéique"
+    - "Loperamide"
+  active_ingredient: "lopéramide"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La référence française indique que le lopéramide peut être utilisé à tout stade pour un épisode court de diarrhée, mais le NHS britannique indique qu'il n'est pas généralement recommandé pendant la grossesse. Buvez beaucoup de liquides et demandez conseil d'abord, surtout si la diarrhée dure ou si vous avez de la fièvre. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-loperamide
+        - crat-antidiarrheiques
+        - nhs-loperamide
+  reviewed: 2026-11-13
+- id: pseudoephedrine
+  category: cold-cough
+  names:
+    - "Pseudoéphédrine"
+    - "Actifed"
+    - "Humex rhume"
+    - "Dolirhume"
+    - "Rhume"
+    - "Comprimés contre le rhume avec décongestionnant"
+    - "Nurofen Rhume"
+    - "Actifed Rhume"
+    - "Pseudoephedrine"
+  active_ingredient: "pseudoéphédrine"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Les comprimés contre le rhume à base de pseudoéphédrine (décongestionnant) ne sont pas recommandés pendant la grossesse : ils peuvent réduire l'apport de sang au bébé. Vérifiez la boîte de tout produit contre le rhume pour cet ingrédient. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-pseudoephedrine
+        - crat-rhinite
+        - nhs-decongestants
+  reviewed: 2026-11-13
+- id: decongestant-nasal-sprays
+  category: cold-cough
+  names:
+    - "Spray nasal décongestionnant"
+    - "Spray nasal"
+    - "Spray pour le nez"
+    - "Spray vasoconstricteur"
+    - "Rhinofluimucil"
+    - "Otrivine"
+    - "Spray pour nez bouché"
+    - "Decongestant nasal spray"
+  active_ingredient: "décongestionnants nasaux"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS indique de ne pas utiliser de décongestionnants pendant la grossesse. La référence française n'autorise qu'un usage bref et prudent d'un seul type, et place en premier les lavages du nez au sérum physiologique et les sprays à l'eau de mer. Essayez-les d'abord, et demandez l'avis d'un pharmacien avant tout spray décongestionnant. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-decongestants
+        - crat-rhinite
+  reviewed: 2026-11-13
+- id: saline-nasal
+  category: cold-cough
+  names:
+    - "Sérum physiologique"
+    - "Spray d'eau de mer"
+    - "Physiomer"
+    - "Marimer"
+    - "Rinçage du nez bouché"
+    - "Lavage de nez"
+    - "Saline nose spray"
+  active_ingredient: "sérum physiologique / eau de mer"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Rincer le nez avec un spray au sérum physiologique ou à l'eau de mer est la première étape que suggère la référence française pour un nez bouché ou qui coule pendant la grossesse. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-rhinite
+        - nhs-decongestants
+  reviewed: 2026-11-13
+- id: dextromethorphan
+  category: cold-cough
+  names:
+    - "Dextrométhorphane"
+    - "Sirop contre la toux"
+    - "Toux sèche"
+    - "Dextromethorphan"
+  active_ingredient: "dextrométhorphane"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le dextrométhorphane est l'un des médicaments contre la toux les plus connus pendant la grossesse, et la référence française l'autorise à tout stade, seulement pour quelques jours et selon la notice. Uniquement des produits à un seul ingrédient, et seulement après avoir demandé l'avis d'un pharmacien ou d'un médecin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-dextromethorphane
+        - crat-antitussifs
+  reviewed: 2026-11-13
+- id: multi-ingredient-cold-cough
+  category: cold-cough
+  names:
+    - "Sachets contre le rhume et la grippe"
+    - "Fervex"
+    - "Toplexil"
+    - "Oxomémazine"
+    - "Sirop contre la toux à base de plantes"
+    - "Sirop"
+    - "Sirop contre la toux à plusieurs ingrédients"
+    - "Rhume grippe"
+    - "Cold and flu sachets"
+  active_ingredient: "plusieurs ingrédients associés"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les produits qui associent plusieurs ingrédients (sachets contre le rhume et la grippe, sirops contre la toux avec un antihistaminique ou des extraits de plantes) sont à éviter de préférence : la référence française privilégie un produit à un seul ingrédient et déconseille les antitussifs de type antihistaminique ou à base de plantes. Ne vous automédiquez jamais : demandez d'abord. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antitussifs
+        - nhs-medicines
+  reviewed: 2026-11-13
+- id: cetirizine
+  category: allergy
+  names:
+    - "Cétirizine"
+    - "Zyrtec"
+    - "Virlix"
+    - "Zyrtecset"
+    - "Comprimé contre les allergies"
+    - "Antihistaminique"
+    - "Cetirizine"
+  active_ingredient: "cétirizine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "La cétirizine est indiquée comme utilisable à tout stade de la grossesse contre les allergies, et le NHS indique également qu'elle peut être prise. Ce n'est pas une raison de l'arrêter ou de la changer si vous la preniez déjà, mais parlez-en à votre médecin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-cetirizine
+        - crat-antihistaminiques
+        - nhs-cetirizine
+  reviewed: 2026-11-13
+- id: loratadine
+  category: allergy
+  names:
+    - "Clarityne"
+    - "Clarityn"
+    - "Comprimé contre les allergies"
+    - "Antihistaminique"
+    - "Loratadine"
+  active_ingredient: "loratadine"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "La loratadine est indiquée comme utilisable à tout stade de la grossesse contre les allergies. Le NHS la présente comme le choix habituel si un antihistaminique est nécessaire. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antihistaminiques
+        - nhs-loratadine
+        - nhs-antihistamines
+  reviewed: 2026-11-13
+- id: other-antihistamines
+  category: allergy
+  names:
+    - "Autres antihistaminiques"
+    - "Lévocétirizine"
+    - "Xyzall"
+    - "Desloratadine"
+    - "Aerius"
+    - "Fexofénadine"
+    - "Telfast"
+    - "Antihistaminiques"
+    - "Levocetirizine"
+  active_ingredient: "lévocétirizine / desloratadine / fexofénadine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "La lévocétirizine, la desloratadine et la fexofénadine sont indiquées comme utilisables à tout stade de la grossesse contre les allergies, même si la cétirizine et la loratadine sont plus connues. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antihistaminiques
+        - crat-rhinite
+  reviewed: 2026-11-13
+- id: azelastine-nasal
+  category: allergy
+  names:
+    - "Azélastine"
+    - "Allergodil"
+    - "Spray nasal contre les allergies"
+    - "Spray à l'azélastine"
+    - "Azelastine"
+  active_ingredient: "azélastine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le spray nasal à l'azélastine n'est indiqué qu'après 10 semaines d'aménorrhée (SA), donc pas pendant les toutes premières semaines. Demandez d'abord. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antihistaminiques
+        - crat-rhinite
+  reviewed: 2026-11-13
+- id: nasal-steroid-spray
+  category: allergy
+  names:
+    - "Spray nasal corticoïde"
+    - "Corticoïde nasal"
+    - "Nasonex"
+    - "Rhinocort"
+    - "Flixonase"
+    - "Spray contre le rhume des foins"
+    - "Nasal steroid spray"
+  active_ingredient: "corticoïdes nasaux"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Pour les allergies saisonnières, la référence française privilégie un corticoïde nasal ou oral et indique que les formes locales peuvent être utilisées. Ces produits sont sur ordonnance ou délivrés par le pharmacien : demandez avant d'en utiliser un. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-rhinite
+        - crat-corticoides
+  reviewed: 2026-11-13
+- id: sumatriptan-migraine
+  category: headache-migraine
+  names:
+    - "Imigrane"
+    - "Imiject"
+    - "Comprimé contre la migraine"
+    - "Triptan"
+    - "Migraine"
+    - "Zolmitriptan"
+    - "Zomig"
+    - "Sumatriptan"
+  active_ingredient: "sumatriptan (triptans)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La migraine s'améliore souvent pendant la grossesse. Pour les crises, le paracétamol passe en premier. Un triptan n'est utilisé que si un médecin l'a accepté, et le sumatriptan est le plus connu. Les médicaments antimigraineux de type ergot sont évités. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antimigraineux
+        - ansm-douleur
+        - nhs-sumatriptan
+  reviewed: 2026-11-13
+- id: melatonin
+  category: sleep
+  names:
+    - "Mélatonine"
+    - "Circadin"
+    - "Complément pour le sommeil"
+    - "Sommeil"
+    - "Gommes à la mélatonine"
+    - "Melatonin"
+  active_ingredient: "mélatonine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La mélatonine n'est pas utilisée habituellement pendant la grossesse : les données sont limitées, et la référence française privilégie un médicament du sommeil mieux connu si un traitement est nécessaire. Essayez d'abord de bonnes habitudes de sommeil et demandez l'avis d'un médecin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-melatonine
+        - nhs-melatonin
+  reviewed: 2026-11-13
+- id: herbal-remedies-valerian
+  category: supplements
+  names:
+    - "Remèdes à base de plantes"
+    - "Valériane"
+    - "Tisane"
+    - "Complément à base de plantes"
+    - "Passiflore"
+    - "Plantes"
+    - "Phytothérapie"
+    - "Plantes pour dormir"
+    - "Herbal remedies"
+  active_ingredient: "extraits de plantes"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Naturel ne veut pas dire sans danger pendant la grossesse : toutes les plantes ne sont pas sûres, et certains produits peuvent contenir des substances nocives. La référence française déconseille aussi les antitussifs à base de plantes. Parlez à votre médecin ou à votre pharmacien de tout produit à base de plantes avant de le prendre. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-medicines
+        - crat-antitussifs
+  reviewed: 2026-11-13
+- id: essential-oils
+  category: supplements
+  names:
+    - "Huiles essentielles"
+    - "Aromathérapie"
+    - "Diffuseur"
+    - "Huile essentielle d'arbre à thé"
+    - "Huile essentielle de menthe poivrée"
+    - "Huile essentielle d'eucalyptus"
+    - "Essential oils"
+  active_ingredient: "huiles essentielles"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Il existe presque aucune donnée de sécurité pendant la grossesse : la référence française conseille de s'abstenir de les prendre pour se soigner, et ameli déconseille les huiles essentielles et les parfums. Évitez de les prendre, de les appliquer sur la peau ou de les diffuser. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-huiles-essentielles
+        - ameli-environnement
+  reviewed: 2026-11-13
+- id: hydrocortisone-skin
+  category: skin
+  names:
+    - "Crème à l'hydrocortisone"
+    - "Hydrocortisone"
+    - "Crème à la cortisone"
+    - "Crème anti-démangeaisons"
+    - "Crème pour l'eczéma"
+    - "Cortapaisyl"
+    - "Mildison"
+    - "Hydrocortisone cream"
+  active_ingredient: "hydrocortisone"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La crème à l'hydrocortisone douce est généralement utilisable pendant la grossesse : les corticoïdes cutanés peuvent être utilisés à tout stade. Le NHS conseille de demander d'abord, de n'utiliser qu'une petite quantité et seulement en cas de besoin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-hydrocortisone
+        - crat-corticoides
+        - nhs-hydrocortisone-skin
+  reviewed: 2026-11-13
+- id: potent-steroid-cream
+  category: skin
+  names:
+    - "Crème corticoïde forte"
+    - "Clobétasol"
+    - "Dermoval"
+    - "Crème à la bétaméthasone"
+    - "Diprosone"
+    - "Dermocorticoïde"
+    - "Forte crème à la cortisone"
+    - "Strong steroid cream"
+  active_ingredient: "corticoïdes topiques puissants"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les crèmes corticoïdes puissantes (clobétasol et similaires) ont peu de données pendant la grossesse. Un effet possible sur la croissance du bébé en cas d'usage important n'est pas confirmé. Ne les utilisez que si un médecin les a prescrites, et n'arrêtez pas celle qui vous a été prescrite. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-clobetasol
+        - crat-corticoides
+  reviewed: 2026-11-13
+- id: clotrimazole-thrush
+  category: skin
+  names:
+    - "Canesten"
+    - "Crème contre le muguet"
+    - "Ovule contre le muguet"
+    - "Mycose"
+    - "Candida"
+    - "Infection à levures"
+    - "Crème antifongique"
+    - "Antifongique"
+    - "Clotrimazole"
+  active_ingredient: "clotrimazole"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le clotrimazole est la crème ou l'ovule antifongique de référence contre le muguet pendant la grossesse, utilisable à tout stade. Très peu de produit passe dans le corps par la peau ou le vagin. Dites à votre médecin ou à votre pharmacien que vous êtes enceinte avant de l'acheter. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-clotrimazole
+        - nhs-clotrimazole
+  reviewed: 2026-11-13
+- id: antibiotics
+  category: prescription-class
+  names:
+    - "Antibiotiques"
+    - "Amoxicilline"
+    - "Augmentin"
+    - "Azithromycine"
+    - "Antibiotiques restants"
+    - "Antibiotics"
+  active_ingredient: "antibiotiques (classe)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Ne prenez jamais d'antibiotiques de votre propre initiative, ni des restes d'une ancienne ordonnance. Certains ne conviennent pas pendant la grossesse, d'autres sont sans danger : le prescripteur choisit un antibiotique adapté une fois qu'il sait que vous êtes enceinte. Suivez un traitement prescrit comme indiqué, et ne l'arrêtez pas sans avis. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-antibiotics
+        - crat-medicaments-dangereux
+  reviewed: 2026-11-13
+- id: asthma-inhalers
+  category: prescription-class
+  names:
+    - "Inhalateurs contre l'asthme"
+    - "Inhalateur"
+    - "Ventoline"
+    - "Ventolin"
+    - "Salbutamol"
+    - "Bricanyl"
+    - "Pulmicort"
+    - "Seretide"
+    - "Symbicort"
+    - "Inhalateur de secours"
+    - "Inhalateur de fond"
+    - "Asthme"
+    - "Asthma inhalers"
+  active_ingredient: "médicaments inhalés contre l'asthme (classe)"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "N'arrêtez pas votre traitement contre l'asthme et ne le modifiez pas sans avis médical : un asthme mal contrôlé est lui-même nocif pendant la grossesse. Les médicaments inhalés contre l'asthme sont préférés et utilisables à tout stade. Dites à votre médecin ou à votre sage-femme que vous êtes enceinte, et signalez-lui si votre respiration s'aggrave. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antiasthmatiques
+        - crat-salbutamol
+        - nhs-salbutamol
+  reviewed: 2026-11-13
+- id: thyroid-medicine
+  category: prescription-class
+  names:
+    - "Médicament pour la thyroïde"
+    - "Lévothyroxine"
+    - "Levothyrox"
+    - "Euthyrox"
+    - "L-Thyroxine"
+    - "Hormone thyroïdienne"
+    - "Thyroid medicine"
+  active_ingredient: "lévothyroxine (classe)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Ne arrêtez ni ne modifiez un traitement de la thyroïde sans avis médical. Le NHS indique qu'il peut être poursuivi pendant la grossesse et que des analyses de sang supplémentaires peuvent être nécessaires pour ajuster le traitement ; la référence française met en garde : arrêter un traitement au long cours peut déséquilibrer la maladie traitée. Dites à votre médecin que vous êtes enceinte. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-levothyroxine
+        - nhs-medicines
+        - crat-grandes-lignes
+  reviewed: 2026-11-13
+- id: folic-acid
+  category: vitamins
+  names:
+    - "Acide folique"
+    - "Vitamine B9"
+    - "Spéciafoldine"
+    - "Folate"
+    - "Vitamines prénatales"
+    - "Folic acid"
+  active_ingredient: "acide folique (vitamine B9)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "L'acide folique est conseillé avant la grossesse, ou dès que vous savez être enceinte, pour les premières semaines, afin de favoriser le développement du bébé. Certaines personnes ont besoin d'une version plus forte sur ordonnance : demandez à un pharmacien ou à un médecin de confirmer le produit adapté. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-folic-acid
+        - nhs-vitamins
+  reviewed: 2026-11-13
+- id: vitamin-d
+  category: vitamins
+  names:
+    - "Vitamine D"
+    - "Uvedose"
+    - "Zyma D"
+    - "Vitamine du soleil"
+    - "Vitamine D3"
+    - "Cholécalciférol"
+    - "Vitamin D"
+  active_ingredient: "vitamine D"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La vitamine D est conseillée pendant la grossesse, surtout en automne et en hiver, quand il y a peu de soleil. Le NHS met en garde contre le dépassement de la quantité indiquée sur l'étiquette. Demandez à un pharmacien ou à un médecin quel produit et quelle quantité vous conviennent. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-vitamins
+        - nhs-medicines
+  reviewed: 2026-11-13
+- id: vitamin-a-cod-liver-oil
+  category: vitamins
+  names:
+    - "Vitamine A"
+    - "Rétinol"
+    - "Huile de foie de morue"
+    - "Huile de foie de poisson"
+    - "Complément au foie"
+    - "Vitamin A"
+  active_ingredient: "vitamine A (rétinol)"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Ne prenez pas de compléments de vitamine A (rétinol) ni d'huile de foie de morue pendant la grossesse : une quantité excessive peut nuire au développement du bébé. Vérifiez l'étiquette des multivitamines pour le rétinol. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-vitamins
+        - nhs-medicines
+  reviewed: 2026-11-13
+# --- expansion (research notes merged) ---
+- id: ketoprofen
+  category: pain-fever
+  names:
+    - "Kétoprofène"
+    - "Profénid"
+    - "Bi-Profénid"
+    - "Ketum gel"
+    - "Toprec"
+    - "Ketoprofen"
+  active_ingredient: "ketoprofen (NSAID; oral, injectable and skin forms)"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique qu'une prise ponctuelle n'est envisageable qu'avant 24 SA et avec l'accord d'un professionnel de santé ; la prise chronique est à éviter. À partir de 24 SA (début du 6e mois), il est formellement contre-indiqué, même en prise unique, quelle que soit la voie (gel compris). Le CRAT le classe aussi parmi les médicaments à proscrire pendant la vie fœtale lorsqu'il existe des alternatives plus sûres. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ketoprofene
+        - crat-ains
+        - crat-medicaments-dangereux
+  reviewed: 2026-11-14
+- id: ketoprofen-gel
+  category: pain-fever
+  names:
+    - "Kétoprofène gel"
+    - "Ketum gel"
+    - "Toprec"
+    - "Ketoprofen gel (topical)"
+  active_ingredient: "ketoprofen, skin gel"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT précise que la contre-indication à partir de 24 SA vaut quelle que soit la voie d'administration : le gel cutané est donc concerné. Avant 24 SA, un usage ponctuel n'est envisageable qu'avec l'accord d'un professionnel de santé ; pas d'automédication. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ketoprofene
+        - crat-ains
+  reviewed: 2026-11-14
+- id: naproxen
+  category: pain-fever
+  names:
+    - "Naproxène"
+    - "Apranax"
+    - "Naprosyne"
+    - "Antalnox"
+    - "Alevetabs"
+    - "Naproxen"
+  active_ingredient: "naproxen (NSAID)"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : une prise ponctuelle n'est envisageable avant 24 SA qu'après validation par un professionnel de santé ; la prise chronique est à éviter. À partir de 24 SA, il est formellement contre-indiqué, même en prise unique. Le NHS conseille aussi de l'éviter sauf avis d'un médecin ou pharmacien, le paracétamol étant en général préféré. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-naproxene
+        - crat-ains
+        - nhs-naproxen
+  reviewed: 2026-11-14
+- id: nimesulide
+  category: pain-fever
+  names:
+    - "Nimésulide"
+    - "Nexen"
+    - "Nimesulide"
+  active_ingredient: "nimesulide (NSAID)"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Le CRAT range le nimésulide parmi les AINS et inhibiteurs de COX-2 à proscrire pendant la vie fœtale, car il existe des alternatives plus sûres. La règle de classe du CRAT rend aussi tous les AINS formellement contre-indiqués dès 24 SA, même en prise unique. Aucune fiche CRAT dédiée n'a été trouvée. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-medicaments-dangereux
+        - crat-ains
+  reviewed: 2026-11-14
+- id: celecoxib
+  category: pain-fever
+  names:
+    - "Célécoxib"
+    - "Celebrex"
+    - "Celecoxib"
+  active_ingredient: "celecoxib (COX-2 NSAID)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : usage ponctuel envisageable avant 24 SA uniquement avec validation d'un professionnel de santé ; usage chronique à éviter. À partir de 24 SA, formellement contre-indiqué, même en prise unique. Données limitées ; la règle de classe des AINS du CRAT va dans le même sens. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-celecoxib
+        - crat-ains
+  reviewed: 2026-11-14
+- id: etoricoxib
+  category: pain-fever
+  names:
+    - "Étoricoxib"
+    - "Arcoxia"
+    - "Etoricoxib"
+  active_ingredient: "etoricoxib (COX-2 NSAID)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Aucune fiche CRAT ou NHS dédiée n'a été trouvée. La page de classe des AINS du CRAT applique sa règle à tous les AINS, inhibiteurs de COX-2 compris : formellement contre-indiqué dès 24 SA, et avant cela seulement une prise ponctuelle avec l'accord d'un professionnel. Demandez d'abord l'avis d'un médecin ou d'un pharmacien. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ains
+        - crat-medicaments-dangereux
+  reviewed: 2026-11-14
+- id: flurbiprofen
+  category: pain-fever
+  names:
+    - "Flurbiprofène"
+    - "Antadys"
+    - "Cebutid"
+    - "Flurbiprofen"
+  active_ingredient: "flurbiprofen (NSAID)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : usage ponctuel envisageable avant 24 SA uniquement avec l'accord d'un professionnel de santé ; usage chronique à éviter. À partir de 24 SA, formellement contre-indiqué quelle que soit la voie, même en prise unique. Pas d'automédication. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-flurbiprofene
+        - crat-ains
+  reviewed: 2026-11-14
+- id: mefenamic-acid
+  category: pain-fever
+  names:
+    - "Acide méfénamique"
+    - "Ponstyl"
+    - "Mefenamic acid"
+  active_ingredient: "mefenamic acid (NSAID)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : usage ponctuel possible avant 24 SA ; usage chronique à éviter. À partir de 24 SA, formellement contre-indiqué, même en prise unique. Demandez d'abord l'avis d'un professionnel de santé. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-acide-mefenamique
+        - crat-ains
+  reviewed: 2026-11-14
+- id: ibuprofen-gel
+  category: pain-fever
+  names:
+    - "Ibuprofène gel"
+    - "Antarène gel"
+    - "Nurofen gel"
+    - "Ibuprofen gel (topical)"
+  active_ingredient: "ibuprofen, skin gel"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La fiche ibuprofène du CRAT couvre la voie cutanée et indique que la contre-indication à partir de 24 SA vaut quelle que soit la voie. Avant 24 SA, seulement un usage ponctuel avec l'accord d'un professionnel. La fiche ne nomme pas chaque gel : demandez conseil à un pharmacien. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ibuprofene
+        - crat-ains
+  reviewed: 2026-11-14
+- id: diclofenac-gel-patch
+  category: pain-fever
+  names:
+    - "Diclofénac gel ou patch"
+    - "Voltarène Emulgel"
+    - "Flector"
+    - "Diclofenac gel or patch (topical)"
+  active_ingredient: "diclofenac, skin gel or plaster"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La fiche diclofénac du CRAT cite la voie cutanée et des spécialités comme Flector et Voltarène Emulgel, et précise que la contre-indication à partir de 24 SA vaut quelle que soit la voie. Avant 24 SA, seulement un usage ponctuel avec l'accord d'un professionnel. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-diclofenac
+        - crat-ains
+  reviewed: 2026-11-14
+- id: ibuprofen-paracetamol-combo
+  category: pain-fever
+  names:
+    - "Association ibuprofène + paracétamol"
+    - "Ibuprofen + paracetamol combination"
+  active_ingredient: "ibuprofen + paracetamol"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le composant ibuprofène suit la règle des AINS : formellement contre-indiqué dès 24 SA, et avant cela seulement un usage ponctuel avec l'accord d'un professionnel. Le paracétamol seul est le premier choix habituel ; demandez conseil avant un produit associé. Aucune fiche CRAT sur l'association n'a été lue. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ibuprofene
+        - crat-ains
+        - crat-paracetamol
+  reviewed: 2026-11-14
+- id: morphine
+  category: pain-fever
+  names:
+    - "Morphine"
+  active_ingredient: "morphine (strong opioid)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucun effet malformatif retenu ; si un opioïde fort est indispensable, il peut être utilisé à tout terme, le moins longtemps possible, un autre antalgique étant préférable. En fin de grossesse, risque de sevrage ou de détresse respiratoire du nouveau-né : la maternité doit être informée. Le NHS indique qu'il est parfois utilisé si nécessaire. Sur ordonnance. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-morphine
+        - nhs-morphine
+  reviewed: 2026-11-14
+- id: oxycodone
+  category: pain-fever
+  names:
+    - "Oxycodone"
+    - "Oxynorm"
+    - "Oxycontin"
+    - "Oxycodone"
+  active_ingredient: "oxycodone (strong opioid)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucun effet malformatif retenu ; utilisable à tout terme si un opioïde fort est nécessaire, le moins longtemps possible, un autre antalgique étant préférable. Près de l'accouchement : risque de sevrage ou de sédation du nouveau-né, prévenir la maternité. Le NHS indique qu'il est parfois utilisé si nécessaire. Sur ordonnance. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-oxycodone
+        - nhs-oxycodone
+  reviewed: 2026-11-14
+- id: methadone
+  category: pain-fever
+  names:
+    - "Méthadone"
+    - "Methadone"
+  active_ingredient: "methadone (opioid substitution treatment)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : peut être poursuivie et utilisée à tout terme ; sevrage néonatal probable en cas de prise jusqu'à l'accouchement, dose parfois à ajuster. Le NHS confirme que le traitement peut devoir continuer avec un suivi adapté. Ne l'arrêtez pas et ne la modifiez pas sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-methadone
+        - nhs-methadone
+  reviewed: 2026-11-14
+- id: paracetamol-opium-caffeine
+  category: pain-fever
+  names:
+    - "Antalgique à base d'opium (Lamaline"
+    - "Izalgi)"
+    - "Opium-based painkiller (Lamaline"
+  active_ingredient: "opium (with paracetamol)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La fiche opium du CRAT cite Lamaline et Izalgi. Données limitées mais recul important, aucun effet malformatif attribué ; des doses élevées jusqu'à l'accouchement peuvent causer un sevrage néonatal. Le CRAT préfère la codéine (seule ou avec paracétamol) ou le tramadol, mieux connus à tout terme. Demandez d'abord conseil ; pas d'automédication. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-opium
+        - crat-codeine
+  reviewed: 2026-11-14
+- id: baclofen
+  category: neurology
+  names:
+    - "Baclofène"
+    - "Lioresal"
+    - "Baclocur"
+    - "Baclofen"
+  active_ingredient: "baclofen (muscle relaxant)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucun effet malformatif retenu ; le baclofène oral est jugé acceptable, idéalement après 10 SA ; un sevrage néonatal est possible en cas de prise jusqu'à l'accouchement, prévenir la maternité. Le NHS indique qu'il peut être pris si les bénéfices l'emportent. Ne l'arrêtez pas brutalement et ne le modifiez pas sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-baclofene
+        - nhs-baclofen
+  reviewed: 2026-11-14
+- id: colchicine
+  category: other
+  names:
+    - "Colchicine"
+    - "Colchicine Opocalcium"
+    - "Colchicine"
+  active_ingredient: "colchicine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : données très nombreuses, aucun effet spécifique retenu, faible passage placentaire ; peut être poursuivie avant et pendant toute la grossesse. Le NHS indique qu'elle peut être utilisée si nécessaire. Ne l'arrêtez pas et ne la modifiez pas sans avis médical. Ne concerne pas les associations avec opium ou tiémonium. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-colchicine
+        - nhs-colchicine
+  reviewed: 2026-11-14
+- id: ergotamine
+  category: headache-migraine
+  names:
+    - "Ergotamine"
+    - "Gynergène Caféine"
+    - "Ergotamine"
+  active_ingredient: "ergotamine (with caffeine)"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Le CRAT conseille de l'arrêter si une grossesse est découverte, en raison de ses effets vasoconstricteurs ; les dérivés de l'ergot sont à éviter pendant la grossesse et un autre antimigraineux est à choisir (sumatriptan préféré). En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ergotamine
+        - crat-antimigraineux
+  reviewed: 2026-11-14
+- id: dihydroergotamine
+  category: headache-migraine
+  names:
+    - "Dihydroergotamine"
+    - "Diergospray"
+    - "Dihydroergotamine"
+  active_ingredient: "dihydroergotamine"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "CRAT : aucun effet malformatif retenu, mais on évitera de poursuivre la dihydroergotamine en raison de ses effets vasoconstricteurs ; un autre traitement de crise est choisi. La page migraine du CRAT demande aussi d'éviter les dérivés de l'ergot pendant la grossesse. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-dihydroergotamine
+        - crat-antimigraineux
+  reviewed: 2026-11-14
+- id: pizotifen
+  category: headache-migraine
+  names:
+    - "Pizotifène"
+    - "Sanmigran"
+    - "Pizotifen"
+  active_ingredient: "pizotifen (migraine prevention)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : données limitées, aucun effet rapporté, non tératogène chez l'animal ; mais l'amitriptyline, le propranolol ou le métoprolol sont préférés en traitement de fond. Le pizotifène est envisagé au cas par cas après avis du CRAT. Demandez l'avis de votre médecin avant d'arrêter ou de poursuivre. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-pizotifene
+        - crat-antimigraineux
+  reviewed: 2026-11-14
+- id: propranolol-migraine
+  category: headache-migraine
+  names:
+    - "Propranolol (prévention de la migraine)"
+    - "Propranolol (for migraine prevention)"
+  active_ingredient: "propranolol (beta-blocker)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT cite le propranolol parmi les traitements de fond préférés de la migraine, utilisable à tout terme ; aucun effet malformatif n'est lié aux bêtabloquants. En cas de prise jusqu'à l'accouchement, surveillance de la croissance fœtale et information de l'équipe néonatale. Ne l'arrêtez pas sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-propranolol
+        - crat-antimigraineux
+  reviewed: 2026-11-14
+- id: other-triptans
+  category: headache-migraine
+  names:
+    - "Élétriptan"
+    - "Rizatriptan"
+    - "Zolmitriptan"
+    - "Relpax"
+    - "Maxalt"
+    - "Zomig"
+    - "Eletriptan"
+  active_ingredient: "eletriptan, rizatriptan, zolmitriptan"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : le sumatriptan est le triptan le mieux connu ; s'il est inefficace, élétriptan, rizatriptan ou zolmitriptan peuvent être envisagés, uniquement avec validation d'un professionnel. L'ANSM demande d'en parler à un médecin avant tout usage pendant la grossesse. Le naratriptan n'est pas couvert par la page CRAT. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antimigraineux
+        - ansm-douleur
+  reviewed: 2026-11-14
+- id: lidocaine-plaster
+  category: pain-fever
+  names:
+    - "Lidocaïne emplâtre"
+    - "Versatis"
+    - "Lidocaine plaster"
+  active_ingredient: "lidocaine, medicated plaster"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "La fiche lidocaïne du CRAT indique qu'elle est utilisable à tout terme et par toute voie, et sa page douleurs neuropathiques cite l'emplâtre Versatis comme utilisable à tout terme. Prescrit pour les douleurs nerveuses ; suivez le prescripteur. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-lidocaine
+        - crat-douleurs-neuropathiques
+  reviewed: 2026-11-14
+- id: esomeprazole
+  category: stomach-reflux
+  names:
+    - "Ésoméprazole"
+    - "Inexium"
+    - "Nexium Control"
+    - "Esomeprazole"
+  active_ingredient: "esomeprazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT juge l'ésoméprazole utilisable à tout terme, avec de nombreuses grossesses exposées sans effet retenu. La page NHS le déconseille faute de données et propose plutôt l'oméprazole : demandez d'abord conseil. N'arrêtez pas un traitement gastrique au long cours sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-esomeprazole
+        - nhs-esomeprazole
+        - crat-reflux
+  reviewed: 2026-11-14
+- id: pantoprazole
+  category: stomach-reflux
+  names:
+    - "Pantoprazole"
+    - "Eupantol"
+    - "Inipomp"
+    - "Ipraalox"
+    - "Pantoprazole"
+  active_ingredient: "pantoprazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT juge le pantoprazole utilisable à tout terme, avec de nombreuses grossesses exposées sans effet retenu. La page NHS indique qu'on l'évite en général faute de données et propose l'oméprazole : demandez d'abord conseil. N'arrêtez pas un traitement au long cours sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-pantoprazole
+        - nhs-pantoprazole
+        - crat-reflux
+  reviewed: 2026-11-14
+- id: lansoprazole
+  category: stomach-reflux
+  names:
+    - "Lansoprazole"
+    - "Lanzor"
+    - "Ogast"
+    - "Lansoprazole"
+  active_ingredient: "lansoprazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique que le lansoprazole peut être utilisé à tout terme (nombreuses grossesses exposées, aucun effet retenu). Le NHS le juge aussi acceptable mais préfère en général l'oméprazole, mieux étudié. Pour un reflux léger, commencez par les mesures sur les repas et la position. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-lansoprazole
+        - nhs-lansoprazole
+        - crat-reflux
+  reviewed: 2026-11-14
+- id: rabeprazole
+  category: stomach-reflux
+  names:
+    - "Rabéprazole"
+    - "Pariet"
+    - "Rabeprazole"
+  active_ingredient: "rabeprazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT juge le rabéprazole utilisable à tout terme (nombreuses grossesses exposées, aucun effet retenu), mais aucune autre agence n'a été consultée pour cette molécule. Demandez conseil : l'oméprazole est mieux connu. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-rabeprazole
+        - crat-reflux
+  reviewed: 2026-11-14
+- id: famotidine
+  category: stomach-reflux
+  names:
+    - "Famotidine"
+    - "anti-H2"
+    - "Pepcidac"
+    - "Famotidine"
+  active_ingredient: "famotidine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique que la famotidine peut être utilisée à tout terme (nombreuses grossesses exposées, aucun effet retenu) et poursuivie en projet de grossesse. Elle figure parmi les options du reflux après les mesures d'hygiène de vie. La ranitidine n'est plus commercialisée en France. N'arrêtez pas un traitement prescrit sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-famotidine
+        - crat-reflux
+  reviewed: 2026-11-14
+- id: racecadotril
+  category: diarrhoea
+  names:
+    - "Racécadotril"
+    - "Tiorfan"
+    - "Diarfix"
+    - "Tiorfanor"
+    - "Tiorfast"
+    - "Racecadotril"
+  active_ingredient: "racecadotril"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique qu'il n'y a pas de donnée publiée chez la femme enceinte, sans effet rapporté à ce jour, et que le produit n'est pas tératogène chez l'animal. Si un traitement est nécessaire, le CRAT préfère le lopéramide à tout terme. Demandez conseil d'abord. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-racecadotril
+        - crat-antidiarrheiques
+  reviewed: 2026-11-14
+- id: lactitol
+  category: constipation
+  names:
+    - "Lactitol"
+    - "Importal"
+    - "Lactitol"
+  active_ingredient: "lactitol"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT classe le lactitol, laxatif osmotique non absorbé, parmi les laxatifs à privilégier à tout terme après échec des mesures hygiéno-diététiques. Les données publiées sont limitées mais le recul d'utilisation est important. Évitez les associations de plusieurs principes actifs. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-lactitol
+        - crat-laxatifs
+  reviewed: 2026-11-14
+- id: docusate
+  category: constipation
+  names:
+    - "Docusate sodique"
+    - "Jamylène"
+    - "Docusate"
+  active_ingredient: "docusate sodium"
+  local: false
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT rapporte de nombreuses grossesses exposées sans effet retenu et le NHS indique que le docusate est généralement considéré comme sûr, après avis d'un pharmacien ou médecin. Le CRAT déconseille l'usage prolongé des laxatifs stimulants et préfère d'abord les osmotiques ou les fibres. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-docusate
+        - nhs-docusate
+        - crat-laxatifs
+  reviewed: 2026-11-14
+- id: liquid-paraffin
+  category: constipation
+  names:
+    - "Huile de paraffine"
+    - "paraffine liquide"
+    - "Lansoyl"
+    - "Liquid paraffin"
+  active_ingredient: "paraffin oil"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique que l'huile de paraffine n'est pas absorbée et qu'aucun effet n'est retenu, mais les données en grossesse sont limitées. Usage occasionnel possible en produit seul ; usage prolongé déconseillé car elle peut réduire l'absorption des vitamines liposolubles. Les laxatifs osmotiques et les fibres passent d'abord. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-paraffine
+        - crat-laxatifs
+  reviewed: 2026-11-14
+- id: sodium-picosulfate
+  category: constipation
+  names:
+    - "Picosulfate de sodium"
+    - "Picosulfate"
+    - "Sodium picosulfate"
+  active_ingredient: "sodium picosulfate"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique qu'il n'y a pas de donnée publiée chez la femme enceinte, sans effet rapporté. C'est un laxatif stimulant : le CRAT préfère les laxatifs osmotiques ou les fibres, et le séné ponctuellement si un stimulant est nécessaire. Usage prolongé déconseillé. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-picosulfate
+        - crat-laxatifs
+  reviewed: 2026-11-14
+- id: bisacodyl
+  category: constipation
+  names:
+    - "Bisacodyl"
+    - "Dulcolax"
+    - "Contalax"
+    - "Bisacodyl"
+  active_ingredient: "bisacodyl"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique qu'il n'y a pas de donnée publiée chez la femme enceinte, sans effet rapporté. Le NHS déconseille l'usage de routine et propose d'abord fibres, boissons, puis lactulose ou ispaghul. Demandez l'avis d'un médecin ou pharmacien. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-bisacodyl
+        - nhs-bisacodyl
+  reviewed: 2026-11-14
+- id: senna
+  category: constipation
+  names:
+    - "Séné"
+    - "sennosides"
+    - "Senna"
+  active_ingredient: "senna (sennosides)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT rapporte de nombreuses données rassurantes chez la femme enceinte et cite le séné comme laxatif stimulant à préférer, pour un usage ponctuel, après les mesures alimentaires, les fibres et les osmotiques. Le NHS indique qu'on peut généralement en prendre après avis d'un pharmacien ou médecin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-laxatifs-anthraceniques
+        - nhs-senna
+        - crat-laxatifs
+  reviewed: 2026-11-14
+- id: mesalazine
+  category: stomach-reflux
+  names:
+    - "Mésalazine"
+    - "Pentasa"
+    - "Fivasa"
+    - "Rowasa"
+    - "Mesalazine"
+  active_ingredient: "mesalazine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique qu'elle peut être poursuivie et utilisée à tout terme, quelle que soit la voie, avec de nombreuses grossesses exposées sans malformation établie, mais de rares cas d'atteinte rénale fœtale : une échographie rénale ciblée est en général proposée. Le NHS conseille aussi de la poursuivre. Ne l'arrêtez pas sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-mesalazine
+        - nhs-mesalazine
+  reviewed: 2026-11-14
+- id: dimenhydrinate
+  category: nausea
+  names:
+    - "Diménhydrinate"
+    - "Mercalm"
+    - "Nausicalm"
+    - "Dimenhydrinate"
+  active_ingredient: "dimenhydrinate"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT rapporte de nombreuses grossesses exposées sans effet retenu et indique qu'il peut être utilisé à tout terme ; sa page sur les antiémétiques le cite pour les nausées de grossesse, en précisant qu'il n'a pas toujours été évalué dans cette indication. Il peut donner de la somnolence. Demandez conseil avant de le prendre. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-dimenhydrinate
+        - crat-antiemetiques
+  reviewed: 2026-11-14
+- id: metopimazine
+  category: nausea
+  names:
+    - "Métopimazine"
+    - "Vogalène"
+    - "Vogalib"
+    - "Isalia"
+    - "Metopimazine"
+  active_ingredient: "metopimazine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT rapporte de nombreuses grossesses exposées, surtout au 1er trimestre, sans effet retenu, et indique qu'elle peut être utilisée à tout terme. Sa page sur les antiémétiques la cite en 1re intention pour les nausées non spécifiques à la grossesse. Demandez conseil avant de la prendre. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-metopimazine
+        - crat-antiemetiques
+  reviewed: 2026-11-14
+- id: chlorpromazine
+  category: nausea
+  names:
+    - "Chlorpromazine"
+    - "Largactil"
+    - "Chlorpromazine"
+  active_ingredient: "chlorpromazine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT cite la chlorpromazine (phénothiazine) parmi les médicaments utilisés pour les nausées de grossesse, non toujours évalués dans cette indication, en préférant d'autres antiémétiques. Sa fiche grossesse ne montre pas de malformation après de nombreuses expositions au 1er trimestre, mais une prise proche de l'accouchement peut retentir sur le nouveau-né. Sur ordonnance ; n'arrêtez pas un traitement psychiatrique sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-chlorpromazine
+        - crat-antiemetiques
+  reviewed: 2026-11-14
+- id: diosmin-daflon
+  category: haemorrhoids
+  names:
+    - "Diosmine"
+    - "hespéridine"
+    - "Daflon"
+    - "veinotoniques"
+    - "Diosmin"
+  active_ingredient: "diosmin, hesperidin"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT cite la diosmine et l'hespéridine (Daflon) parmi les veinotoniques oraux à privilégier à tout terme, pour les hémorroïdes et les troubles veineux, d'après des données d'efficacité chez la femme enceinte. Traitez aussi la constipation et adaptez l'hygiène de vie. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antihemorroidaires
+        - crat-veinotoniques
+  reviewed: 2026-11-14
+- id: phenylephrine-oral
+  category: cold-cough
+  names:
+    - "Phényléphrine orale"
+    - "vasoconstricteur oral"
+    - "Phenylephrine (oral decongestant)"
+  active_ingredient: "phenylephrine"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Le CRAT place les vasoconstricteurs oraux comme la phényléphrine parmi les traitements à éviter en cas de nez bouché pendant la grossesse, seuls ou dans des associations contre le rhume. Le NHS déconseille aussi les décongestionnants. Le sérum physiologique est le premier choix. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-rhinite
+        - nhs-decongestants
+  reviewed: 2026-11-14
+- id: xylometazoline
+  category: cold-cough
+  names:
+    - "Xylométazoline spray nasal"
+    - "Otrivine"
+    - "Xylometazoline nasal spray"
+  active_ingredient: "xylometazoline"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La fiche CRAT sur la rhinite ne donne pas de verdict pour cette molécule. Le NHS conseille d'éviter les décongestionnants en général pendant la grossesse. Le sérum physiologique ou l'eau de mer est le premier choix ; demandez conseil avant un spray vasoconstricteur. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-rhinite
+        - nhs-decongestants
+  reviewed: 2026-11-14
+- id: oxymetazoline
+  category: cold-cough
+  names:
+    - "Oxymétazoline spray nasal"
+    - "Aturgyl"
+    - "Oxymetazoline nasal spray"
+  active_ingredient: "oxymetazoline"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Aucun verdict du CRAT n'a été trouvé pour cette molécule. Le NHS conseille d'éviter les décongestionnants pendant la grossesse. Préférez le sérum physiologique ou l'eau de mer et demandez conseil à un pharmacien ou une sage-femme. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-rhinite
+        - nhs-decongestants
+  reviewed: 2026-11-14
+- id: naphazoline
+  category: cold-cough
+  names:
+    - "Naphazoline gouttes ou spray nasal"
+    - "Naphazoline nasal drops or spray"
+  active_ingredient: "naphazoline"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Aucun verdict du CRAT n'a été trouvé pour cette molécule. Le NHS conseille d'éviter les décongestionnants pendant la grossesse. Préférez le sérum physiologique et demandez conseil à un pharmacien. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-rhinite
+        - nhs-decongestants
+  reviewed: 2026-11-14
+- id: ephedrine-nasal
+  category: cold-cough
+  names:
+    - "Éphédrine nasale"
+    - "Rhino-Sulfuryl"
+    - "Ephedrine nasal spray"
+  active_ingredient: "ephedrine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique que l'éphédrine nasale peut être utilisée ponctuellement pendant la grossesse, en respectant la notice et sur une durée très courte. Le NHS conseille d'éviter les décongestionnants en général : à réserver après le sérum physiologique. Demandez conseil. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-rhinite
+        - nhs-decongestants
+  reviewed: 2026-11-14
+- id: ibuprofen-pseudoephedrine
+  category: cold-cough
+  names:
+    - "Ibuprofène + pseudoéphédrine"
+    - "Nurofen Rhume"
+    - "Rhinadvil"
+    - "Ibuprofen + pseudoephedrine cold tablets"
+  active_ingredient: "ibuprofen + pseudoephedrine"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Deux raisons : la pseudoéphédrine est déconseillée pendant la grossesse (NHS, CRAT), et les anti-inflammatoires comme l'ibuprofène sont formellement contre-indiqués à partir de 24 SA, même en prise unique. Préférez le paracétamol et le sérum physiologique. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-rhinite
+        - nhs-pseudoephedrine
+        - crat-ains
+  reviewed: 2026-11-14
+- id: paracetamol-pseudoephedrine
+  category: cold-cough
+  names:
+    - "Paracétamol + pseudoéphédrine"
+    - "Dolirhume"
+    - "Paracetamol + pseudoephedrine cold sachets"
+  active_ingredient: "paracetamol + pseudoephedrine"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Le CRAT déconseille les vasoconstricteurs oraux, y compris associés à un antipyrétique, et le NHS indique que la pseudoéphédrine n'est pas recommandée pendant la grossesse. Prenez du paracétamol seul si besoin et du sérum physiologique pour le nez. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-rhinite
+        - nhs-pseudoephedrine
+  reviewed: 2026-11-14
+- id: acetylcysteine
+  category: cold-cough
+  names:
+    - "Acétylcystéine"
+    - "Fluimucil"
+    - "Acetylcysteine"
+  active_ingredient: "acetylcysteine"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT ne retient aucun effet particulier pour le bébé et indique que l'acétylcystéine est envisageable à tout terme si un fluidifiant bronchique est indispensable. Après le premier trimestre, c'est l'un des deux choix préférés. Le CRAT précise que les fluidifiants n'ont pas de bénéfice démontré sur la toux : demandez si c'est utile. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-acetylcysteine
+        - crat-antitussifs
+  reviewed: 2026-11-14
+- id: ambroxol
+  category: cold-cough
+  names:
+    - "Ambroxol"
+    - "Surbronc"
+    - "Muxol"
+    - "Lysopaïne Ambroxol"
+    - "Ambroxol"
+  active_ingredient: "ambroxol"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "De nombreuses grossesses exposées n'ont montré aucun effet attribuable à l'ambroxol, et le CRAT indique qu'il est envisageable à tout terme si un fluidifiant est indispensable. Après le premier trimestre, c'est une option préférée. Les fluidifiants n'ont pas de bénéfice démontré sur la toux : à utiliser seulement si nécessaire. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ambroxol
+        - crat-antitussifs
+  reviewed: 2026-11-14
+- id: carbocisteine
+  category: cold-cough
+  names:
+    - "Carbocistéine"
+    - "Bronchokod"
+    - "Broncathiol"
+    - "Clarix toux grasse"
+    - "Carbocisteine"
+  active_ingredient: "carbocisteine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT accepte la carbocistéine au premier trimestre si un fluidifiant est vraiment nécessaire, mais préfère ensuite l'ambroxol ou l'acétylcystéine faute de données. Le NHS l'évite en général pendant les trois premiers mois. Demandez conseil avant de la prendre. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-carbocisteine
+        - nhs-carbocisteine
+        - crat-antitussifs
+  reviewed: 2026-11-14
+- id: mucolytics-class
+  category: cold-cough
+  names:
+    - "Fluidifiants bronchiques"
+    - "expectorants"
+    - "sirops pour la toux grasse"
+    - "Mucolytics and expectorants (cough thinners)"
+  active_ingredient: "mucolytic class"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique qu'aucune recommandation scientifique ne soutient leur usage dans la toux : il faut réévaluer le besoin. Si l'un d'eux est indispensable, l'acétylcystéine ou l'ambroxol sont préférés après le premier trimestre. Les produits à base de plantes pour la toux sont déconseillés faute de données. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antitussifs
+        - crat-acetylcysteine
+  reviewed: 2026-11-14
+- id: codeine-cough-syrup
+  category: cold-cough
+  names:
+    - "Codéine antitussive"
+    - "Néo-Codion"
+    - "Padéryl"
+    - "Codeine cough medicine"
+  active_ingredient: "codeine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique que la codéine peut être utilisée contre la toux à tout terme, le moins longtemps possible, de préférence en produit à un seul principe actif. En fin de grossesse, un syndrome de sevrage du nouveau-né est possible : informez la maternité si le traitement dure jusqu'à l'accouchement. Demandez conseil avant usage. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-codeine
+        - crat-antitussifs
+  reviewed: 2026-11-14
+- id: pholcodine
+  category: cold-cough
+  names:
+    - "Pholcodine sirop"
+    - "Biocalyptol"
+    - "Pholcodine cough syrup"
+  active_ingredient: "pholcodine"
+  tips: [avoid]
+  local: false
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Les sirops à la pholcodine ont été retirés en France en 2023 car ils augmentent le risque d'allergie grave aux curares utilisés en anesthésie générale. Ne pas utiliser de vieux stocks et prévenir l'anesthésiste en cas de prise passée. Les sources ne donnent pas de règle propre à la grossesse. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - ansm-pholcodine-retrait
+        - ansm-prac-2022-09
+  reviewed: 2026-11-14
+- id: oxomemazine
+  category: cold-cough
+  names:
+    - "Oxomémazine"
+    - "Toplexil"
+    - "Oxomemazine"
+  active_ingredient: "oxomemazine"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Antitussif antihistaminique sédatif. Le CRAT classe ce type de produit parmi ceux à éviter et préfère la codéine ou le dextrométhorphane ; aucune malformation n'est rapportée, mais une exposition en fin de grossesse peut provoquer des effets anticholinergiques ou sédatifs chez le nouveau-né. Une prise avant de savoir qu'on est enceinte n'est pas inquiétante. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-oxomemazine
+        - crat-antitussifs
+  reviewed: 2026-11-14
+- id: antitussive-antihistamines-class
+  category: cold-cough
+  names:
+    - "Sirops antitussifs antihistaminiques sédatifs (classe)"
+    - "Sedating antihistamine cough syrups (class)"
+  active_ingredient: "anticholinergic H1 antihistamine antitussives"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "La fiche CRAT sur la toux conseille d'éviter les sirops antihistaminiques anticholinergiques sédatifs pendant la grossesse et préfère la codéine ou le dextrométhorphane. Vérifiez la substance active sur la notice. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antitussifs
+        - crat-oxomemazine
+  reviewed: 2026-11-14
+- id: flurbiprofen-lozenges
+  category: cold-cough
+  names:
+    - "Flurbiprofène pastilles pour la gorge"
+    - "Strefen"
+    - "Flurbiprofen throat lozenges"
+  active_ingredient: "flurbiprofen"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le flurbiprofène est un anti-inflammatoire. Le CRAT indique qu'il est formellement contre-indiqué à partir de 24 SA, même en prise unique et quelle que soit la voie ; avant, seule une prise ponctuelle est acceptable sur avis. Demandez conseil et préférez une pastille sans anti-inflammatoire. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-flurbiprofene
+        - crat-ains
+  reviewed: 2026-11-14
+- id: lidocaine-throat-lozenges
+  category: cold-cough
+  names:
+    - "Pastilles à la lidocaïne pour la gorge (lidocaïne seule)"
+    - "Lidocaine throat lozenges (lidocaine only)"
+  active_ingredient: "lidocaine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique que la lidocaïne locale peut être utilisée à tout terme et par toute voie. Le NHS mentionne que les pastilles avec anesthésique local peuvent soulager le mal de gorge. Cela vaut pour la lidocaïne seule : vérifiez les autres composants d'une pastille combinée. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-lidocaine
+        - nhs-sore-throat
+  reviewed: 2026-11-14
+- id: nirmatrelvir-ritonavir
+  category: antivirals
+  names:
+    - "Nirmatrelvir/ritonavir"
+    - "Paxlovid"
+    - "Nirmatrelvir/ritonavir"
+  active_ingredient: "nirmatrelvir + ritonavir"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "En 2022, la HAS et l'ANSM ont indiqué que Paxlovid n'est pas recommandé pendant la grossesse. Ces pages sont datées et la HAS note aussi que la grossesse augmente le risque de Covid-19 grave : la décision revient au médecin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - has-paxlovid-rr
+        - ansm-paxlovid-acces-precoce
+  reviewed: 2026-11-14
+- id: levocetirizine
+  category: allergy
+  names:
+    - "Lévocétirizine"
+    - "Xyzall"
+    - "Levocetirizine"
+  active_ingredient: "levocetirizine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT ne retient aucun effet malformatif, fœtal ou néonatal avec la lévocétirizine et indique qu'elle peut être utilisée quel que soit le terme de la grossesse, y compris si un schéma à dose plus élevée est nécessaire. Il n'y a pas lieu de l'arrêter ou de la remplacer à cause de la grossesse. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-levocetirizine
+        - crat-antihistaminiques
+  reviewed: 2026-11-14
+- id: desloratadine
+  category: allergy
+  names:
+    - "Desloratadine"
+    - "Aerius"
+    - "Desloratadine"
+  active_ingredient: "desloratadine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT ne retient aucun effet malformatif, fœtal ou néonatal avec la desloratadine (données issues en grande partie de la loratadine, dont elle dérive) et indique qu'elle est utilisable quel que soit le terme. Il n'est pas justifié de l'arrêter ou de la remplacer à cause de la grossesse. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-desloratadine
+        - crat-antihistaminiques
+  reviewed: 2026-11-14
+- id: fexofenadine
+  category: allergy
+  names:
+    - "Fexofénadine"
+    - "Telfast"
+    - "Allervi"
+    - "Fexofenadine"
+  active_ingredient: "fexofenadine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT a une fiche dédiée à la fexofénadine : aucun effet malformatif, fœtal ou néonatal attribué, utilisable quel que soit le terme de la grossesse, y compris si un schéma à dose plus élevée est nécessaire. Pas lieu de l'arrêter ou de la remplacer à cause de la grossesse. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-fexofenadine
+        - crat-antihistaminiques
+  reviewed: 2026-11-14
+- id: dexchlorpheniramine
+  category: allergy
+  names:
+    - "Dexchlorphéniramine"
+    - "Polaramine"
+    - "Dexchlorpheniramine"
+  active_ingredient: "dexchlorpheniramine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : données nombreuses au 1er trimestre, aucun effet malformatif, fœtal ou néonatal attribué ; une prise ponctuelle est possible quel que soit le terme. Pour un traitement prolongé, le CRAT préfère un antihistaminique H1 peu sédatif mieux connu pendant la grossesse. Demander d'abord l'avis d'un pharmacien ou d'un médecin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-dexchlorpheniramine
+        - crat-antihistaminiques
+  reviewed: 2026-11-14
+- id: diphenhydramine
+  category: allergy
+  names:
+    - "Diphénhydramine"
+    - "Nautamine"
+    - "Diphenhydramine"
+  active_ingredient: "diphenhydramine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : données publiées très nombreuses, aucun effet malformatif, fœtal ou néonatal attribué ; utilisable quel que soit le terme de la grossesse et poursuite possible si la grossesse est découverte sous traitement. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-diphenhydramine
+        - crat-antihistaminiques
+  reviewed: 2026-11-14
+- id: promethazine
+  category: allergy
+  names:
+    - "Prométhazine"
+    - "Phénergan"
+    - "Promethazine"
+  active_ingredient: "promethazine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : données nombreuses au 1er trimestre, aucun effet malformatif attribué. Pas de donnée pertinente sur les effets néonatals après une prise en fin de grossesse, et d'autres phénothiazines prises jusqu'à l'accouchement peuvent provoquer des symptômes transitoires chez le nouveau-né. Le NHS indique qu'elle peut être prise pendant la grossesse mais peut donner de la somnolence. Demander d'abord un avis, surtout en fin de grossesse. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-promethazine
+        - nhs-promethazine
+  reviewed: 2026-11-14
+- id: hydroxyzine
+  category: allergy
+  names:
+    - "Hydroxyzine"
+    - "Atarax"
+    - "Hydroxyzine"
+  active_ingredient: "hydroxyzine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : données nombreuses au 1er trimestre, aucun effet malformatif attribué. Prise jusqu'à l'accouchement, elle passe le placenta et le nouveau-né peut présenter une sédation ou des effets atropiniques durables : prévenir la maternité. Demander d'abord l'avis d'un médecin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-hydroxyzine
+        - crat-antihistaminiques
+  reviewed: 2026-11-14
+- id: cyproheptadine
+  category: allergy
+  names:
+    - "Cyproheptadine"
+    - "Périactine"
+    - "Cyproheptadine"
+  active_ingredient: "cyproheptadine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : données limitées au 1er trimestre, aucune en fin de grossesse, aucun effet malformatif, fœtal ou néonatal attribué à ce jour. Si un traitement est nécessaire, le CRAT préfère un antihistaminique H1 peu sédatif mieux connu pendant la grossesse. Demander d'abord un avis. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-cyproheptadine
+        - crat-antihistaminiques
+  reviewed: 2026-11-14
+- id: ketotifen-oral
+  category: allergy
+  names:
+    - "Kétotifène voie orale"
+    - "Zaditen comprimés ou sirop"
+    - "Ketotifen tablets or syrup (oral)"
+  active_ingredient: "ketotifen (oral)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : données humaines limitées, aucun effet malformatif, fœtal ou néonatal attribué, non tératogène chez l'animal. Par voie orale, le CRAT préfère un antihistaminique H1 mieux connu pendant la grossesse. Demander d'abord un avis. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ketotifene
+        - crat-antihistaminiques
+  reviewed: 2026-11-14
+- id: bilastine
+  category: allergy
+  names:
+    - "Bilastine"
+    - "Inorial"
+    - "Bilastine"
+  active_ingredient: "bilastine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucune donnée publiée chez la femme enceinte, aucun effet malformatif, fœtal ou néonatal rapporté à ce jour, non tératogène chez l'animal. Si un traitement est nécessaire, le CRAT préfère un antihistaminique mieux connu pendant la grossesse. Demander d'abord un avis. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-bilastine
+        - crat-antihistaminiques
+  reviewed: 2026-11-14
+- id: rupatadine
+  category: allergy
+  names:
+    - "Rupatadine"
+    - "Wystamm"
+    - "Rupatadine"
+  active_ingredient: "rupatadine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucune donnée publiée chez la femme enceinte, aucun effet malformatif rapporté à ce jour, non tératogène chez l'animal. Si un traitement est nécessaire, un antihistaminique H1 mieux connu est préféré. Demander d'abord un avis. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-rupatadine
+        - crat-antihistaminiques
+  reviewed: 2026-11-14
+- id: ebastine
+  category: allergy
+  names:
+    - "Ébastine"
+    - "Kestin"
+    - "Ebastine"
+  active_ingredient: "ebastine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : données très limitées chez la femme enceinte, aucun effet malformatif, fœtal ou néonatal rapporté à ce jour, non tératogène chez l'animal. Si un traitement est nécessaire, un antihistaminique H1 mieux connu est préféré. Demander d'abord un avis. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ebastine
+        - crat-antihistaminiques
+  reviewed: 2026-11-14
+- id: mizolastine
+  category: allergy
+  names:
+    - "Mizolastine"
+    - "Mizollen"
+    - "Mizolastine"
+  active_ingredient: "mizolastine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucune donnée publiée chez la femme enceinte, aucun effet malformatif, fœtal ou néonatal rapporté à ce jour, non tératogène chez l'animal. Si un traitement est nécessaire, un antihistaminique H1 mieux connu est préféré. Demander d'abord un avis. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-mizolastine
+        - crat-antihistaminiques
+  reviewed: 2026-11-14
+- id: ketotifen-eye-drops
+  category: eye-ear
+  names:
+    - "Kétotifène collyre"
+    - "Zaditen collyre"
+    - "Ketotifen eye drops"
+  active_ingredient: "ketotifen (eye drops)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT indique que le kétotifène en collyre peut être utilisé quel que soit le terme de la grossesse, et sa fiche sur les collyres antiallergiques le cite comme utilisable car il passe peu dans le sang. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ketotifene
+        - crat-collyres-antiallergiques
+  reviewed: 2026-11-14
+- id: olopatadine-eye-drops
+  category: eye-ear
+  names:
+    - "Olopatadine collyre"
+    - "Opatanol"
+    - "Olopatadine eye drops"
+  active_ingredient: "olopatadine (eye drops)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : pas de donnée publiée chez la femme enceinte, mais aucun effet malformatif, fœtal ou néonatal rapporté et non tératogène chez l'animal ; le passage sanguin du collyre est très faible et il peut être utilisé quel que soit le terme. La fiche CRAT sur les collyres antiallergiques le cite comme utilisable. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-olopatadine
+        - crat-collyres-antiallergiques
+  reviewed: 2026-11-14
+- id: sodium-cromoglicate
+  category: allergy
+  names:
+    - "Cromoglicate de sodium (spray nasal"
+    - "collyre)"
+    - "Lomusol"
+    - "Cromabak"
+    - "Sodium cromoglicate (nasal spray"
+  active_ingredient: "sodium cromoglicate"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : spray nasal et collyre passent peu dans le sang ; aucun effet malformatif, fœtal ou néonatal retenu, utilisable quel que soit le terme de la grossesse par ces deux voies. Pas lieu de l'arrêter à cause de la grossesse. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-cromoglicate
+        - crat-rhinite
+        - crat-collyres-antiallergiques
+  reviewed: 2026-11-14
+- id: mometasone-nasal
+  category: allergy
+  names:
+    - "Mométasone spray nasal"
+    - "Nasonex"
+    - "Mometasone nasal spray"
+  active_ingredient: "mometasone"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : données très nombreuses au 1er trimestre sans malformation spécifique attribuée, rien de particulier rapporté ensuite ; concentrations sanguines faibles quelle que soit la voie, utilisable à tout terme et pour toute durée. Ne pas arrêter un traitement au long cours sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-mometasone
+        - crat-rhinite
+  reviewed: 2026-11-14
+- id: fluticasone-nasal
+  category: allergy
+  names:
+    - "Fluticasone spray nasal"
+    - "Flixonase"
+    - "Avamys"
+    - "Fluticasone nasal spray"
+  active_ingredient: "fluticasone"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : données publiées très nombreuses sur la fluticasone pendant la grossesse, sans effet malformatif, fœtal ou néonatal spécifique établi ; utilisable à tout terme, par toute voie et pour toute durée. Ne pas arrêter un traitement au long cours sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-fluticasone
+        - crat-rhinite
+  reviewed: 2026-11-14
+- id: budesonide-nasal
+  category: allergy
+  names:
+    - "Budésonide spray nasal"
+    - "Rhinocort"
+    - "Budesonide nasal spray"
+  active_ingredient: "budesonide"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : nombreuses données publiées, sans effet malformatif, fœtal ou néonatal spécifique attribué ; le budésonide peut être utilisé à dose efficace à tout terme, par toute voie et pour toute durée. Ne pas arrêter un traitement au long cours sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-budesonide
+        - crat-rhinite
+  reviewed: 2026-11-14
+- id: beclometasone-nasal
+  category: allergy
+  names:
+    - "Béclométasone spray nasal"
+    - "Beconase"
+    - "Beclometasone nasal spray"
+  active_ingredient: "beclometasone"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : concentrations sanguines faibles quelle que soit la voie, aucun effet malformatif, fœtal ou néonatal particulier retenu ; utilisable à dose efficace à tout terme, par toute voie et pour toute durée. Pas lieu de l'arrêter à cause de la grossesse. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-beclometasone
+        - crat-rhinite
+  reviewed: 2026-11-14
+- id: inhaled-corticosteroids
+  category: asthma
+  names:
+    - "Corticoïdes inhalés (budésonide"
+    - "béclométasone"
+    - "fluticasone)"
+    - "Pulmicort"
+    - "Bécotide"
+    - "Flixotide"
+    - "Inhaled corticosteroids (budesonide"
+  active_ingredient: "budesonide / beclometasone / fluticasone (inhaled)"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT a une fiche pour chacun et indique qu'ils peuvent tous être utilisés à dose efficace quel que soit le terme de la grossesse ; un asthme mal contrôlé peut nuire à la grossesse et au nouveau-né. Ne pas arrêter ni modifier un traitement de fond de l'asthme sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-budesonide
+        - crat-beclometasone
+        - crat-fluticasone
+        - crat-antiasthmatiques
+  reviewed: 2026-11-14
+- id: salbutamol
+  category: asthma
+  names:
+    - "Salbutamol"
+    - "Ventoline"
+    - "Salbutamol inhaler"
+  active_ingredient: "salbutamol"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : données nombreuses au 1er trimestre sans malformation attribuée ; par voie inhalée aux doses usuelles, aucun effet fœtal ou néonatal spécifique, utilisable à tout terme. Le NHS est en accord. L'asthme doit être traité aussi bien qu'en dehors de la grossesse. Les formes injectables avant l'accouchement peuvent provoquer des effets néonatals transitoires. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-salbutamol
+        - nhs-salbutamol
+        - crat-antiasthmatiques
+  reviewed: 2026-11-14
+- id: terbutaline
+  category: asthma
+  names:
+    - "Terbutaline"
+    - "Bricanyl"
+    - "Terbutaline"
+  active_ingredient: "terbutaline"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : données nombreuses au 1er trimestre sans malformation attribuée ; par voie inhalée ou injectable, utilisable à dose efficace à tout terme, la voie inhalée étant préférée. Si elle est injectée avant l'accouchement, le nouveau-né peut présenter des effets transitoires. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-terbutaline
+        - crat-antiasthmatiques
+  reviewed: 2026-11-14
+- id: formoterol
+  category: asthma
+  names:
+    - "Formotérol"
+    - "Foradil"
+    - "Formoterol"
+  active_ingredient: "formoterol"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : données publiées nombreuses, aucun effet malformatif, fœtal ou néonatal attribué ; utilisable à dose efficace à tout terme, à ne pas arrêter à cause de la grossesse. L'asthme doit être traité aussi bien qu'en dehors de la grossesse. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-formoterol
+        - crat-antiasthmatiques
+  reviewed: 2026-11-14
+- id: salmeterol
+  category: asthma
+  names:
+    - "Salmétérol"
+    - "Sérévent"
+    - "Salmeterol"
+  active_ingredient: "salmeterol"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : données publiées très nombreuses, aucun effet malformatif, fœtal ou néonatal attribué ; utilisable à dose efficace à tout terme. Ne pas l'arrêter si la grossesse est découverte sous traitement. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-salmeterol
+        - crat-antiasthmatiques
+  reviewed: 2026-11-14
+- id: ics-laba-combined-inhaler
+  category: asthma
+  names:
+    - "Inhalateur combiné corticoïde + bêta-2 longue durée (budésonide/formotérol"
+    - "fluticasone/salmétérol)"
+    - "Symbicort"
+    - "Sérétide"
+    - "Combined inhaler ICS+LABA (budesonide/formoterol"
+  active_ingredient: "inhaled corticosteroid + long-acting beta-2 agonist"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT cite les inhalateurs combinés comme Symbicort et Sérétide comme utilisables pendant la grossesse, et chacun de leurs composants (budésonide, fluticasone, formotérol, salmétérol) peut être utilisé à dose efficace à tout terme. Ne pas arrêter ni modifier un traitement de l'asthme sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antiasthmatiques
+        - crat-formoterol
+        - crat-budesonide
+        - crat-salmeterol
+        - crat-fluticasone
+  reviewed: 2026-11-14
+- id: ipratropium
+  category: asthma
+  names:
+    - "Ipratropium"
+    - "Atrovent"
+    - "Ipratropium"
+  active_ingredient: "ipratropium"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : peu de données publiées mais aucun effet malformatif, fœtal ou néonatal spécifique attribué, non tératogène chez l'animal ; utilisable à dose efficace à tout terme si nécessaire. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-ipratropium
+        - crat-antiasthmatiques
+  reviewed: 2026-11-14
+- id: tiotropium
+  category: asthma
+  names:
+    - "Tiotropium"
+    - "Spiriva"
+    - "Tiotropium"
+  active_ingredient: "tiotropium"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucune donnée publiée chez la femme enceinte, aucun effet malformatif, fœtal ou néonatal identifié, non tératogène chez l'animal ; utilisation jugée acceptable quel que soit le trimestre compte tenu du bénéfice et du faible passage sanguin. Ne pas l'arrêter sans avis médical ; en parler au médecin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-tiotropium
+        - crat-antiasthmatiques
+  reviewed: 2026-11-14
+- id: theophylline
+  category: asthma
+  names:
+    - "Théophylline"
+    - "Theophylline"
+  active_ingredient: "theophylline"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : pas de malformation particulière dans les données du 1er trimestre, mais elle passe bien le placenta, le taux sanguin maternel peut augmenter pendant la grossesse (surveillance nécessaire) et une prise tardive peut provoquer chez le nouveau-né une tachycardie, une irritabilité ou des tremblements transitoires. Seulement si elle est essentielle à l'équilibre de l'asthme ; ne pas l'arrêter sans l'avis du prescripteur. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-theophylline
+        - crat-antiasthmatiques
+  reviewed: 2026-11-14
+- id: montelukast
+  category: asthma
+  names:
+    - "Montélukast"
+    - "Singulair"
+    - "Montelukast"
+  active_ingredient: "montelukast"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : données nombreuses à tous les trimestres sans effet malformatif ni effet fœtal ou néonatal particulier attribué ; utilisable à dose efficace à tout terme. Le NHS indique qu'il peut être pris pendant la grossesse et que l'asthme doit rester bien contrôlé. Ne pas l'arrêter sans l'avis du prescripteur. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-montelukast
+        - nhs-montelukast
+        - crat-antiasthmatiques
+  reviewed: 2026-11-14
+- id: prednisone
+  category: asthma
+  names:
+    - "Prednisone"
+    - "Cortancyl"
+    - "Prednisone tablets"
+  active_ingredient: "prednisone"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : aucun effet malformatif attribué (fentes labiales/palatines incluses) ; une dose efficace peut être utilisée à tout terme et pour toute durée, et il n'est pas justifié de l'arrêter ou de la modifier à cause de la grossesse. Un effet sur les surrénales du fœtus est peu probable aux doses d'entretien ; si le traitement dure jusqu'à l'accouchement, prévenir l'équipe néonatale. Ne pas arrêter un traitement prolongé sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-prednisone
+        - crat-corticoides
+  reviewed: 2026-11-14
+- id: prednisolone
+  category: asthma
+  names:
+    - "Prednisolone"
+    - "Solupred"
+    - "Prednisolone tablets"
+  active_ingredient: "prednisolone"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : aucun effet malformatif attribué ; la majeure partie est transformée en forme inactive dans le placenta ; une dose efficace peut être utilisée à tout terme, par toute voie et pour toute durée. Un effet sur les surrénales du fœtus est peu probable aux doses d'entretien ; si le traitement dure jusqu'à l'accouchement, prévenir l'équipe néonatale. Ne pas arrêter un traitement prolongé sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-prednisolone
+        - crat-corticoides
+  reviewed: 2026-11-14
+- id: methylprednisolone
+  category: other
+  names:
+    - "Méthylprednisolone"
+    - "Médrol"
+    - "Solumédrol"
+    - "Methylprednisolone"
+  active_ingredient: "methylprednisolone"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : aucun effet malformatif attribué ; environ 40 % passe le placenta ; une dose efficace peut être utilisée à tout terme, par toute voie et pour toute durée. Prévenir l'équipe néonatale si le traitement dure jusqu'à l'accouchement. Ne pas arrêter un traitement prolongé sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-methylprednisolone
+        - crat-corticoides
+  reviewed: 2026-11-14
+- id: betamethasone
+  category: other
+  names:
+    - "Bétaméthasone"
+    - "Célestène"
+    - "Betamethasone (injection or tablets)"
+  active_ingredient: "betamethasone"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : utilisée avant une naissance prématurée pour la maturation pulmonaire du bébé (indication obstétricale) ; une hypoglycémie néonatale a été évoquée (résultats discordants) et des injections répétées ont perturbé les surrénales du nouveau-né. Hors indication obstétricale, la prednisone ou la prednisolone sont préférées si possible. Uniquement sur décision médicale. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-betamethasone
+        - crat-corticoides
+  reviewed: 2026-11-14
+- id: dexamethasone
+  category: other
+  names:
+    - "Dexaméthasone"
+    - "Dectancyl"
+    - "Dexamethasone (systemic)"
+  active_ingredient: "dexamethasone"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucun effet malformatif attribué ; l'usage obstétrical vise la maturation pulmonaire du bébé, avec hypoglycémie néonatale possible (résultats discordants) et perturbation surrénalienne après injections répétées. Hors indication obstétricale, la prednisone ou la prednisolone sont préférées si possible ; prévenir l'équipe néonatale si le traitement dure jusqu'à l'accouchement. Uniquement sur décision médicale. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-dexamethasone
+        - crat-corticoides
+  reviewed: 2026-11-14
+- id: allergen-immunotherapy
+  category: allergy
+  names:
+    - "Désensibilisation (immunothérapie allergénique)"
+    - "comprimés sublinguaux Grazax"
+    - "Oralair"
+    - "Allergen immunotherapy (desensitisation"
+  active_ingredient: "allergen extracts"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : données nombreuses (surtout par voie sublinguale), aucun effet malformatif, fœtal ou néonatal établi. Il est déconseillé de débuter une désensibilisation pendant la grossesse ; une désensibilisation commencée avant la grossesse peut être poursuivie sans augmenter les doses. Un choc anaphylactique, rare, pourrait avoir des conséquences graves pour la mère et le bébé. En parler à l'allergologue. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-desensibilisation
+        - crat-antihistaminiques
+  reviewed: 2026-11-14
+- id: omalizumab
+  category: asthma
+  names:
+    - "Omalizumab"
+    - "Xolair"
+    - "Omalizumab"
+  active_ingredient: "omalizumab"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucun effet malformatif attribué dans les données publiées ; il passe le placenta à partir d'environ 14 SA et les données plus tardives sont limitées. Utilisation envisageable si elle est nécessaire à la mère ; prévenir l'équipe néonatale si utilisé au-delà du 2e trimestre. Décision spécialisée ; ne pas arrêter sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-omalizumab
+        - crat-antiasthmatiques
+  reviewed: 2026-11-14
+- id: zolpidem
+  category: sleep
+  names:
+    - "Zolpidem"
+    - "Stilnox"
+    - "Zolpidem"
+  active_ingredient: "zolpidem"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT ne retient aucune malformation avec le zolpidem et indique qu'il peut être utilisé à tout terme si un hypnotique est vraiment nécessaire, pour la durée la plus courte possible. Les mesures non médicamenteuses passent d'abord. S'il est pris jusqu'à l'accouchement, il faut prévenir la maternité. Ne pas arrêter brutalement un traitement au long cours sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-zolpidem
+        - nhs-zolpidem
+  reviewed: 2026-11-14
+- id: zopiclone
+  category: sleep
+  names:
+    - "Zopiclone"
+    - "Imovane"
+    - "Zopiclone"
+  active_ingredient: "zopiclone"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT ne retient aucune malformation avec la zopiclone et l'autorise à tout terme si un hypnotique est indispensable, pour la durée la plus courte possible. Le NHS indique qu'elle n'est habituellement pas utilisée pendant la grossesse. Ne pas arrêter brutalement un traitement au long cours sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-zopiclone
+        - nhs-zopiclone
+  reviewed: 2026-11-14
+- id: benzodiazepines-class
+  category: mental-health
+  names:
+    - "Benzodiazépines"
+    - "Anxiolytiques"
+    - "Benzodiazepines (anxiety medicines)"
+  active_ingredient: "benzodiazepines (class)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT rappelle qu'un anxiolytique ne doit pas être banalisé pendant la grossesse : options non médicamenteuses d'abord, posologie minimale efficace, durée la plus courte, éviter les associations. Si un anxiolytique est indispensable, l'oxazépam est préféré. Pris jusqu'à l'accouchement, il peut causer somnolence ou sevrage transitoires chez le nouveau-né : prévenir la maternité. Ne pas arrêter brutalement un traitement au long cours sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-anxiolytiques
+        - nhs-diazepam
+  reviewed: 2026-11-14
+- id: oxazepam
+  category: mental-health
+  names:
+    - "Oxazépam"
+    - "Séresta"
+    - "Oxazepam"
+  active_ingredient: "oxazepam"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucune malformation attribuée à l'oxazépam ; c'est la benzodiazépine préférée à tout terme si elle est indispensable (action courte, sans métabolite actif). Posologie minimale, durée la plus courte ; prévenir la maternité s'il est pris jusqu'à l'accouchement. Ne pas arrêter brutalement un traitement au long cours sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-oxazepam
+        - crat-anxiolytiques
+  reviewed: 2026-11-14
+- id: alprazolam
+  category: mental-health
+  names:
+    - "Alprazolam"
+    - "Xanax"
+    - "Alprazolam"
+  active_ingredient: "alprazolam"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucune malformation attribuée à l'alprazolam ; en fin de grossesse, mouvements foetaux parfois diminués et effets transitoires chez le nouveau-né. L'oxazépam est préféré si une benzodiazépine est nécessaire. Ne pas arrêter brutalement (risque de sevrage) sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-alprazolam
+        - crat-anxiolytiques
+  reviewed: 2026-11-14
+- id: bromazepam
+  category: mental-health
+  names:
+    - "Bromazépam"
+    - "Lexomil"
+    - "Bromazepam"
+  active_ingredient: "bromazepam"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucune malformation attribuée au bromazépam ; l'oxazépam est préféré à tout terme si une benzodiazépine est nécessaire. Ne pas arrêter brutalement (risque de sevrage) sans avis médical. Prévenir la maternité s'il est pris jusqu'à l'accouchement. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-bromazepam
+        - crat-anxiolytiques
+  reviewed: 2026-11-14
+- id: lorazepam
+  category: mental-health
+  names:
+    - "Lorazépam"
+    - "Temesta"
+    - "Lorazepam"
+  active_ingredient: "lorazepam"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucune malformation attribuée au lorazépam ; l'oxazépam est préféré à tout terme. Le NHS indique que le lorazépam n'est habituellement pas utilisé pendant la grossesse. Ne pas arrêter brutalement (sevrage) sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-lorazepam
+        - nhs-lorazepam
+  reviewed: 2026-11-14
+- id: diazepam
+  category: mental-health
+  names:
+    - "Diazépam"
+    - "Valium"
+    - "Diazepam"
+  active_ingredient: "diazepam"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La page CRAT sur les anxiolytiques cite le diazépam comme option à action longue seulement si l'oxazépam ne convient pas. Le NHS indique de ne pas le prendre pendant la grossesse sauf avis médical. Ne pas arrêter brutalement (sevrage) sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-anxiolytiques
+        - nhs-diazepam
+  reviewed: 2026-11-14
+- id: clonazepam
+  category: neurology
+  names:
+    - "Clonazépam"
+    - "Rivotril"
+    - "Clonazepam"
+  active_ingredient: "clonazepam"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucune malformation particulière attribuée au clonazépam ; utilisable à tout terme à dose efficace, effets transitoires possibles chez le nouveau-né en fin de grossesse. En cas d'épilepsie, ne jamais arrêter ni modifier sans avis du spécialiste. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-clonazepam
+        - crat-antiepileptiques
+  reviewed: 2026-11-14
+- id: clorazepate
+  category: mental-health
+  names:
+    - "Clorazépate"
+    - "Tranxène"
+    - "Clorazepate"
+  active_ingredient: "clorazepate dipotassium"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucune malformation attribuée au clorazépate ; l'oxazépam est préféré, le clorazépate seulement s'il ne convient pas. Ne pas arrêter brutalement (sevrage) sans avis médical. Prévenir la maternité s'il est pris jusqu'à l'accouchement. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-clorazepate
+        - crat-anxiolytiques
+  reviewed: 2026-11-14
+- id: antidepressants-class
+  category: mental-health
+  names:
+    - "Antidépresseurs"
+    - "Antidepressants"
+  active_ingredient: "antidepressants (class)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT cite plusieurs antidépresseurs (sertraline, citalopram, escitalopram, fluoxétine, paroxétine, venlafaxine, duloxétine, amitriptyline, clomipramine, mirtazapine) comme utilisables à tout terme ; les autres ont moins de données. Une dépression non traitée peut elle-même nuire à la grossesse. Ne pas arrêter ni modifier un traitement au long cours sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antidepresseurs
+        - nhs-sertraline
+  reviewed: 2026-11-14
+- id: sertraline
+  category: mental-health
+  names:
+    - "Sertraline"
+    - "Zoloft"
+    - "Sertraline"
+  active_ingredient: "sertraline"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : aucune malformation particulière attribuée à la sertraline, utilisable à dose efficace à tout terme ; le NHS confirme qu'elle peut être utilisée si nécessaire. Des symptômes néonatals légers et brefs sont possibles près de la naissance. Ne pas arrêter ni modifier sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-sertraline
+        - nhs-sertraline
+  reviewed: 2026-11-14
+- id: fluoxetine
+  category: mental-health
+  names:
+    - "Fluoxétine"
+    - "Prozac"
+    - "Fluoxetine"
+  active_ingredient: "fluoxetine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : aucune malformation particulière attribuée à la fluoxétine, utilisable à dose efficace à tout terme ; le NHS confirme qu'elle peut être utilisée si nécessaire. Des symptômes néonatals légers et brefs sont possibles près de la naissance. Ne pas l'arrêter brutalement sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-fluoxetine
+        - nhs-fluoxetine
+  reviewed: 2026-11-14
+- id: paroxetine
+  category: mental-health
+  names:
+    - "Paroxétine"
+    - "Deroxat"
+    - "Paroxetine"
+  active_ingredient: "paroxetine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucune malformation particulière retenue, utilisable à tout terme, bien que quelques études suggèrent une légère hausse de cardiopathies mineures (non confirmée par de plus grandes études). Le NHS indique qu'elle peut être utilisée si nécessaire. Ne pas l'arrêter brutalement sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-paroxetine
+        - nhs-paroxetine
+  reviewed: 2026-11-14
+- id: citalopram
+  category: mental-health
+  names:
+    - "Citalopram"
+    - "Séropram"
+    - "Citalopram"
+  active_ingredient: "citalopram"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : aucune malformation particulière attribuée au citalopram, utilisable à dose efficace à tout terme ; le NHS confirme qu'il peut être utilisé si nécessaire. Ne pas l'arrêter brutalement sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-citalopram
+        - nhs-citalopram
+  reviewed: 2026-11-14
+- id: escitalopram
+  category: mental-health
+  names:
+    - "Escitalopram"
+    - "Seroplex"
+    - "Escitalopram"
+  active_ingredient: "escitalopram"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : aucune malformation particulière attribuée à l'escitalopram (d'après les nombreuses données du citalopram), utilisable à dose efficace à tout terme ; le NHS confirme. Ne pas l'arrêter brutalement sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-escitalopram
+        - nhs-escitalopram
+  reviewed: 2026-11-14
+- id: venlafaxine
+  category: mental-health
+  names:
+    - "Venlafaxine"
+    - "Effexor"
+    - "Venlafaxine"
+  active_ingredient: "venlafaxine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : aucune malformation particulière attribuée à la venlafaxine, utilisable à dose efficace à tout terme, avec la surveillance habituelle de la tension ; le NHS confirme qu'elle peut être utilisée si nécessaire. Ne pas l'arrêter brutalement sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-venlafaxine
+        - nhs-venlafaxine
+  reviewed: 2026-11-14
+- id: duloxetine
+  category: mental-health
+  names:
+    - "Duloxétine"
+    - "Cymbalta"
+    - "Duloxetine"
+  active_ingredient: "duloxetine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : données du premier trimestre rassurantes, utilisable à dose efficace à tout terme, avec la surveillance habituelle de la tension ; le NHS confirme qu'elle peut être utilisée si nécessaire. Ne pas l'arrêter brutalement sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-duloxetine
+        - nhs-duloxetine
+  reviewed: 2026-11-14
+- id: mirtazapine
+  category: mental-health
+  names:
+    - "Mirtazapine"
+    - "Norset"
+    - "Mirtazapine"
+  active_ingredient: "mirtazapine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : données du premier trimestre rassurantes, utilisable à dose efficace à tout terme ; somnolence transitoire possible chez le nouveau-né si pris jusqu'à l'accouchement. Le NHS indique qu'elle peut être utilisée si nécessaire. Ne pas l'arrêter brutalement sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-mirtazapine
+        - nhs-mirtazapine
+  reviewed: 2026-11-14
+- id: amitriptyline
+  category: mental-health
+  names:
+    - "Amitriptyline"
+    - "Laroxyl"
+    - "Amitriptyline"
+  active_ingredient: "amitriptyline"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "La page CRAT sur les antidépresseurs cite l'amitriptyline comme utilisable à tout terme ; le NHS ne voit pas de souci pour le développement du bébé et précise que le nouveau-né peut être surveillé pour un sevrage transitoire. Ne pas l'arrêter sans l'avis de votre médecin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antidepresseurs
+        - nhs-amitriptyline
+  reviewed: 2026-11-14
+- id: lithium
+  category: mental-health
+  names:
+    - "Lithium"
+    - "Téralithe"
+    - "Lithium"
+  active_ingredient: "lithium carbonate"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : le lithium peut provoquer des malformations cardiaques, surtout pris pendant les premières semaines (jusqu'à environ 10 SA) ; un spécialiste décide de le suspendre ou de le poursuivre. Passé ce stade il peut être poursuivi sous surveillance étroite. Le NHS confirme que le risque est plus élevé tôt. Ne pas arrêter ni modifier sans spécialiste : le risque de rechute est réel. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-lithium
+        - nhs-lithium
+  reviewed: 2026-11-14
+- id: antipsychotics-class
+  category: mental-health
+  names:
+    - "Neuroleptiques"
+    - "Antipsychotiques"
+    - "Antipsychotics (neuroleptics)"
+  active_ingredient: "antipsychotics (class)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : un antipsychotique doit être poursuivi lorsqu'il est justifié, car la maladie non traitée a ses propres risques ; aripiprazole, olanzapine, quétiapine et rispéridone sont les mieux documentés. Ne pas arrêter brutalement à la découverte de la grossesse ; en parler au médecin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antipsychotiques
+        - nhs-quetiapine
+  reviewed: 2026-11-14
+- id: quetiapine
+  category: mental-health
+  names:
+    - "Quétiapine"
+    - "Xeroquel"
+    - "Quetiapine"
+  active_ingredient: "quetiapine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT classe la quétiapine parmi les antipsychotiques les mieux documentés pendant la grossesse ; le NHS indique qu'elle peut être utilisée si nécessaire, avec une surveillance de la croissance du bébé. Ne pas arrêter brutalement sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antipsychotiques
+        - nhs-quetiapine
+  reviewed: 2026-11-14
+- id: olanzapine
+  category: mental-health
+  names:
+    - "Olanzapine"
+    - "Zyprexa"
+    - "Olanzapine"
+  active_ingredient: "olanzapine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT classe l'olanzapine parmi les antipsychotiques les mieux documentés pendant la grossesse ; le NHS indique qu'elle peut être prise et n'est pas considérée comme nocive pour le bébé. Ne pas arrêter sans l'avis du médecin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antipsychotiques
+        - nhs-olanzapine
+  reviewed: 2026-11-14
+- id: aripiprazole
+  category: mental-health
+  names:
+    - "Aripiprazole"
+    - "Abilify"
+    - "Aripiprazole"
+  active_ingredient: "aripiprazole"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT classe l'aripiprazole parmi les antipsychotiques les mieux documentés pendant la grossesse ; le NHS indique qu'il peut être utilisé si nécessaire, avec des contrôles supplémentaires pour le bébé. Ne pas arrêter brutalement sans avis médical. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antipsychotiques
+        - nhs-aripiprazole
+  reviewed: 2026-11-14
+- id: antiepileptics-class
+  category: neurology
+  names:
+    - "Antiépileptiques"
+    - "Antiepileptic medicines"
+  active_ingredient: "antiepileptics (class)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : les antiépileptiques ne sont pas interchangeables. Valproate et topiramate sont à éviter autant que possible ; carbamazépine et phénobarbital seulement sans alternative plus sûre ; lamotrigine, lévétiracétam, gabapentine et prégabaline ont des données rassurantes. Ne jamais arrêter ni modifier un antiépileptique sans avis du spécialiste ; des crises non contrôlées sont dangereuses. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antiepileptiques
+        - nhs-carbamazepine
+  reviewed: 2026-11-14
+- id: valproate
+  category: neurology
+  names:
+    - "Valproate"
+    - "Acide valproïque"
+    - "Dépakine"
+    - "Dépakote"
+    - "Dépamide"
+    - "Valproate"
+  active_ingredient: "valproic acid / sodium valproate"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "CRAT : contre-indiqué pendant la grossesse sauf absence d'alternative (épilepsie), et à ne pas utiliser à tout terme dans le trouble bipolaire ; risque le plus élevé de malformations et de troubles du neurodéveloppement. Le NHS indique qu'il n'est pas recommandé pendant la grossesse. Ne pas l'arrêter seule : consulter un spécialiste en urgence. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-valproate
+        - nhs-valproate
+        - crat-antiepileptiques
+  reviewed: 2026-11-14
+- id: lamotrigine
+  category: neurology
+  names:
+    - "Lamotrigine"
+    - "Lamictal"
+    - "Lamotrigine"
+  active_ingredient: "lamotrigine"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : aucune malformation attribuée à la lamotrigine ; c'est l'antiépileptique le mieux documenté pendant la grossesse, utilisable à tout terme. Les taux sanguins peuvent baisser, d'où une surveillance. Le NHS confirme qu'elle peut être utilisée si nécessaire. Ne pas arrêter ni modifier sans avis du spécialiste. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-lamotrigine
+        - nhs-lamotrigine
+  reviewed: 2026-11-14
+- id: carbamazepine
+  category: neurology
+  names:
+    - "Carbamazépine"
+    - "Tégrétol"
+    - "Carbamazepine"
+  active_ingredient: "carbamazepine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : augmente le risque de malformations majeures (environ 1,5 à 2 fois) ; un autre médicament est préféré à tout terme et, si indispensable, la carbamazépine est de préférence utilisée après environ 10 SA. Le NHS indique que le médecin peut juger le bénéfice supérieur au risque. Ne jamais l'arrêter sans spécialiste : l'arrêt brutal peut ramener les crises. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-carbamazepine
+        - nhs-carbamazepine
+  reviewed: 2026-11-14
+- id: levetiracetam
+  category: neurology
+  names:
+    - "Lévétiracétam"
+    - "Keppra"
+    - "Levetiracetam"
+  active_ingredient: "levetiracetam"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "CRAT : aucune malformation attribuée au lévétiracétam ; utilisable à dose efficace à tout terme, avec une surveillance car les taux sanguins peuvent baisser. Le NHS confirme qu'il peut être utilisé si nécessaire. Ne pas arrêter ni modifier sans avis du spécialiste. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-levetiracetam
+        - nhs-levetiracetam
+  reviewed: 2026-11-14
+- id: topiramate
+  category: neurology
+  names:
+    - "Topiramate"
+    - "Epitomax"
+    - "Topiramate"
+  active_ingredient: "topiramate"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Le CRAT conseille de passer à un autre antiépileptique à tout terme (risque de fente labiale ou palatine et de petit poids) ; il n'est conservé que si un spécialiste le juge indispensable, de préférence après 10 SA. Le NHS le relie aussi à des malformations. Ne pas l'arrêter seule en cas d'épilepsie : demander au spécialiste. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-topiramate
+        - nhs-topiramate
+        - crat-antiepileptiques
+  reviewed: 2026-11-14
+- id: phenobarbital
+  category: neurology
+  names:
+    - "Phénobarbital"
+    - "Gardénal"
+    - "Phenobarbital"
+  active_ingredient: "phenobarbital"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : double environ le taux de malformations et ralentit la croissance ; un autre antiépileptique est préféré, le phénobarbital seulement si indispensable à la dose minimale efficace, avec vitamine K et précautions néonatales en fin de grossesse. Ne jamais arrêter ni modifier sans avis du spécialiste. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-phenobarbital
+        - crat-antiepileptiques
+  reviewed: 2026-11-14
+- id: gabapentin
+  category: neurology
+  names:
+    - "Gabapentine"
+    - "Neurontin"
+    - "Gabapentin"
+  active_ingredient: "gabapentin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucune malformation particulière attribuée à la gabapentine, utilisable à tout terme si nécessaire ; somnolence néonatale théoriquement possible. Le NHS indique qu'elle n'est généralement pas recommandée pendant la grossesse faute de données suffisantes. En cas d'épilepsie, ne pas l'arrêter sans avis médical urgent. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-gabapentine
+        - nhs-gabapentin
+  reviewed: 2026-11-14
+- id: pregabalin
+  category: neurology
+  names:
+    - "Prégabaline"
+    - "Lyrica"
+    - "Pregabalin"
+  active_ingredient: "pregabalin"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "CRAT : aucun risque malformatif établi (une alerte antérieure était une fausse alerte), utilisable à tout terme si nécessaire. Le NHS indique que certaines études suggèrent une légère hausse de malformations et qu'il n'est prescrit que si le bénéfice l'emporte. Ne pas l'arrêter sans en parler au médecin. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-pregabaline
+        - nhs-pregabalin
+  reviewed: 2026-11-14
+- id: isotretinoin-oral
+  category: skin
+  names:
+    - "Isotrétinoïne orale"
+    - "Curacné"
+    - "Contracné"
+    - "Procuta"
+    - "Roaccutane"
+    - "Isotretinoin (oral)"
+  active_ingredient: "isotretinoin"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "L'isotrétinoïne orale provoque des malformations graves avérées et ne doit pas être utilisée pendant la grossesse. Si une grossesse est découverte sous traitement, il faut l'arrêter immédiatement et contacter le médecin ou le CRAT. Une contraception est nécessaire pendant le traitement et un mois après l'arrêt. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-isotretinoine
+        - crat-medicaments-dangereux
+        - crat-antiacneiques
+  reviewed: 2026-11-14
+- id: acitretin
+  category: skin
+  names:
+    - "Acitrétine"
+    - "Soriatane"
+    - "Acitretin"
+  active_ingredient: "acitretin"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "L'acitrétine provoque des malformations et ne doit pas être utilisée pendant la grossesse, ni chez une femme qui envisage une grossesse. Si une grossesse est découverte sous traitement, il faut l'arrêter immédiatement et contacter le médecin ou le CRAT pour une évaluation au cas par cas. Le médicament reste longtemps dans l'organisme après l'arrêt : demandez au prescripteur le délai à respecter avant de concevoir. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-acitretine
+        - crat-medicaments-dangereux
+  reviewed: 2026-11-14
+- id: adapalene
+  category: skin
+  names:
+    - "Adapalène"
+    - "Differine"
+    - "Adapalene"
+  active_ingredient: "adapalene"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "L'adapalène en application cutanée n'est pas associé à une malformation particulière : une femme qui découvre sa grossesse sous traitement peut être rassurée. Le CRAT préfère néanmoins une autre option contre l'acné pendant la grossesse, surtout au premier trimestre. Demandez conseil à un médecin ou un pharmacien. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-adapalene
+        - crat-antiacneiques
+  reviewed: 2026-11-14
+- id: tretinoin-topical
+  category: skin
+  names:
+    - "Trétinoïne locale"
+    - "trétinoïne en crème"
+    - "Tretinoin (topical)"
+  active_ingredient: "tretinoin (topical)"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La trétinoïne locale n'est pas associée à un risque malformatif particulier : une femme qui débute une grossesse sous traitement peut être rassurée. Le CRAT conseille néanmoins de ne pas la débuter pendant la grossesse et de préférer une autre option contre l'acné, surtout au premier trimestre. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-tretinoine-locale
+        - crat-antiacneiques
+  reviewed: 2026-11-14
+- id: retinoids-topical-class
+  category: skin
+  names:
+    - "Rétinoïdes locaux"
+    - "isotrétinoïne gel"
+    - "Topical retinoids (acne creams)"
+  active_ingredient: "topical retinoids (adapalene, tretinoin, topical isotretinoin)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "La fiche du CRAT sur les antiacnéiques indique que les rétinoïdes locaux sont en général évités pendant la grossesse, même si le risque malformatif par voie cutanée est jugé faible. Une autre option est préférée, surtout au premier trimestre. Les crèmes cosmétiques au rétinol ne sont pas traitées par ces fiches : demandez conseil à un pharmacien. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-antiacneiques
+        - crat-isotretinoine
+        - crat-adapalene
+  reviewed: 2026-11-14
+- id: benzoyl-peroxide
+  category: skin
+  names:
+    - "Peroxyde de benzoyle"
+    - "Pannoxyl"
+    - "Cutacnyl"
+    - "Benzoyl peroxide"
+  active_ingredient: "benzoyl peroxide"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Aucun effet sur le bébé n'a été rapporté avec le peroxyde de benzoyle en application cutanée, même s'il n'existe pas de données publiées chez la femme enceinte. Le CRAT indique qu'il peut être poursuivi ou utilisé quel que soit le terme de la grossesse. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-peroxyde-benzoyle
+        - crat-antiacneiques
+  reviewed: 2026-11-14
+- id: azelaic-acid
+  category: skin
+  names:
+    - "Acide azélaïque"
+    - "Finacea"
+    - "Skinoren"
+    - "Azelaic acid"
+  active_ingredient: "azelaic acid"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "L'acide azélaïque en application cutanée peut être utilisé quel que soit le terme de la grossesse. Il n'existe pas de données publiées chez la femme enceinte, mais aucun effet sur le bébé n'a été rapporté et le passage dans le sang est très faible. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-acide-azelaique
+        - crat-antiacneiques
+  reviewed: 2026-11-14
+- id: clindamycin-topical
+  category: skin
+  names:
+    - "Clindamycine locale"
+    - "Zindacline"
+    - "Clindamycin (acne gel)"
+  active_ingredient: "clindamycin (topical)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "La clindamycine peut être utilisée quel que soit le terme de la grossesse, et la fiche du CRAT sur les antiacnéiques cite la forme locale parmi les antibactériens acceptables. Le passage dans l'organisme par la peau est très faible. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-clindamycine
+        - crat-antiacneiques
+  reviewed: 2026-11-14
+- id: erythromycin-topical
+  category: skin
+  names:
+    - "Érythromycine locale"
+    - "Eryfluid"
+    - "Erythrogel"
+    - "Erythromycin (acne gel)"
+  active_ingredient: "erythromycin (topical)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "L'érythromycine peut être utilisée quel que soit le terme de la grossesse, et la fiche du CRAT sur les antiacnéiques cite la forme locale parmi les antibactériens acceptables. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-erythromycine
+        - crat-antiacneiques
+  reviewed: 2026-11-14
+- id: methotrexate
+  category: other
+  names:
+    - "Méthotrexate"
+    - "Methotrexate"
+  active_ingredient: "methotrexate"
+  tips: [avoid]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: avoid
+      why: "Le méthotrexate ne doit en général pas être utilisé pendant la grossesse, même aux faibles doses immunosuppressives, qui augmentent le risque de malformations et de fausse couche. Si une grossesse est découverte sous traitement, il faut l'arrêter dès que possible et consulter le médecin. Ne l'arrêtez pas sans avis médical si vous n'êtes pas enceinte. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-methotrexate
+        - crat-medicaments-dangereux
+  reviewed: 2026-11-14
+- id: folic-acid-high-dose
+  category: vitamins
+  names:
+    - "Acide folique à forte dose (sur ordonnance)"
+    - "Speciafoldine forte dose"
+    - "High-dose folic acid (prescription)"
+  active_ingredient: "folic acid (vitamin B9), prescribed higher strength"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS indique qu'un acide folique à plus forte dose est prescrit par un médecin uniquement pour certains facteurs de risque (certaines maladies ou traitements). À prendre seulement sur ordonnance ; ne pas le commencer, l'arrêter ou le modifier sans l'avis de votre médecin ou sage-femme. Les données des pages retenues sont limitées. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-vitamins
+        - nhs-medicines
+  reviewed: 2026-11-14
+- id: vitamin-b12
+  category: vitamins
+  names:
+    - "Vitamine B12"
+    - "cyanocobalamine"
+    - "Vitamin B12"
+  active_ingredient: "cyanocobalamin (vitamin B12)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS ne donne pas de règle propre à la grossesse pour la B12 et indique qu'il n'y a pas assez de preuves sur les fortes doses en complément ; l'alimentation équilibrée reste la source habituelle. Si vous prenez un complément, respectez la quantité indiquée sur l'étiquette et demandez d'abord l'avis de votre sage-femme, médecin ou pharmacien. Données limitées. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-vit-b
+        - nhs-medicines
+  reviewed: 2026-11-14
+- id: vitamin-b6
+  category: vitamins
+  names:
+    - "Vitamine B6"
+    - "pyridoxine"
+    - "Vitamin B6"
+  active_ingredient: "pyridoxine (vitamin B6)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS prévient qu'un excès de B6 en complément sur la durée peut abîmer les nerfs, et que l'effet des quantités modérées est incertain. Aucune règle propre à la grossesse n'est donnée. Ne dépassez pas la quantité de l'étiquette et demandez l'avis de votre sage-femme, médecin ou pharmacien avant usage (y compris dans les produits associés). En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-vit-b
+        - nhs-medicines
+  reviewed: 2026-11-14
+- id: vitamin-b1
+  category: vitamins
+  names:
+    - "Vitamine B1"
+    - "thiamine"
+    - "Vitamin B1"
+  active_ingredient: "thiamin (vitamin B1)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS indique que l'alimentation équilibrée couvre normalement la B1 et qu'il manque de preuves sur les fortes doses en complément. Son seul conseil de grossesse sur cette page est d'éviter le foie (source de B1). Respectez la quantité de l'étiquette et demandez d'abord l'avis de votre sage-femme ou pharmacien. Données limitées. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-vit-b
+        - nhs-medicines
+  reviewed: 2026-11-14
+- id: vitamin-b2
+  category: vitamins
+  names:
+    - "Vitamine B2"
+    - "riboflavine"
+    - "Vitamin B2"
+  active_ingredient: "riboflavin (vitamin B2)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS indique que l'alimentation équilibrée couvre normalement la B2 et qu'il manque de preuves sur les fortes doses ; aucune règle propre à la grossesse. Respectez la quantité de l'étiquette et demandez d'abord l'avis de votre sage-femme ou pharmacien. Données limitées. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-vit-b
+        - nhs-medicines
+  reviewed: 2026-11-14
+- id: vitamin-b3-niacin
+  category: vitamins
+  names:
+    - "Vitamine B3"
+    - "niacine"
+    - "nicotinamide"
+    - "vitamine PP"
+    - "Vitamin B3"
+  active_ingredient: "niacin / nicotinamide (vitamin B3)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS indique que de fortes quantités d'acide nicotinique peuvent provoquer des bouffées de chaleur cutanées et, à long terme, abîmer le foie ; les effets de fortes quantités de nicotinamide sont mal connus. Aucune règle propre à la grossesse. Respectez la quantité de l'étiquette et demandez d'abord l'avis de votre sage-femme, médecin ou pharmacien. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-vit-b
+        - nhs-medicines
+  reviewed: 2026-11-14
+- id: biotin
+  category: vitamins
+  names:
+    - "Biotine"
+    - "vitamine B8"
+    - "vitamine H"
+    - "Biotin"
+  active_ingredient: "biotin (vitamin B8)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS indique qu'il manque de preuves sur les fortes doses quotidiennes en complément et ne donne pas de règle propre à la grossesse. Respectez la quantité de l'étiquette et demandez d'abord l'avis de votre sage-femme ou pharmacien. Données limitées. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-vit-b
+        - nhs-medicines
+  reviewed: 2026-11-14
+- id: b-complex
+  category: vitamins
+  names:
+    - "Complexe de vitamines B"
+    - "vitamines du groupe B"
+    - "B-complex"
+  active_ingredient: "mixed B vitamins"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Un complexe B associe plusieurs vitamines B ; le NHS prévient qu'un excès de B6 en complément peut abîmer les nerfs et qu'il manque de preuves sur les fortes quantités des autres. Vérifiez l'étiquette, évitez de cumuler avec d'autres produits vitaminés et demandez d'abord l'avis de votre sage-femme, médecin ou pharmacien. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-vit-b
+        - nhs-medicines
+  reviewed: 2026-11-14
+- id: vitamin-c
+  category: vitamins
+  names:
+    - "Vitamine C"
+    - "acide ascorbique"
+    - "Vitamin C"
+  active_ingredient: "ascorbic acid"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS indique que l'alimentation suffit en général pour la vitamine C et que de grandes quantités en complément peuvent causer des douleurs d'estomac et de la diarrhée. Aucune règle propre à la grossesse pour les compléments. Respectez la quantité de l'étiquette et demandez d'abord l'avis de votre sage-femme ou pharmacien. Données limitées. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-vit-c
+        - nhs-medicines
+  reviewed: 2026-11-14
+- id: vitamin-e
+  category: vitamins
+  names:
+    - "Vitamine E"
+    - "tocophérol"
+    - "Vitamin E"
+  active_ingredient: "tocopherol"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS indique qu'il manque de preuves sur les effets de fortes doses de vitamine E en complément et qu'un excès pourrait être nocif ; la grossesse n'est pas abordée. Respectez la quantité de l'étiquette et demandez d'abord l'avis de votre sage-femme, médecin ou pharmacien. Données limitées. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-vit-e
+        - nhs-medicines
+  reviewed: 2026-11-14
+- id: vitamin-k
+  category: vitamins
+  names:
+    - "Vitamine K"
+    - "phytoménadione"
+    - "Vitamin K"
+  active_ingredient: "phylloquinone (vitamin K1)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS indique qu'un excès de vitamine K en complément pourrait être nocif et que les preuves sur les fortes doses manquent ; la grossesse n'est pas abordée. À prendre seulement si un médecin ou une sage-femme l'a conseillé, surtout si vous prenez un anticoagulant. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-vit-k
+        - nhs-medicines
+  reviewed: 2026-11-14
+- id: multivitamin-pregnancy
+  category: vitamins
+  names:
+    - "Multivitamines grossesse"
+    - "Gestarelle"
+    - "Gynéfam"
+    - "Elevit"
+    - "Pregnancy multivitamin"
+  active_ingredient: "multivitamin and mineral combinations for pregnancy"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS recommande l'acide folique et, à l'automne et en hiver, la vitamine D pendant la grossesse, et conseille d'éviter les compléments contenant de la vitamine A (rétinol) et l'huile de foie de morue. Vérifiez donc l'étiquette (vitamine A), ne cumulez pas avec d'autres produits vitaminés et demandez à votre sage-femme, médecin ou pharmacien quel produit vous convient. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-vitamins
+        - nhs-fish-shellfish
+  reviewed: 2026-11-14
+- id: iron-oral
+  category: minerals
+  names:
+    - "Fer (complément)"
+    - "sulfate ferreux"
+    - "Tardyferon"
+    - "Fumafer"
+    - "Ferrostrane"
+    - "Iron supplement"
+  active_ingredient: "oral iron salts"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS indique que le taux de fer est contrôlé pendant la grossesse et qu'un médecin ou une sage-femme recommande des comprimés de fer si besoin ; la grossesse est une cause fréquente d'anémie par manque de fer. Ne prenez du fer que sur conseil et suivez le prescripteur ; effets possibles : constipation, nausées ; le fer est dangereux pour les jeunes enfants. N'arrêtez pas un traitement prescrit sans avis. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-vitamins
+        - nhs-iron-def-anaemia
+        - nhs-iron
+  reviewed: 2026-11-14
+- id: calcium-supplement
+  category: minerals
+  names:
+    - "Calcium (complément)"
+    - "Calcium supplement"
+  active_ingredient: "calcium salts"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS indique que les produits laitiers sont une source principale de calcium pendant la grossesse et qu'un excès en complément peut être nocif (douleurs d'estomac, diarrhée à forte quantité). Aucune règle de complément propre à la grossesse. Demandez l'avis de votre sage-femme ou médecin avant d'en ajouter. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-calcium
+        - nhs-healthy-diet
+  reviewed: 2026-11-14
+- id: magnesium-supplement
+  category: minerals
+  names:
+    - "Magnésium (complément)"
+    - "Magné B6"
+    - "Mag 2"
+    - "Magnesium supplement"
+  active_ingredient: "magnesium salts (Magné B6 also contains vitamin B6)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS donne des précautions générales sur le magnésium en complément, sans rien de spécifique à la grossesse. Les produits associés à la vitamine B6 comportent aussi la précaution sur les nerfs. Respectez la quantité de l'étiquette et demandez l'avis de votre sage-femme, médecin ou pharmacien avant de le prendre. Données limitées. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-vit-others
+        - nhs-vit-b
+        - nhs-medicines
+  reviewed: 2026-11-14
+- id: iodine-potassium-iodide
+  category: minerals
+  names:
+    - "Iode (complément)"
+    - "iodure de potassium"
+    - "Lugol"
+    - "Iodine supplement"
+  active_ingredient: "iodine / potassium iodide"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS indique qu'un excès d'iode en complément peut être nocif et, sur la durée, modifier le fonctionnement de la thyroïde, et conseille de demander l'avis d'un professionnel de santé avant tout complément. La grossesse n'est pas abordée sur cette page. Ne prenez pas de produit à base d'iode sans l'avis d'un médecin ou d'une sage-femme. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-iodine
+        - nhs-medicines
+  reviewed: 2026-11-14
+- id: kelp-seaweed-supplement
+  category: supplements
+  names:
+    - "Complément à base d'algues (kelp)"
+    - "algues en gélules"
+    - "Kelp supplement"
+  active_ingredient: "seaweed (variable iodine content)"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Les algues ne sont pas traitées par les pages lues ; le NHS prévient qu'un excès d'iode peut perturber la thyroïde et que les produits naturels ne sont pas tous sûrs pendant la grossesse. La teneur en iode n'étant pas maîtrisée, demandez l'avis de votre sage-femme ou médecin avant d'en prendre. Données limitées. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-iodine
+        - nhs-medicines
+  reviewed: 2026-11-14
+- id: zinc-supplement
+  category: minerals
+  names:
+    - "Zinc (complément)"
+    - "gluconate de zinc"
+    - "Rubozinc"
+    - "Effizinc"
+    - "Zinc supplement"
+  active_ingredient: "zinc salts"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT indique qu'aucune malformation particulière n'a été rapportée avec le gluconate de zinc, mais les données du 1er trimestre manquent ; il est indispensable toute la grossesse en cas de trouble de l'absorption du zinc, et il est évité au 1er trimestre pour l'acné. Tenez compte du zinc des multivitamines et demandez d'abord l'avis de votre médecin ou sage-femme. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-zinc
+        - nhs-vit-others
+  reviewed: 2026-11-14
+- id: selenium
+  category: minerals
+  names:
+    - "Sélénium (complément)"
+    - "Selenium supplement"
+  active_ingredient: "selenium"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS donne des précautions générales sur le sélénium en complément, sans rien de spécifique à la grossesse ; une seule source générale a été lue, les données sont donc limitées. Respectez la quantité de l'étiquette et demandez d'abord l'avis de votre sage-femme, médecin ou pharmacien. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-vit-others
+        - nhs-medicines
+  reviewed: 2026-11-14
+- id: copper
+  category: minerals
+  names:
+    - "Cuivre (complément)"
+    - "Copper supplement"
+  active_ingredient: "copper"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS donne des précautions générales sur le cuivre en complément, sans rien de spécifique à la grossesse ; données limitées. Respectez la quantité de l'étiquette et demandez d'abord l'avis de votre sage-femme, médecin ou pharmacien. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-vit-others
+        - nhs-medicines
+  reviewed: 2026-11-14
+- id: potassium-supplement
+  category: minerals
+  names:
+    - "Potassium (complément)"
+    - "Potassium supplement"
+  active_ingredient: "potassium salts"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS donne des précautions générales sur le potassium en complément, sans rien de spécifique à la grossesse ; données limitées. À prendre seulement si un médecin l'a prescrit ou conseillé, en suivant ses instructions. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-vit-others
+        - nhs-medicines
+  reviewed: 2026-11-14
+- id: sodium-bicarbonate
+  category: stomach-reflux
+  names:
+    - "Bicarbonate de sodium"
+    - "bicarbonate de soude"
+    - "Alcalinisant"
+    - "Sodium bicarbonate"
+  active_ingredient: "sodium bicarbonate"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS indique que la plupart des antiacides sont considérés comme sûrs pendant la grossesse mais qu'il faut demander conseil d'abord, et que certains contiennent beaucoup de sodium, ce qui compte en cas de régime sans sel ou d'hypertension. La page reflux du CRAT cite les alginates et les antiacides aluminium/magnésium comme utilisables à tout terme et ne mentionne pas le bicarbonate : demandez l'avis de votre pharmacien ou sage-femme. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-antacids
+        - crat-reflux
+  reviewed: 2026-11-14
+- id: omega-3-fish-oil
+  category: supplements
+  names:
+    - "Oméga-3 (capsules)"
+    - "huile de poisson"
+    - "DHA"
+    - "Omega-3 capsules"
+  active_ingredient: "omega-3 fatty acids (EPA/DHA) from fish oil"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le NHS indique que le poisson gras est la source la plus riche en oméga-3 (avec une limite hebdomadaire pendant la grossesse) et prévient que les huiles de foie de poisson comme l'huile de foie de morue sont riches en vitamine A et à éviter pendant la grossesse. Les capsules d'huile de poisson ne sont pas traitées : vérifiez que ce n'est pas de l'huile de foie de morue et demandez d'abord l'avis de votre sage-femme ou médecin. Données limitées. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - nhs-fish-shellfish
+        - nhs-vitamins
+  reviewed: 2026-11-14
+- id: fibre-supplement-psyllium
+  category: constipation
+  names:
+    - "Fibres (complément)"
+    - "psyllium"
+    - "ispaghul"
+    - "Spagulax"
+    - "Mucilar"
+    - "Fibre supplement"
+  active_ingredient: "psyllium / ispaghula husk (bulk-forming fibre)"
+  tips: [best]
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: ok
+      why: "Le CRAT classe le psyllium et l'ispaghul parmi les laxatifs de lest préférés pendant la grossesse car ils ne sont pas absorbés. Le NHS conseille de demander l'avis d'un pharmacien ou médecin avant tout laxatif pendant la grossesse. Buvez suffisamment avec ces produits. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-laxatifs
+        - nhs-laxatives
+  reviewed: 2026-11-14
+- id: caffeine-supplement
+  category: supplements
+  names:
+    - "Caféine (comprimés)"
+    - "complément à la caféine"
+    - "guarana"
+    - "Caffeine tablets"
+  active_ingredient: "caffeine"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT ne retient pas d'effet malformatif de la caféine et indique qu'une consommation modérée, toutes sources confondues, semble acceptable, avec un possible petit effet sur le poids de naissance et de rares troubles du rythme cardiaque du nouveau-né en cas de forte consommation. Le NHS fixe une limite quotidienne qui inclut aussi les compléments. Comptez-la avec le café et le thé et évitez d'ajouter des produits concentrés en caféine. En cas de doute, demandez à votre pharmacien ou à votre médecin."
+      sources:
+        - crat-cafeine
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
