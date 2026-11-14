@@ -1000,7 +1000,13 @@
     - Ceviche
     - Tartare de poisson
     - Japanese food
-  tips: *a1
+    - Seafood sushi
+    - Sushi aux fruits de mer
+    - Sushi crevette crue
+    - Sushi poulpe cru
+    - Sushi Saint-Jacques cru
+  tips:
+    - avoid
   local: true
   answers:
     - state: raw
@@ -1452,7 +1458,32 @@
     - Fines de claire
     - Plateau de fruits de mer
     - Oyster
-  tips: *a1
+    - Belon oysters
+    - Huîtres plates
+    - Belon
+    - Huîtres de Belon
+    - Plates de Bretagne
+    - Fine de claire
+    - Claires
+    - Spéciales de claire
+    - Fines de claire n°3
+    - Pacific oysters
+    - Huîtres creuses
+    - Creuses de Marennes
+    - Huîtres de Normandie
+    - Huîtres de Cancale
+    - Cooked oysters
+    - Huîtres chaudes
+    - Huîtres gratinées
+    - Huîtres au champagne
+    - Huîtres pochées
+    - Oysters on the half shell
+    - Douzaine d'huîtres
+    - Huîtres crues
+    - Huîtres au citron
+    - Assiette d'huîtres
+  tips:
+    - avoid
   local: true
   answers:
     - state: raw
@@ -1479,6 +1510,10 @@
     - Moules frites
     - Moules de bouchot
     - Moules à la crème
+    - Mussels fries
+    - Moules-frites
+    - Moules frites de Bretagne
+    - Moules de bouchot frites
   local: true
   answers:
     - state: raw
@@ -1544,6 +1579,28 @@
     - Crayfish
     - Écrevisse
     - Chair de crabe
+    - Crab whole
+    - Tourteau dormeur
+    - Dormeur
+    - Crabe dormeur
+    - Spider crab
+    - Étrille
+    - Crabe vert
+    - Crabe étrille
+    - King crab
+    - Crabe royal
+    - Pattes de crabe royal
+    - Crabe des neiges
+    - Crabe de Kamchatka
+    - Spiny lobster
+    - Langouste à la parisienne
+    - Langouste grillée
+    - Langouste à l'armoricaine
+    - Slipper lobster
+    - Cigale de mer
+    - Cigales de mer
+    - Cigale
+    - Petite cigale
   local: true
   answers:
     - state: cooked
@@ -1579,6 +1636,16 @@
     - Bulots
     - Bigorneaux
     - Escargots
+    - Queen scallops
+    - Pétoncles
+    - Pétoncles crus
+    - Pétoncles rôtis
+    - Vanneaux
+    - Cooked scallops
+    - Noix de Saint-Jacques poêlées
+    - Saint-Jacques snackées
+    - Coquilles Saint-Jacques gratinées
+    - Saint-Jacques à la crème
   local: true
   answers:
     - state: cooked
@@ -10622,7 +10689,7 @@
   answers:
     - state: canned
       verdict: ok
-      why: Tinned fish is safe to eat. Keep an opened tin in the fridge and finish it quickly.
+      why: "Canned mussels: tinned fish is safe to eat. Keep an opened tin in the fridge and finish it quickly."
       sources:
         - ameli-aliments-eviter
         - cdc-food-pregnant-women
@@ -10639,7 +10706,7 @@
   answers:
     - state: canned
       verdict: ok
-      why: Tinned fish is safe to eat. Keep an opened tin in the fridge and finish it quickly.
+      why: "Canned crab: tinned fish is safe to eat. Keep an opened tin in the fridge and finish it quickly."
       sources:
         - ameli-aliments-eviter
         - cdc-food-pregnant-women
@@ -10898,100 +10965,6 @@
         - ameli-aliments-eviter
         - nhs-healthy-diet
   reviewed: 2026-11-13
-- id: belon-oysters
-  category: seafood
-  names:
-    - Belon oysters
-    - Huîtres plates
-    - Belon
-    - Huîtres de Belon
-    - Plates de Bretagne
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Raw shellfish can carry listeria, the toxoplasmosis parasite and other germs. Eat it only well cooked.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, until the shells open wide and the flesh is hot, it is safe. Throw away any that stay closed.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: fine-de-claire
-  category: seafood
-  names:
-    - Fine de claire
-    - Claires
-    - Spéciales de claire
-    - Fines de claire n°3
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Raw shellfish can carry listeria, the toxoplasmosis parasite and other germs. Eat it only well cooked.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, until the shells open wide and the flesh is hot, it is safe. Throw away any that stay closed.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: pacific-oysters
-  category: seafood
-  names:
-    - Pacific oysters
-    - Huîtres creuses
-    - Creuses de Marennes
-    - Huîtres de Normandie
-    - Huîtres de Cancale
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Raw shellfish can carry listeria, the toxoplasmosis parasite and other germs. Eat it only well cooked.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, until the shells open wide and the flesh is hot, it is safe. Throw away any that stay closed.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cooked-oysters
-  category: seafood
-  names:
-    - Cooked oysters
-    - Huîtres chaudes
-    - Huîtres gratinées
-    - Huîtres au champagne
-    - Huîtres pochées
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Raw shellfish can carry listeria, the toxoplasmosis parasite and other germs. Eat it only well cooked.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, until the shells open wide and the flesh is hot, it is safe. Throw away any that stay closed.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: oysters-on-the-half-shell
-  category: seafood
-  names:
-    - Oysters on the half shell
-    - Douzaine d'huîtres
-    - Huîtres crues
-    - Huîtres au citron
-    - Assiette d'huîtres
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Raw shellfish can carry listeria, the toxoplasmosis parasite and other germs. Eat it only well cooked.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, until the shells open wide and the flesh is hot, it is safe. Throw away any that stay closed.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
 - id: cockles
   category: seafood
   names:
@@ -11003,12 +10976,19 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw shellfish can carry listeria, the toxoplasmosis parasite and other germs. Eat it only well cooked.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Cockles: raw shellfish can carry listeria, the toxoplasmosis parasite and other germs. Eat it only well cooked."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through, until the shells open wide and the flesh is hot, it is safe. Throw away any that stay closed.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Cockles: cooked right through, until the shells open wide and the flesh is hot, it is safe. Throw away any that stay closed."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: razor-clams
   category: seafood
@@ -11022,31 +11002,19 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw shellfish can carry listeria, the toxoplasmosis parasite and other germs. Eat it only well cooked.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Razor clams: raw shellfish can carry listeria, the toxoplasmosis parasite and other germs. Eat it only well cooked."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through, until the shells open wide and the flesh is hot, it is safe. Throw away any that stay closed.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: queen-scallops
-  category: seafood
-  names:
-    - Queen scallops
-    - Pétoncles
-    - Pétoncles crus
-    - Pétoncles rôtis
-    - Vanneaux
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Raw shellfish can carry listeria, the toxoplasmosis parasite and other germs. Eat it only well cooked.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, until the shells open wide and the flesh is hot, it is safe. Throw away any that stay closed.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Razor clams: cooked right through, until the shells open wide and the flesh is hot, it is safe. Throw away any that stay closed."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: praires
   category: seafood
@@ -11059,12 +11027,19 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw shellfish can carry listeria, the toxoplasmosis parasite and other germs. Eat it only well cooked.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Praires: raw shellfish can carry listeria, the toxoplasmosis parasite and other germs. Eat it only well cooked."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through, until the shells open wide and the flesh is hot, it is safe. Throw away any that stay closed.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Praires: cooked right through, until the shells open wide and the flesh is hot, it is safe. Throw away any that stay closed."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: whelks
   category: seafood
@@ -11077,13 +11052,19 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw shellfish can carry listeria, the toxoplasmosis parasite and other germs. Eat it only well cooked.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Whelks: raw shellfish can carry listeria, the toxoplasmosis parasite and other germs. Eat it only well cooked."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
-      verdict: ok
-      why: Cooked right through, until the shells open wide and the flesh is hot, it is safe. Throw away any that stay closed.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Whelks: sold already cooked and eaten cold. The sources do not name it, but cold ready-cooked shellfish can carry listeria, so heat it until steaming hot, or ask your midwife."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-aliments-eviter
+  reviewed: 2026-11-14
 - id: winkles
   category: seafood
   names:
@@ -11095,13 +11076,19 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw shellfish can carry listeria, the toxoplasmosis parasite and other germs. Eat it only well cooked.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Winkles: raw shellfish can carry listeria, the toxoplasmosis parasite and other germs. Eat it only well cooked."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
-      verdict: ok
-      why: Cooked right through, until the shells open wide and the flesh is hot, it is safe. Throw away any that stay closed.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Winkles: sold already cooked and eaten cold. The sources do not name it, but cold ready-cooked shellfish can carry listeria, so heat it until steaming hot, or ask your midwife."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-aliments-eviter
+  reviewed: 2026-11-14
 - id: sea-urchin
   category: seafood
   names:
@@ -11114,13 +11101,12 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw shellfish can carry listeria, the toxoplasmosis parasite and other germs. Eat it only well cooked.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, until the shells open wide and the flesh is hot, it is safe. Throw away any that stay closed.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Sea urchin: eaten raw, shellfish can carry listeria and other germs. Eat it only well cooked."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: violet
   category: seafood
   names:
@@ -11132,13 +11118,12 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw shellfish can carry listeria, the toxoplasmosis parasite and other germs. Eat it only well cooked.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cooked right through, until the shells open wide and the flesh is hot, it is safe. Throw away any that stay closed.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Violet: eaten raw, shellfish can carry listeria and other germs. Eat it only well cooked."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: abalone
   category: seafood
   names:
@@ -11150,13 +11135,20 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Raw shellfish can carry listeria, the toxoplasmosis parasite and other germs. Eat it only well cooked.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Abalone: raw shellfish can carry listeria, the toxoplasmosis parasite and other germs. Eat it only well cooked."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cooked right through, until the shells open wide and the flesh is hot, it is safe. Throw away any that stay closed.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: Cooked right through and eaten hot, it is fine.
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-14
 - id: mussels-in-cream
   category: seafood
   names:
@@ -11168,22 +11160,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Fine when cooked right through and served hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: mussels-fries
-  category: seafood
-  names:
-    - Mussels fries
-    - Moules-frites
-    - Moules frites de Bretagne
-    - Moules de bouchot frites
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Fine when cooked right through and served hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Mussels in cream: fine when cooked right through and served hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: stuffed-mussels
   category: seafood
@@ -11197,8 +11178,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Fine when cooked right through and served hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Stuffed mussels: fine when cooked right through and served hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: mussels-white-wine
   category: seafood
@@ -11211,25 +11195,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Fine when cooked right through and served hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cooked-scallops
-  category: seafood
-  names:
-    - Cooked scallops
-    - Noix de Saint-Jacques poêlées
-    - Saint-Jacques snackées
-    - Coquilles Saint-Jacques gratinées
-    - Saint-Jacques à la crème
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Fine when cooked right through and served hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Mussels white wine: cooked right through, the seafood itself is safe. But this dish is often made with white wine or a spirit, and some alcohol stays in even after cooking. Ask how it was made, or choose another dish."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: scallop-gratin
   category: seafood
   names:
@@ -11242,12 +11214,19 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Fine when cooked right through and served hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Scallop gratin: fine when cooked right through and served hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
-- id: squid-ink
+- id: cuttlefish
   category: seafood
   names:
+    - Cuttlefish
+    - Seiche à la plancha
+    - Seiche à l'encre
+    - Rouille de seiche
     - Squid ink
     - Encornet
     - Encornets farcis
@@ -11257,22 +11236,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Fine when cooked right through and served hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cuttlefish
-  category: seafood
-  names:
-    - Cuttlefish
-    - Seiche à la plancha
-    - Seiche à l'encre
-    - Rouille de seiche
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Fine when cooked right through and served hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Cuttlefish: fine when cooked right through and served hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: octopus-cooked
   category: seafood
@@ -11285,8 +11253,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Fine when cooked right through and served hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Octopus cooked: fine when cooked right through and served hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: seafood-paella
   category: seafood
@@ -11296,12 +11267,20 @@
     - Paella de fruits de mer
     - Paella valencienne
     - Paëlla
+    - Seafood fideuà
+    - Fideuà
+    - Zarzuela
+    - Zarzuela de mariscos
+    - Cassolette de la mer
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Fine when cooked right through and served hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Seafood paella: fine when cooked right through and served hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: seafood-pasta
   category: seafood
@@ -11315,8 +11294,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Fine when cooked right through and served hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Seafood pasta: fine when cooked right through and served hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: seafood-risotto
   category: seafood
@@ -11329,10 +11311,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Fine when cooked right through and served hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Seafood risotto: cooked right through, the seafood itself is safe. But this dish is often made with white wine or a spirit, and some alcohol stays in even after cooking. Ask how it was made, or choose another dish."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: seafood-bisque
   category: seafood
   names:
@@ -11344,25 +11329,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Fine when cooked right through and served hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: seafood-fideua
-  category: seafood
-  names:
-    - Seafood fideuà
-    - Fideuà
-    - Zarzuela
-    - Zarzuela de mariscos
-    - Cassolette de la mer
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Fine when cooked right through and served hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Seafood bisque: cooked right through, the seafood itself is safe. But this dish is often made with white wine or a spirit, and some alcohol stays in even after cooking. Ask how it was made, or choose another dish."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: fruits-de-mer-gratin
   category: seafood
   names:
@@ -11375,8 +11348,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Fine when cooked right through and served hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Fruits de mer gratin: fine when cooked right through and served hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: seafood-tempura
   category: seafood
@@ -11390,8 +11366,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Fine when cooked right through and served hot.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Seafood tempura: fine when cooked right through and served hot."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: king-prawn
   category: seafood
@@ -11405,12 +11384,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through and eaten hot or freshly cooked, it is fine.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "King prawn: cooked right through and eaten hot or freshly cooked, it is fine."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Raw crustaceans can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "King prawn: raw crustaceans can carry listeria and parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: tiger-prawns
   category: seafood
@@ -11424,12 +11408,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through and eaten hot or freshly cooked, it is fine.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Tiger prawns: cooked right through and eaten hot or freshly cooked, it is fine."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Raw crustaceans can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Tiger prawns: raw crustaceans can carry listeria and parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pink-shrimp
   category: seafood
@@ -11441,14 +11430,19 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Cooked right through and eaten hot or freshly cooked, it is fine.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      verdict: careful
+      why: "Pink shrimp: often sold already cooked and chilled. Cold pre-cooked prawns and shrimp can carry listeria: the NHS says to heat them until steaming hot, and French advice names ready-cooked crustaceans as a risk. Heat them, or ask your midwife."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Raw crustaceans can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Pink shrimp: raw crustaceans can carry listeria and parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: grey-shrimp
   category: seafood
   names:
@@ -11460,106 +11454,19 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Cooked right through and eaten hot or freshly cooked, it is fine.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      verdict: careful
+      why: "Grey shrimp: often sold already cooked and chilled. Cold pre-cooked prawns and shrimp can carry listeria: the NHS says to heat them until steaming hot, and French advice names ready-cooked crustaceans as a risk. Heat them, or ask your midwife."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Raw crustaceans can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: spiny-lobster
-  category: seafood
-  names:
-    - Spiny lobster
-    - Langouste à la parisienne
-    - Langouste grillée
-    - Langouste à l'armoricaine
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through and eaten hot or freshly cooked, it is fine.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: raw
-      verdict: avoid
-      why: Raw crustaceans can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: crab-whole
-  category: seafood
-  names:
-    - Crab whole
-    - Tourteau dormeur
-    - Dormeur
-    - Crabe dormeur
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through and eaten hot or freshly cooked, it is fine.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: raw
-      verdict: avoid
-      why: Raw crustaceans can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: spider-crab
-  category: seafood
-  names:
-    - Spider crab
-    - Étrille
-    - Crabe vert
-    - Crabe étrille
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through and eaten hot or freshly cooked, it is fine.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: raw
-      verdict: avoid
-      why: Raw crustaceans can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: slipper-lobster
-  category: seafood
-  names:
-    - Slipper lobster
-    - Cigale de mer
-    - Cigales de mer
-    - Cigale
-    - Petite cigale
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through and eaten hot or freshly cooked, it is fine.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: raw
-      verdict: avoid
-      why: Raw crustaceans can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: king-crab
-  category: seafood
-  names:
-    - King crab
-    - Crabe royal
-    - Pattes de crabe royal
-    - Crabe des neiges
-    - Crabe de Kamchatka
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through and eaten hot or freshly cooked, it is fine.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: raw
-      verdict: avoid
-      why: Raw crustaceans can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Grey shrimp: raw crustaceans can carry listeria and parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: soft-shell-crab
   category: seafood
   names:
@@ -11571,12 +11478,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through and eaten hot or freshly cooked, it is fine.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Soft shell crab: cooked right through and eaten hot or freshly cooked, it is fine."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Raw crustaceans can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Soft shell crab: raw crustaceans can carry listeria and parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: crab-cakes
   category: seafood
@@ -11589,12 +11501,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through and eaten hot or freshly cooked, it is fine.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Crab cakes: cooked right through and eaten hot or freshly cooked, it is fine."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Raw crustaceans can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Crab cakes: raw crustaceans can carry listeria and parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: prawn-tempura
   category: seafood
@@ -11604,16 +11521,26 @@
     - Crevettes tempura
     - Crevettes panées
     - Crevettes en beignet
+    - Fried prawns
+    - Crevettes frites
+    - Beignets de gambas
+    - Crevettes croustillantes
+    - Crevettes salées poivrées
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through and eaten hot or freshly cooked, it is fine.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Prawn tempura: cooked right through and eaten hot or freshly cooked, it is fine."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Raw crustaceans can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Prawn tempura: raw crustaceans can carry listeria and parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: prawn-skewers
   category: seafood
@@ -11627,12 +11554,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through and eaten hot or freshly cooked, it is fine.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Prawn skewers: cooked right through and eaten hot or freshly cooked, it is fine."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Raw crustaceans can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Prawn skewers: raw crustaceans can carry listeria and parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: prawn-curry
   category: seafood
@@ -11646,12 +11578,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through and eaten hot or freshly cooked, it is fine.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Prawn curry: cooked right through and eaten hot or freshly cooked, it is fine."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Raw crustaceans can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Prawn curry: raw crustaceans can carry listeria and parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: prawn-noodles
   category: seafood
@@ -11665,49 +11602,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cooked right through and eaten hot or freshly cooked, it is fine.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Prawn noodles: cooked right through and eaten hot or freshly cooked, it is fine."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Raw crustaceans can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fried-prawns
-  category: seafood
-  names:
-    - Fried prawns
-    - Crevettes frites
-    - Beignets de gambas
-    - Crevettes croustillantes
-    - Crevettes salées poivrées
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through and eaten hot or freshly cooked, it is fine.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: raw
-      verdict: avoid
-      why: Raw crustaceans can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: shrimp-cocktail
-  category: seafood
-  names:
-    - Shrimp cocktail
-    - Crevettes sauce cocktail
-    - Crevettes mayonnaise
-    - Avocat crevettes
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cooked right through and eaten hot or freshly cooked, it is fine.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: raw
-      verdict: avoid
-      why: Raw crustaceans can carry listeria and parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Prawn noodles: raw crustaceans can carry listeria and parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: cooked-peeled-prawns
   category: seafood
@@ -11717,20 +11622,6 @@
     - Crevettes cuites décortiquées
     - Crevettes roses décortiquées
     - Queues de crevettes cuites
-  local: true
-  answers:
-    - state: reheated
-      verdict: careful
-      why: Peeled, cooked shellfish sold cold can carry listeria. Only eat it heated until steaming hot, never straight from the pack.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: Raw crustaceans can carry germs. Cook them right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: cooked-prawns-pack
-  category: seafood
-  names:
     - Cooked prawns pack
     - Crevettes cuites en sachet
     - Crevettes surgelées cuites
@@ -11740,12 +11631,17 @@
   answers:
     - state: reheated
       verdict: careful
-      why: Peeled, cooked shellfish sold cold can carry listeria. Only eat it heated until steaming hot, never straight from the pack.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Cooked peeled prawns: peeled, cooked shellfish sold cold can carry listeria. Only eat it heated until steaming hot, never straight from the pack."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Raw crustaceans can carry germs. Cook them right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Cooked peeled prawns: raw crustaceans can carry germs. Cook them right through."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: crab-meat
   category: seafood
@@ -11758,15 +11654,20 @@
   answers:
     - state: reheated
       verdict: careful
-      why: Peeled, cooked shellfish sold cold can carry listeria. Only eat it heated until steaming hot, never straight from the pack.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Crab meat: peeled, cooked shellfish sold cold can carry listeria. Only eat it heated until steaming hot, never straight from the pack."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Raw crustaceans can carry germs. Cook them right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Crab meat: raw crustaceans can carry germs. Cook them right through."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: prawn-sandwich
-  category: seafood
+  category: ready_meal
   names:
     - Prawn sandwich
     - Sandwich crevettes
@@ -11775,15 +11676,15 @@
     - Sandwich au crabe
   local: true
   answers:
-    - state: reheated
+    - state: not_applicable
       verdict: careful
-      why: Peeled, cooked shellfish sold cold can carry listeria. Only eat it heated until steaming hot, never straight from the pack.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: Raw crustaceans can carry germs. Cook them right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
+      why: Cold ready-made sandwiches and snacks can carry listeria from the ham, mayonnaise, cheese or smoked fish, and raw salad adds a soil risk. Choose a hot or toasted one, or one with cooked chicken, hard cheese and cooked egg.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-14
 - id: prawn-spring-roll
   category: seafood
   names:
@@ -11796,12 +11697,17 @@
   answers:
     - state: reheated
       verdict: careful
-      why: Peeled, cooked shellfish sold cold can carry listeria. Only eat it heated until steaming hot, never straight from the pack.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Prawn spring roll: peeled, cooked shellfish sold cold can carry listeria. Only eat it heated until steaming hot, never straight from the pack."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Raw crustaceans can carry germs. Cook them right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Prawn spring roll: raw crustaceans can carry germs. Cook them right through."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: langoustine-tails
   category: seafood
@@ -11815,12 +11721,17 @@
   answers:
     - state: reheated
       verdict: careful
-      why: Peeled, cooked shellfish sold cold can carry listeria. Only eat it heated until steaming hot, never straight from the pack.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Langoustine tails: peeled, cooked shellfish sold cold can carry listeria. Only eat it heated until steaming hot, never straight from the pack."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Raw crustaceans can carry germs. Cook them right through.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Langoustine tails: raw crustaceans can carry germs. Cook them right through."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: seafood-platter
   category: seafood
@@ -11833,8 +11744,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Chilled seafood salads and cocktails are eaten cold and can carry listeria. Avoid them.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Seafood platter: chilled seafood salads and cocktails are eaten cold and can carry listeria. Avoid them."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: seafood-salad
   category: seafood
@@ -11844,27 +11758,34 @@
     - Salade de la mer
     - Salade de poulpe
     - Salade de crabe
-  local: true
-  answers:
-    - state: not_applicable
-      verdict: avoid
-      why: Chilled seafood salads and cocktails are eaten cold and can carry listeria. Avoid them.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: seafood-cocktail
-  category: seafood
-  names:
     - Seafood cocktail
     - Cocktail de fruits de mer
     - Verrine de crabe
     - Verrine de crevettes
     - Verrine de fruits de mer
+    - Cold prawn salad
+    - Salade de crevettes froides
+    - Salade de crevettes
+    - Crevettes salade avocat
+    - Salade de crevettes mangue
+    - Shrimp cocktail
+    - Crevettes sauce cocktail
+    - Crevettes mayonnaise
+    - Avocat crevettes
+    - Mixed seafood antipasti
+    - Antipasti de fruits de mer
+    - Fruits de mer marinés
+    - Fruits de mer à l'huile
+    - Fruits de mer en bocal
   local: true
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Chilled seafood salads and cocktails are eaten cold and can carry listeria. Avoid them.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Seafood salad: chilled seafood salads and cocktails are eaten cold and can carry listeria. Avoid them."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cold-octopus-salad
   category: seafood
@@ -11878,8 +11799,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Chilled seafood salads and cocktails are eaten cold and can carry listeria. Avoid them.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Cold octopus salad: chilled seafood salads and cocktails are eaten cold and can carry listeria. Avoid them."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: mussels-salad
   category: seafood
@@ -11893,23 +11817,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Chilled seafood salads and cocktails are eaten cold and can carry listeria. Avoid them.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cold-prawn-salad
-  category: seafood
-  names:
-    - Cold prawn salad
-    - Salade de crevettes froides
-    - Salade de crevettes
-    - Crevettes salade avocat
-    - Salade de crevettes mangue
-  local: true
-  answers:
-    - state: not_applicable
-      verdict: avoid
-      why: Chilled seafood salads and cocktails are eaten cold and can carry listeria. Avoid them.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Mussels salad: chilled seafood salads and cocktails are eaten cold and can carry listeria. Avoid them."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: seafood-terrine
   category: seafood
@@ -11922,23 +11834,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Chilled seafood salads and cocktails are eaten cold and can carry listeria. Avoid them.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: mixed-seafood-antipasti
-  category: seafood
-  names:
-    - Mixed seafood antipasti
-    - Antipasti de fruits de mer
-    - Fruits de mer marinés
-    - Fruits de mer à l'huile
-    - Fruits de mer en bocal
-  local: true
-  answers:
-    - state: not_applicable
-      verdict: avoid
-      why: Chilled seafood salads and cocktails are eaten cold and can carry listeria. Avoid them.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Seafood terrine: chilled seafood salads and cocktails are eaten cold and can carry listeria. Avoid them."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: surimi-salad
   category: seafood
@@ -11951,23 +11851,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Chilled seafood salads and cocktails are eaten cold and can carry listeria. Avoid them.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: seafood-sushi
-  category: seafood
-  names:
-    - Seafood sushi
-    - Sushi aux fruits de mer
-    - Sushi crevette crue
-    - Sushi poulpe cru
-    - Sushi Saint-Jacques cru
-  local: true
-  answers:
-    - state: not_applicable
-      verdict: avoid
-      why: Chilled seafood salads and cocktails are eaten cold and can carry listeria. Avoid them.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Surimi salad: chilled seafood salads and cocktails are eaten cold and can carry listeria. Avoid them."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: omelette-plain
   category: egg

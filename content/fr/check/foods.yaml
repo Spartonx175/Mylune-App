@@ -1003,20 +1003,26 @@
     - Ceviche
     - Tartare de poisson
     - Japanese food
+    - Sushi aux fruits de mer
+    - Sushi crevette crue
+    - Sushi poulpe cru
+    - Sushi Saint-Jacques cru
+    - Seafood sushi
     - Sushi
-  tips: [avoid]
+  tips:
+    - avoid
   local: true
   answers:
     - state: raw
       verdict: avoid
-      why: "Les sushis au poisson cru et les sashimis peuvent transmettre la listéria et des parasites. La congélation ne supprime pas la listéria."
+      why: Les sushis au poisson cru et les sashimis peuvent transmettre la listéria et des parasites. La congélation ne supprime pas la listéria.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: "Les sushis à base de poisson ou de crevettes cuits, comme un maki au saumon cuit ou un maki à l'avocat, sont sans danger si le reste est frais et préparé le jour même."
+      why: Les sushis à base de poisson ou de crevettes cuits, comme un maki au saumon cuit ou un maki à l'avocat, sont sans danger si le reste est frais et préparé le jour même.
       sources:
         - nhs-foods-to-avoid
         - mangerbouger-aliments-eviter
@@ -1455,13 +1461,38 @@
     - Fines de claire
     - Plateau de fruits de mer
     - Oyster
+    - Huîtres plates
+    - Belon
+    - Huîtres de Belon
+    - Plates de Bretagne
+    - Belon oysters
+    - Claires
+    - Spéciales de claire
+    - Fines de claire n°3
+    - Fine de claire
+    - Huîtres creuses
+    - Creuses de Marennes
+    - Huîtres de Normandie
+    - Huîtres de Cancale
+    - Pacific oysters
+    - Huîtres chaudes
+    - Huîtres gratinées
+    - Huîtres au champagne
+    - Huîtres pochées
+    - Cooked oysters
+    - Douzaine d'huîtres
+    - Huîtres crues
+    - Huîtres au citron
+    - Assiette d'huîtres
+    - Oysters on the half shell
     - Oysters
-  tips: [avoid]
+  tips:
+    - avoid
   local: true
   answers:
     - state: raw
       verdict: avoid
-      why: "Les huîtres crues peuvent transmettre la listéria, le parasite de la toxoplasmose et d'autres microbes. Non ferme, même à Noël."
+      why: Les huîtres crues peuvent transmettre la listéria, le parasite de la toxoplasmose et d'autres microbes. Non ferme, même à Noël.
       sources:
         - ameli-aliments-eviter
         - ameli-toxo-prevention
@@ -1469,7 +1500,7 @@
         - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: "Les huîtres cuites à cœur (gratinées, à la vapeur, dans un plat chaud) sont acceptables."
+      why: Les huîtres cuites à cœur (gratinées, à la vapeur, dans un plat chaud) sont acceptables.
       sources:
         - ameli-toxo-prevention
         - nhs-foods-to-avoid
@@ -1482,19 +1513,23 @@
     - Moules frites
     - Moules de bouchot
     - Moules à la crème
+    - Moules-frites
+    - Moules frites de Bretagne
+    - Moules de bouchot frites
+    - Mussels fries
     - Mussels
   local: true
   answers:
     - state: raw
       verdict: avoid
-      why: "Les moules crues (comme tout coquillage cru) peuvent transmettre la listéria et le parasite de la toxoplasmose."
+      why: Les moules crues (comme tout coquillage cru) peuvent transmettre la listéria et le parasite de la toxoplasmose.
       sources:
         - ameli-aliments-eviter
         - ameli-toxo-prevention
         - mangerbouger-aliments-eviter
     - state: cooked
       verdict: ok
-      why: "Les moules cuites à la vapeur jusqu'à ce que les coquilles s'ouvrent bien et qu'elles soient très chaudes sont acceptables. Jetez celles qui restent fermées."
+      why: Les moules cuites à la vapeur jusqu'à ce que les coquilles s'ouvrent bien et qu'elles soient très chaudes sont acceptables. Jetez celles qui restent fermées.
       sources:
         - mangerbouger-aliments-eviter
         - nhs-foods-to-avoid
@@ -1547,6 +1582,28 @@
     - Chair de crabe
     - Lobster
     - Crayfish
+    - Tourteau dormeur
+    - Dormeur
+    - Crabe dormeur
+    - Crab whole
+    - Étrille
+    - Crabe vert
+    - Crabe étrille
+    - Spider crab
+    - Crabe royal
+    - Pattes de crabe royal
+    - Crabe des neiges
+    - Crabe de Kamchatka
+    - King crab
+    - Langouste à la parisienne
+    - Langouste grillée
+    - Langouste à l'armoricaine
+    - Spiny lobster
+    - Cigale de mer
+    - Cigales de mer
+    - Cigale
+    - Petite cigale
+    - Slipper lobster
     - Crab
   local: true
   answers:
@@ -1559,7 +1616,7 @@
         - ameli-aliments-eviter
     - state: raw
       verdict: avoid
-      why: "Les coquillages et crustacés crus peuvent transmettre la listéria et des parasites."
+      why: Les coquillages et crustacés crus peuvent transmettre la listéria et des parasites.
       sources:
         - ameli-aliments-eviter
         - mangerbouger-aliments-eviter
@@ -1582,18 +1639,28 @@
     - Escargots
     - Squid
     - Clams
+    - Pétoncles
+    - Pétoncles crus
+    - Pétoncles rôtis
+    - Vanneaux
+    - Queen scallops
+    - Noix de Saint-Jacques poêlées
+    - Saint-Jacques snackées
+    - Coquilles Saint-Jacques gratinées
+    - Saint-Jacques à la crème
+    - Cooked scallops
     - Scallops
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: "Les noix de Saint-Jacques, calamars, palourdes et bulots bien cuits et mangés chauds sont acceptables."
+      why: Les noix de Saint-Jacques, calamars, palourdes et bulots bien cuits et mangés chauds sont acceptables.
       sources:
         - nhs-foods-to-avoid
         - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: "Les noix de Saint-Jacques crues ou les coquillages crus (carpaccio, tartare) peuvent transmettre la listéria et le parasite de la toxoplasmose."
+      why: Les noix de Saint-Jacques crues ou les coquillages crus (carpaccio, tartare) peuvent transmettre la listéria et le parasite de la toxoplasmose.
       sources:
         - ameli-aliments-eviter
         - ameli-toxo-prevention
@@ -10631,7 +10698,7 @@
   answers:
     - state: canned
       verdict: ok
-      why: Le poisson en conserve est sans danger. Gardez une boîte ouverte au frigo et consommez-la vite.
+      why: "Moules en boîte : le poisson en conserve est sans danger. Gardez une boîte ouverte au frigo et consommez-la vite."
       sources:
         - ameli-aliments-eviter
         - cdc-food-pregnant-women
@@ -10648,7 +10715,7 @@
   answers:
     - state: canned
       verdict: ok
-      why: Le poisson en conserve est sans danger. Gardez une boîte ouverte au frigo et consommez-la vite.
+      why: "Crabe en boîte : le poisson en conserve est sans danger. Gardez une boîte ouverte au frigo et consommez-la vite."
       sources:
         - ameli-aliments-eviter
         - cdc-food-pregnant-women
@@ -10907,100 +10974,6 @@
         - ameli-aliments-eviter
         - nhs-healthy-diet
   reviewed: 2026-11-13
-- id: belon-oysters
-  category: seafood
-  names:
-    - Huîtres plates
-    - Belon
-    - Huîtres de Belon
-    - Plates de Bretagne
-    - Belon oysters
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Les coquillages crus peuvent contenir la listeria, le parasite de la toxoplasmose et d'autres germes. Ne les mangez que bien cuits.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuits à cœur, jusqu'à ce que les coquilles s'ouvrent bien et que la chair soit chaude, ils sont sans danger. Jetez ceux qui restent fermés.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: fine-de-claire
-  category: seafood
-  names:
-    - Claires
-    - Spéciales de claire
-    - Fines de claire n°3
-    - Fine de claire
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Les coquillages crus peuvent contenir la listeria, le parasite de la toxoplasmose et d'autres germes. Ne les mangez que bien cuits.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuits à cœur, jusqu'à ce que les coquilles s'ouvrent bien et que la chair soit chaude, ils sont sans danger. Jetez ceux qui restent fermés.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: pacific-oysters
-  category: seafood
-  names:
-    - Huîtres creuses
-    - Creuses de Marennes
-    - Huîtres de Normandie
-    - Huîtres de Cancale
-    - Pacific oysters
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Les coquillages crus peuvent contenir la listeria, le parasite de la toxoplasmose et d'autres germes. Ne les mangez que bien cuits.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuits à cœur, jusqu'à ce que les coquilles s'ouvrent bien et que la chair soit chaude, ils sont sans danger. Jetez ceux qui restent fermés.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cooked-oysters
-  category: seafood
-  names:
-    - Huîtres chaudes
-    - Huîtres gratinées
-    - Huîtres au champagne
-    - Huîtres pochées
-    - Cooked oysters
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Les coquillages crus peuvent contenir la listeria, le parasite de la toxoplasmose et d'autres germes. Ne les mangez que bien cuits.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuits à cœur, jusqu'à ce que les coquilles s'ouvrent bien et que la chair soit chaude, ils sont sans danger. Jetez ceux qui restent fermés.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: oysters-on-the-half-shell
-  category: seafood
-  names:
-    - Douzaine d'huîtres
-    - Huîtres crues
-    - Huîtres au citron
-    - Assiette d'huîtres
-    - Oysters on the half shell
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Les coquillages crus peuvent contenir la listeria, le parasite de la toxoplasmose et d'autres germes. Ne les mangez que bien cuits.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuits à cœur, jusqu'à ce que les coquilles s'ouvrent bien et que la chair soit chaude, ils sont sans danger. Jetez ceux qui restent fermés.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
 - id: cockles
   category: seafood
   names:
@@ -11012,12 +10985,19 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Les coquillages crus peuvent contenir la listeria, le parasite de la toxoplasmose et d'autres germes. Ne les mangez que bien cuits.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Coques persillées : les coquillages crus peuvent contenir la listeria, le parasite de la toxoplasmose et d'autres germes. Ne les mangez que bien cuits."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuits à cœur, jusqu'à ce que les coquilles s'ouvrent bien et que la chair soit chaude, ils sont sans danger. Jetez ceux qui restent fermés.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Coques persillées : cuits à cœur, jusqu'à ce que les coquilles s'ouvrent bien et que la chair soit chaude, ils sont sans danger. Jetez ceux qui restent fermés."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: razor-clams
   category: seafood
@@ -11031,31 +11011,19 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Les coquillages crus peuvent contenir la listeria, le parasite de la toxoplasmose et d'autres germes. Ne les mangez que bien cuits.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Couteaux : les coquillages crus peuvent contenir la listeria, le parasite de la toxoplasmose et d'autres germes. Ne les mangez que bien cuits."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuits à cœur, jusqu'à ce que les coquilles s'ouvrent bien et que la chair soit chaude, ils sont sans danger. Jetez ceux qui restent fermés.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: queen-scallops
-  category: seafood
-  names:
-    - Pétoncles
-    - Pétoncles crus
-    - Pétoncles rôtis
-    - Vanneaux
-    - Queen scallops
-  local: true
-  answers:
-    - state: raw
-      verdict: avoid
-      why: Les coquillages crus peuvent contenir la listeria, le parasite de la toxoplasmose et d'autres germes. Ne les mangez que bien cuits.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuits à cœur, jusqu'à ce que les coquilles s'ouvrent bien et que la chair soit chaude, ils sont sans danger. Jetez ceux qui restent fermés.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Couteaux : cuits à cœur, jusqu'à ce que les coquilles s'ouvrent bien et que la chair soit chaude, ils sont sans danger. Jetez ceux qui restent fermés."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: praires
   category: seafood
@@ -11068,12 +11036,19 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Les coquillages crus peuvent contenir la listeria, le parasite de la toxoplasmose et d'autres germes. Ne les mangez que bien cuits.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Praires farcies : les coquillages crus peuvent contenir la listeria, le parasite de la toxoplasmose et d'autres germes. Ne les mangez que bien cuits."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuits à cœur, jusqu'à ce que les coquilles s'ouvrent bien et que la chair soit chaude, ils sont sans danger. Jetez ceux qui restent fermés.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
+      why: "Praires farcies : cuits à cœur, jusqu'à ce que les coquilles s'ouvrent bien et que la chair soit chaude, ils sont sans danger. Jetez ceux qui restent fermés."
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: whelks
   category: seafood
@@ -11086,13 +11061,19 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Les coquillages crus peuvent contenir la listeria, le parasite de la toxoplasmose et d'autres germes. Ne les mangez que bien cuits.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Bulots mayonnaise : les coquillages crus peuvent contenir la listeria, le parasite de la toxoplasmose et d'autres germes. Ne les mangez que bien cuits."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
-      verdict: ok
-      why: Cuits à cœur, jusqu'à ce que les coquilles s'ouvrent bien et que la chair soit chaude, ils sont sans danger. Jetez ceux qui restent fermés.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Bulots mayonnaise : vendu déjà cuit et mangé froid. Les sources ne le citent pas, mais les coquillages cuits mangés froids peuvent porter la listeria : réchauffez-le jusqu'à ce qu'il fume, ou demandez à votre sage-femme."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-aliments-eviter
+  reviewed: 2026-11-14
 - id: winkles
   category: seafood
   names:
@@ -11104,13 +11085,19 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Les coquillages crus peuvent contenir la listeria, le parasite de la toxoplasmose et d'autres germes. Ne les mangez que bien cuits.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Bigorneaux cuits : les coquillages crus peuvent contenir la listeria, le parasite de la toxoplasmose et d'autres germes. Ne les mangez que bien cuits."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
-      verdict: ok
-      why: Cuits à cœur, jusqu'à ce que les coquilles s'ouvrent bien et que la chair soit chaude, ils sont sans danger. Jetez ceux qui restent fermés.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Bigorneaux cuits : vendu déjà cuit et mangé froid. Les sources ne le citent pas, mais les coquillages cuits mangés froids peuvent porter la listeria : réchauffez-le jusqu'à ce qu'il fume, ou demandez à votre sage-femme."
+      sources:
+        - nhs-foods-to-avoid
+        - ameli-aliments-eviter
+  reviewed: 2026-11-14
 - id: sea-urchin
   category: seafood
   names:
@@ -11123,13 +11110,12 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Les coquillages crus peuvent contenir la listeria, le parasite de la toxoplasmose et d'autres germes. Ne les mangez que bien cuits.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuits à cœur, jusqu'à ce que les coquilles s'ouvrent bien et que la chair soit chaude, ils sont sans danger. Jetez ceux qui restent fermés.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Oursin : mangé cru, ce coquillage peut porter la listeria et d'autres germes. Ne le mangez que bien cuit."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: violet
   category: seafood
   names:
@@ -11141,13 +11127,12 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Les coquillages crus peuvent contenir la listeria, le parasite de la toxoplasmose et d'autres germes. Ne les mangez que bien cuits.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-    - state: cooked
-      verdict: ok
-      why: Cuits à cœur, jusqu'à ce que les coquilles s'ouvrent bien et que la chair soit chaude, ils sont sans danger. Jetez ceux qui restent fermés.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: "Figue de mer : mangé cru, ce coquillage peut porter la listeria et d'autres germes. Ne le mangez que bien cuit."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: abalone
   category: seafood
   names:
@@ -11159,13 +11144,20 @@
   answers:
     - state: raw
       verdict: avoid
-      why: Les coquillages crus peuvent contenir la listeria, le parasite de la toxoplasmose et d'autres germes. Ne les mangez que bien cuits.
-      sources: [ ameli-aliments-eviter, ameli-toxo-prevention, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Ormeau : les coquillages crus peuvent contenir la listeria, le parasite de la toxoplasmose et d'autres germes. Ne les mangez que bien cuits."
+      sources:
+        - ameli-aliments-eviter
+        - ameli-toxo-prevention
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
     - state: cooked
       verdict: ok
-      why: Cuits à cœur, jusqu'à ce que les coquilles s'ouvrent bien et que la chair soit chaude, ils sont sans danger. Jetez ceux qui restent fermés.
-      sources: [ ameli-toxo-prevention, nhs-foods-to-avoid, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      why: Bien cuit et mangé chaud, il ne pose pas de problème.
+      sources:
+        - ameli-toxo-prevention
+        - nhs-foods-to-avoid
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-14
 - id: mussels-in-cream
   category: seafood
   names:
@@ -11177,22 +11169,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'ils sont cuits à cœur et servis chauds.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: mussels-fries
-  category: seafood
-  names:
-    - Moules-frites
-    - Moules frites de Bretagne
-    - Moules de bouchot frites
-    - Mussels fries
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger s'ils sont cuits à cœur et servis chauds.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Moules à la normande : sans danger s'ils sont cuits à cœur et servis chauds."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: stuffed-mussels
   category: seafood
@@ -11206,8 +11187,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'ils sont cuits à cœur et servis chauds.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Moules farcies : sans danger s'ils sont cuits à cœur et servis chauds."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: mussels-white-wine
   category: seafood
@@ -11220,25 +11204,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Sans danger s'ils sont cuits à cœur et servis chauds.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cooked-scallops
-  category: seafood
-  names:
-    - Noix de Saint-Jacques poêlées
-    - Saint-Jacques snackées
-    - Coquilles Saint-Jacques gratinées
-    - Saint-Jacques à la crème
-    - Cooked scallops
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger s'ils sont cuits à cœur et servis chauds.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Moules marinières au vin blanc : les fruits de mer bien cuits sont sans danger. Mais ce plat se prépare souvent au vin blanc ou à un alcool fort, et un peu d'alcool reste même après la cuisson. Demandez comment il est préparé, ou choisissez un autre plat."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: scallop-gratin
   category: seafood
   names:
@@ -11251,23 +11223,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'ils sont cuits à cœur et servis chauds.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: squid-ink
-  category: seafood
-  names:
-    - Encornet
-    - Encornets farcis
-    - Chipirons
-    - Chipirons à la plancha
-    - Squid ink
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger s'ils sont cuits à cœur et servis chauds.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Coquille Saint-Jacques : sans danger s'ils sont cuits à cœur et servis chauds."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cuttlefish
   category: seafood
@@ -11275,13 +11235,21 @@
     - Seiche à la plancha
     - Seiche à l'encre
     - Rouille de seiche
+    - Encornet
+    - Encornets farcis
+    - Chipirons
+    - Chipirons à la plancha
+    - Squid ink
     - Cuttlefish
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'ils sont cuits à cœur et servis chauds.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Seiche à la plancha : sans danger s'ils sont cuits à cœur et servis chauds."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: octopus-cooked
   category: seafood
@@ -11294,8 +11262,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'ils sont cuits à cœur et servis chauds.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Pieuvre : sans danger s'ils sont cuits à cœur et servis chauds."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: seafood-paella
   category: seafood
@@ -11304,13 +11275,21 @@
     - Paella de fruits de mer
     - Paella valencienne
     - Paëlla
+    - Fideuà
+    - Zarzuela
+    - Zarzuela de mariscos
+    - Cassolette de la mer
+    - Seafood fideuà
     - Seafood paella
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'ils sont cuits à cœur et servis chauds.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Paella : sans danger s'ils sont cuits à cœur et servis chauds."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: seafood-pasta
   category: seafood
@@ -11324,8 +11303,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'ils sont cuits à cœur et servis chauds.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Pâtes aux fruits de mer : sans danger s'ils sont cuits à cœur et servis chauds."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: seafood-risotto
   category: seafood
@@ -11338,10 +11320,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Sans danger s'ils sont cuits à cœur et servis chauds.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Risotto aux fruits de mer : les fruits de mer bien cuits sont sans danger. Mais ce plat se prépare souvent au vin blanc ou à un alcool fort, et un peu d'alcool reste même après la cuisson. Demandez comment il est préparé, ou choisissez un autre plat."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: seafood-bisque
   category: seafood
   names:
@@ -11353,25 +11338,13 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Sans danger s'ils sont cuits à cœur et servis chauds.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: seafood-fideua
-  category: seafood
-  names:
-    - Fideuà
-    - Zarzuela
-    - Zarzuela de mariscos
-    - Cassolette de la mer
-    - Seafood fideuà
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Sans danger s'ils sont cuits à cœur et servis chauds.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
+      verdict: careful
+      why: "Bisque de homard : les fruits de mer bien cuits sont sans danger. Mais ce plat se prépare souvent au vin blanc ou à un alcool fort, et un peu d'alcool reste même après la cuisson. Demandez comment il est préparé, ou choisissez un autre plat."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-zero-alcool
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: fruits-de-mer-gratin
   category: seafood
   names:
@@ -11384,8 +11357,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'ils sont cuits à cœur et servis chauds.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Gratin de fruits de mer : sans danger s'ils sont cuits à cœur et servis chauds."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: seafood-tempura
   category: seafood
@@ -11399,8 +11375,11 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Sans danger s'ils sont cuits à cœur et servis chauds.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Tempura de crevettes : sans danger s'ils sont cuits à cœur et servis chauds."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: king-prawn
   category: seafood
@@ -11414,12 +11393,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Crevettes géantes : cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Les crustacés crus peuvent contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Crevettes géantes : les crustacés crus peuvent contenir la listeria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: tiger-prawns
   category: seafood
@@ -11433,12 +11417,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Crevettes tigrées : cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Les crustacés crus peuvent contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Crevettes tigrées : les crustacés crus peuvent contenir la listeria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: pink-shrimp
   category: seafood
@@ -11450,14 +11439,19 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      verdict: careful
+      why: "Crevettes roses : souvent vendues déjà cuites et réfrigérées. Les crevettes cuites mangées froides peuvent porter la listeria : le NHS conseille de les réchauffer jusqu'à ce qu'elles fument, et les conseils français citent les crustacés vendus cuits comme un risque. Réchauffez-les, ou demandez à votre sage-femme."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Les crustacés crus peuvent contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Crevettes roses : les crustacés crus peuvent contenir la listeria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: grey-shrimp
   category: seafood
   names:
@@ -11469,106 +11463,19 @@
   local: true
   answers:
     - state: cooked
-      verdict: ok
-      why: Cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      verdict: careful
+      why: "Crevettes grises : souvent vendues déjà cuites et réfrigérées. Les crevettes cuites mangées froides peuvent porter la listeria : le NHS conseille de les réchauffer jusqu'à ce qu'elles fument, et les conseils français citent les crustacés vendus cuits comme un risque. Réchauffez-les, ou demandez à votre sage-femme."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Les crustacés crus peuvent contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: spiny-lobster
-  category: seafood
-  names:
-    - Langouste à la parisienne
-    - Langouste grillée
-    - Langouste à l'armoricaine
-    - Spiny lobster
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: raw
-      verdict: avoid
-      why: Les crustacés crus peuvent contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: crab-whole
-  category: seafood
-  names:
-    - Tourteau dormeur
-    - Dormeur
-    - Crabe dormeur
-    - Crab whole
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: raw
-      verdict: avoid
-      why: Les crustacés crus peuvent contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: spider-crab
-  category: seafood
-  names:
-    - Étrille
-    - Crabe vert
-    - Crabe étrille
-    - Spider crab
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: raw
-      verdict: avoid
-      why: Les crustacés crus peuvent contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: slipper-lobster
-  category: seafood
-  names:
-    - Cigale de mer
-    - Cigales de mer
-    - Cigale
-    - Petite cigale
-    - Slipper lobster
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: raw
-      verdict: avoid
-      why: Les crustacés crus peuvent contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: king-crab
-  category: seafood
-  names:
-    - Crabe royal
-    - Pattes de crabe royal
-    - Crabe des neiges
-    - Crabe de Kamchatka
-    - King crab
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: raw
-      verdict: avoid
-      why: Les crustacés crus peuvent contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
+      why: "Crevettes grises : les crustacés crus peuvent contenir la listeria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+  reviewed: 2026-11-14
 - id: soft-shell-crab
   category: seafood
   names:
@@ -11580,12 +11487,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Crabe mou : cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Les crustacés crus peuvent contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Crabe mou : les crustacés crus peuvent contenir la listeria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: crab-cakes
   category: seafood
@@ -11598,12 +11510,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Beignets de crabe : cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Les crustacés crus peuvent contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Beignets de crabe : les crustacés crus peuvent contenir la listeria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: prawn-tempura
   category: seafood
@@ -11612,17 +11529,27 @@
     - Crevettes tempura
     - Crevettes panées
     - Crevettes en beignet
+    - Crevettes frites
+    - Beignets de gambas
+    - Crevettes croustillantes
+    - Crevettes salées poivrées
+    - Fried prawns
     - Prawn tempura
   local: true
   answers:
     - state: cooked
       verdict: ok
-      why: Cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Beignets de crevettes tempura : cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Les crustacés crus peuvent contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Beignets de crevettes tempura : les crustacés crus peuvent contenir la listeria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: prawn-skewers
   category: seafood
@@ -11636,12 +11563,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Brochettes de crevettes : cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Les crustacés crus peuvent contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Brochettes de crevettes : les crustacés crus peuvent contenir la listeria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: prawn-curry
   category: seafood
@@ -11655,12 +11587,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Curry de crevettes : cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Les crustacés crus peuvent contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Curry de crevettes : les crustacés crus peuvent contenir la listeria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: prawn-noodles
   category: seafood
@@ -11674,49 +11611,17 @@
   answers:
     - state: cooked
       verdict: ok
-      why: Cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
+      why: "Nouilles aux crevettes : cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
     - state: raw
       verdict: avoid
-      why: Les crustacés crus peuvent contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: fried-prawns
-  category: seafood
-  names:
-    - Crevettes frites
-    - Beignets de gambas
-    - Crevettes croustillantes
-    - Crevettes salées poivrées
-    - Fried prawns
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: raw
-      verdict: avoid
-      why: Les crustacés crus peuvent contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
-  reviewed: 2026-11-13
-- id: shrimp-cocktail
-  category: seafood
-  names:
-    - Crevettes sauce cocktail
-    - Crevettes mayonnaise
-    - Avocat crevettes
-    - Shrimp cocktail
-  local: true
-  answers:
-    - state: cooked
-      verdict: ok
-      why: Cuits à cœur et mangés chauds ou fraîchement cuits, ils sont sans danger.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter ]
-    - state: raw
-      verdict: avoid
-      why: Les crustacés crus peuvent contenir la listeria et des parasites.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter, nhs-foods-to-avoid ]
+      why: "Nouilles aux crevettes : les crustacés crus peuvent contenir la listeria et des parasites."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
   reviewed: 2026-11-13
 - id: cooked-peeled-prawns
   category: seafood
@@ -11725,36 +11630,27 @@
     - Crevettes cuites décortiquées
     - Crevettes roses décortiquées
     - Queues de crevettes cuites
-    - Cooked peeled prawns
-  local: true
-  answers:
-    - state: reheated
-      verdict: careful
-      why: Les crustacés décortiqués vendus déjà cuits peuvent contenir la listeria. Ne les mangez que chauffés jusqu'à être fumants, jamais sortis tels quels de l'emballage.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: Les crustacés crus peuvent contenir des germes. Faites-les cuire à cœur.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
-- id: cooked-prawns-pack
-  category: seafood
-  names:
     - Crevettes cuites en sachet
     - Crevettes surgelées cuites
     - Crevettes précuites
     - Crevettes cuites surgelées
     - Cooked prawns pack
+    - Cooked peeled prawns
   local: true
   answers:
     - state: reheated
       verdict: careful
-      why: Les crustacés décortiqués vendus déjà cuits peuvent contenir la listeria. Ne les mangez que chauffés jusqu'à être fumants, jamais sortis tels quels de l'emballage.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Crevettes décortiquées cuites : les crustacés décortiqués vendus déjà cuits peuvent contenir la listeria. Ne les mangez que chauffés jusqu'à être fumants, jamais sortis tels quels de l'emballage."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Les crustacés crus peuvent contenir des germes. Faites-les cuire à cœur.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Crevettes décortiquées cuites : les crustacés crus peuvent contenir des germes. Faites-les cuire à cœur."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: crab-meat
   category: seafood
@@ -11767,15 +11663,20 @@
   answers:
     - state: reheated
       verdict: careful
-      why: Les crustacés décortiqués vendus déjà cuits peuvent contenir la listeria. Ne les mangez que chauffés jusqu'à être fumants, jamais sortis tels quels de l'emballage.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Miettes de crabe : les crustacés décortiqués vendus déjà cuits peuvent contenir la listeria. Ne les mangez que chauffés jusqu'à être fumants, jamais sortis tels quels de l'emballage."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Les crustacés crus peuvent contenir des germes. Faites-les cuire à cœur.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Miettes de crabe : les crustacés crus peuvent contenir des germes. Faites-les cuire à cœur."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: prawn-sandwich
-  category: seafood
+  category: ready_meal
   names:
     - Sandwich crevettes
     - Sandwich crevettes mayonnaise
@@ -11784,15 +11685,15 @@
     - Prawn sandwich
   local: true
   answers:
-    - state: reheated
+    - state: not_applicable
       verdict: careful
-      why: Les crustacés décortiqués vendus déjà cuits peuvent contenir la listeria. Ne les mangez que chauffés jusqu'à être fumants, jamais sortis tels quels de l'emballage.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
-    - state: raw
-      verdict: avoid
-      why: Les crustacés crus peuvent contenir des germes. Faites-les cuire à cœur.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
-  reviewed: 2026-11-13
+      why: Les sandwichs et en-cas froids prêts à manger peuvent contenir la listeria (jambon, mayonnaise, fromage, poisson fumé), et la salade crue ajoute un risque lié à la terre. Choisissez-en un chaud ou toasté, ou avec du poulet cuit, du fromage à pâte dure et de l'œuf dur.
+      sources:
+        - mangerbouger-aliments-eviter
+        - nhs-foods-to-avoid
+        - ameli-toxo-prevention
+        - cdc-food-pregnant-women
+  reviewed: 2026-11-14
 - id: prawn-spring-roll
   category: seafood
   names:
@@ -11805,12 +11706,17 @@
   answers:
     - state: reheated
       verdict: careful
-      why: Les crustacés décortiqués vendus déjà cuits peuvent contenir la listeria. Ne les mangez que chauffés jusqu'à être fumants, jamais sortis tels quels de l'emballage.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Rouleaux de printemps crevettes : les crustacés décortiqués vendus déjà cuits peuvent contenir la listeria. Ne les mangez que chauffés jusqu'à être fumants, jamais sortis tels quels de l'emballage."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Les crustacés crus peuvent contenir des germes. Faites-les cuire à cœur.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Rouleaux de printemps crevettes : les crustacés crus peuvent contenir des germes. Faites-les cuire à cœur."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: langoustine-tails
   category: seafood
@@ -11824,12 +11730,17 @@
   answers:
     - state: reheated
       verdict: careful
-      why: Les crustacés décortiqués vendus déjà cuits peuvent contenir la listeria. Ne les mangez que chauffés jusqu'à être fumants, jamais sortis tels quels de l'emballage.
-      sources: [ nhs-foods-to-avoid, mangerbouger-aliments-eviter, cdc-food-pregnant-women ]
+      why: "Queues de langoustines cuites : les crustacés décortiqués vendus déjà cuits peuvent contenir la listeria. Ne les mangez que chauffés jusqu'à être fumants, jamais sortis tels quels de l'emballage."
+      sources:
+        - nhs-foods-to-avoid
+        - mangerbouger-aliments-eviter
+        - cdc-food-pregnant-women
     - state: raw
       verdict: avoid
-      why: Les crustacés crus peuvent contenir des germes. Faites-les cuire à cœur.
-      sources: [ ameli-aliments-eviter, mangerbouger-aliments-eviter ]
+      why: "Queues de langoustines cuites : les crustacés crus peuvent contenir des germes. Faites-les cuire à cœur."
+      sources:
+        - ameli-aliments-eviter
+        - mangerbouger-aliments-eviter
   reviewed: 2026-11-13
 - id: seafood-platter
   category: seafood
@@ -11842,8 +11753,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Les salades et cocktails de fruits de mer réfrigérés se mangent froids et peuvent contenir la listeria. Évitez-les.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Plateau royal : les salades et cocktails de fruits de mer réfrigérés se mangent froids et peuvent contenir la listeria. Évitez-les."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: seafood-salad
   category: seafood
@@ -11852,28 +11766,35 @@
     - Salade de la mer
     - Salade de poulpe
     - Salade de crabe
-    - Seafood salad
-  local: true
-  answers:
-    - state: not_applicable
-      verdict: avoid
-      why: Les salades et cocktails de fruits de mer réfrigérés se mangent froids et peuvent contenir la listeria. Évitez-les.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: seafood-cocktail
-  category: seafood
-  names:
     - Cocktail de fruits de mer
     - Verrine de crabe
     - Verrine de crevettes
     - Verrine de fruits de mer
     - Seafood cocktail
+    - Salade de crevettes froides
+    - Salade de crevettes
+    - Crevettes salade avocat
+    - Salade de crevettes mangue
+    - Cold prawn salad
+    - Crevettes sauce cocktail
+    - Crevettes mayonnaise
+    - Avocat crevettes
+    - Shrimp cocktail
+    - Antipasti de fruits de mer
+    - Fruits de mer marinés
+    - Fruits de mer à l'huile
+    - Fruits de mer en bocal
+    - Mixed seafood antipasti
+    - Seafood salad
   local: true
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Les salades et cocktails de fruits de mer réfrigérés se mangent froids et peuvent contenir la listeria. Évitez-les.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Salade de fruits de mer : les salades et cocktails de fruits de mer réfrigérés se mangent froids et peuvent contenir la listeria. Évitez-les."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: cold-octopus-salad
   category: seafood
@@ -11887,8 +11808,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Les salades et cocktails de fruits de mer réfrigérés se mangent froids et peuvent contenir la listeria. Évitez-les.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Salade de poulpe froide : les salades et cocktails de fruits de mer réfrigérés se mangent froids et peuvent contenir la listeria. Évitez-les."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: mussels-salad
   category: seafood
@@ -11902,23 +11826,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Les salades et cocktails de fruits de mer réfrigérés se mangent froids et peuvent contenir la listeria. Évitez-les.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: cold-prawn-salad
-  category: seafood
-  names:
-    - Salade de crevettes froides
-    - Salade de crevettes
-    - Crevettes salade avocat
-    - Salade de crevettes mangue
-    - Cold prawn salad
-  local: true
-  answers:
-    - state: not_applicable
-      verdict: avoid
-      why: Les salades et cocktails de fruits de mer réfrigérés se mangent froids et peuvent contenir la listeria. Évitez-les.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Salade de moules : les salades et cocktails de fruits de mer réfrigérés se mangent froids et peuvent contenir la listeria. Évitez-les."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: seafood-terrine
   category: seafood
@@ -11931,23 +11843,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Les salades et cocktails de fruits de mer réfrigérés se mangent froids et peuvent contenir la listeria. Évitez-les.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: mixed-seafood-antipasti
-  category: seafood
-  names:
-    - Antipasti de fruits de mer
-    - Fruits de mer marinés
-    - Fruits de mer à l'huile
-    - Fruits de mer en bocal
-    - Mixed seafood antipasti
-  local: true
-  answers:
-    - state: not_applicable
-      verdict: avoid
-      why: Les salades et cocktails de fruits de mer réfrigérés se mangent froids et peuvent contenir la listeria. Évitez-les.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Terrine de fruits de mer : les salades et cocktails de fruits de mer réfrigérés se mangent froids et peuvent contenir la listeria. Évitez-les."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: surimi-salad
   category: seafood
@@ -11960,23 +11860,11 @@
   answers:
     - state: not_applicable
       verdict: avoid
-      why: Les salades et cocktails de fruits de mer réfrigérés se mangent froids et peuvent contenir la listeria. Évitez-les.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
-  reviewed: 2026-11-13
-- id: seafood-sushi
-  category: seafood
-  names:
-    - Sushi aux fruits de mer
-    - Sushi crevette crue
-    - Sushi poulpe cru
-    - Sushi Saint-Jacques cru
-    - Seafood sushi
-  local: true
-  answers:
-    - state: not_applicable
-      verdict: avoid
-      why: Les salades et cocktails de fruits de mer réfrigérés se mangent froids et peuvent contenir la listeria. Évitez-les.
-      sources: [ mangerbouger-aliments-eviter, cdc-listeria-deli, cdc-food-pregnant-women ]
+      why: "Salade de crabe surimi : les salades et cocktails de fruits de mer réfrigérés se mangent froids et peuvent contenir la listeria. Évitez-les."
+      sources:
+        - mangerbouger-aliments-eviter
+        - cdc-listeria-deli
+        - cdc-food-pregnant-women
   reviewed: 2026-11-13
 - id: omelette-plain
   category: egg
