@@ -7606,6 +7606,62 @@ sources:
     title: "Calcipotriol: a medicine for plaque psoriasis - NHS"
     accessed: 2026-11-14
 # Entry shape:
+  # --- plant/pantry foods checker, read 2026-11-14 ---
+  - id: cdc-no-raw-dough
+    name: CDC
+    url: https://www.cdc.gov/food-safety/foods/no-raw-dough.html
+    title: "Raw Flour and Dough | Food Safety | CDC"
+    accessed: 2026-11-14
+  - id: cdc-listeria-sprouts-melons
+    name: CDC
+    url: https://www.cdc.gov/listeria/causes/fruits-vegetables.html
+    title: "How Listeria Spread: Sprouts and Melons | Listeria Infection | CDC"
+    accessed: 2026-11-14
+  - id: who-food-safety
+    name: WHO
+    url: https://www.who.int/news-room/fact-sheets/detail/food-safety
+    title: "Food safety - WHO fact sheet"
+    accessed: 2026-11-14
+  - id: nhs-starchy-foods
+    name: NHS
+    url: https://www.nhs.uk/live-well/eat-well/food-types/starchy-foods-and-carbohydrates/
+    title: "Starchy foods and carbohydrates - NHS"
+    accessed: 2026-11-14
+  - id: nhs-dairy-alternatives
+    name: NHS
+    url: https://www.nhs.uk/live-well/eat-well/food-types/milk-and-dairy-nutrition/
+    title: "Dairy and alternatives in your diet - NHS"
+    accessed: 2026-11-14
+  - id: nhs-balanced-diet
+    name: NHS
+    url: https://www.nhs.uk/live-well/eat-well/how-to-eat-a-balanced-diet/eating-a-balanced-diet/
+    title: "Eight tips for healthy eating / The Eatwell Guide - NHS"
+    accessed: 2026-11-14
+  - id: nhs-food-allergy
+    name: NHS
+    url: https://www.nhs.uk/conditions/food-allergy/
+    title: "Food allergy - NHS"
+    accessed: 2026-11-14
+  - id: nhs-salt
+    name: NHS
+    url: https://www.nhs.uk/live-well/eat-well/food-types/salt-in-your-diet/
+    title: "Salt in your diet - NHS"
+    accessed: 2026-11-14
+  - id: nhs-sugar
+    name: NHS
+    url: https://www.nhs.uk/live-well/eat-well/food-types/how-does-sugar-in-our-diet-affect-our-health/
+    title: "Sugar: the facts - NHS"
+    accessed: 2026-11-14
+  - id: nhs-fat
+    name: NHS
+    url: https://www.nhs.uk/live-well/eat-well/food-types/different-fats-nutrition/
+    title: "Fat: the facts - NHS"
+    accessed: 2026-11-14
+  - id: nhs-sweeteners
+    name: NHS
+    url: https://www.nhs.uk/live-well/eat-well/food-types/are-sweeteners-safe/
+    title: "The truth about sweeteners - NHS"
+    accessed: 2026-11-14
 # - id: ameli-toxo
 #   name: ameli
 #   url: https://www.ameli.fr/...
