@@ -1,0 +1,93 @@
+# Quiz (SPEC section 14). Every question cites at least one id from content/sources.yaml.
+# Keys mirror content/fr/quiz.yaml one to one: same ids, same order, same answer index and sources.
+# Scores and badges only: no streaks, no reminders to keep a score, no penalties (SPEC section 10).
+questions:
+  - id: alcohol
+    question: "How much alcohol is safe during pregnancy?"
+    options:
+      - "None is safest"
+      - "One glass a week"
+      - "A small glass with a meal"
+    answer: 0
+    why: "No amount of alcohol has been shown to be safe, so the advice is to avoid it completely."
+    sources: [nhs-alcohol, ameli-zero-alcool]
+
+  - id: listeria-cheese
+    question: "Which cheese should you avoid unless it is cooked?"
+    options:
+      - "Soft cheese made with unpasteurised (raw) milk"
+      - "Pasteurised hard cheese"
+      - "Plain yogurt"
+    answer: 0
+    why: "Raw-milk soft cheese can carry Listeria, a rare but serious infection. Choose a pasteurised cheese, or cook it until steaming hot."
+    sources: [cdc-listeria-dairy, ameli-aliments-eviter]
+
+  - id: toxo-prevention
+    question: "What helps prevent toxoplasmosis?"
+    options:
+      - "Washing fruit and vegetables, and your hands after handling raw meat"
+      - "Eating raw meat now and then"
+      - "Cleaning the cat litter tray every day"
+    answer: 0
+    why: "Toxoplasmosis spreads mainly through raw or undercooked meat, and through unwashed produce and soil. If possible, ask someone else to clean the litter tray."
+    sources: [ameli-toxo-prevention, nhs-toxoplasmosis]
+
+  - id: baby-movements
+    question: "Your baby seems to be moving much less than usual. What should you do?"
+    options:
+      - "Contact your midwife or maternity unit straight away"
+      - "Wait until tomorrow"
+      - "Drink something sugary and wait"
+    answer: 0
+    why: "A clear drop in movements needs checking the same day, even late in the evening. Do not wait."
+    sources: [nhs-baby-movements, nhs-symptoms-get-help]
+
+  - id: bleeding
+    question: "Any vaginal bleeding during pregnancy should be..."
+    options:
+      - "Checked by a midwife or doctor, however small"
+      - "Watched at home for a day"
+      - "Only a concern if it is bright red"
+    answer: 0
+    why: "Any bleeding needs to be checked, even a small amount."
+    sources: [nhs-vaginal-bleeding, ameli-bleeding-t1]
+
+  - id: folic-acid
+    question: "How much folic acid is advised each day, from before conception to week 12?"
+    options:
+      - "400 micrograms"
+      - "4 milligrams for everyone"
+      - "No supplement is needed"
+    answer: 0
+    why: "The NHS advises 400 micrograms a day, from before you conceive until the 12th week. Ask your doctor about any higher dose."
+    sources: [nhs-folic-acid, nhs-vitamins]
+
+  - id: medicines
+    question: "Before taking any medicine during pregnancy, what should you do?"
+    options:
+      - "Check with your pharmacist, midwife or doctor"
+      - "Take the same dose as before pregnancy"
+      - "Stop all medicines for nine months"
+    answer: 0
+    why: "Some medicines are safe in pregnancy and some are not. A quick check prevents mistakes. Do not stop a regular treatment without advice."
+    sources: [ansm-medicaments-bons-reflexes, nhs-medicines]
+
+  - id: exercise
+    question: "Which activity is generally recommended during a normal pregnancy?"
+    options:
+      - "Walking or swimming"
+      - "Contact sports"
+      - "Lying flat on your back for long periods"
+    answer: 0
+    why: "Regular, moderate activity suits most pregnancies. Ask your midwife about any limits that apply to you."
+    sources: [nhs-exercise, nhs-startforlife-exercise]
+
+  - id: smoking
+    question: "If you smoke, what is the best step for your baby?"
+    options:
+      - "Stop smoking as soon as possible"
+      - "Switch to light cigarettes"
+      - "Smoke only outside"
+    answer: 0
+    why: "Stopping at any point in pregnancy helps your baby. Your midwife can give you free support."
+    sources: [nhs-stop-smoking-pregnancy]

@@ -191,5 +191,117 @@
     "copied": "Your prompt is copied. Paste it in Claude and type your question after it.",
     "note": "Nothing about you is sent by this app. Your chat stays in your Claude account.",
     "prompt": "I am pregnant. Answer in simple English, in short sentences. Name the source you rely on (ameli, CRAT, ANSM, NHS...), and tell me when to ask my midwife or doctor. My question: "
+  },
+  "track": {
+    "title": "My health log",
+    "kicks": {
+      "title": "Baby's movements",
+      "help": "Tap each time you feel a movement. Available from about 20 weeks.",
+      "tap": "I felt a movement",
+      "today": "Today: {n}",
+      "undo": "Undo last",
+      "chart": "Last 7 days",
+      "notYet": "The movement counter starts from about 20 weeks."
+    },
+    "mood": {
+      "title": "How are you today?",
+      "levels": [
+        "Very low",
+        "Low",
+        "OK",
+        "Good",
+        "Great"
+      ],
+      "symptomsTitle": "Anything today?",
+      "symptoms": {
+        "nausea": "Nausea",
+        "tired": "Tiredness",
+        "headache": "Headache",
+        "back_pain": "Back pain",
+        "heartburn": "Heartburn",
+        "swelling": "Swelling",
+        "poor_sleep": "Poor sleep"
+      },
+      "save": "Save today",
+      "saved": "Saved for today",
+      "chart": "Mood, last 14 days"
+    },
+    "weight": {
+      "title": "Weight",
+      "label": "Weight (kg)",
+      "save": "Save weight",
+      "chart": "Weight over time",
+      "trendUp": "Trend: going up",
+      "trendDown": "Trend: going down",
+      "trendFlat": "Trend: steady",
+      "none": "No weights yet."
+    },
+    "entries": "Entries",
+    "chartSummary": "{n} points from {from} to {to}",
+    "errors": {
+      "invalid": "Please check the value and try again.",
+      "not_signed_in": "Please sign in again.",
+      "save_failed": "Could not save. Please try again.",
+      "delete_failed": "Could not remove. Please try again.",
+      "invalid_url": "That is not a Google Calendar iCal address.",
+      "fetch_failed": "Could not reach the calendar. Try again later.",
+      "not_a_calendar": "That address did not return a calendar.",
+      "no_calendar": "No calendar is connected yet."
+    }
+  },
+  "appts": {
+    "title": "Appointments",
+    "next": "Next appointment",
+    "nextIn": "In {n} days: {title}",
+    "today": "Today: {title}",
+    "none": "No appointments yet.",
+    "add": "Add an appointment",
+    "name": "What is it?",
+    "when": "When?",
+    "where": "Where (optional)",
+    "save": "Save appointment",
+    "remove": "Remove",
+    "fromCalendar": "From your calendar",
+    "byHand": "Added by hand",
+    "calTitle": "Import from Google Calendar",
+    "calHelp": "In Google Calendar, open your calendar's settings, then find 'Secret address in iCal format'. Paste that address here. Only appointments are copied, and the address stays private.",
+    "calLabel": "Secret iCal address",
+    "calSave": "Connect and import",
+    "calSync": "Import again now",
+    "calRemove": "Disconnect calendar",
+    "calLast": "Last imported: {date}",
+    "calDone": "{n} events imported."
+  },
+  "feed": {
+    "intro": "Articles and videos that have been checked before they appear here.",
+    "empty": "Nothing new for your stage yet. Check back soon.",
+    "open": "Open",
+    "quizTitle": "Quiz",
+    "quizHelp": "Short questions with a score. Just for fun, no pressure.",
+    "quizStart": "Start the quiz",
+    "points": "Points: {n}",
+    "badge": "Badge: {name}",
+    "badges": {
+      "5": "Getting started",
+      "10": "Curious mind",
+      "20": "Well informed",
+      "40": "Expert"
+    },
+    "noBadge": "Your first badge comes at 5 points."
+  },
+  "quiz": {
+    "title": "Quiz",
+    "question": "Question {n} of {total}",
+    "check": "Check my answer",
+    "next": "Next question",
+    "finish": "See my score",
+    "done": "You got {n} of {total} right.",
+    "again": "Play again",
+    "correct": "Correct!",
+    "notRight": "Not quite.",
+    "answerWas": "The right answer is: {answer}",
+    "sources": "Sources",
+    "back": "Back to Feed",
+    "pick": "Choose an answer"
   }
 }

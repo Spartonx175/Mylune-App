@@ -1,0 +1,93 @@
+# Quiz (SPEC section 14). Chaque question cite au moins un id de content/sources.yaml.
+# Les clés suivent content/en/quiz.yaml une à une : mêmes ids, même ordre, même index de réponse et mêmes sources.
+# Scores et badges seulement : ni séries, ni rappels pour garder un score, ni pénalités (SPEC section 10).
+questions:
+  - id: alcohol
+    question: "Quelle quantité d'alcool est sans risque pendant la grossesse ?"
+    options:
+      - "Aucune : le plus sûr est de ne pas en boire"
+      - "Un verre par semaine"
+      - "Un petit verre au cours d'un repas"
+    answer: 0
+    why: "Aucune quantité d'alcool n'a été jugée sans risque. Le conseil est donc de n'en boire aucune."
+    sources: [nhs-alcohol, ameli-zero-alcool]
+
+  - id: listeria-cheese
+    question: "Quel fromage faut-il éviter, sauf s'il est bien cuit ?"
+    options:
+      - "Un fromage à pâte molle au lait cru"
+      - "Un fromage à pâte dure pasteurisé"
+      - "Un yaourt nature"
+    answer: 0
+    why: "Le lait cru peut transmettre la listeria, une infection rare mais grave. Choisissez un fromage pasteurisé, ou faites-le cuire jusqu'à ce qu'il soit bien chaud."
+    sources: [cdc-listeria-dairy, ameli-aliments-eviter]
+
+  - id: toxo-prevention
+    question: "Qu'est-ce qui aide à prévenir la toxoplasmose ?"
+    options:
+      - "Laver les fruits et légumes, et vous laver les mains après avoir manipulé de la viande crue"
+      - "Manger de la viande crue de temps en temps"
+      - "Nettoyer la litière du chat tous les jours"
+    answer: 0
+    why: "La toxoplasmose se transmet surtout par la viande crue ou mal cuite, et par les produits et la terre non lavés. Si possible, demandez à quelqu'un d'autre de nettoyer la litière."
+    sources: [ameli-toxo-prevention, nhs-toxoplasmosis]
+
+  - id: baby-movements
+    question: "Votre bébé semble bouger nettement moins que d'habitude. Que faites-vous ?"
+    options:
+      - "Je contacte tout de suite ma sage-femme ou la maternité"
+      - "J'attends le lendemain"
+      - "Je bois quelque chose de sucré et j'attends"
+    answer: 0
+    why: "Une baisse nette des mouvements doit être vérifiée le jour même, même tard le soir. Ne pas attendre."
+    sources: [nhs-baby-movements, nhs-symptoms-get-help]
+
+  - id: bleeding
+    question: "Tout saignement vaginal pendant la grossesse doit être..."
+    options:
+      - "Vérifié par une sage-femme ou un médecin, quelle que soit la quantité"
+      - "Surveillé à la maison pendant une journée"
+      - "Inquiétant seulement s'il est rouge vif"
+    answer: 0
+    why: "Tout saignement doit être vérifié, même une petite quantité."
+    sources: [nhs-vaginal-bleeding, ameli-bleeding-t1]
+
+  - id: folic-acid
+    question: "Quelle dose d'acide folique est conseillée chaque jour, d'avant la conception jusqu'à la 12e semaine ?"
+    options:
+      - "400 microgrammes"
+      - "4 milligrammes pour toutes"
+      - "Aucun complément n'est nécessaire"
+    answer: 0
+    why: "Le conseil est de 400 microgrammes par jour, à partir d'avant la conception et jusqu'à la 12e semaine. Demandez à votre médecin pour toute dose plus élevée."
+    sources: [nhs-folic-acid, nhs-vitamins]
+
+  - id: medicines
+    question: "Avant de prendre un médicament pendant la grossesse, que faites-vous ?"
+    options:
+      - "Je demande conseil à mon pharmacien, ma sage-femme ou mon médecin"
+      - "Je prends la même dose qu'avant la grossesse"
+      - "J'arrête tous les médicaments pendant neuf mois"
+    answer: 0
+    why: "Certains médicaments sont sûrs pendant la grossesse, d'autres non. Une vérification évite les erreurs. Ne stoppez pas un traitement régulier sans avis médical."
+    sources: [ansm-medicaments-bons-reflexes, nhs-medicines]
+
+  - id: exercise
+    question: "Quelle activité est généralement conseillée pendant une grossesse normale ?"
+    options:
+      - "La marche ou la natation"
+      - "Les sports de contact"
+      - "Rester allongée sur le dos pendant de longues périodes"
+    answer: 0
+    why: "Une activité modérée et régulière convient à la plupart des grossesses. Demandez à votre sage-femme les limites qui vous concernent."
+    sources: [nhs-exercise, nhs-startforlife-exercise]
+
+  - id: smoking
+    question: "Si vous fumez, quelle est la meilleure chose pour votre bébé ?"
+    options:
+      - "Arrêter de fumer le plus tôt possible"
+      - "Passer aux cigarettes légères"
+      - "Fumer seulement dehors"
+    answer: 0
+    why: "Arrêter à n'importe quel moment de la grossesse aide votre bébé. Votre sage-femme peut vous accompagner gratuitement."
+    sources: [nhs-stop-smoking-pregnancy]

@@ -191,5 +191,117 @@
     "copied": "Votre consigne est copiée. Collez-la dans Claude et tapez votre question après.",
     "note": "Cette application n'envoie rien à votre sujet. Votre conversation reste dans votre compte Claude.",
     "prompt": "Je suis enceinte. Répondez en français simple, en phrases courtes. Indiquez la source (ameli, CRAT, ANSM, NHS...) sur laquelle vous vous appuyez, et dites-moi quand demander l'avis de ma sage-femme ou de mon médecin. Ma question : "
+  },
+  "track": {
+    "title": "Mon suivi santé",
+    "kicks": {
+      "title": "Les mouvements de bébé",
+      "help": "Touchez à chaque fois que vous sentez un mouvement. Disponible à partir d'environ 20 semaines.",
+      "tap": "J'ai senti un mouvement",
+      "today": "Aujourd'hui : {n}",
+      "undo": "Annuler le dernier",
+      "chart": "7 derniers jours",
+      "notYet": "Le compteur de mouvements commence vers 20 semaines."
+    },
+    "mood": {
+      "title": "Comment allez-vous aujourd'hui ?",
+      "levels": [
+        "Très bas",
+        "Bas",
+        "Ça va",
+        "Bien",
+        "Très bien"
+      ],
+      "symptomsTitle": "Quelque chose aujourd'hui ?",
+      "symptoms": {
+        "nausea": "Nausées",
+        "tired": "Fatigue",
+        "headache": "Maux de tête",
+        "back_pain": "Mal de dos",
+        "heartburn": "Brûlures d'estomac",
+        "swelling": "Gonflements",
+        "poor_sleep": "Mauvais sommeil"
+      },
+      "save": "Enregistrer aujourd'hui",
+      "saved": "Enregistré pour aujourd'hui",
+      "chart": "Humeur, 14 derniers jours"
+    },
+    "weight": {
+      "title": "Poids",
+      "label": "Poids (kg)",
+      "save": "Enregistrer le poids",
+      "chart": "Poids au fil du temps",
+      "trendUp": "Tendance : à la hausse",
+      "trendDown": "Tendance : à la baisse",
+      "trendFlat": "Tendance : stable",
+      "none": "Aucune pesée pour le moment."
+    },
+    "entries": "Saisies",
+    "chartSummary": "{n} points du {from} au {to}",
+    "errors": {
+      "invalid": "Vérifiez la valeur et réessayez.",
+      "not_signed_in": "Veuillez vous reconnecter.",
+      "save_failed": "Impossible d'enregistrer. Réessayez.",
+      "delete_failed": "Impossible de supprimer. Réessayez.",
+      "invalid_url": "Ce n'est pas une adresse iCal de Google Agenda.",
+      "fetch_failed": "Impossible de joindre l'agenda. Réessayez plus tard.",
+      "not_a_calendar": "Cette adresse ne renvoie pas un agenda.",
+      "no_calendar": "Aucun agenda n'est encore relié."
+    }
+  },
+  "appts": {
+    "title": "Rendez-vous",
+    "next": "Prochain rendez-vous",
+    "nextIn": "Dans {n} jours : {title}",
+    "today": "Aujourd'hui : {title}",
+    "none": "Aucun rendez-vous pour le moment.",
+    "add": "Ajouter un rendez-vous",
+    "name": "De quoi s'agit-il ?",
+    "when": "Quand ?",
+    "where": "Où (facultatif)",
+    "save": "Enregistrer le rendez-vous",
+    "remove": "Supprimer",
+    "fromCalendar": "Depuis votre agenda",
+    "byHand": "Ajouté à la main",
+    "calTitle": "Importer depuis Google Agenda",
+    "calHelp": "Dans Google Agenda, ouvrez les paramètres de votre agenda, puis cherchez « Adresse secrète au format iCal ». Collez cette adresse ici. Seuls les rendez-vous sont copiés, et l'adresse reste privée.",
+    "calLabel": "Adresse secrète iCal",
+    "calSave": "Relier et importer",
+    "calSync": "Réimporter maintenant",
+    "calRemove": "Délier l'agenda",
+    "calLast": "Dernier import : {date}",
+    "calDone": "{n} événements importés."
+  },
+  "feed": {
+    "intro": "Articles et vidéos vérifiés avant d'apparaître ici.",
+    "empty": "Rien de nouveau pour votre étape pour le moment. Revenez bientôt.",
+    "open": "Ouvrir",
+    "quizTitle": "Quiz",
+    "quizHelp": "Courtes questions avec un score. Pour le plaisir, sans pression.",
+    "quizStart": "Commencer le quiz",
+    "points": "Points : {n}",
+    "badge": "Badge : {name}",
+    "badges": {
+      "5": "Premiers pas",
+      "10": "Esprit curieux",
+      "20": "Bien informée",
+      "40": "Experte"
+    },
+    "noBadge": "Votre premier badge arrive à 5 points."
+  },
+  "quiz": {
+    "title": "Quiz",
+    "question": "Question {n} sur {total}",
+    "check": "Vérifier ma réponse",
+    "next": "Question suivante",
+    "finish": "Voir mon score",
+    "done": "Vous avez {n} bonne(s) réponse(s) sur {total}.",
+    "again": "Recommencer",
+    "correct": "Bravo, c'est juste !",
+    "notRight": "Pas tout à fait.",
+    "answerWas": "La bonne réponse est : {answer}",
+    "sources": "Sources",
+    "back": "Retour au fil",
+    "pick": "Choisissez une réponse"
   }
 }

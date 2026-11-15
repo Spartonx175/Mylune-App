@@ -13,7 +13,14 @@
   --color-muted: #8a7a72;
   --color-muted-text: #73655f;
   --color-urgent: #c0392b;
-  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-sans: var(--font-nunito), system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Gentle entrance for each screen and card. Off for people who ask for less motion. */
+main > section { animation: fade-up 0.45s ease-out both; }
+@keyframes fade-up { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  main > section { animation: none; }
 }
 
 html {
