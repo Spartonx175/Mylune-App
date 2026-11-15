@@ -1,10 +1,14 @@
 // Pure helpers that turn dating + content into what the Today and Baby screens show. No SA maths here (lib/dating.ts only).
 import type { CalendarEntry } from "./content/types";
 
-/** Week file to show: the latest available week not after `sa`, else the first available, else null. */
+/**
+ * Week file to show for `sa`. Null when there is none: no content at all, or her week is beyond the last written week.
+ * It never shows a later week in place of hers (that would be a wrong week). Before the first written week, the first one is shown.
+ */
 export function pickWeek(sa: number, available: number[]): number | null {
   if (available.length === 0) return null;
   const sorted = [...available].sort((a, b) => a - b);
+  if (sa > sorted[sorted.length - 1]) return null;
   const past = sorted.filter((w) => w <= sa);
   return past.length ? past[past.length - 1] : sorted[0];
 }

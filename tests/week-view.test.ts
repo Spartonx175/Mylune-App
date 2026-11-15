@@ -7,9 +7,12 @@ const e = (id: string, from: number, to: number): CalendarEntry => ({ id, sa_fro
 describe("pickWeek", () => {
   it("returns the latest available week not after sa", () => {
     expect(pickWeek(9, [6, 7, 8, 9, 10])).toBe(9);
-    expect(pickWeek(13, [6, 7, 12])).toBe(12);
+    expect(pickWeek(11, [6, 7, 12])).toBe(7);
+    expect(pickWeek(12, [6, 7, 12])).toBe(12);
   });
-  it("falls back to the first week when sa is before the content, and null when empty", () => {
+  it("returns null past the last written week (never a wrong week) and when empty", () => {
+    expect(pickWeek(13, [6, 7, 12])).toBeNull();
+    expect(pickWeek(39, [6, 7, 12])).toBeNull();
     expect(pickWeek(4, [6, 7])).toBe(6);
     expect(pickWeek(6, [])).toBeNull();
   });

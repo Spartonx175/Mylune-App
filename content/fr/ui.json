@@ -108,7 +108,8 @@
     "t1": "Trimestre 1",
     "t2": "Trimestre 2",
     "t3": "Trimestre 3",
-    "noWeeks": "Les semaines apparaîtront ici au fur et à mesure."
+    "noWeeks": "Les semaines apparaîtront ici au fur et à mesure.",
+    "notYet": "Les notes de la semaine {n} arrivent bientôt. La taille de votre bébé et votre liste apparaîtront ici."
   },
   "fruit": {
     "lentil": "lentille",

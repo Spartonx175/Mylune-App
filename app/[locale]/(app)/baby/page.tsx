@@ -96,7 +96,9 @@ export default async function BabyPage({
           </details>
         </>
       ) : (
-        <div className="rounded-3xl bg-surface p-6 text-lg shadow-sm">{t("baby.noWeeks")}</div>
+        <div className="rounded-3xl bg-surface p-6 text-lg shadow-sm">
+          {dating ? t("baby.notYet", { n: dating.sa.weeks }) : t("baby.noWeeks")}
+        </div>
       )}
 
       {dating && (

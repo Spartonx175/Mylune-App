@@ -108,7 +108,8 @@
     "t1": "Trimester 1",
     "t2": "Trimester 2",
     "t3": "Trimester 3",
-    "noWeeks": "Weeks will appear here as they are written."
+    "noWeeks": "Weeks will appear here as they are written.",
+    "notYet": "Week-by-week notes for week {n} are coming soon. Your baby's size and checklist will appear here."
   },
   "fruit": {
     "lentil": "lentil",
