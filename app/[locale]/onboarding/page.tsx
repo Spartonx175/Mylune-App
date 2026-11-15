@@ -2,7 +2,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { redirect } from "@/i18n/navigation";
 import LocaleToggle from "@/components/LocaleToggle";
 import OnboardingForm from "@/components/OnboardingForm";
-import { CatMascot } from "@/components/CatMascot";
+import CatPhoto from "@/components/CatPhoto";
 import { getCompanionCat } from "@/lib/cat-cookie";
 import { getSession } from "@/lib/session";
 import { claimPartnerAccess } from "@/lib/partner";
@@ -26,7 +26,7 @@ export default async function OnboardingPage({ params }: { params: Promise<{ loc
       <div className="flex justify-end">
         <LocaleToggle />
       </div>
-      <CatMascot cat={cat} className="mx-auto mt-2 h-32 w-32" />
+      <CatPhoto cat={cat} size={120} className="cat-float mx-auto mt-2" />
       <h1 className="mb-2 mt-2 text-3xl font-bold">{t("title")}</h1>
       <p className="mb-6 text-lg">{t("subtitle")}</p>
       <OnboardingForm />

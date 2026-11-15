@@ -94,7 +94,15 @@
     "toConfirm": "À confirmer",
     "setDates": "Ajoutez vos dates dans votre profil pour voir votre semaine.",
     "fallbackNote": "Affiché en anglais pour le moment.",
-    "noContent": "Le contenu de cette semaine arrive bientôt."
+    "noContent": "Le contenu de cette semaine arrive bientôt.",
+    "greeting": "Bonjour {name}",
+    "greetingAnon": "Bonjour",
+    "daysToGo": "Encore {n} jours",
+    "dueShort": "Terme prévu le {date}",
+    "length": "{mm} mm",
+    "seeWeek": "Voir cette semaine",
+    "moodWeek": "Humeur, 7 jours",
+    "seeLog": "Mon suivi complet"
   },
   "baby": {
     "weekTitle": "Semaine {n} SA",
@@ -109,7 +117,9 @@
     "t2": "Trimestre 2",
     "t3": "Trimestre 3",
     "noWeeks": "Les semaines apparaîtront ici au fur et à mesure.",
-    "notYet": "Les notes de la semaine {n} arrivent bientôt. La taille de votre bébé et votre liste apparaîtront ici."
+    "notYet": "Les notes de la semaine {n} arrivent bientôt. La taille de votre bébé et votre liste apparaîtront ici.",
+    "thisWeek": "Cette semaine",
+    "summary": "Lire le résumé et les sources"
   },
   "fruit": {
     "lentil": "lentille",
@@ -224,7 +234,8 @@
       },
       "save": "Enregistrer aujourd'hui",
       "saved": "Enregistré pour aujourd'hui",
-      "chart": "Humeur, 14 derniers jours"
+      "chart": "Humeur, 14 derniers jours",
+      "saveError": "Non enregistré. Réessayez."
     },
     "weight": {
       "title": "Poids",

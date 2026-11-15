@@ -3,13 +3,15 @@ import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { SerwistProvider } from "@serwist/turbopack/react";
-import { Nunito } from "next/font/google";
+import { Fraunces, Nunito } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import { getCompanionCat } from "@/lib/cat-cookie";
 import "../globals.css";
 
 // Rounded, friendly and very readable at large sizes. Served by Next from our own origin.
 const nunito = Nunito({ subsets: ["latin"], weight: ["400", "600", "700", "800"], variable: "--font-nunito", display: "swap" });
+// Editorial serif for headings and big numbers: the "designed" feel.
+const fraunces = Fraunces({ subsets: ["latin"], weight: ["500", "600", "700"], variable: "--font-fraunces", display: "swap" });
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -45,7 +47,7 @@ export default async function LocaleLayout({
   const cat = await getCompanionCat();
 
   return (
-    <html lang={locale} data-cat={cat} className={nunito.variable}>
+    <html lang={locale} data-cat={cat} className={`${nunito.variable} ${fraunces.variable}`}>
       <body className="min-h-dvh">
         <NextIntlClientProvider>
           <SerwistProvider swUrl="/serwist/sw.js">

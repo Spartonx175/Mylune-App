@@ -94,7 +94,15 @@
     "toConfirm": "To confirm",
     "setDates": "Add your dates in your profile to see your week.",
     "fallbackNote": "Shown in English for now.",
-    "noContent": "Content for this week is coming soon."
+    "noContent": "Content for this week is coming soon.",
+    "greeting": "Hello {name}",
+    "greetingAnon": "Hello",
+    "daysToGo": "{n} days to go",
+    "dueShort": "Due {date}",
+    "length": "{mm} mm",
+    "seeWeek": "See this week",
+    "moodWeek": "Mood, 7 days",
+    "seeLog": "My full log"
   },
   "baby": {
     "weekTitle": "Week {n} SA",
@@ -109,7 +117,9 @@
     "t2": "Trimester 2",
     "t3": "Trimester 3",
     "noWeeks": "Weeks will appear here as they are written.",
-    "notYet": "Week-by-week notes for week {n} are coming soon. Your baby's size and checklist will appear here."
+    "notYet": "Week-by-week notes for week {n} are coming soon. Your baby's size and checklist will appear here.",
+    "thisWeek": "This week",
+    "summary": "Read the summary and sources"
   },
   "fruit": {
     "lentil": "lentil",
@@ -224,7 +234,8 @@
       },
       "save": "Save today",
       "saved": "Saved for today",
-      "chart": "Mood, last 14 days"
+      "chart": "Mood, last 14 days",
+      "saveError": "Not saved. Try again."
     },
     "weight": {
       "title": "Weight",

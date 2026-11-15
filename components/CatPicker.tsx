@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { saveCat } from "@/app/actions";
 import { CATS, type CatId } from "@/lib/cats";
-import { CatMascot } from "./CatMascot";
 import CatPhoto from "./CatPhoto";
 
 /** Pick the companion cat: changes the mascot and the soft colour tint on this phone. */
@@ -24,7 +23,7 @@ export default function CatPicker({ current }: { current: CatId }) {
   };
 
   return (
-    <fieldset className="mb-6 rounded-3xl bg-surface p-6 shadow-sm" aria-busy={pending}>
+    <fieldset className="card mb-6 p-6" aria-busy={pending}>
       <legend className="px-1 text-lg font-semibold text-primary-text">{t("pickTitle")}</legend>
       <p className="mb-4 text-base text-muted-text">{t("pickHelp")}</p>
       <div className="grid grid-cols-3 gap-3">
@@ -38,8 +37,7 @@ export default function CatPicker({ current }: { current: CatId }) {
               selected === cat ? "border-primary-text bg-soft" : "border-soft bg-surface"
             }`}
           >
-            <CatPhoto cat={cat} size={64} />
-            <CatMascot cat={cat} className="h-14 w-14" />
+            <CatPhoto cat={cat} size={72} />
             <span>{t(`names.${cat}`)}</span>
           </button>
         ))}

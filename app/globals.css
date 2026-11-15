@@ -13,14 +13,9 @@
   --color-muted: #8a7a72;
   --color-muted-text: #73655f;
   --color-urgent: #c0392b;
+  --color-cocoa: #8f3d22;
   --font-sans: var(--font-nunito), system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
-
-/* Gentle entrance for each screen and card. Off for people who ask for less motion. */
-main > section { animation: fade-up 0.45s ease-out both; }
-@keyframes fade-up { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-@media (prefers-reduced-motion: reduce) {
-  main > section { animation: none; }
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
 }
 
 html {
@@ -29,12 +24,16 @@ html {
 }
 
 body {
-  background: var(--color-bg);
+  background:
+    radial-gradient(120% 38% at 50% -8%, #ffe6d6 0%, rgba(255, 248, 243, 0) 70%),
+    var(--color-bg);
   color: var(--color-ink);
   font-family: var(--font-sans);
-  line-height: 1.55;
+  line-height: 1.5;
   -webkit-tap-highlight-color: transparent;
 }
+
+h1, h2, h3 { font-family: var(--font-display); letter-spacing: -0.01em; }
 
 :focus-visible {
   outline: 3px solid var(--color-primary-text);
@@ -51,32 +50,73 @@ html[data-cat="birman"] {
   --color-accent: #d9a58f;
 }
 
-/* Cat mascot animations. Gentle, and switched off for people who ask for less motion. */
-.cat-tail { transform-box: fill-box; transform-origin: 8% 92%; animation: cat-sway 3.2s ease-in-out infinite; }
-.cat-eye { transform-box: fill-box; transform-origin: center; animation: cat-blink 5.5s infinite; }
-.cat-bob { animation: cat-bob 0.5s ease-in-out infinite; }
-.cat-leg-a { animation: cat-leg 0.5s ease-in-out infinite; }
-.cat-leg-b { animation: cat-leg 0.5s ease-in-out infinite reverse; }
-.cat-peek { animation: cat-peek 4s ease-in-out infinite; }
-
-@keyframes cat-sway { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(7deg); } }
-@keyframes cat-blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
-@keyframes cat-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-2px); } }
-@keyframes cat-leg { 0%, 100% { transform: rotate(-24deg); } 50% { transform: rotate(24deg); } }
-@keyframes cat-peek { 0%, 100% { transform: translateY(14%); } 40%, 70% { transform: translateY(0); } }
-
-@media (prefers-reduced-motion: reduce) {
-  .cat-tail, .cat-eye, .cat-bob, .cat-leg-a, .cat-leg-b, .cat-peek { animation: none; }
+/* ---------- Surfaces ---------- */
+.card {
+  background: var(--color-surface);
+  border-radius: 28px;
+  box-shadow: 0 14px 34px -18px rgba(143, 61, 34, 0.38), 0 1px 0 rgba(143, 61, 34, 0.05);
 }
+.card-soft {
+  background: linear-gradient(160deg, #fff 0%, var(--color-soft) 140%);
+  border-radius: 28px;
+  box-shadow: 0 14px 34px -20px rgba(143, 61, 34, 0.35);
+}
+/* Deep terracotta hero. White text on it is >= 4.8:1. */
+.hero {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  border-radius: 32px;
+  background:
+    radial-gradient(90% 70% at 100% 0%, rgba(255, 196, 160, 0.38) 0%, rgba(255, 196, 160, 0) 60%),
+    radial-gradient(70% 60% at 0% 100%, rgba(255, 150, 110, 0.25) 0%, rgba(255, 150, 110, 0) 60%),
+    linear-gradient(150deg, #b8552f 0%, #8f3d22 100%);
+  box-shadow: 0 26px 44px -24px rgba(143, 61, 34, 0.75);
+}
+.glass {
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(8px);
+}
+.glow {
+  background: radial-gradient(closest-side, rgba(255, 205, 175, 0.95) 0%, rgba(255, 205, 175, 0) 72%);
+}
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
 
-/* Today / Baby graphics */
-.ring-fill { animation: ring-fill 1.4s ease-out both; }
-.fruit-float { animation: fruit-float 4s ease-in-out infinite; }
+/* ---------- Motion (all off for people who ask for less) ---------- */
+main > section > * { animation: fade-up 0.55s cubic-bezier(0.22, 1, 0.36, 1) both; }
+main > section > *:nth-child(2) { animation-delay: 0.06s; }
+main > section > *:nth-child(3) { animation-delay: 0.12s; }
+main > section > *:nth-child(4) { animation-delay: 0.18s; }
+main > section > *:nth-child(5) { animation-delay: 0.24s; }
+main > section > *:nth-child(n + 6) { animation-delay: 0.3s; }
+@keyframes fade-up { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+.cat-float { animation: cat-float 5s ease-in-out infinite; }
+@keyframes cat-float { 0%, 100% { transform: translateY(0) rotate(-1.5deg); } 50% { transform: translateY(-6px) rotate(1.5deg); } }
+.pop { animation: pop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) both; }
+@keyframes pop { from { transform: scale(0.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.bar-grow { transform-origin: bottom; animation: bar-grow 0.8s cubic-bezier(0.22, 1, 0.36, 1) both; }
+@keyframes bar-grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+.draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 1.2s ease-out 0.2s forwards; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.shimmer { background-size: 200% 100%; animation: shimmer 2.4s linear infinite; }
+@keyframes shimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+
+.ring-fill { animation: ring-fill 1.6s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.fruit-float { animation: fruit-float 4.5s ease-in-out infinite; }
 .week-now { animation: week-pulse 2.2s ease-in-out infinite; }
 @keyframes ring-fill { from { stroke-dashoffset: var(--ring-len); } to { stroke-dashoffset: var(--ring-to); } }
-@keyframes fruit-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+@keyframes fruit-float { 0%, 100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-8px) rotate(2deg); } }
 @keyframes week-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.55; } }
+
 @media (prefers-reduced-motion: reduce) {
-  .ring-fill, .fruit-float, .week-now { animation: none; }
-  .ring-fill { stroke-dashoffset: var(--ring-to); }
+  main > section > *, .cat-float, .pop, .bar-grow, .shimmer, .fruit-float, .week-now { animation: none; }
+  .draw { animation: none; stroke-dashoffset: 0; }
+  .ring-fill { animation: none; stroke-dashoffset: var(--ring-to); }
 }
+
+/* A list swapping in (tab panels). */
+.anim-in { animation: fade-up 0.4s cubic-bezier(0.22, 1, 0.36, 1) both; }
+@media (prefers-reduced-motion: reduce) { .anim-in { animation: none; } }

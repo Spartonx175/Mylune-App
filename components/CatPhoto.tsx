@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import type { CatId } from "@/lib/cats";
 
-/** Round portrait of one of the household cats. */
+/** Round portrait of one of the household cats (their real photos). */
 export default function CatPhoto({ cat, size = 80, className = "" }: { cat: CatId; size?: number; className?: string }) {
   const t = useTranslations("cats");
   return (
@@ -12,7 +12,7 @@ export default function CatPhoto({ cat, size = 80, className = "" }: { cat: CatI
       width={size}
       height={size}
       unoptimized
-      className={`rounded-full border-4 border-surface object-cover shadow-sm ${className}`}
+      className={`rounded-full border-4 border-white object-cover shadow-[0_10px_24px_-10px_rgba(143,61,34,0.6)] ${className}`}
       style={{ width: size, height: size }}
     />
   );

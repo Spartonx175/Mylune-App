@@ -93,3 +93,30 @@ export function BarChart({ points, label }: { points: Point[]; label: string }) 
     </figure>
   );
 }
+
+/** Tiny trend line with a soft fill, for cards. Decorative: the value is stated in text next to it. */
+export function Sparkline({ values, min, max, className = "" }: { values: number[]; min?: number; max?: number; className?: string }) {
+  if (values.length < 2) return null;
+  const lo = min ?? Math.min(...values) - 0.5;
+  const hi = max ?? Math.max(...values) + 0.5;
+  const span = hi - lo || 1;
+  const w = 200;
+  const h = 56;
+  const x = (i: number) => 6 + (i * (w - 12)) / (values.length - 1);
+  const y = (v: number) => 6 + (1 - (v - lo) / span) * (h - 12);
+  const line = values.map((v, i) => `${i === 0 ? "M" : "L"}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(" ");
+  const area = `${line} L${x(values.length - 1).toFixed(1)},${h} L${x(0).toFixed(1)},${h} Z`;
+  return (
+    <svg aria-hidden="true" viewBox={`0 0 ${w} ${h}`} className={className} preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="spark" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="var(--color-primary)" stopOpacity="0.35" />
+          <stop offset="100%" stopColor="var(--color-primary)" stopOpacity="0" />
+        </linearGradient>
+      </defs>
+      <path d={area} fill="url(#spark)" />
+      <path d={line} fill="none" stroke="var(--color-primary)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" pathLength={1} className="draw" />
+      <circle cx={x(values.length - 1)} cy={y(values[values.length - 1])} r="4" fill="var(--color-primary)" />
+    </svg>
+  );
+}
