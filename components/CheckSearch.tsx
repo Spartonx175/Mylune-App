@@ -2,36 +2,57 @@
 
 import { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { searchChecks } from "@/app/check-actions";
+import { searchChecks, type SearchHit } from "@/app/check-actions";
 import type { ClientSource } from "@/lib/check-sources";
 import { VERDICT_STYLE } from "@/lib/check-style";
+import { normalize } from "@/lib/check-search";
 import type { CheckItem, CheckKind, Verdict } from "@/lib/content/check-types";
 
 type Props = { kind: CheckKind; tips: CheckItem[]; total: number; tipSources: Record<string, ClientSource> };
 
-const SEVERITY: Record<Verdict, number> = { ok: 0, careful: 1, avoid: 2 };
-const worst = (item: CheckItem): Verdict => item.answers.reduce<Verdict>((w, a) => (SEVERITY[a.verdict] > SEVERITY[w] ? a.verdict : w), "ok");
+/** "ok" / "careful" / "avoid" when every case agrees; "depends" when the answer changes with how it is prepared. */
+type Summary = Verdict | "depends";
+const summarize = (item: CheckItem): Summary => {
+  const set = new Set(item.answers.map((a) => a.verdict));
+  return set.size === 1 ? item.answers[0].verdict : "depends";
+};
 
 function VerdictIcon({ verdict }: { verdict: Verdict }) {
   const path = verdict === "ok" ? "M5 12l4 4 10-10" : verdict === "careful" ? "M12 6v8M12 18v.5" : "M6 6l12 12M18 6L6 18";
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6 shrink-0" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5 shrink-0" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
       <path d={path} />
     </svg>
   );
 }
 
-function VerdictBadge({ verdict, kind, big = false }: { verdict: Verdict; kind: CheckKind; big?: boolean }) {
+function VerdictBadge({ verdict, kind, big = false }: { verdict: Summary; kind: CheckKind; big?: boolean }) {
   const t = useTranslations("check");
-  const s = VERDICT_STYLE[verdict];
-  const label = kind === "medicines" ? t(`verdictMedicines.${verdict}`) : t(`verdict.${verdict}`);
+  const s = VERDICT_STYLE[verdict === "depends" ? "careful" : verdict];
+  const label = verdict === "depends" ? t("verdict.depends") : kind === "medicines" ? t(`verdictMedicines.${verdict}`) : t(`verdict.${verdict}`);
   return (
     <span
-      className={`inline-flex items-center gap-2 rounded-full border-2 font-bold ${big ? "px-4 py-2 text-2xl" : "px-3 py-1 text-base"}`}
+      className={`inline-flex shrink-0 items-center gap-2 rounded-full border-2 font-bold ${big ? "px-4 py-2 text-xl" : "px-3 py-1 text-base"}`}
       style={{ background: s.bg, borderColor: s.border, color: s.text }}
     >
-      <VerdictIcon verdict={verdict} />
+      {verdict !== "depends" && <VerdictIcon verdict={verdict} />}
       {label}
+    </span>
+  );
+}
+
+/** One line per case: "✓ Pasteurised · ✗ Raw milk", so the nuance is visible before opening the item. */
+function CaseChips({ item }: { item: CheckItem }) {
+  const t = useTranslations("check");
+  if (item.answers.length < 2) return null;
+  return (
+    <span className="mt-1 flex flex-wrap gap-x-3 gap-y-1 text-sm font-semibold">
+      {item.answers.map((a) => (
+        <span key={a.state} className="inline-flex items-center gap-1" style={{ color: VERDICT_STYLE[a.verdict].text }}>
+          <VerdictIcon verdict={a.verdict} />
+          {a.label ?? t(`states.${a.state}`)}
+        </span>
+      ))}
     </span>
   );
 }
@@ -40,11 +61,12 @@ export default function CheckSearch({ kind, tips, total, tipSources }: Props) {
   const t = useTranslations("check");
   const locale = useLocale();
   const [query, setQuery] = useState("");
-  const [selectedId, setSelectedId] = useState<string | null>(null);
-  const [stateIdx, setStateIdx] = useState(0);
-  const [results, setResults] = useState<CheckItem[]>([]);
+  const [selected, setSelected] = useState<SearchHit | null>(null);
+  const [hits, setHits] = useState<SearchHit[]>([]);
   const [sources, setSources] = useState<Record<string, ClientSource>>(tipSources);
   const [answered, setAnswered] = useState("");
+  const [failed, setFailed] = useState(false);
+  const [attempt, setAttempt] = useState(0);
 
   // Ask the server for the best matches while typing (the full list never reaches the phone).
   useEffect(() => {
@@ -52,39 +74,49 @@ export default function CheckSearch({ kind, tips, total, tipSources }: Props) {
     if (!q) return;
     let cancelled = false;
     const timer = setTimeout(async () => {
-      const r = await searchChecks(locale, kind, q);
-      if (cancelled) return;
-      setResults(r.items);
-      setSources((prev) => ({ ...prev, ...r.sources }));
+      try {
+        const r = await searchChecks(locale, kind, q);
+        if (cancelled) return;
+        setHits(r.hits);
+        setSources((prev) => ({ ...prev, ...r.sources }));
+        setFailed(false);
+      } catch {
+        if (cancelled) return;
+        setHits([]);
+        setFailed(true);
+      }
       setAnswered(q);
     }, 200);
     return () => {
       cancelled = true;
       clearTimeout(timer);
     };
-  }, [query, locale, kind]);
+  }, [query, locale, kind, attempt]);
 
-  const shown = query.trim() ? results : [];
-  const busy = query.trim() !== "" && answered !== query.trim();
-  const pool = [...shown, ...tips];
-  const selected = pool.find((i) => i.id === selectedId) ?? null;
-  const answer = selected ? selected.answers[Math.min(stateIdx, selected.answers.length - 1)] : null;
+  const q = query.trim();
+  const shown = q ? hits : [];
+  const busy = q !== "" && answered !== q;
   const best = tips.filter((i) => i.tips?.includes("best"));
   const avoid = tips.filter((i) => i.tips?.includes("avoid"));
 
-  const pick = (id: string) => {
-    setSelectedId(id);
-    setStateIdx(0);
+  const openTip = (id: string) => {
+    const item = tips.find((i) => i.id === id);
+    if (!item) return;
+    setQuery(item.names[0]);
+    setSelected({ item, matched: item.names[0] });
   };
 
   if (total === 0) {
-    return <p className="rounded-3xl bg-surface p-6 text-lg shadow-sm">{t("empty")}</p>;
+    return <p className="card p-6 text-lg">{t("empty")}</p>;
   }
+
+  const item = selected?.item ?? null;
+  const others = item ? item.names.filter((n) => normalize(n) !== normalize(selected!.matched)).slice(0, 6) : [];
 
   return (
     <div className="space-y-4">
-      <div className="rounded-3xl bg-surface p-4 shadow-sm">
-        <label htmlFor="check-q" className="mb-1 block text-base font-semibold text-primary-text">
+      <div className="card p-4">
+        <label htmlFor="check-q" className="mb-1 block text-base font-bold text-primary-text">
           {t("searchLabel")}
         </label>
         <div className="flex gap-2">
@@ -96,7 +128,7 @@ export default function CheckSearch({ kind, tips, total, tipSources }: Props) {
             value={query}
             onChange={(e) => {
               setQuery(e.target.value);
-              setSelectedId(null);
+              setSelected(null);
             }}
             placeholder={t(`placeholder.${kind}`)}
             className="min-h-14 w-full rounded-2xl border-2 border-soft bg-bg px-4 text-xl"
@@ -106,7 +138,7 @@ export default function CheckSearch({ kind, tips, total, tipSources }: Props) {
               type="button"
               onClick={() => {
                 setQuery("");
-                setSelectedId(null);
+                setSelected(null);
               }}
               className="min-h-14 shrink-0 rounded-2xl bg-soft px-4 text-base font-semibold"
             >
@@ -116,24 +148,35 @@ export default function CheckSearch({ kind, tips, total, tipSources }: Props) {
         </div>
       </div>
 
-      {query && !selected && (
+      {q && !selected && (
         <div aria-live="polite">
-          {busy && shown.length === 0 ? null : shown.length === 0 ? (
-            <div className="rounded-3xl bg-soft p-6">
-              <p className="text-lg font-semibold">{t("noResultsTitle")}</p>
+          {failed ? (
+            <div className="card space-y-3 p-6">
+              <p className="text-lg font-semibold">{t("searchError")}</p>
+              <button type="button" onClick={() => { setAnswered(""); setAttempt((n) => n + 1); }} className="min-h-12 rounded-2xl bg-primary-text px-5 text-lg font-bold text-white">
+                {t("retry")}
+              </button>
+            </div>
+          ) : busy && shown.length === 0 ? (
+            <p className="px-2 text-lg text-muted-text">{t("searching")}</p>
+          ) : shown.length === 0 ? (
+            <div className="card-soft p-6">
+              <p className="text-lg font-bold">{t("noResultsTitle")}</p>
               <p className="text-lg">{t("noResults")}</p>
             </div>
           ) : (
             <ul className="space-y-2">
-              {shown.map((item) => (
-                <li key={item.id}>
-                  <button
-                    type="button"
-                    onClick={() => pick(item.id)}
-                    className="flex min-h-14 w-full items-center justify-between gap-3 rounded-2xl bg-surface px-4 py-2 text-left shadow-sm"
-                  >
-                    <span className="text-lg font-semibold">{item.names[0]}</span>
-                    <VerdictBadge verdict={worst(item)} kind={kind} />
+              {shown.map((h) => (
+                <li key={h.item.id}>
+                  <button type="button" onClick={() => setSelected(h)} className="card flex min-h-16 w-full items-center justify-between gap-3 px-4 py-3 text-left">
+                    <span className="min-w-0">
+                      <span className="block text-lg font-bold leading-tight">{h.matched}</span>
+                      {normalize(h.matched) !== normalize(h.item.names[0]) && (
+                        <span className="block truncate text-sm text-muted-text">{t("sameRuleAs", { name: h.item.names[0] })}</span>
+                      )}
+                      <CaseChips item={h.item} />
+                    </span>
+                    <VerdictBadge verdict={summarize(h.item)} kind={kind} />
                   </button>
                 </li>
               ))}
@@ -142,70 +185,63 @@ export default function CheckSearch({ kind, tips, total, tipSources }: Props) {
         </div>
       )}
 
-      {selected && answer && (
-        <article className="space-y-3 rounded-3xl p-6 shadow-sm" style={{ background: VERDICT_STYLE[answer.verdict].bg }} aria-live="polite">
-          <h2 className="text-2xl font-bold">{selected.names[0]}</h2>
-          {selected.active_ingredient && <p className="text-base">{t("ingredient", { name: selected.active_ingredient })}</p>}
+      {selected && item && (
+        <article className="space-y-3" aria-live="polite">
+          <div className="card p-5">
+            <h2 className="font-display text-3xl font-semibold leading-tight">{selected.matched}</h2>
+            {item.active_ingredient && <p className="mt-1 text-base text-muted-text">{t("ingredient", { name: item.active_ingredient })}</p>}
+            {others.length > 0 && <p className="mt-2 text-base text-muted-text">{t("alsoCovers", { names: others.join(", ") })}</p>}
+            {item.answers.length > 1 && <p className="mt-3 text-base font-semibold text-primary-text">{t("depends")}</p>}
+          </div>
 
-          {selected.answers.length > 1 && (
-            <div>
-              <p className="mb-1 text-base font-semibold">{t("chooseState")}</p>
-              <div className="flex flex-wrap gap-2">
-                {selected.answers.map((a, i) => (
-                  <button
-                    key={a.state}
-                    type="button"
-                    aria-pressed={i === stateIdx}
-                    onClick={() => setStateIdx(i)}
-                    className={`min-h-11 rounded-full border-2 px-4 text-base font-semibold ${
-                      i === stateIdx ? "border-ink bg-ink text-white" : "border-ink/30 bg-surface"
-                    }`}
-                  >
-                    {t(`states.${a.state}`)}
-                  </button>
-                ))}
+          {item.answers.map((a) => {
+            const s = VERDICT_STYLE[a.verdict];
+            return (
+              <div key={a.state} className="space-y-2 rounded-[28px] p-5 shadow-[0_14px_30px_-18px_rgba(59,47,43,0.5)]" style={{ background: s.bg }}>
+                <div className="flex flex-wrap items-center gap-2">
+                  {item.answers.length > 1 && <span className="font-display text-xl font-semibold">{a.label ?? t(`states.${a.state}`)}</span>}
+                  <VerdictBadge verdict={a.verdict} kind={kind} big={item.answers.length === 1} />
+                </div>
+                <p className="text-lg leading-snug">{a.why}</p>
+                <details className="rounded-2xl bg-white/70 p-3">
+                  <summary className="min-h-11 cursor-pointer text-base font-bold">{t("sources")}</summary>
+                  <ul className="mt-1 space-y-1 text-base">
+                    {a.sources.map((id) => {
+                      const src = sources[id];
+                      return (
+                        <li key={id}>
+                          {src ? (
+                            <a href={src.url} target="_blank" rel="noopener noreferrer" className="underline">
+                              {src.name}: {src.title}
+                            </a>
+                          ) : (
+                            id
+                          )}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </details>
               </div>
-            </div>
-          )}
+            );
+          })}
 
-          <VerdictBadge verdict={answer.verdict} kind={kind} big />
-          <p className="text-xl">{answer.why}</p>
-
-          <details className="rounded-2xl bg-surface/70 p-3">
-            <summary className="min-h-11 cursor-pointer text-base font-semibold">{t("sources")}</summary>
-            <ul className="mt-1 space-y-1 text-base">
-              {answer.sources.map((id) => {
-                const s = sources[id];
-                return (
-                  <li key={id}>
-                    {s ? (
-                      <a href={s.url} target="_blank" rel="noopener noreferrer" className="underline">
-                        {s.name}: {s.title}
-                      </a>
-                    ) : (
-                      id
-                    )}
-                  </li>
-                );
-              })}
-            </ul>
-          </details>
-          <p className="text-sm">
+          <p className="px-2 text-sm text-muted-text">
             {t("reviewed", {
-              date: new Intl.DateTimeFormat(locale, { dateStyle: "medium", timeZone: "UTC" }).format(new Date(`${selected.reviewed}T00:00:00Z`)),
+              date: new Intl.DateTimeFormat(locale, { dateStyle: "medium", timeZone: "UTC" }).format(new Date(`${item.reviewed}T00:00:00Z`)),
             })}
           </p>
-          <button type="button" onClick={() => setSelectedId(null)} className="min-h-11 rounded-full bg-surface px-4 text-base font-semibold">
-            ←
+          <button type="button" onClick={() => setSelected(null)} className="min-h-12 rounded-full bg-white px-5 text-lg font-bold shadow-sm">
+            ← {t("back")}
           </button>
         </article>
       )}
 
-      {!query && !selected && (
+      {!q && !selected && (
         <>
           <p className="text-base text-muted-text">{t("pickOne")}</p>
-          <TipList title={t("tipsBest")} items={best} kind={kind} verdict="ok" onPick={(id) => { setQuery(tips.find((i) => i.id === id)?.names[0] ?? ""); pick(id); }} />
-          <TipList title={t("tipsAvoid")} items={avoid} kind={kind} verdict="avoid" onPick={(id) => { setQuery(tips.find((i) => i.id === id)?.names[0] ?? ""); pick(id); }} />
+          <TipList title={t("tipsBest")} items={best} verdict="ok" onPick={openTip} />
+          <TipList title={t("tipsAvoid")} items={avoid} verdict="avoid" onPick={openTip} />
         </>
       )}
 
@@ -214,23 +250,22 @@ export default function CheckSearch({ kind, tips, total, tipSources }: Props) {
   );
 }
 
-function TipList({ title, items, kind, verdict, onPick }: { title: string; items: CheckItem[]; kind: CheckKind; verdict: Verdict; onPick: (id: string) => void }) {
+function TipList({ title, items, verdict, onPick }: { title: string; items: CheckItem[]; verdict: Verdict; onPick: (id: string) => void }) {
   if (items.length === 0) return null;
   const s = VERDICT_STYLE[verdict];
   return (
-    <div className="rounded-3xl bg-surface p-4 shadow-sm">
-      <h2 className="mb-2 flex items-center gap-2 text-lg font-semibold" style={{ color: s.text }}>
+    <div className="card p-4">
+      <h2 className="mb-2 flex items-center gap-2 text-lg font-bold" style={{ color: s.text }}>
         <VerdictIcon verdict={verdict} />
         {title}
       </h2>
       <div className="flex flex-wrap gap-2">
         {items.map((i) => (
-          <button key={i.id} type="button" onClick={() => onPick(i.id)} className="min-h-11 rounded-full border-2 px-4 text-base font-medium" style={{ background: s.bg, borderColor: s.border }}>
+          <button key={i.id} type="button" onClick={() => onPick(i.id)} className="min-h-11 rounded-full border-2 px-4 text-base font-semibold" style={{ background: s.bg, borderColor: s.border }}>
             {i.names[0]}
           </button>
         ))}
       </div>
-      <span className="sr-only">{kind}</span>
     </div>
   );
 }

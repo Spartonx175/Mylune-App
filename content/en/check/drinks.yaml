@@ -421,6 +421,10 @@
     - "Coca Zéro"
     - "Coke"
     - "Cola light"
+    - "Diet Coke"
+    - "Coke Zero"
+    - "Pepsi Max"
+    - "Diet cola"
   local: true
   answers:
     - state: not_applicable

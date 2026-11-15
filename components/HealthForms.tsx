@@ -2,7 +2,8 @@
 
 import { useState, useTransition } from "react";
 import { useTranslations } from "next-intl";
-import { logKick, logMood, logWeight, deleteLog, MOOD_LEVELS, SYMPTOM_KEYS, type Result } from "@/app/track-actions";
+import { logKick, logMood, logWeight, deleteLog, type Result } from "@/app/track-actions";
+import { MOOD_LEVELS, SYMPTOM_KEYS } from "@/lib/track";
 
 /** Error text for a failed action; falls back to a generic message. */
 function useErrorText() {

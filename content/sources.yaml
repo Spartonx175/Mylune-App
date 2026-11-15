@@ -2359,3 +2359,18 @@ sources:
     url: https://www.ameli.fr/assure/sante/themes/mst-ist/maladies-infections-sexuellement-transmissibles
     title: Maladies et infections sexuellement transmissibles
     accessed: 2026-11-14
+  - id: crat-phloroglucinol
+    name: CRAT
+    url: https://www.lecrat.fr/11748/
+    title: "Phloroglucinol-triméthylphloroglucinol – Grossesse"
+    accessed: 2026-11-15
+  - id: ansm-spasfon-notice
+    name: ANSM
+    url: https://agence-prd.ansm.sante.fr/php/ecodex/notice/N0294637.htm
+    title: "Spasfon, comprimé enrobé – Notice patient"
+    accessed: 2026-11-15
+  - id: ansm-smecta-notice
+    name: ANSM
+    url: https://agence-prd.ansm.sante.fr/php/ecodex/notice/N0434023.htm
+    title: "Smecta 3 g fraise, poudre pour suspension buvable – Notice patient (mise à jour du 22/04/2025)"
+    accessed: 2026-11-15

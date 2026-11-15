@@ -12,6 +12,8 @@
     - "Dolko"
     - "Acetaminophen"
     - "Paracétamol"
+    - "Tylenol"
+    - "Panadol"
   active_ingredient: "paracetamol"
   tips: [best]
   local: true
@@ -558,6 +560,8 @@
     - "Allergy tablet"
     - "Antihistamine"
     - "Antihistaminique"
+    - "Hay fever"
+    - "Hayfever"
   active_ingredient: "cetirizine"
   local: true
   answers:
@@ -578,6 +582,8 @@
     - "Allergy tablet"
     - "Antihistamine"
     - "Antihistaminique"
+    - "Hay fever"
+    - "Hayfever"
   active_ingredient: "loratadine"
   tips: [best]
   local: true
@@ -1547,6 +1553,9 @@
     - "hesperidin"
     - "Daflon"
     - "venotonics"
+    - "Haemorrhoids"
+    - "Hemorrhoids"
+    - "Piles"
   active_ingredient: "diosmin, hesperidin"
   tips: [best]
   local: true
@@ -1803,6 +1812,9 @@
   names:
     - "Flurbiprofen throat lozenges"
     - "Strefen"
+    - "Sore throat"
+    - "Throat lozenges"
+    - "Throat sweets"
   active_ingredient: "flurbiprofen"
   tips: [avoid]
   local: true
@@ -1818,6 +1830,9 @@
   category: cold-cough
   names:
     - "Lidocaine throat lozenges (lidocaine only)"
+    - "Sore throat"
+    - "Throat lozenges"
+    - "Throat sweets"
   active_ingredient: "lidocaine"
   local: true
   answers:
@@ -2426,6 +2441,8 @@
   names:
     - "Zolpidem"
     - "Ambien"
+    - "Sleeping pill"
+    - "Sleeping pills"
   active_ingredient: "zolpidem"
   local: true
   answers:
@@ -2440,6 +2457,8 @@
   category: sleep
   names:
     - "Zopiclone"
+    - "Sleeping pill"
+    - "Sleeping pills"
   active_ingredient: "zopiclone"
   local: true
   answers:
@@ -3183,6 +3202,10 @@
     - "Nitrofurantoin"
     - "Furadantine"
     - "Macrodantine"
+    - "Cystitis"
+    - "Urinary infection"
+    - "Urinary tract infection"
+    - "UTI"
   active_ingredient: "nitrofurantoin"
   local: true
   answers:
@@ -3200,6 +3223,10 @@
     - "Fosfomycin trometamol"
     - "Monuril"
     - "Uridoz"
+    - "Cystitis"
+    - "Urinary infection"
+    - "Urinary tract infection"
+    - "UTI"
   active_ingredient: "fosfomycin trometamol"
   tips: [best]
   local: true
@@ -3216,6 +3243,10 @@
   names:
     - "Pivmecillinam"
     - "Selexid"
+    - "Cystitis"
+    - "Urinary infection"
+    - "Urinary tract infection"
+    - "UTI"
   active_ingredient: "pivmecillinam"
   tips: [best]
   local: true
@@ -4265,6 +4296,7 @@
     - "Tardyferon"
     - "Fumafer"
     - "Ferrostrane"
+    - "Iron tablets"
   active_ingredient: "oral iron salts"
   local: true
   answers:
@@ -5395,3 +5427,39 @@
         - crat-calcipotriol
         - nhs-calcipotriol
   reviewed: 2026-11-14
+- id: phloroglucinol
+  category: antispasmodic
+  names:
+    - "Phloroglucinol"
+    - "Spasfon"
+    - "Spasfon Lyoc"
+    - "Spasmocalm"
+    - "Trimethylphloroglucinol"
+    - "Antispasmodic"
+  active_ingredient: "phloroglucinol"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "The CRAT reports very many pregnancies exposed to phloroglucinol (Spasfon) with no malformation or effect on the baby linked to it, and says it can be used at any stage. But the official patient leaflet says to use it in pregnancy only if necessary. If you have strong or lasting pain, see a doctor or midwife. Ask a pharmacist or doctor."
+      sources:
+        - crat-phloroglucinol
+        - ansm-spasfon-notice
+  reviewed: 2026-11-15
+- id: diosmectite
+  category: antidiarrhoeal
+  names:
+    - "Diosmectite"
+    - "Smecta"
+    - "Smectite"
+    - "Clay for diarrhoea"
+  active_ingredient: "diosmectite"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "For sudden diarrhoea without warning signs, the CRAT lists a clay such as Smecta as an option. But the official patient leaflet (updated 2025) says Smecta is not recommended during pregnancy, so the sources differ. Drink plenty of fluids, and see a doctor or midwife if there is blood, fever or strong pain, or you cannot keep fluids down. Ask a pharmacist or doctor."
+      sources:
+        - crat-antidiarrheiques
+        - ansm-smecta-notice
+  reviewed: 2026-11-15

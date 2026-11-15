@@ -56,6 +56,8 @@ export type FoodCategory = (typeof FOOD_CATEGORIES)[number];
 
 export type CheckAnswer = {
   state: FoodState;
+  /** Optional wording for this case when the standard state label would mislead (e.g. "Ready-to-eat, eaten cold"). */
+  label?: string;
   verdict: Verdict;
   /** One or two plain sentences, in the file's language. Never a dose, never a diagnosis. */
   why: string;

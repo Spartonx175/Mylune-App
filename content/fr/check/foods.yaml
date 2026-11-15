@@ -29,6 +29,9 @@
     - Bœuf mi-cuit
     - Pavé de bœuf mi-cuit
     - Seared beef
+    - Viande saignante
+    - Bœuf saignant
+    - Viande rouge saignante
     - Beef steak
   local: true
   answers:
@@ -526,6 +529,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: Le foie gras (frais, mi-cuit ou en bloc) est un produit cuit réfrigéré qui peut transmettre la listéria. C'est aussi du foie, riche en vitamine A.
       sources:
@@ -554,6 +558,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Le pâté et la terrine frais peuvent transmettre la listéria, qui se développe même au réfrigérateur. Les conseils de santé français demandent de les éviter."
       sources:
@@ -581,6 +586,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Les rillettes se mangent froides, telles quelles, et peuvent transmettre la listéria. Évitez-les, y compris les rillettes de poisson."
       sources:
@@ -612,6 +618,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: careful
       why: Le jambon cuit tranché froid peut transmettre la listéria. Le jambon préemballé est le meilleur choix ; évitez le jambon tranché à la coupe.
       sources:
@@ -726,6 +733,7 @@
         - nhs-toxoplasmosis
         - cdc-listeria-deli
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: careful
       why: "Le chorizo cuit jusqu'à ce qu'il fume dans un plat (paella, ragoût, pizza chaude) est acceptable. Le chorizo frais à cuire doit être bien cuit à cœur."
       sources:
@@ -812,6 +820,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: Les saucisses de hot dog mangées froides, directement sorties du paquet, peuvent transmettre la listéria.
       sources:
@@ -873,6 +882,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: Les viandes froides en gelée peuvent transmettre la listéria, qui se développe au réfrigérateur. Évitez-les.
       sources:
@@ -1705,6 +1715,9 @@
     - Mouillettes
     - Œuf cocotte
     - Poached egg
+    - Œuf coulant
+    - Oeuf coulant
+    - Œufs coulants
     - Soft-boiled egg
   local: true
   answers:
@@ -2332,6 +2345,7 @@
     - Vignotte
     - Fougerus
     - Bloomy farm cheese
+    - Fromage à pâte molle
     - Camembert
   tips:
     - avoid
@@ -2372,6 +2386,7 @@
     - Vacherin
     - Mont d'Or
     - Boulette d'Avesnes
+    - Fromage à pâte molle
     - Munster
   local: true
   answers:
@@ -2417,6 +2432,7 @@
     - Salade au roquefort
     - Salade au gorgonzola
     - Salad bleu
+    - Fromage bleu
     - Roquefort
   tips:
     - avoid
@@ -8021,6 +8037,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: careful
       why: "Jambon de poulet : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
       sources:
@@ -8045,6 +8062,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: careful
       why: "Jambon de dinde : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
       sources:
@@ -8069,6 +8087,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: careful
       why: "Jambon braisé : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
       sources:
@@ -8094,6 +8113,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: careful
       why: "Jambon fumé cuit : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
       sources:
@@ -8121,6 +8141,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: careful
       why: "Mortadelle pistachée : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
       sources:
@@ -8144,6 +8165,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: careful
       why: "Cervelas obernois : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
       sources:
@@ -8168,6 +8190,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: careful
       why: "Saucisson à l'ail fumé : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
       sources:
@@ -8192,6 +8215,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: careful
       why: "Saucisson de Lyon pistaché : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
       sources:
@@ -8216,6 +8240,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: careful
       why: "Rôti de porc froid : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
       sources:
@@ -8240,6 +8265,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: careful
       why: "Rôti de dinde froid : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
       sources:
@@ -8264,6 +8290,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: careful
       why: "Rosbif froid : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
       sources:
@@ -8288,6 +8315,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: careful
       why: "Corned beef charcuterie : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
       sources:
@@ -8313,6 +8341,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: careful
       why: "Langue froide : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
       sources:
@@ -8339,6 +8368,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: careful
       why: "Rillons : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
       sources:
@@ -8369,6 +8399,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: careful
       why: "Jambon-fromage en tranches : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
       sources:
@@ -8394,6 +8425,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Mousse de jambon : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
       sources:
@@ -8432,6 +8464,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Pâté breton : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
       sources:
@@ -8457,6 +8490,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Pâté de canard : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
       sources:
@@ -8481,6 +8515,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Pâté de lapin : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
       sources:
@@ -8506,6 +8541,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Terrine de gibier : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
       sources:
@@ -8531,6 +8567,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Terrine de volaille : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
       sources:
@@ -8560,6 +8597,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: careful
       why: Il ne contient pas de viande, mais les terrines et pâtés vendus frais figurent sur la liste des aliments à éviter en France, car la listeria peut se développer au frigo. Le NHS conseille de garder le pâté végétal au frais et de le manger avant la date. Demandez à votre sage-femme si vous en voulez.
       sources:
@@ -8576,6 +8614,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Mousse de canard : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
       sources:
@@ -8603,6 +8642,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Rillettes de Tours : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
       sources:
@@ -8627,6 +8667,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Rillettes d'oie : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
       sources:
@@ -8651,6 +8692,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Rillettes de poisson : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
       sources:
@@ -8675,6 +8717,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Rillettes de maquereau : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
       sources:
@@ -8699,6 +8742,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Terrine de saumon : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
       sources:
@@ -8723,6 +8767,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Mousse de poisson : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
       sources:
@@ -8748,6 +8793,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Pâté de sanglier : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
       sources:
@@ -8772,6 +8818,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Pâté de campagne Hénaff : les pâtés, terrines, rillettes et préparations similaires vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Les autorités françaises conseillent de les éviter."
       sources:
@@ -8803,6 +8850,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Tête pressée : les produits en gelée ou pressés vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Évitez-les."
       sources:
@@ -8821,6 +8869,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Museau vinaigrette : les produits en gelée ou pressés vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Évitez-les."
       sources:
@@ -8838,6 +8887,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Œuf en gelée : les produits en gelée ou pressés vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Évitez-les."
       sources:
@@ -8860,6 +8910,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: avoid
       why: "Jambon en gelée : les produits en gelée ou pressés vendus réfrigérés peuvent contenir la listeria, qui se développe même au frigo. Évitez-les."
       sources:
@@ -9161,6 +9212,7 @@
   local: true
   answers:
     - state: cooked
+      label: Prêt à consommer, mangé froid
       verdict: careful
       why: "Andouille de Guémené : les charcuteries cuites vendues réfrigérées peuvent contenir la listeria, qui se développe même au frigo. Préférez les tranches préemballées consommées avant la date limite, et évitez celles tranchées à la coupe."
       sources:
@@ -31958,3 +32010,41 @@
       sources:
         - nhs-foods-to-avoid
   reviewed: 2026-11-14
+- id: cheese-raw-milk
+  category: cheese
+  names:
+    - "Fromage au lait cru"
+    - "Fromage lait cru"
+    - "Fromage non pasteurisé"
+    - "Fromage fermier au lait cru"
+    - "Raw milk cheese"
+  local: true
+  answers:
+    - state: unpasteurised
+      verdict: avoid
+      why: "On évite en France les fromages au lait cru, surtout à pâte molle, car ils peuvent contenir de la listeria. L'exception : les fromages à pâte pressée cuite comme le comté, le beaufort, l'emmental, le gruyère et le parmesan, chauffés et affinés longtemps, qu'on peut manger même au lait cru."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+    - state: cooked
+      verdict: ok
+      why: "Un fromage au lait cru bien cuit, chaud à cœur, par exemple dans une recette au four, est sans risque. Enlevez d'abord la croûte."
+      sources:
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-15
+- id: leftovers
+  category: ready_meal
+  names:
+    - "Restes"
+    - "Restes de repas"
+    - "Plat de la veille"
+    - "Plat réchauffé"
+    - "Leftovers"
+  local: true
+  answers:
+    - state: reheated
+      verdict: ok
+      why: "Gardez les restes au réfrigérateur à 4 °C au maximum, mangez-les dans les 3 jours après la cuisson, et réchauffez-les jusqu'à ce qu'ils soient chauds à cœur. La listeria ne change ni l'aspect, ni l'odeur, ni le goût des aliments."
+      sources:
+        - ameli-aliments-eviter
+  reviewed: 2026-11-15

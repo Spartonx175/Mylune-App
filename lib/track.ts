@@ -56,3 +56,7 @@ export function trendSlope(values: number[]): number {
   });
   return den === 0 ? 0 : num / den;
 }
+
+/** Mood scale and symptom keys. Kept here (not in the server-actions file, which may only export async functions). */
+export const MOOD_LEVELS = [1, 2, 3, 4, 5] as const;
+export const SYMPTOM_KEYS = ["nausea", "tired", "headache", "back_pain", "heartburn", "swelling", "poor_sleep"] as const;

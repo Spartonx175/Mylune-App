@@ -10,6 +10,7 @@
     - "Efferalgan"
     - "Dolko"
     - "Acétaminophène"
+    - "Tylenol"
     - "Paracetamol"
   active_ingredient: "paracétamol"
   tips: [best]
@@ -556,6 +557,9 @@
     - "Zyrtecset"
     - "Comprimé contre les allergies"
     - "Antihistaminique"
+    - "Rhume des foins"
+    - "Allergie saisonnière"
+    - "Antiallergique"
     - "Cetirizine"
   active_ingredient: "cétirizine"
   local: true
@@ -575,6 +579,9 @@
     - "Clarityn"
     - "Comprimé contre les allergies"
     - "Antihistaminique"
+    - "Rhume des foins"
+    - "Allergie saisonnière"
+    - "Antiallergique"
     - "Loratadine"
   active_ingredient: "loratadine"
   tips: [best]
@@ -1596,6 +1603,9 @@
     - "hespéridine"
     - "Daflon"
     - "veinotoniques"
+    - "Hémorroïdes"
+    - "Hemorroides"
+    - "Crise hémorroïdaire"
     - "Diosmin"
   active_ingredient: "diosmin, hesperidin"
   tips: [best]
@@ -1868,6 +1878,9 @@
   names:
     - "Flurbiprofène pastilles pour la gorge"
     - "Strefen"
+    - "Mal de gorge"
+    - "Pastilles pour la gorge"
+    - "Angine"
     - "Flurbiprofen throat lozenges"
   active_ingredient: "flurbiprofen"
   tips: [avoid]
@@ -1884,6 +1897,9 @@
   category: cold-cough
   names:
     - "Pastilles à la lidocaïne pour la gorge (lidocaïne seule)"
+    - "Mal de gorge"
+    - "Pastilles pour la gorge"
+    - "Angine"
     - "Lidocaine throat lozenges (lidocaine only)"
   active_ingredient: "lidocaine"
   local: true
@@ -2529,8 +2545,10 @@
 - id: zolpidem
   category: sleep
   names:
-    - "Zolpidem"
     - "Stilnox"
+    - "Somnifère"
+    - "Somnifères"
+    - "Pour dormir"
     - "Zolpidem"
   active_ingredient: "zolpidem"
   local: true
@@ -2545,8 +2563,10 @@
 - id: zopiclone
   category: sleep
   names:
-    - "Zopiclone"
     - "Imovane"
+    - "Somnifère"
+    - "Somnifères"
+    - "Pour dormir"
     - "Zopiclone"
   active_ingredient: "zopiclone"
   local: true
@@ -3362,6 +3382,8 @@
     - "Nitrofurantoïne"
     - "Furadantine"
     - "Furadoïne"
+    - "Cystite"
+    - "Infection urinaire"
     - "Nitrofurantoin"
   active_ingredient: "nitrofurantoin"
   local: true
@@ -3380,6 +3402,8 @@
     - "Fosfomycine trométamol"
     - "Monuril"
     - "Uridoz"
+    - "Cystite"
+    - "Infection urinaire"
     - "Fosfomycin trometamol"
   active_ingredient: "fosfomycin trometamol"
   tips: [best]
@@ -3397,6 +3421,8 @@
   names:
     - "Pivmécillinam"
     - "Selexid"
+    - "Cystite"
+    - "Infection urinaire"
     - "Pivmecillinam"
   active_ingredient: "pivmecillinam"
   tips: [best]
@@ -4176,6 +4202,9 @@
   names:
     - "Adapalène"
     - "Differine"
+    - "Crème anti-acné"
+    - "Gel anti-acné"
+    - "Traitement de l'acné"
     - "Adapalene"
   active_ingredient: "adapalene"
   tips: [avoid]
@@ -4228,6 +4257,9 @@
     - "Peroxyde de benzoyle"
     - "Pannoxyl"
     - "Cutacnyl"
+    - "Crème anti-acné"
+    - "Gel anti-acné"
+    - "Traitement de l'acné"
     - "Benzoyl peroxide"
   active_ingredient: "benzoyl peroxide"
   tips: [best]
@@ -4246,6 +4278,9 @@
     - "Acide azélaïque"
     - "Finacea"
     - "Skinoren"
+    - "Crème anti-acné"
+    - "Gel anti-acné"
+    - "Traitement de l'acné"
     - "Azelaic acid"
   active_ingredient: "azelaic acid"
   tips: [best]
@@ -4512,6 +4547,9 @@
     - "Tardyferon"
     - "Fumafer"
     - "Ferrostrane"
+    - "Fer"
+    - "Comprimés de fer"
+    - "Cure de fer"
     - "Iron supplement"
   active_ingredient: "oral iron salts"
   local: true
@@ -5718,3 +5756,39 @@
         - crat-calcipotriol
         - nhs-calcipotriol
   reviewed: 2026-11-14
+- id: phloroglucinol
+  category: antispasmodic
+  names:
+    - "Spasfon"
+    - "Spasfon Lyoc"
+    - "Spasmocalm"
+    - "Triméthylphloroglucinol"
+    - "Antispasmodique"
+    - "Phloroglucinol"
+  active_ingredient: "phloroglucinol"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "Le CRAT rapporte de très nombreuses grossesses exposées au phloroglucinol (Spasfon) sans malformation ni effet sur le bébé attribuable au traitement, et indique qu'il peut être utilisé quel que soit le terme. Mais la notice officielle précise de ne l'utiliser pendant la grossesse que si nécessaire. Si la douleur est forte ou dure, consultez un médecin ou une sage-femme. Demandez conseil à un pharmacien ou à un médecin."
+      sources:
+        - crat-phloroglucinol
+        - ansm-spasfon-notice
+  reviewed: 2026-11-15
+- id: diosmectite
+  category: antidiarrhoeal
+  names:
+    - "Smecta"
+    - "Smectite"
+    - "Argile contre la diarrhée"
+    - "Diosmectite"
+  active_ingredient: "diosmectite"
+  local: true
+  answers:
+    - state: not_applicable
+      verdict: careful
+      why: "En cas de diarrhée brutale sans signe de gravité, le CRAT cite une argile de type Smecta comme une option. Mais la notice officielle (mise à jour en 2025) indique que Smecta n'est pas recommandé pendant la grossesse : les sources ne sont donc pas d'accord. Buvez beaucoup, et consultez un médecin ou une sage-femme s'il y a du sang, de la fièvre ou une forte douleur, ou si vous ne gardez plus les liquides. Demandez conseil à un pharmacien ou à un médecin."
+      sources:
+        - crat-antidiarrheiques
+        - ansm-smecta-notice
+  reviewed: 2026-11-15

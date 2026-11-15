@@ -130,3 +130,13 @@ Done: content/{en,fr}/check/medicines.yaml now have 328 items each (FR mirrors E
 - **Not added, not real distinct items:** nothing was padded; variants that share the same answer (e.g. every apple variety) are kept only where the French market sells them under a different name.
 - **Already in the file, skipped:** `soy-milk`, `soy-yoghurt` (another session filed them), plus every id already present.
 - **Race note:** another session rewrote `foods.yaml` twice while I was appending (my items vanished once). The generator lives in the session scratchpad (`gen/`) and replaces its own items by id on each run; re-run it if the items are missing.
+
+## Guide gaps found by the search stress test (2026-11-15)
+
+- Not in the list because there is no verified source yet: seaweed / nori / algues, kimchi, coconut water, Strepsils, arnica, Bétadine (povidone iodine; CRAT has no page), Hextril, probiotic supplements. The screen says 'not in the list yet, ask your pharmacist'. Add them only with a read source.
+
+- Spasfon and Smecta are 'careful': CRAT says usable, but the official ANSM patient leaflets say 'only if necessary' (Spasfon) and 'not recommended' (Smecta). Ask a pharmacist or midwife to confirm the wording.
+
+- Cheese rules follow mangerbouger.fr (stricter: pasteurised soft bloomy-rind and washed-rind cheeses are avoided) and ameli.fr (rind and raw milk). If the clinic gives different advice, tell Div and the entries can be relaxed.
+
+- The search test (tests/search-stress.test.ts) lists queries that must find something. Add a query there whenever someone reports a miss.

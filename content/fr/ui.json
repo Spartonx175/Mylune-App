@@ -162,7 +162,8 @@
     "verdict": {
       "ok": "Oui",
       "careful": "Attention",
-      "avoid": "Non"
+      "avoid": "Non",
+      "depends": "Ça dépend"
     },
     "verdictMedicines": {
       "ok": "Généralement compatible",
@@ -180,7 +181,7 @@
     "pickOne": "Touchez un résultat pour voir la réponse.",
     "results": "{n} résultats",
     "empty": "Cette liste est en cours de rédaction. Elle apparaîtra bientôt.",
-    "back": "Retour au guide",
+    "back": "Retour aux résultats",
     "states": {
       "raw": "Cru",
       "undercooked": "Pas assez cuit ou coulant",
@@ -192,7 +193,13 @@
       "canned": "En conserve ou en bocal",
       "reheated": "Réchauffé jusqu'à ce que ce soit bien chaud",
       "not_applicable": "Standard"
-    }
+    },
+    "depends": "La réponse dépend de la façon dont c'est fabriqué ou préparé. Chaque cas est détaillé ci-dessous.",
+    "alsoCovers": "La même règle s'applique à : {names}",
+    "sameRuleAs": "Même règle que : {name}",
+    "searchError": "La recherche n'a pas fonctionné. Vérifiez votre connexion et réessayez.",
+    "retry": "Réessayer",
+    "searching": "Recherche…"
   },
   "ask": {
     "title": "Demander à un assistant IA",
@@ -313,6 +320,19 @@
     "answerWas": "La bonne réponse est : {answer}",
     "sources": "Sources",
     "back": "Retour au fil",
-    "pick": "Choisissez une réponse"
+    "pick": "Choisissez une réponse",
+    "gen": {
+      "food": "{item} : quel est le conseil pendant la grossesse ?",
+      "drink": "{item} : quel est le conseil pendant la grossesse ?",
+      "exercise": "{item} : quel est le conseil pendant la grossesse ?",
+      "medicine": "{item} : quel est le conseil général pendant la grossesse ?",
+      "stateWrap": " ({state})",
+      "ok": "Sans problème",
+      "careful": "Avec précaution, ou après avoir demandé conseil",
+      "avoid": "À éviter"
+    },
+    "roundDone": "Partie terminée. De nouvelles questions vous attendent.",
+    "poolLeft": "Encore {n} nouvelles questions",
+    "poolRepeat": "Vous avez répondu à toutes les questions. Les plus anciennes reviendront."
   }
 }

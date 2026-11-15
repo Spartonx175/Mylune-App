@@ -30,6 +30,8 @@
     - Bœuf saisi
     - Bœuf mi-cuit
     - Pavé de bœuf mi-cuit
+    - Rare beef
+    - Medium rare steak
   local: true
   answers:
     - state: undercooked
@@ -522,6 +524,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: Foie gras (fresh, mi-cuit or in a block) is a chilled cooked product that can carry listeria. It is also liver, rich in vitamin A.
       sources:
@@ -550,6 +553,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: Fresh pâté and terrine can carry listeria, which grows even in the fridge. French health advice is to avoid them.
       sources:
@@ -577,6 +581,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: Rillettes are chilled and eaten as they are, and can carry listeria. Avoid them, including fish rillettes.
       sources:
@@ -608,6 +613,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: careful
       why: Cold sliced ham can carry listeria. Pre-packaged ham is the better choice; avoid ham sliced at the counter.
       sources:
@@ -722,6 +728,7 @@
         - nhs-toxoplasmosis
         - cdc-listeria-deli
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: careful
       why: Chorizo cooked until steaming hot in a dish (paella, stew, hot pizza) is fine. Fresh cooking chorizo must be cooked right through.
       sources:
@@ -808,6 +815,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: Hot dog sausages eaten cold, straight from the packet, can carry listeria.
       sources:
@@ -869,6 +877,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: Jellied cold meats can carry listeria, which grows in the fridge. Avoid them.
       sources:
@@ -1702,6 +1711,9 @@
     - Mouillettes
     - Poached egg
     - Œuf cocotte
+    - Runny egg
+    - Runny eggs
+    - Dippy egg
   local: true
   answers:
     - state: undercooked
@@ -2328,6 +2340,9 @@
     - Boursault
     - Vignotte
     - Fougerus
+    - Soft cheese
+    - Soft ripened cheese
+    - Bloomy rind cheese
   tips:
     - avoid
   local: true
@@ -2368,6 +2383,8 @@
     - Vacherin
     - Mont d'Or
     - Boulette d'Avesnes
+    - Soft cheese
+    - Washed rind cheese
   local: true
   answers:
     - state: pasteurised
@@ -2413,6 +2430,8 @@
     - Salade bleu noix
     - Salade au roquefort
     - Salade au gorgonzola
+    - Blue cheese
+    - Blue veined cheese
   tips:
     - avoid
   local: true
@@ -8012,6 +8031,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: careful
       why: "Chicken ham: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
       sources:
@@ -8036,6 +8056,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: careful
       why: "Turkey ham: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
       sources:
@@ -8060,6 +8081,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: careful
       why: "Bone-in ham: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
       sources:
@@ -8085,6 +8107,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: careful
       why: "Smoked cooked ham: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
       sources:
@@ -8112,6 +8135,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: careful
       why: "Mortadella: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
       sources:
@@ -8135,6 +8159,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: careful
       why: "Cervelas: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
       sources:
@@ -8159,6 +8184,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: careful
       why: "Garlic sausage cooked: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
       sources:
@@ -8183,6 +8209,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: careful
       why: "Lyon sausage cooked: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
       sources:
@@ -8207,6 +8234,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: careful
       why: "Roast pork cold: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
       sources:
@@ -8231,6 +8259,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: careful
       why: "Roast turkey cold: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
       sources:
@@ -8255,6 +8284,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: careful
       why: "Roast beef cold cut: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
       sources:
@@ -8279,6 +8309,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: careful
       why: "Pastrami: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
       sources:
@@ -8304,6 +8335,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: careful
       why: "Tongue cold cut: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
       sources:
@@ -8330,6 +8362,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: careful
       why: "Pork rillons: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
       sources:
@@ -8360,6 +8393,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: careful
       why: "Cheese-and-ham slice: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
       sources:
@@ -8385,6 +8419,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: "Ham mousse: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
       sources:
@@ -8423,6 +8458,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: "Country pâté: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
       sources:
@@ -8448,6 +8484,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: "Duck pâté: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
       sources:
@@ -8472,6 +8509,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: "Rabbit pâté: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
       sources:
@@ -8497,6 +8535,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: "Game terrine: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
       sources:
@@ -8522,6 +8561,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: "Chicken terrine: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
       sources:
@@ -8551,6 +8591,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: careful
       why: It has no meat, but chilled terrines and pâtés are on the French avoid list because listeria can grow in the fridge, and NHS says to keep vegetable pâté chilled and eat it before its date. Ask your midwife if you want it.
       sources:
@@ -8567,6 +8608,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: "Mousse of duck: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
       sources:
@@ -8594,6 +8636,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: "Pork rillettes: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
       sources:
@@ -8618,6 +8661,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: "Goose rillettes: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
       sources:
@@ -8642,6 +8686,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: "Salmon rillettes: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
       sources:
@@ -8666,6 +8711,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: "Tuna rillettes: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
       sources:
@@ -8690,6 +8736,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: "Terrine de poisson: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
       sources:
@@ -8714,6 +8761,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: "Mousse de saumon: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
       sources:
@@ -8739,6 +8787,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: "Wild boar pâté: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
       sources:
@@ -8763,6 +8812,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: "Pâté from Brittany: chilled pâté, terrine, rillettes and similar spreads can carry listeria, which grows even in the fridge. French health advice is to avoid them."
       sources:
@@ -8794,6 +8844,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: "Brawn: chilled jellied and pressed meats can carry listeria, which grows even in the fridge. Avoid them."
       sources:
@@ -8812,6 +8863,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: "Pig snout salad: chilled jellied and pressed meats can carry listeria, which grows even in the fridge. Avoid them."
       sources:
@@ -8829,6 +8881,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: "Jellied egg: chilled jellied and pressed meats can carry listeria, which grows even in the fridge. Avoid them."
       sources:
@@ -8851,6 +8904,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: avoid
       why: "Ham in jelly: chilled jellied and pressed meats can carry listeria, which grows even in the fridge. Avoid them."
       sources:
@@ -9152,6 +9206,7 @@
   local: true
   answers:
     - state: cooked
+      label: Ready-to-eat, eaten cold
       verdict: careful
       why: "Andouille cooked: chilled cooked cold cuts can carry listeria, which grows even in the fridge. Prefer pre-packed slices eaten before the date, and avoid those sliced at the counter."
       sources:
@@ -31950,3 +32005,39 @@
       sources:
         - nhs-foods-to-avoid
   reviewed: 2026-11-14
+- id: cheese-raw-milk
+  category: cheese
+  names:
+    - "Raw milk cheese"
+    - "Unpasteurised cheese"
+    - "Cheese made with raw milk"
+    - "Farmhouse raw milk cheese"
+  local: true
+  answers:
+    - state: unpasteurised
+      verdict: avoid
+      why: "Raw-milk cheese is avoided in France, especially soft cheese, because it can carry listeria. The exception is hard cooked-pressed cheese such as comté, beaufort, emmental, gruyère and parmesan: it is heated and aged for a long time, so it is fine even when made with raw milk."
+      sources:
+        - mangerbouger-aliments-eviter
+        - ameli-aliments-eviter
+    - state: cooked
+      verdict: ok
+      why: "Raw-milk cheese baked until steaming hot all the way through, for example in an oven recipe, is safe. Remove the rind first."
+      sources:
+        - mangerbouger-aliments-eviter
+  reviewed: 2026-11-15
+- id: leftovers
+  category: ready_meal
+  names:
+    - "Leftovers"
+    - "Reheated leftovers"
+    - "Last night's dinner"
+    - "Cooked leftovers"
+  local: true
+  answers:
+    - state: reheated
+      verdict: ok
+      why: "Keep leftovers in the fridge at 4 °C at most, eat them within 3 days of cooking, and reheat them until they are hot all the way through. Listeria does not change how food looks, smells or tastes."
+      sources:
+        - ameli-aliments-eviter
+  reviewed: 2026-11-15

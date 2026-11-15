@@ -1,93 +1,368 @@
 # Quiz (SPEC section 14). Chaque question cite au moins un id de content/sources.yaml.
 # Les clés suivent content/en/quiz.yaml une à une : mêmes ids, même ordre, même index de réponse et mêmes sources.
 # Scores et badges seulement : ni séries, ni rappels pour garder un score, ni pénalités (SPEC section 10).
+# D'autres questions sont générées depuis les données du Guide (lib/content/quiz.ts), donc toujours cohérentes avec lui.
 questions:
   - id: alcohol
     question: "Quelle quantité d'alcool est sans risque pendant la grossesse ?"
-    options:
-      - "Aucune : le plus sûr est de ne pas en boire"
-      - "Un verre par semaine"
-      - "Un petit verre au cours d'un repas"
+    options: ["Aucune : le plus sûr est de ne pas en boire", "Un verre par semaine", "Un petit verre au cours d'un repas"]
     answer: 0
     why: "Aucune quantité d'alcool n'a été jugée sans risque. Le conseil est donc de n'en boire aucune."
     sources: [nhs-alcohol, ameli-zero-alcool]
 
   - id: listeria-cheese
     question: "Quel fromage faut-il éviter, sauf s'il est bien cuit ?"
-    options:
-      - "Un fromage à pâte molle au lait cru"
-      - "Un fromage à pâte dure pasteurisé"
-      - "Un yaourt nature"
+    options: ["Un fromage à pâte molle au lait cru", "Un fromage à pâte dure pasteurisé", "Un yaourt nature"]
     answer: 0
     why: "Le lait cru peut transmettre la listeria, une infection rare mais grave. Choisissez un fromage pasteurisé, ou faites-le cuire jusqu'à ce qu'il soit bien chaud."
     sources: [cdc-listeria-dairy, ameli-aliments-eviter]
 
   - id: toxo-prevention
     question: "Qu'est-ce qui aide à prévenir la toxoplasmose ?"
-    options:
-      - "Laver les fruits et légumes, et vous laver les mains après avoir manipulé de la viande crue"
-      - "Manger de la viande crue de temps en temps"
-      - "Nettoyer la litière du chat tous les jours"
+    options: ["Laver les fruits et légumes, et vous laver les mains après avoir manipulé de la viande crue", "Manger de la viande crue de temps en temps", "Nettoyer la litière du chat tous les jours"]
     answer: 0
     why: "La toxoplasmose se transmet surtout par la viande crue ou mal cuite, et par les produits et la terre non lavés. Si possible, demandez à quelqu'un d'autre de nettoyer la litière."
     sources: [ameli-toxo-prevention, nhs-toxoplasmosis]
 
   - id: baby-movements
     question: "Votre bébé semble bouger nettement moins que d'habitude. Que faites-vous ?"
-    options:
-      - "Je contacte tout de suite ma sage-femme ou la maternité"
-      - "J'attends le lendemain"
-      - "Je bois quelque chose de sucré et j'attends"
+    options: ["Je contacte tout de suite ma sage-femme ou la maternité", "J'attends le lendemain", "Je bois quelque chose de sucré et j'attends"]
     answer: 0
     why: "Une baisse nette des mouvements doit être vérifiée le jour même, même tard le soir. Ne pas attendre."
     sources: [nhs-baby-movements, nhs-symptoms-get-help]
 
   - id: bleeding
     question: "Tout saignement vaginal pendant la grossesse doit être..."
-    options:
-      - "Vérifié par une sage-femme ou un médecin, quelle que soit la quantité"
-      - "Surveillé à la maison pendant une journée"
-      - "Inquiétant seulement s'il est rouge vif"
+    options: ["Vérifié par une sage-femme ou un médecin, quelle que soit la quantité", "Surveillé à la maison pendant une journée", "Inquiétant seulement s'il est rouge vif"]
     answer: 0
     why: "Tout saignement doit être vérifié, même une petite quantité."
     sources: [nhs-vaginal-bleeding, ameli-bleeding-t1]
 
   - id: folic-acid
     question: "Quelle dose d'acide folique est conseillée chaque jour, d'avant la conception jusqu'à la 12e semaine ?"
-    options:
-      - "400 microgrammes"
-      - "4 milligrammes pour toutes"
-      - "Aucun complément n'est nécessaire"
+    options: ["400 microgrammes", "4 milligrammes pour toutes", "Aucun complément n'est nécessaire"]
     answer: 0
     why: "Le conseil est de 400 microgrammes par jour, à partir d'avant la conception et jusqu'à la 12e semaine. Demandez à votre médecin pour toute dose plus élevée."
     sources: [nhs-folic-acid, nhs-vitamins]
 
   - id: medicines
     question: "Avant de prendre un médicament pendant la grossesse, que faites-vous ?"
-    options:
-      - "Je demande conseil à mon pharmacien, ma sage-femme ou mon médecin"
-      - "Je prends la même dose qu'avant la grossesse"
-      - "J'arrête tous les médicaments pendant neuf mois"
+    options: ["Je demande conseil à mon pharmacien, ma sage-femme ou mon médecin", "Je prends la même dose qu'avant la grossesse", "J'arrête tous les médicaments pendant neuf mois"]
     answer: 0
     why: "Certains médicaments sont sûrs pendant la grossesse, d'autres non. Une vérification évite les erreurs. Ne stoppez pas un traitement régulier sans avis médical."
     sources: [ansm-medicaments-bons-reflexes, nhs-medicines]
 
   - id: exercise
     question: "Quelle activité est généralement conseillée pendant une grossesse normale ?"
-    options:
-      - "La marche ou la natation"
-      - "Les sports de contact"
-      - "Rester allongée sur le dos pendant de longues périodes"
+    options: ["La marche ou la natation", "Les sports de contact", "Rester allongée sur le dos pendant de longues périodes"]
     answer: 0
     why: "Une activité modérée et régulière convient à la plupart des grossesses. Demandez à votre sage-femme les limites qui vous concernent."
     sources: [nhs-exercise, nhs-startforlife-exercise]
 
   - id: smoking
     question: "Si vous fumez, quelle est la meilleure chose pour votre bébé ?"
-    options:
-      - "Arrêter de fumer le plus tôt possible"
-      - "Passer aux cigarettes légères"
-      - "Fumer seulement dehors"
+    options: ["Arrêter de fumer le plus tôt possible", "Passer aux cigarettes légères", "Fumer seulement dehors"]
     answer: 0
     why: "Arrêter à n'importe quel moment de la grossesse aide votre bébé. Votre sage-femme peut vous accompagner gratuitement."
     sources: [nhs-stop-smoking-pregnancy]
+
+  - id: big-predator-fish
+    question: "Quels poissons faut-il éviter complètement pendant la grossesse ?"
+    options: ["L'espadon, le marlin et le requin", "Le cabillaud et le merlu", "Les sardines et les maquereaux"]
+    answer: 0
+    why: "Ces grands poissons prédateurs accumulent du mercure et d'autres polluants. Le cabillaud, le merlu, les sardines et les maquereaux sont de bons choix, bien cuits."
+    sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter]
+
+  - id: fish-frequency
+    question: "À quelle fréquence le poisson est-il recommandé pendant la grossesse ?"
+    options: ["Deux fois par semaine, dont un poisson gras", "Tous les jours", "Jamais"]
+    answer: 0
+    why: "Le poisson est riche en oméga-3. Variez les espèces, cuisez-le bien, et choisissez un poisson gras comme la sardine, le maquereau, le hareng ou le saumon une fois par semaine."
+    sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter]
+
+  - id: smoked-salmon
+    question: "Quel saumon est déconseillé ?"
+    options: ["Le saumon fumé", "Un filet de saumon bien cuit", "Une truite bien cuite"]
+    answer: 0
+    why: "Le poisson fumé peut contenir de la listeria. Le saumon frais bien cuit est un bon choix."
+    sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter]
+
+  - id: raw-fish-parasite
+    question: "Quel plat présente un risque de parasites du poisson et de listeria ?"
+    options: ["Des sushis ou sashimis au poisson cru", "Un hachis de poisson bien cuit", "Une soupe de poisson chaude"]
+    answer: 0
+    why: "Le poisson cru ou peu cuit (sushi, sashimi, tartare, ceviche) peut contenir des parasites comme l'anisakis et des bactéries. Faites cuire le poisson à cœur."
+    sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter]
+
+  - id: freezing-fish
+    question: "Congeler du poisson cru supprime-t-il le risque de listeria ?"
+    options: ["Non, la congélation n'élimine pas la listeria", "Oui, complètement", "Seulement après une semaine"]
+    answer: 0
+    why: "La congélation ne tue pas la listeria. La cuisson, si."
+    sources: [mangerbouger-aliments-eviter, ameli-aliments-eviter]
+
+  - id: freshwater-fish
+    question: "À quelle fréquence peut-on manger des poissons d'eau douce qui accumulent des polluants, comme la carpe ou le silure ?"
+    options: ["Pas plus d'une fois tous les deux mois", "Toutes les semaines", "Tous les jours"]
+    answer: 0
+    why: "Les poissons d'eau douce comme l'anguille, le barbeau, la brème, la carpe et le silure accumulent des polluants : on les limite à une fois tous les deux mois."
+    sources: [ameli-aliments-eviter]
+
+  - id: tuna
+    question: "Que conseille-t-on pour le thon, même en conserve ?"
+    options: ["Le limiter", "En manger librement", "C'est le meilleur poisson à privilégier"]
+    answer: 0
+    why: "Le thon est un poisson prédateur qui accumule du mercure : on le limite. Les sardines, les maquereaux et le saumon sont de meilleurs choix."
+    sources: [mangerbouger-aliments-eviter, ameli-aliments-eviter]
+
+  - id: cheese-rind
+    question: "Que faut-il faire de la croûte des fromages ?"
+    options: ["L'enlever", "La manger", "La manger seulement si le fromage est tiède"]
+    answer: 0
+    why: "La croûte peut être contaminée en surface : en France, on conseille de l'enlever."
+    sources: [mangerbouger-aliments-eviter, ameli-aliments-eviter]
+
+  - id: comte-raw
+    question: "Le comté au lait cru est généralement..."
+    options: ["Autorisé, car il est chauffé et affiné longtemps", "Interdit", "Autorisé seulement s'il est râpé"]
+    answer: 0
+    why: "Les fromages à pâte pressée cuite (comté, beaufort, emmental, gruyère, parmesan) sont chauffés et affinés longtemps : on peut les manger même au lait cru."
+    sources: [mangerbouger-aliments-eviter]
+
+  - id: grated-cheese-bag
+    question: "Pourquoi déconseille-t-on en France le fromage râpé en sachet ?"
+    options: ["L'humidité du sachet favorise le développement de bactéries", "Il contient trop de sel", "Il est toujours fait avec du lait cru"]
+    answer: 0
+    why: "L'humidité du sachet peut permettre aux bactéries de se développer. Il vaut mieux râper le fromage vous-même."
+    sources: [mangerbouger-aliments-eviter, ameli-aliments-eviter]
+
+  - id: vegan-cheese
+    question: "Que conseille-t-on pour les substituts de fromage à base de boisson végétale (avoine, riz, soja) ?"
+    options: ["Les éviter : ils peuvent être contaminés par la listeria", "Ils sont plus sûrs que le fromage", "Seulement les éviter froids"]
+    answer: 0
+    why: "Ils peuvent être contaminés par la listeria lors de leur fabrication ou s'ils ne sont pas conservés à la bonne température."
+    sources: [mangerbouger-aliments-eviter]
+
+  - id: white-ham
+    question: "En France, le jambon blanc est un aliment à risque, sauf s'il est..."
+    options: ["Recuit avant d'être mangé, par exemple sur une pizza ou dans un gratin", "Mangé froid le jour même", "Coupé très finement"]
+    answer: 0
+    why: "Les charcuteries cuites à conserver au froid peuvent contenir de la listeria. Les chauffer jusqu'à ce qu'elles soient chaudes supprime le risque."
+    sources: [mangerbouger-aliments-eviter]
+
+  - id: dry-sausage
+    question: "Pourquoi déconseille-t-on le saucisson sec et le jambon sec ?"
+    options: ["Risque de salmonelle et d'autres germes, car ils ne sont pas cuits", "Ils contiennent trop de protéines", "Ils sont toujours trop gras"]
+    answer: 0
+    why: "Ils se mangent crus (séchés, pas cuits) : les germes ne sont donc pas détruits."
+    sources: [mangerbouger-aliments-eviter, ameli-toxo-prevention]
+
+  - id: egg-ok
+    question: "Quel œuf peut-on manger pendant la grossesse ?"
+    options: ["Un œuf dur", "Un œuf à la coque", "Un œuf au plat coulant"]
+    answer: 0
+    why: "Les œufs doivent être bien cuits. Les œufs à la coque, coulants ou crus peuvent contenir de la salmonelle."
+    sources: [mangerbouger-aliments-eviter, ameli-aliments-eviter]
+
+  - id: homemade-mayo
+    question: "Quel est le choix le plus sûr ?"
+    options: ["Une mayonnaise industrielle", "Une mayonnaise maison aux œufs crus", "Une mousse au chocolat maison aux œufs crus"]
+    answer: 0
+    why: "Les recettes maison aux œufs crus sont à éviter. Les versions industrielles ne sont a priori pas considérées à risque."
+    sources: [mangerbouger-aliments-eviter]
+
+  - id: fridge-temperature
+    question: "À quelle température maximale faut-il régler votre réfrigérateur ?"
+    options: ["4 °C", "8 °C", "12 °C"]
+    answer: 0
+    why: "La listeria peut se développer au froid : gardez le réfrigérateur à 4 °C au maximum et vérifiez-le avec un thermomètre."
+    sources: [ameli-aliments-eviter]
+
+  - id: leftovers
+    question: "Combien de temps peut-on garder des restes au réfrigérateur ?"
+    options: ["Trois jours au maximum", "Une semaine", "Tant qu'ils sentent bon"]
+    answer: 0
+    why: "La listeria ne change ni l'aspect, ni l'odeur, ni le goût des aliments. Réchauffez les restes jusqu'à ce qu'ils soient chauds à cœur."
+    sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter]
+
+  - id: thawing
+    question: "Où faut-il décongeler les aliments surgelés ?"
+    options: ["Au réfrigérateur", "Sur le plan de travail", "Dans un endroit chaud"]
+    answer: 0
+    why: "Décongeler au réfrigérateur garde l'aliment au froid pendant qu'il décongèle."
+    sources: [ameli-aliments-eviter]
+
+  - id: well-cooked-meat
+    question: "Comment reconnaître une viande bien cuite ?"
+    options: ["Elle perd sa couleur rouge et devient beige rosé à cœur", "Elle est dorée à l'extérieur", "Elle est encore rouge mais chaude"]
+    answer: 0
+    why: "La viande doit être cuite à cœur pour être sûre, surtout si vous n'êtes pas immunisée contre la toxoplasmose."
+    sources: [mangerbouger-aliments-eviter, ameli-toxo-prevention]
+
+  - id: indoor-cat
+    question: "Un chat qui vit strictement en appartement et mange des croquettes ou des pâtées en boîte..."
+    options: ["Risque très peu de vous transmettre la toxoplasmose", "Représente un risque élevé", "Représente un risque seulement l'été"]
+    answer: 0
+    why: "Un chat d'appartement nourri avec des aliments traités par la chaleur ne porte presque pas le parasite. Évitez quand même de changer la litière vous-même, ou mettez des gants et lavez-vous les mains ensuite."
+    sources: [mangerbouger-aliments-eviter, ameli-toxo-prevention]
+
+  - id: cmv
+    question: "Comment réduire le risque de CMV auprès de jeunes enfants ?"
+    options: ["Ne pas partager leur cuillère, ne pas les embrasser sur la bouche, et se laver les mains après les couches", "Partager leur tétine pour la nettoyer", "On ne peut rien faire"]
+    answer: 0
+    why: "Le CMV passe par la salive et les urines. Les jeunes enfants le portent souvent sans être malades."
+    sources: [mangerbouger-aliments-eviter]
+
+  - id: soy
+    question: "Que conseille-t-on en France pour les aliments et boissons à base de soja ?"
+    options: ["Les éviter par précaution (phytoœstrogènes)", "En manger librement", "Les manger seulement crus"]
+    answer: 0
+    why: "Le soja contient des phytoœstrogènes, des perturbateurs endocriniens. La sauce soja, qui en contient très peu, peut être consommée occasionnellement."
+    sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter]
+
+  - id: liquorice
+    question: "Que conseille-t-on pour la réglisse pendant la grossesse ?"
+    options: ["L'éviter sous toutes ses formes, car elle peut faire monter la tension", "Un peu aide contre les nausées", "Éviter seulement les bonbons à la réglisse"]
+    answer: 0
+    why: "La réglisse sous toutes ses formes (bonbons, tisanes, sirops, compléments) est déconseillée : elle peut favoriser l'hypertension et des troubles du rythme cardiaque."
+    sources: [ameli-aliments-eviter]
+
+  - id: liver
+    question: "Lequel de ces aliments vaut-il mieux éviter pendant la grossesse ?"
+    options: ["Le foie et les produits à base de foie", "Du poulet bien cuit", "Des légumes verts cuits"]
+    answer: 0
+    why: "Le foie contient beaucoup de vitamine A, qui peut nuire au bébé en grande quantité."
+    sources: [nhs-foods-to-avoid]
+
+  - id: vitamin-a
+    question: "Quel complément faut-il éviter à forte dose ?"
+    options: ["La vitamine A", "L'acide folique", "La vitamine D"]
+    answer: 0
+    why: "Trop de vitamine A peut nuire au bébé. Ne prenez pas de compléments qui en contiennent sans avis médical."
+    sources: [nhs-vitamins, nhs-foods-to-avoid]
+
+  - id: flu-vaccine
+    question: "Le vaccin contre la grippe est-il recommandé pendant la grossesse ?"
+    options: ["Oui, le vaccin grippal inactivé est recommandé", "Non, jamais", "Seulement la dernière semaine"]
+    answer: 0
+    why: "Les femmes enceintes ont plus de risque de complications de la grippe, comme la pneumonie. Le vaccin réduit le risque d'attraper la grippe ou de la faire grave."
+    sources: [nhs-flu-vaccine, crat-vaccin-grippe]
+
+  - id: whooping-cough
+    question: "Pourquoi propose-t-on le vaccin contre la coqueluche pendant la grossesse ?"
+    options: ["Il protège le nouveau-né grâce à vos anticorps", "Il ne protège que vous", "C'est un rappel pour la peau du bébé"]
+    answer: 0
+    why: "La coqueluche est dangereuse pour les nouveau-nés. Les anticorps que vous fabriquez passent au bébé avant qu'il puisse être vacciné."
+    sources: [nhs-whooping-cough-pregnancy, crat-vaccin-coqueluche]
+
+  - id: live-vaccines
+    question: "Quels vaccins nécessitent d'en parler avec votre sage-femme ou votre médecin avant de décider ?"
+    options: ["Les vaccins vivants comme la rougeole-oreillons-rubéole ou la fièvre jaune", "Le vaccin contre la grippe", "Le vaccin contre la coqueluche"]
+    answer: 0
+    why: "Les vaccins rougeole-oreillons-rubéole et fièvre jaune présentent des risques potentiels pendant la grossesse : il faut en parler d'abord. Les vaccins inactivés comme la grippe et la coqueluche sont recommandés."
+    sources: [nhs-vaccines-pregnancy]
+
+  - id: ultrasound
+    question: "Les échographies utilisent-elles des rayonnements ?"
+    options: ["Non, elles utilisent des ondes sonores", "Oui, une faible dose", "Oui, mais seulement des rayons X"]
+    answer: 0
+    why: "Une échographie utilise des ondes sonores de haute fréquence, pas de rayonnements."
+    sources: [nhs-ultrasound-scan]
+
+  - id: first-pain-relief
+    question: "Quel antidouleur est généralement le premier choix pendant la grossesse ?"
+    options: ["Le paracétamol, à la dose habituelle et le moins longtemps possible", "L'ibuprofène", "L'aspirine"]
+    answer: 0
+    why: "Le paracétamol est le premier choix habituel. Les anti-inflammatoires comme l'ibuprofène et l'aspirine sont évités, sauf prescription médicale."
+    sources: [crat-paracetamol, nhs-paracetamol, crat-ains]
+
+  - id: essential-oils
+    question: "Les huiles essentielles sont-elles sans danger parce qu'elles sont naturelles ?"
+    options: ["Non, beaucoup sont déconseillées pendant la grossesse", "Oui, toujours", "Seulement si on les boit"]
+    answer: 0
+    why: "Naturel ne veut pas dire sans danger. Beaucoup d'huiles essentielles sont déconseillées pendant la grossesse. Demandez conseil à un pharmacien."
+    sources: [crat-huiles-essentielles, ansm-medicaments-bons-reflexes]
+
+  - id: dental-anesthesia
+    question: "Peut-on se faire soigner les dents avec une anesthésie locale ?"
+    options: ["Oui, les anesthésiques locaux dentaires usuels sont considérés comme compatibles", "Non, jamais", "Seulement sous anesthésie générale"]
+    answer: 0
+    why: "Un problème dentaire non soigné peut être pire que le soin. Dites à votre dentiste que vous êtes enceinte."
+    sources: [crat-anesthesie-dentaire, crat-articaine]
+
+  - id: scuba
+    question: "Quelle activité est déconseillée pendant la grossesse ?"
+    options: ["La plongée sous-marine", "La natation douce", "La marche"]
+    answer: 0
+    why: "Le NHS déconseille la plongée sous-marine, qui peut être dangereuse pour votre bébé."
+    sources: [nhs-exercise]
+
+  - id: talk-test
+    question: "Comment savoir qu'une activité est d'intensité modérée ?"
+    options: ["Vous pouvez parler mais pas chanter", "Vous ne pouvez pas dire un mot", "Vous pouvez chanter facilement"]
+    answer: 0
+    why: "À intensité modérée, on respire plus vite et on a plus chaud, mais on peut encore parler. Si vous ne pouvez plus parler, ralentissez."
+    sources: [nhs-exercise]
+
+  - id: long-flight
+    question: "Qu'est-ce qui aide lors d'un long vol ?"
+    options: ["Marcher régulièrement et boire de l'eau", "Rester assise sans bouger", "Éviter de boire pour ne pas aller aux toilettes"]
+    answer: 0
+    why: "Bouger régulièrement et rester hydratée réduit le risque de caillots sanguins."
+    sources: [nhs-travelling]
+
+  - id: first-movements
+    question: "Quand commence-t-on généralement à sentir bouger son bébé ?"
+    options: ["Entre 16 et 24 semaines", "À 8 semaines", "Seulement après 30 semaines"]
+    answer: 0
+    why: "Pour un premier bébé, on peut ne pas sentir de mouvements avant 20 semaines. Si vous n'avez rien senti à 24 semaines, dites-le à votre sage-femme."
+    sources: [nhs-baby-movements]
+
+  - id: preeclampsia-signs
+    question: "Quels signes doivent vous faire contacter un professionnel en urgence ?"
+    options: ["Un violent mal de tête avec une vision trouble, ou un gonflement soudain", "Un peu de fatigue", "Un léger mal de dos après une longue marche"]
+    answer: 0
+    why: "Ce peuvent être des signes de prééclampsie, qui nécessite des soins urgents."
+    sources: [nhs-preeclampsia, ameli-preeclampsia]
+
+  - id: itching
+    question: "Des démangeaisons intenses, surtout sur les mains et les pieds, en fin de grossesse, nécessitent..."
+    options: ["Un appel à votre sage-femme ou à votre médecin", "Rien, c'est normal", "Un bain chaud"]
+    answer: 0
+    why: "Ce peut être le signe d'une maladie du foie (cholestase) qui doit être vérifiée."
+    sources: [nhs-itching]
+
+  - id: severe-vomiting
+    question: "Quand des vomissements pendant la grossesse doivent-ils être vus par un médecin ?"
+    options: ["Quand vous ne gardez plus aucun liquide", "Quand vous avez une nausée par jour", "Jamais"]
+    answer: 0
+    why: "Des vomissements sévères (hyperémèse) peuvent provoquer une déshydratation et nécessitent un traitement."
+    sources: [nhs-severe-vomiting]
+
+  - id: ultrasound-count
+    question: "Combien d'échographies sont recommandées au cours de la grossesse en France ?"
+    options: ["Trois", "Une", "Dix"]
+    answer: 0
+    why: "Trois échographies sont recommandées. La première, l'échographie de datation, a lieu entre 11 et 13 semaines d'aménorrhée + 6 jours."
+    sources: [ameli-programme-suivi]
+
+  - id: declare-pregnancy
+    question: "Avant quand faut-il déclarer sa grossesse à l'Assurance Maladie en France ?"
+    options: ["Avant la fin du 3e mois", "À la naissance", "À 30 semaines"]
+    answer: 0
+    why: "Votre médecin ou votre sage-femme fait la déclaration après la première consultation. La faire dans les trois premiers mois permet une prise en charge au titre de la maternité le plus tôt possible."
+    sources: [ameli-grossesse-demarches]
+
+  - id: birth-preparation
+    question: "Combien de séances de préparation à la naissance l'Assurance Maladie prend-elle en charge ?"
+    options: ["Sept", "Deux", "Aucune"]
+    answer: 0
+    why: "Sept séances de préparation à la naissance et à la parentalité sont prises en charge à 100 %. Une sage-femme ou un médecin peut les animer, et certaines sont ouvertes aux pères."
+    sources: [ameli-preparation-parentalite]
+
+  - id: low-mood
+    question: "Vous vous sentez très abattue depuis plus de deux semaines. Que faites-vous ?"
+    options: ["J'en parle à ma sage-femme ou à mon médecin", "Je garde ça pour moi", "J'attends la fin de la grossesse"]
+    answer: 0
+    why: "Le moral bas et l'anxiété sont fréquents pendant la grossesse et peuvent être soignés. Il existe de l'aide."
+    sources: [nhs-mental-health, ameli-mental-health]

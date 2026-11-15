@@ -4,13 +4,9 @@ import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
 import { getSession } from "@/lib/session";
 import { parseIcal } from "@/lib/ical";
-import { loadQuiz } from "@/lib/content/quiz";
-import type { Locale } from "@/lib/content/types";
+import { MOOD_LEVELS, SYMPTOM_KEYS } from "@/lib/track";
 
 export type Result = { ok: true; message?: string } | { ok: false; error: string };
-
-export const MOOD_LEVELS = [1, 2, 3, 4, 5] as const;
-export const SYMPTOM_KEYS = ["nausea", "tired", "headache", "back_pain", "heartburn", "swelling", "poor_sleep"] as const;
 
 const ICAL_MAX_BYTES = 2_000_000;
 const ICAL_TIMEOUT_MS = 8000;
@@ -73,14 +69,19 @@ export async function deleteLog(id: string): Promise<Result> {
   return { ok: true };
 }
 
-/** Quiz answer: checked against the content file on the server, then logged for the score. */
-export async function answerQuiz(locale: Locale, questionId: string, chosen: number): Promise<{ ok: true; correct: boolean; answer: number } | { ok: false; error: string }> {
-  const question = loadQuiz(locale).find((q) => q.id === questionId);
-  if (!question || !Number.isInteger(chosen) || chosen < 0 || chosen >= question.options.length) return { ok: false, error: "invalid" };
-  const correct = chosen === question.answer;
-  const r = await insertLog("quiz", { q: questionId, ok: correct });
-  if (!r.ok) return { ok: false, error: r.error };
-  return { ok: true, correct, answer: question.answer };
+/** Remember one quiz answer for the score and so the question is not asked again soon. Never blocks the quiz. */
+export async function recordQuiz(questionId: string, correct: boolean): Promise<Result> {
+  if (!/^[a-z0-9:_-]{1,120}$/i.test(questionId)) return { ok: false, error: "invalid" };
+  const ctx = await context();
+  if (!ctx) return { ok: false, error: "not_signed_in" };
+  const { error } = await ctx.supabase.from("logs").insert({
+    household_id: ctx.householdId,
+    user_id: ctx.userId,
+    type: "quiz",
+    value: { q: questionId, ok: Boolean(correct) },
+  });
+  // No revalidation on purpose: the quiz keeps its own state, and the Feed reads the score when it is opened.
+  return error ? { ok: false, error: "save_failed" } : { ok: true };
 }
 
 /** Manual appointment. `at` is a local Paris wall-clock value from a datetime-local input. */

@@ -1,93 +1,368 @@
 # Quiz (SPEC section 14). Every question cites at least one id from content/sources.yaml.
 # Keys mirror content/fr/quiz.yaml one to one: same ids, same order, same answer index and sources.
 # Scores and badges only: no streaks, no reminders to keep a score, no penalties (SPEC section 10).
+# More questions are generated from the checker data (lib/content/quiz.ts), so they always match the Guide.
 questions:
   - id: alcohol
     question: "How much alcohol is safe during pregnancy?"
-    options:
-      - "None is safest"
-      - "One glass a week"
-      - "A small glass with a meal"
+    options: ["None is safest", "One glass a week", "A small glass with a meal"]
     answer: 0
     why: "No amount of alcohol has been shown to be safe, so the advice is to avoid it completely."
     sources: [nhs-alcohol, ameli-zero-alcool]
 
   - id: listeria-cheese
     question: "Which cheese should you avoid unless it is cooked?"
-    options:
-      - "Soft cheese made with unpasteurised (raw) milk"
-      - "Pasteurised hard cheese"
-      - "Plain yogurt"
+    options: ["Soft cheese made with unpasteurised (raw) milk", "Pasteurised hard cheese", "Plain yogurt"]
     answer: 0
     why: "Raw-milk soft cheese can carry Listeria, a rare but serious infection. Choose a pasteurised cheese, or cook it until steaming hot."
     sources: [cdc-listeria-dairy, ameli-aliments-eviter]
 
   - id: toxo-prevention
     question: "What helps prevent toxoplasmosis?"
-    options:
-      - "Washing fruit and vegetables, and your hands after handling raw meat"
-      - "Eating raw meat now and then"
-      - "Cleaning the cat litter tray every day"
+    options: ["Washing fruit and vegetables, and your hands after handling raw meat", "Eating raw meat now and then", "Cleaning the cat litter tray every day"]
     answer: 0
     why: "Toxoplasmosis spreads mainly through raw or undercooked meat, and through unwashed produce and soil. If possible, ask someone else to clean the litter tray."
     sources: [ameli-toxo-prevention, nhs-toxoplasmosis]
 
   - id: baby-movements
     question: "Your baby seems to be moving much less than usual. What should you do?"
-    options:
-      - "Contact your midwife or maternity unit straight away"
-      - "Wait until tomorrow"
-      - "Drink something sugary and wait"
+    options: ["Contact your midwife or maternity unit straight away", "Wait until tomorrow", "Drink something sugary and wait"]
     answer: 0
     why: "A clear drop in movements needs checking the same day, even late in the evening. Do not wait."
     sources: [nhs-baby-movements, nhs-symptoms-get-help]
 
   - id: bleeding
     question: "Any vaginal bleeding during pregnancy should be..."
-    options:
-      - "Checked by a midwife or doctor, however small"
-      - "Watched at home for a day"
-      - "Only a concern if it is bright red"
+    options: ["Checked by a midwife or doctor, however small", "Watched at home for a day", "Only a concern if it is bright red"]
     answer: 0
     why: "Any bleeding needs to be checked, even a small amount."
     sources: [nhs-vaginal-bleeding, ameli-bleeding-t1]
 
   - id: folic-acid
     question: "How much folic acid is advised each day, from before conception to week 12?"
-    options:
-      - "400 micrograms"
-      - "4 milligrams for everyone"
-      - "No supplement is needed"
+    options: ["400 micrograms", "4 milligrams for everyone", "No supplement is needed"]
     answer: 0
     why: "The NHS advises 400 micrograms a day, from before you conceive until the 12th week. Ask your doctor about any higher dose."
     sources: [nhs-folic-acid, nhs-vitamins]
 
   - id: medicines
     question: "Before taking any medicine during pregnancy, what should you do?"
-    options:
-      - "Check with your pharmacist, midwife or doctor"
-      - "Take the same dose as before pregnancy"
-      - "Stop all medicines for nine months"
+    options: ["Check with your pharmacist, midwife or doctor", "Take the same dose as before pregnancy", "Stop all medicines for nine months"]
     answer: 0
     why: "Some medicines are safe in pregnancy and some are not. A quick check prevents mistakes. Do not stop a regular treatment without advice."
     sources: [ansm-medicaments-bons-reflexes, nhs-medicines]
 
   - id: exercise
     question: "Which activity is generally recommended during a normal pregnancy?"
-    options:
-      - "Walking or swimming"
-      - "Contact sports"
-      - "Lying flat on your back for long periods"
+    options: ["Walking or swimming", "Contact sports", "Lying flat on your back for long periods"]
     answer: 0
     why: "Regular, moderate activity suits most pregnancies. Ask your midwife about any limits that apply to you."
     sources: [nhs-exercise, nhs-startforlife-exercise]
 
   - id: smoking
     question: "If you smoke, what is the best step for your baby?"
-    options:
-      - "Stop smoking as soon as possible"
-      - "Switch to light cigarettes"
-      - "Smoke only outside"
+    options: ["Stop smoking as soon as possible", "Switch to light cigarettes", "Smoke only outside"]
     answer: 0
     why: "Stopping at any point in pregnancy helps your baby. Your midwife can give you free support."
     sources: [nhs-stop-smoking-pregnancy]
+
+  - id: big-predator-fish
+    question: "Which fish are best avoided completely in pregnancy?"
+    options: ["Swordfish, marlin and shark", "Cod and hake", "Sardines and mackerel"]
+    answer: 0
+    why: "These large predator fish build up mercury and other pollutants. Cod, hake, sardines and mackerel are good choices when well cooked."
+    sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter]
+
+  - id: fish-frequency
+    question: "How often is fish recommended during pregnancy?"
+    options: ["Twice a week, one of them an oily fish", "Every day", "Never"]
+    answer: 0
+    why: "Fish is rich in omega-3. Vary the species, cook it well, and choose an oily fish such as sardine, mackerel, herring or salmon once a week."
+    sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter]
+
+  - id: smoked-salmon
+    question: "Which salmon is advised against?"
+    options: ["Smoked salmon", "Well-cooked salmon fillet", "Well-cooked trout"]
+    answer: 0
+    why: "Smoked fish can carry Listeria. Well-cooked fresh salmon is a good choice."
+    sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter]
+
+  - id: raw-fish-parasite
+    question: "Which dish carries a risk of fish parasites and Listeria?"
+    options: ["Sushi or sashimi with raw fish", "A well-cooked fish pie", "Hot fish soup"]
+    answer: 0
+    why: "Raw or lightly cooked fish (sushi, sashimi, tartare, ceviche) can carry parasites such as Anisakis and bacteria. Cook fish right through."
+    sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter]
+
+  - id: freezing-fish
+    question: "Does freezing raw fish remove the Listeria risk?"
+    options: ["No, freezing does not remove Listeria", "Yes, completely", "Only after one week"]
+    answer: 0
+    why: "Freezing does not kill Listeria. Cooking does."
+    sources: [mangerbouger-aliments-eviter, ameli-aliments-eviter]
+
+  - id: freshwater-fish
+    question: "How often can you eat freshwater fish that accumulate pollutants, such as carp or catfish?"
+    options: ["No more than once every two months", "Every week", "Every day"]
+    answer: 0
+    why: "Freshwater fish such as eel, carp, barbel, bream and catfish accumulate pollutants, so they are limited to once every two months."
+    sources: [ameli-aliments-eviter]
+
+  - id: tuna
+    question: "What is advised about tuna, even canned?"
+    options: ["Limit it", "Eat it freely", "It is the best fish to favour"]
+    answer: 0
+    why: "Tuna is a predator fish that accumulates mercury, so it is limited. Sardines, mackerel and salmon are better choices."
+    sources: [mangerbouger-aliments-eviter, ameli-aliments-eviter]
+
+  - id: cheese-rind
+    question: "What should you do with the rind of cheese?"
+    options: ["Remove it", "Eat it", "Only eat it when the cheese is warm"]
+    answer: 0
+    why: "The rind can be contaminated on the surface, so French advice is to remove it."
+    sources: [mangerbouger-aliments-eviter, ameli-aliments-eviter]
+
+  - id: comte-raw
+    question: "Comté made from raw milk is generally..."
+    options: ["Fine, because it is heated and aged for a long time", "Never allowed", "Only allowed if it is grated"]
+    answer: 0
+    why: "Hard cooked-pressed cheeses (comté, beaufort, emmental, gruyère, parmesan) are heated and aged for a long time, so they can be eaten even when made with raw milk."
+    sources: [mangerbouger-aliments-eviter]
+
+  - id: grated-cheese-bag
+    question: "Why is cheese grated and sold in a bag advised against in France?"
+    options: ["Moisture in the bag lets bacteria grow", "It has too much salt", "It is always made from raw milk"]
+    answer: 0
+    why: "The humidity in the bag can let bacteria develop. It is better to grate your own cheese."
+    sources: [mangerbouger-aliments-eviter, ameli-aliments-eviter]
+
+  - id: vegan-cheese
+    question: "What is advised about cheese substitutes made from plant drinks (oat, rice, soy)?"
+    options: ["Avoid them: they can be contaminated with Listeria", "They are safer than cheese", "Only avoid them when cold"]
+    answer: 0
+    why: "They can become contaminated with Listeria during production or if not kept at the right temperature."
+    sources: [mangerbouger-aliments-eviter]
+
+  - id: white-ham
+    question: "In France, sliced cooked ham (jambon blanc) is a risk food unless..."
+    options: ["It is cooked again before eating, for example on a pizza or in a gratin", "It is eaten cold on the same day", "It is very thinly sliced"]
+    answer: 0
+    why: "Cooked cold meats that must be kept chilled can carry Listeria. Heating them until hot removes the risk."
+    sources: [mangerbouger-aliments-eviter]
+
+  - id: dry-sausage
+    question: "Why are dry sausage (saucisson sec) and dry-cured ham advised against?"
+    options: ["Risk of salmonella and other germs, as they are not cooked", "They contain too much protein", "They are always too fatty"]
+    answer: 0
+    why: "They are eaten raw (cured, not cooked), so germs are not killed."
+    sources: [mangerbouger-aliments-eviter, ameli-toxo-prevention]
+
+  - id: egg-ok
+    question: "Which egg is fine to eat in pregnancy?"
+    options: ["A hard-boiled egg", "A soft-boiled egg", "A runny fried egg"]
+    answer: 0
+    why: "Eggs must be cooked through. Soft-boiled, runny and raw eggs can carry salmonella."
+    sources: [mangerbouger-aliments-eviter, ameli-aliments-eviter]
+
+  - id: homemade-mayo
+    question: "Which is the safer choice?"
+    options: ["Mayonnaise made in a factory", "Homemade mayonnaise with raw eggs", "Homemade chocolate mousse with raw eggs"]
+    answer: 0
+    why: "Homemade recipes with raw eggs are best avoided. Industrially made versions are generally not considered a risk."
+    sources: [mangerbouger-aliments-eviter]
+
+  - id: fridge-temperature
+    question: "What is the highest temperature your fridge should be set to?"
+    options: ["4 °C", "8 °C", "12 °C"]
+    answer: 0
+    why: "Listeria can grow in the cold, so keep the fridge at 4 °C at most and check it with a thermometer."
+    sources: [ameli-aliments-eviter]
+
+  - id: leftovers
+    question: "How long can you keep leftovers in the fridge?"
+    options: ["No more than 3 days", "A week", "As long as they smell fine"]
+    answer: 0
+    why: "Listeria does not change the look, smell or taste of food. Reheat leftovers until hot all the way through."
+    sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter]
+
+  - id: thawing
+    question: "Where should you thaw frozen food?"
+    options: ["In the fridge", "On the kitchen counter", "In a warm place"]
+    answer: 0
+    why: "Thawing in the fridge keeps the food cold while it defrosts."
+    sources: [ameli-aliments-eviter]
+
+  - id: well-cooked-meat
+    question: "How can you tell meat is well cooked?"
+    options: ["It loses its red colour and is beige-pink in the middle", "It is brown on the outside", "It is still red but hot"]
+    answer: 0
+    why: "Meat must be cooked right through to be safe, especially if you are not immune to toxoplasmosis."
+    sources: [mangerbouger-aliments-eviter, ameli-toxo-prevention]
+
+  - id: indoor-cat
+    question: "A cat that lives strictly indoors and eats canned or dry food is..."
+    options: ["Very unlikely to pass on toxoplasmosis", "A high risk", "A risk only in summer"]
+    answer: 0
+    why: "Indoor cats fed heat-treated food are very unlikely to carry the parasite. Still avoid changing the litter yourself, or wear gloves and wash your hands afterwards."
+    sources: [mangerbouger-aliments-eviter, ameli-toxo-prevention]
+
+  - id: cmv
+    question: "How can you lower the risk of CMV around young children?"
+    options: ["Do not share their spoon or kiss them on the mouth, and wash your hands after nappies", "Share their dummy to keep it clean", "Nothing can be done"]
+    answer: 0
+    why: "CMV passes through saliva and urine. Young children often carry it without being ill."
+    sources: [mangerbouger-aliments-eviter]
+
+  - id: soy
+    question: "What is advised about soy foods and drinks in France?"
+    options: ["Avoid them as a precaution (phytoestrogens)", "Eat them freely", "Only eat them raw"]
+    answer: 0
+    why: "Soy contains phytoestrogens, which are endocrine disruptors. Soy sauce, which contains very little, can be eaten occasionally."
+    sources: [ameli-aliments-eviter, mangerbouger-aliments-eviter]
+
+  - id: liquorice
+    question: "What is advised about liquorice in pregnancy?"
+    options: ["Avoid it in every form, as it can raise blood pressure", "A little is good for nausea", "Only avoid liquorice sweets"]
+    answer: 0
+    why: "Liquorice in any form (sweets, herbal teas, syrups, supplements) is not recommended: it can raise blood pressure and affect the heart rhythm."
+    sources: [ameli-aliments-eviter]
+
+  - id: liver
+    question: "Which of these is best avoided in pregnancy?"
+    options: ["Liver and liver products", "Well-cooked chicken", "Cooked green vegetables"]
+    answer: 0
+    why: "Liver contains a lot of vitamin A, which can harm the baby in large amounts."
+    sources: [nhs-foods-to-avoid]
+
+  - id: vitamin-a
+    question: "Which supplement should you avoid taking in high doses?"
+    options: ["Vitamin A", "Folic acid", "Vitamin D"]
+    answer: 0
+    why: "Too much vitamin A can harm the baby. Do not take supplements containing it unless advised by a doctor."
+    sources: [nhs-vitamins, nhs-foods-to-avoid]
+
+  - id: flu-vaccine
+    question: "Is the flu vaccine recommended during pregnancy?"
+    options: ["Yes, the inactivated flu vaccine is recommended", "No, never", "Only in the last week"]
+    answer: 0
+    why: "Pregnant women are more likely to have flu complications such as pneumonia. The vaccine lowers the risk of getting flu, or of it being severe."
+    sources: [nhs-flu-vaccine, crat-vaccin-grippe]
+
+  - id: whooping-cough
+    question: "Why is the whooping cough vaccine offered during pregnancy?"
+    options: ["It protects the newborn through your antibodies", "It only protects you", "It is a booster for your baby's skin"]
+    answer: 0
+    why: "Whooping cough is dangerous for newborns. Antibodies you make pass to the baby before it can be vaccinated."
+    sources: [nhs-whooping-cough-pregnancy, crat-vaccin-coqueluche]
+
+  - id: live-vaccines
+    question: "Which vaccines need a discussion with your midwife or doctor before you decide?"
+    options: ["Live vaccines such as MMR or yellow fever", "The flu vaccine", "The whooping cough vaccine"]
+    answer: 0
+    why: "MMR and yellow fever vaccines have potential risks in pregnancy, so talk about them first. Inactivated vaccines such as flu and whooping cough are recommended."
+    sources: [nhs-vaccines-pregnancy]
+
+  - id: ultrasound
+    question: "Do ultrasound scans use radiation?"
+    options: ["No, they use sound waves", "Yes, a low dose", "Yes, but only X-rays"]
+    answer: 0
+    why: "An ultrasound scan uses high-frequency sound waves, not radiation."
+    sources: [nhs-ultrasound-scan]
+
+  - id: first-pain-relief
+    question: "Which pain reliever is generally the first choice in pregnancy?"
+    options: ["Paracetamol, at the usual dose and for as short as possible", "Ibuprofen", "Aspirin"]
+    answer: 0
+    why: "Paracetamol is the usual first choice. Anti-inflammatories such as ibuprofen and aspirin are avoided unless a doctor prescribes them."
+    sources: [crat-paracetamol, nhs-paracetamol, crat-ains]
+
+  - id: essential-oils
+    question: "Are essential oils safe because they are natural?"
+    options: ["No, many are not recommended in pregnancy", "Yes, always", "Only when drunk"]
+    answer: 0
+    why: "Natural does not mean safe. Many essential oils are not recommended in pregnancy. Ask a pharmacist."
+    sources: [crat-huiles-essentielles, ansm-medicaments-bons-reflexes]
+
+  - id: dental-anesthesia
+    question: "Can you have dental work with a local anaesthetic?"
+    options: ["Yes, usual dental local anaesthetics are considered compatible", "No, never", "Only with general anaesthesia"]
+    answer: 0
+    why: "Untreated dental problems can be worse than the treatment. Tell your dentist you are pregnant."
+    sources: [crat-anesthesie-dentaire, crat-articaine]
+
+  - id: scuba
+    question: "Which activity is not advised in pregnancy?"
+    options: ["Scuba diving", "Gentle swimming", "Walking"]
+    answer: 0
+    why: "The NHS advises against scuba diving, as it may be unsafe for your baby."
+    sources: [nhs-exercise]
+
+  - id: talk-test
+    question: "How can you tell that activity is at a moderate level?"
+    options: ["You can talk but not sing", "You cannot say a word", "You can sing easily"]
+    answer: 0
+    why: "At moderate effort you breathe faster and feel warmer, but you can still talk. If you cannot talk, slow down."
+    sources: [nhs-exercise]
+
+  - id: long-flight
+    question: "What helps on a long flight?"
+    options: ["Walking regularly and drinking water", "Sitting still", "Avoiding water to skip the toilet"]
+    answer: 0
+    why: "Moving regularly and staying hydrated lowers the risk of blood clots."
+    sources: [nhs-travelling]
+
+  - id: first-movements
+    question: "When do you usually start to feel your baby move?"
+    options: ["Between 16 and 24 weeks", "At 8 weeks", "Only after 30 weeks"]
+    answer: 0
+    why: "With a first baby you might not feel movements until after 20 weeks. If you have not felt any by 24 weeks, tell your midwife."
+    sources: [nhs-baby-movements]
+
+  - id: preeclampsia-signs
+    question: "Which signs should make you contact a professional urgently?"
+    options: ["Severe headache with blurred vision, or sudden swelling", "A little tiredness", "Mild back ache after a long walk"]
+    answer: 0
+    why: "These can be signs of pre-eclampsia, which needs urgent care."
+    sources: [nhs-preeclampsia, ameli-preeclampsia]
+
+  - id: itching
+    question: "Severe itching, especially on the hands and feet, in later pregnancy needs..."
+    options: ["A call to your midwife or doctor", "Nothing, it is normal", "A hot bath"]
+    answer: 0
+    why: "It can be a sign of a liver condition (cholestasis) that needs checking."
+    sources: [nhs-itching]
+
+  - id: severe-vomiting
+    question: "When should vomiting in pregnancy be checked by a doctor?"
+    options: ["When you cannot keep any fluids down", "When you feel sick once a day", "Never"]
+    answer: 0
+    why: "Severe vomiting (hyperemesis) can cause dehydration and needs treatment."
+    sources: [nhs-severe-vomiting]
+
+  - id: ultrasound-count
+    question: "How many ultrasound scans are routinely offered in France?"
+    options: ["Three", "One", "Ten"]
+    answer: 0
+    why: "Three scans are recommended during pregnancy. The first, the dating scan, takes place between 11 and 13 weeks plus 6 days."
+    sources: [ameli-programme-suivi]
+
+  - id: declare-pregnancy
+    question: "By when should a pregnancy be declared to the health insurance in France?"
+    options: ["Before the end of the 3rd month", "At the birth", "At 30 weeks"]
+    answer: 0
+    why: "Your doctor or midwife makes the declaration after the first consultation. Doing it within the first three months lets maternity cover start as soon as possible."
+    sources: [ameli-grossesse-demarches]
+
+  - id: birth-preparation
+    question: "How many birth preparation sessions does the French health insurance cover?"
+    options: ["Seven", "Two", "None"]
+    answer: 0
+    why: "Seven birth and parenthood preparation sessions are covered 100%. A midwife or doctor can run them, and some are open to fathers."
+    sources: [ameli-preparation-parentalite]
+
+  - id: low-mood
+    question: "You have felt very low for more than two weeks. What should you do?"
+    options: ["Tell your midwife or doctor", "Keep it to yourself", "Wait until after the birth"]
+    answer: 0
+    why: "Low mood and anxiety are common in pregnancy and can be treated. Support exists."
+    sources: [nhs-mental-health, ameli-mental-health]

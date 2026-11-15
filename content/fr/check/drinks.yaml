@@ -424,6 +424,9 @@
     - "Coca Zéro"
     - "Cola light"
     - "Coke"
+    - "Coca light"
+    - "Pepsi Max"
+    - "Cola zéro"
     - "Cola"
   local: true
   answers:
@@ -1252,6 +1255,8 @@
   names:
     - "Feuille de framboisier"
     - "Infusion de framboisier"
+    - "Tisane de framboisier"
+    - "Feuilles de framboisier"
     - "Raspberry leaf tea"
   local: true
   answers:
