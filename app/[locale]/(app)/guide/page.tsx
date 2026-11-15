@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { CatMascot } from "@/components/CatMascot";
+import AskAi from "@/components/AskAi";
 import { getCompanionCat } from "@/lib/cat-cookie";
 
 const TILES = [
@@ -15,6 +16,7 @@ export default async function GuidePage({ params }: { params: Promise<{ locale: 
   setRequestLocale(locale);
   const t = await getTranslations();
   const cat = await getCompanionCat();
+  const prompt = t("ask.prompt");
 
   return (
     <section className="space-y-4 py-4">
@@ -25,6 +27,8 @@ export default async function GuidePage({ params }: { params: Promise<{ locale: 
         </div>
         <CatMascot cat={cat} variant="peek" className="h-16 w-16 shrink-0" />
       </div>
+
+      <AskAi prompt={prompt} />
 
       <ul className="grid gap-3">
         {TILES.map(({ kind, icon }) => (

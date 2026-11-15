@@ -183,5 +183,13 @@
       "reheated": "Reheated until steaming hot",
       "not_applicable": "Standard"
     }
+  },
+  "ask": {
+    "title": "Ask an AI assistant",
+    "text": "Have a question about pregnancy? Open Claude and ask it directly.",
+    "button": "Open Claude",
+    "copied": "Your prompt is copied. Paste it in Claude and type your question after it.",
+    "note": "Nothing about you is sent by this app. Your chat stays in your Claude account.",
+    "prompt": "I am pregnant. Answer in simple English, in short sentences. Name the source you rely on (ameli, CRAT, ANSM, NHS...), and tell me when to ask my midwife or doctor. My question: "
   }
 }

@@ -183,5 +183,13 @@
       "reheated": "Réchauffé jusqu'à ce que ce soit bien chaud",
       "not_applicable": "Standard"
     }
+  },
+  "ask": {
+    "title": "Demander à un assistant IA",
+    "text": "Une question sur la grossesse ? Ouvrez Claude et posez-la directement.",
+    "button": "Ouvrir Claude",
+    "copied": "Votre consigne est copiée. Collez-la dans Claude et tapez votre question après.",
+    "note": "Cette application n'envoie rien à votre sujet. Votre conversation reste dans votre compte Claude.",
+    "prompt": "Je suis enceinte. Répondez en français simple, en phrases courtes. Indiquez la source (ameli, CRAT, ANSM, NHS...) sur laquelle vous vous appuyez, et dites-moi quand demander l'avis de ma sage-femme ou de mon médecin. Ma question : "
   }
 }

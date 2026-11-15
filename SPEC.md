@@ -326,3 +326,21 @@ Each session: read `CLAUDE.md` + the named spec section only, do the task, run c
 2. New toxo serology result → set `toxo_status`.
 3. App name: **Mylune** (decided). Maternity: Hôpital Antoine-Béclère (AP-HP, Clamart), likely. Phone number to be entered by Div in settings, not hardcoded.
 4. ~~Colour~~ Done: peach/orange (§10).
+
+## 14. Decisions from Div, 2026-11-15 (Phase 2 scope)
+
+Approved by Div. These extend §§3, 5 and 8 and are built in separate sessions, one per row.
+
+| Feature | Decision | Notes |
+|---|---|---|
+| Ask an AI assistant | Button only. Opens claude.ai with a generic prompt copied to the clipboard. | No personal data is sent by the app. No API, no runtime LLM call. Built. |
+| Appointments | Profile section listing appointments, with a countdown to the next one. | Google Calendar: first version uses her calendar's secret iCal address, pasted once in the profile; events are imported into the household's appointments. Her calendar address stays in the database only. |
+| Kick counter | Later pregnancy (from about 20 weeks). Tap per movement, daily totals in a chart. | Adds a `kick` type to `logs`. |
+| Mood and symptom check-in | Daily tap-based check-in with a small chart over time. | Uses `logs` (`mood`, `symptom`). |
+| Weight chart | Her weight over time with a simple trend line. | Uses `logs` (`weight`). |
+| Feed: news and articles | Recent articles and news on pregnancy, relevant to the current stage. Each item is checked by Div before it appears. | Sources on the allowlist; news from other sites needs Div's approval per item. |
+| Quiz and points | Short pregnancy and baby quizzes with a score. | §10 says "no streaks or gamification pressure": streaks, daily reminders to keep a score and penalties are excluded. Scores and badges are allowed. |
+| Design refresh | Better fonts, colours, illustrations, charts and gentle animations; a more professional logo. | Keeps the peach palette and AA contrast. |
+| Dropped | Hospital bag checklist, birth plan notes, maternity comparison, partner tasks. | Not for now. |
+
+Still open: Div's choice on the points and badges wording (see the quiz row); the due date to confirm with the clinic (saved as 7 July 2027).
